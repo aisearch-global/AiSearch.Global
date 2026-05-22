@@ -26,6 +26,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <!-- GA4: replace G-SM6R79RSSX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SM6R79RSSX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SM6R79RSSX');
+  </script>
+
   <style>
     *,*::before,*::after{box-sizing:border-box}
     :root{
@@ -69,6 +78,7 @@
     .card{background:var(--bg2);border:1px solid rgba(255,255,255,.08);border-radius:.45rem;padding:1.1rem}
     .card h3{margin:.2rem 0 .45rem;font-size:1.05rem}
     .card p{margin:0;color:var(--muted);font-size:.95rem}
+    .service-link{display:inline-block;margin-top:.75rem;color:var(--accent);text-decoration:none;font-weight:600}
 
     .two-col{grid-template-columns:1.1fr .9fr;align-items:start;margin-top:1.6rem}
     .compare{border:1px solid rgba(255,255,255,.1);border-radius:.5rem;overflow:hidden}
@@ -89,6 +99,9 @@
     .email-box button{padding:.75rem 1rem;border:0;border-radius:0 .3rem .3rem 0;background:var(--accent);font-weight:700;cursor:pointer}
 
     footer{border-top:1px solid var(--border);padding:1.2rem 0;color:var(--muted);font-size:.9rem}
+    .footer-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem}
+    .footer-links a{text-decoration:none;color:var(--muted)}
+    .footer-links a:hover{color:var(--accent)}
 
     @media (max-width:960px){
       .services{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -164,6 +177,8 @@
         <li><a href="#what">What is AEO</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li><a href="/privacy.html">Privacy</a></li>
+        <li><a href="/terms.html">Terms</a></li>
         <li><a href="#contact" class="cta-link">Get Audit</a></li>
       </ul>
     </div>
@@ -176,7 +191,7 @@
         <h1>Be the answer AI gives your market</h1>
         <p class="lead">AISearch Global helps Australian businesses improve visibility in AI-generated answers across ChatGPT, Perplexity, Gemini, and Claude with practical AEO strategy, content restructuring, and schema implementation.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Book a Free AEO Audit</a>
+          <a class="btn btn-primary" href="#contact" data-track="audit_cta_click">Book a Free AEO Audit</a>
           <a class="btn btn-secondary" href="#what">Learn AEO Basics</a>
         </div>
       </div>
@@ -209,9 +224,9 @@
         <h2>AEO services for Australian brands</h2>
         <p class="sub">From audit to implementation and monitoring.</p>
         <div class="grid services">
-          <article class="card"><h3>AEO Audit</h3><p>Baseline assessment of your visibility across major AI answer systems with a prioritised action list.</p></article>
-          <article class="card"><h3>Content Restructuring</h3><p>Service pages and knowledge content rewritten into clear, citable answer blocks.</p></article>
-          <article class="card"><h3>Schema Implementation</h3><p>JSON-LD deployment for service, organisation, FAQ, and article entities.</p></article>
+          <article class="card"><h3>AEO Audit</h3><p>Baseline assessment of your visibility across major AI answer systems with a prioritised action list.</p><a class="service-link" href="/services/aeo-audit.html">Learn more</a></article>
+          <article class="card"><h3>Content Restructuring</h3><p>Service pages and knowledge content rewritten into clear, citable answer blocks.</p><a class="service-link" href="/services/content-restructuring.html">Learn more</a></article>
+          <article class="card"><h3>Schema Implementation</h3><p>JSON-LD deployment for service, organisation, FAQ, and article entities.</p><a class="service-link" href="/services/schema-implementation.html">Learn more</a></article>
           <article class="card"><h3>Entity Authority</h3><p>Consistent profile signals across trusted sources and business knowledge hubs.</p></article>
           <article class="card"><h3>AI Visibility Monitoring</h3><p>Ongoing tracking of citations, mentions, and category-level share of voice.</p></article>
           <article class="card"><h3>Team Enablement</h3><p>Practical internal training so your team can maintain AEO performance long-term.</p></article>
@@ -242,8 +257,8 @@
       <div class="container contact-wrap">
         <p class="eyebrow">Get started</p>
         <h2>Request your free AEO audit</h2>
-        <p class="sub">Email us directly at <a href="mailto:hello@aisearch.global">hello@aisearch.global</a> or subscribe for updates.</p>
-        <form class="email-box" action="#" method="post" aria-label="Email subscribe form">
+        <p class="sub">Email us directly at <a href="mailto:hello@aisearch.global" data-track="email_click">hello@aisearch.global</a> or subscribe for updates.</p>
+        <form class="email-box" action="#" method="post" aria-label="Email subscribe form" data-track-form="newsletter_subscribe">
           <label for="email" class="skip-link">Email address</label>
           <input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required>
           <button type="submit">Subscribe</button>
@@ -253,26 +268,59 @@
   </main>
 
   <footer>
-    <div class="container">© 2026 AISearch Global · Sydney, NSW, Australia</div>
+    <div class="container">
+      <div>© 2026 AISearch Global · Sydney, NSW, Australia</div>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="/services/aeo-audit.html">AEO Audit</a>
+        <a href="/services/content-restructuring.html">Content Restructuring</a>
+        <a href="/services/schema-implementation.html">Schema Implementation</a>
+      </div>
+    </div>
   </footer>
 
   <script>
     (function () {
       const button = document.getElementById('menuBtn');
       const nav = document.getElementById('siteNav');
-      if (!button || !nav) return;
-      button.addEventListener('click', function () {
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-        button.setAttribute('aria-expanded', String(!expanded));
-        nav.classList.toggle('open');
+      if (button && nav) {
+        button.addEventListener('click', function () {
+          const expanded = button.getAttribute('aria-expanded') === 'true';
+          button.setAttribute('aria-expanded', String(!expanded));
+          nav.classList.toggle('open');
+        });
+        nav.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            nav.classList.remove('open');
+            button.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      document.querySelectorAll('[data-track]').forEach(function (el) {
+        el.addEventListener('click', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'click', {
+              event_category: 'engagement',
+              event_label: el.getAttribute('data-track')
+            });
+          }
+        });
       });
-      nav.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-          nav.classList.remove('open');
-          button.setAttribute('aria-expanded', 'false');
+
+      document.querySelectorAll('[data-track-form]').forEach(function (form) {
+        form.addEventListener('submit', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', {
+              event_category: 'conversion',
+              event_label: form.getAttribute('data-track-form')
+            });
+          }
         });
       });
     })();
   </script>
 </body>
 </html>
+
