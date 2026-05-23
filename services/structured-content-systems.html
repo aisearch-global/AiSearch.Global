@@ -38,14 +38,14 @@
     footer{border-top:1px solid var(--border);padding:1.2rem 0;color:var(--muted);font-size:.9rem}
     .nav-toggle{display:none;background:none;border:1px solid var(--border);color:var(--text);padding:.45rem .65rem;border-radius:.35rem;cursor:pointer}
     @media(max-width:720px){.nav-toggle{display:block}.links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid var(--border);padding:.8rem;border-radius:.45rem;z-index:200}.links.open{display:flex}}.footer-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem}.footer-links a{text-decoration:none;color:var(--muted)}.footer-links a:hover{color:var(--accent)}
-    .brand img, .nav-logo img{display:block;height:26px;width:auto;max-width:220px} 
+    .brand img, .nav-logo img{display:block;height:34px;width:auto;max-width:260px} 
 </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBZMSCBXBZ"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XBZMSCBXBZ');</script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-  <header><div class="container nav"><a href="/" class="brand" aria-label="AISearch Global home"><img src="/assets/images/logos/aisearch-logo-primary-light.png" alt="AISearch Global" loading="eager" decoding="async"></a><button class="nav-toggle" id="mBtn" aria-controls="sNav" aria-expanded="false">Menu</button><ul id="sNav" class="links"><li><a href="/#services">Services</a></li><li><a href="/insights/">Insights</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/#contact" class="cta-link">Check Visibility</a></li></ul></div></header>
+  <header><div class="container nav"><a href="/" class="brand" aria-label="AISearch Global home"><img src="/assets/images/logos/header-logo.svg" alt="AISearch Global" loading="eager" decoding="async" style="height:34px;width:auto;max-width:260px;display:block"></a><button class="nav-toggle" id="mBtn" aria-controls="sNav" aria-expanded="false">Menu</button><ul id="sNav" class="links"><li><a href="/#services">Services</a></li><li><a href="/insights/">Insights</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/#contact" class="cta-link">Check Visibility</a></li></ul></div></header>
   <main>
     <div class="container">
       <article class="doc">
@@ -74,6 +74,10 @@
   <script>(function(){var b=document.getElementById('mBtn');var n=document.getElementById('sNav');if(b&&n){b.addEventListener('click',function(){var e=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!e));n.classList.toggle('open');});n.querySelectorAll('a').forEach(function(l){l.addEventListener('click',function(){n.classList.remove('open');b.setAttribute('aria-expanded','false');});});}})();</script>
 </body>
 </html>
+
+
+
+
 
 
 
