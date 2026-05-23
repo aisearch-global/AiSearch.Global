@@ -1,3 +1,6 @@
-/insights /insights.html 200
-/privacy /privacy.html 200
-/terms /terms.html 200
+/insights /insights/index.html 200
+/insights/ /insights/index.html 200
+/privacy /privacy/index.html 200
+/privacy/ /privacy/index.html 200
+/terms /terms/index.html 200
+/terms/ /terms/index.html 200
