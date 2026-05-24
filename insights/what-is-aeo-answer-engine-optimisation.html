@@ -51,9 +51,15 @@
 :root{--tiffany:#0ABFBC;--tiffany-dim:rgba(10,191,188,0.10);--silver:#C0C0C0;--silver-dim:#888888;--charcoal:#2B2B2B;--charcoal-mid:#1E1E1E;--black:#0D0D0D;--white:#FFFFFF;--font-head:'Space Grotesk',system-ui,sans-serif;--font-body:'DM Sans',system-ui,sans-serif}
 html{background:var(--black);color:var(--white);font-family:var(--font-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}a:hover{color:var(--tiffany)}
-header{display:flex;align-items:center;justify-content:space-between;padding:1.25rem 2.5rem;border-bottom:1px solid var(--charcoal);position:sticky;top:0;background:rgba(13,13,13,.96);backdrop-filter:blur(10px);z-index:100}
-header img{height:34px;width:auto;max-width:260px;display:block}header nav{display:flex;align-items:center;gap:1.25rem}header nav a{font-family:var(--font-body);font-size:1rem;color:var(--silver);font-weight:500;letter-spacing:0;line-height:1;text-decoration:none;transition:color .2s}header nav a:hover{color:var(--tiffany)}
-.nav-cta{padding:.55rem .9rem;border:1px solid var(--tiffany);border-radius:.3rem;color:var(--tiffany)!important;background:transparent!important;font-family:var(--font-body);font-size:1rem!important;font-weight:500!important;letter-spacing:0;line-height:1;transition:color .2s,border-color .2s}.nav-cta:hover{color:var(--white)!important;border-color:var(--white)}
+.container{max-width:1120px;margin:0 auto;padding:0 1rem}
+header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.12)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+.brand img{height:34px;width:auto;max-width:260px;display:block}
+.nav-toggle{display:none;background:none;border:1px solid rgba(255,255,255,.12);color:var(--white);padding:.45rem .65rem;border-radius:.35rem}
+.nav-links{display:flex;gap:1rem;list-style:none;padding:0;margin:0}
+.nav-links a{text-decoration:none;color:var(--silver);font-family:var(--font-body);font-weight:500;font-size:1rem;line-height:1}
+.nav-links a:hover,.nav-links a:focus{color:var(--tiffany)}
+.cta-link{padding:.55rem .9rem;border:1px solid var(--tiffany);border-radius:.3rem;color:var(--tiffany)!important}
 main{max-width:720px;margin:0 auto;padding:4rem 2rem 6rem}.back-link{display:inline-flex;align-items:center;gap:.4rem;font-size:12px;color:var(--silver-dim);margin-bottom:2.25rem}
 .article-meta{display:flex;align-items:center;gap:.75rem;margin-bottom:1.75rem;flex-wrap:wrap}.category-tag{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--tiffany);background:var(--tiffany-dim);padding:.3rem .9rem;border-radius:2px}.article-date{font-size:12px;color:var(--silver-dim)}
 h1{font-family:var(--font-head);font-size:clamp(1.9rem,4vw,2.75rem);font-weight:500;line-height:1.2;color:var(--white);margin-bottom:1.5rem;letter-spacing:-.015em}.article-deck{font-size:1.1rem;color:var(--silver);line-height:1.7;margin-bottom:3rem;padding-bottom:2.5rem;border-bottom:1px solid var(--charcoal)}
@@ -68,20 +74,30 @@ p{color:var(--silver);margin-bottom:1.35rem;font-size:.975rem;line-height:1.75}
 blockquote{border-left:2px solid var(--tiffany);background:var(--tiffany-dim);padding:1.25rem 1.5rem;margin:2rem 0;border-radius:0 4px 4px 0;font-style:italic;color:var(--white);font-size:.95rem;line-height:1.65}
 .references{margin:3rem 0 0;padding-top:2rem;border-top:1px solid var(--charcoal)}.references-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--silver-dim);margin-bottom:1rem}.references ol{padding-left:1.25rem}.references li{font-size:11px;color:var(--silver-dim);line-height:1.6;margin-bottom:.5rem}.references li a{text-decoration:underline;text-underline-offset:3px}
 .cta-section{background:var(--charcoal);border:1px solid var(--charcoal);border-top:2px solid var(--tiffany);border-radius:4px;padding:2.5rem 2rem;margin-top:4rem;text-align:center}.cta-section h4{font-family:var(--font-head);font-size:1.35rem;font-weight:500;color:var(--white);margin-bottom:.65rem}.cta-section p{font-size:.9rem;max-width:480px;margin:0 auto 1.5rem}.cta-button{display:inline-block;background:var(--tiffany);color:var(--black)!important;font-size:13px;font-weight:700;padding:.75rem 2rem;border-radius:3px;letter-spacing:.05em;text-transform:uppercase;transition:opacity .2s}.cta-button:hover{opacity:.85}
-footer{border-top:1px solid var(--charcoal);padding:2rem 2.5rem;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem}.footer-copy{font-size:12px;color:var(--silver-dim)}.footer-nav{display:flex;gap:1.5rem;flex-wrap:wrap}.footer-nav a{font-size:12px;color:var(--silver-dim)}.footer-social{display:flex;gap:1.25rem;flex-wrap:wrap;width:100%;padding-top:.75rem;border-top:1px solid var(--charcoal);margin-top:.5rem}.footer-social a{font-size:11px;color:var(--silver-dim)}
-@media(max-width:640px){header{padding:1rem 1.25rem}header nav a:not(.nav-cta){display:none}main{padding:2.5rem 1.25rem 4rem}footer{padding:1.5rem 1.25rem}.stat-row{grid-template-columns:1fr 1fr}}
+footer{border-top:1px solid var(--charcoal);padding:1.2rem 0;color:var(--silver-dim);font-size:.9rem}
+.footer-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem}
+.footer-links a{font-size:12px;color:var(--silver-dim);text-decoration:none}
+.footer-links a:hover{color:var(--tiffany)}
+.social-links{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.75rem}
+.social-links a{font-size:1.1rem;color:var(--silver-dim);text-decoration:none}
+.social-links a:hover{color:var(--tiffany)}
+@media(max-width:720px){.nav-toggle{display:block}.nav-links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid rgba(255,255,255,.12);padding:.8rem;border-radius:.45rem}.nav-links.open{display:flex}}
+@media(max-width:640px){main{padding:2.5rem 1.25rem 4rem}.stat-row{grid-template-columns:1fr 1fr}}
 </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></head>
 <body>
 <header>
-  <a href="https://aisearch.global/"><img src="../assets/images/logos/header-logo.svg" alt="AISearch Global"></a>
-  <nav>
-    <a href="https://aisearch.global/#what">What is AI Visibility</a>
-    <a href="https://aisearch.global/#services">Services</a>
-    <a href="https://aisearch.global/insights/">Insights</a>
-    <a href="https://aisearch.global/#faq">FAQ</a>
-    <a href="https://aisearch.global/#contact" class="nav-cta">Check Visibility</a>
-  </nav>
+  <div class="container nav">
+    <a href="/" class="brand" aria-label="AISearch Global home"><img src="/assets/images/logos/header-logo.svg" alt="AISearch Global"></a>
+    <button class="nav-toggle" id="menuBtn" aria-controls="siteNav" aria-expanded="false">Menu</button>
+    <ul id="siteNav" class="nav-links">
+      <li><a href="/#what">What is AI Visibility</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/insights/">Insights</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="/#contact" class="cta-link">Check Visibility</a></li>
+    </ul>
+  </div>
 </header>
 <main>
   <a href="https://aisearch.global/insights/" class="back-link">&larr; Insights</a>
@@ -185,6 +201,35 @@ footer{border-top:1px solid var(--charcoal);padding:2rem 2.5rem;display:flex;fle
     <a href="https://aisearch.global/#contact" class="cta-button">Request a Visibility Audit</a>
   </div>
 </main>
-<footer><div class="container"><div>&copy; 2026 AISearch Global | Sydney | NSW | Australia</div><div class="footer-links"><a href="/insights/">Insights</a><a href="/#services">Services</a><a href="/#faq">FAQ</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/#contact">Contact</a></div><div class="social-links" style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.75rem"><a href="https://www.facebook.com/aisearch.global" aria-label="Facebook" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-facebook"></i></a><a href="https://www.instagram.com/aisearch.global/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-instagram"></i></a><a href="https://www.threads.net/@aisearch.global" aria-label="Threads" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-threads"></i></a><a href="https://www.linkedin.com/company/aisearchglobal/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-linkedin"></i></a><a href="https://x.com/aisearch_global" aria-label="X" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-twitter-x"></i></a><a href="https://www.youtube.com/@aisearch.global" aria-label="YouTube" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-youtube"></i></a><a href="https://www.pinterest.com/aisearchglobal" aria-label="Pinterest" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-pinterest"></i></a><a href="https://www.tiktok.com/@aisearch.global" aria-label="TikTok" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-tiktok"></i></a><a href="https://www.google.com/maps/place/AISearch+Global/@-34.0511229,150.7699384,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12efbcf56f819f:0xb9ebe1179a042329!8m2!3d-34.0511229!4d150.7699384!16s%2Fg%2F11zbqjqkfp" aria-label="Google Maps" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-geo-alt-fill"></i></a></div></div></footer>
+<footer>
+  <div class="container">
+    <div>&copy; 2026 AISearch Global | Sydney | NSW | Australia</div>
+    <div class="footer-links">
+      <a href="/insights/">Insights</a><a href="/#services">Services</a><a href="/#faq">FAQ</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/#contact">Contact</a>
+    </div>
+    <div class="social-links">
+      <a href="https://www.facebook.com/aisearch.global" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a><a href="https://www.instagram.com/aisearch.global/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a><a href="https://www.threads.net/@aisearch.global" aria-label="Threads" target="_blank" rel="noopener noreferrer"><i class="bi bi-threads"></i></a><a href="https://www.linkedin.com/company/aisearchglobal/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a><a href="https://x.com/aisearch_global" aria-label="X" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a><a href="https://www.youtube.com/@aisearch.global" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a><a href="https://www.pinterest.com/aisearchglobal" aria-label="Pinterest" target="_blank" rel="noopener noreferrer"><i class="bi bi-pinterest"></i></a><a href="https://www.tiktok.com/@aisearch.global" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><i class="bi bi-tiktok"></i></a><a href="https://www.google.com/maps/place/AISearch+Global/@-34.0511229,150.7699384,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12efbcf56f819f:0xb9ebe1179a042329!8m2!3d-34.0511229!4d150.7699384!16s%2Fg%2F11zbqjqkfp" aria-label="Google Maps" target="_blank" rel="noopener noreferrer"><i class="bi bi-geo-alt-fill"></i></a>
+    </div>
+  </div>
+</footer>
+<script>
+  (function () {
+    const button = document.getElementById('menuBtn');
+    const nav = document.getElementById('siteNav');
+    if (button && nav) {
+      button.addEventListener('click', function () {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          nav.classList.remove('open');
+          button.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  })();
+</script>
 </body>
 </html>
