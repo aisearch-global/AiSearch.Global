@@ -42,7 +42,9 @@
     .nav-links{display:flex;gap:1rem;list-style:none;padding:0;margin:0}.nav-links a{text-decoration:none;color:var(--muted);font-weight:500}.nav-links a:hover,.nav-links a:focus{color:var(--accent)}
     .cta-link{padding:.55rem .9rem;border:1px solid var(--accent);border-radius:.3rem;color:var(--accent)!important}
     footer{border-top:1px solid var(--border);padding:1.2rem 0;color:var(--muted);font-size:.9rem}.footer-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem}.footer-links a{text-decoration:none;color:var(--muted)}.footer-links a:hover{color:var(--accent)}
-    .btn{display:inline-block;text-decoration:none;font-weight:700;padding:.85rem 1.2rem;border-radius:.3rem}.btn-secondary{border:1px solid var(--border);color:var(--text)}
+    .btn{display:inline-block;text-decoration:none;font:700 .95rem/1 var(--display);letter-spacing:.01em;padding:.85rem 1.2rem;border-radius:.3rem}
+    .btn-secondary{background:var(--accent);border:1px solid var(--accent);color:#041617}
+    .btn-secondary:hover,.btn-secondary:focus{background:#08a6a2;border-color:#08a6a2;color:#031214}
     .insights-main{padding:4.5rem 0 3.2rem}
     .insights-wrap{max-width:900px;margin:0 auto;padding:0 1rem}
     .insights-eyebrow{font:600 .75rem var(--display);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:.7rem}
@@ -56,12 +58,12 @@
     .featured p{margin:0 0 1rem;color:var(--muted);max-width:68ch}
     .stats{display:flex;flex-direction:column;gap:.35rem;margin:0 0 1rem;color:var(--accent2);font:500 .82rem var(--display)}
     .stats-panel{position:relative;overflow:hidden;background:linear-gradient(160deg,rgba(10,186,181,.11) 0%,rgba(10,186,181,.04) 45%,rgba(0,0,0,.14) 100%);border:1px solid rgba(10,186,181,.28);border-radius:.45rem;padding:1rem .95rem;display:flex;flex-direction:column;justify-content:center}
-    .stats-kicker{font:600 .63rem var(--display);letter-spacing:.13em;text-transform:uppercase;color:var(--accent);margin-bottom:.8rem;position:relative;z-index:2}
+    .stats-kicker{font:700 .76rem var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:.9rem;position:relative;z-index:2}
     .stats-row{display:grid;grid-template-columns:80px 1fr;align-items:start;gap:.55rem;padding:.6rem 0;position:relative;z-index:2}
     .stats-row + .stats-row{border-top:1px solid rgba(10,186,181,.22)}
     .stats-value{font:700 1.45rem/1 var(--display);color:var(--accent);text-align:left}
     .stats-label{font:500 .74rem/1.45 var(--body);color:#a6eff0;text-align:left}
-    .stats-mark{position:absolute;right:-22px;bottom:-20px;width:118px;height:auto;opacity:.12;filter:saturate(1.15) brightness(1.05);pointer-events:none;z-index:1}
+    .stats-mark{position:absolute;right:6px;top:4px;width:132px;height:auto;opacity:.14;filter:saturate(1.15) brightness(1.05);mix-blend-mode:screen;pointer-events:none;z-index:1}
     .read-link{text-decoration:none;color:var(--text);font:600 .78rem var(--display);letter-spacing:.08em;text-transform:uppercase}
     .read-link:hover{color:var(--accent)}
     .cta-block{margin-top:2.3rem;background:var(--bg2);border:1px solid rgba(10,186,181,.28);border-radius:.5rem;padding:1.2rem;text-align:center}
@@ -117,7 +119,7 @@
               <span class="stats-value">+500%</span>
               <span class="stats-label">Claude AU searches in 12 months</span>
             </div>
-            <img class="stats-mark" src="../assets/images/logos/favicon-transparent.png" alt="" aria-hidden="true">
+            <img class="stats-mark" src="/favicon.svg" alt="" aria-hidden="true">
           </aside>
         </div>
       </article>
