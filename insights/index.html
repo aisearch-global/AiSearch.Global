@@ -49,16 +49,24 @@
     .insights-title{font-family:var(--display);font-size:clamp(1.9rem,4.5vw,3.2rem);line-height:1.1;margin:0 0 1rem}
     .insights-sub{color:var(--muted);max-width:70ch;margin:0 0 2rem}
     .featured{background:var(--bg2);border:1px solid rgba(255,255,255,.08);border-radius:.5rem;padding:1.4rem 1.25rem}
+    .featured-grid{display:grid;grid-template-columns:1.7fr .9fr;gap:1.25rem;align-items:stretch}
     .featured-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem;font-size:.8rem;color:var(--muted);margin-bottom:.8rem}
     .tag{display:inline-block;padding:.24rem .65rem;border:1px solid rgba(10,186,181,.35);border-radius:99rem;color:var(--accent2);font-size:.72rem}
     .featured h2{margin:0 0 .75rem;font-family:var(--display);font-size:clamp(1.35rem,3.4vw,2rem);line-height:1.2}
     .featured p{margin:0 0 1rem;color:var(--muted);max-width:68ch}
     .stats{display:flex;flex-direction:column;gap:.35rem;margin:0 0 1rem;color:var(--accent2);font:500 .82rem var(--display)}
+    .stats-panel{background:linear-gradient(160deg,rgba(10,186,181,.11) 0%,rgba(10,186,181,.04) 45%,rgba(0,0,0,.14) 100%);border:1px solid rgba(10,186,181,.28);border-radius:.45rem;padding:1rem .95rem;display:flex;flex-direction:column;justify-content:center}
+    .stats-kicker{font:600 .63rem var(--display);letter-spacing:.13em;text-transform:uppercase;color:var(--accent);margin-bottom:.8rem}
+    .stats-row{display:flex;align-items:baseline;gap:.55rem;padding:.55rem 0}
+    .stats-row + .stats-row{border-top:1px solid rgba(10,186,181,.22)}
+    .stats-value{font:700 1.45rem/1 var(--display);color:var(--accent)}
+    .stats-label{font:500 .74rem/1.45 var(--body);color:#a6eff0}
     .read-link{text-decoration:none;color:var(--text);font:600 .78rem var(--display);letter-spacing:.08em;text-transform:uppercase}
     .read-link:hover{color:var(--accent)}
     .cta-block{margin-top:2.3rem;background:var(--bg2);border:1px solid rgba(10,186,181,.28);border-radius:.5rem;padding:1.2rem;text-align:center}
     .cta-block h3{margin:.1rem 0 .55rem;font-family:var(--display)}
     .cta-block p{margin:0 0 .9rem;color:var(--muted)}
+    @media (max-width:880px){.featured-grid{grid-template-columns:1fr}}
     @media (max-width:720px){.nav-toggle{display:block}.nav-links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid var(--border);padding:.8rem;border-radius:.45rem}.nav-links.open{display:flex}.insights-main{padding-top:3.2rem}}
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -88,17 +96,28 @@
       <p class="insights-sub">Practical analysis, industry visibility audits, and strategy tracking how businesses appear across modern AI search and answer platforms.</p>
 
       <article class="featured">
-        <div class="featured-meta">
-          <span class="tag">AEO Fundamentals</span>
-          <span>24 May 2026 | 6 min read</span>
+        <div class="featured-grid">
+          <div>
+            <div class="featured-meta">
+              <span class="tag">AEO Fundamentals</span>
+              <span>24 May 2026 | 10 min read</span>
+            </div>
+            <h2>What Is AEO? The Term Every Australian Marketer Needs to Know in 2026</h2>
+            <p>Answer Engine Optimisation is the fastest-growing discipline in digital marketing and the majority of Australian businesses have never heard of it. Here is what it means, why the timing matters, and what to do about it.</p>
+            <a href="/insights/what-is-aeo-answer-engine-optimisation.html" class="read-link">Read Article &rarr;</a>
+          </div>
+          <aside class="stats-panel" aria-label="Key AEO figures">
+            <div class="stats-kicker">AEO Signal Snapshot</div>
+            <div class="stats-row">
+              <span class="stats-value">100x</span>
+              <span class="stats-label">AEO searches up vs alternatives globally</span>
+            </div>
+            <div class="stats-row">
+              <span class="stats-value">+500%</span>
+              <span class="stats-label">Claude AU searches in 12 months</span>
+            </div>
+          </aside>
         </div>
-        <h2>What Is AEO? The Term Every Australian Marketer Needs to Know in 2026</h2>
-        <p>Answer Engine Optimisation is the fastest-growing discipline in digital marketing and the majority of Australian businesses have never heard of it. Here is what it means, why the timing matters, and what to do about it.</p>
-        <div class="stats">
-          <span>AEO searches up 100x vs alternatives globally</span>
-          <span>Claude AU searches +500% in 12 months</span>
-        </div>
-        <a href="/insights/what-is-aeo-answer-engine-optimisation.html" class="read-link">Read Article &rarr;</a>
       </article>
 
       <div class="cta-block">
