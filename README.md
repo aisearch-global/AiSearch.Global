@@ -1,4 +1,4 @@
-﻿# AISearch Global Website
+# AISearch Global Website
 
 This is a static, SEO-first landing site for `https://aisearch.global`.
 
@@ -34,7 +34,7 @@ This is a static, SEO-first landing site for `https://aisearch.global`.
 
 ## Optional improvements
 - Add dedicated pages:
-  - `/services/aoe-audit`
+  - `/services/aeo-audit`
   - `/services/schema-implementation`
   - `/insights/` articles
 - Add `WebPage`, `BreadcrumbList`, and `Article` schema on those pages.

@@ -1,204 +1,134 @@
-<!DOCTYPE html>
-<html lang="en-AU" class="scroll-smooth">
+<!doctype html>
+<html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insights | AISearch Global</title>
-    <meta name="description" content="Research and analysis from AISearch Global on AI visibility, AI search behavior, and how businesses can improve citation and recommendation outcomes.">
-    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-    <link rel="canonical" href="https://aisearch.global/insights/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="AISearch Global">
-    <meta property="og:locale" content="en_AU">
-    <meta property="og:title" content="Insights | AISearch Global">
-    <meta property="og:description" content="Research and analysis on AI visibility and AI search strategy.">
-    <meta property="og:url" content="https://aisearch.global/insights/">
-    <meta property="og:image" content="https://aisearch.global/assets/images/logos/og-social-card.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Insights | AISearch Global">
-    <meta name="twitter:description" content="Research and analysis on AI visibility and AI search strategy.">
-    <meta name="twitter:image" content="https://aisearch.global/assets/images/logos/og-social-card.png">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="shortcut icon" href="/favicon.svg">
-    <link rel="apple-touch-icon" href="/assets/images/logos/og-social-card.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <script defer src="/assets/js/main.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        graphite: '#0D0E10',
-                        charcoal: '#16181C',
-                        silver: '#E2E8F0',
-                        mutesilver: '#8A939E',
-                        turquoise: '#0ABAB5',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Space Grotesk', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insights | AISearch Global</title>
+  <meta name="description" content="Research and analysis from AISearch Global on AI visibility, AI search behavior, and how businesses can improve citation and recommendation outcomes.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="author" content="AISearch Global">
+  <link rel="canonical" href="https://aisearch.global/insights/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="../assets/images/logos/og-social-card.png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script defer src="../assets/js/main.js"></script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AISearch Global">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:url" content="https://aisearch.global/insights/">
+  <meta property="og:title" content="Insights | AISearch Global">
+  <meta property="og:description" content="Research and analysis on AI visibility and AI search strategy.">
+  <meta property="og:image" content="https://aisearch.global/assets/images/logos/og-social-card.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Insights | AISearch Global">
+  <meta name="twitter:description" content="Research and analysis on AI visibility and AI search strategy.">
+  <meta name="twitter:image" content="https://aisearch.global/assets/images/logos/og-social-card.png">
+
     <style>
-        body { background-color: #0D0E10; }
-        .subtle-border { border-color: rgba(255, 255, 255, 0.06); }
-        #mNav.open { display: flex; flex-direction: column; position: absolute; top: 5rem; left: 1rem; right: 1rem; background: #16181C; border: 1px solid rgba(255,255,255,.1); border-radius: .45rem; padding: 1rem; gap: 1rem; z-index: 200; }
+    *,*::before,*::after{box-sizing:border-box}
+    :root{--bg:#0d0e10;--bg2:#15181d;--surface:#1d2128;--text:#e3e8ee;--muted:#95a0ad;--accent:#0abab5;--accent2:#81d8d0;--border:rgba(255,255,255,.12);--charcoal:#16181c;--graphite:#041617;--display:"Space Grotesk",system-ui,sans-serif;--body:"DM Sans",system-ui,sans-serif}
+    html{scroll-behavior:smooth}
+    body{margin:0;font:16px/1.7 var(--body);background:radial-gradient(circle at 10% 0%,#1a2328 0%,var(--bg) 35%),var(--bg);color:var(--text);overflow-x:hidden}
+    a{color:inherit}
+    .skip-link{position:absolute;left:-9999px;top:auto}.skip-link:focus{left:1rem;top:1rem;background:#fff;color:#000;padding:.5rem .75rem;border-radius:.25rem;z-index:1000}
+    .container{max-width:1120px;margin:0 auto;padding:0 1rem}
+    header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+    .brand{font:700 1.1rem var(--display);text-decoration:none}
+    .nav-toggle{display:none;background:none;border:1px solid var(--border);color:var(--text);padding:.45rem .65rem;border-radius:.35rem}
+    .nav-links{display:flex;gap:1rem;list-style:none;padding:0;margin:0}.nav-links a{text-decoration:none;color:var(--muted);font-weight:500}.nav-links a:hover,.nav-links a:focus{color:var(--accent)}
+    .cta-link{padding:.55rem .9rem;border:1px solid var(--accent);border-radius:.3rem;color:var(--accent)!important}
+    footer{border-top:1px solid var(--border);padding:1.2rem 0;color:var(--muted);font-size:.9rem}.footer-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem}.footer-links a{text-decoration:none;color:var(--muted)}.footer-links a:hover{color:var(--accent)}
+    .btn{display:inline-block;text-decoration:none;font-weight:700;padding:.85rem 1.2rem;border-radius:.3rem}.btn-secondary{border:1px solid var(--border);color:var(--text)}
+    .insights-main{padding:4.5rem 0 3.2rem}
+    .insights-wrap{max-width:900px;margin:0 auto;padding:0 1rem}
+    .insights-eyebrow{font:600 .75rem var(--display);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:.7rem}
+    .insights-title{font-family:var(--display);font-size:clamp(1.9rem,4.5vw,3.2rem);line-height:1.1;margin:0 0 1rem}
+    .insights-sub{color:var(--muted);max-width:70ch;margin:0 0 2rem}
+    .featured{background:var(--bg2);border:1px solid rgba(255,255,255,.08);border-radius:.5rem;padding:1.4rem 1.25rem}
+    .featured-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem;font-size:.8rem;color:var(--muted);margin-bottom:.8rem}
+    .tag{display:inline-block;padding:.24rem .65rem;border:1px solid rgba(10,186,181,.35);border-radius:99rem;color:var(--accent2);font-size:.72rem}
+    .featured h2{margin:0 0 .75rem;font-family:var(--display);font-size:clamp(1.35rem,3.4vw,2rem);line-height:1.2}
+    .featured p{margin:0 0 1rem;color:var(--muted);max-width:68ch}
+    .stats{display:flex;flex-direction:column;gap:.35rem;margin:0 0 1rem;color:var(--accent2);font:500 .82rem var(--display)}
+    .read-link{text-decoration:none;color:var(--text);font:600 .78rem var(--display);letter-spacing:.08em;text-transform:uppercase}
+    .read-link:hover{color:var(--accent)}
+    .cta-block{margin-top:2.3rem;background:var(--bg2);border:1px solid rgba(10,186,181,.28);border-radius:.5rem;padding:1.2rem;text-align:center}
+    .cta-block h3{margin:.1rem 0 .55rem;font-family:var(--display)}
+    .cta-block p{margin:0 0 .9rem;color:var(--muted)}
+    @media (max-width:720px){.nav-toggle{display:block}.nav-links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid var(--border);padding:.8rem;border-radius:.45rem}.nav-links.open{display:flex}.insights-main{padding-top:3.2rem}}
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-      .brand img, .nav-logo img{display:block;height:34px;width:auto;max-width:260px} 
-</style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBZMSCBXBZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XBZMSCBXBZ');
-    </script>  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-<body class="text-silver font-sans antialiased selection:bg-turquoise selection:text-graphite">
+  <header>
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="AISearch Global home"><img src="../assets/images/logos/header-logo.svg" alt="AISearch Global" loading="eager" decoding="async" style="height:34px;width:auto;max-width:260px;display:block"></a>
+      <button class="nav-toggle" id="menuBtn" aria-controls="siteNav" aria-expanded="false">Menu</button>
+      <ul id="siteNav" class="nav-links">
+        <li><a href="/#what">What is AI Visibility</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="/insights/">Insights</a></li>
+        <li><a href="/#contact" class="cta-link">Check Visibility</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <header class="border-b subtle-border sticky top-0 bg-graphite/80 backdrop-blur-md z-50"><div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between"><a href="/" class="font-display font-bold text-sm tracking-tight text-white" aria-label="AISearch Global home"><img src="/assets/images/logos/header-logo.svg" alt="AISearch Global" loading="eager" decoding="async" style="height:34px;width:auto;max-width:260px;display:block"></a><button id="mBtn" aria-expanded="false" aria-controls="mNav" class="md:hidden text-mutesilver border border-white/20 px-3 py-1.5 rounded text-xs font-mono uppercase tracking-wider hover:text-white transition-colors">Menu</button><nav id="mNav" class="hidden md:flex items-center gap-6 text-xs uppercase tracking-wider font-mono text-mutesilver"><a href="/#services" class="hover:text-white transition-colors">Services</a><a href="/insights/" class="text-white">Insights</a><a href="/#faq" class="hover:text-white transition-colors">FAQ</a><a href="/#contact" class="px-3 py-2 border border-turquoise rounded text-turquoise hover:text-white transition-colors">Check Visibility</a></nav></div></header>
+  <main id="main" class="insights-main">
+    <section class="insights-wrap">
+      <p class="insights-eyebrow">Research & Analysis</p>
+      <h1 class="insights-title">Insights</h1>
+      <p class="insights-sub">Practical analysis, industry visibility audits, and strategy tracking how businesses appear across modern AI search and answer platforms.</p>
 
-    <main class="max-w-6xl mx-auto px-6 py-16 md:py-24 space-y-20">
-        
-        <div class="max-w-xl space-y-4">
-            <div class="text-xs uppercase tracking-widest font-mono text-turquoise font-medium">Research &amp; Analysis</div>
-            <h1 class="font-display text-4xl font-bold tracking-tight text-white">Insights</h1>
-            <p class="text-mutesilver font-light leading-relaxed text-sm">
-                Practical analysis, industry visibility audits, and strategy tracking how businesses appear across modern AI search and answer platforms.
-            </p>
+      <article class="featured">
+        <div class="featured-meta">
+          <span class="tag">AEO Fundamentals</span>
+          <span>24 May 2026 | 6 min read</span>
         </div>
+        <h2>What Is AEO? The Term Every Australian Marketer Needs to Know in 2026</h2>
+        <p>Answer Engine Optimisation is the fastest-growing discipline in digital marketing and the majority of Australian businesses have never heard of it. Here is what it means, why the timing matters, and what to do about it.</p>
+        <div class="stats">
+          <span>AEO searches up 100x vs alternatives globally</span>
+          <span>Claude AU searches +500% in 12 months</span>
+        </div>
+        <a href="/insights/what-is-aeo-answer-engine-optimisation.html" class="read-link">Read Article &rarr;</a>
+      </article>
 
-        <section class="border border-white/10 bg-charcoal/30 rounded-xl p-8 md:p-12 space-y-6 block hover:border-turquoise/30 transition-all duration-300">
-            <div class="flex flex-wrap items-center gap-4 text-xs font-mono text-mutesilver">
-                <span class="px-2.5 py-0.5 bg-turquoise/10 text-turquoise rounded-full text-[11px] font-medium">Industry Reports</span>
-                <span>22 May 2026</span>
-                <span>&bull;</span>
-                <span>8 min read</span>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                <div class="lg:col-span-8 space-y-4">
-                    <h2 class="font-display text-2xl md:text-3xl font-semibold text-white tracking-tight leading-snug">
-                        <a href="/insights/why-traditional-businesses-are-missing.html" class="hover:text-turquoise transition-colors">
-                            Why Traditional Businesses Are Missing From AI Search Answers
-                        </a>
-                    </h2>
-                    <p class="text-mutesilver font-light leading-relaxed text-sm md:text-base">
-                        An empirical study tracking how ChatGPT, Google AI Overviews, Perplexity, Claude, DeepSeek, and Grok handle commercial trade and construction sectors in New South Wales. Why dominant legacy web rankings are failing to carry over into AI business recommendations.
-                    </p>
-                </div>
-                
-                <div class="lg:col-span-4 bg-graphite/50 border border-white/5 rounded-lg p-5 font-mono text-xs space-y-3">
-                    <div class="text-white/40 uppercase tracking-wider text-[10px]">NSW Trade Sector Scan</div>
-                    <div class="flex items-baseline gap-2">
-                        <span class="text-3xl font-display font-bold text-white tracking-tight">78%</span>
-                        <span class="text-turquoise text-[11px]">Omission Rate</span>
-                    </div>
-                    <div class="w-full bg-white/5 h-1 rounded-full overflow-hidden">
-                        <div class="bg-turquoise h-full w-[78%]"></div>
-                    </div>
-                    <p class="text-[11px] text-mutesilver font-sans font-light leading-normal pt-1">
-                        Percentage of established tier-1 commercial operators failing to surface in local AI search prompts.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="pt-2">
-                <a href="/insights/why-traditional-businesses-are-missing.html" class="text-xs font-mono text-white hover:text-turquoise transition-all inline-flex items-center gap-1.5 uppercase tracking-wider">
-                    Read Report <span class="text-sm">&rarr;</span>
-                </a>
-            </div>
-        </section>
+      <div class="cta-block">
+        <h3>Ready to improve your AI visibility?</h3>
+        <p>Get a practical baseline and roadmap to improve AI citation performance.</p>
+        <a href="/#contact" class="btn btn-secondary">Check Visibility</a>
+      </div>
+    </section>
+  </main>
 
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-4">
-            
-            <div class="border-t subtle-border pt-6 space-y-4 flex flex-col justify-between transition-all duration-300 hover:-translate-y-0.5 hover:border-turquoise/30">
-                <div class="space-y-3">
-                    <div class="flex items-center gap-3 text-xs font-mono text-mutesilver">
-                        <span class="text-turquoise font-medium">Platform Behavior</span>
-                    </div>
-                    <h3 class="font-display font-medium text-lg text-white hover:text-turquoise transition-colors duration-300">
-                        <a href="/insights/what-influences-ai-business-recommendations.html">What Influences AI Business Recommendations</a>
-                    </h3>
-                    <p class="text-xs text-mutesilver font-light leading-relaxed">
-                        How conversational engines evaluate vendor authority, citation consistency, and brand relevance in high-intent commercial prompts.
-                    </p>
-                </div>
-                <div class="pt-2 text-[11px] font-mono text-white/55">5 min read</div>
-            </div>
+  <footer><div class="container"><div>&copy; 2026 AISearch Global | Sydney | NSW | Australia</div><div class="footer-links"><a href="/insights/">Insights</a><a href="/#services">Services</a><a href="/#faq">FAQ</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/#contact">Contact</a></div><div class="social-links" style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.75rem"><a href="https://www.facebook.com/aisearch.global" aria-label="Facebook" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-facebook"></i></a><a href="https://www.instagram.com/aisearch.global/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-instagram"></i></a><a href="https://www.threads.net/@aisearch.global" aria-label="Threads" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-threads"></i></a><a href="https://www.linkedin.com/company/aisearchglobal/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-linkedin"></i></a><a href="https://x.com/aisearch_global" aria-label="X" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-twitter-x"></i></a><a href="https://www.youtube.com/@aisearch.global" aria-label="YouTube" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-youtube"></i></a><a href="https://www.pinterest.com/aisearchglobal" aria-label="Pinterest" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-pinterest"></i></a><a href="https://www.tiktok.com/@aisearch.global" aria-label="TikTok" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-tiktok"></i></a><a href="https://www.google.com/maps/place/AISearch+Global/@-34.0511229,150.7699384,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12efbcf56f819f:0xb9ebe1179a042329!8m2!3d-34.0511229!4d150.7699384!16s%2Fg%2F11zbqjqkfp" aria-label="Google Maps" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-geo-alt-fill"></i></a></div></div></footer>
 
-            <div class="border-t subtle-border pt-6 space-y-4 flex flex-col justify-between transition-all duration-300 hover:-translate-y-0.5 hover:border-turquoise/30">
-                <div class="space-y-3">
-                    <div class="flex items-center gap-3 text-xs font-mono text-mutesilver">
-                        <span class="text-turquoise font-medium">AEO Strategy</span>
-                    </div>
-                    <h3 class="font-display font-medium text-lg text-white hover:text-turquoise transition-colors duration-300">
-                        Why Traditional SEO Is No Longer Enough for AI Search
-                    </h3>
-                    <p class="text-xs text-mutesilver font-light leading-relaxed">
-                        Why generic landing-page traffic is declining and how AI-readable structures improve direct citation outcomes.
-                    </p>
-                </div>
-                <div class="pt-2 text-[11px] font-mono text-white/55">6 min read</div>
-            </div>
-
-            <div class="border-t subtle-border pt-6 space-y-4 flex flex-col justify-between transition-all duration-300 hover:-translate-y-0.5 hover:border-turquoise/30">
-                <div class="space-y-3">
-                    <div class="flex items-center gap-3 text-xs font-mono text-mutesilver">
-                        <span class="text-turquoise font-medium">Visibility Audits</span>
-                    </div>
-                    <h3 class="font-display font-medium text-lg text-white hover:text-turquoise transition-colors duration-300">
-                        Why Small Businesses Are Missing From Generative Answers
-                    </h3>
-                    <p class="text-xs text-mutesilver font-light leading-relaxed">
-                        The technical blockers and formatting gaps that cause otherwise credible businesses to be excluded from AI answers.
-                    </p>
-                </div>
-                <div class="pt-2 text-[11px] font-mono text-white/55">4 min read</div>
-            </div>
-
-            <div class="border-t subtle-border pt-6 space-y-4 flex flex-col justify-between transition-all duration-300 hover:-translate-y-0.5 hover:border-turquoise/30">
-                <div class="space-y-3">
-                    <div class="flex items-center gap-3 text-xs font-mono text-mutesilver">
-                        <span class="text-turquoise font-medium">Industry Focus</span>
-                    </div>
-                    <h3 class="font-display font-medium text-lg text-white hover:text-turquoise transition-colors duration-300">
-                        AI Visibility Trends: The Sydney Commercial Roofing &amp; Trade Sector
-                    </h3>
-                    <p class="text-xs text-mutesilver font-light leading-relaxed">
-                        A regional scan of the gap between offline operational scale and machine discovery across local trade organizations.
-                    </p>
-                </div>
-                <div class="pt-2 text-[11px] font-mono text-white/55">7 min read</div>
-            </div>
-
-        </section>
-
-<section class="border border-turquoise/30 bg-charcoal/30 rounded-xl p-8 text-center space-y-3"><h2 class="font-display text-2xl text-white">Ready to improve your AI visibility?</h2><p class="text-mutesilver text-sm">Get a practical baseline and roadmap to improve AI citation performance.</p><a href="/#contact" class="inline-block px-5 py-3 border border-turquoise rounded text-turquoise hover:text-white transition-colors uppercase text-xs tracking-wider font-mono">Check Visibility</a></section>
-
-</main>
-
-    <footer><div class="container"><div>&copy; 2026 AISearch Global | Sydney | NSW | Australia</div><div class="footer-links"><a href="/insights/">Insights</a><a href="/#services">Services</a><a href="/#faq">FAQ</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/#contact">Contact</a></div><div class="social-links" style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.75rem"><a href="https://www.facebook.com/aisearch.global" aria-label="Facebook" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-facebook"></i></a><a href="https://www.instagram.com/aisearch.global/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-instagram"></i></a><a href="https://www.threads.net/@aisearch.global" aria-label="Threads" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-threads"></i></a><a href="https://www.linkedin.com/company/aisearchglobal/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-linkedin"></i></a><a href="https://x.com/aisearch_global" aria-label="X" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-twitter-x"></i></a><a href="https://www.youtube.com/@aisearch.global" aria-label="YouTube" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-youtube"></i></a><a href="https://www.pinterest.com/aisearchglobal" aria-label="Pinterest" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-pinterest"></i></a><a href="https://www.tiktok.com/@aisearch.global" aria-label="TikTok" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-tiktok"></i></a><a href="https://www.google.com/maps/place/AISearch+Global/@-34.0511229,150.7699384,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12efbcf56f819f:0xb9ebe1179a042329!8m2!3d-34.0511229!4d150.7699384!16s%2Fg%2F11zbqjqkfp" aria-label="Google Maps" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-geo-alt-fill"></i></a></div></div></footer>
-
-    <script>
-        (function(){var b=document.getElementById('mBtn');var n=document.getElementById('mNav');if(b&&n){b.addEventListener('click',function(){var e=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!e));n.classList.toggle('open');});n.querySelectorAll('a').forEach(function(l){l.addEventListener('click',function(){n.classList.remove('open');b.setAttribute('aria-expanded','false');});});}})();
-    </script></body>
+  <script>
+    (function () {
+      const button = document.getElementById('menuBtn');
+      const nav = document.getElementById('siteNav');
+      if (button && nav) {
+        button.addEventListener('click', function () {
+          const expanded = button.getAttribute('aria-expanded') === 'true';
+          button.setAttribute('aria-expanded', String(!expanded));
+          nav.classList.toggle('open');
+        });
+        nav.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            nav.classList.remove('open');
+            button.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    })();
+  </script>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
