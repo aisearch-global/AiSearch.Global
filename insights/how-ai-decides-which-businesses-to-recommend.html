@@ -354,11 +354,11 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 .action-box {
   background-color: #0abab5;
   background-image:
-    linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,.04) 1px, transparent 1px);
+    linear-gradient(rgba(0,0,0,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,.045) 1px, transparent 1px);
   background-size: 32px 32px;
-  border-radius: 10px;
-  padding: 40px 44px;
+  border-radius: 12px;
+  padding: 40px 40px 36px;
   margin: 36px 0;
 }
 .action-box h2 {
@@ -368,41 +368,42 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
   letter-spacing: -.01em;
   font-weight: 700;
 }
-.action-table {
+.action-grid {
   display: grid;
-  grid-template-columns: 230px 1fr;
-  gap: 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
 }
-.action-label {
-  font-weight: 700;
-  color: #021010;
-  padding: 16px 24px 16px 0;
-  font-size: .95rem;
-  line-height: 1.45;
+.action-card {
+  background: rgba(0,0,0,.1);
+  border-radius: 8px;
+  padding: 20px 22px;
+}
+.action-card-head {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 10px;
 }
-.action-label .bi {
-  font-size: 1.1rem;
+.action-card-head .bi {
+  font-size: 1.05rem;
   color: #021010;
   flex-shrink: 0;
-  margin-top: 2px;
 }
-.action-desc {
+.action-card-title {
+  font-weight: 700;
   color: #021010;
-  padding: 16px 0 16px 24px;
-  border-left: 2px solid rgba(0,0,0,.25);
   font-size: .95rem;
+  line-height: 1.35;
+}
+.action-card-desc {
+  color: #021010;
+  font-size: .9rem;
   line-height: 1.6;
-  font-weight: 400;
+  margin: 0;
 }
 @media(max-width:600px){
   .action-box { padding: 28px 22px; }
-  .action-table { grid-template-columns: 1fr; }
-  .action-label { padding-bottom: 4px; font-size:.93rem; }
-  .action-desc { border-left: none; padding-top: 2px; padding-left: 0; border-bottom: 1px solid rgba(0,0,0,.15); padding-bottom: 18px; margin-bottom: 6px; }
-  .action-desc.last { border-bottom: none; }
+  .action-grid { grid-template-columns: 1fr; }
 }
 
 /* FAQ */
@@ -684,15 +685,23 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 
   <div class="action-box">
     <h2>What you can do this week</h2>
-    <div class="action-table">
-      <div class="action-label"><i class="bi bi-check-square-fill"></i>Do the 30-second check:</div>
-      <div class="action-desc">Open ChatGPT or Claude. Type "best [your trade] in [your suburb]." See if your business name comes up. This tells you your current AI visibility position right now.</div>
-      <div class="action-label"><i class="bi bi-check-square-fill"></i>Check your consistency:</div>
-      <div class="action-desc">Google your business name. Make sure your name, address, and phone number are identical on your website, Google Maps, Facebook, and any directory listings.</div>
-      <div class="action-label"><i class="bi bi-check-square-fill"></i>Add a FAQ to your website:</div>
-      <div class="action-desc">Write 5 questions your customers actually ask — and answer them directly and specifically on your website. This is the fastest content change you can make for AI visibility.</div>
-      <div class="action-label last"><i class="bi bi-check-square-fill"></i>Get a free AI Visibility Snapshot:</div>
-      <div class="action-desc last">We run a non-invasive check across ChatGPT, Perplexity, Gemini, Claude, DeepSeek, and Grok and show you exactly where you appear and where you don't.</div>
+    <div class="action-grid">
+      <div class="action-card">
+        <div class="action-card-head"><i class="bi bi-check-square-fill"></i><span class="action-card-title">Do the 30-second check</span></div>
+        <p class="action-card-desc">Open ChatGPT or Claude. Type "best [your trade] in [your suburb]." See if your business name comes up. This tells you your current AI visibility position right now.</p>
+      </div>
+      <div class="action-card">
+        <div class="action-card-head"><i class="bi bi-check-square-fill"></i><span class="action-card-title">Check your consistency</span></div>
+        <p class="action-card-desc">Google your business name. Make sure your name, address, and phone number are identical on your website, Google Maps, Facebook, and any directory listings.</p>
+      </div>
+      <div class="action-card">
+        <div class="action-card-head"><i class="bi bi-check-square-fill"></i><span class="action-card-title">Add a FAQ to your website</span></div>
+        <p class="action-card-desc">Write 5 questions your customers actually ask — and answer them directly and specifically on your website. This is the fastest content change you can make for AI visibility.</p>
+      </div>
+      <div class="action-card">
+        <div class="action-card-head"><i class="bi bi-check-square-fill"></i><span class="action-card-title">Get a free AI Visibility Snapshot</span></div>
+        <p class="action-card-desc">We run a non-invasive check across ChatGPT, Perplexity, Gemini, Claude, DeepSeek, and Grok and show you exactly where you appear and where you don't.</p>
+      </div>
     </div>
   </div>
 
