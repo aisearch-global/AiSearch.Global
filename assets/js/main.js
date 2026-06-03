@@ -2,7 +2,8 @@
   /* ── Shared header/footer styling (self-contained so injected markup renders consistently on every page) ── */
   var S = document.createElement('style');
   S.textContent =
-    'footer .container{text-align:center}'
+    'footer{border-top:1px solid rgba(255,255,255,.12);padding:1.5rem 0;margin-top:2rem}'
+    + 'footer .container{text-align:center}'
     + 'footer .footer-links{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:.5rem}'
     + 'footer .footer-links a{text-decoration:none;color:inherit;opacity:.7;font-size:.9rem}'
     + 'footer .footer-links a:hover{opacity:1;color:#0abab5}'
