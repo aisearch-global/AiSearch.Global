@@ -354,52 +354,54 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 .action-box {
   background-color: #0abab5;
   background-image:
-    linear-gradient(rgba(0,0,0,.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,.07) 1px, transparent 1px);
-  background-size: 28px 28px;
-  border-radius: 8px;
-  padding: 36px 40px;
-  margin: 32px 0;
+    linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  border-radius: 10px;
+  padding: 40px 44px;
+  margin: 36px 0;
 }
 .action-box h2 {
-  color: #041617;
-  margin: 0 0 24px;
-  font-size: 1.35rem;
+  color: #021010;
+  margin: 0 0 28px;
+  font-size: 1.4rem;
   letter-spacing: -.01em;
+  font-weight: 700;
 }
 .action-table {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 230px 1fr;
   gap: 0;
 }
 .action-label {
   font-weight: 700;
-  color: #041617;
-  padding: 14px 20px 14px 0;
-  font-size: .93rem;
-  line-height: 1.4;
+  color: #021010;
+  padding: 16px 24px 16px 0;
+  font-size: .95rem;
+  line-height: 1.45;
   display: flex;
   align-items: flex-start;
-  gap: 9px;
+  gap: 10px;
 }
 .action-label .bi {
-  font-size: 1.05rem;
-  color: #041617;
+  font-size: 1.1rem;
+  color: #021010;
   flex-shrink: 0;
-  margin-top: 1px;
+  margin-top: 2px;
 }
 .action-desc {
-  color: #041617;
-  padding: 14px 0 14px 20px;
-  border-left: 2px solid rgba(0,0,0,.2);
-  font-size: .93rem;
-  line-height: 1.55;
+  color: #021010;
+  padding: 16px 0 16px 24px;
+  border-left: 2px solid rgba(0,0,0,.25);
+  font-size: .95rem;
+  line-height: 1.6;
+  font-weight: 400;
 }
 @media(max-width:600px){
-  .action-box { padding: 24px 20px; }
+  .action-box { padding: 28px 22px; }
   .action-table { grid-template-columns: 1fr; }
-  .action-label { border-bottom: none; padding-bottom: 2px; font-size:.9rem; }
-  .action-desc { border-left: none; padding-top: 0; padding-left: 0; border-bottom: 1px solid rgba(0,0,0,.13); padding-bottom: 14px; margin-bottom: 4px; }
+  .action-label { padding-bottom: 4px; font-size:.93rem; }
+  .action-desc { border-left: none; padding-top: 2px; padding-left: 0; border-bottom: 1px solid rgba(0,0,0,.15); padding-bottom: 18px; margin-bottom: 6px; }
   .action-desc.last { border-bottom: none; }
 }
 
