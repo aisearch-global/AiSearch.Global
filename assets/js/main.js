@@ -5,7 +5,7 @@
     + '<img src="/assets/images/logos/header-logo.svg" alt="AISearch Global" loading="eager" decoding="async" style="height:34px;width:auto;max-width:260px;display:block">'
     + '</a>'
     + '<button class="nav-toggle" id="menuBtn" aria-controls="siteNav" aria-expanded="false">Menu</button>'
-    + '<ul id="siteNav" class="nav-links">'
+    + '<ul id="siteNav" class="nav-links links">'
     + '<li><a href="/#what">What is AI Visibility</a></li>'
     + '<li><a href="/#services">Services</a></li>'
     + '<li><a href="/about/">About</a></li>'
