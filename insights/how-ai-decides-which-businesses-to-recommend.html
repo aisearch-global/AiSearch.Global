@@ -138,86 +138,20 @@ body {
 }
 
 /* HEADER */
-.site-header {
-  background: rgba(13,14,16,.92);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
-  padding: 0 48px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 64px;
-  gap: 24px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-.site-header .logo img {
-  height: 34px;
-  width: auto;
-  max-width: 260px;
-  display: block;
-}
-.site-header nav a {
-  font-family: var(--fb);
-  font-size: .85rem;
-  color: var(--silver);
-  text-decoration: none;
-  transition: color .15s;
-  white-space: nowrap;
-}
-.site-header nav a:hover { color: var(--white); }
-.site-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 28px;
-  flex-wrap: wrap;
-}
-.site-header .cta-btn {
-  border: 1px solid var(--tiffany);
-  color: var(--tiffany);
-  padding: 7px 16px;
-  border-radius: 4px;
-  font-family: var(--fb);
-  font-size: .82rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all .15s;
-  margin-left: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-}
-.site-header .cta-btn:hover {
-  background: var(--tiffany);
-  color: var(--black);
-}
+.container{max-width:1120px;margin:0 auto;padding:0 1rem}
+header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+.brand{font:700 1.1rem var(--fh);text-decoration:none}
+.nav-toggle{display:none;background:none;border:1px solid var(--border);color:var(--white);padding:.45rem .65rem;border-radius:.35rem}
+.nav-links{display:flex;gap:1rem;list-style:none;padding:0;margin:0}
+.nav-links a{text-decoration:none;color:var(--silver);font-weight:500;white-space:nowrap}
+.nav-links a:hover,.nav-links a:focus{color:var(--tiffany)}
+.cta-link{padding:.55rem .9rem;border:1px solid var(--tiffany);border-radius:.3rem;color:var(--tiffany)!important;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;line-height:1.1}
 
-@media (max-width: 900px) {
-  .site-header {
-    padding: 14px 24px;
-    align-items: flex-start;
-  }
-  .site-header nav {
-    width: 100%;
-    justify-content: flex-start;
-    gap: 12px 16px;
-  }
-}
-
-@media (max-width: 640px) {
-  .site-header {
-    padding: 14px 20px;
-    gap: 12px;
-  }
-  .site-header nav a {
-    font-size: .78rem;
-  }
-  .site-header .cta-btn {
-    padding: 7px 14px;
-  }
+@media (max-width:720px){
+  .nav-toggle{display:block}
+  .nav-links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid var(--border);padding:.8rem;border-radius:.45rem}
+  .nav-links.open{display:flex}
 }
 
 /* BREADCRUMB */
@@ -562,7 +496,7 @@ body {
 @media (max-width: 600px) {
   .stat-row { grid-template-columns: repeat(2, 1fr); }
   .signal { grid-template-columns: 36px 1fr; }
-  .site-header { padding: 0 20px; }
+  .nav { padding: 1rem 0; }
   .article { padding: 24px 20px 60px; }
   .site-footer { padding: 20px; }
 }
@@ -570,15 +504,18 @@ body {
 </head>
 <body>
 
-<header class="site-header">
-  <a href="/" class="logo" aria-label="AISearch Global home"><img src="/assets/images/logos/header-logo.svg" alt="AISearch Global"></a>
-  <nav>
-    <a href="/#what">What is AI Visibility</a>
-    <a href="/#services">Services</a>
-    <a href="/insights/">Insights</a>
-    <a href="/#faq">FAQ</a>
-    <a href="/#contact" class="cta-btn">Check Visibility</a>
-  </nav>
+<header>
+  <div class="container nav">
+    <a href="/" class="brand" aria-label="AISearch Global home"><img src="/assets/images/logos/header-logo.svg" alt="AISearch Global logo" loading="eager" decoding="async" style="height:34px;width:auto;max-width:260px;display:block"></a>
+    <button class="nav-toggle" id="menuBtn" aria-controls="siteNav" aria-expanded="false">Menu</button>
+    <ul id="siteNav" class="nav-links">
+      <li><a href="/#what">What is AI Visibility</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/insights/">Insights</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="/#contact" class="cta-link">Check Visibility</a></li>
+    </ul>
+  </div>
 </header>
 
 <div class="breadcrumb">
@@ -788,6 +725,26 @@ body {
 </article>
 
 <footer><div class="container"><div>&copy; 2026 AISearch Global | Sydney | NSW | Australia</div><div class="footer-links"><a href="/insights/">Insights</a><a href="/#services">Services</a><a href="/#faq">FAQ</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/#contact">Contact</a></div><div class="social-links" style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.75rem"><a href="https://www.facebook.com/aisearch.global" aria-label="Facebook" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-facebook"></i></a><a href="https://www.instagram.com/aisearch.global/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-instagram"></i></a><a href="https://www.threads.net/@aisearch.global" aria-label="Threads" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-threads"></i></a><a href="https://www.linkedin.com/company/ai-search-global/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-linkedin"></i></a><a href="https://x.com/aisearch_global" aria-label="X" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-twitter-x"></i></a><a href="https://www.youtube.com/@aisearch.global" aria-label="YouTube" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-youtube"></i></a><a href="https://www.au.pinterest.com/aisearch_global/" aria-label="Pinterest" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-pinterest"></i></a><a href="https://www.tiktok.com/@aisearch.global" aria-label="TikTok" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-tiktok"></i></a><a href="https://www.google.com/maps/place/AISearch+Global/@-34.0511229,150.7699384,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12efbcf56f819f:0xb9ebe1179a042329!8m2!3d-34.0511229!4d150.7699384!16s%2Fg%2F11zbqjqkfp" aria-label="Google Maps" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none"><i class="bi bi-geo-alt-fill"></i></a></div></div></footer>
+
+<script>
+  (function () {
+    const button = document.getElementById('menuBtn');
+    const nav = document.getElementById('siteNav');
+    if (button && nav) {
+      button.addEventListener('click', function () {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          nav.classList.remove('open');
+          button.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  })();
+</script>
 
 </body>
 </html>
