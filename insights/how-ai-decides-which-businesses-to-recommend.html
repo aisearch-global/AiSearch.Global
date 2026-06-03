@@ -375,24 +375,25 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 .action-label {
   font-weight: 700;
   color: #041617;
-  padding: 13px 20px 13px 0;
-  border-bottom: 1px solid rgba(0,0,0,.13);
+  padding: 14px 20px 14px 0;
   font-size: .93rem;
   line-height: 1.4;
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+}
+.action-label .bi {
+  font-size: 1.05rem;
+  color: #041617;
+  flex-shrink: 0;
+  margin-top: 1px;
 }
 .action-desc {
   color: #041617;
-  padding: 13px 0 13px 20px;
-  border-bottom: 1px solid rgba(0,0,0,.13);
-  border-left: 1px solid rgba(0,0,0,.13);
+  padding: 14px 0 14px 20px;
+  border-left: 2px solid rgba(0,0,0,.2);
   font-size: .93rem;
   line-height: 1.55;
-}
-.action-label:last-of-type,
-.action-desc:last-of-type,
-.action-label.last,
-.action-desc.last {
-  border-bottom: none;
 }
 @media(max-width:600px){
   .action-box { padding: 24px 20px; }
@@ -682,13 +683,13 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
   <div class="action-box">
     <h2>What you can do this week</h2>
     <div class="action-table">
-      <div class="action-label">Do the 30-second check:</div>
+      <div class="action-label"><i class="bi bi-check-square-fill"></i>Do the 30-second check:</div>
       <div class="action-desc">Open ChatGPT or Claude. Type "best [your trade] in [your suburb]." See if your business name comes up. This tells you your current AI visibility position right now.</div>
-      <div class="action-label">Check your consistency:</div>
+      <div class="action-label"><i class="bi bi-check-square-fill"></i>Check your consistency:</div>
       <div class="action-desc">Google your business name. Make sure your name, address, and phone number are identical on your website, Google Maps, Facebook, and any directory listings.</div>
-      <div class="action-label">Add a FAQ to your website:</div>
+      <div class="action-label"><i class="bi bi-check-square-fill"></i>Add a FAQ to your website:</div>
       <div class="action-desc">Write 5 questions your customers actually ask — and answer them directly and specifically on your website. This is the fastest content change you can make for AI visibility.</div>
-      <div class="action-label last">Get a free AI Visibility Snapshot:</div>
+      <div class="action-label last"><i class="bi bi-check-square-fill"></i>Get a free AI Visibility Snapshot:</div>
       <div class="action-desc last">We run a non-invasive check across ChatGPT, Perplexity, Gemini, Claude, DeepSeek, and Grok and show you exactly where you appear and where you don't.</div>
     </div>
   </div>
