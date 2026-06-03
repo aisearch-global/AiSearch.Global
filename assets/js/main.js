@@ -2,12 +2,13 @@
   /* ── Shared header/footer styling (self-contained so injected markup renders consistently on every page) ── */
   var S = document.createElement('style');
   S.textContent =
-    'footer .footer-links{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:.5rem}'
+    'footer .container{text-align:center}'
+    + 'footer .footer-links{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:.5rem}'
     + 'footer .footer-links a{text-decoration:none;color:inherit;opacity:.7;font-size:.9rem}'
     + 'footer .footer-links a:hover{opacity:1;color:#0abab5}'
+    + 'footer .social-links{justify-content:center}'
     + 'footer .social-links a{color:inherit;text-decoration:none}'
     + 'footer .social-links a:hover{color:#0abab5}'
-    + 'footer .container>div:first-child{text-align:center}'
     + 'header .nav-links a,header .links a{text-decoration:none}';
   document.head.appendChild(S);
 
