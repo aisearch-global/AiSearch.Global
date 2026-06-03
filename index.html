@@ -225,6 +225,32 @@
   },
   {
     "@context": "https://schema.org",
+    "@type": "SiteLinksSearchBox",
+    "@id": "https://aisearch.global/#sitelinks",
+    "url": "https://aisearch.global/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://aisearch.global/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": "https://aisearch.global/#navigation",
+    "name": "Site Navigation",
+    "itemListElement": [
+      {"@type": "SiteLinksSearchBox", "position": 1, "url": "https://aisearch.global/"},
+      {"@type": "ListItem", "position": 1, "name": "Home", "url": "https://aisearch.global/"},
+      {"@type": "ListItem", "position": 2, "name": "Services", "url": "https://aisearch.global/#services"},
+      {"@type": "ListItem", "position": 3, "name": "About", "url": "https://aisearch.global/about/"},
+      {"@type": "ListItem", "position": 4, "name": "Insights", "url": "https://aisearch.global/insights/"},
+      {"@type": "ListItem", "position": 5, "name": "Privacy", "url": "https://aisearch.global/privacy/"},
+      {"@type": "ListItem", "position": 6, "name": "Terms", "url": "https://aisearch.global/terms/"}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "FAQPage",
     "@id": "https://aisearch.global/#faq",
     "mainEntity": [
