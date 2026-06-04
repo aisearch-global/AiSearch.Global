@@ -23,20 +23,29 @@ def generate_article(topic):
     print(f"Generating article for topic: {topic}")
     client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
-    prompt = f"""You are the lead writer for the blog "Mindful Machines Journal" (mindfulmachinesjournal.blogspot.com).
-Write a 900–1,200 word article on the topic: "{topic}".
+    prompt = f"""Write a 900–1,200 word article for Mindful Machines Journal on the topic: "{topic}".
+
+The blog explores how AI and psychology intersect — from digital therapy and ethical design to the
+future of mind-machine collaboration and mental health. Its voice is reflective, interdisciplinary,
+and slightly literary: it takes ideas seriously without being academic, and it treats the reader as
+someone genuinely curious about both technology and the human mind.
 
 Requirements:
-1. Explore the intersection of artificial intelligence and psychology.
-2. Make factual claims and INCLUDE citations/source links directly in the text.
-3. Output the response ENTIRELY in clean, Blogger-compatible HTML (using <h2>, <p>, <ul>, <a>, etc.).
-4. Do not include standard markdown formatting blocks (like ```html), output raw HTML only.
-5. Do not include an <h1> as Blogger handles the title."""
+1. Ground the piece in the specific topic — don't drift into generic AI commentary.
+2. Include real citations and source links inline using <a href="..."> tags.
+3. Use subheadings (<h2>) to break up the piece naturally — not as a formulaic skeleton.
+4. Output raw Blogger-compatible HTML only (<h2>, <p>, <ul>, <blockquote>, <a>, etc.).
+5. Do not wrap output in markdown code fences. Do not include an <h1> — Blogger renders the title separately.
+6. End with a short paragraph that opens a question or invites reflection — consistent with the blog's ethos."""
 
     response = client.messages.create(
         model="claude-opus-4-8",
         max_tokens=4000,
-        system="You are an expert AI and psychology blogger writing for Mindful Machines Journal.",
+        system=(
+            "You write for Mindful Machines Journal — a blog at the intersection of AI, psychology, "
+            "and mental health. Your tone is thoughtful, intellectually curious, and human. You cite "
+            "real research and real events. You do not pad word counts with generic AI boosterism."
+        ),
         messages=[{"role": "user", "content": prompt}],
     )
     return response.content[0].text.strip()
@@ -67,7 +76,7 @@ def publish_to_blogger(topic, html_content):
     post_body = {
         "title": topic,
         "content": html_content,
-        "labels": ["AI", "Psychology", "Mindful Machines", "AI and Mind", "Machine Learning"],
+        "labels": ["AI and Mental Wellness", "Psychology", "Digital Therapy", "AI Ethics", "Mind-Machine Collaboration"],
     }
 
     response = service.posts().insert(blogId=blog_id, body=post_body, isDraft=is_draft).execute()
