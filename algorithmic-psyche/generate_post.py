@@ -23,7 +23,7 @@ def generate_article(topic):
     print(f"Generating article for topic: {topic}")
     client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
-    prompt = f"""You are the lead writer for the blog "The Algorithmic Psyche".
+    prompt = f"""You are the lead writer for the blog "Mindful Machines Journal" (mindfulmachinesjournal.blogspot.com).
 Write a 900–1,200 word article on the topic: "{topic}".
 
 Requirements:
@@ -36,7 +36,7 @@ Requirements:
     response = client.messages.create(
         model="claude-opus-4-8",
         max_tokens=4000,
-        system="You are an expert AI and psychology blogger.",
+        system="You are an expert AI and psychology blogger writing for Mindful Machines Journal.",
         messages=[{"role": "user", "content": prompt}],
     )
     return response.content[0].text.strip()
@@ -67,7 +67,7 @@ def publish_to_blogger(topic, html_content):
     post_body = {
         "title": topic,
         "content": html_content,
-        "labels": ["AI", "Psychology", "AEO", "AI Search", "The Algorithmic Psyche"],
+        "labels": ["AI", "Psychology", "Mindful Machines", "AI and Mind", "Machine Learning"],
     }
 
     response = service.posts().insert(blogId=blog_id, body=post_body, isDraft=is_draft).execute()
