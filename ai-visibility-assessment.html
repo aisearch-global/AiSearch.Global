@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Visibility Assessment™ — Instant Website Analysis | AISearch Global</title>
+<meta name="description" content="Get an instant AI Visibility Assessment for your website. We fetch and analyse your live site to grade the real signals that determine whether AI search engines can find, understand, and recommend your business.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://aisearch.global/ai-visibility-assessment.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "@id": "https://aisearch.global/ai-visibility-assessment.html",
+  "name": "AI Visibility Assessment™",
+  "description": "Instant website analysis tool that grades real AI visibility signals: schema markup, FAQ content, entity clarity, and more.",
+  "url": "https://aisearch.global/ai-visibility-assessment.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AUD" },
+  "provider": { "@id": "https://aisearch.global/#organization" }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+:root {
+  --tiffany: #0ABFBC;
+  --tiffany-glow: rgba(10,191,188,.13);
+  --black: #0D0E10;
+  --charcoal: #1a1b1e;
+  --surface: #222428;
+  --border: #2e2f33;
+  --white: #E3E8EE;
+  --silver: #C0C0C0;
+  --muted: #888888;
+  --red: #e05252;
+  --amber: #e0a852;
+  --orange: #e07a52;
+  --green: #52c98a;
+  --fh: 'Space Grotesk', sans-serif;
+  --fb: 'DM Sans', sans-serif;
+  --fm: 'DM Mono', monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--fb);
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 15px;
+  min-height: 100vh;
+}
+
+.container { max-width: 1120px; margin: 0 auto; padding: 0 1rem; }
+
+header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(13,14,16,.92); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; }
+.brand { font: 700 1.1rem var(--fh); text-decoration: none; }
+.nav-toggle { display: none; background: none; border: 1px solid var(--border); color: var(--white); padding: .45rem .65rem; border-radius: .35rem; }
+.nav-links { display: flex; gap: 1rem; list-style: none; }
+.nav-links a { text-decoration: none; color: var(--silver); font-weight: 500; white-space: nowrap; }
+.nav-links a:hover { color: var(--tiffany); }
+.cta-link { padding: .55rem .9rem; border: 1px solid var(--tiffany); border-radius: .3rem; color: var(--tiffany)!important; display: inline-flex; align-items: center; justify-content: center; }
+
+@media (max-width: 720px) {
+  .nav-toggle { display: block; }
+  .nav-links { display: none; position: absolute; left: 1rem; right: 1rem; top: 4.2rem; flex-direction: column; background: #111317; border: 1px solid var(--border); padding: .8rem; border-radius: .45rem; }
+  .nav-links.open { display: flex; }
+}
+
+/* ── PAGE LAYOUT ── */
+.page-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+/* ── HERO ── */
+.hero-tag {
+  display: inline-block;
+  font-family: var(--fm);
+  font-size: .6rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--tiffany);
+  background: var(--tiffany-glow);
+  border: 1px solid rgba(10,191,188,.2);
+  padding: 4px 14px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+.hero-title {
+  font-family: var(--fh);
+  font-size: clamp(1.9rem, 5vw, 2.9rem);
+  font-weight: 700;
+  letter-spacing: -.03em;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.hero-title span { color: var(--tiffany); }
+.hero-sub {
+  font-size: .98rem;
+  color: var(--silver);
+  max-width: 540px;
+  margin: 0 0 36px;
+  line-height: 1.75;
+}
+.hero-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+  font-family: var(--fm);
+  font-size: .62rem;
+  color: var(--muted);
+}
+.hero-meta span { display: flex; align-items: center; gap: 5px; }
+
+/* ── FORM ── */
+.assessment-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 28px;
+  margin-bottom: 32px;
+}
+.form-group { margin-bottom: 18px; }
+.form-group:last-of-type { margin-bottom: 0; }
+
+.input-hint {
+  margin-top: 8px;
+  font-family: var(--fm);
+  font-size: .58rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+label {
+  display: block;
+  font-family: var(--fm);
+  font-size: .62rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+.field-wrap {
+  position: relative;
+}
+input[type="text"],
+input[type="url"],
+select {
+  width: 100%;
+  background: var(--charcoal);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--white);
+  font-family: var(--fb);
+  font-size: .92rem;
+  padding: 11px 14px;
+  outline: none;
+  transition: border-color .15s;
+  -webkit-appearance: none;
+  appearance: none;
+}
+input[type="url"] { padding-left: 14px; }
+input:focus, select:focus { border-color: var(--tiffany); }
+input::placeholder { color: var(--muted); opacity: 1; }
+select { cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+select option { background: var(--charcoal); }
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+@media (max-width: 520px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+
+.btn-submit {
+  width: 100%;
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--tiffany);
+  color: var(--black);
+  font-family: var(--fh);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 24px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: opacity .15s, transform .15s;
+  letter-spacing: -.01em;
+}
+.btn-submit:hover:not(:disabled) { opacity: .88; transform: translateY(-1px); }
+.btn-submit:disabled { opacity: .4; cursor: not-allowed; transform: none; }
+
+.form-note {
+  margin-top: 12px;
+  font-family: var(--fm);
+  font-size: .6rem;
+  color: var(--muted);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* ── LOADING ── */
+.loading-state {
+  display: none;
+  text-align: center;
+  padding: 48px 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.loading-state.active { display: block; }
+.loader {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border);
+  border-top-color: var(--tiffany);
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-domain {
+  font-family: var(--fh);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.loading-sub {
+  font-family: var(--fm);
+  font-size: .64rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+/* ── ERROR ── */
+.error-state {
+  display: none;
+  background: var(--surface);
+  border: 1px solid rgba(224,82,82,.3);
+  border-left: 3px solid var(--red);
+  border-radius: 0 6px 6px 0;
+  padding: 20px 22px;
+}
+.error-state.active { display: block; }
+.error-state p {
+  font-size: .9rem;
+  color: var(--silver);
+  margin-bottom: 10px;
+}
+.btn-retry {
+  font-family: var(--fb);
+  font-size: .82rem;
+  color: var(--tiffany);
+  background: none;
+  border: 1px solid rgba(10,191,188,.3);
+  padding: 7px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: border-color .15s;
+}
+.btn-retry:hover { border-color: var(--tiffany); }
+
+/* ── RESULT CARD ── */
+.result-card {
+  display: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.result-card.active { display: block; animation: fadeUp .4s ease; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Card header bar */
+.card-header {
+  background: var(--charcoal);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.card-header-label {
+  font-family: var(--fm);
+  font-size: .6rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--tiffany);
+}
+.card-header-domain {
+  font-family: var(--fm);
+  font-size: .72rem;
+  color: var(--silver);
+}
+
+/* Grade block */
+.grade-block {
+  padding: 28px 24px 20px;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.grade-letter {
+  width: 72px;
+  height: 72px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fh);
+  font-size: 2.6rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.grade-info {}
+.grade-score {
+  font-family: var(--fh);
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.grade-score span {
+  font-size: 1.1rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+.grade-label {
+  font-family: var(--fm);
+  font-size: .65rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted);
+}
+.grade-industry {
+  font-family: var(--fm);
+  font-size: .62rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* Sections inside card */
+.card-section {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+}
+.card-section:last-of-type { border-bottom: none; }
+.section-eyebrow {
+  font-family: var(--fm);
+  font-size: .58rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--tiffany);
+  margin-bottom: 8px;
+}
+.section-text {
+  font-size: .9rem;
+  color: var(--silver);
+  line-height: 1.7;
+}
+.section-text em {
+  font-style: normal;
+  color: var(--white);
+  font-weight: 500;
+}
+
+/* Fix section */
+.fix-block {
+  background: var(--charcoal);
+  border-left: 3px solid var(--tiffany);
+  border-radius: 0 4px 4px 0;
+  padding: 14px 16px;
+  margin-top: 2px;
+  font-size: .88rem;
+  color: var(--silver);
+  line-height: 1.65;
+}
+.gain-pill {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: var(--fm);
+  font-size: .62rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--green);
+  background: rgba(82,201,138,.1);
+  border: 1px solid rgba(82,201,138,.25);
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+
+/* CTA section */
+.card-cta {
+  background: var(--charcoal);
+  border-top: 2px solid var(--tiffany);
+  padding: 24px;
+  text-align: center;
+}
+.card-cta p {
+  font-size: .85rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn-cta-primary {
+  display: inline-block;
+  background: var(--tiffany);
+  color: var(--black);
+  font-family: var(--fh);
+  font-size: .88rem;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: opacity .15s;
+}
+.btn-cta-primary:hover { opacity: .85; }
+.btn-retake {
+  display: inline-block;
+  background: none;
+  color: var(--muted);
+  font-family: var(--fb);
+  font-size: .82rem;
+  padding: 12px 18px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: color .15s;
+}
+.btn-retake:hover { color: var(--silver); }
+
+/* Disclaimer */
+.disclaimer {
+  margin-top: 20px;
+  font-family: var(--fm);
+  font-size: .58rem;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 12px;
+}
+
+@media (max-width: 520px) {
+  .page-wrap { padding: 28px 16px 60px; }
+  .assessment-form { padding: 20px 16px; }
+  .grade-block { grid-template-columns: 1fr; gap: 12px; }
+  .grade-letter { width: 56px; height: 56px; font-size: 2rem; }
+  .card-header { padding: 12px 16px; }
+  .card-section { padding: 16px; }
+  .card-cta { padding: 20px 16px; }
+}
+</style>
+<script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<header></header>
+
+<div class="page-wrap">
+
+  <!-- ── HERO ── -->
+  <div class="hero-tag">Free Tool · Live Website Analysis</div>
+  <h1 class="hero-title">AI Visibility<br><span>Assessment™</span></h1>
+  <p class="hero-sub">Enter your website and we'll fetch and analyse the real signals that determine whether AI search engines like ChatGPT, Perplexity, and Gemini can find, understand, and recommend your business.</p>
+  <div class="hero-meta">
+    <span><i class="bi bi-globe2"></i> Analyses your live site</span>
+    <span><i class="bi bi-bar-chart-line"></i> Grade out of 100</span>
+    <span><i class="bi bi-lightning"></i> Instant results</span>
+    <span><i class="bi bi-lock"></i> No email required</span>
+  </div>
+
+  <!-- ── FORM ── -->
+  <div class="assessment-form" id="formPanel">
+    <div class="form-group">
+      <label for="siteUrl">Website URL <span style="color:var(--red)">*</span></label>
+      <input type="url" id="siteUrl" placeholder="https://yourbusiness.com.au" autocomplete="url" spellcheck="false" inputmode="url">
+      <div class="input-hint">Any valid domain works, including .com, .com.au, .net, and more.</div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="industry">Industry <span style="color:var(--red)">*</span></label>
+        <select id="industry">
+          <option value="" disabled selected>Select industry…</option>
+          <option>Roofing / Construction</option>
+          <option>Hair &amp; Beauty</option>
+          <option>Healthcare / Allied Health</option>
+          <option>Legal Services</option>
+          <option>Real Estate</option>
+          <option>Finance / Mortgage Broker</option>
+          <option>Education / Coaching</option>
+          <option>E-commerce</option>
+          <option>Local Trade Services</option>
+          <option>SaaS / Technology</option>
+          <option>Hospitality / Food</option>
+          <option>Professional Services</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="bizLocation">Business Location</label>
+        <input type="text" id="bizLocation" placeholder="e.g. Parramatta NSW" spellcheck="false">
+      </div>
+    </div>
+    <button class="btn-submit" id="submitBtn" onclick="runAssessment()">
+      <i class="bi bi-search"></i> Analyse My Website
+    </button>
+    <p class="form-note">
+      <i class="bi bi-shield-check"></i>
+      We fetch your live site to check real signals - no questionnaire, no guessing
+    </p>
+  </div>
+
+  <!-- ── LOADING ── -->
+  <div class="loading-state" id="loadingPanel">
+    <div class="loader"></div>
+    <div class="loading-domain" id="loadingDomain">Fetching your site…</div>
+    <div class="loading-sub">Analysing 13 AI visibility signals</div>
+  </div>
+
+  <!-- ── ERROR ── -->
+  <div class="error-state" id="errorPanel">
+    <p id="errorMsg">We could not analyse this site. Please check the URL and try again.</p>
+    <button class="btn-retry" onclick="resetToForm()"><i class="bi bi-arrow-counterclockwise"></i> Try again</button>
+  </div>
+
+  <!-- ── RESULT CARD ── -->
+  <div class="result-card" id="resultCard">
+
+    <div class="card-header">
+      <span class="card-header-label">AI Visibility Assessment™</span>
+      <span class="card-header-domain" id="resultDomain">—</span>
+    </div>
+
+    <div class="grade-block">
+      <div class="grade-letter" id="gradeLetter">—</div>
+      <div class="grade-info">
+        <div class="grade-score" id="gradeScore">— <span>/ 100</span></div>
+        <div class="grade-label" id="gradeLabel">—</div>
+        <div class="grade-industry" id="gradeIndustry">—</div>
+      </div>
+    </div>
+
+    <div class="card-section">
+      <div class="section-eyebrow">AI's Current View</div>
+      <div class="section-text" id="aiViewText">—</div>
+    </div>
+
+    <div class="card-section">
+      <div class="section-eyebrow">Highest Impact Fix</div>
+      <div class="fix-block" id="fixText">—</div>
+      <div class="gain-pill" id="gainPill">—</div>
+    </div>
+
+    <div class="card-cta">
+      <p>This assessment shows where you stand. A full AI Visibility Audit maps every gap with a personalised, prioritised action plan — specific to your business, location, and industry.</p>
+      <div class="cta-btns">
+        <a href="https://aisearch.global/#contact" class="btn-cta-primary" data-track="assessment-cta">Get Full AI Visibility Audit</a>
+        <button class="btn-retake" onclick="resetToForm()">Analyse another site</button>
+      </div>
+    </div>
+
+  </div><!-- /result-card -->
+
+  <p class="disclaimer" id="disclaimer" style="display:none">
+    This is an estimated AI visibility grade based on visible website signals.<br>
+    It is not a guaranteed AI ranking or citation result.
+  </p>
+
+</div><!-- /page-wrap -->
+
+<footer></footer>
+
+<script>
+const API = (location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.hostname === '::1')
+  ? 'https://aisearch.global/.netlify/functions/aeo-score'
+  : '/.netlify/functions/aeo-score';
+
+function show(id) {
+  document.getElementById(id).classList.add('active');
+}
+function hide(id) {
+  document.getElementById(id).classList.remove('active');
+}
+function setDisplay(id, v) {
+  document.getElementById(id).style.display = v;
+}
+
+function resetToForm() {
+  hide('loadingPanel');
+  hide('errorPanel');
+  hide('resultCard');
+  setDisplay('formPanel', 'block');
+  setDisplay('disclaimer', 'none');
+  document.getElementById('submitBtn').disabled = false;
+}
+
+function gradeColor(grade) {
+  const map = { 'A+': '#52c98a', 'A': '#0ABFBC', 'B': '#0ABFBC', 'C': '#e0a852', 'D': '#e07a52', 'F': '#e05252' };
+  return map[grade] || '#888';
+}
+
+async function runAssessment() {
+  const urlRaw  = document.getElementById('siteUrl').value.trim();
+  const industry = document.getElementById('industry').value;
+  const location = document.getElementById('bizLocation').value.trim();
+
+  // Basic validation
+  if (!urlRaw) {
+    document.getElementById('siteUrl').focus();
+    return;
+  }
+  if (!industry) {
+    document.getElementById('industry').focus();
+    return;
+  }
+
+  // Normalize URL
+  let url = urlRaw;
+  if (!url.startsWith('http://') && !url.startsWith('https://')) {
+    url = 'https://' + url;
+  }
+
+  // Try parsing
+  let parsed;
+  try {
+    parsed = new URL(url);
+  } catch {
+    showError('Please enter a valid website URL (e.g. yourbusiness.com.au).');
+    return;
+  }
+
+  // Show loading
+  setDisplay('formPanel', 'none');
+  document.getElementById('submitBtn').disabled = true;
+  document.getElementById('loadingDomain').textContent = 'Analysing ' + parsed.hostname + '…';
+  show('loadingPanel');
+  hide('errorPanel');
+  hide('resultCard');
+
+  try {
+    const res = await fetch(API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url, industry, location }),
+    });
+
+    const raw = await res.text();
+    let data;
+    try {
+      data = JSON.parse(raw);
+    } catch {
+      throw new Error('The analyser returned an unexpected response.');
+    }
+
+    hide('loadingPanel');
+
+    if (data.error === 'fetch_failed' || data.error === 'invalid_url') {
+      showError(data.message || 'We could not analyse this site. Please check the URL and try again.');
+      return;
+    }
+    if (data.error) {
+      showError('Something went wrong. Please try again.');
+      return;
+    }
+
+    renderResult(data);
+
+  } catch (err) {
+    hide('loadingPanel');
+    const detail = err && err.message ? ' (' + err.message + ')' : '';
+    showError('We could not analyse this site. Please check the URL and try again.' + detail);
+  }
+}
+
+function showError(msg) {
+  document.getElementById('errorMsg').textContent = msg;
+  setDisplay('formPanel', 'none');
+  show('errorPanel');
+}
+
+function renderResult(d) {
+  const color = gradeColor(d.grade);
+
+  // Header
+  document.getElementById('resultDomain').textContent = d.domain;
+
+  // Grade block
+  const gl = document.getElementById('gradeLetter');
+  gl.textContent = d.grade;
+  gl.style.background = color + '18';
+  gl.style.border = '2px solid ' + color + '55';
+  gl.style.color = color;
+
+  const gs = document.getElementById('gradeScore');
+  gs.innerHTML = d.score + ' <span>/ 100</span>';
+  gs.style.color = color;
+
+  document.getElementById('gradeLabel').textContent = d.label;
+  document.getElementById('gradeLabel').style.color = color;
+
+  const industryLine = d.industry + (d.location ? ' · ' + d.location : '');
+  document.getElementById('gradeIndustry').textContent = industryLine;
+
+  // AI view
+  document.getElementById('aiViewText').textContent = d.aiView;
+
+  // Fix
+  document.getElementById('fixText').textContent = d.fix;
+  document.getElementById('gainPill').textContent = 'Potential gain: ' + d.gain;
+
+  // Show card
+  show('resultCard');
+  setDisplay('disclaimer', 'block');
+
+  // Scroll to result
+  setTimeout(() => {
+    document.getElementById('resultCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 100);
+}
+
+// Allow Enter key to submit on URL field
+document.getElementById('siteUrl').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') runAssessment();
+});
+</script>
+
+</body>
+</html>
