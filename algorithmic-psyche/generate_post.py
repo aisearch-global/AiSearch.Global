@@ -25,26 +25,43 @@ def generate_article(topic):
 
     prompt = f"""Write a 900–1,200 word article for Mindful Machines Journal on the topic: "{topic}".
 
-The blog explores how AI and psychology intersect — from digital therapy and ethical design to the
-future of mind-machine collaboration and mental health. Its voice is reflective, interdisciplinary,
-and slightly literary: it takes ideas seriously without being academic, and it treats the reader as
-someone genuinely curious about both technology and the human mind.
+VOICE AND STYLE — this is the most important part:
+The blog's existing posts read like this: long, flowing sentences that build an idea across a
+paragraph rather than firing one punchy line after another. The tone is warm and intellectually
+honest — the kind of writing that treats the reader as a thoughtful friend, not a student.
+It is curious rather than authoritative. It admits uncertainty. It does not lecture.
 
-Requirements:
-1. Ground the piece in the specific topic — don't drift into generic AI commentary.
-2. Include real citations and source links inline using <a href="..."> tags.
-3. Use subheadings (<h2>) to break up the piece naturally — not as a formulaic skeleton.
-4. Output raw Blogger-compatible HTML only (<h2>, <p>, <ul>, <blockquote>, <a>, etc.).
-5. Do not wrap output in markdown code fences. Do not include an <h1> — Blogger renders the title separately.
-6. End with a short paragraph that opens a question or invites reflection — consistent with the blog's ethos."""
+Mirror these specific qualities:
+- Open with a specific observation, image, or question — never a broad generalisation like
+  "In today's world, AI is changing everything." Drop the reader into a thought already in progress.
+- Build ideas outward from a central question, not downward through a list of sub-points.
+- Use <h2> subheadings sparingly and only where the essay genuinely shifts direction —
+  not as a rigid skeleton every 200 words.
+- Sentences vary: some are long and clause-heavy, some short for weight. Never a monotonous rhythm.
+- Cite real research, studies, or events naturally in prose using <a href="..."> tags —
+  not as a list at the end, not in brackets, not as footnotes.
+- Do not use bullet points unless the content genuinely demands enumeration.
+- Close with a paragraph that opens outward — a question, an unresolved tension, an invitation
+  to keep thinking. Not a summary. Not "In conclusion."
+
+CONTENT:
+Ground the piece tightly in "{topic}". Do not drift into generic AI commentary.
+Bring in psychology, neuroscience, philosophy of mind, or mental health research where relevant.
+Aim for 900–1,200 words.
+
+FORMAT:
+Output raw Blogger-compatible HTML only: <h2>, <p>, <ul>, <blockquote>, <a>, <em>, <strong>.
+No markdown. No code fences. No <h1> — Blogger renders the title separately."""
 
     response = client.messages.create(
         model="claude-opus-4-8",
-        max_tokens=4000,
+        max_tokens=4096,
         system=(
-            "You write for Mindful Machines Journal — a blog at the intersection of AI, psychology, "
-            "and mental health. Your tone is thoughtful, intellectually curious, and human. You cite "
-            "real research and real events. You do not pad word counts with generic AI boosterism."
+            "You are the writer behind Mindful Machines Journal — a blog exploring how AI and "
+            "psychology intersect. Your voice is reflective, intellectually curious, and human. "
+            "You write long-form essays, not listicles. Your sentences flow. You cite real research. "
+            "You end pieces with open questions, not summaries. You never use phrases like "
+            "'In today’s rapidly evolving landscape' or 'It’s clear that AI will transform.'"
         ),
         messages=[{"role": "user", "content": prompt}],
     )
