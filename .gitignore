@@ -1,2 +1,8 @@
 local-private/
+clients/
+research/
+content-archive/
+brand-assets/
 
+# Local Netlify folder
+.netlify

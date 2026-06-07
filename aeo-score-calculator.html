@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AEO Score Calculator | AISearch Global</title>
+<meta name="description" content="Answer 16 questions across 4 layers and get an instant AEO score from 0 to 100. See exactly which layers are weak and why AI isn't recommending your business.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://aisearch.global/aeo-score-calculator.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="AEO Score Calculator | AISearch Global">
+<meta property="og:description" content="Answer 16 questions across 4 layers and get an instant AEO score from 0 to 100. See exactly which layers are weak and why AI isn't recommending your business.">
+<meta property="og:url" content="https://aisearch.global/aeo-score-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aisearch.global/assets/images/aisearch_social_graphic_plumber.png">
+<meta property="og:site_name" content="AISearch Global">
+<meta property="og:locale" content="en_AU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AEO Score Calculator | AISearch Global">
+<meta name="twitter:description" content="Answer 16 questions across 4 layers and get an instant AEO score from 0 to 100.">
+<meta name="twitter:image" content="https://aisearch.global/assets/images/aisearch_social_graphic_plumber.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "@id": "https://aisearch.global/aeo-score-calculator.html",
+  "name": "AEO Score Calculator",
+  "description": "A 16-question calculator that scores AI visibility across entity clarity, schema markup, answer-format content, and citation consistency.",
+  "url": "https://aisearch.global/aeo-score-calculator.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AUD" },
+  "provider": { "@id": "https://aisearch.global/#organization" }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+:root {
+  --tiffany: #0ABFBC;
+  --black: #0D0E10;
+  --charcoal: #16181c;
+  --surface: #15181d;
+  --border: #2e2f33;
+  --white: #E3E8EE;
+  --silver: #95a0ad;
+  --muted: #6b7684;
+  --red: #e05252;
+  --amber: #e0a852;
+  --green: #52c98a;
+  --tiffany-glow: rgba(10,191,188,.14);
+  --fh: "Space Grotesk", sans-serif;
+  --fb: "DM Sans", sans-serif;
+  --fm: "DM Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(10,191,188,.11), transparent 30%),
+    radial-gradient(circle at top right, rgba(82,201,138,.07), transparent 28%),
+    var(--black);
+  color: var(--white);
+  font: 300 15px/1.7 var(--fb);
+}
+
+a { color: inherit; }
+button { font: inherit; cursor: pointer; }
+
+.container {
+  width: min(1040px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* header / footer injected by main.js */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(21,24,29,.97);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Page intro ── */
+.page-intro {
+  padding: 40px 0 32px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 36px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: 400 .63rem var(--fm);
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  color: var(--tiffany);
+  background: var(--tiffany-glow);
+  border: 1px solid rgba(10,191,188,.2);
+  padding: 6px 13px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.page-intro h1 {
+  font: 700 clamp(1.75rem, 4vw, 2.6rem) var(--fh);
+  letter-spacing: -.035em;
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+
+.page-intro h1 em {
+  color: var(--tiffany);
+  font-style: normal;
+}
+
+.page-intro p {
+  color: var(--silver);
+  margin: 0;
+  font-size: .95rem;
+  max-width: 52ch;
+}
+
+/* ── Two-column layout ── */
+.calc-layout {
+  display: grid;
+  grid-template-columns: 1fr 272px;
+  gap: 36px;
+  align-items: start;
+  padding-bottom: 96px;
+}
+
+/* ── Score panel (sticky) ── */
+.score-col {
+  position: sticky;
+  top: 76px;
+}
+
+.score-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 26px 22px 22px;
+}
+
+.card-label {
+  font: 400 .6rem var(--fm);
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--muted);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Gauge */
+.gauge-wrap {
+  text-align: center;
+}
+
+.gauge-wrap svg {
+  width: 196px;
+  height: 108px;
+  display: block;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.g-track {
+  fill: none;
+  stroke: var(--charcoal);
+  stroke-width: 16;
+}
+
+.g-arc {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 16;
+  stroke-linecap: round;
+  stroke-dasharray: 251;
+  stroke-dashoffset: 251;
+  transition: stroke-dashoffset .5s cubic-bezier(.4,0,.2,1), stroke .3s ease;
+}
+
+.score-center {
+  text-align: center;
+  margin-top: -2px;
+  margin-bottom: 4px;
+}
+
+.score-big {
+  display: block;
+  font: 700 3.6rem var(--fh);
+  letter-spacing: -.04em;
+  line-height: 1;
+  color: var(--tiffany);
+  transition: color .3s ease;
+}
+
+@keyframes scorePop {
+  0%   { transform: scale(1); }
+  45%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.score-pop { animation: scorePop .22s ease; }
+
+.score-denom {
+  font: 400 .62rem var(--fm);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted);
+}
+
+/* Band pill */
+.band-pill {
+  display: block;
+  text-align: center;
+  font: 700 .88rem var(--fh);
+  margin: 12px auto 0;
+  padding: 7px 14px;
+  border-radius: 6px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--border);
+  transition: color .3s ease, border-color .3s ease, background .3s ease;
+  color: var(--muted);
+}
+
+.band-pill.b-invisible  { color: var(--red);     border-color: rgba(224,82,82,.35);    background: rgba(224,82,82,.08); }
+.band-pill.b-uncertain  { color: var(--amber);   border-color: rgba(224,168,82,.35);   background: rgba(224,168,82,.08); }
+.band-pill.b-developing { color: var(--amber);   border-color: rgba(224,168,82,.35);   background: rgba(224,168,82,.08); }
+.band-pill.b-visible    { color: var(--green);   border-color: rgba(82,201,138,.35);   background: rgba(82,201,138,.08); }
+.band-pill.b-ready      { color: var(--tiffany); border-color: rgba(10,191,188,.35);   background: var(--tiffany-glow); }
+
+/* Panel divider */
+.pdiv {
+  height: 1px;
+  background: var(--border);
+  margin: 18px 0 14px;
+}
+
+/* Mini layer rows */
+.mini-label {
+  font: 400 .58rem var(--fm);
+  text-transform: uppercase;
+  letter-spacing: .13em;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.mini-layer { margin-bottom: 11px; }
+
+.mini-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.mini-name { font: 500 .76rem var(--fh); color: var(--silver); }
+.mini-val  { font: 700 .76rem var(--fh); color: var(--white); letter-spacing: -.01em; }
+
+.mini-track {
+  height: 5px;
+  background: var(--charcoal);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.mini-bar {
+  height: 100%;
+  width: 0%;
+  border-radius: inherit;
+  transition: width .4s cubic-bezier(.4,0,.2,1), background .3s ease;
+}
+
+/* Answered counter */
+.panel-count {
+  text-align: center;
+  margin-top: 16px;
+  font: 400 .62rem var(--fm);
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: var(--muted);
+}
+
+.panel-count strong { color: var(--tiffany); font-weight: 700; }
+
+/* ── Questions column ── */
+.layer-group { margin-bottom: 44px; }
+
+.layer-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.layer-num {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  background: var(--tiffany-glow);
+  border: 1px solid rgba(10,191,188,.22);
+  color: var(--tiffany);
+  font: 700 .82rem var(--fh);
+  letter-spacing: .06em;
+}
+
+.layer-info { flex: 1 1 auto; min-width: 0; }
+
+.layer-info h2 {
+  font: 700 1.05rem var(--fh);
+  letter-spacing: -.02em;
+  margin: 0 0 2px;
+  line-height: 1.2;
+}
+
+.layer-info p {
+  margin: 0;
+  font: 400 .7rem var(--fm);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--muted);
+}
+
+.layer-live-score {
+  font: 700 .82rem var(--fh);
+  color: var(--tiffany);
+  white-space: nowrap;
+  transition: color .3s ease;
+}
+
+/* Question card */
+.q-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 18px 18px 16px;
+  margin-bottom: 10px;
+  transition: border-color .2s ease;
+}
+
+.q-card.answered { border-color: rgba(10,191,188,.28); }
+
+.q-label {
+  font: 400 .58rem var(--fm);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+
+.q-text {
+  font: 500 .93rem var(--fh);
+  letter-spacing: -.01em;
+  line-height: 1.45;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+
+.q-opts {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.opt {
+  appearance: none;
+  width: 100%;
+  text-align: left;
+  background: var(--charcoal);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 10px 14px 10px 40px;
+  color: var(--silver);
+  font: 300 .85rem var(--fb);
+  line-height: 1.42;
+  transition: border-color .15s, background .15s, color .15s;
+  position: relative;
+}
+
+.opt::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: transparent;
+  transition: background .15s, border-color .15s;
+}
+
+.opt:hover {
+  border-color: rgba(10,191,188,.45);
+  background: rgba(10,191,188,.05);
+  color: var(--white);
+}
+
+.opt.selected {
+  background: rgba(10,191,188,.1);
+  border-color: var(--tiffany);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.opt.selected::before {
+  background: var(--tiffany);
+  border-color: var(--tiffany);
+}
+
+/* ── Full results block ── */
+.full-results {
+  margin-top: 8px;
+  padding: 30px;
+  background: var(--surface);
+  border: 1px solid rgba(10,191,188,.25);
+  border-radius: 12px;
+}
+
+.results-heading {
+  font: 700 1.5rem var(--fh);
+  letter-spacing: -.03em;
+  margin: 0 0 6px;
+}
+
+.results-heading em { color: var(--tiffany); font-style: normal; }
+
+.results-sub {
+  color: var(--silver);
+  font-size: .9rem;
+  margin: 0 0 26px;
+  max-width: 52ch;
+}
+
+.results-sec-label {
+  font: 400 .6rem var(--fm);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.res-row {
+  display: grid;
+  grid-template-columns: 156px 1fr 56px;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.res-name { font: 500 .86rem var(--fh); color: var(--silver); }
+
+.res-name small {
+  display: block;
+  font-family: var(--fm);
+  font-size: .56rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.res-track {
+  height: 10px;
+  background: var(--charcoal);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.res-bar {
+  height: 100%;
+  border-radius: inherit;
+  transition: width 1s cubic-bezier(.4,0,.2,1);
+}
+
+.bar-red   { background: var(--red); }
+.bar-amber { background: var(--amber); }
+.bar-green { background: var(--green); }
+.bar-tiff  { background: var(--tiffany); }
+
+.res-score { text-align: right; font: 700 .86rem var(--fh); }
+.res-score span { color: var(--muted); font-weight: 300; }
+
+/* Priority callout */
+.priority-box {
+  margin-top: 22px;
+  background: var(--charcoal);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--tiffany);
+  border-radius: 0 6px 6px 0;
+  padding: 18px 20px;
+}
+
+.priority-box strong {
+  display: block;
+  font-family: var(--fh);
+  font-size: .93rem;
+  margin-bottom: 6px;
+}
+
+.priority-box p {
+  margin: 0;
+  color: var(--silver);
+  font-size: .88rem;
+  line-height: 1.6;
+}
+
+/* CTA */
+.cta-box {
+  margin-top: 28px;
+  padding: 26px 24px;
+  background: var(--tiffany-glow);
+  border: 1px solid rgba(10,191,188,.22);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cta-box h3 {
+  font: 700 1.1rem var(--fh);
+  margin: 0 0 8px;
+  letter-spacing: -.02em;
+}
+
+.cta-box p { color: var(--silver); margin: 0 0 20px; font-size: .88rem; }
+
+.btn-primary {
+  appearance: none;
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--tiffany);
+  color: var(--black);
+  font: 700 .93rem var(--fh);
+  padding: 13px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: opacity .15s, transform .15s;
+}
+
+.btn-primary:hover { opacity: .88; transform: translateY(-1px); }
+
+.retake-row { margin-top: 18px; text-align: center; }
+
+.retake-btn {
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--silver);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: .84rem;
+  transition: border-color .15s, color .15s;
+}
+
+.retake-btn:hover { border-color: var(--tiffany); color: var(--white); }
+
+/* ── Mobile score strip ── */
+.mobile-strip {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: rgba(21,24,29,.98);
+  border-top: 1px solid var(--border);
+  padding: 11px 20px 12px;
+  backdrop-filter: blur(12px);
+}
+
+.strip-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.strip-num {
+  font: 700 2rem var(--fh);
+  color: var(--tiffany);
+  letter-spacing: -.04em;
+  line-height: 1;
+  transition: color .3s ease;
+}
+
+.strip-meta { flex: 1 1 auto; }
+
+.strip-band { font: 700 .8rem var(--fh); color: var(--silver); line-height: 1.2; }
+
+.strip-sub {
+  font: 400 .6rem var(--fm);
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: var(--muted);
+}
+
+.strip-right { text-align: right; }
+
+.strip-pct { font: 700 .85rem var(--fh); color: var(--white); }
+
+.strip-prog-label {
+  font: 400 .58rem var(--fm);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--muted);
+}
+
+.strip-track {
+  height: 3px;
+  width: 72px;
+  background: var(--charcoal);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 4px;
+  margin-left: auto;
+}
+
+.strip-fill {
+  height: 100%;
+  background: var(--tiffany);
+  border-radius: inherit;
+  transition: width .4s ease;
+  width: 0%;
+}
+
+/* ── Utilities ── */
+.hidden { display: none !important; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in { animation: fadeUp .4s ease; }
+
+/* ── Responsive ── */
+@media (max-width: 780px) {
+  .calc-layout { grid-template-columns: 1fr; }
+  .score-col { display: none; }
+  .mobile-strip { display: block; }
+  main { padding-bottom: 80px; }
+  .page-intro { padding: 28px 0 24px; }
+}
+
+@media (max-width: 540px) {
+  .res-row { grid-template-columns: 1fr 46px; }
+  .res-row .res-track { grid-column: 1 / -1; }
+  .full-results { padding: 22px 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  .score-col, .mobile-strip, .q-opts { display: none !important; }
+  .calc-layout { grid-template-columns: 1fr; }
+  body { background: #fff; color: #000; }
+}
+
+.skip-link { position: absolute; left: -9999px; top: auto; }
+.skip-link:focus {
+  left: 1rem; top: 1rem; z-index: 999;
+  background: #fff; color: #000;
+  padding: .5rem .75rem; border-radius: .25rem;
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<header></header>
+
+<main id="main">
+<div class="container">
+
+  <!-- Page intro -->
+  <div class="page-intro">
+    <div class="eyebrow"><i class="bi bi-calculator"></i> Free diagnosis tool</div>
+    <h1>How visible is your business<br>to <em>AI search</em>?</h1>
+    <p>Answer 16 questions below. Your score calculates live as you go — no submit button, no waiting.</p>
+  </div>
+
+  <!-- Two-column layout -->
+  <div class="calc-layout">
+
+    <!-- Left: all 16 questions -->
+    <div id="q-col"></div>
+
+    <!-- Right: sticky live score panel -->
+    <div class="score-col" aria-live="polite" aria-label="Your live AEO score">
+      <div class="score-card">
+        <div class="card-label">Your AEO Score — live</div>
+
+        <div class="gauge-wrap">
+          <svg viewBox="0 0 200 110" aria-hidden="true">
+            <path class="g-track" d="M 20 100 A 80 80 0 0 1 180 100"/>
+            <path class="g-arc" id="g-arc" d="M 20 100 A 80 80 0 0 1 180 100"/>
+          </svg>
+        </div>
+
+        <div class="score-center">
+          <span class="score-big" id="live-num">0</span>
+          <div class="score-denom">out of 100</div>
+        </div>
+
+        <div class="band-pill" id="band-pill">Start answering</div>
+
+        <div class="pdiv"></div>
+
+        <div class="mini-label">Layer scores</div>
+        <div id="mini-layers"></div>
+
+        <div class="panel-count"><strong id="p-count">0</strong> of 16 answered</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</main>
+
+<!-- Mobile fixed bottom strip -->
+<div class="mobile-strip" aria-live="polite" aria-label="Your live AEO score">
+  <div class="strip-inner">
+    <div class="strip-num" id="s-num">0</div>
+    <div class="strip-meta">
+      <div class="strip-band" id="s-band">—</div>
+      <div class="strip-sub">AEO score / 100</div>
+    </div>
+    <div class="strip-right">
+      <div class="strip-pct"><span id="s-answered">0</span>/16</div>
+      <div class="strip-prog-label">answered</div>
+      <div class="strip-track"><div class="strip-fill" id="s-fill"></div></div>
+    </div>
+  </div>
+</div>
+
+<footer></footer>
+
+<script src="/assets/js/main.js"></script>
+<script>
+/* ─────────────────────────────
+   DATA
+───────────────────────────── */
+const LAYERS = [
+  {
+    id: 1,
+    title: 'Entity Clarity',
+    desc: 'Can AI unambiguously identify who you are?',
+    qs: [
+      {
+        text: 'Is your business name spelled exactly the same everywhere online?',
+        opts: [
+          { label: 'Yes — identical across every platform', pts: 7 },
+          { label: 'Mostly consistent, with minor variations', pts: 4 },
+          { label: 'Inconsistent across different platforms', pts: 0 }
+        ]
+      },
+      {
+        text: 'Does your Google Business Profile exist and show the correct suburb — not just "Greater Sydney"?',
+        opts: [
+          { label: 'Yes — claimed, complete and accurate', pts: 6 },
+          { label: 'Claimed but some information is missing or outdated', pts: 3 },
+          { label: "Not claimed or doesn't exist", pts: 0 }
+        ]
+      },
+      {
+        text: 'Is your phone number identical on your website, Google Maps, Facebook, and Yellow Pages?',
+        opts: [
+          { label: 'Yes — identical everywhere', pts: 6 },
+          { label: 'Mostly the same, one or two places differ', pts: 3 },
+          { label: 'Different across platforms', pts: 0 }
+        ]
+      },
+      {
+        text: 'Does your service area or location match consistently across your website, Google Maps, and directories?',
+        opts: [
+          { label: 'Yes — consistent suburbs or regions everywhere', pts: 6 },
+          { label: 'Mostly consistent, some variation', pts: 3 },
+          { label: 'Different locations listed in different places', pts: 0 }
+        ]
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: 'Schema Markup',
+    desc: "Can AI read your business data directly from your code?",
+    qs: [
+      {
+        text: "When you test your homepage in Google's Rich Results Test, do you see LocalBusiness schema?",
+        opts: [
+          { label: 'Yes — LocalBusiness schema is present', pts: 7 },
+          { label: 'Other schema is present, but not LocalBusiness', pts: 3 },
+          { label: 'No schema appears when I test it', pts: 0 }
+        ]
+      },
+      {
+        text: 'Do your service pages include Service schema markup?',
+        opts: [
+          { label: 'Yes — all or most service pages have it', pts: 6 },
+          { label: 'Some service pages have it', pts: 3 },
+          { label: 'No service pages have Service schema', pts: 0 }
+        ]
+      },
+      {
+        text: 'If you have an FAQ section, does it use FAQPage schema markup?',
+        opts: [
+          { label: 'Yes — FAQPage schema is in the code', pts: 6 },
+          { label: 'FAQ section exists but has no schema', pts: 3 },
+          { label: 'No FAQ section on my site', pts: 0 }
+        ]
+      },
+      {
+        text: "Has your web developer confirmed that Organization or LocalBusiness schema is embedded in your site's code?",
+        opts: [
+          { label: 'Yes — confirmed', pts: 6 },
+          { label: 'Not sure or unclear', pts: 3 },
+          { label: 'No', pts: 0 }
+        ]
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: 'Answer-Format Content',
+    desc: 'Does your content directly answer the questions customers ask?',
+    qs: [
+      {
+        text: 'Can someone immediately tell what you do and exactly where you serve from your homepage?',
+        opts: [
+          { label: "Yes — it's crystal clear", pts: 7 },
+          { label: 'Somewhat clear but vague in places', pts: 4 },
+          { label: 'Not clear — heavy on marketing language', pts: 0 }
+        ]
+      },
+      {
+        text: 'Do your service pages answer specific questions like "What suburbs do you serve?" or "Do you handle emergency work?"',
+        opts: [
+          { label: 'Yes — most service pages answer specific questions', pts: 6 },
+          { label: 'Some pages do', pts: 3 },
+          { label: "No — they're generic descriptions", pts: 0 }
+        ]
+      },
+      {
+        text: 'Do you have an FAQ section that answers real customer questions?',
+        opts: [
+          { label: 'Yes — 5 or more real Q&A pairs', pts: 6 },
+          { label: 'Yes — 2 to 4 questions', pts: 3 },
+          { label: 'No FAQ section', pts: 0 }
+        ]
+      },
+      {
+        text: 'Does your content avoid vague phrases like "quality service" and "passionate team" in favour of specific, factual details?',
+        opts: [
+          { label: 'Yes — mostly specific and factual', pts: 6 },
+          { label: 'Mix of specific and marketing language', pts: 3 },
+          { label: 'Heavy on marketing language throughout', pts: 0 }
+        ]
+      }
+    ]
+  },
+  {
+    id: 4,
+    title: 'Citation Consistency',
+    desc: 'Can AI cross-reference and verify you across multiple sources?',
+    qs: [
+      {
+        text: 'Are you listed on Google Maps with complete, accurate information?',
+        opts: [
+          { label: 'Yes — claimed and complete', pts: 7 },
+          { label: 'Listed but some information is missing', pts: 3 },
+          { label: 'Not listed or not claimed', pts: 0 }
+        ]
+      },
+      {
+        text: 'Are you listed on Yellow Pages and/or True Local with a consistent business name and phone number?',
+        opts: [
+          { label: 'Yes — on both with consistent information', pts: 6 },
+          { label: 'On one only, or information varies slightly', pts: 3 },
+          { label: 'Not listed on either', pts: 0 }
+        ]
+      },
+      {
+        text: 'Do you have genuine customer reviews on Google, Facebook, or an industry directory?',
+        opts: [
+          { label: 'Yes — reviews across multiple platforms', pts: 6 },
+          { label: 'Reviews on one platform only', pts: 3 },
+          { label: 'No reviews anywhere', pts: 0 }
+        ]
+      },
+      {
+        text: 'Is your business name, address, and phone number consistent across all directories you appear in?',
+        opts: [
+          { label: 'Yes — consistent everywhere', pts: 6 },
+          { label: 'Mostly consistent, a few small differences', pts: 3 },
+          { label: 'Inconsistent across directories', pts: 0 }
+        ]
+      }
+    ]
+  }
+];
+
+const BANDS = [
+  { min: 0,  max: 24,  name: 'AI Invisible',  cls: 'b-invisible',  col: 'var(--red)',     desc: "AI systems can't reliably identify your business. Layers 1 and 2 need immediate attention before anything else." },
+  { min: 25, max: 49,  name: 'AI Uncertain',  cls: 'b-uncertain',  col: 'var(--amber)',   desc: "AI can find you but lacks the confidence to recommend you. Mixed or incomplete signals are causing it to skip you." },
+  { min: 50, max: 74,  name: 'AI Developing', cls: 'b-developing', col: 'var(--amber)',   desc: "Your foundation is partly in place. Targeted work on your weakest layers will move the needle quickly." },
+  { min: 75, max: 89,  name: 'AI Visible',    cls: 'b-visible',    col: 'var(--green)',   desc: "Strong foundation. Refining citation and content layers will push you into the top tier." },
+  { min: 90, max: 100, name: 'AI Ready',      cls: 'b-ready',      col: 'var(--tiffany)', desc: "Excellent AI visibility. You're in the top tier — focus on maintaining consistency and monitoring platform changes." }
+];
+
+/* ─────────────────────────────
+   STATE
+───────────────────────────── */
+const answers = {};
+let resultsShown = false;
+
+/* ─────────────────────────────
+   RENDER
+───────────────────────────── */
+(function render() {
+  const col  = document.getElementById('q-col');
+  const mini = document.getElementById('mini-layers');
+
+  LAYERS.forEach(function(layer) {
+    var grp = document.createElement('div');
+    grp.className = 'layer-group';
+    grp.innerHTML =
+      '<div class="layer-head">' +
+        '<div class="layer-num">' + String(layer.id).padStart(2, '0') + '</div>' +
+        '<div class="layer-info">' +
+          '<h2>' + layer.title + '</h2>' +
+          '<p>' + layer.desc + '</p>' +
+        '</div>' +
+        '<div class="layer-live-score" id="ll-' + layer.id + '">0 / 25</div>' +
+      '</div>';
+
+    layer.qs.forEach(function(q, qi) {
+      var key  = layer.id + '-' + qi;
+      var card = document.createElement('div');
+      card.className = 'q-card';
+      card.id = 'qc-' + key;
+
+      var optHtml = q.opts.map(function(o, oi) {
+        return '<button class="opt" type="button"' +
+          ' data-key="' + key + '" data-pts="' + o.pts + '" data-oi="' + oi + '"' +
+          ' onclick="pick(\'' + key + '\',' + o.pts + ',this)"' +
+          ' aria-pressed="false">' + o.label + '</button>';
+      }).join('');
+
+      card.innerHTML =
+        '<div class="q-label">Q' + layer.id + '.' + (qi + 1) + '</div>' +
+        '<div class="q-text">' + q.text + '</div>' +
+        '<div class="q-opts">' + optHtml + '</div>';
+
+      grp.appendChild(card);
+    });
+
+    col.appendChild(grp);
+
+    /* mini panel entry */
+    var m = document.createElement('div');
+    m.className = 'mini-layer';
+    m.innerHTML =
+      '<div class="mini-top">' +
+        '<div class="mini-name">' + layer.title + '</div>' +
+        '<div class="mini-val" id="mv-' + layer.id + '">0 / 25</div>' +
+      '</div>' +
+      '<div class="mini-track">' +
+        '<div class="mini-bar" id="mb-' + layer.id + '"></div>' +
+      '</div>';
+    mini.appendChild(m);
+  });
+
+  /* results block at bottom of q-col */
+  var res = document.createElement('div');
+  res.id = 'full-res';
+  res.className = 'full-results hidden';
+  col.appendChild(res);
+})();
+
+/* ─────────────────────────────
+   PICK
+───────────────────────────── */
+function pick(key, pts, btn) {
+  document.querySelectorAll('.opt[data-key="' + key + '"]').forEach(function(b) {
+    b.classList.remove('selected');
+    b.setAttribute('aria-pressed', 'false');
+  });
+  btn.classList.add('selected');
+  btn.setAttribute('aria-pressed', 'true');
+  document.getElementById('qc-' + key).classList.add('answered');
+  answers[key] = pts;
+  refresh();
+}
+
+/* ─────────────────────────────
+   SCORE HELPERS
+───────────────────────────── */
+function layerScore(id) {
+  return LAYERS[id - 1].qs.reduce(function(s, _, qi) {
+    return s + (answers[id + '-' + qi] || 0);
+  }, 0);
+}
+
+function totalScore() {
+  return LAYERS.reduce(function(s, l) { return s + layerScore(l.id); }, 0);
+}
+
+function answeredCount() { return Object.keys(answers).length; }
+
+function getBand(score) {
+  return BANDS.find(function(b) { return score >= b.min && score <= b.max; }) || BANDS[0];
+}
+
+function barClass(score) {
+  if (score >= 20) return 'bar-tiff';
+  if (score >= 14) return 'bar-green';
+  if (score >= 8)  return 'bar-amber';
+  return 'bar-red';
+}
+
+/* ─────────────────────────────
+   REFRESH DISPLAY
+───────────────────────────── */
+function refresh() {
+  var t    = totalScore();
+  var c    = answeredCount();
+  var band = getBand(t);
+
+  /* big number */
+  var numEl = document.getElementById('live-num');
+  numEl.textContent = t;
+  numEl.style.color = c > 0 ? band.col : 'var(--tiffany)';
+  numEl.classList.remove('score-pop');
+  void numEl.offsetWidth; /* reflow */
+  numEl.classList.add('score-pop');
+
+  /* gauge arc */
+  var arc = document.getElementById('g-arc');
+  arc.style.strokeDashoffset = c > 0 ? (251 * (1 - t / 100)).toFixed(2) : '251';
+  arc.style.stroke = c > 0 ? band.col : 'var(--border)';
+
+  /* band pill */
+  var pill = document.getElementById('band-pill');
+  pill.textContent = c > 0 ? band.name : 'Start answering';
+  pill.className   = 'band-pill' + (c > 0 ? ' ' + band.cls : '');
+
+  /* panel count */
+  document.getElementById('p-count').textContent = c;
+
+  /* mini layers + layer live scores */
+  LAYERS.forEach(function(l) {
+    var s   = layerScore(l.id);
+    var pct = (s / 25 * 100).toFixed(1) + '%';
+    var bar = document.getElementById('mb-' + l.id);
+    bar.style.width = pct;
+    bar.className   = 'mini-bar ' + barClass(s);
+    document.getElementById('mv-' + l.id).textContent = s + ' / 25';
+    document.getElementById('ll-' + l.id).textContent = s + ' / 25';
+  });
+
+  /* mobile strip */
+  var sNum = document.getElementById('s-num');
+  sNum.textContent  = t;
+  sNum.style.color  = c > 0 ? band.col : 'var(--tiffany)';
+  document.getElementById('s-band').textContent     = c > 0 ? band.name : '—';
+  document.getElementById('s-answered').textContent = c;
+  document.getElementById('s-fill').style.width     = (c / 16 * 100).toFixed(1) + '%';
+
+  if (c === 16 && !resultsShown) {
+    resultsShown = true;
+    showResults(t, band);
+  }
+}
+
+/* ─────────────────────────────
+   RESULTS
+───────────────────────────── */
+function showResults(t, band) {
+  var el     = document.getElementById('full-res');
+  var scores = [1, 2, 3, 4].map(function(id) { return { id: id, score: layerScore(id) }; });
+  var names  = ['Entity Clarity', 'Schema Markup', 'Answer-Format Content', 'Citation Consistency'];
+
+  var rows = scores.map(function(l, i) {
+    var pct = (l.score / 25 * 100).toFixed(1) + '%';
+    return '<div class="res-row">' +
+      '<div class="res-name">' + names[i] + '<small>Layer 0' + l.id + '</small></div>' +
+      '<div class="res-track"><div class="res-bar ' + barClass(l.score) + '" style="width:' + pct + '"></div></div>' +
+      '<div class="res-score">' + l.score + '<span>/25</span></div>' +
+      '</div>';
+  }).join('');
+
+  el.className = 'full-results fade-in';
+  el.innerHTML =
+    '<div class="results-heading">Your score: <em>' + t + ' / 100</em></div>' +
+    '<p class="results-sub">' + band.name + ' — ' + band.desc + '</p>' +
+    '<div class="results-sec-label">Layer breakdown</div>' +
+    rows +
+    '<div class="priority-box">' +
+      '<strong>Where to focus next</strong>' +
+      '<p>' + getPriority(scores) + '</p>' +
+    '</div>' +
+    '<div class="cta-box">' +
+      '<h3>Want a personalised action plan?</h3>' +
+      '<p>The AI Visibility Audit maps every gap and produces a prioritised fix list — layer by layer, specific to your business and industry.</p>' +
+      '<a href="/#contact" class="btn-primary"><i class="bi bi-arrow-right"></i> Book an AI Visibility Audit</a>' +
+    '</div>' +
+    '<div class="retake-row"><button class="retake-btn" type="button" onclick="retake()">Start over</button></div>';
+
+  setTimeout(function() {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 200);
+}
+
+function getPriority(scores) {
+  var weak = scores.filter(function(l) { return l.score < 15; }).map(function(l) { return l.id; });
+  var names = { 1: 'Entity Clarity', 2: 'Schema Markup', 3: 'Answer-Format Content', 4: 'Citation Consistency' };
+
+  if (weak.length === 0) {
+    return 'Strong across all four layers. Maintain consistency, keep directories up to date, and monitor for AI platform changes.';
+  }
+
+  var foundational = weak.filter(function(id) { return id === 1 || id === 2; });
+  if (foundational.length > 0) {
+    var list = foundational.map(function(id) { return names[id] + ' (Layer ' + id + ')'; }).join(' and ');
+    return 'Start with ' + list + '. These are your highest-impact fixes — AI cannot confidently recommend a business it cannot clearly identify. Fix the foundation before working on content or citations.';
+  }
+
+  var list = weak.map(function(id) { return names[id] + ' (Layer ' + id + ')'; }).join(' and ');
+  return 'Focus on ' + list + ' to build on your existing foundation and push into the AI Visible range.';
+}
+
+/* ─────────────────────────────
+   RETAKE
+───────────────────────────── */
+function retake() {
+  Object.keys(answers).forEach(function(k) { delete answers[k]; });
+  resultsShown = false;
+
+  document.querySelectorAll('.opt').forEach(function(b) {
+    b.classList.remove('selected');
+    b.setAttribute('aria-pressed', 'false');
+  });
+  document.querySelectorAll('.q-card').forEach(function(c) { c.classList.remove('answered'); });
+
+  var res = document.getElementById('full-res');
+  res.className = 'full-results hidden';
+  res.innerHTML = '';
+
+  var numEl = document.getElementById('live-num');
+  numEl.textContent = '0';
+  numEl.style.color = 'var(--tiffany)';
+
+  var arc = document.getElementById('g-arc');
+  arc.style.strokeDashoffset = '251';
+  arc.style.stroke = 'var(--border)';
+
+  var pill = document.getElementById('band-pill');
+  pill.textContent = 'Start answering';
+  pill.className   = 'band-pill';
+
+  document.getElementById('p-count').textContent    = '0';
+  document.getElementById('s-num').textContent      = '0';
+  document.getElementById('s-num').style.color      = 'var(--tiffany)';
+  document.getElementById('s-band').textContent     = '—';
+  document.getElementById('s-answered').textContent = '0';
+  document.getElementById('s-fill').style.width     = '0%';
+
+  LAYERS.forEach(function(l) {
+    var bar = document.getElementById('mb-' + l.id);
+    bar.style.width = '0%';
+    bar.className   = 'mini-bar';
+    document.getElementById('mv-' + l.id).textContent = '0 / 25';
+    document.getElementById('ll-' + l.id).textContent = '0 / 25';
+  });
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
