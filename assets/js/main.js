@@ -24,7 +24,7 @@
     + '<li><a href="/#services">Services</a></li>'
     + '<li><a href="/about/">About</a></li>'
     + '<li><a href="/insights/">Insights</a></li>'
-    + '<li><a href="/#contact" class="cta-link">Check Visibility</a></li>'
+    + '<li><a href="/ai-visibility-checker.html" class="cta-link">Free AI Check</a></li>'
     + '</ul></div>';
 
   var header = document.querySelector('header');
