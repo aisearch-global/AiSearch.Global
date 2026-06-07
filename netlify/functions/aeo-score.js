@@ -14,6 +14,7 @@ const INDUSTRY_KEYWORDS = {
   'SaaS / Technology':          ['software', 'platform', 'saas', 'app', 'digital', 'solution', 'cloud', 'automation', 'integration'],
   'Hospitality / Food':         ['restaurant', 'cafe', 'food', 'hospitality', 'dining', 'menu', 'kitchen', 'bar', 'eatery', 'catering'],
   'Professional Services':      ['consult', 'accountant', 'advisory', 'management', 'professional service', 'chartered', 'bookkeep'],
+  'Personal Brand':             ['personal brand', 'founder', 'speaker', 'author', 'creator', 'coach', 'consultant', 'expert', 'influencer', 'public figure'],
   'Other':                      [],
 };
 
@@ -119,12 +120,101 @@ function grade(s) {
 }
 
 function aiView(s) {
-  if (s >= 90) return 'AI search engines have a strong, clear understanding of your business. Your site is structured to be cited confidently in AI-generated answers.';
-  if (s >= 80) return 'AI can clearly identify your business and what you do. Your site has solid foundations — a few targeted improvements will push you into the top tier.';
-  if (s >= 70) return 'AI can understand your business basics, but your site has limited answer-style content and authority signals that reduce your citation rate.';
-  if (s >= 60) return 'AI has a partial picture of your business. Gaps in structured data, FAQ content, or entity clarity are reducing the likelihood of AI recommendations.';
-  if (s >= 40) return 'AI struggles to clearly identify and describe your business. Multiple important signals are missing, making citations in AI-generated answers unlikely.';
-  return              'AI search engines have very limited visibility into your business. Critical signals are missing across several key areas — citations from platforms like ChatGPT or Perplexity are unlikely.';
+  if (s >= 90) return 'Based on the public signals we found, AI systems are likely to understand your business very clearly. Your site is well structured for confident recommendations and citations.';
+  if (s >= 80) return 'Based on the public signals we found, AI systems can probably identify your business and what you do. A few targeted improvements would move you into the top tier.';
+  if (s >= 70) return 'Based on the public signals we found, AI systems can understand the basics of your business, but limited answer-style content and authority signals may reduce citations.';
+  if (s >= 60) return 'Based on the public signals we found, AI systems have a partial picture of your business. Gaps in structured data, FAQ content, or entity clarity are limiting visibility.';
+  if (s >= 40) return 'Based on the public signals we found, AI systems may struggle to clearly identify and describe your business. Several important signals are still missing.';
+  return              'Based on the public signals we found, AI systems have very limited visibility into your business. Critical signals are missing, so recommendations are unlikely.';
+}
+
+function mentionProbability(score) {
+  return Math.max(8, Math.min(96, Math.round(score * 0.92)));
+}
+
+function surfaceProfile(parsed) {
+  const host = (parsed.hostname || '').toLowerCase();
+  const href = (parsed.href || '').toLowerCase();
+
+  if (host.includes('instagram.com')) {
+    return {
+      type: 'social profile',
+      label: 'Instagram',
+      bonus: 35,
+      note: 'Social profiles can be surfaced more easily because they are visible branded entities with public engagement signals.',
+    };
+  }
+  if (host.includes('facebook.com')) {
+    return {
+      type: 'social profile',
+      label: 'Facebook',
+      bonus: 30,
+      note: 'Social profiles can rank well in AI answers when they are established and frequently referenced.',
+    };
+  }
+  if (host.includes('linkedin.com')) {
+    return {
+      type: 'professional profile',
+      label: 'LinkedIn',
+      bonus: 22,
+      note: 'Professional profiles can be surfaced when AI is looking for a business owner, founder, or expert identity.',
+    };
+  }
+  if (host.includes('fresha.com') || host.includes('booksy.com') || host.includes('salonized.com') || host.includes('squareup.com')) {
+    return {
+      type: 'booking directory',
+      label: 'Directory / booking platform',
+      bonus: 12,
+      note: 'Booking and directory platforms often surface because they combine service details, location, and reputation signals.',
+    };
+  }
+  if (href.includes('/maps') || host.includes('google.com')) {
+    return {
+      type: 'maps / listing',
+      label: 'Maps / listing surface',
+      bonus: 18,
+      note: 'Maps and listing surfaces can appear in local AI answers because they strongly reinforce proximity and trust.',
+    };
+  }
+
+  return {
+    type: 'owned website',
+    label: 'Website',
+    bonus: 0,
+    note: 'Owned sites are judged mainly on their on-page clarity, schema, FAQs, and trust signals.',
+  };
+}
+
+function recommendationLikelihood(score, bonus) {
+  return Math.max(8, Math.min(100, Math.round(score + bonus)));
+}
+
+function benchmark(score, industry) {
+  const industryAverageByGroup = {
+    'Roofing / Construction': 57,
+    'Hair & Beauty': 54,
+    'Healthcare / Allied Health': 61,
+    'Legal Services': 63,
+    'Real Estate': 58,
+    'Finance / Mortgage Broker': 60,
+    'Education / Coaching': 56,
+    'E-commerce': 55,
+    'Local Trade Services': 58,
+    'SaaS / Technology': 64,
+    'Hospitality / Food': 53,
+    'Professional Services': 62,
+    'Personal Brand': 59,
+    'Other': 55,
+  };
+
+  const industryAverage = industryAverageByGroup[industry] || 58;
+  const topPerformer = Math.min(96, Math.max(industryAverage + 22, 86));
+
+  return {
+    industryAverage,
+    topPerformer,
+    gapToAverage: score - industryAverage,
+  };
 }
 
 function topFix(signals, s) {
@@ -214,6 +304,9 @@ exports.handler = async function (event) {
   const total     = score(signals);
   const gradeInfo = grade(total);
   const { fix, gain } = topFix(signals, total);
+  const benchmarkInfo = benchmark(total, industry);
+  const surfaceInfo = surfaceProfile(parsed);
+  const recommendationScore = recommendationLikelihood(total, surfaceInfo.bonus);
 
   return {
     statusCode: 200,
@@ -227,7 +320,16 @@ exports.handler = async function (event) {
       color:    gradeInfo.color,
       label:    gradeInfo.label,
       aiView:   aiView(total),
+      aiSnapshot: aiView(total),
+      mentionProbability: mentionProbability(total),
+      recommendationLikelihood: recommendationScore,
+      surfaceType: surfaceInfo.type,
+      surfaceLabel: surfaceInfo.label,
+      surfaceBonus: surfaceInfo.bonus,
+      surfaceNote: surfaceInfo.note,
+      benchmark: benchmarkInfo,
       fix,
+      quickFix: fix,
       gain,
     }),
   };
