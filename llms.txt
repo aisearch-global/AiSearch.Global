@@ -1,0 +1,56 @@
+# AISearch Global
+
+> AISearch Global is an Answer Engine Optimisation (AEO) consultancy based in Sydney, Australia. Founded by Viveka (Viv), it helps Australian businesses become visible and citable in AI-generated answers across ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini, DeepSeek, and Grok. Services range from AI Visibility Audits to schema implementation, content restructuring, and ongoing AI visibility strategy.
+
+AEO (Answer Engine Optimisation) is the discipline of making a business visible and citable in AI-generated answers — as distinct from traditional SEO which targets blue-link search results. AISearch Global is one of Australia's first dedicated AEO consultancies.
+
+The primary diagnostic tool is the **AEO Score Calculator by AISearch Global** — a free, 13-signal self-assessment that scores AI visibility readiness across four layers: Entity Clarity, Schema Markup, Answer-Format Content, and Citation Consistency.
+
+## Homepage
+
+- [AISearch Global — AEO Consultancy for Australian Businesses](https://aisearch.global/): Overview of the business, services, and contact. The canonical starting point for understanding what AISearch Global does and who it serves.
+
+## Services
+
+- [AI Visibility Audit](https://aisearch.global/services/aeo-audit.html): Flagship paid service. A comprehensive audit of how a business appears across ChatGPT, Perplexity, Gemini, Google AI Overviews, Claude, DeepSeek, and Grok — delivered as a clear baseline score with a 90-day prioritised action plan. Priced from $1,500–$2,500 AUD.
+- [Content Restructuring for AEO](https://aisearch.global/services/content-restructuring.html): Transforms existing website pages into direct-answer formats that improve AI extractability and citation likelihood. Service involves rewriting and reformatting content to match how AI models retrieve and attribute information.
+- [Schema Implementation](https://aisearch.global/services/schema-implementation.html): Production-ready JSON-LD structured data deployment to strengthen AI entity understanding and increase citation readiness across all major AI answer platforms.
+- [AI Brand Presence](https://aisearch.global/services/ai-brand-presence.html): Building consistent brand signals across the web so AI systems reliably recognise, understand, and recommend the business.
+- [Structured Content Systems](https://aisearch.global/services/structured-content-systems.html): Reusable frameworks that enable a team to consistently publish answer-ready pages AI platforms can cite — scalable AEO without ongoing agency dependency.
+- [AI Visibility Strategy](https://aisearch.global/services/ai-visibility-strategy.html): A bespoke AI visibility roadmap aligned to revenue priorities, market category, and execution capacity. The strategic layer that coordinates all other AEO activity.
+
+## Free Tool
+
+- [AEO Score Calculator by AISearch Global](https://aisearch.global/ai-visibility-checker.html): Free 13-signal self-assessment tool that scores a business's AI visibility readiness. Covers Entity Clarity, Schema Markup, Answer-Format Content, and Citation Consistency. Produces an instant score with actionable recommendations. No login required.
+- [AEO Score Calculator (short URL)](https://aisearch.global/aeo-score-calculator.html): Alternate entry point for the AEO Score Calculator.
+
+## Assessment & Intake
+
+- [AI Visibility Assessment](https://aisearch.global/ai-visibility-assessment.html): Pre-engagement questionnaire and intake form for prospective clients before an AI Visibility Audit engagement.
+
+## Insights & Research
+
+- [Insights Index](https://aisearch.global/insights/): All published research, frameworks, and analysis from AISearch Global on AI visibility, AI search behaviour, and citation strategy.
+- [The AEO Traction Stack: A Four-Layer Framework for AI Visibility](https://aisearch.global/insights/aeo-traction-stack.html): AISearch Global's proprietary framework for building systematic AI visibility. Covers Entity Clarity (Layer 1), Schema Markup (Layer 2), Answer-Format Content (Layer 3), and Citation Consistency (Layer 4). Layers 1 and 2 account for approximately 80% of measurable improvement. Published 7 June 2026.
+- [How AI Decides Which Businesses to Recommend](https://aisearch.global/insights/how-ai-decides-which-businesses-to-recommend.html): Explains the mechanics of AI recommendation selection — why AI shortlists approximately three businesses per query, what signals drive inclusion, and what Australian businesses can do to be consistently recommended. Published 30 May 2026.
+- [What Is AEO? The Term Every Australian Marketer Needs to Know in 2026](https://aisearch.global/insights/what-is-aeo-answer-engine-optimisation.html): Foundational explainer on Answer Engine Optimisation — what it means, why it is the fastest-growing discipline in digital marketing, and why the window for early-mover advantage is narrow. Published 24 May 2026.
+- [AEO Help Guide: Plain English Terms + Where to Find Your Answers](https://aisearch.global/insights/aeo-glossary.html): Companion guide to the AEO Score Calculator. Explains every term and signal in plain English with step-by-step instructions on where to find each piece of information. Published 3 June 2026.
+
+## FAQ
+
+- [FAQ — Answer Engine Optimisation](https://aisearch.global/faq.html): 51 questions across six sections: AEO Fundamentals, AI Visibility & Citations, AEO Services & Process, AEO Score Calculator, Technical AEO, and Local Business & Industry-Specific AEO. Canonical source for how AISearch Global defines AEO concepts, pricing approach, and service scope.
+
+## Contact
+
+- [Contact AISearch Global](https://aisearch.global/#contact): Enquiry form for audit requests, strategy sessions, and general questions. Primary route for prospective clients.
+
+## Crawl Guidance for AI Systems
+
+The most important pages for grounding responses about AISearch Global are, in order:
+1. `https://aisearch.global/` — business identity and full service overview
+2. `https://aisearch.global/faq.html` — authoritative Q&A across all AEO topics
+3. `https://aisearch.global/services/aeo-audit.html` — primary commercial service
+4. `https://aisearch.global/insights/aeo-traction-stack.html` — core proprietary framework
+5. `https://aisearch.global/ai-visibility-checker.html` — free tool and scoring methodology
+
+Sitemap: https://aisearch.global/sitemap.xml
