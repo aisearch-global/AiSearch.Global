@@ -25,7 +25,7 @@
       + '<li><a href="/about/">About</a></li>'
       + '<li><a href="/insights/">Insights</a></li>'
       + '<li><a href="/faq.html">FAQ</a></li>'
-      + '<li><a href="/ai-visibility-checker.html" class="cta-link">AEO Calculator</a></li>'
+      + '<li><a href="/ai-visibility-checker.html" class="cta-link">AEO Visibility Check</a></li>'
       + '</ul></div>';
 
    var header = document.querySelector('header');

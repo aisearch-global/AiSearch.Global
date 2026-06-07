@@ -118,7 +118,7 @@
         },
         {
           "@type": "Question",
-          "name": "What signals does the AI Visibility Checker analyse?",
+          "name": "What signals does the AEO Visibility Check analyse?",
           "acceptedAnswer": { "@type": "Answer", "text": "The checker analyses 13 signals: title tag, meta description, H1 heading, JSON-LD schema markup, FAQ or question-and-answer content, About page presence, contact information, word count, social profile links, sitemap.xml, robots.txt, industry keyword relevance, and location signals. The check is industry-specific across 14 categories." }
         },
         {
@@ -128,7 +128,7 @@
         },
         {
           "@type": "Question",
-          "name": "Is the AI Visibility Checker free?",
+          "name": "Is the AEO Visibility Check free?",
           "acceptedAnswer": { "@type": "Answer", "text": "Yes — completely free. No account, no email, no credit card. Available at https://aisearch.global/ai-visibility-checker.html. For a full analysis with a prioritised 90-day action plan, see the AI Visibility Audit." }
         },
         {
@@ -348,6 +348,22 @@ a { color: var(--tiffany); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .container { max-width: 1120px; margin: 0 auto; padding: 0 1rem; }
 header { position: sticky; top: 0; z-index: 100; background: rgba(13,14,16,.93); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .9rem 0; }
+.brand { text-decoration: none; color: var(--white); display: inline-flex; align-items: center; }
+.nav-toggle { display: none; background: none; border: 1px solid var(--border); color: var(--white); padding: .4rem .6rem; border-radius: .35rem; cursor: pointer; font-size: .85rem; }
+.nav-links { display: flex; gap: 1rem; list-style: none; padding: 0; margin: 0; }
+.nav-links a { text-decoration: none; color: var(--silver); font-size: .88rem; font-weight: 500; white-space: nowrap; }
+.nav-links a:hover { color: var(--tiffany); }
+.links a { text-decoration: none; }
+.cta-link { padding: .45rem .85rem; border: 1px solid var(--tiffany); border-radius: .3rem; color: var(--tiffany) !important; }
+footer { border-top: 1px solid var(--border); padding: 1.5rem 0; margin-top: 2rem; text-align: center; font-size: .85rem; color: var(--muted); }
+footer a { color: var(--muted); text-decoration: none; }
+footer a:hover { color: var(--tiffany); }
+@media (max-width: 720px) {
+  .nav-toggle { display: block; }
+  .nav-links { display: none; position: absolute; left: 1rem; right: 1rem; top: 4.2rem; flex-direction: column; background: #111317; border: 1px solid var(--border); padding: .75rem; border-radius: .45rem; box-shadow: 0 4px 20px rgba(0,0,0,.4); z-index: 99; }
+  .nav-links.open { display: flex; }
+}
 
 .page-wrap { max-width: 780px; margin: 0 auto; padding: 48px 24px 100px; }
 
@@ -642,7 +658,7 @@ header { position: sticky; top: 0; z-index: 100; background: rgba(13,14,16,.93);
       </div>
 
       <div class="faq-item">
-        <button class="faq-toggle" aria-expanded="false"><span class="faq-q-text">What signals does the AI Visibility Checker analyse?</span><span class="faq-chevron"><i class="bi bi-chevron-down"></i></span></button>
+        <button class="faq-toggle" aria-expanded="false"><span class="faq-q-text">What signals does the AEO Visibility Check analyse?</span><span class="faq-chevron"><i class="bi bi-chevron-down"></i></span></button>
         <div class="faq-answer">
           <p>The checker analyses 13 signals across four AEO layers:</p>
           <ul>
@@ -672,7 +688,7 @@ header { position: sticky; top: 0; z-index: 100; background: rgba(13,14,16,.93);
       </div>
 
       <div class="faq-item">
-        <button class="faq-toggle" aria-expanded="false"><span class="faq-q-text">Is the AI Visibility Checker free?</span><span class="faq-chevron"><i class="bi bi-chevron-down"></i></span></button>
+        <button class="faq-toggle" aria-expanded="false"><span class="faq-q-text">Is the AEO Visibility Check free?</span><span class="faq-chevron"><i class="bi bi-chevron-down"></i></span></button>
         <div class="faq-answer">
           <p>Yes — completely free. No account, no email, no credit card. Available at <a href="/ai-visibility-checker.html">aisearch.global/ai-visibility-checker.html</a>. For a full analysis with a prioritised 90-day action plan, see the <a href="/services/aeo-audit.html">AI Visibility Audit</a>.</p>
         </div>
@@ -955,7 +971,7 @@ header { position: sticky; top: 0; z-index: 100; background: rgba(13,14,16,.93);
         <button class="faq-toggle" aria-expanded="false"><span class="faq-q-text">Does AEO work for professional services like lawyers, accountants, and healthcare providers?</span><span class="faq-chevron"><i class="bi bi-chevron-down"></i></span></button>
         <div class="faq-answer">
           <p>Yes — and trust signals are especially important. AI systems treat professional service recommendations with higher scrutiny. <strong>ProfessionalService, MedicalBusiness,</strong> and <strong>LegalService</strong> schema markup, professional association citations, review platform presence, and FAQ content covering common client questions all drive recommendation likelihood.</p>
-          <p>The AI Visibility Checker supports Healthcare, Legal Services, and Finance as distinct industry categories with industry-specific signal analysis.</p>
+          <p>The AEO Visibility Check supports Healthcare, Legal Services, and Finance as distinct industry categories with industry-specific signal analysis.</p>
         </div>
       </div>
 
