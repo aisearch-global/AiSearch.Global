@@ -44,6 +44,7 @@ Hosted on **Cloudflare Pages** (`aisearch-global` project). Deploys automaticall
 
 AEO Calculator scoring runs on **Cloudflare Workers**: `aeo-score.aisearchglobal.workers.dev`
 - Local dev: `cd cloudflare && wrangler dev` (serves on `localhost:8787`)
+- Architecture: see [`cloudflare/ARCHITECTURE.md`](cloudflare/ARCHITECTURE.md)
 
 ```
 cloudflare/
