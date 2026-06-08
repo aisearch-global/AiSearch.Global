@@ -16,7 +16,20 @@ AISearch Global focuses exclusively on AEO, not traditional SEO. Our work helps 
 
 ## Free Diagnostic Tool
 
-- [AISearch Global AEO Calculator](/aeo-calculator.html): A free, instant AI visibility scorecard. Enter your website URL, industry, and location to receive a numeric score out of 100, a letter grade (A+ to F), an AI recommendation likelihood score, a plain-English interpretation, a highest-impact fix recommendation, and an industry benchmark comparison. Scores 13 AEO signals including title tag, meta description, H1, content depth, JSON-LD schema, FAQ content, About page, contact signals, review signals, location signals, industry keyword relevance, sitemap.xml, and robots.txt.
+- [AISearch Global AEO Calculator](/aeo-calculator.html): A free, instant AI visibility scorecard. Enter your website URL, industry, and location to receive a numeric score out of 100, a letter grade (A to F), an AI recommendation likelihood score, a plain-English interpretation, a highest-impact fix recommendation, and an industry benchmark comparison. Scores 13 AEO signals including title tag, meta description, H1, content depth, JSON-LD schema, FAQ content, About page, contact signals, review signals, location signals, industry keyword relevance, sitemap.xml, and robots.txt.
+
+## Insights
+
+- [What Is AEO? Answer Engine Optimisation Explained](/insights/what-is-aeo-answer-engine-optimisation.html): A foundational guide to Answer Engine Optimisation — what it is, how it differs from SEO, and why it matters for businesses as AI-generated answers replace traditional search results. Published 24 May 2026.
+- [How AI Decides Which Businesses to Recommend](/insights/how-ai-decides-which-businesses-to-recommend.html): An explanation of the signals, data sources, and trust factors that determine whether an AI engine recommends your business in a response. Published 30 May 2026.
+- [AEO Glossary: The Complete AEO Help Guide](/insights/aeo-glossary.html): A comprehensive glossary of AEO, AI search, and structured data terminology for Australian business owners and marketers. Published 3 Jun 2026.
+- [The AEO Traction Stack](/insights/aeo-traction-stack.html): AISearch Global's proprietary four-layer framework — Entity Clarity, Schema Markup, Answer-Format Content, Citation Consistency — for building durable AI search visibility. Published 7 Jun 2026.
+
+## Reference Pages
+
+- [FAQ — 51 AEO Questions Answered](/faq.html): 51 frequently asked questions about Answer Engine Optimisation, AI search visibility, schema markup, and working with AISearch Global.
+- [AI Visibility Assessment](/ai-visibility-assessment.html): A free intake form to assess your current AI search visibility and explore whether an AI Visibility Audit is the right next step.
+- [About AISearch Global](/about/): Background on the agency, founder, and approach to AEO.
 
 ## Corporate Identity
 
@@ -24,3 +37,8 @@ AISearch Global focuses exclusively on AEO, not traditional SEO. Our work helps 
 - Location: Sydney, New South Wales, Australia
 - Market focus: Australian businesses seeking AI search visibility
 - Contact: hello@aisearch.global
+
+## Crawl Guidance
+
+This file lists key pages and their purpose for AI crawler context.
+Full reference: https://aisearch.global/llms-full.txt

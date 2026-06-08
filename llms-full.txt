@@ -1,0 +1,170 @@
+# AISearch Global — Full Reference
+https://aisearch.global
+
+> AISearch Global is a specialist Answer Engine Optimisation (AEO) agency based in Sydney, Australia. We help Australian businesses get found, cited, and recommended inside AI-generated answers on ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews, DeepSeek, and Grok.
+
+---
+
+## About AISearch Global
+
+AISearch Global is a pure-play AEO specialist. Every other Australian digital agency treats AEO as an add-on to SEO. AISearch Global focuses on it exclusively. The agency was founded by Viveka (Viv), a Sydney-based strategist with certifications across AI, generative AI, AI ethics, psychology, and human-centred AI design.
+
+**Stage:** Active. Launched May 2026.
+**Location:** Sydney, New South Wales, Australia
+**Contact:** hello@aisearch.global
+**Website:** https://aisearch.global
+
+---
+
+## Services
+
+### AI Visibility Audit — $1,500–$2,500 AUD
+URL: /services/aeo-audit.html
+
+The primary offer. A comprehensive baseline assessment of how AI engines currently find, describe, and recommend a business. Includes a full audit of 13 AEO signals across technical structure, content, schema markup, and entity signals. Delivers a prioritised 90-day action plan with specific fixes ranked by expected visibility impact.
+
+### Content Restructuring — from $1,500 AUD
+URL: /services/content-restructuring.html
+
+Converts existing website copy into answer-ready formats optimised for Retrieval-Augmented Generation (RAG) systems and LLM extraction. Focuses on question-and-answer formatting, definition blocks, direct-answer paragraphs, and structured headings that AI engines can parse and cite.
+
+### Schema Implementation — $750–$1,500 AUD
+URL: /services/schema-implementation.html
+
+Deploys structured JSON-LD markup including Organization, LocalBusiness, FAQPage, Article, BreadcrumbList, and Service schema types. Strengthens semantic trust and machine comprehension of business identity, services, and expertise.
+
+### AI Brand Presence — $1,200–$1,800 AUD
+URL: /services/ai-brand-presence.html
+
+Builds consistent entity signals across the data sources AI engines use as grounding references — Wikipedia, Wikidata, industry directories, authoritative citations, and structured third-party mentions. Ensures AI engines correctly identify, describe, and attribute the business.
+
+### Structured Content Systems — $1,500–$2,500 AUD
+URL: /services/structured-content-systems.html
+
+Creates reusable publishing frameworks that produce machine-readable, high-utility pages at scale. Includes content templates, FAQ systems, glossary structures, and answer-format page designs that compound AI visibility over time.
+
+### AI Visibility Strategy — $2,000–$3,500 AUD
+URL: /services/ai-visibility-strategy.html
+
+Aligns an AEO optimisation roadmap with specific business revenue targets and priority market queries. Combines technical AEO, content strategy, and entity building into a cohesive plan with measurable milestones.
+
+---
+
+## Free Diagnostic Tool
+
+### AISearch Global AEO Calculator
+URL: /aeo-calculator.html
+
+A free, instant AI visibility scorecard. Enter a website URL, industry, and location to receive:
+- A numeric score out of 100
+- A letter grade (A to F) with label
+- An AI recommendation likelihood score (%)
+- A mention probability score (%)
+- A plain-English interpretation of the score
+- The single highest-impact fix with estimated point gain
+- An industry benchmark comparison (average and top performer)
+
+**13 signals scored:**
+1. Title tag present and descriptive (8 pts)
+2. Meta description present (8 pts)
+3. H1 tag present (8 pts)
+4. Word count ≥ 700 (8 pts)
+5. JSON-LD schema markup (12 pts)
+6. FAQ section present (12 pts)
+7. About page linked (8 pts)
+8. Contact page linked (8 pts)
+9. Reviews or testimonials present (8 pts)
+10. Location mentioned (6 pts)
+11. Industry keywords present (6 pts)
+12. Sitemap.xml present (4 pts)
+13. Robots.txt present (4 pts)
+Plus bonus points for trust page count, sitemap URL count, and internal link density.
+
+Scoring engine runs on Cloudflare Workers. No email required. Results are instant.
+
+---
+
+## Proprietary Framework: The AEO Traction Stack
+
+Four layers, in order of implementation priority:
+
+1. **Entity Clarity** — Ensure AI engines can correctly identify who you are, what you do, where you operate, and who you serve. Requires consistent NAP data, clear business description, and structured identity signals.
+2. **Schema Markup** — Deploy JSON-LD structured data. Organization, LocalBusiness, FAQPage, Article, and Service schemas are the highest-impact types for most Australian businesses.
+3. **Answer-Format Content** — Rewrite key pages in direct-answer format. Leads with the answer, uses question-based headings, includes definition blocks and FAQ sections. Makes content extractable by RAG systems.
+4. **Citation Consistency** — Build authoritative third-party mentions. Directories, press, industry bodies, and backlinks that corroborate your entity signals across the web.
+
+Layers 1 and 2 account for approximately 80% of achievable improvement for most businesses starting from zero.
+
+---
+
+## Published Insights
+
+### What Is AEO? Answer Engine Optimisation Explained
+URL: /insights/what-is-aeo-answer-engine-optimisation.html
+Published: 24 May 2026
+
+Foundational guide explaining what Answer Engine Optimisation is, how it differs from traditional SEO, which AI platforms are covered (ChatGPT, Gemini, Perplexity, Claude, Google AI Overviews, DeepSeek, Grok), and the core signals that drive AI search visibility. Written for Australian business owners with no prior AEO knowledge.
+
+### How AI Decides Which Businesses to Recommend
+URL: /insights/how-ai-decides-which-businesses-to-recommend.html
+Published: 30 May 2026
+
+Explains the signals, data sources, and trust factors AI engines use when selecting businesses to recommend in a generated answer. Covers entity recognition, schema markup, content extractability, citation authority, and recency signals. Includes practical implications for Australian SMBs.
+
+### AEO Glossary: The Complete AEO Help Guide
+URL: /insights/aeo-glossary.html
+Published: 3 Jun 2026
+
+Comprehensive glossary of AEO, AI search, and structured data terminology. Covers Answer Engine Optimisation, RAG (Retrieval-Augmented Generation), JSON-LD, entity signals, LLMs, AI Overviews, citation signals, FAQPage schema, and more. Designed as a reference for Australian business owners and marketers entering the AEO space.
+
+### The AEO Traction Stack
+URL: /insights/aeo-traction-stack.html
+Published: 7 Jun 2026
+
+Full explanation of AISearch Global's proprietary four-layer AEO framework. Covers each layer in detail — Entity Clarity, Schema Markup, Answer-Format Content, Citation Consistency — with implementation guidance, common mistakes, and expected impact at each layer. Includes a self-assessment checklist.
+
+---
+
+## Reference Pages
+
+### FAQ — 51 AEO Questions Answered
+URL: /faq.html
+
+51 frequently asked questions covering: what AEO is and how it differs from SEO, how AI engines decide which businesses to recommend, what schema markup does and how to implement it, what the AI Visibility Audit includes, how long AEO takes to show results, what industries benefit most, and how to work with AISearch Global.
+
+### AI Visibility Assessment
+URL: /ai-visibility-assessment.html
+
+Free intake form for businesses exploring an AI Visibility Audit. Collects website URL, industry, business description, current pain points, and contact details. No obligation. Used to assess fit and prepare a relevant audit scope.
+
+### About AISearch Global
+URL: /about/
+
+Background on the agency, the founder, the AEO-only focus, and the approach to client work. Includes founder credentials: ~50 certifications across AI, generative AI, AI ethics, psychology, mental health, human-centred AI, and leadership.
+
+### Privacy Policy
+URL: /privacy/
+
+### Terms of Service
+URL: /terms/
+
+---
+
+## Schema Implemented
+
+- `Organization` — home page
+- `ProfessionalService` — home page
+- `WebSite` — home page
+- `FAQPage` — home page and /faq.html
+- `Article` — insights articles
+- `BreadcrumbList` — insights articles
+
+---
+
+## Technical
+
+- sitemap.xml: https://aisearch.global/sitemap.xml
+- robots.txt: https://aisearch.global/robots.txt
+- llms.txt: https://aisearch.global/llms.txt
+- Hosted on Cloudflare Pages, deployed from GitHub on push to main
+- AEO Calculator scoring: Cloudflare Workers (aeo-score.aisearchglobal.workers.dev)
