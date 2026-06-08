@@ -22,7 +22,6 @@ AISearch Global focuses exclusively on AEO, not traditional SEO. Our work helps 
 
 - [What Is AEO? Answer Engine Optimisation Explained](/insights/what-is-aeo-answer-engine-optimisation.html): A foundational guide to Answer Engine Optimisation — what it is, how it differs from SEO, and why it matters for businesses as AI-generated answers replace traditional search results. Published 24 May 2026.
 - [How AI Decides Which Businesses to Recommend](/insights/how-ai-decides-which-businesses-to-recommend.html): An explanation of the signals, data sources, and trust factors that determine whether an AI engine recommends your business in a response. Published 30 May 2026.
-- [AEO Glossary: Plain English Terms](/insights/aeo-glossary.html): A plain English glossary of key AEO terms — Answer Engine Optimisation, entity clarity, schema markup, citations, and more. Published 3 Jun 2026.
 - [The AEO Traction Stack](/insights/aeo-traction-stack.html): AISearch Global's proprietary four-layer framework — Entity Clarity, Schema Markup, Answer-Format Content, Citation Consistency — for building durable AI search visibility. Published 7 Jun 2026.
 
 ## Reference Pages
