@@ -535,6 +535,42 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 .references ol li::before{content:counter(ref) '.';position:absolute;left:0;color:var(--tiffany)}
 .references ol li a{color:var(--tiffany);text-decoration:none}
 
+/* GLOSSARY SECTION */
+.glossary-section{margin-top:56px;padding-top:40px;border-top:1px solid var(--border)}
+.glossary-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:20px}
+.glossary-header h2{margin:0;font-family:var(--fh);font-size:1.15rem;font-weight:700;color:var(--tiffany)}
+.glossary-sub{font-family:var(--fb);font-size:.85rem;color:var(--muted);margin:0 0 24px;line-height:1.6}
+.pdf-btn{display:inline-flex;align-items:center;gap:7px;font-family:var(--fm);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--tiffany);background:rgba(10,191,188,.07);border:1px solid rgba(10,191,188,.25);padding:7px 14px;border-radius:3px;cursor:pointer;text-decoration:none;transition:background .15s}
+.pdf-btn:hover{background:rgba(10,191,188,.14)}
+.glossary-table{width:100%;border-collapse:collapse;font-size:.83rem;font-family:var(--fb)}
+.glossary-table thead th{background:var(--surface);border:1px solid var(--border);color:var(--tiffany);font-family:var(--fh);font-size:.68rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;padding:10px 14px;text-align:left}
+.glossary-table tbody td{background:var(--charcoal);border:1px solid var(--border);padding:11px 14px;color:var(--muted);line-height:1.6;vertical-align:top}
+.glossary-table tbody tr:nth-child(even) td{background:var(--surface)}
+.glossary-table tbody td:first-child{font-family:var(--fh);font-weight:600;color:var(--white);white-space:nowrap;width:165px}
+.glossary-table code{font-family:var(--fm);font-size:.78rem;color:var(--tiffany)}
+
+/* PRINT STYLES — glossary-only clean white PDF */
+@media print {
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  header,footer,.breadcrumb,.article-meta,.article-intro,.stat-row,.impact-viz,
+  h2:not(.glossary-heading),h3,.article p:not(.glossary-sub),.signals,.compare-table,
+  .callout,.flow-list,.impl-steps,.gantt,.milestone-timeline,.check-list,
+  .action-box,.faq,.article-cta,.references,.pdf-btn{display:none!important}
+  body{background:#fff!important;color:#1C1D20!important;font-family:Arial,sans-serif;font-size:11pt}
+  .article{max-width:100%;padding:0}
+  .glossary-section{border-top:none;margin-top:0;padding-top:0}
+  .glossary-header h2{color:#0ABFBC!important;font-size:16pt;margin-bottom:4pt}
+  .glossary-sub{color:#555!important;font-size:10pt;margin-bottom:14pt}
+  .glossary-table{width:100%;border-collapse:collapse;font-size:9.5pt}
+  .glossary-table thead th{background:#0ABFBC!important;color:#fff!important;padding:6pt 10pt;font-size:8.5pt}
+  .glossary-table tbody td{background:#fff!important;border:1px solid #ddd!important;color:#333!important;padding:7pt 10pt}
+  .glossary-table tbody tr:nth-child(even) td{background:#f7f7f7!important}
+  .glossary-table tbody td:first-child{color:#0ABFBC!important;font-weight:700}
+  .glossary-table code{color:#0ABFBC!important}
+  /* Print header */
+  .glossary-section::before{content:"AISearch Global — aisearch.global";display:block;font-size:8pt;color:#999;margin-bottom:10pt;font-family:Arial,sans-serif}
+}
+
 /* FOOTER */
 .site-footer{background:var(--charcoal);border-top:1px solid var(--border);padding:20px 48px;display:flex;justify-content:space-between;align-items:center;font-family:var(--fm);font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;flex-wrap:wrap;gap:12px}
 .site-footer a{color:var(--muted);text-decoration:none}
@@ -946,6 +982,38 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
       <p class="faq-a">Use the free <a href="/aeo-score-calculator.html" style="color:var(--tiffany);text-decoration:none;font-weight:500">AISearch Global AEO Score Calculator</a>. It fetches your live website and analyses 13 real signals — covering all four Traction Stack layers — to produce an instant score out of 100, a grade from A+ to F, and your single highest-impact fix. No email required.</p>
     </div>
   </div>
+
+  <!-- ── AEO GLOSSARY ── -->
+  <section class="glossary-section" id="aeo-glossary">
+    <div class="glossary-header">
+      <h2 class="glossary-heading">AEO Terms Reference</h2>
+      <button class="pdf-btn" onclick="window.print()" aria-label="Download glossary as PDF"><i class="bi bi-download"></i> Download as PDF</button>
+    </div>
+    <p class="glossary-sub">Every term used in this framework — plain English with enough depth for practitioners. Print or save as PDF using the button above.</p>
+    <table class="glossary-table">
+      <thead>
+        <tr><th>Term</th><th>What it means</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>AEO</td><td>Answer Engine Optimisation. Structuring your business information so AI tools — ChatGPT, Gemini, Perplexity, Google AI Overviews — confidently cite you when someone asks a relevant question. Different from SEO: you're optimising for AI extraction, not keyword ranking.</td></tr>
+        <tr><td>AI Citation</td><td>When an AI system names your business in a generated response. Unlike a search result, a citation is a direct recommendation — the AI is asserting your business is the answer. Citation frequency correlates with entity clarity, schema coverage, and answer-format content.</td></tr>
+        <tr><td>AI Visibility</td><td>How consistently your business appears across AI-generated answers on multiple platforms and query types. You can rank well on Google and still have zero AI visibility — they measure different things. AI visibility requires structured, extractable, corroborated data.</td></tr>
+        <tr><td>Answer-Format Content</td><td>Copy written as direct responses to real customer questions, not brand language. LLMs extract concise, factual answers from content structured as question → answer. Vague brand copy is invisible to AI; specific, factual answers are highly extractable.</td></tr>
+        <tr><td>Citation</td><td>A mention of your business — typically name, address, and phone (NAP) — on an external website, directory, or platform. Citations signal to both search engines and AI systems that your business has a verified real-world presence. Volume and consistency both matter.</td></tr>
+        <tr><td>Citation Consistency</td><td>NAP data (name, address, phone) being identical across every directory, listing, and social profile. Discrepancies — "St" vs "Street", different phone formats, old trading names — weaken your entity signal and reduce AI confidence in recommending you.</td></tr>
+        <tr><td>Entity</td><td>Any uniquely identifiable real-world thing — a business, person, place, product. Your business is an entity. The more consistently its attributes appear across the web, the more confidently AI can identify and recommend it without ambiguity.</td></tr>
+        <tr><td>Entity Clarity</td><td>How unambiguously AI systems can identify your business from available web data. High clarity: your name, category, location, and services are consistent and corroborated across your website, GBP, schema, and third-party mentions. Low clarity: AI recommends your competitor instead.</td></tr>
+        <tr><td>FAQPage Schema</td><td>A JSON-LD schema type that marks up a list of questions and their answers, signalling to AI crawlers that the content is structured as explicit Q&amp;A. Increases the probability your answer content is extracted and cited — particularly for "how", "what", and "does [business] offer" queries.</td></tr>
+        <tr><td>Google Business Profile</td><td>Your free Google-managed listing appearing in Maps and local search. Also a primary citation source and entity anchor — your GBP name, category, and attributes feed directly into how Google's AI describes your business in AI Overviews and Gemini responses.</td></tr>
+        <tr><td>JSON-LD</td><td>The recommended format for embedding schema markup. It lives in a <code>&lt;script type="application/ld+json"&gt;</code> block in your page's <code>&lt;head&gt;</code>, separate from visible HTML. AI crawlers can parse it cleanly without rendering the full DOM.</td></tr>
+        <tr><td>LocalBusiness Schema</td><td>A schema.org type that explicitly identifies your business as a locally-operated service with a defined address, service area, and contact details. Foundational for SMBs — how AI verifies you're a real local option for "find a [service] near me" queries.</td></tr>
+        <tr><td>Organization Schema</td><td>A schema.org type describing your business entity: legal name, URL, logo, address, phone, social profiles. Think of it as a machine-readable business card in your site's <code>&lt;head&gt;</code>. It anchors your entity in AI knowledge graphs.</td></tr>
+        <tr><td>Schema Markup</td><td>Structured data added to your website using the schema.org vocabulary to label what your content means — not just what it says. Without it, AI has to infer meaning from natural language and will often get it wrong or skip you entirely.</td></tr>
+        <tr><td>Service Schema</td><td>A schema.org type applied to individual service pages that specifies exactly what service is offered, for whom, in what area, and at what price range. Each service page should have its own Service schema so AI can surface specific offerings for specific queries.</td></tr>
+        <tr><td>Structured Data</td><td>The umbrella term for machine-readable data formats that describe web content to AI systems. Schema markup written in JSON-LD is the most common form. All schema markup is structured data; not all structured data is schema markup.</td></tr>
+      </tbody>
+    </table>
+  </section>
 
   <!-- ── CAVEAT CALLOUT ── -->
   <div class="callout" style="margin-top:40px;margin-bottom:0">
