@@ -19,7 +19,11 @@ I'm a systems thinker who connects AI ↔ human behaviour, tech ↔ psychology, 
 
 - **What it is:** An Answer Engine Optimisation (AEO) consultancy. I help Australian businesses get found, cited, and recommended in AI-generated answers — ChatGPT, Gemini, Perplexity, Google AI Overviews, Claude.
 - **Positioning:** Pure-play AEO specialist. Every Australian competitor is a generalist agency with AEO bolted on. I am the focused specialist — that is the entire competitive advantage.
-- **Stage:** Pre-revenue. Launched May 2026. Website live with schema, FAQ, and entity signals. 9 social channels set up.
+- **Stage:** Pre-revenue. Launched May 2026. Content publishing in progress (Week 3 of 4-week rotation). 9 social channels set up.
+- **Website:** Live. Schema, FAQ (51 questions), entity signals, About page with full credentials, 6 services pages, AISearch Global AEO Calculator (13-signal automated live URL analyzer), AI Visibility Assessment intake form.
+- **Published insights:** 4 articles live — *What Is AEO* (24 May), *How AI Decides Which Businesses to Recommend* (30 May), *AEO Help Guide / Glossary* (3 Jun), *The AEO Traction Stack* (7 Jun).
+- **Proprietary framework:** AEO Traction Stack — 4 layers: Entity Clarity, Schema Markup, Answer-Format Content, Citation Consistency. Layers 1 & 2 account for ~80% of improvement.
+- **Free tool live:** AISearch Global AEO Calculator — scores 13 signals, instant grade A+ to F, no email required. URL: aisearch.global/aeo-calculator
 - **First client:** Dr Sid Mohandas (my brother) — built his AEO-compliant website in exchange for a testimonial and case study.
 - **Revenue target:** $500,000 AUD/annum — this is an **18–24 month goal**, not year one.
 
@@ -67,12 +71,12 @@ Everything else — perfect content, more channels, the $500K number — is seco
 
 ## Website & Tech
 
-- Hosted on Netlify
-- Static HTML/CSS site
-- Schema markup, FAQ schema, entity signals already implemented
-- robots.txt and sitemap.xml in place
-- Key pages: Home, Services, Insights, About, Privacy, Terms
-- AEO score calculator and AI Visibility Assessment tools on-site
+- Hosted on Netlify (git-deployed static HTML/CSS)
+- Schema markup, FAQ schema (51 Qs), entity signals, Organization + ProfessionalService + FAQPage JSON-LD
+- robots.txt and sitemap.xml in place; llms.txt for AI crawler context
+- Key pages: Home, 6 × Services, Insights (4 articles), About, FAQ, Privacy, Terms
+- Tools: AISearch Global AEO Calculator (`/aeo-calculator.html`), AI Visibility Assessment (`/ai-visibility-assessment.html`)
+- Live snapshots of key pages stored in `local-private/tmp-live-snapshots/` (last synced: 8 Jun 2026)
 
 ---
 

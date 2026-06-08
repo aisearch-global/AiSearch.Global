@@ -1,0 +1,114 @@
+# AISearch Global — Project Instructions
+
+## About
+
+**AISearch Global** — `www.aisearch.global`
+**Founder:** Viveka (Viv) — vivi.mdas@gmail.com
+**Location:** Sydney, Australia
+**Stage:** Pre-revenue. Launched May 2026.
+
+AEO (Answer Engine Optimisation) consultancy. Helps Australian businesses get found, cited, and recommended in AI-generated answers — ChatGPT, Gemini, Perplexity, Google AI Overviews, Claude.
+
+**Positioning:** Pure-play AEO specialist. Every Australian competitor is a generalist agency with AEO bolted on. AISearch Global is the focused specialist.
+
+---
+
+## Current Priority
+
+**ONE job: land paying client #1.**
+
+Sequence:
+1. Foundation & proof ✅
+2. AI Visibility Audit offer live (~$1,500–$2,500 AUD) ✅
+3. First paying client ← WE ARE HERE
+4. Convert to case study
+5. Use case study to justify SRSC digital-marketing role move
+
+---
+
+## Offers
+
+- **AI Visibility Audit** — $1,500–$2,500 AUD (productised, primary offer)
+
+---
+
+## Proprietary Framework
+
+**AEO Traction Stack** — 4 layers:
+1. Entity Clarity
+2. Schema Markup
+3. Answer-Format Content
+4. Citation Consistency
+
+Layers 1 & 2 account for ~80% of improvement.
+
+---
+
+## Website (Netlify, static HTML)
+
+- Home, 6 × Services, Insights (4 articles), About, FAQ (51 Qs), Privacy, Terms
+- AEO Calculator: `/aeo-calculator.html` — 13-signal automated live URL analyzer, instant grade A–F, no email required
+- AI Visibility Assessment intake form: `/ai-visibility-assessment.html`
+- Schema: Organization + ProfessionalService + FAQPage JSON-LD, sitemap.xml, robots.txt, llms.txt
+- Deployed via Netlify git push
+
+---
+
+## Published Insights (live)
+
+1. *What Is AEO* — 24 May 2026
+2. *How AI Decides Which Businesses to Recommend* — 30 May 2026
+3. *AEO Help Guide / Glossary* — 3 Jun 2026
+4. *The AEO Traction Stack* — 7 Jun 2026
+
+---
+
+## Content System
+
+- **Tool:** Postiz (batch + schedule, API connected)
+- **Rotation:** Week 1 Guide → Week 2 Insight → Week 3 Framework → Week 4 Case Study
+- **LinkedIn:** 1 substantial post/week → links to full article
+- **Facebook:** 1 short post/week → auto-distributes to Instagram + Threads
+- **Other channels:** YouTube, TikTok, Pinterest, Google (live for entity signals, not fed weekly yet)
+- **Workflow:** Batch-write all four in one weekend, schedule via Postiz, repeat monthly
+
+---
+
+## Capacity
+
+AISearch work happens **weekends and evenings only.** Zero paid-acquisition budget. Content-led authority building.
+
+---
+
+## Credentials
+
+~50 certifications: AI, generative AI, AI ethics, psychology, mental health, human-centred AI, leadership.
+
+First client: Dr Sid Mohandas (brother) — AEO-compliant website built for testimonial + case study.
+
+---
+
+## How to Work With Viv
+
+**Do:**
+- Direct answers, no fluff
+- Clear headings, short paragraphs, bullet points
+- Frameworks and checklists over walls of text
+- ONE recommendation when overwhelmed — not a list of options
+- Real numbers and evidence only
+
+**Don't:**
+- Vague or ambiguous advice
+- Add options when direction is needed
+- Use unnecessary jargon
+
+**If stuck or uncertain:** narrow it down. Give ONE clear next step.
+
+---
+
+## Tech Stack
+
+- Netlify (static HTML/CSS, git-deployed)
+- Postiz (social scheduling)
+- Blogger (Mindful Machines Journal — separate project)
+- GitHub (version control)
