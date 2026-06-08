@@ -27,7 +27,7 @@ insights/
   aeo-traction-stack.html         # AEO Traction Stack framework — 7 Jun 2026
 
 aeo-calculator.html               # AISearch Global AEO Calculator (free tool, 13 signals, instant score)
-ai-visibility-assessment.html     # AI Visibility Audit page (technical URL retained)
+ai-visibility-audit.html          # AI Visibility Audit page
 
 assets/css/styles.css
 assets/js/main.js
