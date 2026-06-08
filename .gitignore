@@ -4,5 +4,7 @@ research/
 content-archive/
 brand-assets/
 
-# Local Netlify folder
+# Local tooling
 .netlify
+.wrangler
+mindful-machines-journal/

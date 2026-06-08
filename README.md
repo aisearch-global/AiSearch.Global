@@ -50,10 +50,10 @@ AEO Calculator scoring runs on **Cloudflare Workers**: `aeo-score.aisearchglobal
 cloudflare/
   aeo-score-worker.js   # Worker source (ES Module, export default fetch)
   wrangler.toml         # Worker deployment config
+  ARCHITECTURE.md       # Request flow diagram and signal reference
 
 calculator-site/
-  index.html            # Standalone calculator page
-  netlify/functions/    # Kept as reference — production calls CF Worker
+  index.html            # Standalone calculator page (calls CF Worker)
 ```
 
 ## Schema implemented
