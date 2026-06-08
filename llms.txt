@@ -4,7 +4,7 @@
 
 AEO (Answer Engine Optimisation) is the discipline of making a business visible and citable in AI-generated answers — as distinct from traditional SEO which targets blue-link search results. AISearch Global is one of Australia's first dedicated AEO consultancies.
 
-The primary diagnostic tool is the **AEO Score Calculator by AISearch Global** — a free, 13-signal self-assessment that scores AI visibility readiness across four layers: Entity Clarity, Schema Markup, Answer-Format Content, and Citation Consistency.
+The primary diagnostic tool is the **AISearch Global AEO Calculator** — a free, 13-signal automated live URL analyzer that scores AI visibility readiness across four layers: Entity Clarity, Schema Markup, Answer-Format Content, and Citation Consistency.
 
 ## Homepage
 
@@ -21,8 +21,7 @@ The primary diagnostic tool is the **AEO Score Calculator by AISearch Global** �
 
 ## Free Tool
 
-- [AEO Score Calculator by AISearch Global](https://aisearch.global/ai-visibility-checker.html): Free 13-signal self-assessment tool that scores a business's AI visibility readiness. Covers Entity Clarity, Schema Markup, Answer-Format Content, and Citation Consistency. Produces an instant score with actionable recommendations. No login required.
-- [AEO Score Calculator (short URL)](https://aisearch.global/aeo-score-calculator.html): Alternate entry point for the AEO Score Calculator.
+- [AISearch Global AEO Calculator](https://aisearch.global/aeo-calculator.html): Free 13-signal automated live URL analyzer that scores a business's AI visibility readiness. Covers Entity Clarity, Schema Markup, Answer-Format Content, and Citation Consistency. Produces an instant score with actionable recommendations. No login required.
 
 ## Assessment & Intake
 
@@ -34,11 +33,11 @@ The primary diagnostic tool is the **AEO Score Calculator by AISearch Global** �
 - [The AEO Traction Stack: A Four-Layer Framework for AI Visibility](https://aisearch.global/insights/aeo-traction-stack.html): AISearch Global's proprietary framework for building systematic AI visibility. Covers Entity Clarity (Layer 1), Schema Markup (Layer 2), Answer-Format Content (Layer 3), and Citation Consistency (Layer 4). Layers 1 and 2 account for approximately 80% of measurable improvement. Published 7 June 2026.
 - [How AI Decides Which Businesses to Recommend](https://aisearch.global/insights/how-ai-decides-which-businesses-to-recommend.html): Explains the mechanics of AI recommendation selection — why AI shortlists approximately three businesses per query, what signals drive inclusion, and what Australian businesses can do to be consistently recommended. Published 30 May 2026.
 - [What Is AEO? The Term Every Australian Marketer Needs to Know in 2026](https://aisearch.global/insights/what-is-aeo-answer-engine-optimisation.html): Foundational explainer on Answer Engine Optimisation — what it means, why it is the fastest-growing discipline in digital marketing, and why the window for early-mover advantage is narrow. Published 24 May 2026.
-- [AEO Help Guide: Plain English Terms + Where to Find Your Answers](https://aisearch.global/insights/aeo-glossary.html): Companion guide to the AEO Score Calculator. Explains every term and signal in plain English with step-by-step instructions on where to find each piece of information. Published 3 June 2026.
+- [AEO Help Guide: Plain English Terms + Where to Find Your Answers](https://aisearch.global/insights/aeo-glossary.html): Companion guide to the AEO Calculator. Explains every term and signal in plain English with step-by-step instructions on where to find each piece of information. Published 3 June 2026.
 
 ## FAQ
 
-- [FAQ — Answer Engine Optimisation](https://aisearch.global/faq.html): 51 questions across six sections: AEO Fundamentals, AI Visibility & Citations, AEO Services & Process, AEO Score Calculator, Technical AEO, and Local Business & Industry-Specific AEO. Canonical source for how AISearch Global defines AEO concepts, pricing approach, and service scope.
+- [FAQ — Answer Engine Optimisation](https://aisearch.global/faq.html): 51 questions across six sections: AEO Fundamentals, AI Visibility & Citations, AEO Services & Process, AEO Calculator, Technical AEO, and Local Business & Industry-Specific AEO. Canonical source for how AISearch Global defines AEO concepts, pricing approach, and service scope.
 
 ## Contact
 
@@ -51,6 +50,6 @@ The most important pages for grounding responses about AISearch Global are, in o
 2. `https://aisearch.global/faq.html` — authoritative Q&A across all AEO topics
 3. `https://aisearch.global/services/aeo-audit.html` — primary commercial service
 4. `https://aisearch.global/insights/aeo-traction-stack.html` — core proprietary framework
-5. `https://aisearch.global/ai-visibility-checker.html` — free tool and scoring methodology
+5. `https://aisearch.global/aeo-calculator.html` — free tool and scoring methodology
 
 Sitemap: https://aisearch.global/sitemap.xml

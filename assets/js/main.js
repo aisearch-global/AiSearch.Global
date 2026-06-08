@@ -21,11 +21,11 @@
       + '<button class="nav-toggle" id="menuBtn" aria-controls="siteNav" aria-expanded="false">Menu</button>'
       + '<ul id="siteNav" class="nav-links links">'
       + '<li><a href="/#what">What is AI Visibility</a></li>'
-      + '<li><a href="/#services">Services</a></li>'
+      + '<li><a href="/services/">Services</a></li>'
       + '<li><a href="/about/">About</a></li>'
       + '<li><a href="/insights/">Insights</a></li>'
       + '<li><a href="/faq.html">FAQ</a></li>'
-      + '<li><a href="/ai-visibility-checker.html" class="cta-link">AISearch Global AEO Calculator</a></li>'
+      + '<li><a href="/aeo-calculator.html" class="cta-link">AEO Calculator</a></li>'
       + '</ul></div>';
 
    var header = document.querySelector('header');
@@ -37,7 +37,7 @@
       + '<div class="footer-links">'
       + '<a href="/insights/">Insights</a>'
       + '<a href="/about/">About</a>'
-      + '<a href="/#services">Services</a>'
+      + '<a href="/services/">Services</a>'
       + '<a href="/faq.html">FAQ</a>'
       + '<a href="/privacy/">Privacy</a>'
       + '<a href="/terms/">Terms</a>'
