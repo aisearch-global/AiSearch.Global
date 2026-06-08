@@ -10,14 +10,14 @@
       + 'footer .social-links{justify-content:center}'
       + 'footer .social-links a{color:inherit;text-decoration:none}'
       + 'footer .social-links a:hover{color:#0abab5}'
-      + 'header .nav-links a,header .links a{text-decoration:none}';
+      + 'header .nav-links a,header .links a{text-decoration:none}'
+      + 'header .brand{font:700 1.1rem "Space Grotesk",sans-serif;text-decoration:none;color:#1C1D20;letter-spacing:-.01em;white-space:nowrap}'
+      + 'header .brand em{color:#0ABFBC;font-style:normal}';
     document.head.appendChild(S);
 
    /* ── Shared header ── */
    var H = '<div class="container nav">'
-      + '<a href="/" class="brand" aria-label="AISearch Global home">'
-      + '<img src="/assets/images/logos/header-logo.svg" alt="AISearch Global" loading="eager" decoding="async" style="height:34px;width:auto;max-width:260px;display:block">'
-      + '</a>'
+      + '<a href="/" class="brand" aria-label="AISearch Global home"><em>AI</em>Search Global</a>'
       + '<button class="nav-toggle" id="menuBtn" aria-controls="siteNav" aria-expanded="false">Menu</button>'
       + '<ul id="siteNav" class="nav-links links">'
       + '<li><a href="/#what">What is AI Visibility</a></li>'

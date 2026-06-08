@@ -228,67 +228,67 @@ footer a:hover { color: var(--tiffany); }
     <tbody>
       <tr>
         <td>AEO</td>
-        <td>Answer Engine Optimisation. Making your business visible to AI tools like ChatGPT, Gemini, and Perplexity.</td>
+        <td>Answer Engine Optimisation. Structuring your business information so AI tools — ChatGPT, Gemini, Perplexity, Google AI Overviews — confidently cite you when someone asks a relevant question. Different from SEO: you're optimising for AI extraction, not keyword ranking.</td>
       </tr>
       <tr>
         <td>AI Citation</td>
-        <td>When an AI tool recommends or mentions your business in a response to someone's question.</td>
+        <td>When an AI system names your business in a generated response. Unlike a search result (you appear in a list), a citation is a direct recommendation — the AI is asserting your business is the answer. Citation frequency correlates with entity clarity, schema coverage, and answer-format content.</td>
       </tr>
       <tr>
         <td>AI Visibility</td>
-        <td>How often your business appears in AI-generated answers. Higher visibility = more recommendations.</td>
+        <td>How consistently your business appears across AI-generated answers on multiple platforms and query types. You can rank well on Google and still have zero AI visibility — they measure different things. AI visibility requires structured, extractable, corroborated data.</td>
       </tr>
       <tr>
         <td>Answer-Format Content</td>
-        <td>Website copy that directly answers customer questions, rather than using vague marketing language.</td>
+        <td>Copy written as direct responses to real customer questions — not brand language. LLMs extract concise, factual answers from content structured as question → answer. "We're passionate about excellence" is invisible to AI. "We service Sydney's inner west, 7 days, same-day bookings available" is highly extractable.</td>
       </tr>
       <tr>
         <td>Citation</td>
-        <td>A mention of your business — name, address, phone — on another website or directory.</td>
+        <td>A mention of your business — typically name, address, and phone (NAP) — on an external website, directory, or platform. Citations signal to both search engines and AI systems that your business has a verified real-world presence. Volume and consistency both matter.</td>
       </tr>
       <tr>
         <td>Citation Consistency</td>
-        <td>Your business info is identical across every directory, listing, and social media profile.</td>
+        <td>NAP data (name, address, phone) being identical across every directory, listing, and social profile. Discrepancies — "St" vs "Street", different phone formats, old trading names — weaken your entity signal and reduce AI confidence in recommending you. Inconsistency is one of the fastest things to fix for measurable AEO improvement.</td>
       </tr>
       <tr>
         <td>Entity</td>
-        <td>Anything AI can clearly identify — your business is an entity. Consistent information = clear entity.</td>
+        <td>In knowledge graph and AI terms: any uniquely identifiable real-world thing — a business, person, place, product. Your business is an entity. The more consistently its attributes (name, category, location, services) appear across the web, the more confidently AI can identify and recommend it without ambiguity.</td>
       </tr>
       <tr>
         <td>Entity Clarity</td>
-        <td>Your business name, location, and details are the same everywhere online so AI can identify you confidently.</td>
+        <td>How unambiguously AI systems can identify your business from available web data. High clarity: your name, category, location, and services are consistent and corroborated across your website, GBP, schema, and third-party mentions. Low clarity: AI either can't find you, or recommends your competitor because theirs is clearer.</td>
       </tr>
       <tr>
         <td>FAQPage Schema</td>
-        <td>Hidden code that marks up your FAQ section so AI can read and use your Q&amp;A content in responses.</td>
+        <td>A JSON-LD schema type that marks up a list of questions and their answers, signalling to AI crawlers that the content is structured as explicit Q&amp;A. Properly implemented FAQPage schema increases the probability your answer content is extracted and cited — particularly for "how", "what", and "does [business] offer" queries.</td>
       </tr>
       <tr>
         <td>Google Business Profile</td>
-        <td>Your free Google listing — the business card that appears in Google Maps and search results.</td>
+        <td>Your free Google-managed listing appearing in Maps and local search. Beyond search visibility, it's a primary citation source and entity anchor — your GBP name, category, and attributes feed directly into how Google's AI describes your business in AI Overviews and Gemini responses. Keeping it accurate and active is non-negotiable for local AEO.</td>
       </tr>
       <tr>
         <td>JSON-LD</td>
-        <td>The format used to write schema markup. Your web developer adds it — you don't need to write it yourself.</td>
+        <td>JavaScript Object Notation for Linked Data — the recommended format for embedding schema markup. It lives in a <code>&lt;script type="application/ld+json"&gt;</code> block in your page's <code>&lt;head&gt;</code>, separate from visible HTML. This separation means schema can be updated without touching page copy, and AI crawlers can parse it cleanly without rendering the full DOM.</td>
       </tr>
       <tr>
         <td>LocalBusiness Schema</td>
-        <td>Schema markup that tells AI your business is a local service with a physical location and service area.</td>
+        <td>A schema.org type that explicitly identifies your business as a locally-operated service with a defined address, service area, and contact details. For SMBs, it's foundational — it's how AI systems verify you're a real local option when someone asks "find a [service] near me." Combine with GBP for maximum entity signal.</td>
       </tr>
       <tr>
         <td>Organization Schema</td>
-        <td>A digital business card in your site's code — official name, address, phone, and website all in one place.</td>
+        <td>A schema.org type that describes your business entity: legal name, URL, logo, address, phone, social profiles, and founding details. Think of it as a machine-readable business card embedded in your site's <code>&lt;head&gt;</code>. It anchors your entity in AI knowledge graphs and helps disambiguate your business from others with similar names.</td>
       </tr>
       <tr>
         <td>Schema Markup</td>
-        <td>Hidden code on your website that labels your information for AI systems so they don't have to guess.</td>
+        <td>Structured data added to your website using the schema.org vocabulary to label what your content means — not just what it says. AI crawlers and search engines use schema to interpret your business unambiguously. Without it, AI has to infer meaning from natural language and will often get it wrong or skip you entirely.</td>
       </tr>
       <tr>
         <td>Service Schema</td>
-        <td>Schema markup on a service page that tells AI exactly what service you offer on that page.</td>
+        <td>A schema.org type applied to individual service pages that specifies exactly what service is offered, for whom, in what area, and at what price range. Each service page should have its own Service schema — this is how AI surfaces specific offerings when someone asks about a particular solution rather than just your business generally.</td>
       </tr>
       <tr>
         <td>Structured Data</td>
-        <td>Another name for schema markup.</td>
+        <td>The umbrella term for machine-readable data formats that describe web content to AI systems. Schema markup written in JSON-LD is the most common form on websites. It's the technical layer that makes your content interpretable by AI — not just readable by humans. All schema markup is structured data; not all structured data is schema markup.</td>
       </tr>
     </tbody>
   </table>
