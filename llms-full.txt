@@ -163,6 +163,7 @@ URL: /terms/
 
 ## Technical
 
+- Last refreshed: 8 Jun 2026
 - sitemap.xml: https://aisearch.global/sitemap.xml
 - robots.txt: https://aisearch.global/robots.txt
 - llms.txt: https://aisearch.global/llms.txt
