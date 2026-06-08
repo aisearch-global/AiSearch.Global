@@ -169,6 +169,9 @@ const DOMAIN_CALIBRATION = {
   'lysaght.com': -25, 'www.lysaght.com': -25,     // raw≈90 → 65/C
   'stramit.com.au': -30, 'www.stramit.com.au': -30, // raw≈95 → 65/C
   'metroll.com.au': -20, 'www.metroll.com.au': -20, // raw≈68 → 48/D
+  // Crawler-blocking sites — calibrated from editorial judgment, raw score is meaningless
+  'domain.com.au': 58, 'www.domain.com.au': 58,                         // raw≈16 → 74/B (AU's #2 property portal)
+  'comparethemarket.com.au': 54, 'www.comparethemarket.com.au': 54,     // raw≈16 → 70/B (comparison site, less FAQ depth than Finder)
 };
 
 function calibrateScore(rawScore, hostname) {
