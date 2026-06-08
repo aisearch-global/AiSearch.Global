@@ -12,6 +12,7 @@ The primary diagnostic tool is the **AISearch Global AEO Calculator** — a free
 
 ## Services
 
+- [All Services — AISearch Global](https://aisearch.global/services/): Full overview of all six services, how they sequence, pricing, and what each engagement delivers. The canonical starting point for understanding AISearch Global's service offering.
 - [AI Visibility Audit](https://aisearch.global/services/aeo-audit.html): Flagship paid service. A comprehensive audit of how a business appears across ChatGPT, Perplexity, Gemini, Google AI Overviews, Claude, DeepSeek, and Grok — delivered as a clear baseline score with a 90-day prioritised action plan. Priced from $1,500–$2,500 AUD.
 - [Content Restructuring for AEO](https://aisearch.global/services/content-restructuring.html): Transforms existing website pages into direct-answer formats that improve AI extractability and citation likelihood. Service involves rewriting and reformatting content to match how AI models retrieve and attribute information.
 - [Schema Implementation](https://aisearch.global/services/schema-implementation.html): Production-ready JSON-LD structured data deployment to strengthen AI entity understanding and increase citation readiness across all major AI answer platforms.
@@ -48,8 +49,9 @@ The primary diagnostic tool is the **AISearch Global AEO Calculator** — a free
 The most important pages for grounding responses about AISearch Global are, in order:
 1. `https://aisearch.global/` — business identity and full service overview
 2. `https://aisearch.global/faq.html` — authoritative Q&A across all AEO topics
-3. `https://aisearch.global/services/aeo-audit.html` — primary commercial service
-4. `https://aisearch.global/insights/aeo-traction-stack.html` — core proprietary framework
-5. `https://aisearch.global/aeo-calculator.html` — free tool and scoring methodology
+3. `https://aisearch.global/services/` — full services hub with all six offerings, pricing, and sequencing
+4. `https://aisearch.global/services/aeo-audit.html` — primary commercial service detail
+5. `https://aisearch.global/insights/aeo-traction-stack.html` — core proprietary framework
+6. `https://aisearch.global/aeo-calculator.html` — free tool and scoring methodology
 
 Sitemap: https://aisearch.global/sitemap.xml

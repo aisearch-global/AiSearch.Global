@@ -28,7 +28,14 @@ Sequence:
 
 ## Offers
 
-- **AI Visibility Audit** — $1,500–$2,500 AUD (productised, primary offer)
+All six services are detailed at `/services/` (the services hub page).
+
+- **AI Visibility Audit** — $1,500–$2,500 AUD (productised, primary offer — always start here)
+- **Content Restructuring** — from $1,500 AUD
+- **Schema Implementation** — $750–$1,500 AUD
+- **AI Brand Presence** — $1,200–$1,800 AUD
+- **Structured Content Systems** — $1,500–$2,500 AUD
+- **AI Visibility Strategy** — $2,000–$3,500 AUD
 
 ---
 
