@@ -112,11 +112,11 @@ Published: 30 May 2026
 
 Explains the signals, data sources, and trust factors AI engines use when selecting businesses to recommend in a generated answer. Covers entity recognition, schema markup, content extractability, citation authority, and recency signals. Includes practical implications for Australian SMBs.
 
-### AEO Glossary: The Complete AEO Help Guide
+### AEO Glossary: Plain English Terms
 URL: /insights/aeo-glossary.html
 Published: 3 Jun 2026
 
-Comprehensive glossary of AEO, AI search, and structured data terminology. Covers Answer Engine Optimisation, RAG (Retrieval-Augmented Generation), JSON-LD, entity signals, LLMs, AI Overviews, citation signals, FAQPage schema, and more. Designed as a reference for Australian business owners and marketers entering the AEO space.
+Plain English glossary of key AEO and AI search terms. Covers Answer Engine Optimisation, entity clarity, schema markup (LocalBusiness, FAQPage, Service, Organization, JSON-LD), citation consistency, answer-format content, and AI visibility. Designed for Australian business owners new to the AEO space.
 
 ### The AEO Traction Stack
 URL: /insights/aeo-traction-stack.html

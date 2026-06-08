@@ -21,7 +21,7 @@ I'm a systems thinker who connects AI ↔ human behaviour, tech ↔ psychology, 
 - **Positioning:** Pure-play AEO specialist. Every Australian competitor is a generalist agency with AEO bolted on. I am the focused specialist — that is the entire competitive advantage.
 - **Stage:** Pre-revenue. Launched May 2026. Content publishing in progress (Week 3 of 4-week rotation). 9 social channels set up.
 - **Website:** Live. Schema, FAQ (51 questions), entity signals, About page with full credentials, six service pages, AISearch Global AEO Score Calculator (13-signal automated live URL analyzer), AI Visibility Audit enquiry form.
-- **Published insights:** 4 articles live — *What Is AEO* (24 May), *How AI Decides Which Businesses to Recommend* (30 May), *AEO Help Guide / Glossary* (3 Jun), *The AEO Traction Stack* (7 Jun).
+- **Published insights:** 4 articles live — *What Is AEO* (24 May), *How AI Decides Which Businesses to Recommend* (30 May), *AEO Glossary: Plain English Terms* (3 Jun), *The AEO Traction Stack* (7 Jun).
 - **Proprietary framework:** AEO Traction Stack — 4 layers: Entity Clarity, Schema Markup, Answer-Format Content, Citation Consistency. Layers 1 & 2 account for ~80% of improvement.
 - **Free tool live:** AISearch Global AEO Score Calculator — scores 13 signals, returns an instant grade A+ to F, and requires no email. URL: https://aisearch.global/aeo-score-calculator.html
 - **First client:** Dr Sid Mohandas (my brother) — built his AEO-compliant website in exchange for a testimonial and case study.

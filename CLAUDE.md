@@ -65,7 +65,7 @@ Layers 1 & 2 account for ~80% of improvement.
 
 1. *What Is AEO* — 24 May 2026
 2. *How AI Decides Which Businesses to Recommend* — 30 May 2026
-3. *AEO Help Guide / Glossary* — 3 Jun 2026
+3. *AEO Glossary: Plain English Terms* — 3 Jun 2026
 4. *The AEO Traction Stack* — 7 Jun 2026
 
 ---

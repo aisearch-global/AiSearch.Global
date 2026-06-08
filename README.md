@@ -23,7 +23,7 @@ insights/
   index.html                      # Insights index
   what-is-aeo-answer-engine-optimisation.html   # 24 May 2026
   how-ai-decides-which-businesses-to-recommend.html  # 30 May 2026
-  aeo-glossary.html               # AEO Help Guide  — 3 Jun 2026
+  aeo-glossary.html               # AEO Glossary — 3 Jun 2026
   aeo-traction-stack.html         # AEO Traction Stack framework — 7 Jun 2026
 
 aeo-score-calculator.html               # AISearch Global AEO Score Calculator (free tool, 13 signals, instant score)
