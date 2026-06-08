@@ -57,7 +57,7 @@ Layers 1 & 2 account for ~80% of improvement.
 - AEO Calculator: `/aeo-calculator.html` — 13-signal automated live URL analyzer, instant grade A–F, no email required
 - AI Visibility Assessment intake form: `/ai-visibility-assessment.html`
 - Schema: Organization + ProfessionalService + FAQPage JSON-LD, sitemap.xml, robots.txt, llms.txt
-- Deployed via Netlify git push
+- Deployed via Cloudflare Pages on git push to main
 
 ---
 
@@ -115,7 +115,8 @@ First client: Dr Sid Mohandas (brother) — AEO-compliant website built for test
 
 ## Tech Stack
 
-- Netlify (static HTML/CSS, git-deployed)
+- Cloudflare Pages (static HTML/CSS, git-deployed from main branch)
+- Cloudflare Workers (AEO Calculator scoring function — `aeo-score.aisearchglobal.workers.dev`)
 - Postiz (social scheduling)
 - Blogger (Mindful Machines Journal — separate project)
 - GitHub (version control)

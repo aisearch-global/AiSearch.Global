@@ -1,6 +1,6 @@
 # AISearch Global Website
 
-Static HTML/CSS site for `https://aisearch.global`. Deployed via Netlify on git push.
+Static HTML/CSS site for `https://aisearch.global`. Deployed via Cloudflare Pages on git push.
 
 ## Site structure
 
@@ -13,11 +13,11 @@ terms/index.html                  # Terms
 
 services/
   aeo-audit.html                  # AI Visibility Audit (flagship)
-  content-restructuring.html
-  schema-implementation.html
-  ai-brand-presence.html
-  structured-content-systems.html
-  ai-visibility-strategy.html
+  content-restructuring.html      # Content Restructuring
+  schema-implementation.html      # Schema Implementation
+  ai-brand-presence.html          # AI Brand Presence
+  structured-content-systems.html # Structured Content Systems
+  ai-visibility-strategy.html     # AI Visibility Strategy
 
 insights/
   index.html                      # Insights index
@@ -26,7 +26,7 @@ insights/
   aeo-glossary.html               # AEO Help Guide  — 3 Jun 2026
   aeo-traction-stack.html         # AEO Traction Stack framework — 7 Jun 2026
 
-aeo-calculator.html               # AISearch Global AEO Calculator (free tool, 13 signals)
+aeo-calculator.html               # AISearch Global AEO Calculator (free tool, 13 signals, instant score)
 ai-visibility-assessment.html     # Client intake / assessment form
 
 assets/css/styles.css
@@ -40,9 +40,20 @@ sitemap.xml
 
 ## Deployment
 
-Hosted on **Netlify**. Deploys automatically on push to `main`.
+Hosted on **Cloudflare Pages** (`aisearch-global` project). Deploys automatically on push to `main`.
 
-Netlify site ID: see `.netlify/state.json`
+AEO Calculator scoring runs on **Cloudflare Workers**: `aeo-score.aisearchglobal.workers.dev`
+- Local dev: `cd cloudflare && wrangler dev` (serves on `localhost:8787`)
+
+```
+cloudflare/
+  aeo-score-worker.js   # Worker source (ES Module, export default fetch)
+  wrangler.toml         # Worker deployment config
+
+calculator-site/
+  index.html            # Standalone calculator page
+  netlify/functions/    # Kept as reference — production calls CF Worker
+```
 
 ## Schema implemented
 
