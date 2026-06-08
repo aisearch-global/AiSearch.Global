@@ -51,9 +51,6 @@ cloudflare/
   aeo-score-worker.js   # Worker source (ES Module, export default fetch)
   wrangler.toml         # Worker deployment config
   ARCHITECTURE.md       # Request flow diagram and signal reference
-
-calculator-site/
-  index.html            # Standalone calculator page (calls CF Worker)
 ```
 
 ## Schema implemented

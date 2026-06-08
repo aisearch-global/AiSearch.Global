@@ -71,7 +71,7 @@ Everything else — perfect content, more channels, the $500K number — is seco
 
 ## Website & Tech
 
-- Hosted on Netlify (git-deployed static HTML/CSS)
+- Hosted on Cloudflare Pages (git-deployed static HTML/CSS)
 - Schema markup, FAQ schema (51 Qs), entity signals, Organization + ProfessionalService + FAQPage JSON-LD
 - robots.txt and sitemap.xml in place; llms.txt for AI crawler context
 - Key pages: Home, 6 × Services, Insights (4 articles), About, FAQ, Privacy, Terms
