@@ -1,0 +1,7 @@
+name = "aeo-score"
+main = "aeo-score-worker.js"
+compatibility_date = "2025-01-01"
+account_id = "bcb5adf500b41a01598037b13bc5d4d2"
+
+[observability]
+enabled = true
