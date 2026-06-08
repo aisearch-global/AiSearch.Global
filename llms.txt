@@ -16,7 +16,7 @@ AISearch Global focuses exclusively on AEO, not traditional SEO. Our work helps 
 
 ## Free Diagnostic Tool
 
-- [AISearch Global AEO Calculator](/aeo-calculator.html): A free, instant AI visibility scorecard. Enter your website URL, industry, and location to receive a numeric score out of 100, a letter grade (A to F), an AI recommendation likelihood score, a plain-English interpretation, a highest-impact fix recommendation, and an industry benchmark comparison. Scores 13 AEO signals including title tag, meta description, H1, content depth, JSON-LD schema, FAQ content, About page, contact signals, review signals, location signals, industry keyword relevance, sitemap.xml, and robots.txt.
+- [AISearch Global AEO Score Calculator](/aeo-score-calculator.html): A free, instant AI visibility scorecard. Enter your website URL, industry, and location to receive a numeric score out of 100, a letter grade (A to F), an AI recommendation likelihood score, a plain-English interpretation, a highest-impact fix recommendation, and an industry benchmark comparison. Scores 13 AEO signals including title tag, meta description, H1, content depth, JSON-LD schema, FAQ content, About page, contact signals, review signals, location signals, industry keyword relevance, sitemap.xml, and robots.txt.
 
 ## Insights
 

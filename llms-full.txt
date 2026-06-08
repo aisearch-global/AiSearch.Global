@@ -52,8 +52,8 @@ Aligns an AEO optimisation roadmap with specific business revenue targets and pr
 
 ## Free Diagnostic Tool
 
-### AISearch Global AEO Calculator
-URL: /aeo-calculator.html
+### AISearch Global AEO Score Calculator
+URL: /aeo-score-calculator.html
 
 A free, instant AI visibility scorecard. Enter a website URL, industry, and location to receive:
 - A numeric score out of 100
@@ -168,4 +168,4 @@ URL: /terms/
 - robots.txt: https://aisearch.global/robots.txt
 - llms.txt: https://aisearch.global/llms.txt
 - Hosted on Cloudflare Pages, deployed from GitHub on push to main
-- AEO Calculator scoring: Cloudflare Workers (aeo-score.aisearchglobal.workers.dev)
+- AEO Score Calculator scoring: Cloudflare Workers (aeo-score.aisearchglobal.workers.dev)

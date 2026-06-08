@@ -1,10 +1,10 @@
-# AEO Calculator — Architecture
+# AEO Score Calculator — Architecture
 
 ## Request flow
 
 ```mermaid
 flowchart LR
-  U[User enters website URL] --> F[Calculator frontend\naisearch.global/aeo-calculator.html]
+  U[User enters website URL] --> F[Calculator frontend\naisearch.global/aeo-score-calculator.html]
   F -->|POST JSON\nurl · industry · location| W[Cloudflare Worker\naeo-score.aisearchglobal.workers.dev]
   W --> P[Parallel fetches]
   P --> H[Fetch homepage HTML]
@@ -22,7 +22,7 @@ flowchart LR
 
 | Layer | Technology | URL |
 |---|---|---|
-| Frontend | Static HTML (Cloudflare Pages) | `aisearch.global/aeo-calculator.html` |
+| Frontend | Static HTML (Cloudflare Pages) | `aisearch.global/aeo-score-calculator.html` |
 | Scoring function | Cloudflare Worker | `aeo-score.aisearchglobal.workers.dev` |
 | DNS | Cloudflare | — |
 

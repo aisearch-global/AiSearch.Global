@@ -26,7 +26,7 @@ insights/
   aeo-glossary.html               # AEO Help Guide  — 3 Jun 2026
   aeo-traction-stack.html         # AEO Traction Stack framework — 7 Jun 2026
 
-aeo-calculator.html               # AISearch Global AEO Calculator (free tool, 13 signals, instant score)
+aeo-score-calculator.html               # AISearch Global AEO Score Calculator (free tool, 13 signals, instant score)
 AI Visibility Audit                # Book via homepage contact form
 
 assets/css/styles.css
@@ -42,7 +42,7 @@ sitemap.xml
 
 Hosted on **Cloudflare Pages** (`aisearch-global` project). Deploys automatically on push to `main`.
 
-AEO Calculator scoring runs on **Cloudflare Workers**: `aeo-score.aisearchglobal.workers.dev`
+AEO Score Calculator scoring runs on **Cloudflare Workers**: `aeo-score.aisearchglobal.workers.dev`
 - Local dev: `cd cloudflare && wrangler dev` (serves on `localhost:8787`)
 - Architecture: see [`cloudflare/ARCHITECTURE.md`](cloudflare/ARCHITECTURE.md)
 
