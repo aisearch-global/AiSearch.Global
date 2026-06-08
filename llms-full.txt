@@ -21,7 +21,7 @@ AISearch Global is a pure-play AEO specialist. Every other Australian digital ag
 ### AI Visibility Audit — $1,500–$2,500 AUD
 URL: /services/aeo-audit.html
 
-The primary offer. A comprehensive baseline assessment of how AI engines currently find, describe, and recommend a business. Includes a full audit of 13 AEO signals across technical structure, content, schema markup, and entity signals. Delivers a prioritised 90-day action plan with specific fixes ranked by expected visibility impact.
+The primary offer. A comprehensive baseline audit of how AI engines currently find, describe, and recommend a business. Includes a full audit of 13 AEO signals across technical structure, content, schema markup, and entity signals. Delivers a prioritised 90-day action plan with specific fixes ranked by expected visibility impact.
 
 ### Content Restructuring — from $1,500 AUD
 URL: /services/content-restructuring.html
@@ -132,7 +132,7 @@ URL: /faq.html
 
 51 frequently asked questions covering: what AEO is and how it differs from SEO, how AI engines decide which businesses to recommend, what schema markup does and how to implement it, what the AI Visibility Audit includes, how long AEO takes to show results, what industries benefit most, and how to work with AISearch Global.
 
-### AI Visibility Assessment
+### AI Visibility Audit Intake
 URL: /ai-visibility-assessment.html
 
 Free intake form for businesses exploring an AI Visibility Audit. Collects website URL, industry, business description, current pain points, and contact details. No obligation. Used to assess fit and prepare a relevant audit scope.

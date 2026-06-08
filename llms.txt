@@ -7,7 +7,7 @@ AISearch Global focuses exclusively on AEO, not traditional SEO. Our work helps 
 
 ## Core Services
 
-- [AI Visibility Audit](/services/aeo-audit.html): A comprehensive baseline assessment of how AI engines currently find, describe, and recommend your business. Delivers a prioritised 90-day action plan.
+- [AI Visibility Audit](/services/aeo-audit.html): A comprehensive baseline audit of how AI engines currently find, describe, and recommend your business. Delivers a prioritised 90-day action plan.
 - [Content Restructuring](/services/content-restructuring.html): Converts existing website copy into answer-ready formats optimised for RAG systems and LLM extraction.
 - [Schema Implementation](/services/schema-implementation.html): Deploys structured JSON-LD and entity markup to strengthen semantic trust and machine comprehension of your business.
 - [AI Brand Presence](/services/ai-brand-presence.html): Builds consistent entity signals across the data sources used as grounding references by large language models.
@@ -28,7 +28,7 @@ AISearch Global focuses exclusively on AEO, not traditional SEO. Our work helps 
 ## Reference Pages
 
 - [FAQ — 51 AEO Questions Answered](/faq.html): 51 frequently asked questions about Answer Engine Optimisation, AI search visibility, schema markup, and working with AISearch Global.
-- [AI Visibility Assessment](/ai-visibility-assessment.html): A free intake form to assess your current AI search visibility and explore whether an AI Visibility Audit is the right next step.
+- [AI Visibility Audit Intake](/ai-visibility-assessment.html): A free intake form to capture your details before the AI Visibility Audit. The audit is the paid service; this page is the entry point.
 - [About AISearch Global](/about/): Background on the agency, founder, and approach to AEO.
 
 ## Corporate Identity
