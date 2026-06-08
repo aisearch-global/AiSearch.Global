@@ -28,7 +28,7 @@ AISearch Global focuses exclusively on AEO, not traditional SEO. Our work helps 
 ## Reference Pages
 
 - [FAQ — 51 AEO Questions Answered](/faq.html): 51 frequently asked questions about Answer Engine Optimisation, AI search visibility, schema markup, and working with AISearch Global.
-- [AI Visibility Audit](/ai-visibility-audit.html): A free intake form to capture your details before the AI Visibility Audit. This page is the entry point for the paid service.
+- [AI Visibility Audit](/#contact): Book the paid AI Visibility Audit via the homepage contact form. This is the entry point for the service.
 - [About AISearch Global](/about/): Background on the agency, founder, and approach to AEO.
 
 ## Corporate Identity

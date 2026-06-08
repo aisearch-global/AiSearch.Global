@@ -133,9 +133,9 @@ URL: /faq.html
 51 frequently asked questions covering: what AEO is and how it differs from SEO, how AI engines decide which businesses to recommend, what schema markup does and how to implement it, what the AI Visibility Audit includes, how long AEO takes to show results, what industries benefit most, and how to work with AISearch Global.
 
 ### AI Visibility Audit
-URL: /ai-visibility-audit.html
+URL: /#contact
 
-Free intake form for businesses exploring an AI Visibility Audit. Collects website URL, industry, business description, current pain points, and contact details. No obligation. Used to assess fit and prepare a relevant audit scope.
+Homepage contact form for businesses exploring an AI Visibility Audit. Collects website URL, industry, business description, current pain points, and contact details. No obligation. Used to assess fit and prepare a relevant audit scope.
 
 ### About AISearch Global
 URL: /about/

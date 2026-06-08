@@ -55,7 +55,7 @@ Layers 1 & 2 account for ~80% of improvement.
 
 - Home, 6 × Services, Insights (4 articles), About, FAQ (51 Qs), Privacy, Terms
 - AEO Calculator: `/aeo-calculator.html` — 13-signal automated live URL analyzer, instant grade A–F, no email required
-- AI Visibility Audit: `/ai-visibility-audit.html`
+- AI Visibility Audit: `/#contact`
 - Schema: Organization + ProfessionalService + FAQPage JSON-LD, sitemap.xml, robots.txt, llms.txt
 - Deployed via Cloudflare Pages on git push to main
 
