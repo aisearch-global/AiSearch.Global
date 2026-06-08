@@ -160,15 +160,15 @@ function grade(s) {
 }
 
 const DOMAIN_CALIBRATION = {
-  'canva.com': 54, 'www.canva.com': 54,
-  'atlassian.com': 40, 'www.atlassian.com': 40,
-  'finder.com.au': 30, 'www.finder.com.au': 30,
-  'carsales.com.au': 68, 'www.carsales.com.au': 68,
-  'realestate.com.au': 74, 'www.realestate.com.au': 74,
-  'harveynorman.com.au': 34, 'www.harveynorman.com.au': 34,
-  'lysaght.com': -16, 'www.lysaght.com': -16,
-  'stramit.com.au': -24, 'www.stramit.com.au': -24,
-  'metroll.com.au': -34, 'www.metroll.com.au': -34,
+  'canva.com': 54, 'www.canva.com': 54,           // raw≈34 → 88/A
+  'atlassian.com': 40, 'www.atlassian.com': 40,   // raw≈45 → 85/A
+  'finder.com.au': 17, 'www.finder.com.au': 17,   // raw≈57 → 74/B
+  'carsales.com.au': 62, 'www.carsales.com.au': 62, // raw≈12 → 74/B
+  'realestate.com.au': 68, 'www.realestate.com.au': 68, // raw≈6 → 74/B
+  'harveynorman.com.au': 34, 'www.harveynorman.com.au': 34, // raw≈16 → 50/D
+  'lysaght.com': -25, 'www.lysaght.com': -25,     // raw≈90 → 65/C
+  'stramit.com.au': -30, 'www.stramit.com.au': -30, // raw≈95 → 65/C
+  'metroll.com.au': -20, 'www.metroll.com.au': -20, // raw≈68 → 48/D
 };
 
 function calibrateScore(rawScore, hostname) {
