@@ -570,7 +570,9 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
   .glossary-table tbody td:first-child{color:#0ABFBC!important;font-weight:700}
   .glossary-table code{color:#0ABFBC!important}
   /* Print header */
-  .glossary-section::before{content:"AISearch Global — aisearch.global";display:block;font-size:8pt;color:#999;margin-bottom:10pt;font-family:Arial,sans-serif}
+  .print-logo{display:block!important;margin-bottom:14pt}
+  .print-logo img{height:36pt;width:auto}
+  .glossary-section::before{content:none}
 }
 
 /* FOOTER */
@@ -991,6 +993,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 
   <!-- ── AEO GLOSSARY ── -->
   <section class="glossary-section" id="aeo-glossary">
+    <div class="print-logo" style="display:none"><img src="/assets/images/logos/aisearch-logo-primary-dark.png" alt="AISearch Global"></div>
     <div class="glossary-header">
       <h2 class="glossary-heading">AEO Terms Reference</h2>
       <button class="pdf-btn" onclick="window.print()" aria-label="Download glossary as PDF"><i class="bi bi-download"></i> Download as PDF</button>
