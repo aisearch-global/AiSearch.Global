@@ -112,6 +112,35 @@ First client: Dr Sid Mohandas (brother) — AEO-compliant website built for test
 
 ---
 
+## Brand Assets — Logos & Favicon
+
+### Favicon
+- **File:** `/favicon.svg` (root)
+- **Fallback PNG:** `/assets/images/logos/favicon-transparent.png`
+- **Always use both lines in `<head>`:**
+  ```html
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.svg">
+  ```
+
+### Logo Variants — Use the Right One
+
+| Variant | File | Use when |
+|---|---|---|
+| **Header / Nav (dark bg)** | `/assets/images/logos/header-logo.svg` | Site header, dark backgrounds, emails on dark |
+| **Print / PDF (white bg)** | `/assets/images/logos/aisearch-logo-primary-dark.png` | Any print output, PDF downloads, white-background documents |
+| **Light colour (dark bg documents)** | `/assets/images/logos/aisearch-logo-primary-light.png` | Presentations, slide decks, documents with dark backgrounds |
+| **Inverse black** | `/assets/images/logos/aisearch-logo-inverse-black.png` | Single-colour black print |
+| **Inverse transparent** | `/assets/images/logos/aisearch-logo-inverse-transparent.png` | Overlays, watermarks, transparent-bg contexts |
+
+### Rules
+- **Web nav header** → always `header-logo.svg`
+- **`@media print` / PDF output** → always `aisearch-logo-primary-dark.png`
+- **Never use the nav SVG on a white/light background** — it won't be visible
+- **OG/social image:** `/assets/images/aisearch_social_graphic_plumber.png` (used for all `og:image` and `twitter:image` tags)
+
+---
+
 ## Tech Stack
 
 - Cloudflare Pages (static HTML/CSS, git-deployed from main branch)
