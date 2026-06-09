@@ -1,5 +1,27 @@
 # AISearch Global — Project Instructions
 
+---
+
+## ⛔ PROTECTED — DO NOT MODIFY WITHOUT EXPLICIT INSTRUCTION FROM VIV
+
+The following are locked. Do not change, replace, move, or rewrite any of these without Viv explicitly asking you to:
+
+| Asset | Locked value |
+|---|---|
+| Nav / header logo | `/assets/images/logos/header-logo.svg` — **dark backgrounds only**. This SVG has white/light text on a transparent background. It is INVISIBLE on white or light backgrounds. Never use it in documents, PDFs, or any white-background context. |
+| Print / PDF logo | `/assets/images/logos/aisearch-logo-primary-dark.png` — **white/light backgrounds only** (documents, PDFs, print). The only logo used in `@media print`. |
+| Favicon | `/favicon.svg` — do not change the file or the `<link>` tags pointing to it |
+| Brand colours | Teal `#0ABAB5` / `#0ABFBC` · Dark bg `#0D0E10` · Text `#E3E8EE` — never alter |
+| Footer social links | URLs in `assets/js/main.js` — do not add, remove, or change any social handle or URL |
+| GA property ID | `G-XBZMSCBXBZ` — never alter or remove from any page |
+| `main.js` header HTML | The `var H = ...` block — do not restructure without explicit approval |
+
+**Why these are locked:** A previous AI session changed the nav logo from the SVG image to plain text, breaking the brand. These rules exist to prevent that class of error from recurring.
+
+**If you think a change to a locked item is needed:** stop, describe what you want to change and why, and wait for Viv to confirm before touching it.
+
+---
+
 ## About
 
 **AISearch Global** — `www.aisearch.global`
