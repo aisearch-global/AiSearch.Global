@@ -2,23 +2,57 @@
 
 ---
 
-## ⛔ PROTECTED — DO NOT MODIFY WITHOUT EXPLICIT INSTRUCTION FROM VIV
+## ⛔ STOP — READ THIS BEFORE TOUCHING ANYTHING
 
-The following are locked. Do not change, replace, move, or rewrite any of these without Viv explicitly asking you to:
+These rules are absolute. No exceptions. No "I thought it would be better". No silent changes.
 
-| Asset | Locked value |
+### LOCKED ASSETS — NEVER MODIFY WITHOUT VIV EXPLICITLY SAYING SO IN THIS CONVERSATION
+
+**LOGOS**
+
+- **Nav/header (dark backgrounds only):**
+  `/assets/images/logos/header-logo.svg`
+  ⚠️ WHITE TEXT ON TRANSPARENT BACKGROUND. COMPLETELY INVISIBLE ON WHITE OR LIGHT SURFACES. Only ever used inside the dark site header. Never in documents, PDFs, slides, or any white-background context. Never replaced with text.
+
+- **Print/PDF/documents (white/light backgrounds only):**
+  `/assets/images/logos/aisearch-logo-primary-dark.png`
+  The ONLY logo for any `@media print`, PDF download, or white-background document. No other logo file is acceptable here.
+
+**FAVICON**
+```html
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+```
+Both lines. Exact paths. On every page. Do not change the file, the paths, or the tags.
+
+**GOOGLE ANALYTICS**
+```html
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XBZMSCBXBZ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XBZMSCBXBZ');</script>
+```
+Every page must have this. Property ID `G-XBZMSCBXBZ` is fixed. Never alter or omit.
+
+**BRAND COLOURS — NEVER ALTER**
+| Token | Value |
 |---|---|
-| Nav / header logo | `/assets/images/logos/header-logo.svg` — **dark backgrounds only**. This SVG has white/light text on a transparent background. It is INVISIBLE on white or light backgrounds. Never use it in documents, PDFs, or any white-background context. |
-| Print / PDF logo | `/assets/images/logos/aisearch-logo-primary-dark.png` — **white/light backgrounds only** (documents, PDFs, print). The only logo used in `@media print`. |
-| Favicon | `/favicon.svg` — do not change the file or the `<link>` tags pointing to it |
-| Brand colours | Teal `#0ABAB5` / `#0ABFBC` · Dark bg `#0D0E10` · Text `#E3E8EE` — never alter |
-| Footer social links | URLs in `assets/js/main.js` — do not add, remove, or change any social handle or URL |
-| GA property ID | `G-XBZMSCBXBZ` — never alter or remove from any page |
-| `main.js` header HTML | The `var H = ...` block — do not restructure without explicit approval |
+| Teal (primary accent) | `#0ABAB5` / `#0ABFBC` |
+| Dark background | `#0D0E10` |
+| Body text | `#E3E8EE` |
+| Muted text | `#95A0AD` |
 
-**Why these are locked:** A previous AI session changed the nav logo from the SVG image to plain text, breaking the brand. These rules exist to prevent that class of error from recurring.
+**`assets/js/main.js` — DO NOT RESTRUCTURE**
+The shared header/footer injector. Do not change:
+- The `var H = ...` header HTML block (logo img tag, nav links, CTA link)
+- The footer social media URLs
+- The GA event tracking logic
 
-**If you think a change to a locked item is needed:** stop, describe what you want to change and why, and wait for Viv to confirm before touching it.
+### WHAT TO DO IF YOU THINK A LOCKED ITEM NEEDS CHANGING
+
+Stop. Do not make the change. Tell Viv what you want to change and why. Wait for explicit confirmation in this conversation before proceeding. "I assumed" is not acceptable.
+
+### WHY THESE RULES EXIST
+
+A previous AI session silently replaced the header logo SVG with plain text, breaking the brand across every page of the live website. These rules exist because silent "improvements" to brand assets cause real damage.
 
 ---
 
