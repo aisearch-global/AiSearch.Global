@@ -11,7 +11,7 @@
       + 'footer .social-links a{color:inherit;text-decoration:none}'
       + 'footer .social-links a:hover{color:#0abab5}'
       + 'header .nav-links a,header .links a{text-decoration:none}'
-      + 'header .brand{font:700 1.1rem "Space Grotesk",sans-serif;text-decoration:none;color:#1C1D20;letter-spacing:-.01em;white-space:nowrap}'
+      + 'header .brand{font:700 1.1rem "Space Grotesk",sans-serif;text-decoration:none;color:#e3e8ee;letter-spacing:-.01em;white-space:nowrap}'
       + 'header .brand em{color:#0ABFBC;font-style:normal}';
     document.head.appendChild(S);
 
