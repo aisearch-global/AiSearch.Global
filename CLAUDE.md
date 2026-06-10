@@ -204,3 +204,222 @@ First client: Dr Sid Mohandas (brother) — AEO-compliant website built for test
 - Postiz (social scheduling)
 - Blogger (Mindful Machines Journal — separate project)
 - GitHub (version control)
+
+---
+
+## Site File Map — URL → File Path
+
+Every live URL and its source file. Edit the correct file.
+
+| Live URL | File path |
+|---|---|
+| `https://aisearch.global/` | `index.html` |
+| `https://aisearch.global/services/` | `services/index.html` |
+| `https://aisearch.global/services/aeo-audit` | `services/aeo-audit.html` |
+| `https://aisearch.global/services/content-restructuring` | `services/content-restructuring.html` |
+| `https://aisearch.global/services/ai-visibility-strategy` | `services/ai-visibility-strategy.html` |
+| `https://aisearch.global/services/ai-brand-presence` | `services/ai-brand-presence.html` |
+| `https://aisearch.global/services/schema-implementation` | `services/schema-implementation.html` |
+| `https://aisearch.global/services/structured-content-systems` | `services/structured-content-systems.html` |
+| `https://aisearch.global/insights/` | `insights/index.html` |
+| `https://aisearch.global/insights/what-is-aeo-answer-engine-optimisation` | `insights/what-is-aeo-answer-engine-optimisation.html` |
+| `https://aisearch.global/insights/how-ai-decides-which-businesses-to-recommend` | `insights/how-ai-decides-which-businesses-to-recommend.html` |
+| `https://aisearch.global/insights/aeo-traction-stack` | `insights/aeo-traction-stack.html` |
+| `https://aisearch.global/about/` | `about/index.html` |
+| `https://aisearch.global/faq.html` | `faq.html` |
+| `https://aisearch.global/aeo-score-calculator.html` | `aeo-score-calculator.html` |
+| `https://aisearch.global/privacy/` | `privacy/index.html` |
+| `https://aisearch.global/terms/` | `terms/index.html` |
+
+**Not-live files** (do not edit or deploy): `privacy.html`, `terms.html` (root-level legacy copies), `local-private/` (all files), `content-archive/` (all files), `brand-assets/social-graphics/` (all files).
+
+---
+
+## How `main.js` Works — CRITICAL
+
+Every page has empty `<header></header>` and `<footer></footer>` tags in the HTML. **This is intentional.** They are not broken.
+
+`assets/js/main.js` runs on page load and injects the full nav and footer HTML into those empty tags. This is how every page gets the same header logo, nav links, CTA button, and footer without copy-pasting HTML into every file.
+
+**Rules:**
+- Never write content directly into `<header>` or `<footer>` tags in any page file — `main.js` will overwrite it.
+- Never restructure or rewrite the `var H = ...` block or footer block in `main.js` — those are LOCKED (see top of this file).
+- If the nav or footer looks wrong, the fix is in `assets/js/main.js`, not in individual page files.
+- The `<script defer src="/assets/js/main.js"></script>` tag must be in `<head>` of every page.
+
+---
+
+## AEO Score Calculator — Worker Deploys Separately
+
+The scoring logic lives in `cloudflare/aeo-score-worker.js` and runs as a **Cloudflare Worker** at `aeo-score.aisearchglobal.workers.dev`.
+
+**Git push to main does NOT deploy the Worker.** The Worker must be deployed separately:
+```
+npx wrangler deploy cloudflare/aeo-score-worker.js
+```
+
+The page `aeo-score-calculator.html` is deployed via git push like everything else. The Worker is a separate service. Editing `cloudflare/aeo-score-worker.js` and pushing will NOT update the live scoring logic until `wrangler deploy` is run.
+
+---
+
+## Standard `<head>` Template — Required on Every Page
+
+Every new page must include all of the following, in this order:
+
+```html
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PAGE TITLE | AISearch Global</title>
+  <meta name="description" content="PAGE DESCRIPTION">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="author" content="AISearch Global">
+  <link rel="canonical" href="https://aisearch.global/PAGE-URL">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/images/aisearch_social_graphic_plumber.png">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script defer src="/assets/js/main.js"></script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AISearch Global">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:url" content="https://aisearch.global/PAGE-URL">
+  <meta property="og:title" content="PAGE TITLE | AISearch Global">
+  <meta property="og:description" content="PAGE DESCRIPTION">
+  <meta property="og:image" content="https://aisearch.global/assets/images/aisearch_social_graphic_plumber.png">
+  <meta property="og:image:alt" content="AISearch Global social graphic showing a plumber search query and warning that your business is not here">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PAGE TITLE | AISearch Global">
+  <meta name="twitter:description" content="PAGE DESCRIPTION">
+  <meta name="twitter:image" content="https://aisearch.global/assets/images/aisearch_social_graphic_plumber.png">
+  <meta name="twitter:image:alt" content="AISearch Global social graphic showing a plumber search query and warning that your business is not here">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBZMSCBXBZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XBZMSCBXBZ');
+  </script>
+</head>
+```
+
+The OG image and twitter:image are always `aisearch_social_graphic_plumber.png` unless Viv explicitly specifies otherwise.
+
+---
+
+## Formspree — Contact Form
+
+**Form ID:** `xqejbpqj`
+**Endpoint:** `https://formspree.io/f/xqejbpqj`
+
+Used in `index.html` (home `#contact` section) and `about/index.html`. Any new contact or lead form must use this same endpoint — do NOT create a new Formspree form. Creating a new form would silently drop submissions from the existing form.
+
+---
+
+## Fixes Applied — Regression Protection
+
+These bugs were found and fixed. Do not revert them.
+
+| What was fixed | File(s) | Before (broken) | After (correct) |
+|---|---|---|---|
+| Nav logo was plain text | `assets/js/main.js` | `<span>AISearch Global</span>` text in header | `<img src="/assets/images/logos/header-logo.svg" ...>` |
+| Signal 9 label wrong | `aeo-score-calculator.html` | Incorrect label text | Correct signal 9 label |
+| GA missing | `faq.html`, all 4 insights pages | No GA snippet | GA snippet `G-XBZMSCBXBZ` added |
+| Print logo wrong | `insights/aeo-traction-stack.html` | Used header SVG (invisible on white) in `@media print` | Uses `aisearch-logo-primary-dark.png` |
+
+If you see any of these files without the correct content, the state has regressed — restore from git history or reapply the fix.
+
+---
+
+## `_redirects` — Adding New Pages
+
+`_redirects` (root) controls Cloudflare Pages URL rewriting. **Every page with a clean URL needs an entry here.**
+
+Format: `SOURCE DESTINATION STATUS_CODE`
+
+Current rules:
+```
+/services  /services/index.html  200
+/services/ /services/index.html  200
+/insights  /insights/index.html  200
+/insights/ /insights/index.html  200
+/privacy   /privacy/index.html   200
+/privacy/  /privacy/index.html   200
+/terms     /terms/index.html     200
+/terms/    /terms/index.html     200
+/aeo-calculator.html /aeo-score-calculator.html 301
+/aeo-calculator      /aeo-score-calculator.html 301
+/insights/aeo-glossary.html /insights/ 301
+```
+
+When adding a new page at a directory URL (e.g. `/new-page/index.html`), add both:
+```
+/new-page  /new-page/index.html  200
+/new-page/ /new-page/index.html  200
+```
+Without these entries, `/new-page/` will return a 404.
+
+---
+
+## Social Media Profiles
+
+All social links are injected by `main.js` footer — to update a URL, change it in `main.js` only (not in individual pages).
+
+| Platform | URL | Handle |
+|---|---|---|
+| LinkedIn | `https://www.linkedin.com/company/ai-search-global/` | `ai-search-global` |
+| Facebook | `https://www.facebook.com/aisearch.global` | `aisearch.global` |
+| Instagram | `https://www.instagram.com/aisearch.global/` | `@aisearch.global` |
+| Threads | `https://www.threads.net/@aisearch.global` | `@aisearch.global` |
+| X (Twitter) | `https://x.com/aisearch_global` | `@aisearch_global` (underscore, not dot) |
+| YouTube | `https://www.youtube.com/@aisearch.global` | `@aisearch.global` |
+| Pinterest | `https://au.pinterest.com/aisearch_global/` | `aisearch_global` (underscore) |
+| TikTok | `https://www.tiktok.com/@aisearch.global` | `@aisearch.global` |
+| Google Maps | Long URL in `main.js` | Listed as AISearch Global, Currans Hill Sydney |
+
+Note the handle inconsistency: X and Pinterest use underscore (`aisearch_global`); all others use dot (`aisearch.global`).
+
+**Contact email:** `hello@aisearch.global` — the public business address used on the website, in schema markup, and on all social profiles.
+
+---
+
+## GA Event Tracking — `data-track` and `data-track-form`
+
+`main.js` wires up two types of GA4 event tracking automatically — no extra JS needed, just add the attribute.
+
+**Click events** (`data-track`):
+```html
+<a href="..." data-track="your_label">Click me</a>
+```
+Fires: `gtag('event', 'click', { event_category: 'engagement', event_label: 'your_label' })`
+
+**Form submit events** (`data-track-form`):
+```html
+<form ... data-track-form="audit_request">...</form>
+```
+Fires: `gtag('event', 'generate_lead', { event_category: 'conversion', event_label: 'audit_request' })`
+
+Existing labels in use (don't duplicate): `audit_request`, `about_hero_cta`, `about_calculator_cta`, `about_cta_click`, `email_click`, `calculator-cta`, `audit_services_hero`, `calculator_services_hero`, `article-cta-traction-stack`, and per-service CTAs.
+
+---
+
+## Known Anomalies — Do Not "Fix"
+
+These are intentional or pre-existing states that look wrong but should not be changed without Viv's direction.
+
+**`insights/index.html` uses relative asset paths**
+Lines 14–15 load CSS and JS as `../assets/css/styles.css` and `../assets/js/main.js` instead of the absolute `/assets/...` pattern used everywhere else. The page works correctly — Cloudflare resolves it. Do not change to absolute paths without testing; the page predates the current pattern and has not caused issues.
+
+**Pinterest domain verification only on 2 pages**
+`<meta name="p:domain_verify" content="c18ed316c67e3a4c44602269f5997354">` appears only in `index.html` and `about/index.html`. This is intentional — Pinterest verification only requires one page. Do not add it to other pages.
+
+**`faq.html` and `terms/index.html` have no JSON-LD schema**
+17 of 19 live pages have `<script type="application/ld+json">` blocks. `faq.html` and `terms/index.html` do not. This is an existing gap, not a regression.
