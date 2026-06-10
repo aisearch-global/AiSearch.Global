@@ -17,7 +17,7 @@
 
    /* ── Shared header ── */
    var H = '<div class="container nav">'
-      + '<a href="/" class="brand" aria-label="AISearch Global home"><img src="/assets/images/logos/header-logo.svg" alt="AISearch Global"></a>'
+      + '<a href="/" class="brand" aria-label="AISearch Global home"><img src="/assets/images/logos/header-logo.svg" alt="AISearch Global" width="200" height="34"></a>'
       + '<button class="nav-toggle" id="menuBtn" aria-controls="siteNav" aria-expanded="false">Menu</button>'
       + '<ul id="siteNav" class="nav-links links">'
       + '<li><a href="/#what">What is AI Visibility</a></li>'

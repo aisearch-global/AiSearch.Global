@@ -7,26 +7,26 @@ AISearch Global focuses exclusively on AEO, not traditional SEO. Our work helps 
 
 ## Core Services
 
-- [AI Visibility Audit](/services/aeo-audit.html): A comprehensive baseline audit of how AI engines currently find, describe, and recommend your business. Delivers a prioritised 90-day action plan.
-- [Content Restructuring](/services/content-restructuring.html): Converts existing website copy into answer-ready formats optimised for RAG systems and LLM extraction.
-- [Schema Implementation](/services/schema-implementation.html): Deploys structured JSON-LD and entity markup to strengthen semantic trust and machine comprehension of your business.
-- [AI Brand Presence](/services/ai-brand-presence.html): Builds consistent entity signals across the data sources used as grounding references by large language models.
-- [Structured Content Systems](/services/structured-content-systems.html): Creates reusable publishing frameworks that produce machine-readable, high-utility pages at scale.
-- [AI Visibility Strategy](/services/ai-visibility-strategy.html): Aligns your AEO optimisation roadmap with specific business revenue targets and priority market queries.
+- [AI Visibility Audit](/services/aeo-audit): A comprehensive baseline audit of how AI engines currently find, describe, and recommend your business. Delivers a prioritised 90-day action plan.
+- [Content Restructuring](/services/content-restructuring): Converts existing website copy into answer-ready formats optimised for RAG systems and LLM extraction.
+- [Schema Implementation](/services/schema-implementation): Deploys structured JSON-LD and entity markup to strengthen semantic trust and machine comprehension of your business.
+- [AI Brand Presence](/services/ai-brand-presence): Builds consistent entity signals across the data sources used as grounding references by large language models.
+- [Structured Content Systems](/services/structured-content-systems): Creates reusable publishing frameworks that produce machine-readable, high-utility pages at scale.
+- [AI Visibility Strategy](/services/ai-visibility-strategy): Aligns your AEO optimisation roadmap with specific business revenue targets and priority market queries.
 
 ## Free Diagnostic Tool
 
-- [AISearch Global AEO Score Calculator](/aeo-score-calculator.html): A free, instant AI visibility scorecard. Enter your website URL, industry, and location to receive a numeric score out of 100, a letter grade (A to F), an AI recommendation likelihood score, a plain-English interpretation, a highest-impact fix recommendation, and an industry benchmark comparison. Scores 13 AEO signals including title tag, meta description, H1, content depth, JSON-LD schema, FAQ content, About page, contact signals, review signals, location signals, industry keyword relevance, sitemap.xml, and robots.txt.
+- [AISearch Global AEO Score Calculator](/aeo-score-calculator): A free, instant AI visibility scorecard. Enter your website URL, industry, and location to receive a numeric score out of 100, a letter grade (A to F), an AI recommendation likelihood score, a plain-English interpretation, a highest-impact fix recommendation, and an industry benchmark comparison. Scores 13 AEO signals including title tag, meta description, H1, content depth, JSON-LD schema, FAQ content, About page, contact signals, review signals, location signals, industry keyword relevance, sitemap.xml, and robots.txt.
 
 ## Insights
 
-- [What Is AEO? Answer Engine Optimisation Explained](/insights/what-is-aeo-answer-engine-optimisation.html): A foundational guide to Answer Engine Optimisation — what it is, how it differs from SEO, and why it matters for businesses as AI-generated answers replace traditional search results. Published 24 May 2026.
-- [How AI Decides Which Businesses to Recommend](/insights/how-ai-decides-which-businesses-to-recommend.html): An explanation of the signals, data sources, and trust factors that determine whether an AI engine recommends your business in a response. Published 30 May 2026.
-- [The AEO Traction Stack](/insights/aeo-traction-stack.html): AISearch Global's proprietary four-layer framework — Entity Clarity, Schema Markup, Answer-Format Content, Citation Consistency — for building durable AI search visibility. Published 7 Jun 2026.
+- [What Is AEO? Answer Engine Optimisation Explained](/insights/what-is-aeo-answer-engine-optimisation): A foundational guide to Answer Engine Optimisation — what it is, how it differs from SEO, and why it matters for businesses as AI-generated answers replace traditional search results. Published 24 May 2026.
+- [How AI Decides Which Businesses to Recommend](/insights/how-ai-decides-which-businesses-to-recommend): An explanation of the signals, data sources, and trust factors that determine whether an AI engine recommends your business in a response. Published 30 May 2026.
+- [The AEO Traction Stack](/insights/aeo-traction-stack): AISearch Global's proprietary four-layer framework — Entity Clarity, Schema Markup, Answer-Format Content, Citation Consistency — for building durable AI search visibility. Published 7 Jun 2026.
 
 ## Reference Pages
 
-- [FAQ — 51 AEO Questions Answered](/faq.html): 51 frequently asked questions about Answer Engine Optimisation, AI search visibility, schema markup, and working with AISearch Global.
+- [FAQ — 51 AEO Questions Answered](/faq): 51 frequently asked questions about Answer Engine Optimisation, AI search visibility, schema markup, and working with AISearch Global.
 - [AI Visibility Audit](/#contact): Book the paid AI Visibility Audit via the homepage contact form. This is the entry point for the service.
 - [About AISearch Global](/about/): Background on the agency, founder, and approach to AEO.
 

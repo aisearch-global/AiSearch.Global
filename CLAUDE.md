@@ -150,6 +150,24 @@ First client: Dr Sid Mohandas (brother) — AEO-compliant website built for test
 
 ---
 
+## SEO / AEO Audit Protocol — MANDATORY
+
+**Every time Viv asks for an audit, SEO check, AEO check, or "what needs updating":**
+
+1. **Search first.** Before auditing the site, run a web search for what's changed in AEO/SEO since the last audit. Search for: "AEO best practices 2026", "Google schema markup updates", "AI search ranking signals", "answer engine optimisation latest". Check docs.anthropic.com, Google Search Central, schema.org changelog, and AEO-specific sources (Frase.io, Moz, Search Engine Journal).
+
+2. **Then audit the site** against BOTH:
+   - The current site state (read actual files)
+   - The latest standards found in step 1
+
+3. **Report gaps** in priority order: Critical (broken/missing) → High (ranking impact) → Medium (best practice) → Low (nice-to-have).
+
+4. **Always include a "What's changed since last audit" section** — new schema types, new AI crawler signals, Google algorithm updates, new AEO signals AI platforms have started weighting.
+
+**Why:** AISearch Global is an AEO agency. Its own site must model best practice. If the site is behind on any AEO/SEO signal, that undermines the business. The audit must reflect current standards, not just known standards.
+
+---
+
 ## How to Work With Viv
 
 **Do:**

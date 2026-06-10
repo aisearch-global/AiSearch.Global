@@ -2,4 +2,3 @@
 Allow: /
 
 Sitemap: https://aisearch.global/sitemap.xml
-LLMs: https://aisearch.global/llms.txt
