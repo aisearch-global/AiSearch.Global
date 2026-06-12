@@ -8,7 +8,7 @@ https://aisearch.global
 
 ## About AISearch Global
 
-AISearch Global is a pure-play AEO specialist. Every other Australian digital agency treats AEO as an add-on to SEO. AISearch Global focuses on it exclusively. The agency was founded by Viveka (Viv), a Sydney-based strategist with certifications across AI, generative AI, AI ethics, psychology, and human-centred AI design.
+AISearch Global is a pure-play AEO specialist. Every other Australian digital agency treats AEO as an add-on to SEO. AISearch Global focuses on it exclusively. Founded by a Sydney-based AEO strategist with approximately 50 certifications across AI, generative AI, AI ethics, psychology, human-centred AI, and leadership.
 
 **Stage:** Active. Launched May 2026.
 **Location:** Sydney, New South Wales, Australia
@@ -20,32 +20,32 @@ AISearch Global is a pure-play AEO specialist. Every other Australian digital ag
 ## Services
 
 ### AI Visibility Audit — $1,500–$2,500 AUD
-URL: /services/aeo-audit.html
+URL: /services/aeo-audit
 
 The primary offer. A comprehensive baseline audit of how AI engines currently find, describe, and recommend a business. Includes a full audit of 13 AEO signals across technical structure, content, schema markup, and entity signals. Delivers a prioritised 90-day action plan with specific fixes ranked by expected visibility impact.
 
 ### Content Restructuring — from $1,500 AUD
-URL: /services/content-restructuring.html
+URL: /services/content-restructuring
 
 Converts existing website copy into answer-ready formats optimised for Retrieval-Augmented Generation (RAG) systems and LLM extraction. Focuses on question-and-answer formatting, definition blocks, direct-answer paragraphs, and structured headings that AI engines can parse and cite.
 
 ### Schema Implementation — $750–$1,500 AUD
-URL: /services/schema-implementation.html
+URL: /services/schema-implementation
 
 Deploys structured JSON-LD markup including Organization, LocalBusiness, FAQPage, Article, BreadcrumbList, and Service schema types. Strengthens semantic trust and machine comprehension of business identity, services, and expertise.
 
 ### AI Brand Presence — $1,200–$1,800 AUD
-URL: /services/ai-brand-presence.html
+URL: /services/ai-brand-presence
 
 Builds consistent entity signals across the data sources AI engines use as grounding references — Wikipedia, Wikidata, industry directories, authoritative citations, and structured third-party mentions. Ensures AI engines correctly identify, describe, and attribute the business.
 
 ### Structured Content Systems — $1,500–$2,500 AUD
-URL: /services/structured-content-systems.html
+URL: /services/structured-content-systems
 
 Creates reusable publishing frameworks that produce machine-readable, high-utility pages at scale. Includes content templates, FAQ systems, glossary structures, and answer-format page designs that compound AI visibility over time.
 
 ### AI Visibility Strategy — $2,000–$3,500 AUD
-URL: /services/ai-visibility-strategy.html
+URL: /services/ai-visibility-strategy
 
 Aligns an AEO optimisation roadmap with specific business revenue targets and priority market queries. Combines technical AEO, content strategy, and entity building into a cohesive plan with measurable milestones.
 
@@ -54,7 +54,7 @@ Aligns an AEO optimisation roadmap with specific business revenue targets and pr
 ## Free Diagnostic Tool
 
 ### AISearch Global AEO Score Calculator
-URL: /aeo-score-calculator.html
+URL: /aeo-score-calculator
 
 A free, instant AI visibility scorecard. Enter a website URL, industry, and location to receive:
 - A numeric score out of 100
@@ -101,19 +101,19 @@ Layers 1 and 2 account for approximately 80% of achievable improvement for most 
 ## Published Insights
 
 ### What Is AEO? Answer Engine Optimisation Explained
-URL: /insights/what-is-aeo-answer-engine-optimisation.html
+URL: /insights/what-is-aeo-answer-engine-optimisation
 Published: 24 May 2026
 
 Foundational guide explaining what Answer Engine Optimisation is, how it differs from traditional SEO, which AI platforms are covered (ChatGPT, Gemini, Perplexity, Claude, Google AI Overviews, DeepSeek, Grok), and the core signals that drive AI search visibility. Written for Australian business owners with no prior AEO knowledge.
 
 ### How AI Decides Which Businesses to Recommend
-URL: /insights/how-ai-decides-which-businesses-to-recommend.html
+URL: /insights/how-ai-decides-which-businesses-to-recommend
 Published: 30 May 2026
 
 Explains the signals, data sources, and trust factors AI engines use when selecting businesses to recommend in a generated answer. Covers entity recognition, schema markup, content extractability, citation authority, and recency signals. Includes practical implications for Australian SMBs.
 
 ### The AEO Traction Stack
-URL: /insights/aeo-traction-stack.html
+URL: /insights/aeo-traction-stack
 Published: 7 Jun 2026
 
 Full explanation of AISearch Global's proprietary four-layer AEO framework. Covers each layer in detail — Entity Clarity, Schema Markup, Answer-Format Content, Citation Consistency — with implementation guidance, common mistakes, and expected impact at each layer. Includes a self-assessment checklist.
@@ -123,7 +123,7 @@ Full explanation of AISearch Global's proprietary four-layer AEO framework. Cove
 ## Reference Pages
 
 ### FAQ — 51 AEO Questions Answered
-URL: /faq.html
+URL: /faq
 
 51 frequently asked questions covering: what AEO is and how it differs from SEO, how AI engines decide which businesses to recommend, what schema markup does and how to implement it, what the AI Visibility Audit includes, how long AEO takes to show results, what industries benefit most, and how to work with AISearch Global.
 
@@ -150,7 +150,7 @@ URL: /terms/
 - `Organization` — home page
 - `ProfessionalService` — home page
 - `WebSite` — home page
-- `FAQPage` — home page and /faq.html
+- `FAQPage` — home page and /faq
 - `Article` — insights articles
 - `BreadcrumbList` — insights articles
 
