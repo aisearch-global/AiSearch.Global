@@ -78,6 +78,67 @@ function extractText(html) {
     .trim();
 }
 
+function analyseGeo(html, hostname) {
+  const text = extractText(html);
+  const lower = text.toLowerCase();
+
+  // ── STATISTICS ── percentages, dollar amounts, formatted numbers
+  const statRx = [
+    /\b\d+(\.\d+)?%/g,
+    /\$\s*[\d,]+(\.\d+)?[kmb]?\b/gi,
+    /\b\d{1,3}(,\d{3})+\b/g,
+    /\b\d+\s*(million|billion|thousand)\b/gi,
+  ];
+  const statSet = new Set();
+  statRx.forEach(rx => { (text.match(rx) || []).forEach(m => statSet.add(m.trim().toLowerCase())); });
+  const statsCount = statSet.size;
+
+  // ── CITATIONS ── external links + citation phrases
+  const safeHost = (hostname || '').toLowerCase();
+  const extLinkCount = (html.match(/<a[^>]+href=["'](https?:\/\/[^"']+)["'][^>]*>/gi) || [])
+    .filter(tag => {
+      try { return !new URL((tag.match(/href=["']([^"']+)["']/i) || [])[1] || '').hostname.includes(safeHost); }
+      catch { return false; }
+    }).length;
+  const citePhraseCount = (lower.match(/\b(according to|cited by|as reported|study found|research shows|published in|per the|data from|findings show)\b/g) || []).length;
+  const citationCount = extLinkCount + citePhraseCount;
+
+  // ── QUOTATIONS ── substantial quoted text (30+ chars)
+  const quoteRx = [/\"[^\"]{30,}\"/g, /“[^”]{30,}”/g, /&ldquo;[\s\S]{30,}&rdquo;/g];
+  let quoteCount = 0;
+  quoteRx.forEach(rx => { quoteCount += (text.match(rx) || []).length; });
+
+  // ── KEYWORD STUFFING ── any 5+ letter non-stop word at >4.2% of all words
+  const words = (text.match(/[a-z]{5,}/gi) || []).map(w => w.toLowerCase());
+  const stops = new Set(['about','after','again','their','there','these','those','would','could','should','which','where','other','every','first','being','doing','going','having','making','taking','before','during','while','through','between','against','without','however','therefore','because','although','whether','another','nothing','someone','something','everything','anything','ourselves','themselves','people','things']);
+  const freq = {};
+  words.forEach(w => { if (!stops.has(w)) freq[w] = (freq[w] || 0) + 1; });
+  const topFreq = words.length > 0 ? Math.max(0, ...Object.values(freq)) : 0;
+  const hasKeywordStuffing = words.length > 60 && (topFreq / words.length) > 0.042;
+
+  // ── GEO SCORE (0–100) ─ weighted by Princeton paper findings
+  const statsScore   = statsCount    === 0 ? 0 : statsCount    <= 2 ? 12 : statsCount    <= 6 ? 25 : 33;
+  const citeScore    = citationCount === 0 ? 0 : citationCount <= 2 ? 12 : citationCount <= 5 ? 25 : 33;
+  const quoteScore   = quoteCount    === 0 ? 0 : quoteCount    === 1 ? 17 : 34;
+  const stuffPenalty = hasKeywordStuffing ? 8 : 0;
+  const geoScore     = Math.max(0, Math.min(100, statsScore + citeScore + quoteScore - stuffPenalty));
+
+  // ── MISSING TACTICS & PROJECTED LIFT ──
+  const missing = [];
+  if (statsCount    < 3) missing.push({ tactic: 'Add statistics',         lift: 35 });
+  if (citationCount < 3) missing.push({ tactic: 'Cite credible sources',  lift: 40 });
+  if (quoteCount    < 1) missing.push({ tactic: 'Add quotations',         lift: 30 });
+  if (hasKeywordStuffing) missing.push({ tactic: 'Remove keyword stuffing', lift: 0 });
+
+  // Projected lift = best single-tactic gain available (paper tests each tactic independently)
+  const tacticMissing = missing.filter(m => m.lift > 0);
+  const projectedLift = tacticMissing.length === 0 ? 0 : Math.max(...tacticMissing.map(m => m.lift));
+
+  return { geoScore, statsCount, citationCount, quoteCount,
+    hasStats: statsCount >= 3, hasCitations: citationCount >= 3,
+    hasQuotations: quoteCount >= 1, hasKeywordStuffing, missing, projectedLift };
+}
+
 function analyseHtml(html, location, industry, hasSitemap, hasRobots, siteBreadth) {
   const text   = extractText(html);
   const lower  = text.toLowerCase();
@@ -253,7 +314,7 @@ export default {
     try { body = await request.json(); }
     catch { return json({ error: 'Invalid JSON' }, 400); }
 
-    const { url, industry, location } = body;
+    const { url, industry, location, geoCheck } = body;
     if (!url || !industry) return json({ error: 'url and industry are required' }, 400);
 
     let parsed;
@@ -293,6 +354,7 @@ export default {
     ]);
 
     const signals             = analyseHtml(html, location, industry, hasSitemap, hasRobots, siteBreadth);
+    const geo                 = geoCheck ? analyseGeo(html, parsed.hostname) : null;
     const rawTotal            = score(signals);
     const total               = calibrateScore(rawTotal, parsed.hostname);
     const gradeInfo           = grade(total);
@@ -323,6 +385,7 @@ export default {
       fix,
       quickFix: fix,
       gain,
+      geo,
     });
   },
 };

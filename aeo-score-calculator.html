@@ -139,7 +139,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400&display=swap" onload="this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400&display=swap"></noscript>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBZMSCBXBZ"></script>
 <script>
@@ -612,6 +613,131 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
 }
 .about-brand-tag span { color: var(--tiffany); }
 
+/* ── GEO CARD ── */
+.geo-card {
+  display: none; margin-top: 16px;
+  background: var(--surface); border: 1px solid rgba(10,186,181,.25);
+  border-top: 3px solid rgba(10,186,181,.5);
+  border-radius: 8px; overflow: hidden;
+}
+.geo-card.active { display: block; animation: fadeUp .4s ease; }
+
+.geo-card-header {
+  background: rgba(10,186,181,.05); border-bottom: 1px solid rgba(10,186,181,.18);
+  padding: 14px 24px;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+}
+.geo-eyebrow {
+  font-family: var(--fm); font-size: .58rem; text-transform: uppercase; letter-spacing: .12em;
+  color: var(--tiffany); display: flex; align-items: center; gap: 8px;
+}
+.geo-eyebrow strong { font-family: var(--fh); font-size: .78rem; text-transform: none; letter-spacing: 0; color: var(--white); font-weight: 700; }
+.geo-badge {
+  font-family: var(--fm); font-size: .58rem; text-transform: uppercase; letter-spacing: .08em;
+  color: var(--tiffany); background: var(--tiffany-glow); border: 1px solid rgba(10,186,181,.2);
+  padding: 3px 10px; border-radius: 999px; white-space: nowrap;
+}
+.current-badge {
+  font-family: var(--fm); font-size: .58rem; text-transform: uppercase; letter-spacing: .08em;
+  color: var(--silver); background: rgba(255,255,255,.04); border: 1px solid var(--border);
+  padding: 3px 10px; border-radius: 999px; white-space: nowrap;
+}
+.geo-compare {
+  display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--border);
+}
+@media (max-width: 520px) { .geo-compare { grid-template-columns: 1fr; } }
+.geo-col { padding: 20px 24px; }
+.geo-col:first-child { border-right: 1px solid var(--border); }
+@media (max-width: 520px) { .geo-col:first-child { border-right: none; border-bottom: 1px solid var(--border); } }
+.geo-col-label {
+  font-family: var(--fm); font-size: .58rem; text-transform: uppercase; letter-spacing: .12em;
+  color: var(--muted); margin-bottom: 10px;
+}
+.geo-score-num {
+  font-family: var(--fh); font-size: 2rem; font-weight: 700; line-height: 1; color: var(--tiffany); margin-bottom: 4px;
+}
+.geo-score-num span { font-size: 1rem; color: var(--muted); font-weight: 400; }
+.geo-score-sub { font-family: var(--fm); font-size: .62rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.geo-lift {
+  font-family: var(--fh); font-size: 1.8rem; font-weight: 700; line-height: 1; color: var(--green); margin-bottom: 4px;
+}
+.geo-lift-label { font-family: var(--fm); font-size: .62rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.geo-lift-note { font-family: var(--fm); font-size: .6rem; color: var(--muted); line-height: 1.5; margin-top: 8px; }
+.geo-signals { padding: 20px 24px; border-bottom: 1px solid var(--border); }
+.geo-signals-label { font-family: var(--fm); font-size: .58rem; text-transform: uppercase; letter-spacing: .12em; color: var(--tiffany); margin-bottom: 14px; }
+.geo-signal-row {
+  display: grid; grid-template-columns: 20px 1fr auto;
+  align-items: start; gap: 10px 12px; margin-bottom: 12px;
+}
+.geo-signal-row:last-child { margin-bottom: 0; }
+.geo-check { font-size: .9rem; padding-top: 1px; }
+.geo-check.pass { color: var(--green); }
+.geo-check.fail { color: var(--red); }
+.geo-check.warn { color: var(--amber); }
+.geo-signal-name { font-family: var(--fh); font-size: .82rem; font-weight: 600; color: var(--white); margin-bottom: 2px; }
+.geo-signal-detail { font-family: var(--fm); font-size: .6rem; color: var(--muted); letter-spacing: .03em; }
+.geo-signal-badge {
+  font-family: var(--fm); font-size: .58rem; letter-spacing: .06em; white-space: nowrap;
+  padding: 2px 8px; border-radius: 2px; margin-top: 2px; text-transform: uppercase;
+}
+.geo-signal-badge.lift { color: var(--green); background: rgba(82,201,138,.08); border: 1px solid rgba(82,201,138,.2); }
+.geo-signal-badge.pass { color: var(--muted); background: rgba(255,255,255,.03); border: 1px solid var(--border); }
+.geo-signal-badge.warn { color: var(--amber); background: rgba(224,168,82,.08); border: 1px solid rgba(224,168,82,.2); }
+.geo-study-note {
+  padding: 14px 24px; background: rgba(10,186,181,.02);
+  font-family: var(--fm); font-size: .6rem; color: var(--muted); line-height: 1.7;
+}
+.geo-study-note a { color: var(--tiffany); }
+
+/* ── GEO PROSPECTIVE SCORE ── */
+.geo-prospective-block {
+  padding: 20px 24px; border-bottom: 1px solid var(--border);
+  background: rgba(10,186,181,.025);
+}
+.geo-prospective-eyebrow {
+  font-family: var(--fm); font-size: .58rem; text-transform: uppercase; letter-spacing: .12em;
+  color: var(--muted); margin-bottom: 16px;
+}
+.geo-score-compare {
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px;
+}
+@media (max-width: 560px) {
+  .geo-score-compare { grid-template-columns: 1fr; }
+  .geo-sc-arrow { transform: rotate(90deg); text-align: center; }
+}
+.geo-sc-col {
+  padding: 16px 20px; border: 1px solid var(--border); border-radius: 6px;
+}
+.geo-sc-col.projected {
+  border-color: rgba(10,186,181,.4); background: rgba(10,186,181,.05);
+}
+.geo-sc-label {
+  font-family: var(--fm); font-size: .56rem; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--muted); margin-bottom: 10px;
+}
+.geo-sc-score {
+  font-family: var(--fh); font-size: 2rem; font-weight: 700; line-height: 1.1;
+  color: var(--silver); margin-bottom: 4px;
+}
+.geo-sc-score span { font-size: 1rem; color: var(--muted); font-weight: 400; }
+.geo-sc-score.tiffany { color: var(--tiffany); }
+.geo-sc-grade {
+  font-family: var(--fh); font-size: 1.05rem; font-weight: 700; margin-bottom: 3px;
+}
+.geo-sc-grade.tiffany { color: var(--tiffany); }
+.geo-sc-grade-label {
+  font-family: var(--fm); font-size: .58rem; color: var(--muted); letter-spacing: .04em;
+}
+.geo-sc-grade-label.tiffany { color: var(--tiffany); opacity: .85; }
+.geo-sc-arrow {
+  font-size: 1.5rem; color: var(--tiffany); opacity: .6; text-align: center; flex-shrink: 0;
+}
+.geo-sc-note {
+  margin-top: 14px; font-family: var(--fm); font-size: .68rem; line-height: 1.65;
+  color: var(--silver); text-align: center;
+}
+.geo-sc-note strong { color: var(--tiffany); }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 520px) {
   .page-wrap { padding: 32px 16px 72px; }
@@ -701,6 +827,17 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
     <span class="chip"><i class="bi bi-check2-circle"></i> 13 signals checked</span>
   </div>
 
+  <!-- New feature callout -->
+  <div style="background:rgba(10,186,181,.06);border:1px solid rgba(10,186,181,.2);border-left:3px solid var(--tiffany);border-radius:0 6px 6px 0;padding:14px 18px;margin-bottom:28px">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+      <span style="font-family:var(--fm);font-size:.58rem;text-transform:uppercase;letter-spacing:.1em;background:var(--tiffany);color:var(--black);padding:2px 8px;border-radius:2px;font-weight:700">New</span>
+      <span style="font-family:var(--fh);font-size:.88rem;font-weight:700;color:var(--white)">Princeton GEO Analysis — now available</span>
+    </div>
+    <p style="font-family:var(--fb);font-size:.84rem;color:var(--silver);margin:0;line-height:1.65">
+      Tick the checkbox below to run a second analysis alongside your AEO score. Based on the peer-reviewed Princeton GEO study (KDD 2024), it checks whether your content uses the 3 tactics proven to boost AI citation visibility by up to 40%: statistics, source citations, and quotations. Your AEO score shows <strong style="color:var(--white)">current</strong> structural visibility — the GEO analysis shows <strong style="color:var(--tiffany)">prospective</strong> improvement potential. <a href="/insights/princeton-geo-paper-explained" style="color:var(--tiffany);font-weight:500;white-space:nowrap">Read the full study breakdown →</a>
+    </p>
+  </div>
+
   <!-- ── FORM ── -->
   <div class="assessment-form" id="formPanel">
     <span class="form-brand-tag">AISearch Global</span>
@@ -747,7 +884,13 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
         <input type="checkbox" id="promoConsent">
         <label for="promoConsent">Optional: Contact me with AEO updates and AISearch Global content.</label>
       </div>
-      <div class="consent-note">Privacy consent required. Marketing consent is optional.</div>
+      <div class="consent-item" style="margin-top:4px;padding-top:12px;border-top:1px solid rgba(10,186,181,.12)">
+        <input type="checkbox" id="geoConsent">
+        <label for="geoConsent" style="color:var(--white)">
+          <strong style="color:var(--tiffany)">Princeton GEO analysis</strong> — also check my content against the 3 tactics from the peer-reviewed GEO study (statistics, citations, quotations) and show a prospective improvement estimate.
+        </label>
+      </div>
+      <div class="consent-note">Privacy consent required. GEO analysis and marketing consent are optional.</div>
     </div>
 
     <button class="btn-submit" id="submitBtn" onclick="runAssessment()" disabled>
@@ -763,7 +906,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
   <div class="loading-state" id="loadingPanel">
     <div class="loader"></div>
     <div class="loading-domain" id="loadingDomain">Fetching your site…</div>
-    <div class="loading-sub">Analysing 13 AI visibility signals</div>
+    <div class="loading-sub" id="loadingSubText">Analysing 13 AI visibility signals</div>
     <p class="loading-brand">AISearch Global AEO Score Calculator <span>·</span> aisearch.global</p>
   </div>
 
@@ -781,7 +924,10 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
         <span>AISearch Global</span>
         <strong>AISearch Global AEO Score Calculator</strong>
       </div>
-      <span class="card-header-domain" id="resultDomain">—</span>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+        <span class="current-badge">Current Visibility</span>
+        <span class="card-header-domain" id="resultDomain">—</span>
+      </div>
     </div>
 
     <div class="grade-block">
@@ -826,6 +972,49 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
     </div>
 
   </div><!-- /result-card -->
+
+  <!-- ── GEO RESULT CARD ── -->
+  <div class="geo-card" id="geoCard">
+
+    <div class="geo-card-header">
+      <div class="geo-eyebrow">
+        Princeton GEO Analysis · <strong>AISearch Global</strong>
+      </div>
+      <span class="geo-badge">Prospective Improvement</span>
+    </div>
+
+    <!-- Prospective AEO Score -->
+    <div class="geo-prospective-block">
+      <div class="geo-prospective-eyebrow">Your projected AEO score — if you apply the Princeton GEO framework</div>
+      <div class="geo-score-compare">
+        <div class="geo-sc-col current">
+          <div class="geo-sc-label">Current AEO Score</div>
+          <div class="geo-sc-score" id="gpCurrentScore">— <span>/ 100</span></div>
+          <div class="geo-sc-grade" id="gpCurrentGrade">—</div>
+          <div class="geo-sc-grade-label" id="gpCurrentLabel">—</div>
+        </div>
+        <div class="geo-sc-arrow"><i class="bi bi-arrow-right-circle-fill"></i></div>
+        <div class="geo-sc-col projected">
+          <div class="geo-sc-label">With Princeton GEO Applied</div>
+          <div class="geo-sc-score tiffany" id="gpProspectiveScore">— <span>/ 100</span></div>
+          <div class="geo-sc-grade tiffany" id="gpProspectiveGrade">—</div>
+          <div class="geo-sc-grade-label tiffany" id="gpProspectiveLabel">—</div>
+        </div>
+      </div>
+      <div class="geo-sc-note" id="gpNote">—</div>
+    </div>
+
+    <div class="geo-signals">
+      <div class="geo-signals-label">Princeton GEO Content Signals — 3 tactics that lift AI citation visibility</div>
+      <div id="geoSignalRows"><!-- filled by JS --></div>
+    </div>
+
+    <div class="geo-study-note" id="geoStudyNote">
+      Based on <em>GEO: Generative Engine Optimization</em> (Aggarwal et al., Princeton University / KDD 2024, <a href="https://arxiv.org/abs/2311.09735" target="_blank" rel="noopener">arXiv:2311.09735</a>) — the only peer-reviewed study of its kind, tested across 10,000 queries. Citing sources, adding statistics, and including quotations boost AI citation visibility by 30–40%.
+      <span id="geoArticleLink"></span>
+    </div>
+
+  </div><!-- /geo-card -->
 
   <p class="disclaimer" id="disclaimer" style="display:none">
     This is an estimated AI visibility grade based on publicly visible website signals, produced by AISearch Global's AEO Score Calculator.<br>
@@ -934,10 +1123,11 @@ function hide(id)        { document.getElementById(id).classList.remove('active'
 function setDisplay(id,v){ document.getElementById(id).style.display = v; }
 
 function resetToForm() {
-  hide('loadingPanel'); hide('errorPanel'); hide('resultCard');
+  hide('loadingPanel'); hide('errorPanel'); hide('resultCard'); hide('geoCard');
   setDisplay('formPanel','block'); setDisplay('disclaimer','none');
   document.getElementById('privacyConsent').checked = false;
   document.getElementById('promoConsent').checked = false;
+  document.getElementById('geoConsent').checked = false;
   syncSubmitState();
 }
 
@@ -951,6 +1141,7 @@ async function runAssessment() {
   const location = document.getElementById('bizLocation').value.trim();
   const privacyConsent = document.getElementById('privacyConsent').checked;
   const promoConsent   = document.getElementById('promoConsent').checked;
+  const geoCheck       = document.getElementById('geoConsent').checked;
 
   if (!urlRaw)   { document.getElementById('siteUrl').focus(); return; }
   if (!industry) { document.getElementById('industry').focus(); return; }
@@ -971,13 +1162,16 @@ async function runAssessment() {
   setDisplay('formPanel','none');
   document.getElementById('submitBtn').disabled = true;
   document.getElementById('loadingDomain').textContent = 'Analysing ' + parsed.hostname + '…';
-  show('loadingPanel'); hide('errorPanel'); hide('resultCard');
+  document.getElementById('loadingSubText').textContent = geoCheck
+    ? 'Analysing 13 AEO signals + Princeton GEO content tactics…'
+    : 'Analysing 13 AI visibility signals';
+  show('loadingPanel'); hide('errorPanel'); hide('resultCard'); hide('geoCard');
 
   try {
     const res  = await fetch(API, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ url, industry, location, privacyConsent, promoConsent }),
+      body: JSON.stringify({ url, industry, location, privacyConsent, promoConsent, geoCheck }),
     });
     const raw  = await res.text();
     let data;
@@ -1031,7 +1225,120 @@ function renderResult(d) {
 
   show('resultCard');
   setDisplay('disclaimer','block');
+  if (d.geo) renderGeo(d.geo, d.score);
   setTimeout(() => document.getElementById('resultCard').scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+}
+
+// Grade function — mirrors Worker logic so prospective score uses the same scale
+function calcGrade(s) {
+  if (s >= 90) return { grade: 'A+', label: 'AI Visibility Leader',      color: '#52c98a' };
+  if (s >= 80) return { grade: 'A',  label: 'Strong AI Visibility',      color: '#0ABFBC' };
+  if (s >= 70) return { grade: 'B',  label: 'Above Average Visibility',  color: '#0ABFBC' };
+  if (s >= 60) return { grade: 'C',  label: 'Moderate AI Visibility',    color: '#e0a852' };
+  if (s >= 40) return { grade: 'D',  label: 'Weak AI Visibility',        color: '#e07a52' };
+  return              { grade: 'F',  label: 'Poor AI Visibility',        color: '#e05252' };
+}
+
+function renderGeo(geo, currentScore) {
+  // ── Prospective AEO Score (consistent with main calculator) ──
+  // Points added for each missing GEO tactic (calibrated to AEO score scale)
+  const bonus = (!geo.hasCitations      ? 5 : 0)   // +5 — citations are #1 GEO signal
+              + (!geo.hasStats          ? 4 : 0)   // +4 — statistics
+              + (!geo.hasQuotations     ? 3 : 0)   // +3 — quotations
+              + ( geo.hasKeywordStuffing ? 2 : 0);  // +2 — removing stuffing penalty
+
+  const prospectiveScore  = Math.min(100, currentScore + bonus);
+  const curGrade          = calcGrade(currentScore);
+  const proGrade          = calcGrade(prospectiveScore);
+  const missingCount      = [!geo.hasCitations, !geo.hasStats, !geo.hasQuotations].filter(Boolean).length;
+
+  // Current AEO Score column
+  document.getElementById('gpCurrentScore').innerHTML  = currentScore + ' <span>/ 100</span>';
+  const gpCG = document.getElementById('gpCurrentGrade');
+  gpCG.textContent  = curGrade.grade;
+  gpCG.style.color  = curGrade.color;
+  document.getElementById('gpCurrentLabel').textContent = curGrade.label;
+
+  // Prospective AEO Score column
+  document.getElementById('gpProspectiveScore').innerHTML = prospectiveScore + ' <span>/ 100</span>';
+  const gpPG = document.getElementById('gpProspectiveGrade');
+  gpPG.textContent  = proGrade.grade;
+  gpPG.style.color  = proGrade.color;
+  gpPG.classList.remove('tiffany'); // colour set by calcGrade, not CSS class
+  document.getElementById('gpProspectiveLabel').textContent = proGrade.label;
+
+  // Summary note
+  const noteEl = document.getElementById('gpNote');
+  if (bonus === 0) {
+    noteEl.innerHTML = '✓ Your content already applies all 3 Princeton GEO tactics — no further GEO-driven improvement available.';
+  } else if (missingCount === 1) {
+    noteEl.innerHTML = `Apply the 1 missing tactic below to add an estimated <strong>+${bonus} points</strong> to your AEO score.`;
+  } else {
+    noteEl.innerHTML = `Apply ${missingCount} missing tactics below to add an estimated <strong>+${bonus} points</strong> to your AEO score.`;
+  }
+
+  // ── Signal rows ──
+  const signals = [
+    {
+      key: 'stats', label: 'Statistics',
+      pass: geo.hasStats,
+      detail: geo.hasStats
+        ? geo.statsCount + ' data points found — well evidenced'
+        : geo.statsCount + ' data point' + (geo.statsCount !== 1 ? 's' : '') + ' found — aim for 6+ to match top performers',
+      lift: '+up to 35%', liftLabel: 'Add statistics'
+    },
+    {
+      key: 'cite', label: 'Source citations',
+      pass: geo.hasCitations,
+      detail: geo.hasCitations
+        ? geo.citationCount + ' citations found — strongest GEO signal present'
+        : geo.citationCount + ' citation' + (geo.citationCount !== 1 ? 's' : '') + ' found — linking to credible sources is the #1 GEO tactic',
+      lift: '+up to 40%', liftLabel: 'Cite credible sources'
+    },
+    {
+      key: 'quotes', label: 'Quotations',
+      pass: geo.hasQuotations,
+      detail: geo.hasQuotations
+        ? geo.quoteCount + ' substantial quote' + (geo.quoteCount !== 1 ? 's' : '') + ' found'
+        : 'No substantial quotes detected — add expert or client quotes (30+ words)',
+      lift: '+up to 30%', liftLabel: 'Add quotations'
+    },
+    {
+      key: 'stuff', label: 'Keyword stuffing',
+      pass: !geo.hasKeywordStuffing,
+      detail: geo.hasKeywordStuffing
+        ? 'Unnatural keyword repetition detected — rewrite for clarity. This actively hurts AI citation rates.'
+        : 'Not detected — content reads naturally',
+      lift: '−8 pts', warn: geo.hasKeywordStuffing
+    },
+  ];
+
+  document.getElementById('geoSignalRows').innerHTML = signals.map(s => {
+    const iconClass = s.warn ? 'warn' : s.pass ? 'pass' : 'fail';
+    const icon      = s.warn ? '⚠' : s.pass ? '✓' : '✗';
+    let badge = '';
+    if (!s.pass && !s.warn && s.lift) {
+      badge = `<span class="geo-signal-badge lift">${s.lift}</span>`;
+    } else if (s.pass) {
+      badge = `<span class="geo-signal-badge pass">Pass</span>`;
+    } else if (s.warn && s.lift) {
+      badge = `<span class="geo-signal-badge warn">${s.lift}</span>`;
+    }
+    return `<div class="geo-signal-row">
+      <span class="geo-check ${iconClass}">${icon}</span>
+      <div>
+        <div class="geo-signal-name">${s.label}</div>
+        <div class="geo-signal-detail">${s.detail}</div>
+      </div>
+      ${badge}
+    </div>`;
+  }).join('');
+
+  // Article link (once page is live)
+  document.getElementById('geoArticleLink').innerHTML =
+    ' &nbsp;·&nbsp; <a href="/insights/princeton-geo-paper-explained">Read the plain-English breakdown →</a>';
+
+  show('geoCard');
 }
 
 document.getElementById('siteUrl').addEventListener('keydown', function(e) {

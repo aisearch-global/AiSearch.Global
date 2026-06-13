@@ -1,5 +1,5 @@
 # AISearch Global — Full Reference
-# Last updated: 8 Jun 2026
+# Last updated: 12 Jun 2026
 https://aisearch.global
 
 > AISearch Global is a specialist Answer Engine Optimisation (AEO) agency based in Sydney, Australia. We help Australian businesses get found, cited, and recommended inside AI-generated answers on ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews, DeepSeek, and Grok.
@@ -150,15 +150,21 @@ URL: /terms/
 - `Organization` — home page
 - `ProfessionalService` — home page
 - `WebSite` — home page
-- `FAQPage` — home page and /faq
-- `Article` — insights articles
-- `BreadcrumbList` — insights articles
+- `FAQPage` — home page, /faq, and all 6 service pages
+- `Article` — all 3 insights articles
+- `BreadcrumbList` — all 3 insights articles and all 6 service pages
+- `Service` — all 6 service pages
+- `HowTo` — /insights/aeo-traction-stack (4-step implementation guide)
+- `WebPage` with `speakable` — all 3 insights articles
+- `CollectionPage` — /insights/
+- `ItemList` — /insights/ (article list)
+- `BreadcrumbList` — /faq (site-wide via JSON-LD)
 
 ---
 
 ## Technical
 
-- Last refreshed: 8 Jun 2026
+- Last refreshed: 12 Jun 2026 (schema audit + factual corrections)
 - sitemap.xml: https://aisearch.global/sitemap.xml
 - robots.txt: https://aisearch.global/robots.txt
 - llms.txt: https://aisearch.global/llms.txt

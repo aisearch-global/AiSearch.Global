@@ -56,31 +56,37 @@
   </url>
   <url>
     <loc>https://aisearch.global/insights/</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aisearch.global/insights/what-is-aeo-answer-engine-optimisation</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aisearch.global/insights/how-ai-decides-which-businesses-to-recommend</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aisearch.global/faq</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aisearch.global/insights/aeo-traction-stack</loc>
     <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aisearch.global/insights/princeton-geo-paper-explained</loc>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

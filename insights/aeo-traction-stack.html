@@ -110,7 +110,8 @@
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap"></noscript>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBZMSCBXBZ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XBZMSCBXBZ');</script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <style>
 :root {
@@ -597,6 +598,8 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
   .gantt-row-label { font-size: .7rem; }
   .milestone-timeline::before { display: none; }
 }
+blockquote{border-left:2px solid var(--tiffany);background:var(--tiffany-dim);padding:1.25rem 1.5rem;margin:2rem 0;border-radius:0 4px 4px 0;font-style:italic;color:var(--white);font-size:.95rem;line-height:1.65}
+blockquote cite{display:block;margin-top:.75rem;font-style:normal;font-size:.85rem;color:var(--muted);font-weight:500}
 </style>
 <script defer src="/assets/js/main.js"></script>
 <script type="application/ld+json">
@@ -648,6 +651,17 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
       ".faq-answer"
     ]
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aisearch.global/"},
+    {"@type": "ListItem", "position": 2, "name": "Insights", "item": "https://aisearch.global/insights/"},
+    {"@type": "ListItem", "position": 3, "name": "The AEO Traction Stack", "item": "https://aisearch.global/insights/aeo-traction-stack"}
+  ]
 }
 </script>
 </head>
@@ -724,6 +738,8 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
   <p>
     <strong>AI systems evaluate your entire web presence as a coherent whole.</strong> If one part is optimised and three parts are unclear, AI systems lose confidence in your data. That's why we built the AEO Traction Stack — a four-layer framework that ensures every part of your web presence works together to tell AI systems the same clear story about your business.
   </p>
+
+  <blockquote>"Most businesses skip Entity Clarity and Schema — the two layers that drive 80% of measurable AEO improvement — and go straight to content. Without the foundation, the content work doesn't land."<cite>— Viveka Das, Founder, AISearch Global</cite></blockquote>
 
   <h2>The four layers of the AEO Traction Stack</h2>
 
@@ -1085,6 +1101,10 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 
   <div class="callout" style="margin:0">
     <p><strong>Not sure where your business stands?</strong> Use the free <a href="/aeo-score-calculator.html" style="color:var(--tiffany);text-decoration:none;font-weight:500">AISearch Global AEO Score Calculator</a> — it fetches your live site and scores 13 real signals across all four Traction Stack layers. Instant grade, no email required.</p>
+  </div>
+
+  <div class="callout" style="margin-top:40px">
+    <p><strong>Want the peer-reviewed evidence behind GEO tactics?</strong> The <a href="/insights/princeton-geo-paper-explained" style="color:var(--tiffany)">Princeton GEO study (Aggarwal et al., KDD 2024)</a> — tested across 10,000 queries — shows which content changes produce the fastest AI citation gains. GEO tactics are the quick-win layer that sits on top of this Traction Stack foundation. Read the plain-English breakdown to see exactly what to do on your pages this week.</p>
   </div>
 
   <div class="article-cta">
