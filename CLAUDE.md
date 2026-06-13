@@ -6,6 +6,21 @@
 
 These rules are absolute. No exceptions. No "I thought it would be better". No silent changes.
 
+### NEVER USE .html EXTENSIONS IN INTERNAL LINKS OR SCHEMA URLS
+
+**Rule:** Every internal link (`href`) and every URL in JSON-LD schema must use the clean URL — no `.html` extension, ever.
+
+| ❌ Wrong | ✅ Correct |
+|---|---|
+| `href="/aeo-score-calculator.html"` | `href="/aeo-score-calculator"` |
+| `href="/services/aeo-audit.html"` | `href="/services/aeo-audit"` |
+| `href="/insights/aeo-traction-stack.html"` | `href="/insights/aeo-traction-stack"` |
+| `"url": "https://aisearch.global/services/aeo-audit.html"` | `"url": "https://aisearch.global/services/aeo-audit"` |
+
+**Why:** Cloudflare Pages strips `.html` and redirects to the clean URL (301). If the `_redirects` file also has a 200 rewrite rule mapping that clean URL back to `.html`, a redirect loop results (`ERR_TOO_MANY_REDIRECTS`). Even without a loop, `.html` links add an unnecessary redirect on every click. Clean URLs are what Cloudflare serves natively — always link to those.
+
+**Applies to:** `href` attributes, `src` attributes for pages, all `url`, `item`, and `@id` fields in JSON-LD schema, canonical tags, OG tags, sitemap entries.
+
 ### LOCKED ASSETS — NEVER MODIFY WITHOUT VIV EXPLICITLY SAYING SO IN THIS CONVERSATION
 
 **LOGOS**
