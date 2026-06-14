@@ -124,8 +124,8 @@ Layers 1 & 2 account for ~80% of improvement.
 
 ## Website (Cloudflare Pages, static HTML)
 
-- Home, 6 × Services, Insights (4 articles), About, FAQ (51 Qs), Privacy, Terms
-- AEO Score Calculator: `/aeo-score-calculator.html` — 13-signal automated live URL analyzer, instant grade A–F, no email required
+- Home, 6 × Services, Insights (5 articles), About, FAQ (51 Qs), Privacy, Terms
+- AEO Score Calculator: `/aeo-score-calculator.html` — 20-signal automated live URL analyzer (17 structural AEO + 3 Princeton GEO), instant grade A–F, no email required
 - AI Visibility Audit: `/#contact`
 - Schema: Organization + ProfessionalService + FAQPage JSON-LD, sitemap.xml, robots.txt, llms.txt
 - Deployed via Cloudflare Pages on git push to main
@@ -137,6 +137,8 @@ Layers 1 & 2 account for ~80% of improvement.
 1. *What Is AEO* — 24 May 2026
 2. *How AI Decides Which Businesses to Recommend* — 30 May 2026
 3. *The AEO Traction Stack* — 7 Jun 2026
+4. *The Princeton GEO Paper Explained* — 14 Jun 2026
+5. *AISearch Global: Client Zero* — publishing week of 21 Jun 2026 (file exists at `insights/aisearch-global-client-zero.html`, NOT yet in sitemap or insights/index.html)
 
 ---
 
