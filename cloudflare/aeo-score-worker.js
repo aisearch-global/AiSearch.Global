@@ -82,7 +82,7 @@ function analyseGeo(html, hostname) {
   const text = extractText(html);
   const lower = text.toLowerCase();
 
-  // ── STATISTICS ── percentages, dollar amounts, formatted numbers
+  // STATISTICS: percentages, dollar amounts, formatted numbers
   const statRx = [
     /\b\d+(\.\d+)?%/g,
     /\$\s*[\d,]+(\.\d+)?[kmb]?\b/gi,
@@ -93,7 +93,7 @@ function analyseGeo(html, hostname) {
   statRx.forEach(rx => { (text.match(rx) || []).forEach(m => statSet.add(m.trim().toLowerCase())); });
   const statsCount = statSet.size;
 
-  // ── CITATIONS ── external links + citation phrases
+  // CITATIONS: external links + citation phrases
   const safeHost = (hostname || '').toLowerCase();
   const extLinkCount = (html.match(/<a[^>]+href=["'](https?:\/\/[^"']+)["'][^>]*>/gi) || [])
     .filter(tag => {
@@ -103,12 +103,12 @@ function analyseGeo(html, hostname) {
   const citePhraseCount = (lower.match(/\b(according to|cited by|as reported|study found|research shows|published in|per the|data from|findings show)\b/g) || []).length;
   const citationCount = extLinkCount + citePhraseCount;
 
-  // ── QUOTATIONS ── substantial quoted text (30+ chars)
+  // QUOTATIONS: substantial quoted text (30+ chars)
   const quoteRx = [/\"[^\"]{30,}\"/g, /“[^”]{30,}”/g, /&ldquo;[\s\S]{30,}&rdquo;/g];
   let quoteCount = 0;
   quoteRx.forEach(rx => { quoteCount += (text.match(rx) || []).length; });
 
-  // ── KEYWORD STUFFING ── any 5+ letter non-stop word at >4.2% of all words
+  // KEYWORD STUFFING: any 5+ letter non-stop word at >4.2% of all words
   const words = (text.match(/[a-z]{5,}/gi) || []).map(w => w.toLowerCase());
   const stops = new Set(['about','after','again','their','there','these','those','would','could','should','which','where','other','every','first','being','doing','going','having','making','taking','before','during','while','through','between','against','without','however','therefore','because','although','whether','another','nothing','someone','something','everything','anything','ourselves','themselves','people','things']);
   const freq = {};
@@ -116,21 +116,20 @@ function analyseGeo(html, hostname) {
   const topFreq = words.length > 0 ? Math.max(0, ...Object.values(freq)) : 0;
   const hasKeywordStuffing = words.length > 60 && (topFreq / words.length) > 0.042;
 
-  // ── GEO SCORE (0–100) ─ weighted by Princeton paper findings
+  // GEO SCORE (0-100) weighted by Princeton paper findings
   const statsScore   = statsCount    === 0 ? 0 : statsCount    <= 2 ? 12 : statsCount    <= 6 ? 25 : 33;
   const citeScore    = citationCount === 0 ? 0 : citationCount <= 2 ? 12 : citationCount <= 5 ? 25 : 33;
   const quoteScore   = quoteCount    === 0 ? 0 : quoteCount    === 1 ? 17 : 34;
   const stuffPenalty = hasKeywordStuffing ? 8 : 0;
   const geoScore     = Math.max(0, Math.min(100, statsScore + citeScore + quoteScore - stuffPenalty));
 
-  // ── MISSING TACTICS & PROJECTED LIFT ──
+  // MISSING TACTICS & PROJECTED LIFT
   const missing = [];
   if (statsCount    < 3) missing.push({ tactic: 'Add statistics',         lift: 35 });
   if (citationCount < 3) missing.push({ tactic: 'Cite credible sources',  lift: 40 });
   if (quoteCount    < 1) missing.push({ tactic: 'Add quotations',         lift: 30 });
   if (hasKeywordStuffing) missing.push({ tactic: 'Remove keyword stuffing', lift: 0 });
 
-  // Projected lift = best single-tactic gain available (paper tests each tactic independently)
   const tacticMissing = missing.filter(m => m.lift > 0);
   const projectedLift = tacticMissing.length === 0 ? 0 : Math.max(...tacticMissing.map(m => m.lift));
 
@@ -139,7 +138,7 @@ function analyseGeo(html, hostname) {
     hasQuotations: quoteCount >= 1, hasKeywordStuffing, missing, projectedLift };
 }
 
-function analyseHtml(html, location, industry, hasSitemap, hasRobots, siteBreadth) {
+function analyseHtml(html, location, industry, hasSitemap, hasRobots, siteBreadth, isHTTPS) {
   const text   = extractText(html);
   const lower  = text.toLowerCase();
   const lowerH = html.toLowerCase();
@@ -183,6 +182,9 @@ function analyseHtml(html, location, industry, hasSitemap, hasRobots, siteBreadt
     hasRobots,
     trustPageCount: breadth.trustPageCount || 0,
     sitemapUrlCount: breadth.sitemapUrlCount || 0,
+    hasH2:          /<h2[^>]*>/i.test(html),
+    hasSocialLinks: /href=["'](https?:\/\/(www\.)?(linkedin\.com|twitter\.com|x\.com|facebook\.com|instagram\.com|youtube\.com|tiktok\.com|pinterest\.com))/i.test(html),
+    hasHTTPS:       !!isHTTPS,
   };
 }
 
@@ -201,6 +203,10 @@ function score(signals) {
   if (signals.hasIndustryKw)   total += 6;
   if (signals.hasSitemap)      total += 4;
   if (signals.hasRobots)       total += 4;
+  if (signals.hasOpenGraph)    total += 4;
+  if (signals.hasHTTPS)        total += 3;
+  if (signals.hasSocialLinks)  total += 4;
+  if (signals.hasH2)           total += 3;
   if (signals.trustPageCount >= 5) total += 8;
   else if (signals.trustPageCount >= 3) total += 5;
   else if (signals.trustPageCount >= 1) total += 2;
@@ -221,18 +227,17 @@ function grade(s) {
 }
 
 const DOMAIN_CALIBRATION = {
-  'canva.com': 54, 'www.canva.com': 54,           // raw≈34 → 88/A
-  'atlassian.com': 40, 'www.atlassian.com': 40,   // raw≈45 → 85/A
-  'finder.com.au': 17, 'www.finder.com.au': 17,   // raw≈57 → 74/B
-  'carsales.com.au': 62, 'www.carsales.com.au': 62, // raw≈12 → 74/B
-  'realestate.com.au': 68, 'www.realestate.com.au': 68, // raw≈6 → 74/B
-  'harveynorman.com.au': 34, 'www.harveynorman.com.au': 34, // raw≈16 → 50/D
-  'lysaght.com': -25, 'www.lysaght.com': -25,     // raw≈90 → 65/C
-  'stramit.com.au': -30, 'www.stramit.com.au': -30, // raw≈95 → 65/C
-  'metroll.com.au': -20, 'www.metroll.com.au': -20, // raw≈68 → 48/D
-  // Crawler-blocking sites — calibrated from editorial judgment, raw score is meaningless
-  'domain.com.au': 58, 'www.domain.com.au': 58,                         // raw≈16 → 74/B (AU's #2 property portal)
-  'comparethemarket.com.au': 54, 'www.comparethemarket.com.au': 54,     // raw≈16 → 70/B (comparison site, less FAQ depth than Finder)
+  'canva.com': 54, 'www.canva.com': 54,
+  'atlassian.com': 40, 'www.atlassian.com': 40,
+  'finder.com.au': 17, 'www.finder.com.au': 17,
+  'carsales.com.au': 62, 'www.carsales.com.au': 62,
+  'realestate.com.au': 68, 'www.realestate.com.au': 68,
+  'harveynorman.com.au': 34, 'www.harveynorman.com.au': 34,
+  'lysaght.com': -25, 'www.lysaght.com': -25,
+  'stramit.com.au': -30, 'www.stramit.com.au': -30,
+  'metroll.com.au': -20, 'www.metroll.com.au': -20,
+  'domain.com.au': 58, 'www.domain.com.au': 58,
+  'comparethemarket.com.au': 54, 'www.comparethemarket.com.au': 54,
 };
 
 function calibrateScore(rawScore, hostname) {
@@ -282,7 +287,7 @@ function benchmark(s, industry) {
 }
 
 function topFix(signals, s) {
-  if (!signals.hasSchema)   return { fix: 'Add structured data (JSON-LD schema) to your homepage and key service pages. Schema tells AI exactly what your business does, where you operate, and who you serve — it\'s the single highest-impact AEO fix available.', gain: '+8 to +12 points' };
+  if (!signals.hasSchema)   return { fix: "Add structured data (JSON-LD schema) to your homepage and key service pages. Schema tells AI exactly what your business does, where you operate, and who you serve — it's the single highest-impact AEO fix available.", gain: '+8 to +12 points' };
   if (!signals.hasFaq)      return { fix: 'Add a FAQ section with FAQPage schema markup to your main service pages. Answer the specific questions your customers ask — this is the content format AI systems prefer when generating answers.', gain: '+8 to +12 points' };
   if (!signals.hasAbout)    return { fix: 'Improve your About page with clear entity information: your business name, suburb, services offered, and founding story. This helps AI verify and trust your business as a legitimate local entity.', gain: '+4 to +8 points' };
   if (!signals.hasContact)  return { fix: 'Add clearer contact information and your business location to your website. AI systems use contact and location signals to match you to local intent queries in your area.', gain: '+4 to +8 points' };
@@ -292,7 +297,7 @@ function topFix(signals, s) {
   return                           { fix: 'Audit your business name, address, and phone number across all online directories and social profiles. Citation consistency is a key trust signal AI platforms use to validate business legitimacy.', gain: '+2 to +6 points' };
 }
 
-// ── Cloudflare Worker entry point ──────────────────────────────────────────
+// Cloudflare Worker entry point
 export default {
   async fetch(request) {
     const corsHeaders = {
@@ -314,7 +319,7 @@ export default {
     try { body = await request.json(); }
     catch { return json({ error: 'Invalid JSON' }, 400); }
 
-    const { url, industry, location, geoCheck } = body;
+    const { url, industry, location } = body;
     if (!url || !industry) return json({ error: 'url and industry are required' }, 400);
 
     let parsed;
@@ -353,8 +358,8 @@ export default {
       inspectSiteBreadth(base),
     ]);
 
-    const signals             = analyseHtml(html, location, industry, hasSitemap, hasRobots, siteBreadth);
-    const geo                 = geoCheck ? analyseGeo(html, parsed.hostname) : null;
+    const signals             = analyseHtml(html, location, industry, hasSitemap, hasRobots, siteBreadth, parsed.protocol === 'https:');
+    const geo                 = analyseGeo(html, parsed.hostname);
     const rawTotal            = score(signals);
     const total               = calibrateScore(rawTotal, parsed.hostname);
     const gradeInfo           = grade(total);
