@@ -1041,4 +1041,14 @@ footer a:hover { color: var(--tiffany); }
 document.querySelectorAll('.faq-toggle').forEach(function(btn) {
   btn.addEventListener('click', function() {
     var item = this.closest('.faq-item');
-    var isOpen = item.clas
+    var isOpen = item.classList.contains('open');
+    item.classList.toggle('open', !isOpen);
+    this.setAttribute('aria-expanded', String(!isOpen));
+  });
+});
+</script>
+
+</body>
+</html>
+
+
