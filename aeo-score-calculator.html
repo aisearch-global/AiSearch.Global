@@ -11,7 +11,7 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/assets/images/aisearch_social_graphic_plumber.png">
-
+h
 <!-- Open Graph -->
 <meta property="og:title" content="Free AEO Score Calculator — Now with Princeton GEO Framework | AISearch Global">
 <meta property="og:description" content="Instant AI visibility score with Princeton GEO Framework built in. Analyses 20 signals — 17 structural AEO + 3 peer-reviewed Princeton GEO content signals — to grade how likely ChatGPT, Gemini, Perplexity, and Google AI Overviews recommend your business. Free.">
@@ -898,7 +898,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
       <div class="consent-note" style="margin-top:6px">Privacy consent required · Princeton GEO analysis runs automatically · Marketing contact is optional</div>
     </div>
 
-    <button class="btn-submit" id="submitBtn" onclick="runAssessment()" disabled>
+    <button class="btn-submit" id="submitBtn" onclick="trackAndRun()" disabled>
       <i class="bi bi-search"></i> Check My AI Visibility
     </button>
     <p class="form-note">
@@ -971,7 +971,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
         <a href="/#contact" class="btn-cta-primary" data-track="calculator-cta">
           <i class="bi bi-arrow-right"></i> Book an AI Visibility Audit
         </a>
-        <button class="btn-retake" onclick="resetToForm()">Check another site</button>
+        <button class="btn-retake" onclick="resetToForm()">function resetToForm()</button>
       </div>
       <p class="cta-brand-note">Audits by <a href="https://aisearch.global">AISearch Global</a> · Sydney, Australia</p>
     </div>
@@ -1168,7 +1168,7 @@ function show(id)        { document.getElementById(id).classList.add('active'); 
 function hide(id)        { document.getElementById(id).classList.remove('active'); }
 function setDisplay(id,v){ document.getElementById(id).style.display = v; }
 
-function resetToForm() {
+function trackAndRun() {  var url = document.getElementById('siteUrl').value;
   hide('loadingPanel'); hide('errorPanel'); hide('resultCard'); hide('geoCard');
   setDisplay('formPanel','block'); setDisplay('disclaimer','none');
   document.getElementById('privacyConsent').checked = false;
