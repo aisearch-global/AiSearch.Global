@@ -971,7 +971,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
         <a href="/#contact" class="btn-cta-primary" data-track="calculator-cta">
           <i class="bi bi-arrow-right"></i> Book an AI Visibility Audit
         </a>
-        <button class="btn-retake" onclick="resetToForm()">function resetToForm()</button>
+        <button class="btn-retake" onclick="resetToForm()"><i class="bi bi-arrow-counterclockwise"></i> Analyse another site</button>
       </div>
       <p class="cta-brand-note">Audits by <a href="https://aisearch.global">AISearch Global</a> · Sydney, Australia</p>
     </div>
@@ -1168,9 +1168,17 @@ function show(id)        { document.getElementById(id).classList.add('active'); 
 function hide(id)        { document.getElementById(id).classList.remove('active'); }
 function setDisplay(id,v){ document.getElementById(id).style.display = v; }
 
-function trackAndRun() {  var url = document.getElementById('siteUrl').value;
+function trackAndRun() {
+  const url = document.getElementById('siteUrl').value;
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'aeo_calculator_submit', { event_category: 'engagement', event_label: url });
+  }
+  runAssessment();
+}
+
+function resetToForm() {
   hide('loadingPanel'); hide('errorPanel'); hide('resultCard'); hide('geoCard');
-  setDisplay('formPanel','block'); setDisplay('disclaimer','none');
+  setDisplay('formPanel', 'block'); setDisplay('disclaimer', 'none');
   document.getElementById('privacyConsent').checked = false;
   document.getElementById('promoConsent').checked = false;
   syncSubmitState();
