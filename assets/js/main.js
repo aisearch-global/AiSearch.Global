@@ -8,7 +8,7 @@
       + 'footer .footer-links a{text-decoration:none;color:inherit;opacity:.7;font-size:.9rem}'
       + 'footer .footer-links a:hover{opacity:1;color:#0abab5}'
       + 'footer .social-links{justify-content:center}'
-      + 'footer .social-links a{color:inherit;text-decoration:none}'
+      + 'footer .social-links a{color:rgba(255,255,255,.8);text-decoration:none}'
       + 'footer .social-links a:hover{color:#0abab5}'
       + 'header .nav-links a,header .links a{text-decoration:none}'
       + 'header .brand{text-decoration:none;display:inline-flex;align-items:center}'
