@@ -1,7 +1,7 @@
 # Handover Brief — AISearch Global Website
 
 **Project:** `C:\Users\dasku\OneDrive\Documents\Aisearch.global` (git repo, Cloudflare Pages static site)
-**Last updated:** 2026-06-21, end of session
+**Last updated:** 2026-06-21, dashboard congruence + explainer + sitemap-flow session
 **Live site:** https://aisearch.global
 
 ---
@@ -13,6 +13,34 @@
 - Any `client-zero-*` named file
 - `assets/js/main.js` — the `var H = ...` header block, footer social URLs, GA event logic
 - See full locked-asset rules in repo-root `CLAUDE.md` (logos, GA ID, favicon, brand colours, Formspree form ID) — read it before any further changes.
+
+---
+
+## Latest session addendum (2026-06-21, congruence/explainer/sitemap-flow session) — NOT yet pushed
+
+More work on `insights/client-zero-visibility-dashboard.html` and `sitemap.xml` (Viv gave explicit in-chat instruction to edit the locked dashboard file):
+
+1. **Cockpit ↔ expanded-panel numeric congruence audit** — Checked all 10 cockpit-card summary stats against their expanded detail panels for mismatches ("otherwise incongruent and can decay trust"). Found and fixed 2:
+   - `panel-recognition`: cockpit blurb said "12/100 avg," dial/true average of the 3 sub-scores (12, 5, 12) is 10. Fixed blurb to "10/100 avg."
+   - `panel-crawler`: cockpit ("5 AI bots") and expanded Key Signal stat ("5"/"AI platforms crawling") agreed with each other but not with the actual itemized crawler list, which has 6 distinct AI-bot rows. Fixed both to "6."
+   - Other 8 pairs checked, already consistent, no changes.
+2. **Second "HubSpot" leak found + fixed** — `dash-subtitle` line (~348) still said "Tools: HubSpot AEO Grader + ..." — renamed to "AI Brand Perception Audit," matching the project-wide rule to never expose that third-party tool name publicly. Confirmed via grep: zero "HubSpot" matches remain in the file.
+3. **Explainer paragraphs added** to 4 expanded panels that jumped straight into data without explaining the visual encoding: `panel-platform` (what the gauge dial + meta tags mean), `panel-sentiment` (defines all 4 sentiment dimensions + clarifies Polarization is a risk score where *lower* is better, fixing a contradiction in the old copy), `panel-crawler` (colour-coded AI vs. traditional crawler rows), `panel-performance` (defines TTFB/LCP/Cache Rate). Other 6 panels already had adequate framing, left as-is.
+4. **Sitemap flow decision** — Removed `/insights/client-zero-visibility-dashboard` from `sitemap.xml`. Agreed with Viv: the dashboard has no narrative framing on its own and shouldn't rank as an independent search destination — the case-study article (`aisearch-global-client-zero`) is the canonical AEO/SEO entry point. Dashboard stays reachable via direct URL or the article's CTA button; `robots` meta on the dashboard page left as `index,follow` (not noindex), since it's fine for it to be discovered via the article's link, just not promoted as its own priority page.
+
+No locked assets (header/footer/main.js/GA/favicon/brand colours) touched. Not yet committed.
+
+---
+
+## Previous session addendum (2026-06-21, dashboard styling fix session) — NOT yet pushed
+
+Dashboard styling fixes applied to `insights/client-zero-visibility-dashboard.html` (Viv gave explicit in-chat instruction to edit this locked file):
+
+1. **Cockpit ↔ expanded-panel congruence** — The 3 AI-platform gauge cards (`#panel-platform`) used a red→amber→green rainbow gradient on the SVG arc, which clashed with the rest of the page's single-accent-colour language and duplicated the grade-badge's good/bad semantics. Replaced with a faded→solid gradient in each platform's own brand colour (ChatGPT green, Perplexity teal, Gemini purple) — now matches the needle, score text, and every other platform-coloured element on the page.
+2. **Blurry "Which AI Bots Are Indexing the Site" charts** — Root cause: all Chart.js canvases (SOV donuts, crawler donut, AEO score line) are created once at page load, while every panel except the first is `display:none`. Chart.js measures a 0×0 container at creation time, so canvases render at the wrong internal resolution and look blurry/undersized once their panel opens. Fixed by dispatching a `resize` event (via `requestAnimationFrame`) inside `openPanel()` every time a card is expanded — forces Chart.js to recompute against the now-visible container. Fixes all chart panels, not just the crawler one.
+3. **Priority Actions (P1/P2/P3) card alignment** — Cards are now `display:flex;flex-direction:column` with the paragraph set to `flex:1`, so the service badge + impact line anchor to the bottom of every card regardless of paragraph length. Lightly evened up the three paragraphs' length/cadence (~38–42 words each, same two-sentence structure) so the row reads as one consistent set rather than uneven blocks.
+
+No locked assets (header/footer/main.js/GA/favicon/brand colours) touched. Not yet committed — see git status below.
 
 ---
 
@@ -105,15 +133,31 @@ npx wrangler deploy aeo-score-worker.js
 
 ---
 
-## Still uncommitted locally — Viv's WIP, DO NOT commit/push without asking
+## Push scope decision — 2026-06-22: push everything except the Timeline
 
-- `_redirects` — adds `/insights/client-zero-visibility-dashboard` redirect
-- `sitemap.xml` — adds two Client Zero URLs
-- `insights/index.html` — adds Client Zero as position-1 listing
-- `insights/client-zero-visibility-dashboard.html` — new file, untracked
-- `insights/aeo-geo-results-timeline.html` — content-complete article, not yet in sitemap or insights index
+Viv confirmed: push everything currently outstanding **except** `insights/aeo-geo-results-timeline.html`, which is held back for next week.
 
-**Confirm with Viv before pushing any of these.**
+Verified actual `git status` (not just this doc's prior notes) shows these modified/untracked files:
+
+**Push now:**
+- `HANDOVER.md`, `_headers`, `_redirects`, `sitemap.xml`, `assets/js/main.js`
+- `about/index.html`, `aeo-score-calculator.html`, `faq.html`, `index.html`, `privacy/index.html`, `terms/index.html`
+- `insights/index.html`, `insights/aeo-traction-stack.html`, `insights/how-ai-decides-which-businesses-to-recommend.html`, `insights/princeton-geo-paper-explained.html`, `insights/what-is-aeo-answer-engine-optimisation.html`
+- `services/index.html`, `services/aeo-audit.html`, `services/ai-brand-presence.html`, `services/ai-visibility-strategy.html`, `services/content-restructuring.html`, `services/schema-implementation.html`, `services/structured-content-systems.html`
+- `insights/client-zero-visibility-dashboard.html` (new/untracked)
+
+**Hold back (next week):**
+- `insights/aeo-geo-results-timeline.html` — untracked, content-complete, deliberately not pushed this round.
+
+**Also untracked, not a site file — leave out of the commit:**
+- `AISEARCH GLOBAL WEBSITE AUDIT 21-06-26.docx` — a working doc, not part of the deployed site.
+
+**`assets/js/main.js` checked against the locked-asset rules before clearing it for push:** the diff showed as binary at first glance (a line-ending change made git treat it as a binary diff), but forcing a text diff confirmed the content is byte-for-byte identical except line endings — header HTML block, footer social URLs, GA tracking logic, and Bootstrap Icons classes are all untouched. Safe to include.
+
+**`.git/index.lock`:** still present (0-byte, timestamp 2026-06-21 13:34 UTC) and this sandboxed session still can't delete it. However, the repo's last real commit (`48f030f`, "Fix .html extensions in nav/footer links + bump main.js cache version") landed at 23:51:17 +1000 — *after* the lock's timestamp — so it isn't actually blocking commits made directly on Viv's machine. Treat it as a harmless stale OneDrive-sync artifact, not a live blocker. If a local git client ever does refuse with "unable to create '.git/index.lock': File exists," delete that one 0-byte file and retry.
+
+**Still open, not part of this push:**
+- `insights/aisearch-global-client-zero.html` exists on disk but doesn't show as changed in this `git status` — it's already committed as-is. It still needs the "Why This Matters for You" section rewrite (drafted, not applied) per the project memory — that's separate follow-up work, not blocking this push.
 
 ---
 
