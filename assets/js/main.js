@@ -34,7 +34,7 @@
    /* ── Shared footer ── */
    var F = '<div class="container">'
       + '<div>&copy; 2026 AISearch Global | Sydney | NSW | Australia</div>'
-      + '<div style="margin-top:.35rem;font-size:.8rem;opacity:1;color:rgba(255,255,255,.7)">Watkins Crescent, Currans Hill NSW 2567, Australia &nbsp;|&nbsp; ABN 13 490 201 041 &nbsp;|&nbsp; <a href="tel:+61240192419" style="color:inherit;text-decoration:none">02 4019 2419</a> &nbsp;|&nbsp; <a href="mailto:hello@aisearch.global" style="color:inherit;text-decoration:none">hello@aisearch.global</a></div>'
+      + '<div style="margin-top:.35rem;font-size:.8rem;opacity:1;color:rgba(255,255,255,.7)">Watkins Crescent, Currans Hill NSW 2567, Australia &nbsp;|&nbsp; ABN 13 490 201 041 &nbsp;|&nbsp; <a href="tel:+61240192419" style="color:inherit;text-decoration:none">+61 2 4019 2419</a> &nbsp;|&nbsp; <a href="mailto:hello@aisearch.global" style="color:inherit;text-decoration:none">hello@aisearch.global</a></div>'
       + '<div class="footer-links">'
       + '<a href="/insights/">Insights</a>'
       + '<a href="/about/">About</a>'
