@@ -84,6 +84,14 @@ html{scroll-behavior:smooth}
 body{margin:0;font:15px/1.65 var(--body);background:var(--bg);color:var(--text);overflow-x:hidden}
 a{color:var(--accent);text-decoration:none}
 .container{max-width:1200px;margin:0 auto;padding:0 1.25rem}
+header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+.nav-toggle{display:none;background:none;border:1px solid var(--border);color:var(--text);padding:.45rem .65rem;cursor:pointer;font-family:var(--display)}
+.nav-links{display:flex;gap:1rem;list-style:none;padding:0;margin:0}
+.nav-links a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem}
+.nav-links a:hover{color:var(--accent)}
+.cta-link{padding:.55rem .9rem;border:1px solid var(--accent);border-radius:0;color:var(--accent)!important;display:inline-flex;align-items:center;white-space:nowrap;line-height:1.1}
+@media(max-width:720px){.nav-toggle{display:block}.nav-links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid var(--border);padding:.8rem}.nav-links.open{display:flex}}
 
 /* ── HERO ─────────────────────────────────────────── */
 .dash-hero{padding:3rem 0 2rem;border-bottom:1px solid var(--border)}
@@ -348,7 +356,7 @@ a{color:var(--accent);text-decoration:none}
     <p class="dash-subtitle">Audit date: 20 June 2026 &nbsp;·&nbsp; Audited by: AISearch Global (self-audit) &nbsp;·&nbsp; Industry: AEO &amp; AI Search Consultancy &nbsp;·&nbsp; Tools: AI Brand Perception Audit + Cloudflare Analytics + PageSpeed + WebPageTest</p>
     <div class="dash-meta">
       <span><i class="bi bi-calendar3"></i> 20 June 2026</span>
-      <span><i class="bi bi-geo-alt"></i> Currans Hill, NSW 2567, Australia</span>
+      <span><i class="bi bi-geo-alt"></i> Sydney, NSW, Australia</span>
       <span><i class="bi bi-globe"></i> aisearch.global</span>
       <span><i class="bi bi-robot"></i> Models: GPT-5.4 mini · Perplexity (real-time) · Gemini 3 Flash</span>
     </div>
