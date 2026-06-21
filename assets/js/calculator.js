@@ -90,6 +90,12 @@ document.getElementById('privacyConsent').addEventListener('change', function() 
   document.getElementById('consentError').style.display = 'none';
 });
 
+document.getElementById('submitBtn').addEventListener('click', trackAndRun);
+
+document.querySelectorAll('.btn-retry, .btn-retake').forEach(function(btn) {
+  btn.addEventListener('click', resetToForm);
+});
+
 function renderResult(d) {
   const color = gradeColor(d.grade);
   document.getElementById('resultDomain').textContent = d.domain;
