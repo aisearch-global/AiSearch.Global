@@ -24,8 +24,8 @@
       + '<li><a href="/services/">Services</a></li>'
       + '<li><a href="/about/">About</a></li>'
       + '<li><a href="/insights/">Insights</a></li>'
-      + '<li><a href="/faq">FAQ</a></li>'
-      + '<li><a href="/aeo-score-calculator" class="cta-link">AEO Score Calculator</a></li>'
+      + '<li><a href="/faq.html">FAQ</a></li>'
+      + '<li><a href="/aeo-score-calculator.html" class="cta-link">AEO Score Calculator</a></li>'
       + '</ul></div>';
 
    var header = document.querySelector('header');
@@ -38,7 +38,7 @@
       + '<a href="/insights/">Insights</a>'
       + '<a href="/about/">About</a>'
       + '<a href="/services/">Services</a>'
-      + '<a href="/faq">FAQ</a>'
+      + '<a href="/faq.html">FAQ</a>'
       + '<a href="/privacy/">Privacy</a>'
       + '<a href="/terms/">Terms</a>'
       + '<a href="/#contact">Contact</a>'
