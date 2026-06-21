@@ -173,12 +173,15 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
 .report-cta h3{font-family:var(--fh);font-size:1.3rem;margin:0 0 10px;color:var(--white);}
 .report-cta p{color:var(--silver);margin:0 0 18px;}
 .report-cta .btn{display:inline-block;background:var(--tiffany);color:var(--black);font-family:var(--fh);font-weight:600;padding:12px 28px;border-radius:0;text-decoration:none;}
-.references{margin-top:44px;border-top:1px solid var(--border);padding-top:20px;}
-.references-label{font-family:var(--fh);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--tiffany);margin:0 0 10px;}
-.references ol{margin:0;padding-left:18px;color:var(--silver);}
-.references li{margin:0 0 10px;color:var(--silver);font-size:.86rem;line-height:1.6;}
-.references a{color:var(--tiffany);text-decoration:none;}
-.references a:hover{text-decoration:underline;}
+.faq-list{margin:0 0 28px}
+.faq-item{border-bottom:1px solid var(--border);padding:18px 0}
+.faq-item:first-child{border-top:1px solid var(--border)}
+.faq-q{font-family:var(--fh);font-size:.95rem;font-weight:600;color:var(--white);margin-bottom:10px}
+.faq-a{font-family:var(--fb);font-size:.88rem;color:var(--silver);line-height:1.75}
+.faq-a a{color:var(--tiffany)}
+.sources-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.sources-list li{font-family:var(--fb);font-size:.75rem;color:var(--muted);line-height:1.65;padding:10px 14px;background:var(--surface);border:1px solid var(--border)}
+.sources-list li a{color:var(--tiffany)}
 .report-print-logo{display:none;}
 @media print{
   .report-print-logo{display:block;text-align:center;margin:0 0 24px;}
@@ -355,23 +358,55 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     <p>The businesses running both instruments in mid-2026 will have a six- to twelve-month head start on the ones who wait until AI search feels urgent. That is the window this article is written into — and it is still open.</p>
   </section>
 
+  <section class="report-section">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-q">What is a structural AEO score and how is it different from a Google ranking?</div>
+        <div class="faq-a">A structural AEO score measures whether a page is technically readable by AI engines — schema markup, entity clarity, answer-format content, and citation consistency across sources. A Google ranking measures authority and relevance for keyword queries. A site can rank well on Google and still score poorly for AI engines, because AI systems extract and synthesise answers differently from how search algorithms rank pages.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Why did the AI brand perception scores stay low even after the structural score reached 91?</div>
+        <div class="faq-a">AI models do not crawl the web in real time. They learn from training data collected at specific points, so there is always a lag between when a page becomes machine-readable and when a model starts citing it. A 91 structural score means the pages are now in the best possible state for AI engines to learn from — but learning takes time. The 36/30/41 scores reflect what ChatGPT, Perplexity, and Gemini knew about AISearch Global as of the audit date, not what they will know in three to six months.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">How long does it take for AI engines to recognise improvements to a site?</div>
+        <div class="faq-a">It varies by platform. ChatGPT updates on a training cycle — typically months. Perplexity and Gemini draw on more live web data but still have indexing and citation refresh cycles. In practice, expect three to eight weeks for changes to appear in answers, and a longer tail of three to six months before AI perception scores move meaningfully. The structural work does not make the lag disappear, but it starts the clock.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What does an AI Visibility Audit include?</div>
+        <div class="faq-a">Two instruments run in parallel: a structural <a href="/aeo-score-calculator">AEO Score Assessment</a> (the same 20-signal framework used in the free calculator) and an <a href="/services/ai-brand-presence">AI Brand Perception Audit</a> (direct queries to ChatGPT, Perplexity, and Gemini measuring how each platform currently describes, recommends, or omits the brand). The audit produces both numbers, identifies the specific gaps in each, and maps a prioritised fix sequence using the <a href="/insights/aeo-traction-stack">AEO Traction Stack</a> framework.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Can any business replicate what AISearch Global did here?</div>
+        <div class="faq-a">Yes — the methodology is the same regardless of industry or business size. A 19/100 starting score is typical for a site launched without AEO in mind. The 72-point structural gain in six weeks reflects focused, systematic work — not a large budget or specialist tools. The perception lag is also standard: it affects every brand, including large ones. What varies is the starting gap, the fix complexity, and how competitive the AI landscape is in your specific category.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="report-section">
+    <h2>Sources</h2>
+    <ul class="sources-list">
+      <li>AISearch Global (2026). <em>Client Zero AI Visibility Dashboard.</em> <a href="/insights/client-zero-visibility-dashboard">aisearch.global/insights/client-zero-visibility-dashboard</a></li>
+      <li>AISearch Global (2026). <em>AEO Score Calculator — 20-signal structural assessment.</em> <a href="/aeo-score-calculator">aisearch.global/aeo-score-calculator</a></li>
+      <li>AISearch Global (2026). <em>The AEO Traction Stack — four-layer AI visibility framework.</em> <a href="/insights/aeo-traction-stack">aisearch.global/insights/aeo-traction-stack</a></li>
+      <li>AISearch Global (2026). <em>AI Visibility Audit — service overview.</em> <a href="/services/aeo-audit">aisearch.global/services/aeo-audit</a></li>
+      <li>Google Search Central (2026). <em>Structured data (JSON-LD) documentation.</em> <a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" target="_blank" rel="noopener">developers.google.com</a></li>
+      <li>Schema.org (2026). <em>Canonical vocabulary for structured data markup.</em> <a href="https://schema.org" target="_blank" rel="noopener">schema.org</a></li>
+      <li>Aggarwal, P., Murahari, V., Rajpurohit, T., Kalyan, A., Narasimhan, K., &amp; Deshpande, A. (2024). <em>GEO: Generative Engine Optimization.</em> Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. <a href="https://arxiv.org/abs/2311.09735" target="_blank" rel="noopener">arXiv:2311.09735</a></li>
+    </ul>
+  </section>
+
   <div class="report-cta">
     <h3>See your own gap before you guess at it</h3>
     <p>Same two instruments, your numbers instead of ours.</p>
     <a class="btn" href="/#contact" data-track="client-zero-article-cta">Book your AI Visibility Audit</a>
-  </div>
-
-  <div class="references" id="references">
-    <div class="references-label">References — Published 21 June 2026, baseline data from launch 20 May 2026</div>
-    <ol>
-      <li><a href="https://aisearch.global/insights/client-zero-visibility-dashboard">aisearch.global/insights/client-zero-visibility-dashboard</a> — the comprehensive AI Visibility Audit dashboard for Client Zero.</li>
-      <li><a href="https://aisearch.global/aeo-score-calculator">aisearch.global/aeo-score-calculator</a> — free AEO Score Calculator used for structural scoring (20-signal assessment).</li>
-      <li><a href="https://aisearch.global/insights/aeo-traction-stack">aisearch.global/insights/aeo-traction-stack</a> — the four-layer AEO Traction Stack framework.</li>
-      <li><a href="https://aisearch.global/services/aeo-audit">aisearch.global/services/aeo-audit</a> — AI Visibility Audit service overview.</li>
-      <li><a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data">developers.google.com</a> — Google Search Central: Structured data (JSON-LD) documentation.</li>
-      <li><a href="https://schema.org">schema.org</a> — Canonical vocabulary for structured data markup.</li>
-      <li><a href="https://arxiv.org/abs/2311.09735">arxiv.org/abs/2311.09735</a> — Aggarwal et al. (Princeton, 2023): Generative Engine Optimisation (GEO) — source of the 3 GEO signals in the AEO Score Calculator.</li>
-    </ol>
   </div>
 
 </main>
