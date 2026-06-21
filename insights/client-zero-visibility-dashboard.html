@@ -315,9 +315,9 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 @keyframes panelIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
 .panel-close{display:inline-flex;align-items:center;gap:.35rem;background:none;border:1px solid var(--border);color:var(--muted);font:600 .7rem var(--display);letter-spacing:.04em;text-transform:uppercase;padding:.4rem .75rem;border-radius:0;cursor:pointer;margin-bottom:1rem}
 .panel-close:hover{border-color:var(--accent);color:var(--accent)}
-.detail-placeholder{text-align:center;color:var(--text);font-size:1rem;font-family:var(--display);font-weight:500;padding:1.5rem 1.5rem;background:rgba(10,186,181,.06);border:1px dashed rgba(10,186,181,.5);margin:1.5rem auto;max-width:500px}
-.detail-placeholder i{color:var(--accent);font-size:1.3rem;display:block;margin-bottom:.5rem;animation:bounce-up 1.4s ease-in-out infinite}
-@keyframes bounce-up{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.detail-placeholder{text-align:center;color:var(--accent);font-size:1rem;font-family:var(--display);font-weight:600;padding:2rem 1rem;letter-spacing:.02em;background:none;border:none;margin:0 auto}
+.detail-placeholder i{font-size:2rem;display:block;margin-bottom:.6rem;animation:wiggle-hand 2s ease-in-out infinite;transform-origin:bottom center}
+@keyframes wiggle-hand{0%,100%{transform:rotate(-10deg) translateY(0)}40%{transform:rotate(10deg) translateY(-4px)}70%{transform:rotate(-6deg) translateY(-2px)}}
 
 /* ── RESPONSIVE ───────────────────────────────────── */
 @media(max-width:900px){
@@ -486,7 +486,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 </section>
 
 <div id="detailStage">
-<div class="container"><p class="detail-placeholder" id="detailPlaceholder"><i class="bi bi-arrow-up-circle"></i> Select an instrument above to see the full readout.</p></div>
+<div class="container"><p class="detail-placeholder" id="detailPlaceholder"><i class="bi bi-hand-index-thumb"></i> Click any card above to see the full readout</p></div>
 
 <!-- ── OVERVIEW SCORES ────────────────────────────── -->
 <section class="section detail-panel" id="panel-scorecard">
