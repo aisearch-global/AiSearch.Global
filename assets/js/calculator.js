@@ -1,0 +1,236 @@
+/* AEO Score Calculator — AISearch Global */
+const API = (location.protocol === 'file:')
+  ? 'http://localhost:8787'
+  : 'https://aeo-score.aisearchglobal.workers.dev';
+
+function show(id)        { document.getElementById(id).classList.add('active'); }
+function hide(id)        { document.getElementById(id).classList.remove('active'); }
+function setDisplay(id,v){ document.getElementById(id).style.display = v; }
+
+function trackAndRun() {
+  const url = document.getElementById('siteUrl').value;
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'aeo_calculator_submit', { event_category: 'engagement', event_label: url });
+  }
+  runAssessment();
+}
+
+function resetToForm() {
+  hide('loadingPanel'); hide('errorPanel'); hide('resultCard'); hide('geoCard');
+  setDisplay('formPanel', 'block'); setDisplay('disclaimer', 'none');
+  document.getElementById('submitBtn').disabled = false;
+}
+
+function gradeColor(g) {
+  return {'A+':'#52c98a','A':'#0abab5','B':'#0abab5','C':'#e0a852','D':'#e07a52','F':'#e05252'}[g] || '#888';
+}
+
+async function runAssessment() {
+  const urlRaw   = document.getElementById('siteUrl').value.trim();
+  const industry = document.getElementById('industry').value;
+  const loc      = document.getElementById('bizLocation').value.trim();
+  const privacyConsent = document.getElementById('privacyConsent').checked;
+  const promoConsent   = document.getElementById('promoConsent').checked;
+
+  if (!urlRaw)   { document.getElementById('siteUrl').focus(); return; }
+  if (!industry) { document.getElementById('industry').focus(); return; }
+  if (!privacyConsent) {
+    const errEl = document.getElementById('consentError');
+    errEl.style.display = 'block';
+    document.getElementById('privacyConsent').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    setTimeout(() => { errEl.style.display = 'none'; }, 5000);
+    return;
+  }
+
+  let url = urlRaw;
+  if (!url.startsWith('http://') && !url.startsWith('https://')) url = 'https://' + url;
+
+  let parsed;
+  try { parsed = new URL(url); } catch {
+    showError('Please enter a valid website URL (e.g. yourbusiness.com.au).');
+    return;
+  }
+
+  setDisplay('formPanel','none');
+  document.getElementById('submitBtn').disabled = true;
+  document.getElementById('loadingDomain').textContent = 'Analysing ' + parsed.hostname + '…';
+  document.getElementById('loadingSubText').textContent = 'Analysing 20 signals — AEO + Princeton GEO Framework…';
+  show('loadingPanel'); hide('errorPanel'); hide('resultCard'); hide('geoCard');
+
+  try {
+    const res  = await fetch(API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url, industry, location: loc, privacyConsent, promoConsent, geoCheck: true }),
+    });
+    const raw  = await res.text();
+    let data;
+    try { data = JSON.parse(raw); } catch { throw new Error('Unexpected response from analyser.'); }
+    hide('loadingPanel');
+    if (data.error === 'fetch_failed' || data.error === 'invalid_url') {
+      showError(data.message || 'We could not analyse this site. Please check the URL and try again.');
+      return;
+    }
+    if (data.error) { showError('Something went wrong. Please try again.'); return; }
+    renderResult(data);
+  } catch(err) {
+    hide('loadingPanel');
+    showError('We could not analyse this site. Please check the URL and try again.' + (err?.message ? ' (' + err.message + ')' : ''));
+  }
+}
+
+function showError(msg) {
+  document.getElementById('errorMsg').textContent = msg;
+  document.getElementById('submitBtn').disabled = false;
+  setDisplay('formPanel','none');
+  show('errorPanel');
+}
+
+document.getElementById('privacyConsent').addEventListener('change', function() {
+  document.getElementById('consentError').style.display = 'none';
+});
+
+function renderResult(d) {
+  const color = gradeColor(d.grade);
+  document.getElementById('resultDomain').textContent = d.domain;
+
+  const gl = document.getElementById('gradeLetter');
+  gl.textContent = d.grade;
+  gl.style.cssText += ';background:' + color + '18;border:2px solid ' + color + '55;color:' + color;
+
+  const gs = document.getElementById('gradeScore');
+  gs.innerHTML = d.score + ' <span>/ 100</span>';
+  gs.style.color = color;
+
+  document.getElementById('gradeLabel').textContent  = d.label;
+  document.getElementById('gradeLabel').style.color  = color;
+  document.getElementById('gradeIndustry').textContent = d.industry + (d.location ? ' · ' + d.location : '');
+  document.getElementById('aiViewText').textContent  = d.aiView;
+  document.getElementById('recommendationScore').innerHTML = d.recommendationLikelihood + ' <span>/ 100</span>';
+  document.getElementById('surfacePill').textContent = (d.surfaceLabel || 'Website') + ' · ' + (d.surfaceType || 'owned website');
+  document.getElementById('surfaceNote').textContent = d.surfaceNote || '';
+  document.getElementById('fixText').textContent     = d.fix;
+  document.getElementById('gainPill').textContent    = 'Potential gain: ' + d.gain;
+
+  show('resultCard');
+  setDisplay('disclaimer','block');
+  if (d.geo) renderGeo(d.geo, d.score); else renderGeo({hasStats:false,hasQuotations:false,hasCitations:false,hasKeywordStuffing:false,statsCount:0,citationCount:0,quoteCount:0}, d.score);
+  setTimeout(() => document.getElementById('resultCard').scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+  document.getElementById('submitBtn').disabled = false;
+}
+
+function calcGrade(s) {
+  if (s >= 90) return { grade: 'A+', label: 'AI Visibility Leader',      color: '#52c98a' };
+  if (s >= 80) return { grade: 'A',  label: 'Strong AI Visibility',      color: '#0ABFBC' };
+  if (s >= 70) return { grade: 'B',  label: 'Above Average Visibility',  color: '#0ABFBC' };
+  if (s >= 60) return { grade: 'C',  label: 'Moderate AI Visibility',    color: '#e0a852' };
+  if (s >= 40) return { grade: 'D',  label: 'Weak AI Visibility',        color: '#e07a52' };
+  return              { grade: 'F',  label: 'Poor AI Visibility',        color: '#e05252' };
+}
+
+function renderGeo(geo, currentScore) {
+  const bonus = (!geo.hasCitations      ? 5 : 0)
+              + (!geo.hasStats          ? 4 : 0)
+              + (!geo.hasQuotations     ? 3 : 0)
+              + ( geo.hasKeywordStuffing ? 2 : 0);
+
+  const prospectiveScore  = Math.min(100, currentScore + bonus);
+  const curGrade          = calcGrade(currentScore);
+  const proGrade          = calcGrade(prospectiveScore);
+  const missingCount      = [!geo.hasCitations, !geo.hasStats, !geo.hasQuotations].filter(Boolean).length;
+
+  document.getElementById('gpCurrentScore').innerHTML  = currentScore + ' <span>/ 100</span>';
+  const gpCG = document.getElementById('gpCurrentGrade');
+  gpCG.textContent  = curGrade.grade;
+  gpCG.style.color  = curGrade.color;
+  document.getElementById('gpCurrentLabel').textContent = curGrade.label;
+
+  document.getElementById('gpProspectiveScore').innerHTML = prospectiveScore + ' <span>/ 100</span>';
+  const gpPG = document.getElementById('gpProspectiveGrade');
+  gpPG.textContent  = proGrade.grade;
+  gpPG.style.color  = proGrade.color;
+  gpPG.classList.remove('tiffany');
+  document.getElementById('gpProspectiveLabel').textContent = proGrade.label;
+
+  const noteEl = document.getElementById('gpNote');
+  if (bonus === 0) {
+    noteEl.innerHTML = '✓ Your content already applies all 3 Princeton GEO tactics — no further GEO-driven improvement available.';
+  } else if (missingCount === 1) {
+    noteEl.innerHTML = `Apply the 1 missing tactic below to add an estimated <strong>+${bonus} points</strong> to your AEO score.`;
+  } else {
+    noteEl.innerHTML = `Apply ${missingCount} missing tactics below to add an estimated <strong>+${bonus} points</strong> to your AEO score.`;
+  }
+
+  const signals = [
+    {
+      key: 'stats', label: 'Statistics',
+      pass: geo.hasStats,
+      detail: geo.hasStats
+        ? geo.statsCount + ' data points found — well evidenced'
+        : geo.statsCount + ' data point' + (geo.statsCount !== 1 ? 's' : '') + ' found — aim for 6+ to match top performers',
+      lift: '+up to 35%', liftLabel: 'Add statistics'
+    },
+    {
+      key: 'cite', label: 'Source citations',
+      pass: geo.hasCitations,
+      detail: geo.hasCitations
+        ? geo.citationCount + ' citations found — strongest GEO signal present'
+        : geo.citationCount + ' citation' + (geo.citationCount !== 1 ? 's' : '') + ' found — linking to credible sources is the #1 GEO tactic',
+      lift: '+up to 40%', liftLabel: 'Cite credible sources'
+    },
+    {
+      key: 'quotes', label: 'Quotations',
+      pass: geo.hasQuotations,
+      detail: geo.hasQuotations
+        ? geo.quoteCount + ' substantial quote' + (geo.quoteCount !== 1 ? 's' : '') + ' found'
+        : 'No substantial quotes detected — add expert or client quotes (30+ words)',
+      lift: '+up to 30%', liftLabel: 'Add quotations'
+    },
+    {
+      key: 'stuff', label: 'Keyword stuffing',
+      pass: !geo.hasKeywordStuffing,
+      detail: geo.hasKeywordStuffing
+        ? 'Unnatural keyword repetition detected — rewrite for clarity. This actively hurts AI citation rates.'
+        : 'Not detected — content reads naturally',
+      lift: '−8 pts', warn: geo.hasKeywordStuffing
+    },
+  ];
+
+  document.getElementById('geoSignalRows').innerHTML = signals.map(s => {
+    const iconClass = s.warn ? 'warn' : s.pass ? 'pass' : 'fail';
+    const icon      = s.warn ? '⚠' : s.pass ? '✓' : '✗';
+    let badge = '';
+    if (!s.pass && !s.warn && s.lift) {
+      badge = `<span class="geo-signal-badge lift">${s.lift}</span>`;
+    } else if (s.pass) {
+      badge = `<span class="geo-signal-badge pass">Pass</span>`;
+    } else if (s.warn && s.lift) {
+      badge = `<span class="geo-signal-badge warn">${s.lift}</span>`;
+    }
+    return `<div class="geo-signal-row">
+      <span class="geo-check ${iconClass}">${icon}</span>
+      <div>
+        <div class="geo-signal-name">${s.label}</div>
+        <div class="geo-signal-detail">${s.detail}</div>
+      </div>
+      ${badge}
+    </div>`;
+  }).join('');
+
+  document.getElementById('geoArticleLink').innerHTML =
+    ' &nbsp;·&nbsp; <a href="/insights/princeton-geo-paper-explained">Read the plain-English breakdown →</a>';
+
+  show('geoCard');
+}
+
+document.getElementById('siteUrl').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') runAssessment();
+});
+
+(function prefill() {
+  const p = new URLSearchParams(window.location.search);
+  if (p.get('url'))      document.getElementById('siteUrl').value     = p.get('url');
+  if (p.get('industry')) document.getElementById('industry').value    = p.get('industry');
+  if (p.get('location')) document.getElementById('bizLocation').value = p.get('location');
+  if (p.get('autostart') === '1' && p.get('url') && p.get('industry')) runAssessment();
+})();
