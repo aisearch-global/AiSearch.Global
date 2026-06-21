@@ -13,7 +13,7 @@
       + 'header .nav-links a,header .links a{text-decoration:none}'
       + 'header .brand{text-decoration:none;display:inline-flex;align-items:center}'
       + 'header .brand img{display:block;height:34px;width:auto;max-width:260px}';
-    document.head.appendChild(S);
+    document.head.appendChild(S);   var L=document.createElement('link');L.rel='stylesheet';L.href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css';document.head.appendChild(L);
 
    /* ── Shared header ── */
    var H = '<div class="container nav">'
