@@ -60,6 +60,7 @@ The shared header/footer injector. Do not change:
 - The `var H = ...` header HTML block (logo img tag, nav links, CTA link)
 - The footer social media URLs
 - The GA event tracking logic
+- The social media icons — these MUST remain as Bootstrap Icons classes (`<i class="bi bi-facebook">`, `<i class="bi bi-instagram">`, etc.). NEVER replace them with inline SVGs. A previous session did this and broke the visual appearance across all pages. The Bootstrap Icons CSS is already loaded by `main.js` so the font is always available.
 
 ### WHAT TO DO IF YOU THINK A LOCKED ITEM NEEDS CHANGING
 
@@ -369,6 +370,7 @@ These bugs were found and fixed. Do not revert them.
 | Signal 9 label wrong | `aeo-score-calculator.html` | Incorrect label text | Correct signal 9 label |
 | GA missing | `faq.html`, all 4 insights pages | No GA snippet | GA snippet `G-XBZMSCBXBZ` added |
 | Print logo wrong | `insights/aeo-traction-stack.html` | Used header SVG (invisible on white) in `@media print` | Uses `aisearch-logo-primary-dark.png` |
+| Social icons replaced with inline SVGs | `assets/js/main.js` | 8 hand-rolled Lucide-style SVG blocks (wrong icon shapes, different visual weight) | Bootstrap Icons classes `<i class="bi bi-...">` — reverted and locked |
 
 If you see any of these files without the correct content, the state has regressed — restore from git history or reapply the fix.
 
