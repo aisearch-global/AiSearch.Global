@@ -1,9 +1,9 @@
 # AISearch Global
 https://aisearch.global
 
-> AISearch Global is a specialist Answer Engine Optimisation (AEO) agency based in Sydney, Australia. We help Australian businesses get found, cited, and recommended inside AI-generated answers on ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews, DeepSeek, and Grok.
+> AISearch Global is a specialist Answer Engine Optimisation (AEO) and Generative Engine Optimisation (GEO) agency based in Sydney, Australia. We help Australian businesses get found, cited, and recommended inside AI-generated answers on ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews, DeepSeek, and Grok.
 
-AISearch Global focuses exclusively on AEO, not traditional SEO. Our work helps brands move from ranking in blue-link results to being actively recommended by generative AI engines in response to natural language queries.
+AISearch Global focuses exclusively on AEO and GEO, not traditional SEO. Our work helps brands move from ranking in blue-link results to being actively recommended by generative AI engines in response to natural language queries.
 
 ## Core Services
 
@@ -16,23 +16,24 @@ AISearch Global focuses exclusively on AEO, not traditional SEO. Our work helps 
 
 ## Free Diagnostic Tool
 
-- [AISearch Global AEO Score Calculator](/aeo-score-calculator): A free, instant AI visibility scorecard. Enter your website URL, industry, and location to receive a numeric score out of 100, a letter grade (A to F), an AI recommendation likelihood score, a plain-English interpretation, a highest-impact fix recommendation, and an industry benchmark comparison. Scores 13 AEO signals including title tag, meta description, H1, content depth, JSON-LD schema, FAQ content, About page, contact signals, review signals, location signals, industry keyword relevance, sitemap.xml, and robots.txt.
+- [AISearch Global AEO Score Calculator](/aeo-score-calculator): A free, instant AI visibility scorecard. Enter your website URL, industry, and location to receive a numeric score out of 100, a letter grade (A to F), an AI recommendation likelihood score, a plain-English interpretation, a highest-impact fix recommendation, and an industry benchmark comparison. Scores 20 signals — 17 structural AEO signals including title tag, meta description, H1, content depth, JSON-LD schema, FAQ content, About page, contact signals, review signals, location signals, industry keyword relevance, sitemap.xml, and robots.txt — plus 3 peer-reviewed Princeton GEO content signals (statistics, source citations, and quotations analysis based on peer-reviewed KDD 2024 study).
 
 ## Insights
 
 - [What Is AEO? Answer Engine Optimisation Explained](/insights/what-is-aeo-answer-engine-optimisation): A foundational guide to Answer Engine Optimisation — what it is, how it differs from SEO, and why it matters for businesses as AI-generated answers replace traditional search results. Published 24 May 2026.
 - [How AI Decides Which Businesses to Recommend](/insights/how-ai-decides-which-businesses-to-recommend): An explanation of the signals, data sources, and trust factors that determine whether an AI engine recommends your business in a response. Published 30 May 2026.
 - [The AEO Traction Stack](/insights/aeo-traction-stack): AISearch Global's proprietary four-layer framework — Entity Clarity, Schema Markup, Answer-Format Content, Citation Consistency — for building durable AI search visibility. Published 7 Jun 2026.
+- [Princeton GEO Paper Explained](/insights/princeton-geo-paper-explained): A plain-English breakdown of the peer-reviewed Princeton/Georgia Tech KDD 2024 study on Generative Engine Optimisation and what it means for Australian businesses. Published 13 Jun 2026.
 
 ## Reference Pages
 
 - [FAQ — 51 AEO Questions Answered](/faq): 51 frequently asked questions about Answer Engine Optimisation, AI search visibility, schema markup, and working with AISearch Global.
 - [AI Visibility Audit](/#contact): Book the paid AI Visibility Audit via the homepage contact form. This is the entry point for the service.
-- [About AISearch Global](/about/): Background on the agency, founder, and approach to AEO.
+- [About AISearch Global](/about/): Background on the agency, founder, and approach to AEO and GEO.
 
 ## Corporate Identity
 
-- Business type: Specialist AEO consultancy
+- Business type: Specialist AEO and GEO consultancy
 - Location: Sydney, New South Wales, Australia
 - Market focus: Australian businesses seeking AI search visibility
 - Contact: hello@aisearch.global
