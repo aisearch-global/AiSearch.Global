@@ -186,14 +186,14 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
 .brand{font:700 1.1rem var(--fh);text-decoration:none;color:var(--white)}
 .brand img{display:block;height:34px;width:auto;max-width:260px}
-.nav-toggle{display:none;background:none;border:1px solid var(--border);color:var(--white);padding:.45rem .65rem;border-radius:.35rem;cursor:pointer;font:inherit}
+.nav-toggle{display:none;background:none;border:1px solid var(--border);color:var(--white);padding:.45rem .65rem;border-radius:0;cursor:pointer;font:inherit}
 .nav-links,.links{display:flex;gap:1rem;list-style:none;padding:0;margin:0}
 .nav-links a,.links a{text-decoration:none;color:var(--silver);font-weight:500;white-space:nowrap}
 .nav-links a:hover,.nav-links a:focus,.links a:hover,.links a:focus{color:var(--tiffany)}
-.cta-link{padding:.55rem .9rem;border:1px solid var(--tiffany);border-radius:.3rem;color:var(--tiffany)!important;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;line-height:1.1}
+.cta-link{padding:.55rem .9rem;border:1px solid var(--tiffany);border-radius:0;color:var(--tiffany)!important;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;line-height:1.1}
 @media(max-width:720px){
   .nav-toggle{display:block}
-  .nav-links,.links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid var(--border);padding:.8rem;border-radius:.45rem;z-index:200}
+  .nav-links,.links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid var(--border);padding:.8rem;border-radius:0;z-index:200}
   .nav-links.open,.links.open{display:flex}
 }
 
@@ -208,7 +208,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 
 /* META */
 .article-meta{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap}
-.meta-tag{font-family:var(--fm);font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;color:var(--tiffany);background:rgba(10,191,188,.08);border:1px solid rgba(10,191,188,.2);padding:3px 10px;border-radius:2px}
+.meta-tag{font-family:var(--fm);font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;color:var(--tiffany);background:rgba(10,191,188,.08);border:1px solid rgba(10,191,188,.2);padding:3px 10px;border-radius:0}
 .meta-date{font-family:var(--fm);font-size:.65rem;color:var(--muted);letter-spacing:.05em}
 .meta-author{font-family:var(--fm);font-size:.65rem;color:var(--silver);letter-spacing:.05em}
 
@@ -221,20 +221,20 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 /* STAT CARDS */
 .stat-row{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:32px}
 @media(max-width:480px){.stat-row{grid-template-columns:1fr}}
-.stat-card{background:var(--surface);border:1px solid var(--border);padding:16px;border-radius:4px}
+.stat-card{background:var(--surface);border:1px solid var(--border);padding:16px;border-radius:0}
 .stat-num{font-family:var(--fh);font-size:2rem;font-weight:700;color:var(--tiffany);line-height:1;margin-bottom:6px}
 .stat-desc{font-family:var(--fb);font-size:.7rem;color:var(--muted);line-height:1.5}
 .stat-src{font-family:var(--fm);font-size:.58rem;color:var(--tiffany);margin-top:4px;display:block}
 
 /* IMPACT BAR CHART */
-.impact-viz{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:20px 22px;margin-bottom:48px}
+.impact-viz{background:var(--surface);border:1px solid var(--border);border-radius:0;padding:20px 22px;margin-bottom:48px}
 .viz-label{font-family:var(--fm);font-size:.58rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:18px}
 .impact-row{display:grid;grid-template-columns:140px 1fr 48px;align-items:center;gap:12px;margin-bottom:10px}
 .impact-row:last-of-type{margin-bottom:14px}
 .impact-row-label{font-family:var(--fh);font-size:.75rem;font-weight:500;color:var(--silver);line-height:1.3}
 .impact-row-label small{display:block;font-family:var(--fm);font-size:.58rem;color:var(--muted);font-weight:400;margin-top:1px}
-.impact-track{height:24px;background:var(--charcoal);border:1px solid var(--border);border-radius:2px;overflow:hidden}
-.impact-fill{height:100%;background:var(--tiffany);border-radius:2px;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
+.impact-track{height:24px;background:var(--charcoal);border:1px solid var(--border);border-radius:0;overflow:hidden}
+.impact-fill{height:100%;background:var(--tiffany);border-radius:0;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
 .impact-fill--dim{background:#1f5b59}
 .impact-fill--neg{background:var(--red)}
 .impact-pct{font-family:var(--fh);font-size:.85rem;font-weight:700;color:var(--tiffany);text-align:right}
@@ -259,7 +259,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 
 /* STEP LIST */
 .step-list{list-style:none;counter-reset:steps;padding:0;margin:18px 0 28px;display:flex;flex-direction:column;gap:10px}
-.step-list li{counter-increment:steps;display:grid;grid-template-columns:36px 1fr;gap:14px;background:var(--surface);border:1px solid var(--border);padding:14px 16px;border-radius:4px;align-items:start}
+.step-list li{counter-increment:steps;display:grid;grid-template-columns:36px 1fr;gap:14px;background:var(--surface);border:1px solid var(--border);padding:14px 16px;border-radius:0;align-items:start}
 .step-list li::before{content:counter(steps);font-family:var(--fh);font-size:.9rem;font-weight:700;color:var(--tiffany);line-height:1.4}
 .step-list li span{font-family:var(--fb);font-size:.88rem;color:var(--muted);line-height:1.6}
 .step-list li span strong{color:var(--silver);font-weight:500}
@@ -274,17 +274,17 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 
 /* SOURCES */
 .sources-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
-.sources-list li{font-family:var(--fm);font-size:.65rem;color:var(--muted);line-height:1.65;padding:10px 14px;background:var(--surface);border:1px solid var(--border);border-radius:3px}
+.sources-list li{font-family:var(--fm);font-size:.65rem;color:var(--muted);line-height:1.65;padding:10px 14px;background:var(--surface);border:1px solid var(--border);border-radius:0}
 .sources-list li a{color:var(--tiffany)}
 
 /* ARTICLE CTA */
-.article-cta{background:linear-gradient(135deg,rgba(10,191,188,.08),rgba(10,191,188,.02));border:1px solid rgba(10,191,188,.2);border-top:3px solid var(--tiffany);border-radius:4px;padding:28px 24px;margin-top:48px;text-align:center}
+.article-cta{background:linear-gradient(135deg,rgba(10,191,188,.08),rgba(10,191,188,.02));border:1px solid rgba(10,191,188,.2);border-top:3px solid var(--tiffany);border-radius:0;padding:28px 24px;margin-top:48px;text-align:center}
 .article-cta h3{font-family:var(--fh);font-size:1.2rem;font-weight:700;margin-bottom:10px}
 .article-cta p{font-size:.9rem;color:var(--muted);margin-bottom:20px;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7}
 .cta-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.btn-primary{display:inline-block;background:var(--tiffany);color:var(--black);font-family:var(--fh);font-size:.9rem;font-weight:700;padding:12px 24px;border-radius:4px;text-decoration:none;transition:opacity .15s}
+.btn-primary{display:inline-block;background:var(--tiffany);color:var(--black);font-family:var(--fh);font-size:.9rem;font-weight:700;padding:12px 24px;border-radius:0;text-decoration:none;transition:opacity .15s}
 .btn-primary:hover{opacity:.85;text-decoration:none}
-.btn-secondary{display:inline-block;background:none;color:var(--silver);font-family:var(--fb);font-size:.84rem;padding:12px 18px;border-radius:4px;border:1px solid var(--border);text-decoration:none;transition:color .15s,border-color .15s}
+.btn-secondary{display:inline-block;background:none;color:var(--silver);font-family:var(--fb);font-size:.84rem;padding:12px 18px;border-radius:0;border:1px solid var(--border);text-decoration:none;transition:color .15s,border-color .15s}
 .btn-secondary:hover{color:var(--white);border-color:var(--silver);text-decoration:none}
 
 /* PRINT */
@@ -474,7 +474,7 @@ blockquote cite{display:block;margin-top:.75rem;font-style:normal;font-size:.85r
   <p>What the study cannot measure is structural AI visibility — whether AI engines know your brand well enough to recommend you consistently, how clearly they understand your entity (who you are, what you do, where you operate), and whether your schema and citation signals back that up across hundreds of different queries. Those are not content fixes. They are architecture.</p>
 
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0">
-    <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);padding:20px;border-radius:4px">
+    <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);padding:20px;border-radius:0">
       <div style="font-family:var(--fm);font-size:.56rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:10px">Princeton GEO Tactics</div>
       <div style="font-family:var(--fh);font-size:.95rem;font-weight:700;color:var(--white);margin-bottom:12px">Quick wins</div>
       <ul style="font-size:.82rem;color:var(--muted);padding-left:1.2rem;line-height:1.9;margin:0">
@@ -484,7 +484,7 @@ blockquote cite{display:block;margin-top:.75rem;font-style:normal;font-size:.85r
         <li>The right place to start — this week</li>
       </ul>
     </div>
-    <div style="background:rgba(10,191,188,.04);border:1px solid rgba(10,191,188,.2);padding:20px;border-radius:4px">
+    <div style="background:rgba(10,191,188,.04);border:1px solid rgba(10,191,188,.2);padding:20px;border-radius:0">
       <div style="font-family:var(--fm);font-size:.56rem;text-transform:uppercase;letter-spacing:.1em;color:var(--tiffany);margin-bottom:10px">AEO Traction Stack</div>
       <div style="font-family:var(--fh);font-size:.95rem;font-weight:700;color:var(--tiffany);margin-bottom:12px">Long-term AI visibility</div>
       <ul style="font-size:.82rem;color:var(--muted);padding-left:1.2rem;line-height:1.9;margin:0">
@@ -558,7 +558,7 @@ blockquote cite{display:block;margin-top:.75rem;font-style:normal;font-size:.85r
     <li>Semrush (2026). <em>AI SEO statistics.</em> <a href="https://www.semrush.com/blog/ai-seo-statistics/" target="_blank" rel="noopener">semrush.com/blog/ai-seo-statistics</a></li>
   </ul>
 
-  <div class="author-bio" style="margin:2rem 0;padding:1.2rem;border:1px solid rgba(255,255,255,.1);border-radius:.4rem;">
+  <div class="author-bio" style="margin:2rem 0;padding:1.2rem;border:1px solid rgba(255,255,255,.1);border-radius:0;">
     <p style="margin:0;font-weight:600;">Viveka Mohan Das</p>
     <p style="margin:.35rem 0 0;font-size:.9rem;color:#95A0AD;">AEO Strategist &amp; Founder, AISearch Global &mdash; helping Australian businesses get found, cited, and recommended in AI-generated answers. <a href="/about/" style="color:inherit">More about Viveka &rarr;</a></p>
   </div>

@@ -33,14 +33,14 @@
     *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 10% 0%,#1a2328 0%,var(--bg) 35%),var(--bg);color:var(--text);font:16px/1.75 var(--body)}
     .container{max-width:1120px;margin:0 auto;padding:0 1rem} header{position:sticky;top:0;z-index:50;background:rgba(13,14,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
     .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}.brand{font:700 1.1rem var(--display);text-decoration:none;color:var(--text)}.brand span{color:var(--accent)}
-    .links{display:flex;gap:1rem;list-style:none;padding:0;margin:0;flex-wrap:wrap}.links a{text-decoration:none;color:var(--muted);font-weight:500}.links a:hover{color:var(--accent)}.cta-link{padding:.55rem .9rem;border:1px solid var(--accent);border-radius:.3rem;color:var(--accent)!important;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;line-height:1.1}
-    main{padding:3rem 0}.doc{max-width:760px;margin:0 auto;background:rgba(255,255,255,.01);border:1px solid rgba(255,255,255,.08);border-radius:.6rem;padding:2rem}
+    .links{display:flex;gap:1rem;list-style:none;padding:0;margin:0;flex-wrap:wrap}.links a{text-decoration:none;color:var(--muted);font-weight:500}.links a:hover{color:var(--accent)}.cta-link{padding:.55rem .9rem;border:1px solid var(--accent);border-radius:0;color:var(--accent)!important;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;line-height:1.1}
+    main{padding:3rem 0}.doc{max-width:760px;margin:0 auto;background:rgba(255,255,255,.01);border:1px solid rgba(255,255,255,.08);border-radius:0;padding:2rem}
     h1,h2{font-family:var(--display);line-height:1.2;letter-spacing:-.02em}h1{font-size:2rem;margin:0 0 .8rem}h2{font-size:1.2rem;color:var(--accent);margin-top:2rem}
-    .lead{color:var(--muted)} .cta-band{margin:2rem auto 0;max-width:760px;border:1px solid rgba(10,186,181,.35);background:rgba(10,186,181,.08);border-radius:.5rem;padding:1.1rem;text-align:center}
+    .lead{color:var(--muted)} .cta-band{margin:2rem auto 0;max-width:760px;border:1px solid rgba(10,186,181,.35);background:rgba(10,186,181,.08);border-radius:0;padding:1.1rem;text-align:center}
     .cta-band a{color:var(--accent);font-weight:700;text-decoration:none}
     footer{border-top:1px solid var(--border);padding:1.2rem 0;color:var(--muted);font-size:.9rem}
-    .nav-toggle{display:none;background:none;border:1px solid var(--border);color:var(--text);padding:.45rem .65rem;border-radius:.35rem;cursor:pointer}
-    @media(max-width:720px){.nav-toggle{display:block}.links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid var(--border);padding:.8rem;border-radius:.45rem;z-index:200}.links.open{display:flex}}.footer-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem}.footer-links a{text-decoration:none;color:var(--muted)}.footer-links a:hover{color:var(--accent)}@media(max-width:520px){.doc{padding:1.25rem 1rem}main{padding:2rem 0}.cta-band{padding:.9rem}}
+    .nav-toggle{display:none;background:none;border:1px solid var(--border);color:var(--text);padding:.45rem .65rem;border-radius:0;cursor:pointer}
+    @media(max-width:720px){.nav-toggle{display:block}.links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid var(--border);padding:.8rem;border-radius:0;z-index:200}.links.open{display:flex}}.footer-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem}.footer-links a{text-decoration:none;color:var(--muted)}.footer-links a:hover{color:var(--accent)}@media(max-width:520px){.doc{padding:1.25rem 1rem}main{padding:2rem 0}.cta-band{padding:.9rem}}
     .brand img, .nav-logo img{display:block;height:34px;width:auto;max-width:260px} 
 </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBZMSCBXBZ"></script>
@@ -128,7 +128,7 @@
           <li>Internal capability assessment — what your team can execute vs. what needs external support</li>
           <li>Strategy review session with your team</li>
         </ul>
-        <div style="background:var(--bg2);border:1px solid rgba(255,255,255,.08);border-radius:.4rem;padding:.9rem 1rem;margin-top:1.5rem;display:flex;gap:2rem;flex-wrap:wrap">
+        <div style="background:var(--bg2);border:1px solid rgba(255,255,255,.08);border-radius:0;padding:.9rem 1rem;margin-top:1.5rem;display:flex;gap:2rem;flex-wrap:wrap">
           <div><div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:.25rem">Investment</div><div style="font-weight:700;color:var(--accent)">$2,000–$3,500 AUD</div><div style="font-size:.85rem;color:var(--muted)">Scope confirmed before any payment.</div></div>
           <div><div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:.25rem">Timeline</div><div style="font-weight:700">1–2 weeks</div><div style="font-size:.85rem;color:var(--muted)">Includes review session.</div></div>
         </div>

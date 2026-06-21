@@ -267,7 +267,7 @@ header {
   background: var(--tiffany-glow);
   border: 1px solid rgba(10,186,181,.2);
   padding: 5px 14px;
-  border-radius: 2px;
+  border-radius: 0;
   margin-bottom: 22px;
 }
 .tool-eyebrow .dot {
@@ -328,7 +328,7 @@ header {
   background: rgba(255,255,255,.04);
   border: 1px solid var(--border);
   padding: 5px 12px;
-  border-radius: 999px;
+  border-radius: 0;
 }
 .chip i { color: var(--tiffany); font-size: .7rem; }
 
@@ -337,7 +337,7 @@ header {
   background: var(--charcoal);
   border: 1px solid rgba(10,186,181,.2);
   border-top: 3px solid var(--tiffany);
-  border-radius: 8px;
+  border-radius: 0;
   padding: 28px;
   margin-bottom: 12px;
   box-shadow: 0 24px 60px rgba(0,0,0,.28);
@@ -354,7 +354,7 @@ header {
   text-transform: uppercase;
   letter-spacing: .08em;
   padding: 3px 12px;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0;
 }
 .form-group { margin-bottom: 18px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
@@ -381,7 +381,7 @@ input[type="text"], input[type="url"], select {
   width: 100%;
   background: rgba(0,0,0,.25);
   border: 1px solid var(--border);
-  border-radius: 4px;
+  border-radius: 0;
   color: var(--white);
   font-family: var(--fb);
   font-size: .92rem;
@@ -427,7 +427,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
   background: var(--tiffany);
   color: var(--black);
   font-family: var(--fh); font-size: 1rem; font-weight: 700;
-  padding: 14px 24px; border-radius: 4px; border: none;
+  padding: 14px 24px; border-radius: 0; border: none;
   transition: opacity .15s, transform .15s;
   letter-spacing: -.01em;
 }
@@ -444,7 +444,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
 .loading-state {
   display: none; text-align: center;
   padding: 52px 24px;
-  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 0;
 }
 .loading-state.active { display: block; }
 .loader {
@@ -464,14 +464,14 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
   display: none;
   background: var(--surface);
   border: 1px solid rgba(224,82,82,.3); border-left: 3px solid var(--red);
-  border-radius: 0 6px 6px 0; padding: 20px 22px;
+  border-radius: 0; padding: 20px 22px;
 }
 .error-state.active { display: block; }
 .error-state p { font-size: .9rem; color: var(--silver); margin-bottom: 10px; }
 .btn-retry {
   font-family: var(--fb); font-size: .82rem; color: var(--tiffany);
   background: none; border: 1px solid rgba(10,186,181,.3);
-  padding: 7px 16px; border-radius: 3px; cursor: pointer; transition: border-color .15s;
+  padding: 7px 16px; border-radius: 0; cursor: pointer; transition: border-color .15s;
 }
 .btn-retry:hover { border-color: var(--tiffany); }
 
@@ -479,7 +479,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
 .result-card {
   display: none;
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 8px; overflow: hidden;
+  border-radius: 0; overflow: hidden;
 }
 .result-card.active { display: block; animation: fadeUp .4s ease; }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
@@ -501,7 +501,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
   display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: center;
 }
 .grade-letter {
-  width: 72px; height: 72px; border-radius: 6px;
+  width: 72px; height: 72px; border-radius: 0;
   display: flex; align-items: center; justify-content: center;
   font-family: var(--fh); font-size: 2.6rem; font-weight: 700; flex-shrink: 0;
 }
@@ -525,19 +525,19 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
   display: inline-flex; align-items: center; gap: 6px;
   font-family: var(--fm); font-size: .58rem; text-transform: uppercase; letter-spacing: .1em;
   color: var(--silver); background: rgba(10,186,181,.07); border: 1px solid rgba(10,186,181,.2);
-  padding: 4px 10px; border-radius: 999px;
+  padding: 4px 10px; border-radius: 0;
 }
 
 .fix-block {
   background: rgba(10,186,181,.05); border-left: 3px solid var(--tiffany);
-  border-radius: 0 4px 4px 0; padding: 14px 16px; margin-top: 2px;
+  border-radius: 0; padding: 14px 16px; margin-top: 2px;
   font-size: .88rem; color: var(--silver); line-height: 1.65;
 }
 .gain-pill {
   display: inline-block; margin-top: 10px;
   font-family: var(--fm); font-size: .6rem; text-transform: uppercase; letter-spacing: .08em;
   color: var(--green); background: rgba(82,201,138,.08); border: 1px solid rgba(82,201,138,.2);
-  padding: 3px 10px; border-radius: 2px;
+  padding: 3px 10px; border-radius: 0;
 }
 
 .card-cta {
@@ -551,12 +551,12 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
 .btn-cta-primary {
   display: inline-block; background: var(--tiffany); color: var(--black);
   font-family: var(--fh); font-size: .9rem; font-weight: 700;
-  padding: 12px 24px; border-radius: 4px; text-decoration: none; transition: opacity .15s;
+  padding: 12px 24px; border-radius: 0; text-decoration: none; transition: opacity .15s;
 }
 .btn-cta-primary:hover { opacity: .85; text-decoration: none; }
 .btn-retake {
   display: inline-block; background: none; color: var(--muted); font-family: var(--fb); font-size: .84rem;
-  padding: 12px 18px; border-radius: 4px; border: 1px solid var(--border);
+  padding: 12px 18px; border-radius: 0; border: 1px solid var(--border);
   cursor: pointer; transition: color .15s, border-color .15s;
 }
 .btn-retake:hover { color: var(--silver); border-color: var(--silver); }
@@ -593,7 +593,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
 .signal-item {
   display: flex; align-items: flex-start; gap: 10px;
   background: rgba(255,255,255,.02); border: 1px solid var(--border);
-  border-radius: 6px; padding: 12px 14px;
+  border-radius: 0; padding: 12px 14px;
 }
 .signal-icon { color: var(--tiffany); font-size: .95rem; margin-top: .1rem; flex-shrink: 0; }
 .signal-text { font-size: .84rem; color: var(--silver); line-height: 1.5; }
@@ -609,7 +609,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
 .about-brand-tag {
   display: inline-flex; align-items: center; gap: 8px;
   background: rgba(10,186,181,.07); border: 1px solid rgba(10,186,181,.18);
-  padding: 8px 16px; border-radius: 4px; margin-top: 8px;
+  padding: 8px 16px; border-radius: 0; margin-top: 8px;
   font-family: var(--fh); font-size: .85rem; font-weight: 700; color: var(--white);
 }
 .about-brand-tag span { color: var(--tiffany); }
@@ -619,7 +619,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
   display: none; margin-top: 16px;
   background: var(--surface); border: 1px solid rgba(10,186,181,.25);
   border-top: 3px solid rgba(10,186,181,.5);
-  border-radius: 8px; overflow: hidden;
+  border-radius: 0; overflow: hidden;
 }
 .geo-card.active { display: block; animation: fadeUp .4s ease; }
 
@@ -636,12 +636,12 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
 .geo-badge {
   font-family: var(--fm); font-size: .58rem; text-transform: uppercase; letter-spacing: .08em;
   color: var(--tiffany); background: var(--tiffany-glow); border: 1px solid rgba(10,186,181,.2);
-  padding: 3px 10px; border-radius: 999px; white-space: nowrap;
+  padding: 3px 10px; border-radius: 0; white-space: nowrap;
 }
 .current-badge {
   font-family: var(--fm); font-size: .58rem; text-transform: uppercase; letter-spacing: .08em;
   color: var(--silver); background: rgba(255,255,255,.04); border: 1px solid var(--border);
-  padding: 3px 10px; border-radius: 999px; white-space: nowrap;
+  padding: 3px 10px; border-radius: 0; white-space: nowrap;
 }
 .geo-compare {
   display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--border);
@@ -679,7 +679,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
 .geo-signal-detail { font-family: var(--fm); font-size: .6rem; color: var(--muted); letter-spacing: .03em; }
 .geo-signal-badge {
   font-family: var(--fm); font-size: .58rem; letter-spacing: .06em; white-space: nowrap;
-  padding: 2px 8px; border-radius: 2px; margin-top: 2px; text-transform: uppercase;
+  padding: 2px 8px; border-radius: 0; margin-top: 2px; text-transform: uppercase;
 }
 .geo-signal-badge.lift { color: var(--green); background: rgba(82,201,138,.08); border: 1px solid rgba(82,201,138,.2); }
 .geo-signal-badge.pass { color: var(--muted); background: rgba(255,255,255,.03); border: 1px solid var(--border); }
@@ -707,7 +707,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
   .geo-sc-arrow { transform: rotate(90deg); text-align: center; }
 }
 .geo-sc-col {
-  padding: 16px 20px; border: 1px solid var(--border); border-radius: 6px;
+  padding: 16px 20px; border: 1px solid var(--border); border-radius: 0;
 }
 .geo-sc-col.projected {
   border-color: rgba(10,186,181,.4); background: rgba(10,186,181,.05);
@@ -755,14 +755,14 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
 .brand { font: 700 1.1rem var(--fh); text-decoration:none; color:var(--white); }
 .brand span { color:var(--tiffany); }
 .brand img { display:block; height:34px; width:auto; max-width:260px; }
-.nav-toggle { display:none; background:none; border:1px solid var(--border); color:var(--white); padding:.45rem .65rem; border-radius:.35rem; cursor:pointer; font:inherit; }
+.nav-toggle { display:none; background:none; border:1px solid var(--border); color:var(--white); padding:.45rem .65rem; border-radius:0; cursor:pointer; font:inherit; }
 .links { display:flex; gap:1rem; list-style:none; padding:0; margin:0; flex-wrap:wrap; }
 .links a { text-decoration:none; color:var(--silver); font-weight:500; }
 .links a:hover, .links a:focus { color:var(--tiffany); }
-.cta-link { padding:.55rem .9rem; border:1px solid var(--tiffany); border-radius:.3rem; color:var(--tiffany)!important; display:inline-flex; align-items:center; justify-content:center; white-space:nowrap; line-height:1.1; }
+.cta-link { padding:.55rem .9rem; border:1px solid var(--tiffany); border-radius:0; color:var(--tiffany)!important; display:inline-flex; align-items:center; justify-content:center; white-space:nowrap; line-height:1.1; }
 @media (max-width:720px) {
   .nav-toggle { display:block; }
-  .links { display:none; position:absolute; left:1rem; right:1rem; top:4.2rem; flex-direction:column; background:#111317; border:1px solid var(--border); padding:.8rem; border-radius:.45rem; z-index:200; }
+  .links { display:none; position:absolute; left:1rem; right:1rem; top:4.2rem; flex-direction:column; background:#111317; border:1px solid var(--border); padding:.8rem; border-radius:0; z-index:200; }
   .links.open { display:flex; }
 }
 </style>
@@ -837,9 +837,9 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
   </div>
 
   <!-- Updated callout banner -->
-  <div style="background:linear-gradient(135deg,rgba(10,186,181,.08) 0%,rgba(10,186,181,.03) 100%);border:1px solid rgba(10,186,181,.25);border-radius:6px;padding:16px 20px;margin-bottom:28px;display:flex;align-items:flex-start;gap:14px">
+  <div style="background:linear-gradient(135deg,rgba(10,186,181,.08) 0%,rgba(10,186,181,.03) 100%);border:1px solid rgba(10,186,181,.25);border-radius:0;padding:16px 20px;margin-bottom:28px;display:flex;align-items:flex-start;gap:14px">
     <div style="flex-shrink:0;margin-top:2px">
-      <span style="font-family:var(--fm);font-size:.58rem;text-transform:uppercase;letter-spacing:.1em;background:var(--tiffany);color:var(--black);padding:3px 10px;border-radius:3px;font-weight:700;white-space:nowrap">Updated</span>
+      <span style="font-family:var(--fm);font-size:.58rem;text-transform:uppercase;letter-spacing:.1em;background:var(--tiffany);color:var(--black);padding:3px 10px;border-radius:0;font-weight:700;white-space:nowrap">Updated</span>
     </div>
     <div>
       <div style="font-family:var(--fh);font-size:.9rem;font-weight:700;color:var(--white);margin-bottom:4px">Now measuring 20 signals — Princeton GEO Framework integrated</div>
@@ -1105,7 +1105,7 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
     </div>
 
     <div style="font-family:var(--fm);font-size:.58rem;text-transform:uppercase;letter-spacing:.12em;color:var(--tiffany);margin-bottom:10px;margin-top:28px;display:flex;align-items:center;gap:8px">
-      <span style="background:var(--tiffany);color:var(--black);padding:2px 7px;border-radius:2px;font-weight:700">Princeton GEO</span>
+      <span style="background:var(--tiffany);color:var(--black);padding:2px 7px;border-radius:0;font-weight:700">Princeton GEO</span>
       3 Peer-Reviewed Content Signals
     </div>
     <div class="signals-grid">
