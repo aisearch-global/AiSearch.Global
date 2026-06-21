@@ -11,7 +11,6 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/assets/images/aisearch_social_graphic_plumber.png">
-h
 <!-- Open Graph -->
 <meta property="og:title" content="Free AEO Score Calculator — Now with Princeton GEO Framework | AISearch Global">
 <meta property="og:description" content="Instant AI visibility score with Princeton GEO Framework built in. Analyses 20 signals — 17 structural AEO + 3 peer-reviewed Princeton GEO content signals — to grade how likely ChatGPT, Gemini, Perplexity, and Google AI Overviews recommend your business. Free.">
@@ -897,8 +896,9 @@ select option { background: var(--charcoal); color: var(--white); font-family: v
       </div>
       <div class="consent-note" style="margin-top:6px">Privacy consent required · Princeton GEO analysis runs automatically · Marketing contact is optional</div>
     </div>
+    <p id="consentError" style="display:none;color:var(--red);font-size:.82rem;margin-top:10px"><i class="bi bi-exclamation-circle"></i> Please tick the Privacy Policy box above before running the analysis.</p>
 
-    <button class="btn-submit" id="submitBtn" onclick="trackAndRun()" disabled>
+    <button class="btn-submit" id="submitBtn" onclick="trackAndRun()">
       <i class="bi bi-search"></i> Check My AI Visibility
     </button>
     <p class="form-note">
@@ -1179,9 +1179,6 @@ function trackAndRun() {
 function resetToForm() {
   hide('loadingPanel'); hide('errorPanel'); hide('resultCard'); hide('geoCard');
   setDisplay('formPanel', 'block'); setDisplay('disclaimer', 'none');
-  document.getElementById('privacyConsent').checked = false;
-  document.getElementById('promoConsent').checked = false;
-  syncSubmitState();
 }
 
 function gradeColor(g) {
@@ -1198,7 +1195,10 @@ async function runAssessment() {
   if (!urlRaw)   { document.getElementById('siteUrl').focus(); return; }
   if (!industry) { document.getElementById('industry').focus(); return; }
   if (!privacyConsent) {
-    showError('Please agree to the Privacy Policy before analysing your website.');
+    const errEl = document.getElementById('consentError');
+    errEl.style.display = 'block';
+    document.getElementById('privacyConsent').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    setTimeout(() => { errEl.style.display = 'none'; }, 5000);
     return;
   }
 
@@ -1245,11 +1245,9 @@ function showError(msg) {
   show('errorPanel');
 }
 
-function syncSubmitState() {
-  document.getElementById('submitBtn').disabled = !document.getElementById('privacyConsent').checked;
-}
-document.getElementById('privacyConsent').addEventListener('change', syncSubmitState);
-syncSubmitState();
+document.getElementById('privacyConsent').addEventListener('change', function() {
+  document.getElementById('consentError').style.display = 'none';
+});
 
 function renderResult(d) {
   const color = gradeColor(d.grade);
