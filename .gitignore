@@ -9,8 +9,5 @@ brand-assets/
 .wrangler
 mindful-machines-journal/
 
-# Not yet live
-insights/aisearch-global-client-zero.html
-
 # Private local content drafts
 content-drafts/
