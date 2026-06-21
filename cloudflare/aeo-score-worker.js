@@ -297,9 +297,24 @@ function topFix(signals, s) {
   return                           { fix: 'Audit your business name, address, and phone number across all online directories and social profiles. Citation consistency is a key trust signal AI platforms use to validate business legitimacy.', gain: '+2 to +6 points' };
 }
 
+async function logToSheets(env, payload) {
+  const url = (env && env.SHEETS_WEBHOOK_URL) ? env.SHEETS_WEBHOOK_URL : null;
+  if (!url) return;
+  try {
+    await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(6000),
+    });
+  } catch {
+    // Fire-and-forget — log failures silently, never break the calculator
+  }
+}
+
 // Cloudflare Worker entry point
 export default {
-  async fetch(request) {
+  async fetch(request, env, ctx) {
     const corsHeaders = {
       'Access-Control-Allow-Origin':  '*',
       'Access-Control-Allow-Headers': 'Content-Type',
@@ -367,6 +382,16 @@ export default {
     const benchmarkInfo       = benchmark(total, industry);
     const surfaceInfo         = surfaceProfile(parsed);
     const recommendationScore = recommendationLikelihood(total, surfaceInfo.bonus);
+
+    ctx.waitUntil(logToSheets(env, {
+      urlSubmitted:  url,
+      domain:        parsed.hostname,
+      industry,
+      location:      location || null,
+      score:         total,
+      grade:         gradeInfo.grade,
+      promoConsent:  !!body.promoConsent,
+    }));
 
     return json({
       domain:   parsed.hostname,
