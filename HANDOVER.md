@@ -1,7 +1,7 @@
 # Handover Brief — AISearch Global Website
 
 **Project:** `C:\Users\dasku\OneDrive\Documents\Aisearch.global` (git repo, Cloudflare Pages static site)
-**Last updated:** 2026-06-21, dashboard congruence + explainer + sitemap-flow session
+**Last updated:** 2026-06-22, dashboard card click fix
 **Live site:** https://aisearch.global
 
 ---
@@ -16,7 +16,19 @@
 
 ---
 
-## Latest session addendum (2026-06-21, congruence/explainer/sitemap-flow session) — NOT yet pushed
+## Latest session addendum (2026-06-22, dashboard card click fix)
+
+Dashboard cockpit cards were not expanding on click on the live site. Root cause: identical pattern to the calculator CSP incident.
+
+**Root cause:** `_headers` CSP `script-src` did not include `https://cdnjs.cloudflare.com`. The dashboard loads Chart.js from that CDN. When CSP blocks it, `Chart` is undefined when the inline script runs — `Chart.defaults.color = ...` throws immediately, crashing the entire `<script>` block. The IIFE at the bottom of that block (which wires up `click` listeners on every `.cockpit-card`) never executes, so cards silently do nothing on click.
+
+**Fix:** Added `https://cdnjs.cloudflare.com` to `script-src` in `_headers`. No other files changed.
+
+This must be committed and pushed to take effect (Cloudflare Pages serves `_headers` only from the deployed build).
+
+---
+
+## Previous session addendum (2026-06-21, congruence/explainer/sitemap-flow session) — pushed by Viv
 
 More work on `insights/client-zero-visibility-dashboard.html` and `sitemap.xml` (Viv gave explicit in-chat instruction to edit the locked dashboard file):
 
@@ -32,7 +44,7 @@ No locked assets (header/footer/main.js/GA/favicon/brand colours) touched. Not y
 
 ---
 
-## Previous session addendum (2026-06-21, dashboard styling fix session) — NOT yet pushed
+## Previous session addendum (2026-06-21, dashboard styling fix session) — pushed by Viv
 
 Dashboard styling fixes applied to `insights/client-zero-visibility-dashboard.html` (Viv gave explicit in-chat instruction to edit this locked file):
 
