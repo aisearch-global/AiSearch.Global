@@ -392,8 +392,8 @@ Current rules:
 /privacy/  /privacy/index.html   200
 /terms     /terms/index.html     200
 /terms/    /terms/index.html     200
-/aeo-calculator.html /aeo-score-calculator.html 301
-/aeo-calculator      /aeo-score-calculator.html 301
+/aeo-calculator.html /aeo-score-calculator 301
+/aeo-calculator      /aeo-score-calculator 301
 /insights/aeo-glossary.html /insights/ 301
 ```
 
