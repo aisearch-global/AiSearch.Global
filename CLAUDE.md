@@ -458,5 +458,5 @@ Lines 14–15 load CSS and JS as `../assets/css/styles.css` and `../assets/js/ma
 **Pinterest domain verification only on 2 pages**
 `<meta name="p:domain_verify" content="c18ed316c67e3a4c44602269f5997354">` appears only in `index.html` and `about/index.html`. This is intentional — Pinterest verification only requires one page. Do not add it to other pages.
 
-**`faq.html` and `terms/index.html` have no JSON-LD schema**
-17 of 19 live pages have `<script type="application/ld+json">` blocks. `faq.html` and `terms/index.html` do not. This is an existing gap, not a regression.
+**`terms/index.html` has no JSON-LD schema**
+`terms/index.html` has no `<script type="application/ld+json">` block. This is an existing gap, not a regression. Note: `faq.html` has a full FAQPage schema block and is no longer a gap.
