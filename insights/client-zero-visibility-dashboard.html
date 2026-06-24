@@ -1,1336 +1,567 @@
 <!DOCTYPE html>
-<html lang="en-AU">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Visibility Audit Dashboard — Client Zero Sample | AISearch Global</title>
-<meta name="description" content="The comprehensive dashboard every AISearch Global AI Visibility Audit client receives — structural AEO score, AI Brand Perception scores across ChatGPT, Perplexity and Gemini, and a priority growth roadmap.">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-<meta name="author" content="AISearch Global">
-<link rel="canonical" href="https://aisearch.global/insights/client-zero-visibility-dashboard">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="shortcut icon" href="/favicon.svg">
-<link rel="apple-touch-icon" href="/assets/images/aisearch_social_graphic_plumber.png">
-<link rel="stylesheet" href="/assets/css/styles.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<script defer src="/assets/js/main.js?v=footer-sydney"></script>
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="AISearch Global">
-<meta property="og:locale" content="en_AU">
-<meta property="og:url" content="https://aisearch.global/insights/client-zero-visibility-dashboard">
-<meta property="og:title" content="AI Visibility Audit Dashboard — Client Zero Sample | AISearch Global">
-<meta property="og:description" content="The comprehensive dashboard every AISearch Global AI Visibility Audit client receives — structural AEO score, AI Brand Perception scores, and a priority growth roadmap.">
-<meta property="og:image" content="https://aisearch.global/assets/images/aisearch_social_graphic_plumber.png">
-<meta property="og:image:alt" content="AISearch Global social graphic showing a plumber search query and warning that your business is not here">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI Visibility Audit Dashboard — Client Zero Sample | AISearch Global">
-<meta name="twitter:description" content="The comprehensive dashboard every AISearch Global AI Visibility Audit client receives — structural AEO score, AI Brand Perception scores, and a priority growth roadmap.">
-<meta name="twitter:image" content="https://aisearch.global/assets/images/aisearch_social_graphic_plumber.png">
-<meta name="twitter:image:alt" content="AISearch Global social graphic showing a plumber search query and warning that your business is not here">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#0d0e10">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0d0e10"></rect>
+    <rect x="430" y="300" width="340" height="340" rx="14" fill="#0abab5"></rect>
+    <path d="M470 540 L520 470 L575 510 L640 420 L700 480 L730 440" fill="none" stroke="#0d0e10" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"></path>
+    <circle cx="600" cy="220" r="46" fill="none" stroke="#81d8d0" stroke-width="14"></circle>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XBZMSCBXBZ"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XBZMSCBXBZ');</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Article",
-      "@id": "https://aisearch.global/insights/client-zero-visibility-dashboard#article",
-      "headline": "AI Visibility Audit Dashboard — Client Zero Sample",
-      "description": "The comprehensive dashboard every AISearch Global AI Visibility Audit client receives — structural AEO score, AI Brand Perception scores across ChatGPT, Perplexity and Gemini, and a priority growth roadmap tied to real services.",
-      "datePublished": "2026-06-21",
-      "dateModified": "2026-06-21",
-      "isPartOf": { "@id": "https://aisearch.global/insights/aisearch-global-client-zero#article" },
-      "author": {
-        "@type": "Person",
-        "name": "Viveka Mohan Das",
-        "jobTitle": "AEO Strategist & Founder",
-        "worksFor": { "@type": "Organization", "name": "AISearch Global", "url": "https://aisearch.global" }
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "AISearch Global",
-        "url": "https://aisearch.global",
-        "logo": { "@type": "ImageObject", "url": "https://aisearch.global/assets/images/logos/aisearch-logo-primary-dark.png" }
-      },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://aisearch.global/insights/client-zero-visibility-dashboard" }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://aisearch.global/insights/client-zero-visibility-dashboard#breadcrumb",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aisearch.global/" },
-        { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://aisearch.global/insights/" },
-        { "@type": "ListItem", "position": 3, "name": "AISearch Global: Client Zero", "item": "https://aisearch.global/insights/aisearch-global-client-zero" },
-        { "@type": "ListItem", "position": 4, "name": "AI Visibility Audit Dashboard", "item": "https://aisearch.global/insights/client-zero-visibility-dashboard" }
-      ]
-    }
-  ]
-}
-</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <style>
-*,*::before,*::after{box-sizing:border-box}
-:root{
-  --bg:#0D0E10;--bg2:#13161a;--surface:#1a1e24;--surface2:#20252d;
-  --text:#E3E8EE;--muted:#95A0AD;--accent:#0ABAB5;--accent2:#81d8d0;
-  --border:rgba(255,255,255,.1);--red:#e05252;--amber:#f0a030;--green:#2ec27e;
-  --display:"Space Grotesk",system-ui,sans-serif;--body:"DM Sans",system-ui,sans-serif;
-  --chatgpt:#10a37f;--perplexity:#20b8cd;--gemini:#8b5cf6;
-}
-html{scroll-behavior:smooth}
-body{margin:0;font:15px/1.65 var(--body);background:var(--bg);color:var(--text);overflow-x:hidden}
-a{color:var(--accent);text-decoration:none}
-.container{max-width:1200px;margin:0 auto;padding:0 1.25rem}
-header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
-.nav-toggle{display:none;background:none;border:1px solid var(--border);color:var(--text);padding:.45rem .65rem;cursor:pointer;font-family:var(--display)}
-.nav-links{display:flex;gap:1rem;list-style:none;padding:0;margin:0}
-.nav-links a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem}
-.nav-links a:hover{color:var(--accent)}
-.cta-link{padding:.55rem .9rem;border:1px solid var(--accent);border-radius:0;color:var(--accent)!important;display:inline-flex;align-items:center;white-space:nowrap;line-height:1.1}
-@media(max-width:720px){.nav-toggle{display:block}.nav-links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid var(--border);padding:.8rem}.nav-links.open{display:flex}}
-
-/* ── HERO ─────────────────────────────────────────── */
-.dash-hero{padding:3rem 0 2rem;border-bottom:1px solid var(--border)}
-.dash-badge{display:inline-flex;align-items:center;gap:.45rem;font:600 .72rem var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);background:rgba(10,186,181,.1);border:1px solid rgba(10,186,181,.3);border-radius:0;padding:.3rem .75rem;margin-bottom:1rem}
-.dash-title{font:700 clamp(1.8rem,4vw,2.8rem)/1.1 var(--display);margin:0 0 .6rem}
-.dash-subtitle{color:var(--muted);max-width:72ch;margin:0 0 1.5rem;font-size:.95rem}
-.dash-meta{display:flex;flex-wrap:wrap;gap:1.2rem;font-size:.8rem;color:var(--muted)}
-.dash-meta span{display:flex;align-items:center;gap:.35rem}
-.sample-banner{background:linear-gradient(135deg,rgba(10,186,181,.12),rgba(129,216,208,.06));border:1px solid rgba(10,186,181,.3);border-radius:0;padding:.85rem 1.1rem;margin-top:1.5rem;font-size:.85rem;color:var(--accent2)}
-.sample-banner strong{color:var(--accent)}
-
-/* ── SECTION LABELS ───────────────────────────────── */
-.section{padding:2.5rem 0}
-.section+.section{border-top:1px solid var(--border)}
-.section-eyebrow{font:600 .7rem var(--display);letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
-.section-title{font:700 1.35rem/1.2 var(--display);margin:0 0 .35rem}
-.section-desc{color:var(--muted);font-size:.88rem;max-width:65ch;margin:0 0 1.75rem}
-
-/* ── SCORE CARDS GRID ─────────────────────────────── */
-.score-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
-.score-card{background:var(--surface);border:1px solid var(--border);border-radius:0;padding:1.25rem 1rem;text-align:center;position:relative;overflow:hidden}
-.score-card.hero-card{border-color:rgba(10,186,181,.4);background:linear-gradient(160deg,rgba(10,186,181,.1),var(--surface))}
-.score-card .platform-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:.4rem}
-.score-card .platform-label{font:600 .72rem var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.75rem;display:flex;align-items:center;justify-content:center}
-.score-card .big-score{font:700 3.2rem/1 var(--display);margin:.1rem 0 .15rem}
-.score-card .score-denom{font-size:1.1rem;font-weight:400;color:var(--muted);vertical-align:super}
-.score-card .score-grade{font:600 .78rem var(--display);padding:.2rem .55rem;border-radius:0;display:inline-block;margin-bottom:.5rem}
-.grade-f{background:rgba(224,82,82,.15);color:#e05252;border:1px solid rgba(224,82,82,.3)}
-.grade-d{background:rgba(240,160,48,.15);color:#f0a030;border:1px solid rgba(240,160,48,.3)}
-.grade-c{background:rgba(240,200,48,.15);color:#f0c830;border:1px solid rgba(240,200,48,.3)}
-.grade-b{background:rgba(46,194,126,.15);color:#2ec27e;border:1px solid rgba(46,194,126,.3)}
-.grade-a{background:rgba(10,186,181,.15);color:var(--accent);border:1px solid rgba(10,186,181,.3)}
-.score-card .score-label{font-size:.76rem;color:var(--muted);margin-top:.25rem}
-.score-card .delta{font:600 .78rem var(--display);margin-top:.5rem}
-.delta-up{color:var(--green)}
-.delta-neutral{color:var(--muted)}
-
-/* ── GAUGE SVG ────────────────────────────────────── */
-.gauge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-bottom:1.5rem}
-.gauge-card{background:var(--surface);border:1px solid var(--border);border-radius:0;padding:1.4rem 1rem 1rem;text-align:center}
-.gauge-card.gpt{border-top:3px solid var(--chatgpt)}
-.gauge-card.ppl{border-top:3px solid var(--perplexity)}
-.gauge-card.gem{border-top:3px solid var(--gemini)}
-.gauge-platform{font:700 .75rem var(--display);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem}
-.gauge-platform.gpt{color:var(--chatgpt)}
-.gauge-platform.ppl{color:var(--perplexity)}
-.gauge-platform.gem{color:var(--gemini)}
-.gauge-model{font-size:.68rem;color:var(--muted);margin-top:.2rem}
-.gauge-score-text{font:700 2rem/1 var(--display);margin:.5rem 0 .2rem}
-.gauge-label{font-size:.75rem;color:var(--muted)}
-.gauge-meta{margin-top:.85rem;display:flex;flex-wrap:wrap;gap:.35rem;justify-content:center}
-.gauge-meta span{font-size:.68rem;padding:.18rem .5rem;border-radius:0;background:var(--surface2);border:1px solid var(--border);color:var(--muted)}
-
-/* ── CHART CONTAINERS ─────────────────────────────── */
-.chart-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
-.chart-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-.chart-card{background:var(--surface);border:1px solid var(--border);border-radius:0;padding:1.2rem}
-.chart-card h4{font:600 .82rem var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 1rem}
-.chart-card.gpt-card{border-top:2px solid var(--chatgpt)}
-.chart-card.ppl-card{border-top:2px solid var(--perplexity)}
-.chart-card.gem-card{border-top:2px solid var(--gemini)}
-.chart-wrap{position:relative;height:220px}
-.chart-wrap-sm{position:relative;height:180px}
-.chart-wrap-lg{position:relative;height:280px}
-
-/* ── SENTIMENT BARS ───────────────────────────────── */
-.sent-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-.sent-card{background:var(--surface);border:1px solid var(--border);border-radius:0;padding:1.2rem}
-.sent-card.gpt-card{border-top:2px solid var(--chatgpt)}
-.sent-card.ppl-card{border-top:2px solid var(--perplexity)}
-.sent-card.gem-card{border-top:2px solid var(--gemini)}
-.sent-card h4{font:600 .8rem var(--display);letter-spacing:.08em;text-transform:uppercase;margin:0 0 .25rem}
-.sent-card h4.gpt{color:var(--chatgpt)}
-.sent-card h4.ppl{color:var(--perplexity)}
-.sent-card h4.gem{color:var(--gemini)}
-.sent-total{font:700 2rem/1 var(--display);margin:.15rem 0 1rem}
-.sent-bar-row{display:flex;align-items:center;gap:.6rem;margin-bottom:.55rem}
-.sent-bar-label{font-size:.7rem;color:var(--muted);width:90px;flex-shrink:0}
-.sent-bar-track{flex:1;height:6px;background:rgba(255,255,255,.08);border-radius:0;overflow:hidden}
-.sent-bar-fill{height:100%;border-radius:0;transition:width .6s ease}
-.sent-bar-val{font:600 .72rem var(--display);width:28px;text-align:right;flex-shrink:0}
-
-/* ── CRAWLER BARS ─────────────────────────────────── */
-.crawler-list{display:flex;flex-direction:column;gap:.55rem}
-.crawler-row{display:grid;grid-template-columns:140px 1fr 48px;align-items:center;gap:.75rem}
-.crawler-name{font-size:.78rem;display:flex;align-items:center;gap:.5rem}
-.crawler-icon{width:18px;height:18px;border-radius:0;display:inline-flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;flex-shrink:0}
-.crawler-track{height:8px;background:rgba(255,255,255,.07);border-radius:0;overflow:hidden}
-.crawler-fill{height:100%;border-radius:0}
-.crawler-count{font:600 .78rem var(--display);text-align:right;color:var(--text)}
-.ai-bot{color:var(--accent)}
-
-/* ── TIMELINE ─────────────────────────────────────── */
-.timeline-track{display:flex;align-items:center;gap:0;margin:1.5rem 0}
-.tl-node{display:flex;flex-direction:column;align-items:center;flex:1;position:relative}
-.tl-node:not(:last-child)::after{content:'';position:absolute;left:50%;right:-50%;top:22px;height:2px;background:linear-gradient(90deg,rgba(10,186,181,.5),rgba(10,186,181,.15));z-index:0}
-.tl-dot{width:44px;height:44px;border-radius:50%;border:2px solid var(--border);background:var(--surface);display:flex;align-items:center;justify-content:center;font:700 .82rem var(--display);position:relative;z-index:1}
-.tl-dot.active{border-color:var(--accent);background:rgba(10,186,181,.15);color:var(--accent)}
-.tl-dot.future{border-color:rgba(255,255,255,.15);color:var(--muted);font-size:.65rem}
-.tl-label{font-size:.68rem;color:var(--muted);text-align:center;margin-top:.5rem;max-width:80px}
-.tl-val{font:700 .85rem var(--display);text-align:center;margin-top:.2rem;color:var(--accent)}
-
-/* ── BRAND RECOGNITION ─────────────────────────────── */
-.br-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-.br-card{background:var(--surface);border:1px solid var(--border);border-radius:0;padding:1.2rem}
-.br-card.gpt{border-top:2px solid var(--chatgpt)}
-.br-card.ppl{border-top:2px solid var(--perplexity)}
-.br-card.gem{border-top:2px solid var(--gemini)}
-.br-score-row{display:flex;align-items:baseline;gap:.5rem;margin-bottom:1rem}
-.br-score{font:700 2.5rem/1 var(--display)}
-.br-score.gpt{color:var(--chatgpt)}
-.br-score.ppl{color:var(--perplexity)}
-.br-score.gem{color:var(--gemini)}
-.br-score-denom{color:var(--muted);font-size:.85rem}
-.br-sub-row{display:flex;align-items:center;justify-content:space-between;padding:.35rem 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.76rem}
-.br-sub-row:last-child{border-bottom:none}
-.br-sub-label{color:var(--muted)}
-.br-sub-dots{display:flex;gap:3px}
-.br-sub-dot{width:8px;height:8px;border-radius:50%}
-.br-sub-dot.filled{background:var(--accent)}
-.br-sub-dot.empty{background:rgba(255,255,255,.1)}
-.br-tag-row{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.8rem}
-.br-tag{font-size:.66rem;padding:.18rem .5rem;border-radius:0;background:var(--surface2);border:1px solid var(--border);color:var(--muted)}
-
-/* ── BRAND ARCHETYPE ──────────────────────────────── */
-.archetype-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-.archetype-card{background:var(--surface);border:1px solid var(--border);border-radius:0;padding:1.2rem;text-align:center}
-.archetype-card.gpt{border-top:2px solid var(--chatgpt)}
-.archetype-card.ppl{border-top:2px solid var(--perplexity)}
-.archetype-card.gem{border-top:2px solid var(--gemini)}
-.archetype-card .archetype-name{font:700 1.05rem var(--display);margin:.4rem 0 .2rem}
-.archetype-card .archetype-tag{font-size:.74rem;color:var(--muted);margin-bottom:.7rem}
-.archetype-card .archetype-conf{font:700 1.6rem/1 var(--display)}
-.archetype-card .archetype-conf-label{font-size:.7rem;color:var(--muted);margin-top:.15rem}
-.achieve-box{background:linear-gradient(135deg,rgba(10,186,181,.08),rgba(10,186,181,.02));border:1px solid rgba(10,186,181,.25);border-radius:0;padding:1.1rem 1.3rem;margin-top:1.5rem}
-.achieve-box h3{font:700 .95rem var(--display);margin:0 0 .4rem;color:var(--accent2)}
-.achieve-box p{margin:0;font-size:.84rem;color:var(--muted);line-height:1.6}
-
-/* ── PERFORMANCE ──────────────────────────────────── */
-.perf-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
-.perf-card{background:var(--surface);border:1px solid var(--border);border-radius:0;padding:1rem;text-align:center}
-.perf-val{font:700 1.8rem/1 var(--display);margin-bottom:.25rem}
-.perf-val.good{color:var(--green)}
-.perf-val.warn{color:var(--amber)}
-.perf-val.ok{color:var(--accent)}
-.perf-label{font-size:.75rem;color:var(--muted)}
-.perf-status{font:600 .7rem var(--display);margin-top:.4rem}
-
-/* ── SOV LEGEND ───────────────────────────────────── */
-.sov-legend{display:flex;flex-direction:column;gap:.35rem;margin-top:.75rem}
-.sov-legend-row{display:flex;align-items:center;justify-content:space-between;font-size:.72rem}
-.sov-legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-right:.4rem}
-.sov-legend-name{flex:1;color:var(--muted)}
-.sov-legend-pct{font:600 .72rem var(--display);color:var(--text)}
-.sov-self{color:var(--accent)!important;font-weight:700}
-
-/* ── GAP CALLOUT ──────────────────────────────────── */
-.gap-callout{background:linear-gradient(135deg,rgba(224,82,82,.08),rgba(10,186,181,.06));border:1px solid rgba(224,82,82,.25);border-radius:0;padding:1.25rem 1.4rem;margin-bottom:1.5rem}
-.gap-callout h3{font:700 1.05rem var(--display);margin:0 0 .4rem;color:var(--accent2)}
-.gap-callout p{margin:0;font-size:.85rem;color:var(--muted);line-height:1.6}
-.gap-callout .gap-nums{display:flex;gap:2rem;margin:.9rem 0 .5rem;flex-wrap:wrap}
-.gap-num-item{text-align:center}
-.gap-num-val{font:700 1.9rem/1 var(--display)}
-.gap-num-label{font-size:.7rem;color:var(--muted);margin-top:.2rem}
-.gap-num-val.high{color:var(--green)}
-.gap-num-val.low{color:var(--red)}
-
-/* ── ROADMAP ──────────────────────────────────────── */
-.roadmap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;align-items:stretch}
-.roadmap-card{background:var(--surface);border:1px solid var(--border);border-radius:0;padding:1.1rem;display:flex;flex-direction:column}
-.roadmap-card.priority-1{border-left:3px solid var(--red)}
-.roadmap-card.priority-2{border-left:3px solid var(--amber)}
-.roadmap-card.priority-3{border-left:3px solid var(--green)}
-.roadmap-priority{font:700 .65rem var(--display);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.4rem}
-.p1{color:var(--red)}.p2{color:var(--amber)}.p3{color:var(--green)}
-.roadmap-card h4{font:600 .92rem var(--display);margin:0 0 .4rem;min-height:2.4em}
-.roadmap-card p{margin:0;font-size:.78rem;color:var(--muted);line-height:1.5;flex:1 0 auto}
-.roadmap-service{display:inline-block;margin-top:.65rem;font-size:.7rem;padding:.2rem .55rem;border-radius:0;background:rgba(10,186,181,.1);border:1px solid rgba(10,186,181,.25);color:var(--accent);align-self:flex-start}
-.roadmap-impact{font:600 .7rem var(--display);color:var(--muted);margin-top:.5rem;display:flex;align-items:center;gap:.3rem}
-
-/* ── CTA ──────────────────────────────────────────── */
-.cta-section{background:linear-gradient(135deg,rgba(10,186,181,.08),rgba(10,186,181,.02));border:1px solid rgba(10,186,181,.25);border-radius:0;padding:2rem;text-align:center;margin:2.5rem 0 1rem}
-.cta-section h2{font:700 1.5rem var(--display);margin:0 0 .5rem}
-.cta-section p{color:var(--muted);margin:0 0 1.25rem;max-width:55ch;margin-left:auto;margin-right:auto;font-size:.9rem}
-.btn-teal{display:inline-block;padding:.8rem 1.6rem;background:var(--accent);color:#041617;font:700 .9rem var(--display);border-radius:0;text-decoration:none;margin:.3rem}
-.btn-teal:hover{background:#08a6a2}
-.btn-ghost{display:inline-block;padding:.8rem 1.6rem;border:1px solid var(--border);color:var(--text);font:600 .9rem var(--display);border-radius:0;text-decoration:none;margin:.3rem}
-.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
-
-/* ── COCKPIT ──────────────────────────────────────── */
-.cockpit-wrap{padding-top:1.5rem}
-.cockpit-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.55rem}
-.cockpit-card{background:var(--surface);border:1px solid var(--border);border-radius:0;padding:.85rem .65rem;text-align:center;cursor:pointer;transition:border-color .15s,transform .15s,background .15s;position:relative}
-.cockpit-card:hover{border-color:rgba(10,186,181,.4);transform:translateY(-2px)}
-.cockpit-card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.cockpit-card.active{border-color:var(--accent);background:linear-gradient(160deg,rgba(10,186,181,.12),var(--surface))}
-.cockpit-card.active::after{content:'';position:absolute;left:50%;bottom:-9px;transform:translateX(-50%);border-width:0 7px 8px 7px;border-style:solid;border-color:transparent transparent var(--accent) transparent}
-.cockpit-icon{font-size:1.05rem;color:var(--muted)}
-.cockpit-card.active .cockpit-icon{color:var(--accent)}
-.cockpit-title{font:600 .68rem var(--display);letter-spacing:.03em;text-transform:uppercase;color:var(--text);margin:.5rem 0 .65rem;min-height:1.6em}
-.cockpit-visual{display:flex;align-items:center;justify-content:center;height:60px;margin-bottom:.55rem}
-.cockpit-dial{--pct:50;--dial-color:var(--accent);width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;background:conic-gradient(var(--dial-color) calc(var(--pct)*1%),rgba(255,255,255,.08) 0);box-shadow:inset 0 0 0 1px rgba(0,0,0,.25)}
-.cockpit-dial::before{content:'';position:absolute;inset:6px;border-radius:50%;background:var(--surface)}
-.cockpit-dial span{position:relative;z-index:2;font:700 1rem/1 var(--display);font-style:normal;font-feature-settings:"tnum" 1;letter-spacing:0;color:#fff;text-shadow:none}
-.cockpit-needle{display:none}
-.cockpit-dial span,.big-score,.gauge-score-text,.sent-total,.br-score,.archetype-conf,.perf-val,.gap-num-val,.tl-dot,.tl-val{font-style:normal;font-feature-settings:"tnum" 1;letter-spacing:0}
-.cockpit-bars{display:flex;align-items:flex-end;gap:4px;height:56px}
-.cockpit-bars i{display:block;width:9px;border-radius:0}
-.cockpit-dots{display:flex;flex-direction:column;gap:.3rem;width:100%;text-align:left}
-.cockpit-dot-row{display:flex;align-items:center;gap:.4rem;font-size:.6rem;color:var(--muted)}
-.cockpit-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
-.cockpit-spark{width:100%;height:46px}
-.cockpit-blurb{font-size:.68rem;color:var(--muted);line-height:1.4}
-.cockpit-light{position:absolute;top:.55rem;right:.55rem;width:7px;height:7px;border-radius:50%;opacity:.95}
-.cockpit-light.good{background:var(--green);box-shadow:0 0 5px 1px var(--green)}
-.cockpit-light.warn{background:var(--amber);box-shadow:0 0 5px 1px var(--amber)}
-.cockpit-light.bad{background:var(--red);box-shadow:0 0 5px 1px var(--red)}
-
-/* ── DETAIL STAGE ─────────────────────────────────── */
-.detail-panel{display:none}
-.detail-panel.open{display:block;animation:panelIn .25s ease}
-@keyframes panelIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
-.panel-close{display:inline-flex;align-items:center;gap:.35rem;background:none;border:1px solid var(--border);color:var(--muted);font:600 .7rem var(--display);letter-spacing:.04em;text-transform:uppercase;padding:.4rem .75rem;border-radius:0;cursor:pointer;margin-bottom:1rem}
-.panel-close:hover{border-color:var(--accent);color:var(--accent)}
-.detail-placeholder{text-align:center;color:var(--accent);font-size:1rem;font-family:var(--display);font-weight:600;padding:2rem 1rem;letter-spacing:.02em;background:none;border:none;margin:0 auto}
-.detail-placeholder i{font-size:2rem;display:block;margin-bottom:.6rem;animation:wiggle-hand 2s ease-in-out infinite;transform-origin:bottom center}
-@keyframes wiggle-hand{0%,100%{transform:rotate(-10deg) translateY(0)}40%{transform:rotate(10deg) translateY(-4px)}70%{transform:rotate(-6deg) translateY(-2px)}}
-
-/* ── RESPONSIVE ───────────────────────────────────── */
-@media(max-width:900px){
-  .score-grid{grid-template-columns:1fr 1fr}
-  .gauge-grid{grid-template-columns:1fr}
-  .chart-grid-2,.chart-grid-3,.sent-grid,.br-grid,.roadmap-grid{grid-template-columns:1fr}
-  .perf-grid{grid-template-columns:1fr 1fr}
-  .cockpit-grid{grid-template-columns:repeat(3,1fr)}
-}
-@media(max-width:600px){
-  .score-grid{grid-template-columns:1fr 1fr}
-  .perf-grid{grid-template-columns:1fr 1fr}
-  .gap-nums{gap:1rem}
-  .cockpit-grid{grid-template-columns:1fr 1fr}
-}
-@media print{
-  .cta-section{display:none}
-  header nav .cta-link{display:none}
-  body{background:#fff;color:#111}
-  .score-card,.gauge-card,.chart-card,.sent-card,.br-card,.roadmap-card,.perf-card{border:1px solid #ddd;background:#fafafa}
-  img.print-logo{display:block}
-  .cockpit-wrap{display:none}
-  .detail-panel{display:block!important}
-  .panel-close{display:none}
-}
+  *{box-sizing:border-box}
+  @keyframes pulseDot{0%,100%{opacity:.5;transform:scale(.85)}50%{opacity:1;transform:scale(1)}}
+  @keyframes waveScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  a{text-decoration:none}
 </style>
-</head>
-<body>
-<a href="#main" style="position:absolute;left:-9999px;top:auto">Skip to main content</a>
-<header></header>
+</helmet>
+<div ref="{{ rootRef }}" style="--accent:#0abab5;--accent2:#81d8d0;--bg:#0d0e10;--bg2:#15181d;--surface:#1d2128;--text:#e3e8ee;--muted:#95a0ad;--border:rgba(255,255,255,.10);--glow:0 10px 30px rgba(0,0,0,.45);width:1280px;padding:26px;background:radial-gradient(circle at 12% -8%, #15211f 0%, #0d0e10 40%);color:var(--text);font-family:'DM Sans',sans-serif;display:flex;flex-direction:column;gap:16px">
 
-<main id="main">
-<!-- ── HERO ──────────────────────────────────────── -->
-<div class="dash-hero">
-  <div class="container">
-    <a href="/insights/aisearch-global-client-zero" style="display:inline-flex;align-items:center;gap:6px;font-size:.8rem;color:var(--muted);text-decoration:none;margin-bottom:1rem;font-family:var(--display)" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'"><i class="bi bi-arrow-left"></i> Back to Client Zero article</a>
-    <div class="dash-badge"><i class="bi bi-speedometer2"></i> AI Visibility Audit Dashboard · Sample Deliverable</div>
-    <h1 class="dash-title">Client Zero — AISearch Global<br><span style="color:var(--accent)">AI Visibility Audit Results</span></h1>
-    <p class="dash-subtitle">Audit date: 20 June 2026 &nbsp;·&nbsp; Audited by: AISearch Global (self-audit) &nbsp;·&nbsp; Industry: AEO &amp; AI Search Consultancy &nbsp;·&nbsp; Tools: AI Brand Perception Audit + Cloudflare Analytics + PageSpeed + WebPageTest</p>
-    <div class="dash-meta">
-      <span><i class="bi bi-calendar3"></i> 20 June 2026</span>
-      <span><i class="bi bi-geo-alt"></i> Sydney, NSW, Australia</span>
-      <span><i class="bi bi-globe"></i> aisearch.global</span>
-      <span><i class="bi bi-robot"></i> Models: GPT-5.4 mini · Perplexity (real-time) · Gemini 3 Flash</span>
+  <!-- TOP BAR -->
+  <div style="display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="width:34px;height:34px;background:var(--accent);color:#041617;display:flex;align-items:center;justify-content:center;font-size:18px"><i class="bi bi-broadcast-pin"></i></div>
+      <div style="display:flex;flex-direction:column;line-height:1.15">
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;letter-spacing:.01em">AISearch · Visibility Console</span>
+        <span style="font-size:11px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase">HubSpot AEO Grader · Australia · Technology</span>
+      </div>
     </div>
-    <div class="sample-banner">
-      <strong>This is a sample client deliverable.</strong> Every AISearch Global AI Visibility Audit includes a dashboard like this — built from your real data, not a template. <a href="/insights/aisearch-global-client-zero" style="color:var(--accent)">Read the full story →</a>
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="display:flex;align-items:center;gap:8px;border:1px solid rgba(10,186,181,.35);background:rgba(10,186,181,.06);color:var(--accent2);font-size:12px;padding:.4rem .75rem"><i class="bi bi-lightbulb"></i>Archetype:&nbsp;<strong style="color:var(--text);font-weight:600">Innovator</strong>&nbsp;· Niche</div>
+      <div style="display:flex;align-items:center;gap:7px;border:1px solid var(--border);color:var(--muted);font-size:12px;padding:.4rem .7rem"><span style="width:7px;height:7px;background:var(--accent);border-radius:50%;animation:pulseDot 1.6s ease-in-out infinite"></span>3 LLM providers</div>
     </div>
   </div>
-</div>
 
-<!-- ── COCKPIT SNAPSHOT ─────────────────────────────── -->
-<section class="section cockpit-wrap">
-  <div class="container">
-    <p class="section-eyebrow">Mission Control</p>
-    <h2 class="section-title">Visibility Audit Dashboard</h2>
-    <p class="section-desc">Ten instruments, one panel. Click any signal below for the full readout — only one stays open at a time.</p>
-    <div class="cockpit-grid" id="cockpitGrid">
+  <!-- MAIN ROW -->
+  <div style="display:flex;gap:16px;align-items:stretch">
 
-      <div class="cockpit-card" data-target="panel-scorecard" tabindex="0" role="button" aria-expanded="false">
-        <span class="cockpit-light good"></span>
-        <div class="cockpit-icon"><i class="bi bi-speedometer2"></i></div>
-        <div class="cockpit-title">Structural AEO</div>
-        <div class="cockpit-visual"><div class="cockpit-dial" style="--pct:91;--dial-color:var(--accent)"><div class="cockpit-needle" style="transform:rotate(327.6deg)"></div><span>91</span></div></div>
-        <div class="cockpit-blurb">A Grade · +72 pts since launch</div>
-      </div>
-
-      <div class="cockpit-card" data-target="panel-platform" tabindex="0" role="button" aria-expanded="false">
-        <span class="cockpit-light bad"></span>
-        <div class="cockpit-icon"><i class="bi bi-robot"></i></div>
-        <div class="cockpit-title">AI Perception</div>
-        <div class="cockpit-visual">
-          <div class="cockpit-bars">
-            <i style="height:36%;background:var(--chatgpt)"></i>
-            <i style="height:30%;background:var(--perplexity)"></i>
-            <i style="height:41%;background:var(--gemini)"></i>
-          </div>
-        </div>
-        <div class="cockpit-blurb">36 · 30 · 41 — lagging structure</div>
-      </div>
-
-      <div class="cockpit-card" data-target="panel-recognition" tabindex="0" role="button" aria-expanded="false">
-        <span class="cockpit-light bad"></span>
-        <div class="cockpit-icon"><i class="bi bi-eye"></i></div>
-        <div class="cockpit-title">Brand Recognition</div>
-        <div class="cockpit-visual"><div class="cockpit-dial" style="--pct:10;--dial-color:var(--red)"><div class="cockpit-needle" style="transform:rotate(36deg)"></div><span>10</span></div></div>
-        <div class="cockpit-blurb">10/100 avg · depth still thin</div>
-      </div>
-
-      <div class="cockpit-card" data-target="panel-archetype" tabindex="0" role="button" aria-expanded="false">
-        <span class="cockpit-light good"></span>
-        <div class="cockpit-icon"><i class="bi bi-compass"></i></div>
-        <div class="cockpit-title">Brand Archetype</div>
-        <div class="cockpit-visual"><div class="cockpit-dial" style="--pct:60;--dial-color:var(--accent)"><div class="cockpit-needle" style="transform:rotate(216deg)"></div><span>60%</span></div></div>
-        <div class="cockpit-blurb">Innovator · 3/3 platforms agree</div>
-      </div>
-
-      <div class="cockpit-card" data-target="panel-sentiment" tabindex="0" role="button" aria-expanded="false">
-        <span class="cockpit-light good"></span>
-        <div class="cockpit-icon"><i class="bi bi-emoji-smile"></i></div>
-        <div class="cockpit-title">Sentiment</div>
-        <div class="cockpit-visual"><div class="cockpit-dial" style="--pct:56;--dial-color:var(--accent2)"><div class="cockpit-needle" style="transform:rotate(201.6deg)"></div><span>56</span></div></div>
-        <div class="cockpit-blurb">Gemini leads at 68/100</div>
-      </div>
-
-      <div class="cockpit-card" data-target="panel-sov" tabindex="0" role="button" aria-expanded="false">
-        <span class="cockpit-light bad"></span>
-        <div class="cockpit-icon"><i class="bi bi-pie-chart"></i></div>
-        <div class="cockpit-title">Share of Voice</div>
-        <div class="cockpit-visual"><div class="cockpit-dial" style="--pct:12;--dial-color:var(--red)"><div class="cockpit-needle" style="transform:rotate(43.2deg)"></div><span>12%</span></div></div>
-        <div class="cockpit-blurb">8–18.5% vs. established rivals</div>
-      </div>
-
-      <div class="cockpit-card" data-target="panel-crawler" tabindex="0" role="button" aria-expanded="false">
-        <span class="cockpit-light good"></span>
-        <div class="cockpit-icon"><i class="bi bi-bug"></i></div>
-        <div class="cockpit-title">AI Crawler Activity</div>
-        <div class="cockpit-visual">
-          <div class="cockpit-bars">
-            <i style="height:20%;background:rgba(10,186,181,.4)"></i>
-            <i style="height:35%;background:rgba(10,186,181,.55)"></i>
-            <i style="height:55%;background:rgba(10,186,181,.7)"></i>
-            <i style="height:75%;background:rgba(10,186,181,.85)"></i>
-            <i style="height:100%;background:var(--accent)"></i>
-          </div>
-        </div>
-        <div class="cockpit-blurb">+2,600% growth · 6 AI bots</div>
-      </div>
-
-      <div class="cockpit-card" data-target="panel-performance" tabindex="0" role="button" aria-expanded="false">
-        <span class="cockpit-light warn"></span>
-        <div class="cockpit-icon"><i class="bi bi-lightning-charge"></i></div>
-        <div class="cockpit-title">Site Performance</div>
-        <div class="cockpit-visual"><div class="cockpit-dial" style="--pct:33;--dial-color:var(--amber)"><div class="cockpit-needle" style="transform:rotate(118.8deg)"></div><span>33%</span></div></div>
-        <div class="cockpit-blurb">Fast core metrics · cache rate low</div>
-      </div>
-
-      <div class="cockpit-card" data-target="panel-progress" tabindex="0" role="button" aria-expanded="false">
-        <span class="cockpit-light good"></span>
-        <div class="cockpit-icon"><i class="bi bi-graph-up-arrow"></i></div>
-        <div class="cockpit-title">AEO Score Journey</div>
-        <div class="cockpit-visual">
-          <svg class="cockpit-spark" viewBox="0 0 100 40" preserveAspectRatio="none">
-            <polyline points="0,34 25,21 50,11 75,7 100,3" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="cockpit-blurb">19 → 91 in 6 weeks</div>
-      </div>
-
-      <div class="cockpit-card" data-target="panel-roadmap" tabindex="0" role="button" aria-expanded="false">
-        <span class="cockpit-light warn"></span>
-        <div class="cockpit-icon"><i class="bi bi-map"></i></div>
-        <div class="cockpit-title">Priority Roadmap</div>
-        <div class="cockpit-visual">
-          <div class="cockpit-dots">
-            <div class="cockpit-dot-row"><span class="cockpit-dot" style="background:var(--red)"></span>P1 Citations</div>
-            <div class="cockpit-dot-row"><span class="cockpit-dot" style="background:var(--amber)"></span>P2 Cache fix</div>
-            <div class="cockpit-dot-row"><span class="cockpit-dot" style="background:var(--green)"></span>P3 Content</div>
-          </div>
-        </div>
-        <div class="cockpit-blurb">3 actions queued this quarter</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div id="detailStage">
-<div class="container"><p class="detail-placeholder" id="detailPlaceholder"><i class="bi bi-hand-index-thumb"></i> Click any card above to see the full readout</p></div>
-
-<!-- ── OVERVIEW SCORES ────────────────────────────── -->
-<section class="section detail-panel" id="panel-scorecard">
-  <div class="container">
-    <button class="panel-close" type="button" data-close><i class="bi bi-chevron-up"></i> Back to cockpit</button>
-    <p class="section-eyebrow">Audit Overview</p>
-    <h2 class="section-title">Visibility Scorecard</h2>
-    <p class="section-desc">Four headline numbers. The structural score reflects technical and content AEO signals. The AI Perception scores reflect what each AI platform actually knows — and says — about the brand right now.</p>
-    <div class="score-grid">
-      <div class="score-card hero-card">
-        <div class="platform-label">Structural AEO</div>
-        <div class="big-score" style="color:var(--accent)">91<span class="score-denom">/100</span></div>
-        <div class="score-grade grade-a">A Grade</div>
-        <div class="score-label">Technical &amp; content signals</div>
-        <div class="delta delta-up">▲ +72 from launch</div>
-      </div>
-      <div class="score-card">
-        <div class="platform-label"><span class="platform-dot" style="background:var(--chatgpt)"></span>ChatGPT</div>
-        <div class="big-score" style="color:var(--chatgpt)">36<span class="score-denom">/100</span></div>
-        <div class="score-grade grade-d">D Grade</div>
-        <div class="score-label">AI Brand Perception</div>
-        <div class="delta delta-neutral">GPT-5.4 mini · Cutoff Aug 2025</div>
-      </div>
-      <div class="score-card">
-        <div class="platform-label"><span class="platform-dot" style="background:var(--perplexity)"></span>Perplexity</div>
-        <div class="big-score" style="color:var(--perplexity)">30<span class="score-denom">/100</span></div>
-        <div class="score-grade grade-f">F Grade</div>
-        <div class="score-label">AI Brand Perception</div>
-        <div class="delta delta-neutral">Real-time web access</div>
-      </div>
-      <div class="score-card">
-        <div class="platform-label"><span class="platform-dot" style="background:var(--gemini)"></span>Gemini</div>
-        <div class="big-score" style="color:var(--gemini)">41<span class="score-denom">/100</span></div>
-        <div class="score-grade grade-d">D Grade</div>
-        <div class="score-label">AI Brand Perception</div>
-        <div class="delta delta-neutral">Gemini 3 Flash · Cutoff Jan 2025</div>
-      </div>
-    </div>
-
-    <!-- Gap callout -->
-    <div class="gap-callout" style="margin-top:1.5rem">
-      <h3>The Structural–Perception Gap</h3>
-      <div class="gap-nums">
-        <div class="gap-num-item">
-          <div class="gap-num-val high">91</div>
-          <div class="gap-num-label">Structural AEO Score</div>
-        </div>
-        <div class="gap-num-item" style="align-self:center;font-size:2rem;color:var(--muted)">≠</div>
-        <div class="gap-num-item">
-          <div class="gap-num-val low">36 / 30 / 41</div>
-          <div class="gap-num-label">AI Perception (ChatGPT / Perplexity / Gemini)</div>
-        </div>
-      </div>
-      <p>Technical AEO is in place. The gap is a <strong>temporal and citation problem</strong> — ChatGPT's training cut off August 2025 (before the site launched); Gemini's cut off January 2025. Perplexity has real-time access but the brand has minimal web citations yet. This gap closes as the brand accumulates citations, mentions, and structured entity data across the web. The signals are planted. The lag is normal. The trajectory is positive on all three platforms.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ── AI PLATFORM GAUGES ─────────────────────────── -->
-<section class="section detail-panel" id="panel-platform">
-  <div class="container">
-    <button class="panel-close" type="button" data-close><i class="bi bi-chevron-up"></i> Back to cockpit</button>
-    <p class="section-eyebrow">AI Platform Scores</p>
-    <h2 class="section-title">Platform-by-Platform Perception</h2>
-    <p class="section-desc">Each AI platform has a different knowledge cutoff, data source, and ranking algorithm. Results vary — and that variance is important signal.</p>
-    <p class="section-desc" style="margin-top:-.5rem">What you're looking at: each dial shows that platform's score out of 100 — the further right the needle points, the stronger the brand's presence in that platform's answers. The tags underneath show how the AI categorises the brand (niche vs. established), the archetype it assigns, how confident it sounds, a 0–10 competitive market-fit score, and the current trend direction.</p>
-    <div class="gauge-grid">
-      <!-- ChatGPT gauge -->
-      <div class="gauge-card gpt">
-        <div class="gauge-platform gpt">ChatGPT</div>
-        <div class="gauge-model">GPT-5.4 mini · Knowledge cutoff: Aug 2025</div>
-        <svg viewBox="0 0 200 120" width="200" height="120" style="margin:0 auto;display:block">
-          <defs>
-            <linearGradient id="gptGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style="stop-color:#10a37f;stop-opacity:.35"/>
-              <stop offset="100%" style="stop-color:#10a37f"/>
-            </linearGradient>
-          </defs>
-          <!-- Track -->
-          <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="14" stroke-linecap="round"/>
-          <!-- Fill 36% of arc -->
-          <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="url(#gptGrad)" stroke-width="14" stroke-linecap="round" stroke-dasharray="251" stroke-dashoffset="160"/>
-          <!-- Needle -->
-          <line x1="100" y1="100" x2="37" y2="55" stroke="#10a37f" stroke-width="2.5" stroke-linecap="round"/>
-          <circle cx="100" cy="100" r="6" fill="#10a37f"/>
-          <!-- Labels -->
-          <text x="18" y="118" fill="#95A0AD" font-size="10" font-family="DM Sans,sans-serif">0</text>
-          <text x="92" y="22" fill="#95A0AD" font-size="10" font-family="DM Sans,sans-serif" text-anchor="middle">50</text>
-          <text x="175" y="118" fill="#95A0AD" font-size="10" font-family="DM Sans,sans-serif">100</text>
-        </svg>
-        <div class="gauge-score-text" style="color:var(--chatgpt)">36<span style="font-size:1rem;font-weight:400;color:var(--muted)">/100</span></div>
-        <div class="gauge-label">AI Brand Perception</div>
-        <div class="gauge-meta">
-          <span>Niche brand</span><span>Innovator archetype</span><span>84% confidence</span><span>Market: 6/10</span><span>↑ Positive trajectory</span>
-        </div>
-      </div>
-
-      <!-- Perplexity gauge -->
-      <div class="gauge-card ppl">
-        <div class="gauge-platform ppl">Perplexity</div>
-        <div class="gauge-model">Real-time web access · No training cutoff</div>
-        <svg viewBox="0 0 200 120" width="200" height="120" style="margin:0 auto;display:block">
-          <defs>
-            <linearGradient id="pplGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style="stop-color:#20b8cd;stop-opacity:.35"/>
-              <stop offset="100%" style="stop-color:#20b8cd"/>
-            </linearGradient>
-          </defs>
-          <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="14" stroke-linecap="round"/>
-          <!-- 30% of arc -->
-          <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="url(#pplGrad)" stroke-width="14" stroke-linecap="round" stroke-dasharray="251" stroke-dashoffset="175"/>
-          <line x1="100" y1="100" x2="30" y2="66" stroke="#20b8cd" stroke-width="2.5" stroke-linecap="round"/>
-          <circle cx="100" cy="100" r="6" fill="#20b8cd"/>
-          <text x="18" y="118" fill="#95A0AD" font-size="10" font-family="DM Sans,sans-serif">0</text>
-          <text x="92" y="22" fill="#95A0AD" font-size="10" font-family="DM Sans,sans-serif" text-anchor="middle">50</text>
-          <text x="175" y="118" fill="#95A0AD" font-size="10" font-family="DM Sans,sans-serif">100</text>
-        </svg>
-        <div class="gauge-score-text" style="color:var(--perplexity)">30<span style="font-size:1rem;font-weight:400;color:var(--muted)">/100</span></div>
-        <div class="gauge-label">AI Brand Perception</div>
-        <div class="gauge-meta">
-          <span>Niche brand</span><span>Innovator archetype</span><span>60% confidence</span><span>Market: 6/10</span><span>↑ Positive trajectory</span>
-        </div>
-      </div>
-
-      <!-- Gemini gauge -->
-      <div class="gauge-card gem">
-        <div class="gauge-platform gem">Gemini</div>
-        <div class="gauge-model">Gemini 3 Flash Preview · Knowledge cutoff: Jan 2025</div>
-        <svg viewBox="0 0 200 120" width="200" height="120" style="margin:0 auto;display:block">
-          <defs>
-            <linearGradient id="gemGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:.35"/>
-              <stop offset="100%" style="stop-color:#8b5cf6"/>
-            </linearGradient>
-          </defs>
-          <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="14" stroke-linecap="round"/>
-          <!-- 41% of arc -->
-          <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="url(#gemGrad)" stroke-width="14" stroke-linecap="round" stroke-dasharray="251" stroke-dashoffset="148"/>
-          <line x1="100" y1="100" x2="29" y2="80" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-          <circle cx="100" cy="100" r="6" fill="#8b5cf6"/>
-          <text x="18" y="118" fill="#95A0AD" font-size="10" font-family="DM Sans,sans-serif">0</text>
-          <text x="92" y="22" fill="#95A0AD" font-size="10" font-family="DM Sans,sans-serif" text-anchor="middle">50</text>
-          <text x="175" y="118" fill="#95A0AD" font-size="10" font-family="DM Sans,sans-serif">100</text>
-        </svg>
-        <div class="gauge-score-text" style="color:var(--gemini)">41<span style="font-size:1rem;font-weight:400;color:var(--muted)">/100</span></div>
-        <div class="gauge-label">AI Brand Perception</div>
-        <div class="gauge-meta">
-          <span>Niche brand</span><span>Innovator archetype</span><span>35% confidence</span><span>Market: 6/10</span><span>↑ High acceleration potential</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── BRAND RECOGNITION ──────────────────────────── -->
-<section class="section detail-panel" id="panel-recognition">
-  <div class="container">
-    <button class="panel-close" type="button" data-close><i class="bi bi-chevron-up"></i> Back to cockpit</button>
-    <p class="section-eyebrow">Brand Recognition</p>
-    <h2 class="section-title">How Well Each AI Platform Knows the Brand</h2>
-    <p class="section-desc">Brand Recognition measures depth of knowledge — not just whether the AI has heard of the brand, but how confidently and accurately it can describe it. Sub-scores are rated out of 10.</p>
-    <div class="br-grid">
-      <!-- ChatGPT -->
-      <div class="br-card gpt">
-        <div class="gauge-platform gpt">ChatGPT</div>
-        <div class="br-score-row"><span class="br-score gpt">12</span><span class="br-score-denom">/100</span></div>
-        <div class="br-sub-row">
-          <span class="br-sub-label">Mention Depth</span>
-          <div class="br-sub-dots">
-            <div class="br-sub-dot filled"></div><div class="br-sub-dot filled"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-          </div>
-          <span style="font-size:.72rem;color:var(--muted)">2/10</span>
-        </div>
-        <div class="br-sub-row">
-          <span class="br-sub-label">Source Quality</span>
-          <div class="br-sub-dots">
-            <div class="br-sub-dot filled"></div><div class="br-sub-dot filled"></div><div class="br-sub-dot filled"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-          </div>
-          <span style="font-size:.72rem;color:var(--muted)">3/10</span>
-        </div>
-        <div class="br-sub-row">
-          <span class="br-sub-label">Data Richness</span>
-          <div class="br-sub-dots">
-            <div class="br-sub-dot filled"></div><div class="br-sub-dot filled"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-          </div>
-          <span style="font-size:.72rem;color:var(--muted)">2/10</span>
-        </div>
-        <div class="br-tag-row">
-          <span class="br-tag">Niche</span><span class="br-tag">Innovator</span><span class="br-tag">84% confident</span><span class="br-tag">42 mentions</span>
-        </div>
-      </div>
-      <!-- Perplexity -->
-      <div class="br-card ppl">
-        <div class="gauge-platform ppl">Perplexity</div>
-        <div class="br-score-row"><span class="br-score ppl">5</span><span class="br-score-denom">/100</span></div>
-        <div class="br-sub-row">
-          <span class="br-sub-label">Mention Depth</span>
-          <div class="br-sub-dots">
-            <div class="br-sub-dot filled"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-          </div>
-          <span style="font-size:.72rem;color:var(--muted)">1/10</span>
-        </div>
-        <div class="br-sub-row">
-          <span class="br-sub-label">Source Quality</span>
-          <div class="br-sub-dots">
-            <div class="br-sub-dot filled"></div><div class="br-sub-dot filled"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-          </div>
-          <span style="font-size:.72rem;color:var(--muted)">2/10</span>
-        </div>
-        <div class="br-sub-row">
-          <span class="br-sub-label">Data Richness</span>
-          <div class="br-sub-dots">
-            <div class="br-sub-dot filled"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-          </div>
-          <span style="font-size:.72rem;color:var(--muted)">1/10</span>
-        </div>
-        <div class="br-tag-row">
-          <span class="br-tag">Niche</span><span class="br-tag">Innovator</span><span class="br-tag">60% confident</span><span class="br-tag">142 mentions</span>
-        </div>
-      </div>
-      <!-- Gemini -->
-      <div class="br-card gem">
-        <div class="gauge-platform gem">Gemini</div>
-        <div class="br-score-row"><span class="br-score gem">12</span><span class="br-score-denom">/100</span></div>
-        <div class="br-sub-row">
-          <span class="br-sub-label">Mention Depth</span>
-          <div class="br-sub-dots">
-            <div class="br-sub-dot filled"></div><div class="br-sub-dot filled"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-          </div>
-          <span style="font-size:.72rem;color:var(--muted)">2/10</span>
-        </div>
-        <div class="br-sub-row">
-          <span class="br-sub-label">Source Quality</span>
-          <div class="br-sub-dots">
-            <div class="br-sub-dot filled"></div><div class="br-sub-dot filled"></div><div class="br-sub-dot filled"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-          </div>
-          <span style="font-size:.72rem;color:var(--muted)">3/10</span>
-        </div>
-        <div class="br-sub-row">
-          <span class="br-sub-label">Data Richness</span>
-          <div class="br-sub-dots">
-            <div class="br-sub-dot filled"></div><div class="br-sub-dot filled"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-            <div class="br-sub-dot empty"></div><div class="br-sub-dot empty"></div>
-          </div>
-          <span style="font-size:.72rem;color:var(--muted)">2/10</span>
-        </div>
-        <div class="br-tag-row">
-          <span class="br-tag">Niche</span><span class="br-tag">Innovator</span><span class="br-tag">35% confident</span><span class="br-tag">1,240 mentions</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── BRAND ARCHETYPE ─────────────────────────────── -->
-<section class="section detail-panel" id="panel-archetype">
-  <div class="container">
-    <button class="panel-close" type="button" data-close><i class="bi bi-chevron-up"></i> Back to cockpit</button>
-    <p class="section-eyebrow">Brand Positioning</p>
-    <h2 class="section-title">Brand Archetype &amp; Market Position</h2>
-    <p class="section-desc">Beyond raw scores, each platform was asked to characterise the brand's market position and archetype. The consistency of the answer — even at low confidence — is itself a signal.</p>
-    <div class="archetype-grid">
-      <div class="archetype-card gpt">
-        <div class="gauge-platform gpt">ChatGPT</div>
-        <div class="archetype-name">Innovator</div>
-        <div class="archetype-tag">Niche brand · Market: 6/10</div>
-        <div class="archetype-conf" style="color:var(--chatgpt)">84%</div>
-        <div class="archetype-conf-label">Confidence</div>
-      </div>
-      <div class="archetype-card ppl">
-        <div class="gauge-platform ppl">Perplexity</div>
-        <div class="archetype-name">Innovator</div>
-        <div class="archetype-tag">Niche brand · Market: 6/10</div>
-        <div class="archetype-conf" style="color:var(--perplexity)">60%</div>
-        <div class="archetype-conf-label">Confidence</div>
-      </div>
-      <div class="archetype-card gem">
-        <div class="gauge-platform gem">Gemini</div>
-        <div class="archetype-name">Innovator</div>
-        <div class="archetype-tag">Niche brand · Market: 6/10</div>
-        <div class="archetype-conf" style="color:var(--gemini)">35%</div>
-        <div class="archetype-conf-label">Confidence</div>
-      </div>
-    </div>
-    <div class="achieve-box">
-      <h3>Why this matters</h3>
-      <p>All three platforms independently converge on the same archetype — <strong style="color:var(--text)">Innovator</strong> — and the same niche-brand positioning, despite very different confidence levels and data sources. That convergence is a stronger signal than any single score: it means the entity data and content are communicating a consistent identity, even where mention depth is still thin. Confidence rises as citation volume grows — Perplexity's real-time access already tracks above its training-cutoff peers.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ── SENTIMENT ──────────────────────────────────── -->
-<section class="section detail-panel" id="panel-sentiment">
-  <div class="container">
-    <button class="panel-close" type="button" data-close><i class="bi bi-chevron-up"></i> Back to cockpit</button>
-    <p class="section-eyebrow">Sentiment Analysis</p>
-    <h2 class="section-title">How AI Platforms Feel About the Brand</h2>
-    <p class="section-desc">Sentiment is scored across four dimensions — General (overall tone), Contextual (relevance to AEO/AI-search topics), Source-Based (how credible the underlying citations are), and Polarization (divisive-framing risk). For the first three, higher is better. Polarization is a risk score, so lower (shown in amber) is better there. Gemini leads overall — likely because its training data includes positive industry framing from late 2024.</p>
-    <div class="sent-grid">
-      <!-- ChatGPT -->
-      <div class="sent-card gpt-card">
-        <h4 class="gpt">ChatGPT</h4>
-        <div class="sent-total" style="color:var(--chatgpt)">54<span style="font-size:1rem;font-weight:400;color:var(--muted)">/100</span></div>
-        <div class="sent-bar-row">
-          <span class="sent-bar-label">General</span>
-          <div class="sent-bar-track"><div class="sent-bar-fill" style="width:52%;background:var(--chatgpt)"></div></div>
-          <span class="sent-bar-val" style="color:var(--chatgpt)">52</span>
-        </div>
-        <div class="sent-bar-row">
-          <span class="sent-bar-label">Contextual</span>
-          <div class="sent-bar-track"><div class="sent-bar-fill" style="width:55%;background:var(--chatgpt)"></div></div>
-          <span class="sent-bar-val" style="color:var(--chatgpt)">55</span>
-        </div>
-        <div class="sent-bar-row">
-          <span class="sent-bar-label">Source-Based</span>
-          <div class="sent-bar-track"><div class="sent-bar-fill" style="width:48%;background:var(--chatgpt)"></div></div>
-          <span class="sent-bar-val" style="color:var(--chatgpt)">48</span>
-        </div>
-        <div class="sent-bar-row">
-          <span class="sent-bar-label">Polarization</span>
-          <div class="sent-bar-track"><div class="sent-bar-fill" style="width:28%;background:var(--amber)"></div></div>
-          <span class="sent-bar-val" style="color:var(--amber)">28</span>
-        </div>
-      </div>
-      <!-- Perplexity -->
-      <div class="sent-card ppl-card">
-        <h4 class="ppl">Perplexity</h4>
-        <div class="sent-total" style="color:var(--perplexity)">45<span style="font-size:1rem;font-weight:400;color:var(--muted)">/100</span></div>
-        <div class="sent-bar-row">
-          <span class="sent-bar-label">General</span>
-          <div class="sent-bar-track"><div class="sent-bar-fill" style="width:42%;background:var(--perplexity)"></div></div>
-          <span class="sent-bar-val" style="color:var(--perplexity)">42</span>
-        </div>
-        <div class="sent-bar-row">
-          <span class="sent-bar-label">Contextual</span>
-          <div class="sent-bar-track"><div class="sent-bar-fill" style="width:38%;background:var(--perplexity)"></div></div>
-          <span class="sent-bar-val" style="color:var(--perplexity)">38</span>
-        </div>
-        <div class="sent-bar-row">
-          <span class="sent-bar-label">Source-Based</span>
-          <div class="sent-bar-track"><div class="sent-bar-fill" style="width:40%;background:var(--perplexity)"></div></div>
-          <span class="sent-bar-val" style="color:var(--perplexity)">40</span>
-        </div>
-        <div class="sent-bar-row">
-          <span class="sent-bar-label">Polarization</span>
-          <div class="sent-bar-track"><div class="sent-bar-fill" style="width:24%;background:var(--amber)"></div></div>
-          <span class="sent-bar-val" style="color:var(--amber)">24</span>
-        </div>
-      </div>
-      <!-- Gemini -->
-      <div class="sent-card gem-card">
-        <h4 class="gem">Gemini</h4>
-        <div class="sent-total" style="color:var(--gemini)">68<span style="font-size:1rem;font-weight:400;color:var(--muted)">/100</span></div>
-        <div class="sent-bar-row">
-          <span class="sent-bar-label">General</span>
-          <div class="sent-bar-track"><div class="sent-bar-fill" style="width:72%;background:var(--gemini)"></div></div>
-          <span class="sent-bar-val" style="color:var(--gemini)">72</span>
-        </div>
-        <div class="sent-bar-row">
-          <span class="sent-bar-label">Contextual</span>
-          <div class="sent-bar-track"><div class="sent-bar-fill" style="width:65%;background:var(--gemini)"></div></div>
-          <span class="sent-bar-val" style="color:var(--gemini)">65</span>
-        </div>
-        <div class="sent-bar-row">
-          <span class="sent-bar-label">Source-Based</span>
-          <div class="sent-bar-track"><div class="sent-bar-fill" style="width:67%;background:var(--gemini)"></div></div>
-          <span class="sent-bar-val" style="color:var(--gemini)">67</span>
-        </div>
-        <div class="sent-bar-row">
-          <span class="sent-bar-label">Polarization</span>
-          <div class="sent-bar-track"><div class="sent-bar-fill" style="width:35%;background:var(--amber)"></div></div>
-          <span class="sent-bar-val" style="color:var(--amber)">35</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── SHARE OF VOICE ─────────────────────────────── -->
-<section class="section detail-panel" id="panel-sov">
-  <div class="container">
-    <button class="panel-close" type="button" data-close><i class="bi bi-chevron-up"></i> Back to cockpit</button>
-    <p class="section-eyebrow">Competitive Share of Voice</p>
-    <h2 class="section-title">Where the Brand Sits in AI Conversation</h2>
-    <p class="section-desc">Share of Voice measures how often the brand is mentioned relative to competitors in AI responses about the category. A newly launched brand appearing in these datasets at all is a strong signal.</p>
-    <div class="chart-grid-3">
-      <!-- ChatGPT SOV -->
-      <div class="chart-card gpt-card">
-        <h4>ChatGPT SOV</h4>
-        <div class="chart-wrap-sm"><canvas id="sovGpt"></canvas></div>
-        <div class="sov-legend" style="margin-top:.6rem">
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:var(--chatgpt)"></span><span class="sov-legend-name sov-self">AISearch Global</span><span class="sov-legend-pct sov-self">8%</span></div>
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:rgba(255,255,255,.25)"></span><span class="sov-legend-name">WebFX</span><span class="sov-legend-pct">18%</span></div>
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:rgba(255,255,255,.18)"></span><span class="sov-legend-name">Ignite Visibility</span><span class="sov-legend-pct">15%</span></div>
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:rgba(255,255,255,.14)"></span><span class="sov-legend-name">NP Digital</span><span class="sov-legend-pct">14%</span></div>
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:rgba(255,255,255,.1)"></span><span class="sov-legend-name">Other</span><span class="sov-legend-pct">45%</span></div>
-        </div>
-        <div style="font-size:.7rem;color:var(--muted);margin-top:.6rem">42 total mentions · 27 comparison queries</div>
-      </div>
-      <!-- Perplexity SOV -->
-      <div class="chart-card ppl-card">
-        <h4>Perplexity SOV</h4>
-        <div class="chart-wrap-sm"><canvas id="sovPpl"></canvas></div>
-        <div class="sov-legend" style="margin-top:.6rem">
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:var(--perplexity)"></span><span class="sov-legend-name sov-self">AISearch Global</span><span class="sov-legend-pct sov-self">18.5%</span></div>
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:rgba(255,255,255,.25)"></span><span class="sov-legend-name">ThatWare</span><span class="sov-legend-pct">22%</span></div>
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:rgba(255,255,255,.18)"></span><span class="sov-legend-name">Gravitate</span><span class="sov-legend-pct">15%</span></div>
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:rgba(255,255,255,.14)"></span><span class="sov-legend-name">Warren Digital</span><span class="sov-legend-pct">12%</span></div>
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:rgba(255,255,255,.1)"></span><span class="sov-legend-name">Other</span><span class="sov-legend-pct">32%</span></div>
-        </div>
-        <div style="font-size:.7rem;color:var(--muted);margin-top:.6rem">142 total mentions · 89 comparison queries</div>
-      </div>
-      <!-- Gemini SOV -->
-      <div class="chart-card gem-card">
-        <h4>Gemini SOV</h4>
-        <div class="chart-wrap-sm"><canvas id="sovGem"></canvas></div>
-        <div class="sov-legend" style="margin-top:.6rem">
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:var(--gemini)"></span><span class="sov-legend-name sov-self">AISearch Global</span><span class="sov-legend-pct sov-self">8.5%</span></div>
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:rgba(255,255,255,.25)"></span><span class="sov-legend-name">Search Engine Land</span><span class="sov-legend-pct">22%</span></div>
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:rgba(255,255,255,.18)"></span><span class="sov-legend-name">Ahrefs</span><span class="sov-legend-pct">18.5%</span></div>
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:rgba(255,255,255,.14)"></span><span class="sov-legend-name">Semrush</span><span class="sov-legend-pct">17%</span></div>
-          <div class="sov-legend-row"><span class="sov-legend-dot" style="background:rgba(255,255,255,.1)"></span><span class="sov-legend-name">Other</span><span class="sov-legend-pct">34%</span></div>
-        </div>
-        <div style="font-size:.7rem;color:var(--muted);margin-top:.6rem">1,240 total mentions · 3,150 comparison queries</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── AI CRAWLER ACTIVITY ────────────────────────── -->
-<section class="section detail-panel" id="panel-crawler">
-  <div class="container">
-    <button class="panel-close" type="button" data-close><i class="bi bi-chevron-up"></i> Back to cockpit</button>
-    <p class="section-eyebrow">AI Crawler Activity</p>
-    <h2 class="section-title">Which AI Bots Are Indexing the Site</h2>
-    <p class="section-desc">Crawler activity from Cloudflare analytics (30-day period). AI crawler requests increased +2,600% in this period. The site is being actively indexed by major AI platforms — this is a leading indicator of future perception improvement.</p>
-    <p class="section-desc" style="margin-top:-.5rem">What you're looking at: each row on the left is a distinct bot, ranked by how many requests it made in 30 days. Rows highlighted in colour (PerplexityBot, ChatGPT-User, Claude-SearchBot, ClaudeBot, OAI-SearchBot, GPTBot) are AI platforms reading the site to power answers; grey rows (Googlebot, CCBot, BingBot) are traditional search/training crawlers. The donut on the right shows the same six AI bots as a share of total crawl volume.</p>
-    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:1.5rem">
-      <div class="chart-card">
-        <h4>Crawl Requests by Bot (30-day)</h4>
-        <div class="crawler-list" style="margin-top:.5rem">
-          <div class="crawler-row">
-            <span class="crawler-name"><span class="crawler-icon" style="background:rgba(66,133,244,.2);color:#4285f4">G</span>Googlebot</span>
-            <div class="crawler-track"><div class="crawler-fill" style="width:100%;background:rgba(66,133,244,.5)"></div></div>
-            <span class="crawler-count">52</span>
-          </div>
-          <div class="crawler-row">
-            <span class="crawler-name ai-bot"><span class="crawler-icon" style="background:rgba(32,184,205,.2);color:var(--perplexity)">P</span>PerplexityBot</span>
-            <div class="crawler-track"><div class="crawler-fill" style="width:31%;background:var(--perplexity)"></div></div>
-            <span class="crawler-count">16</span>
-          </div>
-          <div class="crawler-row">
-            <span class="crawler-name ai-bot"><span class="crawler-icon" style="background:rgba(16,163,127,.2);color:var(--chatgpt)">C</span>ChatGPT-User</span>
-            <div class="crawler-track"><div class="crawler-fill" style="width:25%;background:var(--chatgpt)"></div></div>
-            <span class="crawler-count">13</span>
-          </div>
-          <div class="crawler-row">
-            <span class="crawler-name ai-bot"><span class="crawler-icon" style="background:rgba(10,186,181,.2);color:var(--accent)">A</span>Claude-SearchBot</span>
-            <div class="crawler-track"><div class="crawler-fill" style="width:13%;background:var(--accent)"></div></div>
-            <span class="crawler-count">7</span>
-          </div>
-          <div class="crawler-row">
-            <span class="crawler-name"><span class="crawler-icon" style="background:rgba(150,150,150,.2);color:#999">C</span>CCBot</span>
-            <div class="crawler-track"><div class="crawler-fill" style="width:10%;background:rgba(150,150,150,.4)"></div></div>
-            <span class="crawler-count">5</span>
-          </div>
-          <div class="crawler-row">
-            <span class="crawler-name ai-bot"><span class="crawler-icon" style="background:rgba(10,186,181,.2);color:var(--accent)">A</span>ClaudeBot</span>
-            <div class="crawler-track"><div class="crawler-fill" style="width:8%;background:rgba(10,186,181,.5)"></div></div>
-            <span class="crawler-count">4</span>
-          </div>
-          <div class="crawler-row">
-            <span class="crawler-name"><span class="crawler-icon" style="background:rgba(0,102,204,.2);color:#06c">B</span>BingBot</span>
-            <div class="crawler-track"><div class="crawler-fill" style="width:4%;background:rgba(0,102,204,.4)"></div></div>
-            <span class="crawler-count">2</span>
-          </div>
-          <div class="crawler-row">
-            <span class="crawler-name ai-bot"><span class="crawler-icon" style="background:rgba(16,163,127,.2);color:var(--chatgpt)">O</span>OAI-SearchBot</span>
-            <div class="crawler-track"><div class="crawler-fill" style="width:4%;background:rgba(16,163,127,.5)"></div></div>
-            <span class="crawler-count">2</span>
-          </div>
-          <div class="crawler-row">
-            <span class="crawler-name ai-bot"><span class="crawler-icon" style="background:rgba(16,163,127,.2);color:var(--chatgpt)">G</span>GPTBot</span>
-            <div class="crawler-track"><div class="crawler-fill" style="width:2%;background:rgba(16,163,127,.4)"></div></div>
-            <span class="crawler-count">1</span>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="chart-card" style="margin-bottom:1rem">
-          <h4>AI Crawler Split</h4>
-          <div class="chart-wrap-sm"><canvas id="crawlerPie"></canvas></div>
-        </div>
-        <div class="chart-card">
-          <h4>Key Signal</h4>
-          <p style="font-size:.82rem;color:var(--muted);margin:0 0 .75rem;line-height:1.6">AI crawlers account for <strong style="color:var(--accent)">43 of 108 total requests</strong> — 40% of all crawler activity. This is significantly above average for a 1-month-old domain.</p>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem">
-            <div style="text-align:center;padding:.75rem;background:var(--surface2);border-radius:0">
-              <div style="font:700 1.6rem var(--display);color:var(--accent)">+2,600%</div>
-              <div style="font-size:.7rem;color:var(--muted)">AI crawler increase (30d)</div>
+    <!-- LEFT RAIL -->
+    <div style="width:250px;flex-shrink:0;display:flex;flex-direction:column;gap:10px">
+      <p style="margin:0 2px 2px;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)">Metrics · click to expand</p>
+      <sc-for list="{{ metricList }}" as="m" hint-placeholder-count="7">
+        <div data-id="{{ m.id }}" onClick="{{ onPick }}" style="{{ m.cardStyle }}" style-hover="border-color:var(--accent2)">
+          <div style="display:flex;align-items:center;gap:10px">
+            <i class="bi {{ m.icon }}" style="font-size:16px;color:{{ m.iconColor }}"></i>
+            <span style="flex:1;font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:13.5px">{{ m.label }}</span>
+            <div style="display:flex;align-items:center;gap:7px">
+              <span style="width:7px;height:7px;border-radius:50%;background:{{ m.scoreColor }};flex-shrink:0"></span>
+              <span style="font-family:'Space Grotesk',sans-serif;font-size:14px;color:{{ m.scoreColor }}">{{ m.head }}</span>
             </div>
-            <div style="text-align:center;padding:.75rem;background:var(--surface2);border-radius:0">
-              <div style="font:700 1.6rem var(--display);color:var(--accent)">6</div>
-              <div style="font-size:.7rem;color:var(--muted)">AI bots crawling</div>
+          </div>
+          <div style="display:flex;gap:5px">
+            <sc-for list="{{ m.mini }}" as="mb" hint-placeholder-count="3">
+              <div style="flex:1;height:4px;background:var(--surface)"><div style="{{ mb.barStyle }}"></div></div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+      <div style="border:1px solid var(--border);background:var(--bg2);padding:14px;display:flex;flex-direction:column;gap:8px">
+        <span style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)">Brand archetype</span>
+        <svg viewBox="0 0 100 60" width="100%" height="86" style="display:block">
+          <sc-for list="{{ dial.segs }}" as="sg" hint-placeholder-count="5">
+            <path d="{{ sg.d }}" fill="none" stroke="{{ sg.color }}" stroke-width="7" stroke-linecap="round"></path>
+          </sc-for>
+          <line x1="50" y1="50" x2="{{ dial.needle.x }}" y2="{{ dial.needle.y }}" stroke="var(--accent2)" stroke-width="1.8" stroke-linecap="round"></line>
+          <circle cx="50" cy="50" r="3" fill="var(--accent2)"></circle>
+        </svg>
+        <div style="display:flex;align-items:baseline;justify-content:center;gap:6px"><span style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:600;color:var(--accent2)">{{ dial.current }}</span><span style="font-size:11px;color:var(--muted)">· Niche market</span></div>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:4px 8px;margin-top:1px">
+          <sc-for list="{{ dial.tiers }}" as="t" hint-placeholder-count="5">
+            <span style="font-size:10px;color:{{ t.color }};font-weight:{{ t.weight }}">{{ t.label }}</span>
+          </sc-for>
+        </div>
+        <span style="text-align:center;font-size:10.5px;color:var(--muted)">Next tier: <span style="color:var(--accent2)">{{ dial.next }}</span></span>
+      </div>
+      <div style="border:1px solid var(--border);background:var(--bg2);padding:13px 14px;display:flex;flex-direction:column;gap:9px">
+        <span style="font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase">Overall AEO score</span>
+        <sc-for list="{{ engines }}" as="e" hint-placeholder-count="3">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="width:74px;font-size:12.5px;color:var(--muted)">{{ e.name }}</span>
+            <div style="flex:1;height:6px;background:var(--surface)"><div style="{{ e.barStyle }}"></div></div>
+            <span style="width:26px;text-align:right;font-family:'Space Grotesk',sans-serif;font-size:14px">{{ e.score }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="border:1px solid var(--border);background:var(--bg2);padding:13px 14px;display:flex;flex-direction:column;gap:9px">
+        <span style="font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase"><i class="bi bi-shield-check" style="color:var(--accent);margin-right:6px"></i>Verify it yourself</span>
+        <sc-for list="{{ verifyTools }}" as="lk" hint-placeholder-count="3">
+          <a href="{{ lk.url }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;border:1px solid var(--border);background:var(--surface);padding:9px 11px;color:var(--text)" style-hover="border-color:var(--accent)">
+            <i class="bi {{ lk.icon }}" style="font-size:15px;color:var(--accent2);flex-shrink:0"></i>
+            <div style="display:flex;flex-direction:column;line-height:1.2;min-width:0;flex:1"><span style="font-size:12.5px;font-weight:500">{{ lk.label }}</span><span style="font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ lk.host }}</span></div>
+            <i class="bi bi-arrow-up-right" style="font-size:11px;color:var(--muted);flex-shrink:0"></i>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- RIGHT: THE SCREEN -->
+    <div style="flex:1;min-width:0;border:1px solid var(--border);box-shadow:var(--glow);background:var(--bg2);display:flex;flex-direction:column;overflow:hidden">
+
+      <!-- header band -->
+      <div style="position:relative;overflow:hidden;padding:24px 26px;background:linear-gradient(135deg,#0a312e 0%,#0c211f 55%,#0d1413 100%);border-bottom:1px solid var(--border)">
+        <svg viewBox="0 0 200 100" preserveAspectRatio="none" width="200%" height="100%" style="position:absolute;left:0;top:0;height:100%;opacity:.15;pointer-events:none;will-change:transform;animation:waveScroll 24s linear infinite;animation-play-state:var(--wave-play,running)"><defs><linearGradient id="hgrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--accent2)" stop-opacity="0.7"></stop><stop offset="100%" stop-color="var(--accent)" stop-opacity="0"></stop></linearGradient></defs><path d="{{ waveAreaD }}" fill="url(#hgrad)"></path><path d="{{ wavePathD }}" fill="none" stroke="var(--accent2)" stroke-width="1" opacity="0.55" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg>
+        <div style="position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:30px">
+        <div style="display:flex;flex-direction:column;gap:9px;max-width:640px">
+          <p style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent2)">{{ sel.eyebrow }}</p>
+          <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:33px;font-weight:600;letter-spacing:-.01em">{{ sel.label }}</h2>
+          <p style="margin:0;font-size:14px;color:rgba(227,232,238,.78);line-height:1.55">{{ sel.what }}</p>
+        </div>
+        <div style="position:relative;width:118px;height:118px;flex-shrink:0">
+          <svg viewBox="0 0 36 36" width="118" height="118"><circle cx="18" cy="18" r="15.915" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="2.4"></circle><circle cx="18" cy="18" r="15.915" fill="none" stroke="var(--accent2)" stroke-width="2.4" stroke-dasharray="{{ sel.headDash }}" stroke-linecap="round" transform="rotate(-90 18 18)" style="transition:stroke-dasharray .9s cubic-bezier(.4,0,.2,1)"></circle></svg>
+          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px"><span style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:600;line-height:1">{{ sel.headline }}</span><span style="font-size:9.5px;color:var(--muted);text-align:center;max-width:90px">{{ sel.headUnit }}</span></div>
+        </div>
+        </div>
+      </div>
+
+      <!-- plain english -->
+      <div style="margin:20px 26px 0;border-left:3px solid var(--accent2);background:rgba(129,216,208,.05);padding:15px 18px;display:flex;flex-direction:column;gap:5px">
+        <span style="font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2)"><i class="bi bi-chat-square-quote" style="margin-right:7px"></i>In plain English</span>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:var(--text)">{{ sel.plain }}</p>
+      </div>
+
+      <!-- provider columns (rings) -->
+      <sc-if value="{{ sel.isProviders }}" hint-placeholder-val="">
+      <div style="padding:20px 26px 6px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+        <sc-for list="{{ sel.providers }}" as="p" hint-placeholder-count="3">
+          <div style="border:1px solid var(--border);background:var(--surface);padding:16px;display:flex;flex-direction:column;gap:13px">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+              <div style="display:flex;flex-direction:column;gap:2px;min-width:0">
+                <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:16px">{{ p.name }}</span>
+                <span style="font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ p.tag }}</span>
+              </div>
+              <div style="position:relative;width:66px;height:66px;flex-shrink:0">
+                <svg viewBox="0 0 36 36" width="66" height="66"><circle cx="18" cy="18" r="15.915" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="3"></circle><circle cx="18" cy="18" r="15.915" fill="none" stroke="{{ p.ringColor }}" stroke-width="3" stroke-dasharray="{{ p.dash }}" stroke-linecap="round" transform="rotate(-90 18 18)" style="transition:stroke-dasharray .9s cubic-bezier(.4,0,.2,1)"></circle></svg>
+                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><span style="font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:600">{{ p.big }}</span></div>
+              </div>
+            </div>
+            <sc-if value="{{ p.verdict }}" hint-placeholder-val="">
+              <span style="align-self:flex-start;border:1px solid rgba(10,186,181,.35);color:var(--accent2);font-size:10.5px;padding:.2rem .55rem">{{ p.verdict }}</span>
+            </sc-if>
+            <div style="height:1px;background:var(--border)"></div>
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <sc-for list="{{ p.subs }}" as="s" hint-placeholder-count="5">
+                <div style="display:flex;flex-direction:column;gap:4px">
+                  <div style="display:flex;align-items:center;justify-content:space-between;font-size:12px"><span style="color:var(--muted)">{{ s.label }}</span><span style="font-family:'Space Grotesk',sans-serif;color:var(--text)">{{ s.disp }}</span></div>
+                  <div style="height:3px;background:var(--bg)"><div style="{{ s.barStyle }}"></div></div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      </sc-if>
+
+      <!-- stat tiles (single-site metrics) -->
+      <sc-if value="{{ sel.isStats }}" hint-placeholder-val="">
+      <div style="padding:20px 26px 6px;display:flex;flex-direction:column;gap:14px">
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
+          <sc-for list="{{ sel.stats }}" as="st" hint-placeholder-count="8">
+            <div style="border:1px solid var(--border);background:var(--surface);padding:14px;display:flex;flex-direction:column;gap:6px">
+              <div style="display:flex;align-items:center;gap:7px"><span style="width:8px;height:8px;border-radius:50%;background:{{ st.color }};flex-shrink:0"></span><span style="font-size:11px;color:var(--muted)">{{ st.label }}</span></div>
+              <span style="font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:600">{{ st.value }}</span>
+              <span style="font-size:10.5px;color:var(--muted)">{{ st.note }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <sc-if value="{{ sel.hasRows }}" hint-placeholder-val="">
+          <div style="border:1px solid var(--border);background:var(--surface);padding:16px;display:flex;flex-direction:column;gap:12px">
+            <span style="font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">{{ sel.rows.title }}</span>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px 30px">
+              <sc-for list="{{ sel.rows.items }}" as="r" hint-placeholder-count="6">
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--border);padding-bottom:9px">
+                  <div style="display:flex;flex-direction:column;line-height:1.25;min-width:0"><span style="font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.label }}</span><span style="font-size:10.5px;color:var(--muted)">{{ r.sub }}</span></div>
+                  <div style="display:flex;align-items:center;gap:8px;flex-shrink:0"><span style="font-family:'Space Grotesk',sans-serif;font-size:14px;color:{{ r.color }}">{{ r.value }}</span><span style="width:7px;height:7px;border-radius:50%;background:{{ r.color }}"></span></div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+      </sc-if>
+
+      <!-- signature chart: vertical bars -->
+      <sc-if value="{{ sel.hasBars }}" hint-placeholder-val="">
+        <div style="margin:14px 26px 0;border:1px solid var(--border);background:var(--surface);padding:18px;display:flex;flex-direction:column;gap:14px">
+          <span style="font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">Where the score comes from · average across engines</span>
+          <div style="display:flex;align-items:stretch;gap:18px;height:188px">
+            <sc-for list="{{ sel.bars }}" as="b" hint-placeholder-count="5">
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;height:100%">
+                <span style="font-family:'Space Grotesk',sans-serif;font-size:13px">{{ b.disp }}</span>
+                <div style="flex:1;width:100%;display:flex;align-items:flex-end;justify-content:center;padding:6px 0"><div style="{{ b.barStyle }}"></div></div>
+                <span style="font-size:11px;color:var(--muted);text-align:center">{{ b.label }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- signature chart: donut -->
+      <sc-if value="{{ sel.hasDonut }}" hint-placeholder-val="">
+        <div style="margin:14px 26px 0;border:1px solid var(--border);background:var(--surface);padding:18px;display:flex;align-items:center;gap:30px">
+          <div style="position:relative;width:158px;height:158px;flex-shrink:0">
+            <svg viewBox="0 0 42 42" width="158" height="158">
+              <circle cx="21" cy="21" r="15.915" fill="none" stroke="var(--bg)" stroke-width="5"></circle>
+              <sc-for list="{{ sel.donut }}" as="d" hint-placeholder-count="8">
+                <circle cx="21" cy="21" r="15.915" fill="none" stroke="{{ d.color }}" stroke-width="5" stroke-dasharray="{{ d.dasharray }}" stroke-dashoffset="{{ d.dashoffset }}" style="transition:stroke-dasharray .9s cubic-bezier(.4,0,.2,1)"></circle>
+              </sc-for>
+            </svg>
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:600;color:var(--accent2)">8%</span><span style="font-size:10px;color:var(--muted)">your share</span></div>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;gap:8px">
+            <span style="font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">Share of voice on ChatGPT · who AI names</span>
+            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:7px 26px">
+              <sc-for list="{{ sel.donut }}" as="d" hint-placeholder-count="8">
+                <div style="display:flex;align-items:center;gap:9px;font-size:12.5px"><span style="width:9px;height:9px;border-radius:50%;background:{{ d.color }};flex-shrink:0"></span><span style="flex:1;color:var(--text)">{{ d.label }}</span><span style="font-family:'Space Grotesk',sans-serif;color:var(--muted)">{{ d.value }}%</span></div>
+              </sc-for>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </sc-if>
 
-<!-- ── SITE PERFORMANCE ───────────────────────────── -->
-<section class="section detail-panel" id="panel-performance">
-  <div class="container">
-    <button class="panel-close" type="button" data-close><i class="bi bi-chevron-up"></i> Back to cockpit</button>
-    <p class="section-eyebrow">Technical Performance</p>
-    <h2 class="section-title">Site Speed &amp; Infrastructure</h2>
-    <p class="section-desc">Site performance affects AI crawlability, indexation frequency, and user experience signals. Cloudflare CDN caching is underperforming — a key action item.</p>
-    <p class="section-desc" style="margin-top:-.5rem">What you're looking at: TTFB (Time to First Byte) and LCP (Largest Contentful Paint) measure server and page response speed — lower is better. PageSpeed Mobile is Google's 0–100 mobile performance score. Cache Rate is the share of requests served from Cloudflare's edge instead of the origin server — higher is better, and AI crawlers benefit most from a high cache rate since it means faster, more reliable access.</p>
-    <div class="perf-grid">
-      <div class="perf-card">
-        <div class="perf-val good">87ms</div>
-        <div class="perf-label">TTFB (Singapore)</div>
-        <div class="perf-status" style="color:var(--green)">✓ Excellent</div>
-      </div>
-      <div class="perf-card">
-        <div class="perf-val good">688ms</div>
-        <div class="perf-label">LCP (WebPageTest)</div>
-        <div class="perf-status" style="color:var(--green)">✓ Excellent</div>
-      </div>
-      <div class="perf-card">
-        <div class="perf-val ok">92/100</div>
-        <div class="perf-label">PageSpeed Mobile</div>
-        <div class="perf-status" style="color:var(--accent)">✓ Strong</div>
-      </div>
-      <div class="perf-card">
-        <div class="perf-val warn">33%</div>
-        <div class="perf-label">Cloudflare Cache Rate</div>
-        <div class="perf-status" style="color:var(--amber)">⚠ Target: 70–85%</div>
-      </div>
-    </div>
-  </div>
-</section>
+      <!-- timeline: training cutoff vs launch -->
+      <sc-if value="{{ sel.hasTimeline }}" hint-placeholder-val="">
+        <div style="margin:14px 26px 0;border:1px solid var(--border);background:var(--surface);padding:18px 20px 16px;display:flex;flex-direction:column;gap:16px">
+          <span style="font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">Why recognition is low &middot; the timing gap</span>
+          <div style="position:relative;height:138px;margin:2px 8px 0">
+            <!-- baseline -->
+            <div style="position:absolute;left:0;right:0;top:74px;height:2px;background:var(--border)"></div>
+            <!-- training zone -->
+            <div style="position:absolute;left:0;width:50%;top:64px;height:22px;background:rgba(129,216,208,.14);border:1px solid rgba(129,216,208,.4)"></div>
+            <div style="position:absolute;left:0;width:50%;top:30px;text-align:center;font-size:11.5px;color:var(--accent2);line-height:1.35">AI training datasets<br><span style="color:var(--muted)">knowledge frozen here</span></div>
+            <!-- blind-spot zone -->
+            <div style="position:absolute;left:50%;width:26%;top:64px;height:22px;background:repeating-linear-gradient(45deg,rgba(240,120,90,.22) 0 6px,transparent 6px 12px);border:1px dashed rgba(240,120,90,.55)"></div>
+            <div style="position:absolute;left:50%;width:26%;top:30px;text-align:center;font-size:11.5px;color:#f0785a;line-height:1.35">AI's blind spot<br><span style="color:var(--muted)">no new data ingested</span></div>
+            <!-- launch marker -->
+            <div style="position:absolute;left:76%;top:48px;width:2px;height:34px;background:var(--accent)"></div>
+            <div style="position:absolute;left:76%;top:70px;width:11px;height:11px;border-radius:50%;background:var(--accent);transform:translateX(-5px);box-shadow:0 0 0 3px rgba(10,186,181,.18)"></div>
+            <div style="position:absolute;left:76%;top:94px;width:160px;font-size:11.5px;color:var(--text);line-height:1.35;transform:translateX(-10px)"><strong style="color:var(--accent2)">20 May 2026</strong><br><span style="color:var(--muted)">Business &amp; online presence live</span></div>
+            <!-- today marker -->
+            <div style="position:absolute;left:91%;top:71px;width:9px;height:9px;border-radius:50%;background:var(--muted);transform:translateX(-4px)"></div>
+            <div style="position:absolute;left:91%;top:38px;width:74px;font-size:11px;color:var(--muted);line-height:1.3">Graded<br>22 Jun 2026</div>
+          </div>
+          <div style="border-left:3px solid var(--accent);background:rgba(10,186,181,.06);padding:11px 14px;font-size:13px;line-height:1.55;color:var(--text)"><strong style="color:var(--accent2)">This is the headline:</strong> the AI models were trained <strong>before we existed</strong> &mdash; yet even with zero training-data history, all three engines still found and rated the brand. That is a strong starting position, not a weak one.</div>
+        </div>
+      </sc-if>
 
-<!-- ── STRUCTURAL PROGRESS ───────────────────────── -->
-<section class="section detail-panel" id="panel-progress">
-  <div class="container">
-    <button class="panel-close" type="button" data-close><i class="bi bi-chevron-up"></i> Back to cockpit</button>
-    <p class="section-eyebrow">AEO Score Journey</p>
-    <h2 class="section-title">Structural AEO: 19 → 91 in 6 Weeks</h2>
-    <p class="section-desc">This tracks the structural AEO score from domain registration to audit date — showing the impact of each implementation layer.</p>
-    <div class="chart-card" style="margin-bottom:1.5rem">
-      <h4>Structural AEO Score Over Time</h4>
-      <div class="chart-wrap"><canvas id="progressChart"></canvas></div>
-    </div>
-    <div class="timeline-track">
-      <div class="tl-node">
-        <div class="tl-dot active">19</div>
-        <div class="tl-label">Domain registered</div>
-        <div class="tl-val">May 2026</div>
+      <!-- read-out -->
+      <div style="margin:14px 26px 0;border-left:3px solid var(--accent);background:rgba(10,186,181,.06);padding:15px 18px;display:flex;flex-direction:column;gap:5px">
+        <span style="font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">What the data shows</span>
+        <p style="margin:0;font-size:14px;line-height:1.6;color:var(--text)">{{ sel.insight }}</p>
       </div>
-      <div class="tl-node">
-        <div class="tl-dot active">45</div>
-        <div class="tl-label">Site + schema live</div>
-        <div class="tl-val">Late May</div>
-      </div>
-      <div class="tl-node">
-        <div class="tl-dot active">68</div>
-        <div class="tl-label">Content + FAQ published</div>
-        <div class="tl-val">Early Jun</div>
-      </div>
-      <div class="tl-node">
-        <div class="tl-dot active">91</div>
-        <div class="tl-label">Full AEO Traction Stack</div>
-        <div class="tl-val">20 Jun 2026</div>
-      </div>
-      <div class="tl-node">
-        <div class="tl-dot future">~95+</div>
-        <div class="tl-label">Citation growth</div>
-        <div class="tl-val" style="color:var(--muted)">Q3 2026</div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ── PRIORITY ROADMAP ───────────────────────────── -->
-<section class="section detail-panel" id="panel-roadmap">
-  <div class="container">
-    <button class="panel-close" type="button" data-close><i class="bi bi-chevron-up"></i> Back to cockpit</button>
-    <p class="section-eyebrow">Growth Roadmap</p>
-    <h2 class="section-title">Priority Actions</h2>
-    <p class="section-desc">Three action tracks in priority order. P1 has the most immediate impact on AI perception scores.</p>
-    <div class="roadmap-grid">
-      <div class="roadmap-card priority-1">
-        <div class="roadmap-priority p1">P1 · Immediate</div>
-        <h4>Build Web Citations &amp; Mentions</h4>
-        <p>The structural foundation is solid — the next bottleneck is third-party citation volume: mentions in industry publications, directories, and content that AI platforms use as training signals. Perplexity's real-time index access means new citations show up almost immediately.</p>
-        <span class="roadmap-service">AI Brand Presence</span>
-        <div class="roadmap-impact"><i class="bi bi-arrow-up-right"></i> Expected: +15–25pt AI perception improvement within 90 days</div>
+      <!-- transparency -->
+      <div style="margin:14px 26px 0;display:flex;align-items:flex-start;gap:10px;font-size:12px;color:var(--muted);line-height:1.55">
+        <i class="bi bi-patch-check" style="color:var(--accent);font-size:14px;margin-top:1px;flex-shrink:0"></i>
+        <span>{{ transparency }}</span>
       </div>
-      <div class="roadmap-card priority-2">
-        <div class="roadmap-priority p2">P2 · 30–60 Days</div>
-        <h4>Fix Cloudflare Cache Rate</h4>
-        <p>Cache rate sits at 33%, well under the 70–85% target — so AI crawlers are hitting origin servers more often than they should: slower, costlier, less reliable. A cache header and page-rule fix resolves this in days, not weeks.</p>
-        <span class="roadmap-service">Technical AEO</span>
-        <div class="roadmap-impact"><i class="bi bi-arrow-up-right"></i> Expected: Faster AI re-indexation, lower origin load</div>
-      </div>
-      <div class="roadmap-card priority-3">
-        <div class="roadmap-priority p3">P3 · Ongoing</div>
-        <h4>Content Expansion for Citation Depth</h4>
-        <p>Perplexity already shows 142 mentions — the highest of any platform — thanks to real-time access. Expanding structured content with statistics, quotes, and cite-worthy data points deepens source quality and mention-depth scores across the board.</p>
-        <span class="roadmap-service">Content Restructuring</span>
-        <div class="roadmap-impact"><i class="bi bi-arrow-up-right"></i> Expected: Brand recognition sub-scores 2× improvement</div>
-      </div>
+
     </div>
   </div>
-</section>
+
+  <!-- BOTTOM STRIP -->
+  <div style="display:flex;gap:16px;align-items:center;border:1px solid var(--border);background:var(--bg2);box-shadow:var(--glow);padding:14px 18px">
+    <div style="display:flex;align-items:center;gap:9px;color:var(--muted);font-size:12px"><i class="bi bi-cpu" style="color:var(--accent)"></i>Engines: GPT-5.4 mini · Perplexity (real-time) · Gemini 3 Flash</div>
+    <div style="width:1px;height:22px;background:var(--border)"></div>
+    <div style="display:flex;align-items:center;gap:9px;color:var(--muted);font-size:12px"><i class="bi bi-calendar3" style="color:var(--accent)"></i>Graded 20 Jun 2026</div>
+    <div style="display:flex;align-items:center;gap:9px;color:var(--muted);font-size:12px"><i class="bi bi-robot" style="color:var(--accent)"></i>All major AI crawlers allowed</div>
+    <div style="margin-left:auto;display:flex;align-items:center;gap:10px">
+      <a href="https://aisearch.global/insights/back-to-zero" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:9px;border:1px solid var(--accent);color:var(--accent);font-weight:600;padding:.6rem .95rem;font-size:13px" style-hover="background:rgba(10,186,181,.08)"><i class="bi bi-journal-text"></i>Back to Zero — client insight</a>
+      <a href="https://aisearch.global/audit" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:9px;background:var(--accent);color:#041617;font-weight:700;padding:.65rem 1.05rem;font-size:13px" style-hover="background:var(--accent2)"><i class="bi bi-clipboard-data"></i>Get your own visibility audit</a>
+    </div>
+  </div>
 
 </div>
-<!-- /detailStage -->
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:1140},&quot;accent&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Teal&quot;,&quot;Amber&quot;,&quot;Violet&quot;,&quot;Coral&quot;],&quot;default&quot;:&quot;Teal&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;glow&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;liveData&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  rootRef = React.createRef();
+  state = { selected: 'score', anim: false };
 
-<!-- ── CTA ────────────────────────────────────────── -->
-<div class="container">
-  <div class="cta-section">
-    <h2>This Is What Your Audit Looks Like</h2>
-    <p>Every AISearch Global AI Visibility Audit delivers a dashboard like this — built from your real data, with a clear priority roadmap. Starting at $1,500 AUD.</p>
-    <a href="/#contact" class="btn-teal" data-track="dashboard_cta_audit">Get Your AI Visibility Audit</a>
-    <a href="/insights/aisearch-global-client-zero" class="btn-ghost">Read the Full Client Zero Story</a>
-  </div>
-</div>
-
-</main>
-
-<footer></footer>
-
-<!-- Chart.js from CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<script>
-// Chart rendering is isolated in a try/catch so a CDN failure (ad blockers,
-// privacy extensions, restrictive networks) can't take down the cockpit
-// accordion below — the cards must stay clickable even if charts don't load.
-try {
-Chart.defaults.color = '#95A0AD';
-Chart.defaults.font.family = "'DM Sans', system-ui, sans-serif";
-Chart.defaults.font.size = 11;
-
-const TEAL = '#0ABAB5', TEAL2 = '#81d8d0';
-const GPT_COLOR = '#10a37f', PPL_COLOR = '#20b8cd', GEM_COLOR = '#8b5cf6';
-const MUTED = 'rgba(255,255,255,0.08)';
-
-// ── SOV Charts (Donut) ──────────────────────────────
-function sovChart(id, selfColor, selfPct, others) {
-  const all = [[selfPct, selfColor, 'AISearch Global'], ...others];
-  new Chart(document.getElementById(id), {
-    type: 'doughnut',
-    data: {
-      labels: all.map(a => a[2]),
-      datasets: [{
-        data: all.map(a => a[0]),
-        backgroundColor: all.map(a => a[1]),
-        borderColor: '#0D0E10',
-        borderWidth: 2,
-        hoverOffset: 4
-      }]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      cutout: '68%',
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          callbacks: {
-            label: ctx => ` ${ctx.label}: ${ctx.parsed}%`
-          }
-        }
-      }
+  buildWave() {
+    const pts = [];
+    for (let x = 0; x <= 200; x += 2.5) {
+      const t = (x / 100) * Math.PI * 2;
+      const v = 50 + 22 * Math.sin(t) + 10 * Math.sin(t * 2 + 0.8) + 6 * Math.sin(t * 3 + 1.7);
+      pts.push([x, 100 - v]);
     }
-  });
-}
+    return pts;
+  }
 
-sovChart('sovGpt', GPT_COLOR, 8, [
-  [18,'rgba(255,255,255,0.3)','WebFX'],
-  [15,'rgba(255,255,255,0.22)','Ignite Visibility'],
-  [14,'rgba(255,255,255,0.15)','NP Digital'],
-  [10,'rgba(255,255,255,0.1)','Delante'],
-  [35,'rgba(255,255,255,0.06)','Other']
-]);
+  smoothPath(p) {
+    if (!p.length) return '';
+    let d = 'M ' + p[0][0].toFixed(2) + ' ' + p[0][1].toFixed(2);
+    for (let i = 0; i < p.length - 1; i++) {
+      const p0 = p[i - 1] || p[i], p1 = p[i], p2 = p[i + 1], p3 = p[i + 2] || p2;
+      const c1x = p1[0] + (p2[0] - p0[0]) / 6, c1y = p1[1] + (p2[1] - p0[1]) / 6;
+      const c2x = p2[0] - (p3[0] - p1[0]) / 6, c2y = p2[1] - (p3[1] - p1[1]) / 6;
+      d += ' C ' + c1x.toFixed(2) + ' ' + c1y.toFixed(2) + ' ' + c2x.toFixed(2) + ' ' + c2y.toFixed(2) + ' ' + p2[0].toFixed(2) + ' ' + p2[1].toFixed(2);
+    }
+    return d;
+  }
 
-sovChart('sovPpl', PPL_COLOR, 18.5, [
-  [22,'rgba(255,255,255,0.3)','ThatWare'],
-  [15,'rgba(255,255,255,0.22)','Gravitate'],
-  [12,'rgba(255,255,255,0.15)','Warren Digital'],
-  [10,'rgba(255,255,255,0.1)','ID Digital'],
-  [22,'rgba(255,255,255,0.06)','Other']
-]);
+  bar(pct) {
+    const w = Math.max(2, Math.min(100, pct));
+    return 'height:100%;width:' + w + '%;background:linear-gradient(90deg,var(--accent),var(--accent2))';
+  }
 
-sovChart('sovGem', GEM_COLOR, 8.5, [
-  [22,'rgba(255,255,255,0.3)','Search Engine Land'],
-  [18.5,'rgba(255,255,255,0.22)','Ahrefs'],
-  [17,'rgba(255,255,255,0.15)','Semrush'],
-  [12,'rgba(255,255,255,0.1)','Terakeet'],
-  [22,'rgba(255,255,255,0.06)','Other']
-]);
+  sig(v) {
+    return v >= 60 ? '#2ec27e' : v >= 31 ? '#f0a830' : '#f0785a';
+  }
 
-// ── Crawler Pie ──────────────────────────────────────
-new Chart(document.getElementById('crawlerPie'), {
-  type: 'doughnut',
-  data: {
-    labels: ['PerplexityBot','ChatGPT-User','Claude-SearchBot','ClaudeBot','OAI-SearchBot','GPTBot','Other'],
-    datasets: [{
-      data: [16,13,7,4,2,1,65],
-      backgroundColor: [PPL_COLOR, GPT_COLOR, TEAL, 'rgba(10,186,181,0.5)', 'rgba(16,163,127,0.5)', 'rgba(16,163,127,0.3)', 'rgba(255,255,255,0.08)'],
-      borderColor: '#0D0E10',
-      borderWidth: 2
-    }]
-  },
-  options: {
-    responsive: true, maintainAspectRatio: false, cutout: '62%',
-    plugins: {
-      legend: {
-        position: 'bottom',
-        labels: { boxWidth: 10, padding: 8, font: { size: 10 } }
+  vbar(pct) {
+    const h = Math.max(4, Math.round((Math.max(2, Math.min(100, pct)) / 100) * 150));
+    return 'width:62%;height:' + h + 'px;background:linear-gradient(180deg,var(--accent2),var(--accent))';
+  }
+
+  sub(label, val, max, disp) {
+    return { label, disp: disp || (val + ' / ' + max), pct: Math.round((val / max) * 100) };
+  }
+
+  prov(name, tag, big, unit, pct, verdict, subs) {
+    return { name, tag, big, unit, verdict: verdict || '', pct, subs };
+  }
+
+  tile(label, value, status, note) {
+    const color = status === 'good' ? 'var(--accent2)' : status === 'warn' ? '#f0a830' : '#f0785a';
+    return { label, value, note: note || '', color };
+  }
+
+  row(label, sub, value, status) {
+    const color = status === 'good' ? 'var(--accent2)' : status === 'warn' ? '#f0a830' : '#f0785a';
+    return { label, sub: sub || '', value, color };
+  }
+
+  donutSegs(items, anim) {
+    const palette = ['var(--accent)', '#2f6f6a', '#46807b', '#5c8c88', '#728f8d', '#86918f', '#9aa3ad', '#2a2f36'];
+    const f = anim ? 1 : 0;
+    let cum = 0;
+    return items.map((it, i) => {
+      const len = it.value * f;
+      const seg = { label: it.label, value: it.value, color: palette[i % palette.length], dasharray: len.toFixed(2) + ' ' + (100 - len).toFixed(2), dashoffset: '' + (25 - cum) };
+      cum += it.value;
+      return seg;
+    });
+  }
+
+  archetypeDial() {
+    const cx = 50, cy = 50, r = 38;
+    const tiers = ['Niche', 'Innovator', 'Challenger', 'Authority', 'Leader'];
+    const cur = 1;
+    const polar = (deg, rr) => { const a = deg * Math.PI / 180; return [cx + rr * Math.cos(a), cy - rr * Math.sin(a)]; };
+    const arc = (hi, lo) => { const [sx, sy] = polar(hi, r); const [ex, ey] = polar(lo, r); return 'M ' + sx.toFixed(2) + ' ' + sy.toFixed(2) + ' A ' + r + ' ' + r + ' 0 0 1 ' + ex.toFixed(2) + ' ' + ey.toFixed(2); };
+    const segs = tiers.map((t, i) => {
+      const hi = 180 - i * 36 - 2.5, lo = 180 - (i + 1) * 36 + 2.5;
+      const color = i < cur ? '#2f6f6a' : i === cur ? 'var(--accent)' : 'rgba(255,255,255,.13)';
+      return { d: arc(hi, lo), color };
+    });
+    const ca = 180 - (cur + 0.5) * 36;
+    const [nx, ny] = polar(ca, r * 0.78);
+    const tierLabels = tiers.map((t, i) => ({ label: t, color: i === cur ? 'var(--accent2)' : 'var(--muted)', weight: i === cur ? '600' : '400' }));
+    return { segs, needle: { x: nx.toFixed(2), y: ny.toFixed(2) }, current: tiers[cur], next: tiers[cur + 1], tiers: tierLabels };
+  }
+
+  metrics() {
+    const S = (l, v, m, d) => this.sub(l, v, m, d);
+    return {
+      score: {
+        id: 'score', label: 'AEO Score', icon: 'bi-speedometer2',
+        eyebrow: 'Overall · measured live', headline: '36', headUnit: '/100 average', headPct: 36,
+        what: 'Your overall answer-engine optimisation score (0–100), scored independently by each of the three big AI engines.',
+        plain: 'Think of this as a report card for showing up in AI answers — 0 is invisible, 100 is everywhere. You sit at 36 on average: a solid footing for a young brand, with the most to gain in how often AI actually names you.',
+        providers: [
+          this.prov('ChatGPT', 'OpenAI · GPT-5.4 mini', '36', '/100', 36, 'On the right track', [S('Brand Recognition', 2, 20), S('Market Score', 6, 10), S('Presence Quality', 5, 20), S('Brand Sentiment', 22, 40), S('Share of Voice', 1, 10)]),
+          this.prov('Perplexity', 'Real-time answers', '30', '/100', 30, 'Room for growth', [S('Brand Recognition', 1, 20), S('Market Score', 6, 10), S('Presence Quality', 3, 20), S('Brand Sentiment', 18, 40), S('Share of Voice', 2, 10)]),
+          this.prov('Gemini', 'Gemini 3 Flash · Google', '41', '/100', 41, 'On the right track', [S('Brand Recognition', 2, 20), S('Market Score', 6, 10), S('Presence Quality', 5, 20), S('Brand Sentiment', 27, 40), S('Share of Voice', 1, 10)]),
+        ],
+        barsRaw: [
+          { label: 'Recognition', disp: '1.7/20', pct: 8 },
+          { label: 'Market', disp: '6/10', pct: 60 },
+          { label: 'Presence', disp: '4.3/20', pct: 22 },
+          { label: 'Sentiment', disp: '22/40', pct: 56 },
+          { label: 'Share of Voice', disp: '1.3/10', pct: 13 },
+        ],
+        insight: 'Across all three engines the brand reads as an Innovator in a niche, first-mover position. Gemini scores highest (41), Perplexity trails (30). The bar chart makes the pattern obvious: Sentiment and Market are healthy, while Recognition and Share of Voice are the two pillars dragging the total down — largely because AI training datasets were cut off before our business went live, so the models have not learned us yet.',
       },
-      tooltip: {
-        callbacks: { label: ctx => ` ${ctx.label}: ${ctx.parsed} requests` }
-      }
-    }
+      recognition: {
+        id: 'recognition', label: 'Brand Recognition', icon: 'bi-eye',
+        eyebrow: 'Pillar · weight /20', headline: '10', headUnit: '/100 recognition', headPct: 10, timeline: true,
+        what: 'How visible and recognisable your brand is across AI training data and live sources.',
+        plain: 'Put simply: when someone asks AI about your field, does it already know your brand exists? Right now it mostly does not — and the main reason is timing: the AI training datasets were cut off before our business went live, so the models simply have not learned us yet. Recognition is the lowest score, and it is the first thing worth building.',
+        providers: [
+          this.prov('ChatGPT', 'OpenAI · GPT-5.4 mini', '12', '/100', 12, '', [S('Confidence Level', 84, 100, '84%'), S('Mention Depth', 2, 10), S('Source Quality', 3, 10), S('Data Richness', 2, 10)]),
+          this.prov('Perplexity', 'Real-time answers', '5', '/100', 5, '', [S('Confidence Level', 60, 100, '60%'), S('Mention Depth', 1, 10), S('Source Quality', 2, 10), S('Data Richness', 1, 10)]),
+          this.prov('Gemini', 'Gemini 3 Flash · Google', '12', '/100', 12, '', [S('Confidence Level', 35, 100, '35%'), S('Mention Depth', 2, 10), S('Source Quality', 3, 10), S('Data Richness', 2, 10)]),
+        ],
+        insight: 'Recognition is the weakest pillar (~10/100) — largely because AI training datasets were cut off before our business went live, so the models have not yet learned the brand. Every engine tags it as a Niche Innovator with thin data richness and shallow mention depth. The fastest lever is more indexed, structured, third-party mentions of the brand name.',
+      },
+      market: {
+        id: 'market', label: 'Share of Voice', icon: 'bi-megaphone',
+        eyebrow: 'Market competition · /10', headline: '11.7%', headUnit: 'avg share', headPct: 11.7, timeline: true,
+        what: 'Your presence in industry conversations versus competitors — your share of voice and mention volume.',
+        plain: 'Out of every 100 times AI mentions a consultancy like yours, how many of those are you? Today it is roughly 8 to 18 — the rest go to competitors. The whole game is growing your slice of that pie.',
+        providers: [
+          this.prov('ChatGPT', 'OpenAI · GPT-5.4 mini', '8', '%', 8, '', [S('Market Score', 6, 10), S('Brand Mentions', 42, 1500, '42'), S('Comparison Mentions', 27, 3500, '27')]),
+          this.prov('Perplexity', 'Real-time answers', '18.5', '%', 18, '', [S('Market Score', 6, 10), S('Brand Mentions', 142, 1500, '142'), S('Comparison Mentions', 89, 3500, '89')]),
+          this.prov('Gemini', 'Gemini 3 Flash · Google', '8.5', '%', 8, '', [S('Market Score', 6, 10), S('Brand Mentions', 1240, 1500, '1,240'), S('Comparison Mentions', 3150, 3500, '3,150')]),
+        ],
+        donutRaw: [
+          { label: 'AISearch Global', value: 8 }, { label: 'WebFX', value: 18 }, { label: 'Ignite Visibility', value: 15 }, { label: 'NP Digital', value: 14 }, { label: 'Delante', value: 10 }, { label: 'Avenue Z', value: 8 }, { label: 'Searchmetrics', value: 7 }, { label: 'Other', value: 20 },
+        ],
+        insight: 'Share of voice ranges 8–18.5%. The donut shows who AI names instead of you — WebFX, Ignite Visibility and NP Digital lead the category, helped by years of indexed coverage that predate us; AI training datasets were cut off before our business went live. The upside: Gemini already surfaces 1,240 brand mentions, the raw base to convert into cited answers.',
+      },
+      sentiment: {
+        id: 'sentiment', label: 'Brand Sentiment', icon: 'bi-emoji-smile',
+        eyebrow: 'Pillar · weight /40', headline: '56', headUnit: '/100 sentiment', headPct: 56,
+        what: 'The tone and perception of AI answers that mention your brand — general and in context.',
+        plain: 'When AI does talk about you, is it positive? Yes — this is your strongest area. The caution baked into the numbers is about how Australians feel toward AI in general, not criticism of your brand.',
+        providers: [
+          this.prov('ChatGPT', 'OpenAI · GPT-5.4 mini', '54', '/100', 54, '', [S('General', 52, 100), S('Contextual', 55, 100), S('Source Polarization', 48, 100)]),
+          this.prov('Perplexity', 'Real-time answers', '45', '/100', 45, '', [S('General', 42, 100), S('Contextual', 38, 100), S('Source Polarization', 40, 100)]),
+          this.prov('Gemini', 'Gemini 3 Flash · Google', '68', '/100', 68, '', [S('General', 72, 100), S('Contextual', 65, 100), S('Source Polarization', 67, 100)]),
+        ],
+        insight: 'Sentiment is the brand\u2019s strongest pillar — Gemini reads it at 68/100. The drag comes from low Australian AI trust (EY, KPMG studies), not brand criticism. Published case studies and proof of results lift this the fastest.',
+      },
+      presence: {
+        id: 'presence', label: 'Presence Quality', icon: 'bi-layers',
+        eyebrow: 'Pillar · weight /20', headline: '4.3', headUnit: '/20 presence', headPct: 21.5,
+        what: 'The depth and quality of the sources where your brand actually appears in AI answers.',
+        plain: 'It is not just being mentioned — it is being mentioned in good, trusted places. Right now you show up in a few thin sources; the fix is richer, more authoritative coverage that AI already trusts.',
+        providers: [
+          this.prov('ChatGPT', 'OpenAI · GPT-5.4 mini', '5', '/20', 25, '', [S('Source Quality', 3, 10), S('Data Richness', 2, 10), S('Mention Depth', 2, 10)]),
+          this.prov('Perplexity', 'Real-time answers', '3', '/20', 15, '', [S('Source Quality', 2, 10), S('Data Richness', 1, 10), S('Mention Depth', 1, 10)]),
+          this.prov('Gemini', 'Gemini 3 Flash · Google', '5', '/20', 25, '', [S('Source Quality', 3, 10), S('Data Richness', 2, 10), S('Mention Depth', 2, 10)]),
+        ],
+        insight: 'Presence quality is thin (3–5/20) — in part because AI training datasets were cut off before our business went live, leaving few indexed references. Engines lean on owned and website sources with few independent references. Structured data (schema) and authoritative third-party coverage are the levers here.',
+      },
+      geo: {
+        id: 'geo', label: 'GEO Visibility', icon: 'bi-geo-alt',
+        eyebrow: 'Local AI presence · composite /100', headline: '45', headUnit: '/100 GEO score', headPct: 45,
+        what: 'How visible your brand is in local, location-specific AI answers — the composite of local presence, entity data and intent coverage.',
+        plain: 'At 45/100 you are an emerging local authority. Gemini leads at 56, Perplexity 43, ChatGPT trails at 36. Local Intent Coverage (31) is the clearest gap — fixable with local schema and location-qualified landing pages.',
+        providers: [
+          this.prov('ChatGPT', 'OpenAI · GPT-5.4 mini', '36', '/100', 36, 'Building local presence', [S('GEO Presence', 60, 100), S('Entity Localisation', 49, 100), S('Conversion Readiness', 36, 100), S('Local Intent', 31, 100)]),
+          this.prov('Perplexity', 'Real-time answers', '43', '/100', 43, 'Emerging local authority', [S('GEO Presence', 60, 100), S('Entity Localisation', 49, 100), S('Conversion Readiness', 36, 100), S('Local Intent', 31, 100)]),
+          this.prov('Gemini', 'Gemini 3 Flash · Google', '56', '/100', 56, 'Lead platform — GEO', [S('GEO Presence', 60, 100), S('Entity Localisation', 49, 100), S('Conversion Readiness', 36, 100), S('Local Intent', 31, 100)]),
+        ],
+        barsRaw: [
+          { label: 'GEO Presence', disp: '60/100', pct: 60 },
+          { label: 'Entity Localisation', disp: '49/100', pct: 49 },
+          { label: 'Conversion Readiness', disp: '36/100', pct: 36 },
+          { label: 'Local Intent Coverage', disp: '31/100', pct: 31 },
+        ],
+        insight: 'Gemini leads at 56. GEO Presence (60) is the foundation. Local Intent Coverage (31) is the action item — local schema and location-qualified content move this fastest.',
+      },
+      performance: {
+        id: 'performance', label: 'Site Performance', icon: 'bi-speedometer',
+        eyebrow: 'Core Web Vitals · live tests', headline: '98', headUnit: '/100 PageSpeed', headPct: 98,
+        what: 'How fast and stable the site renders — the technical floor an engine needs before it will crawl and cite you.',
+        plain: 'Before AI will quote you, your site has to load fast and not jump around while it loads. Good news — it is genuinely quick. Only one small technical cleanup is flagged.',
+        providers: [], rail: [98, 92, 80],
+        stats: [
+          this.tile('LCP', '0.69s', 'good', 'Excellent'), this.tile('FCP', '0.69s', 'good', 'Excellent'), this.tile('CLS', '0.068', 'warn', 'Just over 0.05'), this.tile('TBT', '0.18s', 'warn', 'Near 0.2s limit'),
+          this.tile('TTFB', '0.087s', 'good', 'Cloudflare edge'), this.tile('Speed Index', '0.71s', 'good', 'Excellent'), this.tile('Page weight', '420 KB', 'good', 'Very lean'), this.tile('Requests', '18', 'good', 'Very low'),
+        ],
+        rows: { title: 'Cross-tool results · 21 Jun 2026', items: [this.row('WebPageTest', 'Singapore node', 'Not Bad', 'warn'), this.row('GTmetrix', 'Seattle node', 'A · 100%', 'good'), this.row('PageSpeed Desktop', 'Chrome', '98 / 100', 'good'), this.row('PageSpeed Mobile', 'slow 4G', '92 / 100', 'good'), this.row('Total load', 'WebPageTest', '1.19s', 'good'), this.row('Render-block', 'requests', '3', 'warn')] },
+        insight: 'The site is genuinely fast — 420 KB, 18 requests, LCP 0.69s. The one issue consistent across every tool is 3 render-blocking requests (fonts / CSS / a third-party script), and CLS 0.068 sits just above best practice. Self-host fonts with font-display: swap and defer non-critical assets.',
+      },
+      technical: {
+        id: 'technical', label: 'Technical Foundation', icon: 'bi-hdd-network',
+        eyebrow: 'Crawlability · Cloudflare audit', headline: '5.6', headUnit: '/10 Cloudflare health', headPct: 56,
+        what: 'Whether AI crawlers can reach, read and trust the site — the plumbing behind every score above.',
+        plain: 'This is the plumbing: can AI crawlers actually reach and read your site? They can — every major one is getting in. The gaps are housekeeping in your settings, not dead ends.',
+        providers: [], rail: [56, 33, 90],
+        stats: [
+          this.tile('DNS config', '9/10', 'good', 'SPF·DKIM·DMARC set'), this.tile('Email security', '9/10', 'good', 'Fully authenticated'), this.tile('SSL / TLS', '6/10', 'warn', 'Full, not Strict'), this.tile('AI Crawl Control', '5/10', 'warn', 'robots.txt blocks'),
+          this.tile('Caching', '4/10', 'bad', '33% hit rate'), this.tile('Security headers', '3/10', 'bad', '4 missing'), this.tile('Speed monitoring', '3/10', 'bad', 'No RUM active'), this.tile('Bot protection', '0/2', 'bad', 'Fight Mode off'),
+        ],
+        rows: { title: 'AI crawler access · last 24h (all allowed)', items: [this.row('Googlebot', 'Google', '52', 'good'), this.row('PerplexityBot', 'Perplexity', '16', 'good'), this.row('ChatGPT-User', 'OpenAI', '13', 'good'), this.row('ClaudeBot', 'Anthropic', '13', 'good'), this.row('BingBot', 'Microsoft', '2', 'good'), this.row('GPTBot', 'OpenAI', '1', 'good')] },
+        insight: 'Good news: every major AI crawler — Google, Perplexity, OpenAI, Anthropic, Bing — is getting through and reading your sitemap. The gaps are infrastructure: robots.txt still hard-blocks ClaudeBot, GPTBot and Google-Extended, cache hit rate is only 33%, Bot Fight Mode is off, and 4 HTTP security headers are missing.',
+      },
+    };
   }
-});
 
-// ── Progress Line Chart ──────────────────────────────
-new Chart(document.getElementById('progressChart'), {
-  type: 'line',
-  data: {
-    labels: ['Launch (May 5)','Site + Schema (May 18)','Content Wave 1 (May 30)','FAQ + Entity (Jun 7)','Full Stack (Jun 20)'],
-    datasets: [{
-      label: 'Structural AEO Score',
-      data: [19, 45, 68, 79, 91],
-      borderColor: TEAL,
-      backgroundColor: 'rgba(10,186,181,0.1)',
-      borderWidth: 2.5,
-      pointBackgroundColor: TEAL,
-      pointRadius: 5,
-      pointHoverRadius: 7,
-      fill: true,
-      tension: 0.35
-    }]
-  },
-  options: {
-    responsive: true, maintainAspectRatio: false,
-    scales: {
-      x: { grid: { color: MUTED }, ticks: { maxRotation: 25, font: { size: 10 } } },
-      y: {
-        grid: { color: MUTED },
-        min: 0, max: 100,
-        ticks: { stepSize: 25 }
-      }
-    },
-    plugins: {
-      legend: { display: false },
-      tooltip: {
-        callbacks: { label: ctx => ` AEO Score: ${ctx.parsed.y}/100` }
-      }
-    }
+  applyVars() {
+    const el = this.rootRef.current;
+    if (!el) return;
+    const map = { Teal: ['#0abab5', '#81d8d0'], Amber: ['#f0a830', '#f6c97a'], Violet: ['#9a7bff', '#c0abff'], Coral: ['#f0785a', '#f7a48f'] };
+    const [a, b] = map[this.props.accent] || map.Teal;
+    el.style.setProperty('--accent', a);
+    el.style.setProperty('--accent2', b);
+    el.style.setProperty('--glow', this.props.glow !== false ? '0 12px 36px rgba(0,0,0,.5)' : '0 6px 18px rgba(0,0,0,.38)');
+    el.style.setProperty('--wave-play', this.props.liveData === false ? 'paused' : 'running');
   }
-});
-} catch (e) {
-  console.error('Chart.js init failed — charts may not render, but the rest of the page still works.', e);
+
+  componentDidMount() { this.applyVars(); setTimeout(() => this.setState({ anim: true }), 70); }
+  componentDidUpdate() { this.applyVars(); }
+
+  renderVals() {
+    const metrics = this.metrics();
+    const order = ['score', 'recognition', 'market', 'sentiment', 'presence', 'geo', 'performance', 'technical'];
+    const selId = metrics[this.state.selected] ? this.state.selected : 'score';
+    const sel = metrics[selId];
+    const anim = this.state.anim ? 1 : 0;
+    sel.isProviders = sel.providers.length > 0;
+    sel.isStats = !sel.isProviders;
+    sel.hasRows = !!sel.rows;
+    sel.hasBars = !!sel.barsRaw;
+    sel.hasTimeline = !!sel.timeline;
+    sel.hasDonut = !!sel.donutRaw;
+    sel.headDash = (sel.headPct * anim).toFixed(2) + ',100';
+    sel.providers.forEach((p) => {
+      p.dash = (p.pct * anim).toFixed(2) + ',100';
+      p.ringColor = this.sig(p.pct);
+      p.subs = p.subs.map((s) => ({ label: s.label, disp: s.disp, barStyle: 'height:100%;width:' + Math.max(0, Math.min(100, s.pct * anim)) + '%;background:' + this.sig(s.pct) + ';transition:width .8s cubic-bezier(.4,0,.2,1)' }));
+    });
+    if (sel.hasBars) sel.bars = sel.barsRaw.map((b) => { const h = Math.max(4, Math.round((Math.max(2, Math.min(100, b.pct * anim)) / 100) * 150)); return { label: b.label, disp: b.disp, barStyle: 'width:62%;height:' + h + 'px;background:' + this.sig(b.pct) + ';transition:height .8s cubic-bezier(.4,0,.2,1)' }; });
+    if (sel.hasDonut) sel.donut = this.donutSegs(sel.donutRaw, anim);
+
+    const base = 'border:1px solid var(--border);background:var(--bg2);padding:13px 14px;display:flex;flex-direction:column;gap:10px;cursor:pointer;text-align:left;width:100%;color:var(--text);transition:border-color .15s,background .15s';
+    const metricList = order.map((id) => {
+      const m = metrics[id];
+      const active = id === selId;
+      return {
+        id, label: m.label, icon: m.icon, head: m.headline,
+        scoreColor: this.sig(parseFloat(m.headline)),
+        cardStyle: base + (active ? ';border-color:var(--accent);background:rgba(10,186,181,.08)' : ''),
+        iconColor: active ? 'var(--accent)' : 'var(--muted)',
+        mini: (m.providers.length ? m.providers.map((p) => p.pct) : (m.rail || [])).map((pct) => ({ barStyle: 'height:100%;width:' + Math.max(3, Math.min(100, pct)) + '%;background:' + (active ? 'var(--accent)' : 'var(--muted)') })),
+      };
+    });
+
+    const engines = [{ name: 'ChatGPT', score: 36 }, { name: 'Perplexity', score: 30 }, { name: 'Gemini', score: 41 }].map((e) => ({ ...e, barStyle: this.bar(e.score) }));
+
+    const wp = this.buildWave();
+    const wavePathD = this.smoothPath(wp);
+    const waveAreaD = wavePathD + ' L 200 100 L 0 100 Z';
+    const dial = this.archetypeDial();
+
+    const verifyTools = [
+      { label: 'HubSpot AEO Grader', icon: 'bi-clipboard2-data', host: 'hubspot.com', url: 'https://hubspot.com/aeo-grader' },
+      { label: 'PageSpeed Insights', icon: 'bi-speedometer2', host: 'pagespeed.web.dev', url: 'https://pagespeed.web.dev' },
+      { label: 'AEO Calculator', icon: 'bi-calculator', host: 'aisearch.global', url: 'https://aisearch.global/aeo-calculator' },
+    ];
+
+    const transparency = 'All data presented here is as on 22nd June 2026. Nothing is estimated — where a tool could not measure something, it is marked, not guessed. We invite our readers to run their own independent verifications and contact us at hello@aisearch.global with any discrepancies found.';
+
+    return {
+      rootRef: this.rootRef,
+      onPick: (e) => this.setState({ selected: e.currentTarget.dataset.id }),
+      metricList, sel, engines, wavePathD, waveAreaD, dial, verifyTools, transparency,
+    };
+  }
 }
-
-// ── Cockpit accordion ────────────────────────────────
-(function(){
-  const cards = document.querySelectorAll('.cockpit-card');
-  const panels = document.querySelectorAll('.detail-panel');
-  const placeholder = document.getElementById('detailPlaceholder');
-
-  function closeAll(){
-    panels.forEach(p => p.classList.remove('open'));
-    cards.forEach(c => { c.classList.remove('active'); c.setAttribute('aria-expanded','false'); });
-    if (placeholder) placeholder.style.display = '';
-  }
-
-  function openPanel(card){
-    const target = document.getElementById(card.getAttribute('data-target'));
-    if (!target) return;
-    const wasOpen = card.classList.contains('active');
-    closeAll();
-    if (wasOpen) return; // clicking the open card again just collapses it
-    card.classList.add('active');
-    card.setAttribute('aria-expanded','true');
-    target.classList.add('open');
-    if (placeholder) placeholder.style.display = 'none';
-    target.scrollIntoView({ behavior:'smooth', block:'start' });
-    // Charts initialized while their panel was display:none render at the
-    // wrong canvas resolution (blurry/undersized). Force Chart.js to
-    // recompute size now that the panel is actually visible.
-    requestAnimationFrame(() => window.dispatchEvent(new Event('resize')));
-  }
-
-  cards.forEach(card => {
-    card.addEventListener('click', () => openPanel(card));
-    card.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPanel(card); }
-    });
-  });
-
-  document.querySelectorAll('.panel-close').forEach(btn => {
-    btn.addEventListener('click', () => {
-      closeAll();
-      document.getElementById('cockpitGrid').scrollIntoView({ behavior:'smooth', block:'start' });
-    });
-  });
-
-  // Open the headline instrument by default so the page isn't empty on load
-  if (cards.length) openPanel(cards[0]);
-})();
 </script>
 </body>
 </html>

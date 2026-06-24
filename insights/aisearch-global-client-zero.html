@@ -51,7 +51,7 @@
       "headline": "AISearch Global: Client Zero — From 19 to 91, and What AI Still Doesn't Know",
       "description": "AISearch Global used its own brand as Client Zero: a live AEO build from launch on 20 May 2026, tracking a structural score climb from 19 to 91 against what ChatGPT, Perplexity, and Gemini still don't know about the brand.",
       "datePublished": "2026-06-21",
-      "dateModified": "2026-06-21",
+      "dateModified": "2026-06-24",
       "author": {
         "@type": "Person",
         "name": "Viveka Mohan Das",
@@ -125,6 +125,8 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
 .bar-track{display:block;height:12px;background:var(--charcoal);border:1px solid var(--border);border-radius:0;overflow:hidden;}
 .bar-fill{display:block;height:100%;border-radius:0;background:var(--tiffany);}
 .bar-fill.green{background:var(--green);}
+.bar-fill.amber{background:var(--amber);}
+.bar-fill.red{background:var(--red);}
 .bar-value{font-family:var(--fh);font-size:.8rem;color:var(--muted);text-align:right;}
 .score-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px;}
 @media (max-width:780px){.score-grid{grid-template-columns:1fr;}}
@@ -245,8 +247,8 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     <h2>The Climb: 19 → 91</h2>
     <div class="viz-shell">
       <div class="viz-head">
-        <h3>Structural AEO score</h3>
-        <p>20 May 2026 &rarr; 21 Jun 2026</p>
+        <h3>Structural AEO score — implementation milestones</h3>
+        <p>20 May 2026 &rarr; 20 Jun 2026</p>
       </div>
       <div class="bar-list">
         <div class="bar-row">
@@ -255,13 +257,28 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
           <span class="bar-value">19/100</span>
         </div>
         <div class="bar-row">
-          <span class="bar-label">21 Jun 2026</span>
+          <span class="bar-label">Site + Schema (18 May)</span>
+          <span class="bar-track"><span class="bar-fill" style="width:45%"></span></span>
+          <span class="bar-value">45/100</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">Content Wave 1 (30 May)</span>
+          <span class="bar-track"><span class="bar-fill" style="width:68%"></span></span>
+          <span class="bar-value">68/100</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">FAQ + Entity (7 Jun)</span>
+          <span class="bar-track"><span class="bar-fill" style="width:79%"></span></span>
+          <span class="bar-value">79/100</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">Full Stack (20 Jun)</span>
           <span class="bar-track"><span class="bar-fill green" style="width:91%"></span></span>
           <span class="bar-value">91/100</span>
         </div>
       </div>
     </div>
-    <p>+72 points in six weeks, built on weekends and evenings around a full-time job. No agency team, no paid sprint. Here's exactly what that work looked like, including the things that went wrong:</p>
+    <p>+72 points in six weeks, built on weekends and evenings around a full-time job. No agency team, no paid sprint. The score jumped fastest in the first two weeks (entity clarity and schema alone took it from 19 to 45) — exactly as the AEO Traction Stack predicts. Here's exactly what that work looked like, including the things that went wrong:</p>
     <ul class="checklist">
       <li><i class="bi bi-tools"></i> The AEO Score Calculator's own submit button silently reset the form instead of running an assessment — found and fixed mid-build, the kind of bug that would have quietly broken the free tool's entire funnel.</li>
       <li><i class="bi bi-tools"></i> Deprecated schema (an outdated HowTo block) had to be identified and removed before new, valid schema could go in cleanly.</li>
@@ -275,6 +292,31 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
   <section class="report-section">
     <h2>The Score That Didn't Move as Fast</h2>
     <p>A structural score of 91 tells us the page is machine-readable. It doesn't tell us what AI engines currently know. The second instrument in our methodology — the AI Brand Perception Audit — asks ChatGPT, Perplexity, and Gemini directly, rather than scoring what's on the page and assuming they've read it.</p>
+
+    <div style="background:rgba(46,194,126,.07);border:1px solid rgba(46,194,126,.35);border-left:4px solid #2ec27e;padding:20px 22px;margin:18px 0">
+      <p style="margin:0 0 10px;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#2ec27e">Why these scores matter more than they look</p>
+      <p style="margin:0 0 12px;font-size:14.5px;line-height:1.6"><strong style="color:var(--white)">AISearch Global went live on 20 May 2026.</strong> The AI models scoring us below were trained on data with cutoffs that predate our existence entirely — ChatGPT's training data ends around early 2025, Gemini's around late 2024. Neither model has ever seen our brand in its training corpus.</p>
+      <p style="margin:0 0 12px;font-size:14.5px;line-height:1.6">Yet all three platforms found, identified, and scored us. Correctly. <strong style="color:var(--white)">A brand that didn't exist when the AI was trained is still appearing in AI answers weeks after launch.</strong> That is not a given — most new brands don't register at all. It is a direct result of structural AEO work making the site legible to AI crawlers from day one.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px">
+        <div style="background:rgba(255,255,255,.04);padding:12px 14px;border:1px solid var(--border)">
+          <p style="margin:0 0 4px;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em">ChatGPT</p>
+          <p style="margin:0 0 2px;font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;color:var(--white)">Training cutoff: early 2025</p>
+          <p style="margin:0;font-size:12px;color:var(--muted)">Finds us via live web access despite no training data</p>
+        </div>
+        <div style="background:rgba(255,255,255,.04);padding:12px 14px;border:1px solid var(--border)">
+          <p style="margin:0 0 4px;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em">Gemini</p>
+          <p style="margin:0 0 2px;font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;color:var(--white)">Training cutoff: late 2024</p>
+          <p style="margin:0;font-size:12px;color:var(--muted)">Scores us highest (41) — despite oldest cutoff</p>
+        </div>
+        <div style="background:rgba(10,186,181,.08);padding:12px 14px;border:1px solid rgba(10,186,181,.3)">
+          <p style="margin:0 0 4px;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em">Perplexity</p>
+          <p style="margin:0 0 2px;font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;color:var(--white)">No cutoff — live web</p>
+          <p style="margin:0;font-size:12px;color:var(--muted)">Real-time indexing; first to reflect structural changes</p>
+        </div>
+      </div>
+      <p style="margin:14px 0 0;font-size:13px;color:var(--muted);line-height:1.55">The scores of 36, 30, and 41 are not low despite the work done — they are <em>high</em> given that we launched after every model's training cutoff. The structural baseline we built is already being read. The next phase is citation volume: giving the models more to say about us.</p>
+    </div>
+
     <div class="score-grid">
       <div class="score-card">
         <p class="plat">ChatGPT</p>
@@ -292,7 +334,93 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
         <span class="status status-amber">Partial recognition</span>
       </div>
     </div>
-    <p style="margin-top:16px;">A second, related score — GEO AEO Visibility, measuring whether AI engines anchor the brand as Australian and Sydney-based rather than generic — sits at <strong style="color:var(--white)">45/100</strong> ("Emerging Local Authority"), with Local Intent Coverage (31/100) the weakest of its four sub-scores.</p>
+    <div style="background:var(--surface);border:1px solid var(--border);padding:20px;margin:18px 0">
+      <p class="section-eyebrow" style="margin:0 0 14px">Score breakdown — 5 dimensions behind 36 / 30 / 41</p>
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:.82rem">
+          <thead>
+            <tr style="border-bottom:1px solid var(--border)">
+              <th style="text-align:left;padding:7px 12px 7px 0;color:var(--muted);font-weight:600">Dimension</th>
+              <th style="text-align:center;padding:7px 8px;color:#10a37f;font-weight:600">ChatGPT</th>
+              <th style="text-align:center;padding:7px 8px;color:#20b8cd;font-weight:600">Perplexity</th>
+              <th style="text-align:center;padding:7px 8px;color:#8b5cf6;font-weight:600">Gemini</th>
+              <th style="text-align:right;padding:7px 0 7px 8px;color:var(--muted);font-weight:600">Max</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.04)">
+              <td style="padding:7px 12px 7px 0">Brand Recognition</td>
+              <td style="text-align:center;padding:7px 8px">2</td>
+              <td style="text-align:center;padding:7px 8px">1</td>
+              <td style="text-align:center;padding:7px 8px">2</td>
+              <td style="text-align:right;padding:7px 0 7px 8px;color:var(--muted)">/20</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.04)">
+              <td style="padding:7px 12px 7px 0">Market Score</td>
+              <td style="text-align:center;padding:7px 8px">6</td>
+              <td style="text-align:center;padding:7px 8px">6</td>
+              <td style="text-align:center;padding:7px 8px">6</td>
+              <td style="text-align:right;padding:7px 0 7px 8px;color:var(--muted)">/10</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.04)">
+              <td style="padding:7px 12px 7px 0">Presence Quality</td>
+              <td style="text-align:center;padding:7px 8px">5</td>
+              <td style="text-align:center;padding:7px 8px">3</td>
+              <td style="text-align:center;padding:7px 8px">5</td>
+              <td style="text-align:right;padding:7px 0 7px 8px;color:var(--muted)">/20</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.04)">
+              <td style="padding:7px 12px 7px 0">Brand Sentiment</td>
+              <td style="text-align:center;padding:7px 8px">22</td>
+              <td style="text-align:center;padding:7px 8px">18</td>
+              <td style="text-align:center;padding:7px 8px">27</td>
+              <td style="text-align:right;padding:7px 0 7px 8px;color:var(--muted)">/40</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border)">
+              <td style="padding:7px 12px 7px 0">Share of Voice</td>
+              <td style="text-align:center;padding:7px 8px">1</td>
+              <td style="text-align:center;padding:7px 8px">2</td>
+              <td style="text-align:center;padding:7px 8px">1</td>
+              <td style="text-align:right;padding:7px 0 7px 8px;color:var(--muted)">/10</td>
+            </tr>
+            <tr>
+              <td style="padding:9px 12px 6px 0;font-weight:700">Total</td>
+              <td style="text-align:center;padding:9px 8px 6px;color:#10a37f;font-weight:700">36</td>
+              <td style="text-align:center;padding:9px 8px 6px;color:#20b8cd;font-weight:700">30</td>
+              <td style="text-align:center;padding:9px 8px 6px;color:#8b5cf6;font-weight:700">41</td>
+              <td style="text-align:right;padding:9px 0 6px 8px;color:var(--muted)">/100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin:10px 0 0;font-size:.78rem;color:var(--muted)">Brand Sentiment (weighted /40) drives most of the platform gap — Gemini's 27 vs ChatGPT's 22 vs Perplexity's 18. Market Score is tied at 6/10 across all three: category relevance confirmed. Brand Recognition in single digits on every platform — the primary Q3 target.</p>
+    </div>
+    <p style="margin-top:16px;">A second, related score — GEO AEO Visibility, measuring whether AI engines anchor the brand as Australian and Sydney-based rather than generic — sits at <strong style="color:var(--white)">45/100</strong> ("Emerging Local Authority"). The four sub-scores tell a more granular story:</p>
+    <div class="viz-shell" style="margin:14px 0 18px">
+      <div class="bar-list">
+        <div class="bar-row">
+          <span class="bar-label" style="display:flex;align-items:center;gap:7px"><span style="width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0;box-shadow:0 0 5px var(--green)"></span>GEO Presence</span>
+          <span class="bar-track"><span class="bar-fill green" style="width:60%"></span></span>
+          <span class="bar-value" style="color:var(--green)">60/100</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label" style="display:flex;align-items:center;gap:7px"><span style="width:7px;height:7px;border-radius:50%;background:var(--tiffany);flex-shrink:0"></span>Entity Localisation</span>
+          <span class="bar-track"><span class="bar-fill" style="width:49%"></span></span>
+          <span class="bar-value">49/100</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label" style="display:flex;align-items:center;gap:7px"><span style="width:7px;height:7px;border-radius:50%;background:var(--amber);flex-shrink:0"></span>Conversion Readiness</span>
+          <span class="bar-track"><span class="bar-fill amber" style="width:36%"></span></span>
+          <span class="bar-value" style="color:var(--amber)">36/100</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label" style="display:flex;align-items:center;gap:7px"><span style="width:7px;height:7px;border-radius:50%;background:var(--amber);flex-shrink:0;animation:pulse-dot 2s ease-in-out infinite"></span>Local Intent Coverage</span>
+          <span class="bar-track"><span class="bar-fill amber" style="width:31%"></span></span>
+          <span class="bar-value" style="color:var(--amber)">31/100 ⚠</span>
+        </div>
+      </div>
+    </div>
+    <p>Per-platform GEO scores: Gemini 56/100 · Perplexity 43/100 · ChatGPT 36/100. Gemini scores highest on local GEO despite having the oldest training cutoff — because its pre-launch training data already contains a richer anchor of Australian tech ecosystem context. Perplexity beats ChatGPT because its real-time access picks up locally-framed content as it's published. Local Intent Coverage at 31/100 is the clearest action item: more locally-anchored content, structured location signals, and directory citations pointing at Sydney.</p>
     <div class="client-zero-note">
       <p><strong>Why the gap is real, not a contradiction:</strong> 91/100 measures what we control directly — the page itself. 36/30/41 measures what AI models currently know, and those models don't re-crawl and re-learn the web in real time. There's a lag between a page becoming machine-readable and a model actually citing it, shaped by training cutoffs and how often each platform refreshes its citation sources. Fixing the page is necessary but not sufficient — closing that lag is ongoing work, not a one-off fix.</p>
     </div>
@@ -312,6 +440,74 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
       </div>
     </div>
     <p style="margin-top:16px;">That's the practical meaning behind 36/30/41: the models know what we say about ourselves. They don't yet know what anyone else says about us. This article — and the dashboard behind it — is itself one of the first citable data points working to close that gap.</p>
+  </section>
+
+  <section class="report-section">
+    <h2>What AI Thinks About the Brand — Archetype &amp; Sentiment</h2>
+    <p>Beyond raw scores, each platform was asked to characterise the brand's positioning. The result: all three independently arrived at the same answer.</p>
+    <div class="signal-grid">
+      <div class="signal-card positive">
+        <h4><i class="bi bi-compass"></i> Brand Archetype: Innovator</h4>
+        <p>ChatGPT (84% confidence), Perplexity (60%), and Gemini (35%) all independently classify AISearch Global as an <strong>Innovator</strong> in a niche market with a 6/10 competitive intensity score. Confidence varies because data volume varies — but the convergence of identity across three different platforms with different data sources is itself a strong structural signal.</p>
+      </div>
+      <div class="signal-card gap">
+        <h4><i class="bi bi-emoji-smile"></i> Sentiment: Gemini leads, others building</h4>
+        <p>Gemini scores sentiment at 68/100 — likely drawing on positive industry framing from late 2024. ChatGPT sits at 54/100 and Perplexity at 45/100. All three show low polarisation scores (24–35/100), which is ideal: AI platforms tend to be cautious about brands with divisive framing. Low polarisation means the brand reads as credible and non-controversial.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="report-section">
+    <h2>Share of Voice Against Established Competitors</h2>
+    <p>A newly launched brand appearing in AI responses about the category at all is notable. Against established players, AISearch Global holds 8% SOV on ChatGPT (vs WebFX at 18%), 18.5% on Perplexity (vs ThatWare at 22%), and 8.5% on Gemini (vs Search Engine Land at 22%). Perplexity's real-time indexing gives the brand its highest share — 142 mentions vs 42 on ChatGPT and 1,240 on Gemini, where established players have had years of training data advantage.</p>
+    <div class="client-zero-note">
+      <p><strong>Why Perplexity SOV is highest at launch:</strong> Perplexity reads the live web continuously rather than relying on a training cutoff. New citations appear almost immediately in its answers. This makes citation-building work visible faster on Perplexity than on ChatGPT or Gemini — and makes it the first platform to reflect structural improvements.</p>
+    </div>
+  </section>
+
+  <section class="report-section">
+    <h2>The Machine Is Already Watching — AI Crawler Activity</h2>
+    <p>Six AI crawler bots actively indexed the site in the 30-day audit window: PerplexityBot, ChatGPT-User, Claude-SearchBot, ClaudeBot, OAI-SearchBot, and GPTBot. AI crawlers accounted for 43 of 108 total crawler requests — 40% of all crawler traffic — which is significantly above average for a one-month-old domain. Crawler volume increased +2,600% over the period.</p>
+    <div class="client-zero-note">
+      <p><strong>What this signals — and why it matters:</strong> A domain that went live on 20 May 2026 is already being crawled by every major AI bot, with a +2,600% crawl growth rate, before it has had time to accumulate any citation history. The gap between a high structural score and lower AI perception scores is not because the platforms aren't looking. They are actively reading the site. The lag exists because <strong>AI training data has fixed cutoffs and citation volume is still thin</strong> — not because the work isn't landing. For a brand that postdates every model's training corpus, appearing in AI answers at all within weeks of launch is the result to focus on, not the scores. The machine is already watching. The work now is giving it more to say.</p>
+    </div>
+    <p style="margin-top:14px;">One technical flag: the Cloudflare cache rate sits at 33% against a target of 70–85%. AI crawlers hit origin servers more often than they should — slower and less reliable. A cache header fix is on the roadmap and resolves in days, not weeks.</p>
+  </section>
+
+  <section class="report-section">
+    <h2>How AI Engines Describe the Brand</h2>
+    <p>Beyond scores, each platform was asked to characterise AISearch Global in its own words. These themes are a diagnostic of what's landing — and what needs building before the brand moves from category-correct to specifically-cited.</p>
+    <div class="signal-grid">
+      <div class="signal-card">
+        <h4 style="color:#10a37f;margin:0 0 8px">ChatGPT</h4>
+        <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.65">
+          <li>"AI-driven search visibility and AEO expertise"</li>
+          <li>"Helping brands adapt to evolving answer engines"</li>
+        </ul>
+        <p style="margin:10px 0 0;font-size:.82rem;color:var(--muted)">Category-correct. Brand-specific detail not yet there — no named results or client outcomes attributed.</p>
+      </div>
+      <div class="signal-card">
+        <h4 style="color:#20b8cd;margin:0 0 8px">Perplexity</h4>
+        <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.65">
+          <li>"AI-Driven Search Visibility Strategy"</li>
+          <li>"Answer Engine Optimization Expertise"</li>
+        </ul>
+        <p style="margin:10px 0 0;font-size:.82rem;color:var(--muted)">Real-time access, but mirrors ChatGPT closely — limited citation depth to draw richer themes from yet.</p>
+      </div>
+      <div class="signal-card positive">
+        <h4 style="color:#8b5cf6;margin:0 0 8px">Gemini</h4>
+        <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.65">
+          <li>"Pioneering AEO in the Australian tech landscape"</li>
+          <li>"Navigating the shift from traditional SEO to AI search"</li>
+          <li>"Empowering global brands to dominate generative AI results"</li>
+          <li>"Leading the transition to conversational search"</li>
+        </ul>
+        <p style="margin:10px 0 0;font-size:.82rem;color:var(--muted)">Four distinct themes — richer and more narrative. Correctly positions the brand as Australian and forward-leaning. Oldest cutoff, but the strongest descriptive framing of any platform.</p>
+      </div>
+    </div>
+    <div class="client-zero-note" style="margin-top:18px">
+      <p><strong>Market trajectory — all three platforms agree:</strong> AISearch Global is well-positioned as AI search adoption accelerates. The window for establishing first-mover authority in Australia is open now — before the market saturates with generalist agencies pivoting to AEO.</p>
+    </div>
   </section>
 
   <section class="report-section">
@@ -402,6 +598,34 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
       <li>Schema.org (2026). <em>Canonical vocabulary for structured data markup.</em> <a href="https://schema.org" target="_blank" rel="noopener">schema.org</a></li>
       <li>Aggarwal, P., Murahari, V., Rajpurohit, T., Kalyan, A., Narasimhan, K., &amp; Deshpande, A. (2024). <em>GEO: Generative Engine Optimization.</em> Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. <a href="https://arxiv.org/abs/2311.09735" target="_blank" rel="noopener">arXiv:2311.09735</a></li>
     </ul>
+  </section>
+
+  <section class="report-section">
+    <h2>Verify It Yourself — Free Tools, Independent Results</h2>
+    <p>Every number on this page is reproducible using free, independent tools. We encourage you to run them — not to check our work, but to understand what your own site looks like from the outside. These are the same tools used in every AI Visibility Audit.</p>
+    <div class="signal-grid">
+      <div class="signal-card">
+        <h4><i class="bi bi-speedometer2"></i> AEO Score Calculator</h4>
+        <p>Enter any URL and get a live structural AEO score across 20 signals in under 60 seconds. No email required. For aisearch.global, the expected score is 91/100 — test it and see.</p>
+        <p style="margin-top:8px"><a href="/aeo-score-calculator" data-track="client-zero-verify-calculator">Run the AEO Score Calculator &rarr;</a></p>
+      </div>
+      <div class="signal-card">
+        <h4><i class="bi bi-lightning-charge"></i> Google PageSpeed Insights</h4>
+        <p>Test any URL at pagespeed.web.dev for Core Web Vitals, LCP, CLS, and performance scores on desktop and mobile. For aisearch.global: expected 98 desktop, 92 mobile.</p>
+        <p style="margin-top:8px"><a href="https://pagespeed.web.dev" target="_blank" rel="noopener noreferrer" data-track="client-zero-verify-pagespeed">Run PageSpeed Insights &rarr;</a></p>
+      </div>
+      <div class="signal-card">
+        <h4><i class="bi bi-bar-chart-line"></i> HubSpot Website Grader</h4>
+        <p>Test any URL at website.grader.com for performance, SEO, mobile, and security scores. A useful cross-reference against the structural AEO signals — different methodology, same diagnostic intent.</p>
+        <p style="margin-top:8px"><a href="https://website.grader.com" target="_blank" rel="noopener noreferrer" data-track="client-zero-verify-hubspot">Run HubSpot Website Grader &rarr;</a></p>
+      </div>
+      <div class="signal-card">
+        <h4><i class="bi bi-robot"></i> Ask the AI Platforms Directly</h4>
+        <p>Open ChatGPT, Perplexity, or Gemini and ask: <em>"What do you know about AISearch Global, an AEO consultancy in Australia?"</em> Compare what each says. The variation between platforms is itself the audit.</p>
+        <p style="margin-top:8px"><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" data-track="client-zero-verify-ai">Open ChatGPT &rarr;</a></p>
+      </div>
+    </div>
+    <p style="margin-top:16px;">Then run the same tools on your own URL. That's where it gets interesting.</p>
   </section>
 
   <div class="report-cta">
