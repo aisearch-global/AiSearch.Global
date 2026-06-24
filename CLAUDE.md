@@ -79,9 +79,9 @@ A previous AI session silently replaced the header logo SVG with plain text, bre
 **Location:** Sydney, Australia
 **Stage:** Pre-revenue. Launched May 2026.
 
-AEO (Answer Engine Optimisation) consultancy. Helps Australian businesses get found, cited, and recommended in AI-generated answers — ChatGPT, Gemini, Perplexity, Google AI Overviews, Claude.
+AEO (Answer Engine Optimisation) and GEO (Generative Engine Optimisation) consultancy. Helps Australian businesses get found, cited, and recommended in AI-generated answers — ChatGPT, Gemini, Perplexity, Google AI Overviews, Claude.
 
-**Positioning:** Pure-play AEO specialist. Every Australian competitor is a generalist agency with AEO bolted on. AISearch Global is the focused specialist.
+**Positioning:** Pure-play AEO and GEO specialist. Every Australian competitor is a generalist agency with AEO bolted on. AISearch Global is the focused specialist in both answer engine optimisation and generative engine optimisation.
 
 ---
 
@@ -182,7 +182,7 @@ First client: Dr Sid Mohandas (brother) — AEO-compliant website built for test
 
 4. **Always include a "What's changed since last audit" section** — new schema types, new AI crawler signals, Google algorithm updates, new AEO signals AI platforms have started weighting.
 
-**Why:** AISearch Global is an AEO agency. Its own site must model best practice. If the site is behind on any AEO/SEO signal, that undermines the business. The audit must reflect current standards, not just known standards.
+**Why:** AISearch Global is an AEO and GEO agency. Its own site must model best practice. If the site is behind on any AEO/SEO signal, that undermines the business. The audit must reflect current standards, not just known standards.
 
 ---
 
@@ -458,5 +458,5 @@ Lines 14–15 load CSS and JS as `../assets/css/styles.css` and `../assets/js/ma
 **Pinterest domain verification only on 2 pages**
 `<meta name="p:domain_verify" content="c18ed316c67e3a4c44602269f5997354">` appears only in `index.html` and `about/index.html`. This is intentional — Pinterest verification only requires one page. Do not add it to other pages.
 
-**`faq.html` and `terms/index.html` have no JSON-LD schema**
-17 of 19 live pages have `<script type="application/ld+json">` blocks. `faq.html` and `terms/index.html` do not. This is an existing gap, not a regression.
+**`terms/index.html` has no JSON-LD schema**
+`terms/index.html` has no `<script type="application/ld+json">` block. This is an existing gap, not a regression. Note: `faq.html` has a full FAQPage schema block and is no longer a gap.
