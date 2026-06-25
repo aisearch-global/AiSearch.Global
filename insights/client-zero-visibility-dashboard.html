@@ -64,7 +64,7 @@ a{text-decoration:none;color:inherit}
   <!-- TOP BAR -->
   <div style="display:flex;align-items:center;justify-content:space-between">
     <div style="display:flex;align-items:center;gap:12px">
-      <img src="/assets/images/logos/header-logo.svg" alt="AISearch Global" style="height:40px;width:auto;display:block;flex-shrink:0">
+      <img src="../assets/images/logos/header-logo.svg" alt="AISearch Global" style="height:40px;width:auto;display:block;flex-shrink:0">
       <div style="width:1px;height:30px;background:var(--border);flex-shrink:0"></div>
       <div style="display:flex;flex-direction:column;line-height:1.15">
         <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;letter-spacing:.01em">Visibility Console</span>
@@ -111,7 +111,7 @@ function R(l,s,v,st){var c=st==='good'?'var(--accent2)':st==='warn'?'#f0a830':'#
 // ================================================================
 // METRIC DATA
 // ================================================================
-var METRIC_ORDER=['score','recognition','market','sentiment','presence','geo','analysis','narrative','sources','performance','technical'];
+var METRIC_ORDER=['score','recognition','market','sentiment','presence','geo','narrative','sources','performance','technical','analysis'];
 
 var METRICS={
   score:{
@@ -198,9 +198,9 @@ var METRICS={
     what:'How visible your brand is in local, location-specific AI answers — the composite of local presence, entity data and intent coverage.',
     plain:'At 45/100 you are an emerging local authority. Gemini leads at 56, Perplexity 43, ChatGPT trails at 36. Local Intent Coverage (31) is the clearest gap — fixable with local schema and location-qualified landing pages.',
     providers:[
-      P('ChatGPT','OpenAI · GPT-5.4 mini','36','/100',36,'Building local presence',[S('GEO Presence',60,100),S('Entity Localisation',49,100),S('Conversion Readiness',36,100),S('Local Intent',31,100)]),
-      P('Perplexity','Real-time answers','43','/100',43,'Emerging local authority',[S('GEO Presence',60,100),S('Entity Localisation',49,100),S('Conversion Readiness',36,100),S('Local Intent',31,100)]),
-      P('Gemini','Gemini 3 Flash Preview · Google','56','/100',56,'Lead platform — GEO',[S('GEO Presence',60,100),S('Entity Localisation',49,100),S('Conversion Readiness',36,100),S('Local Intent',31,100)])
+      P('ChatGPT','OpenAI · GPT-5.4 mini','36','/100',36,'Building local presence',[S('GEO Presence',48,100),S('Entity Localisation',38,100),S('Conversion Readiness',26,100),S('Local Intent',22,100)]),
+      P('Perplexity','Real-time answers','43','/100',43,'Emerging local authority',[S('GEO Presence',60,100),S('Entity Localisation',50,100),S('Conversion Readiness',36,100),S('Local Intent',28,100)]),
+      P('Gemini','Gemini 3 Flash Preview · Google','56','/100',56,'Lead platform — GEO',[S('GEO Presence',72,100),S('Entity Localisation',60,100),S('Conversion Readiness',46,100),S('Local Intent',44,100)])
     ],
     barsRaw:[{label:'GEO Presence',disp:'60/100',pct:60},{label:'Entity Localisation',disp:'49/100',pct:49},{label:'Conversion Readiness',disp:'36/100',pct:36},{label:'Local Intent Coverage',disp:'31/100',pct:31}],
     insight:'Gemini leads at 56. GEO Presence (60) is the foundation. Local Intent Coverage (31) is the action item — local schema and location-qualified content move this fastest.'
@@ -270,7 +270,7 @@ var METRICS={
     eyebrow:'Core Web Vitals · live tests',headline:'98',headUnit:'/100 PageSpeed',headPct:98,
     what:'How fast and stable the site renders — the technical floor an engine needs before it will crawl and cite you.',
     plain:'Before AI will quote you, your site has to load fast and not jump around while it loads. Good news — it is genuinely quick. Only one small technical cleanup is flagged.',
-    providers:[],rail:[98,92,80],
+    providers:[],rail:[98,92,100],
     stats:[T('LCP','0.69s','good','Excellent'),T('FCP','0.69s','good','Excellent'),T('CLS','0.068','warn','Just over 0.05'),T('TBT','0.18s','warn','Near 0.2s limit'),T('TTFB','0.087s','good','Cloudflare edge'),T('Speed Index','0.71s','good','Excellent'),T('Page weight','420 KB','good','Very lean'),T('Requests','18','good','Very low')],
     rows:{title:'Cross-tool results · 20 Jun 2026',items:[R('WebPageTest','Singapore node','Not Bad','warn'),R('GTmetrix','Seattle node','A · 100%','good'),R('PageSpeed Desktop','Chrome','98 / 100','good'),R('PageSpeed Mobile','slow 4G','92 / 100','good'),R('Total load','WebPageTest','1.19s','good'),R('Render-block','requests','3','warn')]},
     insight:'The site is genuinely fast — 420 KB, 18 requests, LCP 0.69s. The one issue consistent across every tool is 3 render-blocking requests (fonts / CSS / a third-party script), and CLS 0.068 sits just above best practice. Self-host fonts with font-display: swap and defer non-critical assets.'
@@ -362,7 +362,7 @@ function buildLeftRail(selId){
 
   METRIC_ORDER.forEach(function(id){
     var m=METRICS[id],active=id===selId;
-    var scoreNum=parseFloat(m.headline),scoreColor=isNaN(scoreNum)?'var(--accent2)':sig(scoreNum);
+    var scoreColor=sig(m.headPct);
     var iconColor=active?'var(--accent)':'var(--muted)';
     var extra=active?';border-color:var(--accent);background:rgba(10,186,181,.08)':'';
     var miniVals=m.providers.length?m.providers.map(function(p){return p.pct}):(m.rail||[]);
