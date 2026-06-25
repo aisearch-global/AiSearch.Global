@@ -89,9 +89,9 @@ a{text-decoration:none;color:inherit}
     <div style="width:1px;height:22px;background:var(--border)"></div>
     <div style="display:flex;align-items:center;gap:9px;color:var(--muted);font-size:12px"><i class="bi bi-calendar3" style="color:var(--accent)"></i>Graded 20 Jun 2026</div>
     <div style="display:flex;align-items:center;gap:9px;color:var(--muted);font-size:12px"><i class="bi bi-robot" style="color:var(--accent)"></i>All major AI crawlers active</div>
-    <div style="margin-left:auto;display:flex;align-items:center;gap:10px">
-      <a href="/insights/aisearch-global-client-zero" class="co" style="display:flex;align-items:center;gap:9px;border:1px solid var(--accent);color:var(--accent);font-weight:600;padding:.6rem .95rem;font-size:13px"><i class="bi bi-journal-text"></i>Back to Client Zero — client insight</a>
-      <a href="/services/aeo-audit" target="_blank" rel="noopener" class="cs" style="display:flex;align-items:center;gap:9px;background:var(--accent);color:#041617;font-weight:700;padding:.65rem 1.05rem;font-size:13px"><i class="bi bi-clipboard-data"></i>Get your own visibility audit</a>
+    <div style="margin-left:auto;display:flex;align-items:center;gap:14px">
+      <a href="/insights/aisearch-global-client-zero" class="co" style="display:flex;align-items:center;gap:9px;border:1px solid var(--accent);color:var(--accent);font-weight:600;padding:.6rem .95rem;font-size:13px"><i class="bi bi-arrow-left"></i>Client Zero — Insight Article</a>
+      <button onclick="document.getElementById('audit-modal').style.display='flex'" class="cs" style="display:flex;align-items:center;gap:9px;background:var(--accent);color:#041617;font-weight:700;padding:.65rem 1.05rem;font-size:13px;border:none;cursor:pointer;font-family:'DM Sans',sans-serif"><i class="bi bi-clipboard-data"></i>Get Your Own Visibility Audit</button>
     </div>
   </div>
 
@@ -753,7 +753,63 @@ function render(id){
   setTimeout(animate,70);
 }
 
-document.addEventListener('DOMContentLoaded',function(){render('score')});
+document.addEventListener('DOMContentLoaded',function(){
+  render('score');
+  var af=document.getElementById('audit-form');
+  if(af){af.addEventListener('submit',function(e){
+    e.preventDefault();
+    fetch(af.action,{method:'POST',body:new FormData(af),headers:{'Accept':'application/json'}})
+      .then(function(r){if(r.ok){af.style.display='none';document.getElementById('audit-success').style.display='flex'}});
+  })}
+});
 </script>
+
+<!-- AUDIT REQUEST MODAL -->
+<div id="audit-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:1000;align-items:center;justify-content:center;padding:20px" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#15181d;border:1px solid rgba(10,186,181,.35);width:100%;max-width:480px;padding:32px;position:relative;display:flex;flex-direction:column;gap:22px;box-shadow:0 24px 64px rgba(0,0,0,.65)">
+    <button onclick="document.getElementById('audit-modal').style.display='none'" style="position:absolute;top:14px;right:16px;background:none;border:none;color:#95a0ad;font-size:22px;cursor:pointer;line-height:1;padding:0">&times;</button>
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <p style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#0abab5">AI Visibility Audit</p>
+      <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#e3e8ee">Get Your Own Visibility Audit</h2>
+      <p style="margin:0;font-size:13.5px;color:#95a0ad;line-height:1.55">Tell us about your business. We'll reply with our packages and find the right fit in a quick conversation — no commitment needed.</p>
+    </div>
+    <form id="audit-form" action="https://formspree.io/f/xqejbpqj" method="POST" style="display:flex;flex-direction:column;gap:14px">
+      <input type="hidden" name="_subject" value="Visibility Audit Request — Client Zero Dashboard">
+      <div style="display:flex;gap:12px">
+        <div style="flex:1;display:flex;flex-direction:column;gap:5px">
+          <label style="font-size:10.5px;color:#95a0ad;letter-spacing:.1em;text-transform:uppercase;font-family:'Space Grotesk',sans-serif;font-weight:600">Your Name</label>
+          <input type="text" name="name" required placeholder="Jane Smith" style="background:#1d2128;border:1px solid rgba(255,255,255,.12);color:#e3e8ee;padding:10px 12px;font-size:13.5px;font-family:'DM Sans',sans-serif;width:100%;outline:none;box-sizing:border-box">
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:5px">
+          <label style="font-size:10.5px;color:#95a0ad;letter-spacing:.1em;text-transform:uppercase;font-family:'Space Grotesk',sans-serif;font-weight:600">Email</label>
+          <input type="email" name="email" required placeholder="jane@company.com" style="background:#1d2128;border:1px solid rgba(255,255,255,.12);color:#e3e8ee;padding:10px 12px;font-size:13.5px;font-family:'DM Sans',sans-serif;width:100%;outline:none;box-sizing:border-box">
+        </div>
+      </div>
+      <div style="display:flex;gap:12px">
+        <div style="flex:1;display:flex;flex-direction:column;gap:5px">
+          <label style="font-size:10.5px;color:#95a0ad;letter-spacing:.1em;text-transform:uppercase;font-family:'Space Grotesk',sans-serif;font-weight:600">Company</label>
+          <input type="text" name="company" required placeholder="Acme Co." style="background:#1d2128;border:1px solid rgba(255,255,255,.12);color:#e3e8ee;padding:10px 12px;font-size:13.5px;font-family:'DM Sans',sans-serif;width:100%;outline:none;box-sizing:border-box">
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:5px">
+          <label style="font-size:10.5px;color:#95a0ad;letter-spacing:.1em;text-transform:uppercase;font-family:'Space Grotesk',sans-serif;font-weight:600">Website</label>
+          <input type="url" name="website" placeholder="https://..." style="background:#1d2128;border:1px solid rgba(255,255,255,.12);color:#e3e8ee;padding:10px 12px;font-size:13.5px;font-family:'DM Sans',sans-serif;width:100%;outline:none;box-sizing:border-box">
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <label style="font-size:10.5px;color:#95a0ad;letter-spacing:.1em;text-transform:uppercase;font-family:'Space Grotesk',sans-serif;font-weight:600">Anything specific you'd like us to look at?</label>
+        <textarea name="message" rows="3" placeholder="Optional — industry, main competitors, key questions..." style="background:#1d2128;border:1px solid rgba(255,255,255,.12);color:#e3e8ee;padding:10px 12px;font-size:13.5px;font-family:'DM Sans',sans-serif;width:100%;outline:none;resize:vertical;box-sizing:border-box"></textarea>
+      </div>
+      <button type="submit" style="margin-top:4px;background:#0abab5;color:#041617;font-weight:700;padding:.75rem 1.2rem;font-size:14px;font-family:'DM Sans',sans-serif;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px">
+        <i class="bi bi-send"></i>Request My Visibility Audit
+      </button>
+    </form>
+    <div id="audit-success" style="display:none;flex-direction:column;align-items:center;gap:14px;padding:10px 0 6px;text-align:center">
+      <i class="bi bi-check-circle" style="font-size:40px;color:#2ec27e"></i>
+      <p style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:600;color:#e3e8ee">Request received!</p>
+      <p style="margin:0;font-size:14px;color:#95a0ad;line-height:1.55">We'll be in touch with our packages shortly. Talk soon.</p>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
