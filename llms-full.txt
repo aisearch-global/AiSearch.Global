@@ -1,5 +1,5 @@
 # AISearch Global — Full Reference
-# Last updated: 12 Jun 2026
+# Last updated: 25 Jun 2026
 https://aisearch.global
 
 > AISearch Global is a specialist Answer Engine Optimisation (AEO) agency based in Sydney, Australia. We help Australian businesses get found, cited, and recommended inside AI-generated answers on ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews, DeepSeek, and Grok.
@@ -65,21 +65,29 @@ A free, instant AI visibility scorecard. Enter a website URL, industry, and loca
 - The single highest-impact fix with estimated point gain
 - An industry benchmark comparison (average and top performer)
 
-**13 signals scored:**
-1. Title tag present and descriptive (8 pts)
-2. Meta description present (8 pts)
-3. H1 tag present (8 pts)
-4. Word count ≥ 700 (8 pts)
-5. JSON-LD schema markup (12 pts)
-6. FAQ section present (12 pts)
-7. About page linked (8 pts)
-8. Contact page linked (8 pts)
-9. Reviews or testimonials present (8 pts)
-10. Location mentioned (6 pts)
-11. Industry keywords present (6 pts)
-12. Sitemap.xml present (4 pts)
-13. Robots.txt present (4 pts)
-Plus bonus points for trust page count, sitemap URL count, and internal link density.
+**20 signals scored — 17 structural AEO + 3 Princeton GEO:**
+1. Title tag present and descriptive
+2. Meta description present
+3. H1 tag present
+4. Content depth (word count)
+5. JSON-LD schema markup
+6. FAQ section present
+7. About page linked
+8. Contact signals present
+9. Review / testimonial signals
+10. Location signals
+11. Industry keyword relevance
+12. Sitemap.xml present
+13. Robots.txt present
+14. Internal link density
+15. Trust page count
+16. Structured headings (H2/H3)
+17. Answer-format content signals
+18. Statistics present (Princeton GEO signal)
+19. Source citations present (Princeton GEO signal)
+20. Quotations present (Princeton GEO signal)
+
+Signals 18–20 are based on the peer-reviewed Princeton/Georgia Tech KDD 2024 GEO study, which found these three tactics boost AI citation rates by up to 40%.
 
 Scoring engine runs on Cloudflare Workers. No email required. Results are instant.
 
@@ -118,6 +126,28 @@ Published: 7 Jun 2026
 
 Full explanation of AISearch Global's proprietary four-layer AEO framework. Covers each layer in detail — Entity Clarity, Schema Markup, Answer-Format Content, Citation Consistency — with implementation guidance, common mistakes, and expected impact at each layer. Includes a self-assessment checklist.
 
+### The Princeton GEO Paper Explained for Australian Business Owners
+URL: /insights/princeton-geo-paper-explained
+Published: 14 Jun 2026
+
+Plain-English breakdown of the peer-reviewed Princeton/Georgia Tech study on Generative Engine Optimisation (KDD 2024). Tested 9 content tactics across 10,000 real AI queries. Three tactics — cite sources, add statistics, add quotations — boosted AI citation rates by up to 40%. Keyword stuffing actively reduced AI visibility. Covers practical implications for Australian business owners seeking AI search citations.
+
+### AISearch Global: Client Zero — From 19 to 91, and What AI Still Doesn't Know
+URL: /insights/aisearch-global-client-zero
+Published: 21 Jun 2026 | Last modified: 24 Jun 2026
+
+AISearch Global used its own brand as Client Zero — running a full AI Visibility Audit on itself from launch on 20 May 2026. Documents a structural AEO score climb from 19 to 91 in six weeks. Records what ChatGPT, Perplexity, and Gemini actually say about the brand: Brand Recognition 10/100, Share of Voice 11.7%, Brand Sentiment 56/100, GEO Visibility 45/100, overall AEO score 36/100 average. Explains the AI training cutoff gap (models scored the brand before its data reached training sets) and what to do about it. Accompanied by the interactive Client Zero AI Visibility Console.
+
+---
+
+## Interactive Tools
+
+### Client Zero AI Visibility Console
+URL: /insights/client-zero-visibility-dashboard
+Last updated: 25 Jun 2026
+
+Interactive dashboard presenting AISearch Global's complete AI Visibility Audit across 11 scored metrics. Scored independently by ChatGPT (GPT-5.4 mini), Perplexity (real-time), and Gemini 3 Flash Preview. Metrics: AEO Score (36/100 avg), Brand Recognition (10/100), Share of Voice (11.7% avg), Brand Sentiment (56/100), Presence Quality (4.3/20), GEO Visibility (45/100), Narrative Themes, Source Analysis, Site Performance (98/100 PageSpeed), Technical Foundation (5.6/10 Cloudflare health), and Analysis Summary. Data graded 20 Jun 2026. Designed as a living case study and product demonstration of the AI Visibility Audit service.
+
 ---
 
 ## Reference Pages
@@ -151,11 +181,11 @@ URL: /terms/
 - `ProfessionalService` — home page
 - `WebSite` — home page
 - `FAQPage` — home page, /faq, and all 6 service pages
-- `Article` — all 3 insights articles
-- `BreadcrumbList` — all 3 insights articles and all 6 service pages
+- `Article` — all 5 insights articles
+- `BreadcrumbList` — all 5 insights articles and all 6 service pages
 - `Service` — all 6 service pages
 - `HowTo` — /insights/aeo-traction-stack (4-step implementation guide)
-- `WebPage` with `speakable` — all 3 insights articles
+- `WebPage` with `speakable` — all 5 insights articles
 - `CollectionPage` — /insights/
 - `ItemList` — /insights/ (article list)
 - `BreadcrumbList` — /faq (site-wide via JSON-LD)
@@ -164,7 +194,7 @@ URL: /terms/
 
 ## Technical
 
-- Last refreshed: 12 Jun 2026 (schema audit + factual corrections)
+- Last refreshed: 25 Jun 2026 (added Client Zero article, Princeton GEO article, Visibility Console; updated signal count to 20; updated schema inventory to 5 articles)
 - sitemap.xml: https://aisearch.global/sitemap.xml
 - robots.txt: https://aisearch.global/robots.txt
 - llms.txt: https://aisearch.global/llms.txt

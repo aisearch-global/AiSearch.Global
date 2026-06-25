@@ -23,7 +23,12 @@ AISearch Global focuses exclusively on AEO and GEO, not traditional SEO. Our wor
 - [What Is AEO? Answer Engine Optimisation Explained](/insights/what-is-aeo-answer-engine-optimisation): A foundational guide to Answer Engine Optimisation — what it is, how it differs from SEO, and why it matters for businesses as AI-generated answers replace traditional search results. Published 24 May 2026.
 - [How AI Decides Which Businesses to Recommend](/insights/how-ai-decides-which-businesses-to-recommend): An explanation of the signals, data sources, and trust factors that determine whether an AI engine recommends your business in a response. Published 30 May 2026.
 - [The AEO Traction Stack](/insights/aeo-traction-stack): AISearch Global's proprietary four-layer framework — Entity Clarity, Schema Markup, Answer-Format Content, Citation Consistency — for building durable AI search visibility. Published 7 Jun 2026.
-- [Princeton GEO Paper Explained](/insights/princeton-geo-paper-explained): A plain-English breakdown of the peer-reviewed Princeton/Georgia Tech KDD 2024 study on Generative Engine Optimisation and what it means for Australian businesses. Published 13 Jun 2026.
+- [Princeton GEO Paper Explained](/insights/princeton-geo-paper-explained): A plain-English breakdown of the peer-reviewed Princeton/Georgia Tech KDD 2024 study on Generative Engine Optimisation and what it means for Australian businesses. Published 14 Jun 2026.
+- [AISearch Global: Client Zero — From 19 to 91, and What AI Still Doesn't Know](/insights/aisearch-global-client-zero): How AISearch Global used its own brand as Client Zero — tracking a structural AEO score climb from 19 to 91 in six weeks while measuring what ChatGPT, Perplexity, and Gemini actually say about the brand today. Includes a link to the interactive AI Visibility Console. Published 21 Jun 2026.
+
+## Interactive Tools
+
+- [Client Zero AI Visibility Console](/insights/client-zero-visibility-dashboard): Interactive dashboard presenting AISearch Global's full AI Visibility Audit across 11 scored metrics — AEO Score, Brand Recognition, Share of Voice, Brand Sentiment, Presence Quality, GEO Visibility, Narrative Themes, Source Analysis, Site Performance, Technical Foundation, and Analysis Summary. Scored independently by ChatGPT, Perplexity, and Gemini. Data as of 20 Jun 2026. Living case study and product demonstration.
 
 ## Reference Pages
 
