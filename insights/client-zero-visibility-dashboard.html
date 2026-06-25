@@ -1,567 +1,759 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-AU">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-<template id="__bundler_thumbnail" data-bg-color="#0d0e10">
-  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-    <rect width="1200" height="800" fill="#0d0e10"></rect>
-    <rect x="430" y="300" width="340" height="340" rx="14" fill="#0abab5"></rect>
-    <path d="M470 540 L520 470 L575 510 L640 420 L700 480 L730 440" fill="none" stroke="#0d0e10" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"></path>
-    <circle cx="600" cy="220" r="46" fill="none" stroke="#81d8d0" stroke-width="14"></circle>
-  </svg>
-</template>
-</head>
-<body>
-<x-dc>
-<helmet>
+<title>AI Visibility Console — Client Zero | AISearch Global</title>
+<meta name="description" content="Interactive AI visibility dashboard for AISearch Global: 11 audit metrics scored across ChatGPT, Perplexity and Gemini. Client Zero living case study, graded 20 Jun 2026.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="author" content="AISearch Global">
+<link rel="canonical" href="https://aisearch.global/insights/client-zero-visibility-dashboard">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/images/aisearch_social_graphic_plumber.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AISearch Global">
+<meta property="og:locale" content="en_AU">
+<meta property="og:url" content="https://aisearch.global/insights/client-zero-visibility-dashboard">
+<meta property="og:title" content="AI Visibility Console — Client Zero | AISearch Global">
+<meta property="og:description" content="Interactive AI visibility dashboard for AISearch Global: 11 audit metrics scored across ChatGPT, Perplexity and Gemini. Client Zero living case study, graded 20 Jun 2026.">
+<meta property="og:image" content="https://aisearch.global/assets/images/aisearch_social_graphic_plumber.png">
+<meta property="og:image:alt" content="AISearch Global social graphic showing a plumber search query and warning that your business is not here">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Visibility Console — Client Zero | AISearch Global">
+<meta name="twitter:description" content="Interactive AI visibility dashboard for AISearch Global: 11 audit metrics scored across ChatGPT, Perplexity and Gemini. Client Zero living case study, graded 20 Jun 2026.">
+<meta name="twitter:image" content="https://aisearch.global/assets/images/aisearch_social_graphic_plumber.png">
+<meta name="twitter:image:alt" content="AISearch Global social graphic showing a plumber search query and warning that your business is not here">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XBZMSCBXBZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XBZMSCBXBZ');
+</script>
+
 <style>
-  *{box-sizing:border-box}
-  @keyframes pulseDot{0%,100%{opacity:.5;transform:scale(.85)}50%{opacity:1;transform:scale(1)}}
-  @keyframes waveScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-  a{text-decoration:none}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d0e10;color:#e3e8ee;font-family:'DM Sans',sans-serif;overflow-x:auto}
+:root{--accent:#0abab5;--accent2:#81d8d0;--bg:#0d0e10;--bg2:#15181d;--surface:#1d2128;--text:#e3e8ee;--muted:#95a0ad;--border:rgba(255,255,255,.10);--glow:0 10px 30px rgba(0,0,0,.45)}
+@keyframes pulseDot{0%,100%{opacity:.5;transform:scale(.85)}50%{opacity:1;transform:scale(1)}}
+@keyframes waveScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+a{text-decoration:none;color:inherit}
+.mc{cursor:pointer;transition:border-color .15s,background .15s}
+.mc:hover{border-color:var(--accent2)!important}
+.vl{transition:border-color .15s}
+.vl:hover{border-color:var(--accent)!important}
+.co{transition:background .15s}
+.co:hover{background:rgba(10,186,181,.08)}
+.cs{transition:background .15s}
+.cs:hover{background:var(--accent2)!important}
 </style>
-</helmet>
-<div ref="{{ rootRef }}" style="--accent:#0abab5;--accent2:#81d8d0;--bg:#0d0e10;--bg2:#15181d;--surface:#1d2128;--text:#e3e8ee;--muted:#95a0ad;--border:rgba(255,255,255,.10);--glow:0 10px 30px rgba(0,0,0,.45);width:1280px;padding:26px;background:radial-gradient(circle at 12% -8%, #15211f 0%, #0d0e10 40%);color:var(--text);font-family:'DM Sans',sans-serif;display:flex;flex-direction:column;gap:16px">
+</head>
+<body>
+
+<div id="vc-root" style="width:1280px;padding:26px;background:radial-gradient(circle at 12% -8%,#15211f 0%,#0d0e10 40%);color:var(--text);font-family:'DM Sans',sans-serif;display:flex;flex-direction:column;gap:16px">
 
   <!-- TOP BAR -->
   <div style="display:flex;align-items:center;justify-content:space-between">
     <div style="display:flex;align-items:center;gap:12px">
-      <div style="width:34px;height:34px;background:var(--accent);color:#041617;display:flex;align-items:center;justify-content:center;font-size:18px"><i class="bi bi-broadcast-pin"></i></div>
+      <img src="/assets/images/logos/header-logo.svg" alt="AISearch Global" style="height:40px;width:auto;display:block;flex-shrink:0">
+      <div style="width:1px;height:30px;background:var(--border);flex-shrink:0"></div>
       <div style="display:flex;flex-direction:column;line-height:1.15">
-        <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;letter-spacing:.01em">AISearch · Visibility Console</span>
-        <span style="font-size:11px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase">HubSpot AEO Grader · Australia · Technology</span>
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;letter-spacing:.01em">Visibility Console</span>
+        <span style="font-size:11px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase">Client Zero · Living Case Study · Australia</span>
       </div>
     </div>
     <div style="display:flex;align-items:center;gap:10px">
-      <div style="display:flex;align-items:center;gap:8px;border:1px solid rgba(10,186,181,.35);background:rgba(10,186,181,.06);color:var(--accent2);font-size:12px;padding:.4rem .75rem"><i class="bi bi-lightbulb"></i>Archetype:&nbsp;<strong style="color:var(--text);font-weight:600">Innovator</strong>&nbsp;· Niche</div>
-      <div style="display:flex;align-items:center;gap:7px;border:1px solid var(--border);color:var(--muted);font-size:12px;padding:.4rem .7rem"><span style="width:7px;height:7px;background:var(--accent);border-radius:50%;animation:pulseDot 1.6s ease-in-out infinite"></span>3 LLM providers</div>
+      <div style="display:flex;align-items:center;gap:8px;border:1px solid rgba(10,186,181,.35);background:rgba(10,186,181,.06);color:var(--accent2);font-size:12px;padding:.4rem .75rem"><i class="bi bi-lightbulb"></i>&nbsp;Archetype:&nbsp;<strong style="color:var(--text);font-weight:600">Innovator</strong>&nbsp;· Niche</div>
+      <div style="display:flex;align-items:center;gap:7px;border:1px solid var(--border);color:var(--muted);font-size:12px;padding:.4rem .7rem"><span style="width:7px;height:7px;background:var(--accent);border-radius:50%;animation:pulseDot 1.6s ease-in-out infinite;display:inline-block"></span>&nbsp;3 LLM providers</div>
     </div>
   </div>
 
   <!-- MAIN ROW -->
   <div style="display:flex;gap:16px;align-items:stretch">
-
-    <!-- LEFT RAIL -->
-    <div style="width:250px;flex-shrink:0;display:flex;flex-direction:column;gap:10px">
-      <p style="margin:0 2px 2px;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)">Metrics · click to expand</p>
-      <sc-for list="{{ metricList }}" as="m" hint-placeholder-count="7">
-        <div data-id="{{ m.id }}" onClick="{{ onPick }}" style="{{ m.cardStyle }}" style-hover="border-color:var(--accent2)">
-          <div style="display:flex;align-items:center;gap:10px">
-            <i class="bi {{ m.icon }}" style="font-size:16px;color:{{ m.iconColor }}"></i>
-            <span style="flex:1;font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:13.5px">{{ m.label }}</span>
-            <div style="display:flex;align-items:center;gap:7px">
-              <span style="width:7px;height:7px;border-radius:50%;background:{{ m.scoreColor }};flex-shrink:0"></span>
-              <span style="font-family:'Space Grotesk',sans-serif;font-size:14px;color:{{ m.scoreColor }}">{{ m.head }}</span>
-            </div>
-          </div>
-          <div style="display:flex;gap:5px">
-            <sc-for list="{{ m.mini }}" as="mb" hint-placeholder-count="3">
-              <div style="flex:1;height:4px;background:var(--surface)"><div style="{{ mb.barStyle }}"></div></div>
-            </sc-for>
-          </div>
-        </div>
-      </sc-for>
-      <div style="border:1px solid var(--border);background:var(--bg2);padding:14px;display:flex;flex-direction:column;gap:8px">
-        <span style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)">Brand archetype</span>
-        <svg viewBox="0 0 100 60" width="100%" height="86" style="display:block">
-          <sc-for list="{{ dial.segs }}" as="sg" hint-placeholder-count="5">
-            <path d="{{ sg.d }}" fill="none" stroke="{{ sg.color }}" stroke-width="7" stroke-linecap="round"></path>
-          </sc-for>
-          <line x1="50" y1="50" x2="{{ dial.needle.x }}" y2="{{ dial.needle.y }}" stroke="var(--accent2)" stroke-width="1.8" stroke-linecap="round"></line>
-          <circle cx="50" cy="50" r="3" fill="var(--accent2)"></circle>
-        </svg>
-        <div style="display:flex;align-items:baseline;justify-content:center;gap:6px"><span style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:600;color:var(--accent2)">{{ dial.current }}</span><span style="font-size:11px;color:var(--muted)">· Niche market</span></div>
-        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:4px 8px;margin-top:1px">
-          <sc-for list="{{ dial.tiers }}" as="t" hint-placeholder-count="5">
-            <span style="font-size:10px;color:{{ t.color }};font-weight:{{ t.weight }}">{{ t.label }}</span>
-          </sc-for>
-        </div>
-        <span style="text-align:center;font-size:10.5px;color:var(--muted)">Next tier: <span style="color:var(--accent2)">{{ dial.next }}</span></span>
-      </div>
-      <div style="border:1px solid var(--border);background:var(--bg2);padding:13px 14px;display:flex;flex-direction:column;gap:9px">
-        <span style="font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase">Overall AEO score</span>
-        <sc-for list="{{ engines }}" as="e" hint-placeholder-count="3">
-          <div style="display:flex;align-items:center;gap:10px">
-            <span style="width:74px;font-size:12.5px;color:var(--muted)">{{ e.name }}</span>
-            <div style="flex:1;height:6px;background:var(--surface)"><div style="{{ e.barStyle }}"></div></div>
-            <span style="width:26px;text-align:right;font-family:'Space Grotesk',sans-serif;font-size:14px">{{ e.score }}</span>
-          </div>
-        </sc-for>
-      </div>
-      <div style="border:1px solid var(--border);background:var(--bg2);padding:13px 14px;display:flex;flex-direction:column;gap:9px">
-        <span style="font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase"><i class="bi bi-shield-check" style="color:var(--accent);margin-right:6px"></i>Verify it yourself</span>
-        <sc-for list="{{ verifyTools }}" as="lk" hint-placeholder-count="3">
-          <a href="{{ lk.url }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;border:1px solid var(--border);background:var(--surface);padding:9px 11px;color:var(--text)" style-hover="border-color:var(--accent)">
-            <i class="bi {{ lk.icon }}" style="font-size:15px;color:var(--accent2);flex-shrink:0"></i>
-            <div style="display:flex;flex-direction:column;line-height:1.2;min-width:0;flex:1"><span style="font-size:12.5px;font-weight:500">{{ lk.label }}</span><span style="font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ lk.host }}</span></div>
-            <i class="bi bi-arrow-up-right" style="font-size:11px;color:var(--muted);flex-shrink:0"></i>
-          </a>
-        </sc-for>
-      </div>
-    </div>
-
-    <!-- RIGHT: THE SCREEN -->
-    <div style="flex:1;min-width:0;border:1px solid var(--border);box-shadow:var(--glow);background:var(--bg2);display:flex;flex-direction:column;overflow:hidden">
-
-      <!-- header band -->
-      <div style="position:relative;overflow:hidden;padding:24px 26px;background:linear-gradient(135deg,#0a312e 0%,#0c211f 55%,#0d1413 100%);border-bottom:1px solid var(--border)">
-        <svg viewBox="0 0 200 100" preserveAspectRatio="none" width="200%" height="100%" style="position:absolute;left:0;top:0;height:100%;opacity:.15;pointer-events:none;will-change:transform;animation:waveScroll 24s linear infinite;animation-play-state:var(--wave-play,running)"><defs><linearGradient id="hgrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--accent2)" stop-opacity="0.7"></stop><stop offset="100%" stop-color="var(--accent)" stop-opacity="0"></stop></linearGradient></defs><path d="{{ waveAreaD }}" fill="url(#hgrad)"></path><path d="{{ wavePathD }}" fill="none" stroke="var(--accent2)" stroke-width="1" opacity="0.55" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg>
-        <div style="position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:30px">
-        <div style="display:flex;flex-direction:column;gap:9px;max-width:640px">
-          <p style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent2)">{{ sel.eyebrow }}</p>
-          <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:33px;font-weight:600;letter-spacing:-.01em">{{ sel.label }}</h2>
-          <p style="margin:0;font-size:14px;color:rgba(227,232,238,.78);line-height:1.55">{{ sel.what }}</p>
-        </div>
-        <div style="position:relative;width:118px;height:118px;flex-shrink:0">
-          <svg viewBox="0 0 36 36" width="118" height="118"><circle cx="18" cy="18" r="15.915" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="2.4"></circle><circle cx="18" cy="18" r="15.915" fill="none" stroke="var(--accent2)" stroke-width="2.4" stroke-dasharray="{{ sel.headDash }}" stroke-linecap="round" transform="rotate(-90 18 18)" style="transition:stroke-dasharray .9s cubic-bezier(.4,0,.2,1)"></circle></svg>
-          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px"><span style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:600;line-height:1">{{ sel.headline }}</span><span style="font-size:9.5px;color:var(--muted);text-align:center;max-width:90px">{{ sel.headUnit }}</span></div>
-        </div>
-        </div>
-      </div>
-
-      <!-- plain english -->
-      <div style="margin:20px 26px 0;border-left:3px solid var(--accent2);background:rgba(129,216,208,.05);padding:15px 18px;display:flex;flex-direction:column;gap:5px">
-        <span style="font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2)"><i class="bi bi-chat-square-quote" style="margin-right:7px"></i>In plain English</span>
-        <p style="margin:0;font-size:15px;line-height:1.6;color:var(--text)">{{ sel.plain }}</p>
-      </div>
-
-      <!-- provider columns (rings) -->
-      <sc-if value="{{ sel.isProviders }}" hint-placeholder-val="">
-      <div style="padding:20px 26px 6px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
-        <sc-for list="{{ sel.providers }}" as="p" hint-placeholder-count="3">
-          <div style="border:1px solid var(--border);background:var(--surface);padding:16px;display:flex;flex-direction:column;gap:13px">
-            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
-              <div style="display:flex;flex-direction:column;gap:2px;min-width:0">
-                <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:16px">{{ p.name }}</span>
-                <span style="font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ p.tag }}</span>
-              </div>
-              <div style="position:relative;width:66px;height:66px;flex-shrink:0">
-                <svg viewBox="0 0 36 36" width="66" height="66"><circle cx="18" cy="18" r="15.915" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="3"></circle><circle cx="18" cy="18" r="15.915" fill="none" stroke="{{ p.ringColor }}" stroke-width="3" stroke-dasharray="{{ p.dash }}" stroke-linecap="round" transform="rotate(-90 18 18)" style="transition:stroke-dasharray .9s cubic-bezier(.4,0,.2,1)"></circle></svg>
-                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><span style="font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:600">{{ p.big }}</span></div>
-              </div>
-            </div>
-            <sc-if value="{{ p.verdict }}" hint-placeholder-val="">
-              <span style="align-self:flex-start;border:1px solid rgba(10,186,181,.35);color:var(--accent2);font-size:10.5px;padding:.2rem .55rem">{{ p.verdict }}</span>
-            </sc-if>
-            <div style="height:1px;background:var(--border)"></div>
-            <div style="display:flex;flex-direction:column;gap:10px">
-              <sc-for list="{{ p.subs }}" as="s" hint-placeholder-count="5">
-                <div style="display:flex;flex-direction:column;gap:4px">
-                  <div style="display:flex;align-items:center;justify-content:space-between;font-size:12px"><span style="color:var(--muted)">{{ s.label }}</span><span style="font-family:'Space Grotesk',sans-serif;color:var(--text)">{{ s.disp }}</span></div>
-                  <div style="height:3px;background:var(--bg)"><div style="{{ s.barStyle }}"></div></div>
-                </div>
-              </sc-for>
-            </div>
-          </div>
-        </sc-for>
-      </div>
-      </sc-if>
-
-      <!-- stat tiles (single-site metrics) -->
-      <sc-if value="{{ sel.isStats }}" hint-placeholder-val="">
-      <div style="padding:20px 26px 6px;display:flex;flex-direction:column;gap:14px">
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
-          <sc-for list="{{ sel.stats }}" as="st" hint-placeholder-count="8">
-            <div style="border:1px solid var(--border);background:var(--surface);padding:14px;display:flex;flex-direction:column;gap:6px">
-              <div style="display:flex;align-items:center;gap:7px"><span style="width:8px;height:8px;border-radius:50%;background:{{ st.color }};flex-shrink:0"></span><span style="font-size:11px;color:var(--muted)">{{ st.label }}</span></div>
-              <span style="font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:600">{{ st.value }}</span>
-              <span style="font-size:10.5px;color:var(--muted)">{{ st.note }}</span>
-            </div>
-          </sc-for>
-        </div>
-        <sc-if value="{{ sel.hasRows }}" hint-placeholder-val="">
-          <div style="border:1px solid var(--border);background:var(--surface);padding:16px;display:flex;flex-direction:column;gap:12px">
-            <span style="font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">{{ sel.rows.title }}</span>
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px 30px">
-              <sc-for list="{{ sel.rows.items }}" as="r" hint-placeholder-count="6">
-                <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--border);padding-bottom:9px">
-                  <div style="display:flex;flex-direction:column;line-height:1.25;min-width:0"><span style="font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.label }}</span><span style="font-size:10.5px;color:var(--muted)">{{ r.sub }}</span></div>
-                  <div style="display:flex;align-items:center;gap:8px;flex-shrink:0"><span style="font-family:'Space Grotesk',sans-serif;font-size:14px;color:{{ r.color }}">{{ r.value }}</span><span style="width:7px;height:7px;border-radius:50%;background:{{ r.color }}"></span></div>
-                </div>
-              </sc-for>
-            </div>
-          </div>
-        </sc-if>
-      </div>
-      </sc-if>
-
-      <!-- signature chart: vertical bars -->
-      <sc-if value="{{ sel.hasBars }}" hint-placeholder-val="">
-        <div style="margin:14px 26px 0;border:1px solid var(--border);background:var(--surface);padding:18px;display:flex;flex-direction:column;gap:14px">
-          <span style="font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">Where the score comes from · average across engines</span>
-          <div style="display:flex;align-items:stretch;gap:18px;height:188px">
-            <sc-for list="{{ sel.bars }}" as="b" hint-placeholder-count="5">
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;height:100%">
-                <span style="font-family:'Space Grotesk',sans-serif;font-size:13px">{{ b.disp }}</span>
-                <div style="flex:1;width:100%;display:flex;align-items:flex-end;justify-content:center;padding:6px 0"><div style="{{ b.barStyle }}"></div></div>
-                <span style="font-size:11px;color:var(--muted);text-align:center">{{ b.label }}</span>
-              </div>
-            </sc-for>
-          </div>
-        </div>
-      </sc-if>
-
-      <!-- signature chart: donut -->
-      <sc-if value="{{ sel.hasDonut }}" hint-placeholder-val="">
-        <div style="margin:14px 26px 0;border:1px solid var(--border);background:var(--surface);padding:18px;display:flex;align-items:center;gap:30px">
-          <div style="position:relative;width:158px;height:158px;flex-shrink:0">
-            <svg viewBox="0 0 42 42" width="158" height="158">
-              <circle cx="21" cy="21" r="15.915" fill="none" stroke="var(--bg)" stroke-width="5"></circle>
-              <sc-for list="{{ sel.donut }}" as="d" hint-placeholder-count="8">
-                <circle cx="21" cy="21" r="15.915" fill="none" stroke="{{ d.color }}" stroke-width="5" stroke-dasharray="{{ d.dasharray }}" stroke-dashoffset="{{ d.dashoffset }}" style="transition:stroke-dasharray .9s cubic-bezier(.4,0,.2,1)"></circle>
-              </sc-for>
-            </svg>
-            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:600;color:var(--accent2)">8%</span><span style="font-size:10px;color:var(--muted)">your share</span></div>
-          </div>
-          <div style="flex:1;display:flex;flex-direction:column;gap:8px">
-            <span style="font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">Share of voice on ChatGPT · who AI names</span>
-            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:7px 26px">
-              <sc-for list="{{ sel.donut }}" as="d" hint-placeholder-count="8">
-                <div style="display:flex;align-items:center;gap:9px;font-size:12.5px"><span style="width:9px;height:9px;border-radius:50%;background:{{ d.color }};flex-shrink:0"></span><span style="flex:1;color:var(--text)">{{ d.label }}</span><span style="font-family:'Space Grotesk',sans-serif;color:var(--muted)">{{ d.value }}%</span></div>
-              </sc-for>
-            </div>
-          </div>
-        </div>
-      </sc-if>
-
-      <!-- timeline: training cutoff vs launch -->
-      <sc-if value="{{ sel.hasTimeline }}" hint-placeholder-val="">
-        <div style="margin:14px 26px 0;border:1px solid var(--border);background:var(--surface);padding:18px 20px 16px;display:flex;flex-direction:column;gap:16px">
-          <span style="font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">Why recognition is low &middot; the timing gap</span>
-          <div style="position:relative;height:138px;margin:2px 8px 0">
-            <!-- baseline -->
-            <div style="position:absolute;left:0;right:0;top:74px;height:2px;background:var(--border)"></div>
-            <!-- training zone -->
-            <div style="position:absolute;left:0;width:50%;top:64px;height:22px;background:rgba(129,216,208,.14);border:1px solid rgba(129,216,208,.4)"></div>
-            <div style="position:absolute;left:0;width:50%;top:30px;text-align:center;font-size:11.5px;color:var(--accent2);line-height:1.35">AI training datasets<br><span style="color:var(--muted)">knowledge frozen here</span></div>
-            <!-- blind-spot zone -->
-            <div style="position:absolute;left:50%;width:26%;top:64px;height:22px;background:repeating-linear-gradient(45deg,rgba(240,120,90,.22) 0 6px,transparent 6px 12px);border:1px dashed rgba(240,120,90,.55)"></div>
-            <div style="position:absolute;left:50%;width:26%;top:30px;text-align:center;font-size:11.5px;color:#f0785a;line-height:1.35">AI's blind spot<br><span style="color:var(--muted)">no new data ingested</span></div>
-            <!-- launch marker -->
-            <div style="position:absolute;left:76%;top:48px;width:2px;height:34px;background:var(--accent)"></div>
-            <div style="position:absolute;left:76%;top:70px;width:11px;height:11px;border-radius:50%;background:var(--accent);transform:translateX(-5px);box-shadow:0 0 0 3px rgba(10,186,181,.18)"></div>
-            <div style="position:absolute;left:76%;top:94px;width:160px;font-size:11.5px;color:var(--text);line-height:1.35;transform:translateX(-10px)"><strong style="color:var(--accent2)">20 May 2026</strong><br><span style="color:var(--muted)">Business &amp; online presence live</span></div>
-            <!-- today marker -->
-            <div style="position:absolute;left:91%;top:71px;width:9px;height:9px;border-radius:50%;background:var(--muted);transform:translateX(-4px)"></div>
-            <div style="position:absolute;left:91%;top:38px;width:74px;font-size:11px;color:var(--muted);line-height:1.3">Graded<br>22 Jun 2026</div>
-          </div>
-          <div style="border-left:3px solid var(--accent);background:rgba(10,186,181,.06);padding:11px 14px;font-size:13px;line-height:1.55;color:var(--text)"><strong style="color:var(--accent2)">This is the headline:</strong> the AI models were trained <strong>before we existed</strong> &mdash; yet even with zero training-data history, all three engines still found and rated the brand. That is a strong starting position, not a weak one.</div>
-        </div>
-      </sc-if>
-
-      <!-- read-out -->
-      <div style="margin:14px 26px 0;border-left:3px solid var(--accent);background:rgba(10,186,181,.06);padding:15px 18px;display:flex;flex-direction:column;gap:5px">
-        <span style="font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">What the data shows</span>
-        <p style="margin:0;font-size:14px;line-height:1.6;color:var(--text)">{{ sel.insight }}</p>
-      </div>
-
-      <!-- transparency -->
-      <div style="margin:14px 26px 0;display:flex;align-items:flex-start;gap:10px;font-size:12px;color:var(--muted);line-height:1.55">
-        <i class="bi bi-patch-check" style="color:var(--accent);font-size:14px;margin-top:1px;flex-shrink:0"></i>
-        <span>{{ transparency }}</span>
-      </div>
-
-    </div>
+    <div id="left-rail" style="width:250px;flex-shrink:0;display:flex;flex-direction:column;gap:10px"></div>
+    <div id="right-screen" style="flex:1;min-width:0;border:1px solid var(--border);box-shadow:var(--glow);background:var(--bg2);display:flex;flex-direction:column;overflow:hidden"></div>
   </div>
 
   <!-- BOTTOM STRIP -->
-  <div style="display:flex;gap:16px;align-items:center;border:1px solid var(--border);background:var(--bg2);box-shadow:var(--glow);padding:14px 18px">
-    <div style="display:flex;align-items:center;gap:9px;color:var(--muted);font-size:12px"><i class="bi bi-cpu" style="color:var(--accent)"></i>Engines: GPT-5.4 mini · Perplexity (real-time) · Gemini 3 Flash</div>
+  <div style="display:flex;gap:16px;align-items:center;border:1px solid var(--border);background:var(--bg2);box-shadow:var(--glow);padding:14px 18px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:9px;color:var(--muted);font-size:12px"><i class="bi bi-cpu" style="color:var(--accent)"></i>Engines: GPT-5.4 mini · Perplexity (real-time) · Gemini 3 Flash Preview</div>
     <div style="width:1px;height:22px;background:var(--border)"></div>
     <div style="display:flex;align-items:center;gap:9px;color:var(--muted);font-size:12px"><i class="bi bi-calendar3" style="color:var(--accent)"></i>Graded 20 Jun 2026</div>
-    <div style="display:flex;align-items:center;gap:9px;color:var(--muted);font-size:12px"><i class="bi bi-robot" style="color:var(--accent)"></i>All major AI crawlers allowed</div>
+    <div style="display:flex;align-items:center;gap:9px;color:var(--muted);font-size:12px"><i class="bi bi-robot" style="color:var(--accent)"></i>All major AI crawlers active</div>
     <div style="margin-left:auto;display:flex;align-items:center;gap:10px">
-      <a href="https://aisearch.global/insights/back-to-zero" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:9px;border:1px solid var(--accent);color:var(--accent);font-weight:600;padding:.6rem .95rem;font-size:13px" style-hover="background:rgba(10,186,181,.08)"><i class="bi bi-journal-text"></i>Back to Zero — client insight</a>
-      <a href="https://aisearch.global/audit" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:9px;background:var(--accent);color:#041617;font-weight:700;padding:.65rem 1.05rem;font-size:13px" style-hover="background:var(--accent2)"><i class="bi bi-clipboard-data"></i>Get your own visibility audit</a>
+      <a href="/insights/aisearch-global-client-zero" class="co" style="display:flex;align-items:center;gap:9px;border:1px solid var(--accent);color:var(--accent);font-weight:600;padding:.6rem .95rem;font-size:13px"><i class="bi bi-journal-text"></i>Back to Zero — client insight</a>
+      <a href="/services/aeo-audit" target="_blank" rel="noopener" class="cs" style="display:flex;align-items:center;gap:9px;background:var(--accent);color:#041617;font-weight:700;padding:.65rem 1.05rem;font-size:13px"><i class="bi bi-clipboard-data"></i>Get your own visibility audit</a>
     </div>
   </div>
 
 </div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:1140},&quot;accent&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Teal&quot;,&quot;Amber&quot;,&quot;Violet&quot;,&quot;Coral&quot;],&quot;default&quot;:&quot;Teal&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;glow&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;liveData&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
-class Component extends DCLogic {
-  rootRef = React.createRef();
-  state = { selected: 'score', anim: false };
 
-  buildWave() {
-    const pts = [];
-    for (let x = 0; x <= 200; x += 2.5) {
-      const t = (x / 100) * Math.PI * 2;
-      const v = 50 + 22 * Math.sin(t) + 10 * Math.sin(t * 2 + 0.8) + 6 * Math.sin(t * 3 + 1.7);
-      pts.push([x, 100 - v]);
-    }
-    return pts;
+<script>
+// ================================================================
+// HELPERS
+// ================================================================
+function sig(v){return v>=60?'#2ec27e':v>=31?'#f0a830':'#f0785a'}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function S(l,v,m,d){return{label:l,disp:d||(v+' / '+m),pct:Math.round((v/m)*100)}}
+function P(n,t,b,u,p,verdict,subs){return{name:n,tag:t,big:b,unit:u,pct:p,verdict:verdict||'',subs}}
+function T(l,v,s,n){var c=s==='good'?'var(--accent2)':s==='warn'?'#f0a830':'#f0785a';return{label:l,value:v,note:n||'',color:c}}
+function R(l,s,v,st){var c=st==='good'?'var(--accent2)':st==='warn'?'#f0a830':'#f0785a';return{label:l,sub:s||'',value:v,color:c}}
+
+// ================================================================
+// METRIC DATA
+// ================================================================
+var METRIC_ORDER=['score','recognition','market','sentiment','presence','geo','analysis','narrative','sources','performance','technical'];
+
+var METRICS={
+  score:{
+    id:'score',label:'AEO Score',icon:'bi-speedometer2',
+    eyebrow:'Overall · measured live',headline:'36',headUnit:'/100 average',headPct:36,
+    what:'Your overall answer-engine optimisation score (0–100), scored independently by each of the three big AI engines.',
+    plain:'Think of this as a report card for showing up in AI answers — 0 is invisible, 100 is everywhere. You sit at 36 on average: a solid footing for a young brand, with the most to gain in how often AI actually names you.',
+    providers:[
+      P('ChatGPT','OpenAI · GPT-5.4 mini','36','/100',36,'On the right track',[S('Brand Recognition',2,20),S('Market Score',6,10),S('Presence Quality',5,20),S('Brand Sentiment',22,40),S('Share of Voice',1,10)]),
+      P('Perplexity','Real-time answers','30','/100',30,'Room for growth',[S('Brand Recognition',1,20),S('Market Score',6,10),S('Presence Quality',3,20),S('Brand Sentiment',18,40),S('Share of Voice',2,10)]),
+      P('Gemini','Gemini 3 Flash Preview · Google','41','/100',41,'On the right track',[S('Brand Recognition',2,20),S('Market Score',6,10),S('Presence Quality',5,20),S('Brand Sentiment',27,40),S('Share of Voice',1,10)])
+    ],
+    barsRaw:[{label:'Recognition',disp:'1.7/20',pct:8},{label:'Market',disp:'6/10',pct:60},{label:'Presence',disp:'4.3/20',pct:22},{label:'Sentiment',disp:'22.3/40',pct:56},{label:'Share of Voice',disp:'1.3/10',pct:13}],
+    radarRaw:{title:'Five-dimension fingerprint · all three engines overlaid',axes:['Recognition','Market','Presence','Sentiment','Share'],series:[{engine:'ChatGPT',color:'var(--accent)',vals:[10,60,25,55,10]},{engine:'Perplexity',color:'#f0a830',vals:[5,60,15,45,20]},{engine:'Gemini',color:'#9a7bff',vals:[10,60,25,67,10]}]},
+    insight:'Across all three engines the brand reads as an Innovator in a niche, first-mover position. Gemini scores highest (41), Perplexity trails (30). The bar chart makes the pattern obvious: Sentiment and Market are healthy, while Recognition and Share of Voice are the two pillars dragging the total down — largely because AI training datasets were cut off before our business went live, so the models have not learned us yet.'
+  },
+  recognition:{
+    id:'recognition',label:'Brand Recognition',icon:'bi-eye',
+    eyebrow:'Pillar · weight /20',headline:'10',headUnit:'/100 scaled avg',headPct:10,timeline:true,
+    what:'How visible and recognisable your brand is across AI training data and live sources.',
+    plain:'Put simply: when someone asks AI about your field, does it already know your brand exists? Right now it mostly does not — and the main reason is timing: the AI training datasets were cut off before our business went live, so the models simply have not learned us yet. Recognition is the lowest score, and it is the first thing worth building.',
+    providers:[
+      P('ChatGPT','OpenAI · GPT-5.4 mini','12','/100',12,'',[S('Confidence Level',84,100,'84%'),S('Mention Depth',2,10),S('Source Quality',3,10),S('Data Richness',2,10)]),
+      P('Perplexity','Real-time answers','5','/100',5,'',[S('Confidence Level',60,100,'60%'),S('Mention Depth',1,10),S('Source Quality',2,10),S('Data Richness',1,10)]),
+      P('Gemini','Gemini 3 Flash Preview · Google','12','/100',12,'',[S('Confidence Level',35,100,'35%'),S('Mention Depth',2,10),S('Source Quality',3,10),S('Data Richness',2,10)])
+    ],
+    insight:'Recognition is the weakest pillar (~10/100) — largely because AI training datasets were cut off before our business went live, so the models have not yet learned the brand. Every engine tags it as a Niche Innovator with thin data richness and shallow mention depth. The fastest lever is more indexed, structured, third-party mentions of the brand name.'
+  },
+  market:{
+    id:'market',label:'Share of Voice',icon:'bi-megaphone',
+    eyebrow:'Market competition · /10',headline:'11.7%',headUnit:'avg share',headPct:11.7,timeline:true,
+    what:'Your presence in industry conversations versus competitors — your share of voice and mention volume.',
+    plain:'Out of every 100 times AI mentions a consultancy like yours, how many of those are you? Today it is roughly 8 to 18 — the rest go to competitors. The whole game is growing your slice of that pie.',
+    providers:[
+      P('ChatGPT','OpenAI · GPT-5.4 mini','8','%',8,'',[S('Market Score',6,10),S('Brand Mentions',42,1500,'42'),S('Comparison Mentions',27,3500,'27')]),
+      P('Perplexity','Real-time answers','18.5','%',18,'',[S('Market Score',6,10),S('Brand Mentions',142,1500,'142'),S('Comparison Mentions',89,3500,'89')]),
+      P('Gemini','Gemini 3 Flash Preview · Google','8.5','%',8,'',[S('Market Score',6,10),S('Brand Mentions',1240,1500,'1,240'),S('Comparison Mentions',3150,3500,'3,150')])
+    ],
+    donutsRaw:[
+      {engine:'ChatGPT',self:8,items:[{label:'AISearch Global',value:8},{label:'WebFX',value:18},{label:'Ignite Visibility',value:15},{label:'NP Digital',value:14},{label:'Delante',value:10},{label:'Avenue Z',value:8},{label:'Searchmetrics',value:7},{label:'Other',value:20}]},
+      {engine:'Perplexity',self:18.5,items:[{label:'AISearch Global',value:18.5},{label:'ThatWare',value:22},{label:'Gravitate Digital',value:15},{label:'Warren Digital',value:12},{label:'ID Digital',value:10},{label:'Magneto IT',value:7},{label:'IDTech Consulting',value:5},{label:'Other',value:10.5}]},
+      {engine:'Gemini',self:8.5,items:[{label:'AISearch Global',value:8.5},{label:'Search Engine Journal',value:22},{label:'Ahrefs',value:18.5},{label:'Semrush',value:17},{label:'Terakeet',value:12},{label:'Wolfgang Digital',value:7.5},{label:'Other',value:14.5}]}
+    ],
+    comparisons:[
+      {engine:'ChatGPT',topics:['AEO &amp; SEO expertise','Content strategy for AI search','Pricing &amp; engagement model','Technical implementation support','Reporting &amp; measurable outcomes']},
+      {engine:'Perplexity',topics:['AI visibility in search results','Pricing consultation models','AEO vs traditional SEO','Predictive search analytics','Marketing-tech integration']},
+      {engine:'Gemini',topics:['AI-driven SEO strategies','Pricing for AEO consultancy','AEO vs traditional SEO']}
+    ],
+    insight:'Share of voice ranges 8–18.5%. The three donuts show who AI names instead of you, engine by engine — WebFX and ThatWare lead, helped by years of indexed coverage that predate us; AI training datasets were cut off before our business went live. The upside: Gemini already surfaces 1,240 brand mentions, the raw base to convert into cited answers.'
+  },
+  sentiment:{
+    id:'sentiment',label:'Brand Sentiment',icon:'bi-emoji-smile',
+    eyebrow:'Pillar · weight /40',headline:'56',headUnit:'/100 sentiment',headPct:56,
+    what:'The tone and perception of AI answers that mention your brand — general and in context.',
+    plain:'When AI does talk about you, is it positive? Yes — this is your strongest area. The caution baked into the numbers is about how Australians feel toward AI in general, not criticism of your brand.',
+    providers:[
+      P('ChatGPT','OpenAI · GPT-5.4 mini','54','/100',54,'',[S('General',52,100),S('Contextual',55,100),S('Source-Based Sentiment',48,100),S('Polarization',28,100,'28 · low')]),
+      P('Perplexity','Real-time answers','45','/100',45,'',[S('General',42,100),S('Contextual',38,100),S('Source-Based Sentiment',40,100),S('Polarization',24,100,'24 · low')]),
+      P('Gemini','Gemini 3 Flash Preview · Google','68','/100',68,'',[S('General',72,100),S('Contextual',65,100),S('Source-Based Sentiment',67,100),S('Polarization',35,100,'35 · low')])
+    ],
+    lollipopRaw:{
+      title:'Sentiment strength vs polarization · by engine',
+      legend:[{label:'Sentiment score',color:'var(--accent2)'},{label:'Polarization',color:'#f0a830'}],
+      groups:[{engine:'ChatGPT',a:54,b:28},{engine:'Perplexity',a:45,b:24},{engine:'Gemini',a:68,b:35}],
+      note:'High sentiment, low polarization is the ideal quadrant — people feel positive and opinion is unified, not split into camps. Polarization is low everywhere (24–35) because there is not yet enough public commentary to create opposing views.'
+    },
+    insight:'Sentiment is the brand\'s strongest pillar — Gemini reads it at 68/100. Polarization is low across the board (28 / 24 / 35), meaning opinion is unified rather than divided. The drag comes from low Australian AI trust (EY, KPMG studies), not brand criticism. Published case studies and proof of results lift this the fastest.'
+  },
+  presence:{
+    id:'presence',label:'Presence Quality',icon:'bi-layers',
+    eyebrow:'Pillar · weight /20',headline:'4.3',headUnit:'/20 presence',headPct:21.5,
+    what:'The depth and quality of the sources where your brand actually appears in AI answers.',
+    plain:'It is not just being mentioned — it is being mentioned in good, trusted places. Right now you show up in a few thin sources; the fix is richer, more authoritative coverage that AI already trusts.',
+    providers:[
+      P('ChatGPT','OpenAI · GPT-5.4 mini','5','/20',25,'',[S('Source Quality',3,10),S('Data Richness',2,10),S('Mention Depth',2,10)]),
+      P('Perplexity','Real-time answers','3','/20',15,'',[S('Source Quality',2,10),S('Data Richness',1,10),S('Mention Depth',1,10)]),
+      P('Gemini','Gemini 3 Flash Preview · Google','5','/20',25,'',[S('Source Quality',3,10),S('Data Richness',2,10),S('Mention Depth',2,10)])
+    ],
+    insight:'Presence quality is thin (3–5/20) — in part because AI training datasets were cut off before our business went live, leaving few indexed references. Engines lean on owned and website sources with few independent references. Structured data (schema) and authoritative third-party coverage are the levers here.'
+  },
+  geo:{
+    id:'geo',label:'GEO Visibility',icon:'bi-geo-alt',
+    eyebrow:'Local AI presence · composite /100',headline:'45',headUnit:'/100 GEO score',headPct:45,
+    what:'How visible your brand is in local, location-specific AI answers — the composite of local presence, entity data and intent coverage.',
+    plain:'At 45/100 you are an emerging local authority. Gemini leads at 56, Perplexity 43, ChatGPT trails at 36. Local Intent Coverage (31) is the clearest gap — fixable with local schema and location-qualified landing pages.',
+    providers:[
+      P('ChatGPT','OpenAI · GPT-5.4 mini','36','/100',36,'Building local presence',[S('GEO Presence',60,100),S('Entity Localisation',49,100),S('Conversion Readiness',36,100),S('Local Intent',31,100)]),
+      P('Perplexity','Real-time answers','43','/100',43,'Emerging local authority',[S('GEO Presence',60,100),S('Entity Localisation',49,100),S('Conversion Readiness',36,100),S('Local Intent',31,100)]),
+      P('Gemini','Gemini 3 Flash Preview · Google','56','/100',56,'Lead platform — GEO',[S('GEO Presence',60,100),S('Entity Localisation',49,100),S('Conversion Readiness',36,100),S('Local Intent',31,100)])
+    ],
+    barsRaw:[{label:'GEO Presence',disp:'60/100',pct:60},{label:'Entity Localisation',disp:'49/100',pct:49},{label:'Conversion Readiness',disp:'36/100',pct:36},{label:'Local Intent Coverage',disp:'31/100',pct:31}],
+    insight:'Gemini leads at 56. GEO Presence (60) is the foundation. Local Intent Coverage (31) is the action item — local schema and location-qualified content move this fastest.'
+  },
+  analysis:{
+    id:'analysis',label:'Analysis Summary',icon:'bi-clipboard-data',
+    eyebrow:'Synthesis · strengths, gaps & trajectory',headline:'↗',headUnit:'positive growth · all 3 engines',headPct:85,
+    what:'The qualitative read across all three engines — what they consistently praise, where the gaps are, and which way the market is heading.',
+    plain:'Strip away the scores and this is the story AI tells about you: a specialist, first-mover AEO consultancy in a market that is about to grow fast. The work now is turning that specialist reputation into proof.',
+    providers:[],rail:[72,64,100],
+    chips:{
+      strengths:[
+        {engine:'ChatGPT',items:['Specialised AEO focus','Technology-sector alignment','Australia-based market presence']},
+        {engine:'Perplexity',items:['Focused AEO expertise','Technology-aligned offering','Australia market relevance']},
+        {engine:'Gemini',items:['Specialised AEO expertise','First-mover in Australia','Focus on AI-driven visibility']}
+      ],
+      gaps:[
+        {engine:'ChatGPT',items:['Broaden service differentiation','Stronger authority signals','Expand demand-gen channels']},
+        {engine:'Perplexity',items:['Stronger brand differentiation','Proof of results &amp; credibility','Broader educational content']},
+        {engine:'Gemini',items:['Global market expansion','Integrate with AI marketing stacks','Broader educational content']}
+      ]
+    },
+    steps:{title:'Market trajectory · where the journey leads',current:0,items:[{label:'Niche Innovator',sub:'Where we are now'},{label:'Challenger',sub:'Build authority &amp; proof'},{label:'Category Authority',sub:'Cited by default'}]},
+    insight:'All three engines independently call the trajectory positive — Gemini flags the steepest acceleration, expecting demand for AEO services to surge as AI assistants gain market share. The strengths agree (specialist AEO focus, tech alignment, Australian first-mover) and so do the gaps (differentiation, proof of results, broader educational content). Those gaps are the roadmap.'
+  },
+  narrative:{
+    id:'narrative',label:'Narrative Themes',icon:'bi-chat-square-text',
+    eyebrow:'Contextual analysis · how AI frames us',headline:'8',headUnit:'recurring themes',headPct:80,
+    what:'The themes each engine reaches for when it describes the brand in context — the language AI puts in customers\' minds.',
+    plain:'This is the sentence AI writes about you when no one is steering it. Across all three engines it lands in the same place: AEO expertise and helping brands win the shift to AI-driven search.',
+    providers:[],rail:[40,40,80],
+    themes:[
+      {engine:'ChatGPT',items:['AI-driven search visibility &amp; AEO strategy expertise','Helping brands adapt to evolving answer engines']},
+      {engine:'Perplexity',items:['AI-driven search visibility','Answer Engine Optimisation expertise']},
+      {engine:'Gemini',items:['Pioneering AEO strategies in the Australian tech landscape','Navigating the shift from SEO to AI answer engines','Empowering global brands in generative AI search','Leading the move to conversational search &amp; discovery']}
+    ],
+    insight:'The themes are remarkably consistent: every engine frames the brand around AEO expertise and the SEO-to-AI transition. Gemini paints the richest picture — adding Australian first-mover, global ambition and conversational-search leadership. Consistency across engines is a sign the core message is landing; the next step is attaching proof to it.'
+  },
+  sources:{
+    id:'sources',label:'Source Analysis',icon:'bi-diagram-3',
+    eyebrow:'Evidence base · where the scores come from',headline:'1/3',headUnit:'engines with direct brand data',headPct:33,
+    what:'Which real-world sources each engine drew on to score the brand — and whether that evidence is brand-specific or market-level.',
+    plain:'Scores are only as good as their sources. Only Gemini found reliable, brand-specific evidence; ChatGPT and Perplexity scored you against industry-wide AI-trust reports, not your own track record. More indexed, brand-specific sources lift every score above.',
+    providers:[],rail:[48,48,66],
+    heatmap:{
+      title:'Source reliability by engine · 0–100, higher = stronger evidence',
+      cols:['ChatGPT','Perplexity','Gemini'],
+      reliable:['No','No','Yes'],
+      rows:[
+        {label:'Company website',sub:'Owned',vals:['owned',null,null]},
+        {label:'EY Global AI Sentiment Study',sub:'Market report',vals:[44,null,null]},
+        {label:'KPMG Trust in AI 2025',sub:'Market report',vals:[41,44,null]},
+        {label:'Booking.com Global AI Sentiment',sub:'Market report',vals:[58,null,null]},
+        {label:'Microsoft Community / Haystack',sub:'Forum',vals:[null,52,null]},
+        {label:'Professional networking platforms',sub:'Profiles',vals:[null,null,75]},
+        {label:'B2B database / tech directories',sub:'Directory',vals:[null,null,70]},
+        {label:'Social media',sub:'Public',vals:[null,null,60]},
+        {label:'Digital marketing forums',sub:'Community',vals:[null,null,60]},
+        {label:'Search engine results',sub:'Discoverability',vals:[50,null,null]},
+        {label:'Third-party review platforms',sub:'Reviews',vals:[45,null,null]}
+      ]
+    },
+    insight:'Gemini is the only engine working from reliable, brand-specific evidence (networking profiles 75, directories 70) — which is exactly why it scores the brand highest. ChatGPT and Perplexity fall back on market-level AI-trust studies (EY, KPMG, Booking.com), so their scores reflect Australian sentiment toward AI generally, not the brand. Closing this gap means seeding more indexed, brand-specific sources the engines can cite.'
+  },
+  performance:{
+    id:'performance',label:'Site Performance',icon:'bi-speedometer',
+    eyebrow:'Core Web Vitals · live tests',headline:'98',headUnit:'/100 PageSpeed',headPct:98,
+    what:'How fast and stable the site renders — the technical floor an engine needs before it will crawl and cite you.',
+    plain:'Before AI will quote you, your site has to load fast and not jump around while it loads. Good news — it is genuinely quick. Only one small technical cleanup is flagged.',
+    providers:[],rail:[98,92,80],
+    stats:[T('LCP','0.69s','good','Excellent'),T('FCP','0.69s','good','Excellent'),T('CLS','0.068','warn','Just over 0.05'),T('TBT','0.18s','warn','Near 0.2s limit'),T('TTFB','0.087s','good','Cloudflare edge'),T('Speed Index','0.71s','good','Excellent'),T('Page weight','420 KB','good','Very lean'),T('Requests','18','good','Very low')],
+    rows:{title:'Cross-tool results · 20 Jun 2026',items:[R('WebPageTest','Singapore node','Not Bad','warn'),R('GTmetrix','Seattle node','A · 100%','good'),R('PageSpeed Desktop','Chrome','98 / 100','good'),R('PageSpeed Mobile','slow 4G','92 / 100','good'),R('Total load','WebPageTest','1.19s','good'),R('Render-block','requests','3','warn')]},
+    insight:'The site is genuinely fast — 420 KB, 18 requests, LCP 0.69s. The one issue consistent across every tool is 3 render-blocking requests (fonts / CSS / a third-party script), and CLS 0.068 sits just above best practice. Self-host fonts with font-display: swap and defer non-critical assets.'
+  },
+  technical:{
+    id:'technical',label:'Technical Foundation',icon:'bi-hdd-network',
+    eyebrow:'Crawlability · Cloudflare audit',headline:'5.6',headUnit:'/10 Cloudflare health',headPct:56,
+    what:'Whether AI crawlers can reach, read and trust the site — the plumbing behind every score above.',
+    plain:'This is the plumbing: can AI crawlers actually reach and read your site? They can — every major one is getting in. The gaps are housekeeping in your settings, not dead ends.',
+    providers:[],rail:[56,33,90],
+    stats:[T('DNS config','9/10','good','SPF·DKIM·DMARC set'),T('Email security','9/10','good','Fully authenticated'),T('SSL / TLS','6/10','warn','Full, not Strict'),T('AI Crawl Control','5/10','warn','robots.txt blocks'),T('Caching','4/10','bad','33% hit rate'),T('Security headers','3/10','bad','4 missing'),T('Speed monitoring','3/10','bad','No RUM active'),T('Bot protection','0/2','bad','Fight Mode off')],
+    rows:{title:'AI crawler access · last 24h (bypassing robots.txt)',items:[R('Googlebot','Google','52','good'),R('PerplexityBot','Perplexity','16','good'),R('ChatGPT-User','OpenAI','13','good'),R('ClaudeBot','Anthropic','13','good'),R('BingBot','Microsoft','2','good'),R('GPTBot','OpenAI','1','good')]},
+    insight:'Good news: every major AI crawler — Google, Perplexity, OpenAI, Anthropic, Bing — is actively indexing the site. robots.txt currently carries blocking rules for ClaudeBot, GPTBot, and Google-Extended that they are bypassing — this means crawl access is live but the configuration is a gap to close. Cache hit rate is 33%, Bot Fight Mode is off, and 4 HTTP security headers are missing.'
   }
+};
 
-  smoothPath(p) {
-    if (!p.length) return '';
-    let d = 'M ' + p[0][0].toFixed(2) + ' ' + p[0][1].toFixed(2);
-    for (let i = 0; i < p.length - 1; i++) {
-      const p0 = p[i - 1] || p[i], p1 = p[i], p2 = p[i + 1], p3 = p[i + 2] || p2;
-      const c1x = p1[0] + (p2[0] - p0[0]) / 6, c1y = p1[1] + (p2[1] - p0[1]) / 6;
-      const c2x = p2[0] - (p3[0] - p1[0]) / 6, c2y = p2[1] - (p3[1] - p1[1]) / 6;
-      d += ' C ' + c1x.toFixed(2) + ' ' + c1y.toFixed(2) + ' ' + c2x.toFixed(2) + ' ' + c2y.toFixed(2) + ' ' + p2[0].toFixed(2) + ' ' + p2[1].toFixed(2);
-    }
-    return d;
-  }
+// ================================================================
+// CHART GEOMETRY
+// ================================================================
+var DONUT_PAL=['var(--accent)','#2f6f6a','#46807b','#5c8c88','#728f8d','#86918f','#9aa3ad','#2a2f36'];
 
-  bar(pct) {
-    const w = Math.max(2, Math.min(100, pct));
-    return 'height:100%;width:' + w + '%;background:linear-gradient(90deg,var(--accent),var(--accent2))';
-  }
-
-  sig(v) {
-    return v >= 60 ? '#2ec27e' : v >= 31 ? '#f0a830' : '#f0785a';
-  }
-
-  vbar(pct) {
-    const h = Math.max(4, Math.round((Math.max(2, Math.min(100, pct)) / 100) * 150));
-    return 'width:62%;height:' + h + 'px;background:linear-gradient(180deg,var(--accent2),var(--accent))';
-  }
-
-  sub(label, val, max, disp) {
-    return { label, disp: disp || (val + ' / ' + max), pct: Math.round((val / max) * 100) };
-  }
-
-  prov(name, tag, big, unit, pct, verdict, subs) {
-    return { name, tag, big, unit, verdict: verdict || '', pct, subs };
-  }
-
-  tile(label, value, status, note) {
-    const color = status === 'good' ? 'var(--accent2)' : status === 'warn' ? '#f0a830' : '#f0785a';
-    return { label, value, note: note || '', color };
-  }
-
-  row(label, sub, value, status) {
-    const color = status === 'good' ? 'var(--accent2)' : status === 'warn' ? '#f0a830' : '#f0785a';
-    return { label, sub: sub || '', value, color };
-  }
-
-  donutSegs(items, anim) {
-    const palette = ['var(--accent)', '#2f6f6a', '#46807b', '#5c8c88', '#728f8d', '#86918f', '#9aa3ad', '#2a2f36'];
-    const f = anim ? 1 : 0;
-    let cum = 0;
-    return items.map((it, i) => {
-      const len = it.value * f;
-      const seg = { label: it.label, value: it.value, color: palette[i % palette.length], dasharray: len.toFixed(2) + ' ' + (100 - len).toFixed(2), dashoffset: '' + (25 - cum) };
-      cum += it.value;
-      return seg;
-    });
-  }
-
-  archetypeDial() {
-    const cx = 50, cy = 50, r = 38;
-    const tiers = ['Niche', 'Innovator', 'Challenger', 'Authority', 'Leader'];
-    const cur = 1;
-    const polar = (deg, rr) => { const a = deg * Math.PI / 180; return [cx + rr * Math.cos(a), cy - rr * Math.sin(a)]; };
-    const arc = (hi, lo) => { const [sx, sy] = polar(hi, r); const [ex, ey] = polar(lo, r); return 'M ' + sx.toFixed(2) + ' ' + sy.toFixed(2) + ' A ' + r + ' ' + r + ' 0 0 1 ' + ex.toFixed(2) + ' ' + ey.toFixed(2); };
-    const segs = tiers.map((t, i) => {
-      const hi = 180 - i * 36 - 2.5, lo = 180 - (i + 1) * 36 + 2.5;
-      const color = i < cur ? '#2f6f6a' : i === cur ? 'var(--accent)' : 'rgba(255,255,255,.13)';
-      return { d: arc(hi, lo), color };
-    });
-    const ca = 180 - (cur + 0.5) * 36;
-    const [nx, ny] = polar(ca, r * 0.78);
-    const tierLabels = tiers.map((t, i) => ({ label: t, color: i === cur ? 'var(--accent2)' : 'var(--muted)', weight: i === cur ? '600' : '400' }));
-    return { segs, needle: { x: nx.toFixed(2), y: ny.toFixed(2) }, current: tiers[cur], next: tiers[cur + 1], tiers: tierLabels };
-  }
-
-  metrics() {
-    const S = (l, v, m, d) => this.sub(l, v, m, d);
-    return {
-      score: {
-        id: 'score', label: 'AEO Score', icon: 'bi-speedometer2',
-        eyebrow: 'Overall · measured live', headline: '36', headUnit: '/100 average', headPct: 36,
-        what: 'Your overall answer-engine optimisation score (0–100), scored independently by each of the three big AI engines.',
-        plain: 'Think of this as a report card for showing up in AI answers — 0 is invisible, 100 is everywhere. You sit at 36 on average: a solid footing for a young brand, with the most to gain in how often AI actually names you.',
-        providers: [
-          this.prov('ChatGPT', 'OpenAI · GPT-5.4 mini', '36', '/100', 36, 'On the right track', [S('Brand Recognition', 2, 20), S('Market Score', 6, 10), S('Presence Quality', 5, 20), S('Brand Sentiment', 22, 40), S('Share of Voice', 1, 10)]),
-          this.prov('Perplexity', 'Real-time answers', '30', '/100', 30, 'Room for growth', [S('Brand Recognition', 1, 20), S('Market Score', 6, 10), S('Presence Quality', 3, 20), S('Brand Sentiment', 18, 40), S('Share of Voice', 2, 10)]),
-          this.prov('Gemini', 'Gemini 3 Flash · Google', '41', '/100', 41, 'On the right track', [S('Brand Recognition', 2, 20), S('Market Score', 6, 10), S('Presence Quality', 5, 20), S('Brand Sentiment', 27, 40), S('Share of Voice', 1, 10)]),
-        ],
-        barsRaw: [
-          { label: 'Recognition', disp: '1.7/20', pct: 8 },
-          { label: 'Market', disp: '6/10', pct: 60 },
-          { label: 'Presence', disp: '4.3/20', pct: 22 },
-          { label: 'Sentiment', disp: '22/40', pct: 56 },
-          { label: 'Share of Voice', disp: '1.3/10', pct: 13 },
-        ],
-        insight: 'Across all three engines the brand reads as an Innovator in a niche, first-mover position. Gemini scores highest (41), Perplexity trails (30). The bar chart makes the pattern obvious: Sentiment and Market are healthy, while Recognition and Share of Voice are the two pillars dragging the total down — largely because AI training datasets were cut off before our business went live, so the models have not learned us yet.',
-      },
-      recognition: {
-        id: 'recognition', label: 'Brand Recognition', icon: 'bi-eye',
-        eyebrow: 'Pillar · weight /20', headline: '10', headUnit: '/100 recognition', headPct: 10, timeline: true,
-        what: 'How visible and recognisable your brand is across AI training data and live sources.',
-        plain: 'Put simply: when someone asks AI about your field, does it already know your brand exists? Right now it mostly does not — and the main reason is timing: the AI training datasets were cut off before our business went live, so the models simply have not learned us yet. Recognition is the lowest score, and it is the first thing worth building.',
-        providers: [
-          this.prov('ChatGPT', 'OpenAI · GPT-5.4 mini', '12', '/100', 12, '', [S('Confidence Level', 84, 100, '84%'), S('Mention Depth', 2, 10), S('Source Quality', 3, 10), S('Data Richness', 2, 10)]),
-          this.prov('Perplexity', 'Real-time answers', '5', '/100', 5, '', [S('Confidence Level', 60, 100, '60%'), S('Mention Depth', 1, 10), S('Source Quality', 2, 10), S('Data Richness', 1, 10)]),
-          this.prov('Gemini', 'Gemini 3 Flash · Google', '12', '/100', 12, '', [S('Confidence Level', 35, 100, '35%'), S('Mention Depth', 2, 10), S('Source Quality', 3, 10), S('Data Richness', 2, 10)]),
-        ],
-        insight: 'Recognition is the weakest pillar (~10/100) — largely because AI training datasets were cut off before our business went live, so the models have not yet learned the brand. Every engine tags it as a Niche Innovator with thin data richness and shallow mention depth. The fastest lever is more indexed, structured, third-party mentions of the brand name.',
-      },
-      market: {
-        id: 'market', label: 'Share of Voice', icon: 'bi-megaphone',
-        eyebrow: 'Market competition · /10', headline: '11.7%', headUnit: 'avg share', headPct: 11.7, timeline: true,
-        what: 'Your presence in industry conversations versus competitors — your share of voice and mention volume.',
-        plain: 'Out of every 100 times AI mentions a consultancy like yours, how many of those are you? Today it is roughly 8 to 18 — the rest go to competitors. The whole game is growing your slice of that pie.',
-        providers: [
-          this.prov('ChatGPT', 'OpenAI · GPT-5.4 mini', '8', '%', 8, '', [S('Market Score', 6, 10), S('Brand Mentions', 42, 1500, '42'), S('Comparison Mentions', 27, 3500, '27')]),
-          this.prov('Perplexity', 'Real-time answers', '18.5', '%', 18, '', [S('Market Score', 6, 10), S('Brand Mentions', 142, 1500, '142'), S('Comparison Mentions', 89, 3500, '89')]),
-          this.prov('Gemini', 'Gemini 3 Flash · Google', '8.5', '%', 8, '', [S('Market Score', 6, 10), S('Brand Mentions', 1240, 1500, '1,240'), S('Comparison Mentions', 3150, 3500, '3,150')]),
-        ],
-        donutRaw: [
-          { label: 'AISearch Global', value: 8 }, { label: 'WebFX', value: 18 }, { label: 'Ignite Visibility', value: 15 }, { label: 'NP Digital', value: 14 }, { label: 'Delante', value: 10 }, { label: 'Avenue Z', value: 8 }, { label: 'Searchmetrics', value: 7 }, { label: 'Other', value: 20 },
-        ],
-        insight: 'Share of voice ranges 8–18.5%. The donut shows who AI names instead of you — WebFX, Ignite Visibility and NP Digital lead the category, helped by years of indexed coverage that predate us; AI training datasets were cut off before our business went live. The upside: Gemini already surfaces 1,240 brand mentions, the raw base to convert into cited answers.',
-      },
-      sentiment: {
-        id: 'sentiment', label: 'Brand Sentiment', icon: 'bi-emoji-smile',
-        eyebrow: 'Pillar · weight /40', headline: '56', headUnit: '/100 sentiment', headPct: 56,
-        what: 'The tone and perception of AI answers that mention your brand — general and in context.',
-        plain: 'When AI does talk about you, is it positive? Yes — this is your strongest area. The caution baked into the numbers is about how Australians feel toward AI in general, not criticism of your brand.',
-        providers: [
-          this.prov('ChatGPT', 'OpenAI · GPT-5.4 mini', '54', '/100', 54, '', [S('General', 52, 100), S('Contextual', 55, 100), S('Source Polarization', 48, 100)]),
-          this.prov('Perplexity', 'Real-time answers', '45', '/100', 45, '', [S('General', 42, 100), S('Contextual', 38, 100), S('Source Polarization', 40, 100)]),
-          this.prov('Gemini', 'Gemini 3 Flash · Google', '68', '/100', 68, '', [S('General', 72, 100), S('Contextual', 65, 100), S('Source Polarization', 67, 100)]),
-        ],
-        insight: 'Sentiment is the brand\u2019s strongest pillar — Gemini reads it at 68/100. The drag comes from low Australian AI trust (EY, KPMG studies), not brand criticism. Published case studies and proof of results lift this the fastest.',
-      },
-      presence: {
-        id: 'presence', label: 'Presence Quality', icon: 'bi-layers',
-        eyebrow: 'Pillar · weight /20', headline: '4.3', headUnit: '/20 presence', headPct: 21.5,
-        what: 'The depth and quality of the sources where your brand actually appears in AI answers.',
-        plain: 'It is not just being mentioned — it is being mentioned in good, trusted places. Right now you show up in a few thin sources; the fix is richer, more authoritative coverage that AI already trusts.',
-        providers: [
-          this.prov('ChatGPT', 'OpenAI · GPT-5.4 mini', '5', '/20', 25, '', [S('Source Quality', 3, 10), S('Data Richness', 2, 10), S('Mention Depth', 2, 10)]),
-          this.prov('Perplexity', 'Real-time answers', '3', '/20', 15, '', [S('Source Quality', 2, 10), S('Data Richness', 1, 10), S('Mention Depth', 1, 10)]),
-          this.prov('Gemini', 'Gemini 3 Flash · Google', '5', '/20', 25, '', [S('Source Quality', 3, 10), S('Data Richness', 2, 10), S('Mention Depth', 2, 10)]),
-        ],
-        insight: 'Presence quality is thin (3–5/20) — in part because AI training datasets were cut off before our business went live, leaving few indexed references. Engines lean on owned and website sources with few independent references. Structured data (schema) and authoritative third-party coverage are the levers here.',
-      },
-      geo: {
-        id: 'geo', label: 'GEO Visibility', icon: 'bi-geo-alt',
-        eyebrow: 'Local AI presence · composite /100', headline: '45', headUnit: '/100 GEO score', headPct: 45,
-        what: 'How visible your brand is in local, location-specific AI answers — the composite of local presence, entity data and intent coverage.',
-        plain: 'At 45/100 you are an emerging local authority. Gemini leads at 56, Perplexity 43, ChatGPT trails at 36. Local Intent Coverage (31) is the clearest gap — fixable with local schema and location-qualified landing pages.',
-        providers: [
-          this.prov('ChatGPT', 'OpenAI · GPT-5.4 mini', '36', '/100', 36, 'Building local presence', [S('GEO Presence', 60, 100), S('Entity Localisation', 49, 100), S('Conversion Readiness', 36, 100), S('Local Intent', 31, 100)]),
-          this.prov('Perplexity', 'Real-time answers', '43', '/100', 43, 'Emerging local authority', [S('GEO Presence', 60, 100), S('Entity Localisation', 49, 100), S('Conversion Readiness', 36, 100), S('Local Intent', 31, 100)]),
-          this.prov('Gemini', 'Gemini 3 Flash · Google', '56', '/100', 56, 'Lead platform — GEO', [S('GEO Presence', 60, 100), S('Entity Localisation', 49, 100), S('Conversion Readiness', 36, 100), S('Local Intent', 31, 100)]),
-        ],
-        barsRaw: [
-          { label: 'GEO Presence', disp: '60/100', pct: 60 },
-          { label: 'Entity Localisation', disp: '49/100', pct: 49 },
-          { label: 'Conversion Readiness', disp: '36/100', pct: 36 },
-          { label: 'Local Intent Coverage', disp: '31/100', pct: 31 },
-        ],
-        insight: 'Gemini leads at 56. GEO Presence (60) is the foundation. Local Intent Coverage (31) is the action item — local schema and location-qualified content move this fastest.',
-      },
-      performance: {
-        id: 'performance', label: 'Site Performance', icon: 'bi-speedometer',
-        eyebrow: 'Core Web Vitals · live tests', headline: '98', headUnit: '/100 PageSpeed', headPct: 98,
-        what: 'How fast and stable the site renders — the technical floor an engine needs before it will crawl and cite you.',
-        plain: 'Before AI will quote you, your site has to load fast and not jump around while it loads. Good news — it is genuinely quick. Only one small technical cleanup is flagged.',
-        providers: [], rail: [98, 92, 80],
-        stats: [
-          this.tile('LCP', '0.69s', 'good', 'Excellent'), this.tile('FCP', '0.69s', 'good', 'Excellent'), this.tile('CLS', '0.068', 'warn', 'Just over 0.05'), this.tile('TBT', '0.18s', 'warn', 'Near 0.2s limit'),
-          this.tile('TTFB', '0.087s', 'good', 'Cloudflare edge'), this.tile('Speed Index', '0.71s', 'good', 'Excellent'), this.tile('Page weight', '420 KB', 'good', 'Very lean'), this.tile('Requests', '18', 'good', 'Very low'),
-        ],
-        rows: { title: 'Cross-tool results · 21 Jun 2026', items: [this.row('WebPageTest', 'Singapore node', 'Not Bad', 'warn'), this.row('GTmetrix', 'Seattle node', 'A · 100%', 'good'), this.row('PageSpeed Desktop', 'Chrome', '98 / 100', 'good'), this.row('PageSpeed Mobile', 'slow 4G', '92 / 100', 'good'), this.row('Total load', 'WebPageTest', '1.19s', 'good'), this.row('Render-block', 'requests', '3', 'warn')] },
-        insight: 'The site is genuinely fast — 420 KB, 18 requests, LCP 0.69s. The one issue consistent across every tool is 3 render-blocking requests (fonts / CSS / a third-party script), and CLS 0.068 sits just above best practice. Self-host fonts with font-display: swap and defer non-critical assets.',
-      },
-      technical: {
-        id: 'technical', label: 'Technical Foundation', icon: 'bi-hdd-network',
-        eyebrow: 'Crawlability · Cloudflare audit', headline: '5.6', headUnit: '/10 Cloudflare health', headPct: 56,
-        what: 'Whether AI crawlers can reach, read and trust the site — the plumbing behind every score above.',
-        plain: 'This is the plumbing: can AI crawlers actually reach and read your site? They can — every major one is getting in. The gaps are housekeeping in your settings, not dead ends.',
-        providers: [], rail: [56, 33, 90],
-        stats: [
-          this.tile('DNS config', '9/10', 'good', 'SPF·DKIM·DMARC set'), this.tile('Email security', '9/10', 'good', 'Fully authenticated'), this.tile('SSL / TLS', '6/10', 'warn', 'Full, not Strict'), this.tile('AI Crawl Control', '5/10', 'warn', 'robots.txt blocks'),
-          this.tile('Caching', '4/10', 'bad', '33% hit rate'), this.tile('Security headers', '3/10', 'bad', '4 missing'), this.tile('Speed monitoring', '3/10', 'bad', 'No RUM active'), this.tile('Bot protection', '0/2', 'bad', 'Fight Mode off'),
-        ],
-        rows: { title: 'AI crawler access · last 24h (all allowed)', items: [this.row('Googlebot', 'Google', '52', 'good'), this.row('PerplexityBot', 'Perplexity', '16', 'good'), this.row('ChatGPT-User', 'OpenAI', '13', 'good'), this.row('ClaudeBot', 'Anthropic', '13', 'good'), this.row('BingBot', 'Microsoft', '2', 'good'), this.row('GPTBot', 'OpenAI', '1', 'good')] },
-        insight: 'Good news: every major AI crawler — Google, Perplexity, OpenAI, Anthropic, Bing — is getting through and reading your sitemap. The gaps are infrastructure: robots.txt still hard-blocks ClaudeBot, GPTBot and Google-Extended, cache hit rate is only 33%, Bot Fight Mode is off, and 4 HTTP security headers are missing.',
-      },
-    };
-  }
-
-  applyVars() {
-    const el = this.rootRef.current;
-    if (!el) return;
-    const map = { Teal: ['#0abab5', '#81d8d0'], Amber: ['#f0a830', '#f6c97a'], Violet: ['#9a7bff', '#c0abff'], Coral: ['#f0785a', '#f7a48f'] };
-    const [a, b] = map[this.props.accent] || map.Teal;
-    el.style.setProperty('--accent', a);
-    el.style.setProperty('--accent2', b);
-    el.style.setProperty('--glow', this.props.glow !== false ? '0 12px 36px rgba(0,0,0,.5)' : '0 6px 18px rgba(0,0,0,.38)');
-    el.style.setProperty('--wave-play', this.props.liveData === false ? 'paused' : 'running');
-  }
-
-  componentDidMount() { this.applyVars(); setTimeout(() => this.setState({ anim: true }), 70); }
-  componentDidUpdate() { this.applyVars(); }
-
-  renderVals() {
-    const metrics = this.metrics();
-    const order = ['score', 'recognition', 'market', 'sentiment', 'presence', 'geo', 'performance', 'technical'];
-    const selId = metrics[this.state.selected] ? this.state.selected : 'score';
-    const sel = metrics[selId];
-    const anim = this.state.anim ? 1 : 0;
-    sel.isProviders = sel.providers.length > 0;
-    sel.isStats = !sel.isProviders;
-    sel.hasRows = !!sel.rows;
-    sel.hasBars = !!sel.barsRaw;
-    sel.hasTimeline = !!sel.timeline;
-    sel.hasDonut = !!sel.donutRaw;
-    sel.headDash = (sel.headPct * anim).toFixed(2) + ',100';
-    sel.providers.forEach((p) => {
-      p.dash = (p.pct * anim).toFixed(2) + ',100';
-      p.ringColor = this.sig(p.pct);
-      p.subs = p.subs.map((s) => ({ label: s.label, disp: s.disp, barStyle: 'height:100%;width:' + Math.max(0, Math.min(100, s.pct * anim)) + '%;background:' + this.sig(s.pct) + ';transition:width .8s cubic-bezier(.4,0,.2,1)' }));
-    });
-    if (sel.hasBars) sel.bars = sel.barsRaw.map((b) => { const h = Math.max(4, Math.round((Math.max(2, Math.min(100, b.pct * anim)) / 100) * 150)); return { label: b.label, disp: b.disp, barStyle: 'width:62%;height:' + h + 'px;background:' + this.sig(b.pct) + ';transition:height .8s cubic-bezier(.4,0,.2,1)' }; });
-    if (sel.hasDonut) sel.donut = this.donutSegs(sel.donutRaw, anim);
-
-    const base = 'border:1px solid var(--border);background:var(--bg2);padding:13px 14px;display:flex;flex-direction:column;gap:10px;cursor:pointer;text-align:left;width:100%;color:var(--text);transition:border-color .15s,background .15s';
-    const metricList = order.map((id) => {
-      const m = metrics[id];
-      const active = id === selId;
-      return {
-        id, label: m.label, icon: m.icon, head: m.headline,
-        scoreColor: this.sig(parseFloat(m.headline)),
-        cardStyle: base + (active ? ';border-color:var(--accent);background:rgba(10,186,181,.08)' : ''),
-        iconColor: active ? 'var(--accent)' : 'var(--muted)',
-        mini: (m.providers.length ? m.providers.map((p) => p.pct) : (m.rail || [])).map((pct) => ({ barStyle: 'height:100%;width:' + Math.max(3, Math.min(100, pct)) + '%;background:' + (active ? 'var(--accent)' : 'var(--muted)') })),
-      };
-    });
-
-    const engines = [{ name: 'ChatGPT', score: 36 }, { name: 'Perplexity', score: 30 }, { name: 'Gemini', score: 41 }].map((e) => ({ ...e, barStyle: this.bar(e.score) }));
-
-    const wp = this.buildWave();
-    const wavePathD = this.smoothPath(wp);
-    const waveAreaD = wavePathD + ' L 200 100 L 0 100 Z';
-    const dial = this.archetypeDial();
-
-    const verifyTools = [
-      { label: 'HubSpot AEO Grader', icon: 'bi-clipboard2-data', host: 'hubspot.com', url: 'https://hubspot.com/aeo-grader' },
-      { label: 'PageSpeed Insights', icon: 'bi-speedometer2', host: 'pagespeed.web.dev', url: 'https://pagespeed.web.dev' },
-      { label: 'AEO Calculator', icon: 'bi-calculator', host: 'aisearch.global', url: 'https://aisearch.global/aeo-calculator' },
-    ];
-
-    const transparency = 'All data presented here is as on 22nd June 2026. Nothing is estimated — where a tool could not measure something, it is marked, not guessed. We invite our readers to run their own independent verifications and contact us at hello@aisearch.global with any discrepancies found.';
-
-    return {
-      rootRef: this.rootRef,
-      onPick: (e) => this.setState({ selected: e.currentTarget.dataset.id }),
-      metricList, sel, engines, wavePathD, waveAreaD, dial, verifyTools, transparency,
-    };
-  }
+function donutSegs(items){
+  var cum=0;
+  return items.map(function(it,i){
+    var seg={label:it.label,value:it.value,color:DONUT_PAL[i%DONUT_PAL.length],dashoffset:''+(25-cum),_target:it.value.toFixed(2)+' '+(100-it.value).toFixed(2)};
+    cum+=it.value;
+    return seg;
+  });
 }
+
+function radarGeo(raw){
+  var cx=50,cy=50,R=37,n=raw.axes.length;
+  function ang(i){return(-90+i*360/n)*Math.PI/180}
+  function pt(i,r){return[cx+r*Math.cos(ang(i)),cy+r*Math.sin(ang(i))]}
+  var rings=[0.25,0.5,0.75,1].map(function(f){return{points:raw.axes.map(function(_,i){return pt(i,R*f).map(function(v){return v.toFixed(2)}).join(',')}).join(' ')}});
+  var axes=raw.axes.map(function(label,i){
+    var e=pt(i,R),l=pt(i,R+8),a=ang(i);
+    var anchor=Math.abs(Math.cos(a))<0.3?'middle':(Math.cos(a)>0?'start':'end');
+    return{ex:e[0].toFixed(2),ey:e[1].toFixed(2),lx:l[0].toFixed(2),ly:(l[1]+1).toFixed(2),label:label,anchor:anchor};
+  });
+  var series=raw.series.map(function(s){
+    var pts=s.vals.map(function(v,i){return pt(i,R*(Math.max(0,Math.min(100,v))/100))});
+    return{engine:s.engine,color:s.color,points:pts.map(function(p){return p.map(function(v){return v.toFixed(2)}).join(',')}).join(' ')};
+  });
+  return{rings:rings,axes:axes,series:series,legend:raw.series.map(function(s){return{engine:s.engine,color:s.color}}),title:raw.title};
+}
+
+function archetypeDial(){
+  var cx=50,cy=50,r=38,cur=1;
+  var tiers=['Niche','Innovator','Challenger','Authority','Leader'];
+  function polar(deg,rr){var a=deg*Math.PI/180;return[cx+rr*Math.cos(a),cy-rr*Math.sin(a)]}
+  function arc(hi,lo){var s=polar(hi,r),e=polar(lo,r);return'M '+s[0].toFixed(2)+' '+s[1].toFixed(2)+' A '+r+' '+r+' 0 0 1 '+e[0].toFixed(2)+' '+e[1].toFixed(2)}
+  var segs=tiers.map(function(t,i){
+    var color=i<cur?'#2f6f6a':i===cur?'var(--accent)':'rgba(255,255,255,.13)';
+    return{d:arc(180-i*36-2.5,180-(i+1)*36+2.5),color:color};
+  });
+  var needle=polar(180-(cur+0.5)*36,r*0.78);
+  return{segs:segs,needle:{x:needle[0].toFixed(2),y:needle[1].toFixed(2)},current:tiers[cur],next:tiers[cur+1],tiers:tiers.map(function(t,i){return{label:t,color:i===cur?'var(--accent2)':'var(--muted)',weight:i===cur?'600':'400'}})};
+}
+
+// Pre-compute wave SVG path
+(function(){
+  var pts=[];
+  for(var x=0;x<=200;x+=2.5){var t=(x/100)*Math.PI*2;pts.push([x,100-(50+22*Math.sin(t)+10*Math.sin(t*2+0.8)+6*Math.sin(t*3+1.7))])}
+  var d='M '+pts[0][0].toFixed(2)+' '+pts[0][1].toFixed(2);
+  for(var i=0;i<pts.length-1;i++){
+    var p0=pts[i-1]||pts[i],p1=pts[i],p2=pts[i+1],p3=pts[i+2]||p2;
+    var c1x=p1[0]+(p2[0]-p0[0])/6,c1y=p1[1]+(p2[1]-p0[1])/6,c2x=p2[0]-(p3[0]-p1[0])/6,c2y=p2[1]-(p3[1]-p1[1])/6;
+    d+=' C '+c1x.toFixed(2)+' '+c1y.toFixed(2)+' '+c2x.toFixed(2)+' '+c2y.toFixed(2)+' '+p2[0].toFixed(2)+' '+p2[1].toFixed(2);
+  }
+  window.WAVE_LINE=d;
+  window.WAVE_AREA=d+' L 200 100 L 0 100 Z';
+})();
+
+// ================================================================
+// LEFT RAIL
+// ================================================================
+function buildLeftRail(selId){
+  var dial=archetypeDial();
+  var engines=[{name:'ChatGPT',score:36},{name:'Perplexity',score:30},{name:'Gemini',score:41}];
+  var verifyTools=[
+    {label:'HubSpot AEO Grader',icon:'bi-clipboard2-data',host:'hubspot.com',url:'https://www.hubspot.com/aeo-grader'},
+    {label:'PageSpeed Insights',icon:'bi-speedometer2',host:'pagespeed.web.dev',url:'https://pagespeed.web.dev'},
+    {label:'AEO Calculator',icon:'bi-calculator',host:'aisearch.global',url:'https://aisearch.global/aeo-score-calculator'}
+  ];
+  var baseCard='border:1px solid var(--border);background:var(--bg2);padding:13px 14px;display:flex;flex-direction:column;gap:10px;width:100%;color:var(--text);text-align:left';
+
+  var h='<p style="margin:0 2px 2px;font-family:\'Space Grotesk\',sans-serif;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)">Metrics · click to expand</p>';
+
+  METRIC_ORDER.forEach(function(id){
+    var m=METRICS[id],active=id===selId;
+    var scoreNum=parseFloat(m.headline),scoreColor=isNaN(scoreNum)?'var(--accent2)':sig(scoreNum);
+    var iconColor=active?'var(--accent)':'var(--muted)';
+    var extra=active?';border-color:var(--accent);background:rgba(10,186,181,.08)':'';
+    var miniVals=m.providers.length?m.providers.map(function(p){return p.pct}):(m.rail||[]);
+    h+='<button class="mc" data-metric="'+id+'" style="'+baseCard+extra+'">'+
+      '<div style="display:flex;align-items:center;gap:10px">'+
+        '<i class="bi '+m.icon+'" style="font-size:16px;color:'+iconColor+'"></i>'+
+        '<span style="flex:1;font-family:\'Space Grotesk\',sans-serif;font-weight:500;font-size:13.5px">'+esc(m.label)+'</span>'+
+        '<div style="display:flex;align-items:center;gap:7px">'+
+          '<span style="width:7px;height:7px;border-radius:50%;background:'+scoreColor+';flex-shrink:0"></span>'+
+          '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:14px;color:'+scoreColor+'">'+esc(m.headline)+'</span>'+
+        '</div>'+
+      '</div>'+
+      '<div style="display:flex;gap:5px">'+
+        miniVals.map(function(pct){return'<div style="flex:1;height:4px;background:var(--surface)"><div style="height:100%;width:'+Math.max(3,Math.min(100,pct))+'%;background:'+(active?'var(--accent)':'var(--muted)')+'"></div></div>'}).join('')+
+      '</div>'+
+    '</button>';
+  });
+
+  // Brand archetype dial
+  h+='<div style="border:1px solid var(--border);background:var(--bg2);padding:14px;display:flex;flex-direction:column;gap:8px">'+
+    '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)">Brand archetype</span>'+
+    '<svg viewBox="0 0 100 60" width="100%" height="86" style="display:block">'+
+      dial.segs.map(function(sg){return'<path d="'+sg.d+'" fill="none" stroke="'+sg.color+'" stroke-width="7" stroke-linecap="round"></path>'}).join('')+
+      '<line x1="50" y1="50" x2="'+dial.needle.x+'" y2="'+dial.needle.y+'" stroke="var(--accent2)" stroke-width="1.8" stroke-linecap="round"></line>'+
+      '<circle cx="50" cy="50" r="3" fill="var(--accent2)"></circle>'+
+    '</svg>'+
+    '<div style="display:flex;align-items:baseline;justify-content:center;gap:6px"><span style="font-family:\'Space Grotesk\',sans-serif;font-size:16px;font-weight:600;color:var(--accent2)">'+esc(dial.current)+'</span><span style="font-size:11px;color:var(--muted)">· Niche market</span></div>'+
+    '<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:4px 8px;margin-top:1px">'+
+      dial.tiers.map(function(t){return'<span style="font-size:10px;color:'+t.color+';font-weight:'+t.weight+'">'+esc(t.label)+'</span>'}).join('')+
+    '</div>'+
+    '<span style="text-align:center;font-size:10.5px;color:var(--muted)">Next tier: <span style="color:var(--accent2)">'+esc(dial.next)+'</span></span>'+
+  '</div>';
+
+  // Overall AEO score
+  h+='<div style="border:1px solid var(--border);background:var(--bg2);padding:13px 14px;display:flex;flex-direction:column;gap:9px">'+
+    '<span style="font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase">Overall AEO score</span>'+
+    engines.map(function(e){return'<div style="display:flex;align-items:center;gap:10px"><span style="width:74px;font-size:12.5px;color:var(--muted)">'+esc(e.name)+'</span><div style="flex:1;height:6px;background:var(--surface)"><div style="height:100%;width:'+e.score+'%;background:linear-gradient(90deg,var(--accent),var(--accent2))"></div></div><span style="width:26px;text-align:right;font-family:\'Space Grotesk\',sans-serif;font-size:14px">'+e.score+'</span></div>'}).join('')+
+  '</div>';
+
+  // Verify tools
+  h+='<div style="border:1px solid var(--border);background:var(--bg2);padding:13px 14px;display:flex;flex-direction:column;gap:9px">'+
+    '<span style="font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase"><i class="bi bi-shield-check" style="color:var(--accent);margin-right:6px"></i>Verify it yourself</span>'+
+    verifyTools.map(function(lk){return'<a href="'+esc(lk.url)+'" target="_blank" rel="noopener" class="vl" style="display:flex;align-items:center;gap:10px;border:1px solid var(--border);background:var(--surface);padding:9px 11px;color:var(--text)"><i class="bi '+lk.icon+'" style="font-size:15px;color:var(--accent2);flex-shrink:0"></i><div style="display:flex;flex-direction:column;line-height:1.2;min-width:0;flex:1"><span style="font-size:12.5px;font-weight:500">'+esc(lk.label)+'</span><span style="font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+esc(lk.host)+'</span></div><i class="bi bi-arrow-up-right" style="font-size:11px;color:var(--muted);flex-shrink:0"></i></a>'}).join('')+
+  '</div>';
+
+  return h;
+}
+
+// ================================================================
+// RIGHT PANEL
+// ================================================================
+function buildRightPanel(m){
+  var h='';
+
+  // HEADER BAND
+  h+='<div style="position:relative;overflow:hidden;padding:24px 26px;background:linear-gradient(135deg,#0a312e 0%,#0c211f 55%,#0d1413 100%);border-bottom:1px solid var(--border)">'+
+    '<svg viewBox="0 0 200 100" preserveAspectRatio="none" width="200%" height="100%" style="position:absolute;left:0;top:0;height:100%;opacity:.15;pointer-events:none;will-change:transform;animation:waveScroll 24s linear infinite">'+
+      '<defs><linearGradient id="hgrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--accent2)" stop-opacity="0.7"></stop><stop offset="100%" stop-color="var(--accent)" stop-opacity="0"></stop></linearGradient></defs>'+
+      '<path d="'+window.WAVE_AREA+'" fill="url(#hgrad)"></path>'+
+      '<path d="'+window.WAVE_LINE+'" fill="none" stroke="var(--accent2)" stroke-width="1" opacity="0.55" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>'+
+    '</svg>'+
+    '<div style="position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:30px">'+
+      '<div style="display:flex;flex-direction:column;gap:9px;max-width:640px">'+
+        '<p style="margin:0;font-family:\'Space Grotesk\',sans-serif;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent2)">'+esc(m.eyebrow)+'</p>'+
+        '<h2 style="margin:0;font-family:\'Space Grotesk\',sans-serif;font-size:33px;font-weight:600;letter-spacing:-.01em">'+esc(m.label)+'</h2>'+
+        '<p style="margin:0;font-size:14px;color:rgba(227,232,238,.78);line-height:1.55">'+esc(m.what)+'</p>'+
+      '</div>'+
+      '<div style="position:relative;width:118px;height:118px;flex-shrink:0">'+
+        '<svg viewBox="0 0 36 36" width="118" height="118">'+
+          '<circle cx="18" cy="18" r="15.915" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="2.4"></circle>'+
+          '<circle cx="18" cy="18" r="15.915" fill="none" stroke="var(--accent2)" stroke-width="2.4" stroke-dasharray="0,100" data-dash="'+m.headPct.toFixed(2)+',100" stroke-linecap="round" transform="rotate(-90 18 18)" style="transition:stroke-dasharray .9s cubic-bezier(.4,0,.2,1)"></circle>'+
+        '</svg>'+
+        '<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px">'+
+          '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:28px;font-weight:600;line-height:1">'+esc(m.headline)+'</span>'+
+          '<span style="font-size:9.5px;color:var(--muted);text-align:center;max-width:90px">'+esc(m.headUnit)+'</span>'+
+        '</div>'+
+      '</div>'+
+    '</div>'+
+  '</div>';
+
+  // PLAIN ENGLISH
+  h+='<div style="margin:20px 26px 0;border-left:3px solid var(--accent2);background:rgba(129,216,208,.05);padding:15px 18px;display:flex;flex-direction:column;gap:5px">'+
+    '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2)"><i class="bi bi-chat-square-quote" style="margin-right:7px"></i>In plain English</span>'+
+    '<p style="margin:0;font-size:15px;line-height:1.6;color:var(--text)">'+esc(m.plain)+'</p>'+
+  '</div>';
+
+  // PROVIDER RINGS
+  if(m.providers&&m.providers.length){
+    h+='<div style="padding:20px 26px 6px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px">';
+    m.providers.forEach(function(p){
+      var dash=p.pct.toFixed(2)+',100',ringColor=sig(p.pct);
+      h+='<div style="border:1px solid var(--border);background:var(--surface);padding:16px;display:flex;flex-direction:column;gap:13px">'+
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px">'+
+          '<div style="display:flex;flex-direction:column;gap:2px;min-width:0">'+
+            '<span style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:16px">'+esc(p.name)+'</span>'+
+            '<span style="font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+esc(p.tag)+'</span>'+
+          '</div>'+
+          '<div style="position:relative;width:66px;height:66px;flex-shrink:0">'+
+            '<svg viewBox="0 0 36 36" width="66" height="66">'+
+              '<circle cx="18" cy="18" r="15.915" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="3"></circle>'+
+              '<circle cx="18" cy="18" r="15.915" fill="none" stroke="'+ringColor+'" stroke-width="3" stroke-dasharray="0,100" data-dash="'+dash+'" stroke-linecap="round" transform="rotate(-90 18 18)" style="transition:stroke-dasharray .9s cubic-bezier(.4,0,.2,1)"></circle>'+
+            '</svg>'+
+            '<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><span style="font-family:\'Space Grotesk\',sans-serif;font-size:17px;font-weight:600">'+esc(p.big)+'</span></div>'+
+          '</div>'+
+        '</div>'+
+        (p.verdict?'<span style="align-self:flex-start;border:1px solid rgba(10,186,181,.35);color:var(--accent2);font-size:10.5px;padding:.2rem .55rem">'+esc(p.verdict)+'</span>':'')+
+        '<div style="height:1px;background:var(--border)"></div>'+
+        '<div style="display:flex;flex-direction:column;gap:10px">'+
+          p.subs.map(function(s){
+            return'<div style="display:flex;flex-direction:column;gap:4px">'+
+              '<div style="display:flex;align-items:center;justify-content:space-between;font-size:12px"><span style="color:var(--muted)">'+esc(s.label)+'</span><span style="font-family:\'Space Grotesk\',sans-serif;color:var(--text)">'+esc(s.disp)+'</span></div>'+
+              '<div style="height:3px;background:var(--bg)"><div style="height:100%;width:0;background:'+sig(s.pct)+';transition:width .8s cubic-bezier(.4,0,.2,1)" data-w="'+s.pct+'%"></div></div>'+
+            '</div>';
+          }).join('')+
+        '</div>'+
+      '</div>';
+    });
+    h+='</div>';
+  }
+
+  // STAT TILES
+  if(m.stats){
+    h+='<div style="padding:20px 26px 6px;display:flex;flex-direction:column;gap:14px">'+
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">'+
+        m.stats.map(function(st){return'<div style="border:1px solid var(--border);background:var(--surface);padding:14px;display:flex;flex-direction:column;gap:6px"><div style="display:flex;align-items:center;gap:7px"><span style="width:8px;height:8px;border-radius:50%;background:'+st.color+';flex-shrink:0"></span><span style="font-size:11px;color:var(--muted)">'+esc(st.label)+'</span></div><span style="font-family:\'Space Grotesk\',sans-serif;font-size:23px;font-weight:600">'+esc(st.value)+'</span><span style="font-size:10.5px;color:var(--muted)">'+esc(st.note)+'</span></div>'}).join('')+
+      '</div>';
+    if(m.rows){
+      h+='<div style="border:1px solid var(--border);background:var(--surface);padding:16px;display:flex;flex-direction:column;gap:12px">'+
+        '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">'+esc(m.rows.title)+'</span>'+
+        '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px 30px">'+
+          m.rows.items.map(function(r){return'<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--border);padding-bottom:9px"><div style="display:flex;flex-direction:column;line-height:1.25;min-width:0"><span style="font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+esc(r.label)+'</span><span style="font-size:10.5px;color:var(--muted)">'+esc(r.sub)+'</span></div><div style="display:flex;align-items:center;gap:8px;flex-shrink:0"><span style="font-family:\'Space Grotesk\',sans-serif;font-size:14px;color:'+r.color+'">'+esc(r.value)+'</span><span style="width:7px;height:7px;border-radius:50%;background:'+r.color+'"></span></div></div>'}).join('')+
+        '</div>'+
+      '</div>';
+    }
+    h+='</div>';
+  }
+
+  // VERTICAL BARS
+  if(m.barsRaw){
+    h+='<div style="margin:14px 26px 0;border:1px solid var(--border);background:var(--surface);padding:18px;display:flex;flex-direction:column;gap:14px">'+
+      '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">Where the score comes from · average across engines</span>'+
+      '<div style="display:flex;align-items:stretch;gap:18px;height:188px">'+
+        m.barsRaw.map(function(b){
+          var h2=Math.max(4,Math.round((Math.max(2,Math.min(100,b.pct))/100)*150));
+          return'<div style="flex:1;display:flex;flex-direction:column;align-items:center;height:100%">'+
+            '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:13px">'+esc(b.disp)+'</span>'+
+            '<div style="flex:1;width:100%;display:flex;align-items:flex-end;justify-content:center;padding:6px 0">'+
+              '<div style="width:62%;height:0;background:'+sig(b.pct)+';transition:height .8s cubic-bezier(.4,0,.2,1)" data-h="'+h2+'px"></div>'+
+            '</div>'+
+            '<span style="font-size:11px;color:var(--muted);text-align:center">'+esc(b.label)+'</span>'+
+          '</div>';
+        }).join('')+
+      '</div>'+
+    '</div>';
+  }
+
+  // THREE DONUTS
+  if(m.donutsRaw){
+    h+='<div style="margin:14px 26px 0;display:flex;flex-direction:column;gap:12px">'+
+      '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">Share of voice · who AI names, engine by engine</span>'+
+      '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">'+
+        m.donutsRaw.map(function(dn){
+          var segs=donutSegs(dn.items);
+          return'<div style="border:1px solid var(--border);background:var(--surface);padding:16px;display:flex;flex-direction:column;gap:12px">'+
+            '<span style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:14px">'+esc(dn.engine)+'</span>'+
+            '<div style="position:relative;width:120px;height:120px;align-self:center">'+
+              '<svg viewBox="0 0 42 42" width="120" height="120">'+
+                '<circle cx="21" cy="21" r="15.915" fill="none" stroke="var(--bg)" stroke-width="5"></circle>'+
+                segs.map(function(d){return'<circle cx="21" cy="21" r="15.915" fill="none" stroke="'+d.color+'" stroke-width="5" stroke-dasharray="0 100" data-dash="'+d._target+'" stroke-dashoffset="'+d.dashoffset+'" style="transition:stroke-dasharray .9s cubic-bezier(.4,0,.2,1)"></circle>'}).join('')+
+              '</svg>'+
+              '<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-family:\'Space Grotesk\',sans-serif;font-size:17px;font-weight:600;color:var(--accent2)">'+dn.self+'%</span><span style="font-size:9px;color:var(--muted)">your share</span></div>'+
+            '</div>'+
+            '<div style="display:flex;flex-direction:column;gap:5px">'+
+              segs.map(function(d){return'<div style="display:flex;align-items:center;gap:7px;font-size:11px"><span style="width:8px;height:8px;border-radius:50%;background:'+d.color+';flex-shrink:0"></span><span style="flex:1;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+esc(d.label)+'</span><span style="font-family:\'Space Grotesk\',sans-serif;color:var(--muted)">'+d.value+'%</span></div>'}).join('')+
+            '</div>'+
+          '</div>';
+        }).join('')+
+      '</div>'+
+    '</div>';
+  }
+
+  // COMPARISONS / TAG CLOUD
+  if(m.comparisons){
+    var tagPal={ChatGPT:'var(--accent)',Perplexity:'#f0a830',Gemini:'#9a7bff'};
+    h+='<div style="margin:14px 26px 0;border:1px solid var(--border);background:var(--surface);padding:18px;display:flex;flex-direction:column;gap:14px">'+
+      '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">Common comparisons · the topics AI weighs when ranking us</span>'+
+      '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">'+
+        m.comparisons.map(function(cc){
+          var c=tagPal[cc.engine]||'var(--accent)';
+          return'<div style="display:flex;flex-direction:column;gap:10px">'+
+            '<div style="display:flex;align-items:center;gap:8px"><span style="width:9px;height:9px;border-radius:50%;background:'+c+';flex-shrink:0"></span><span style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:13px">'+esc(cc.engine)+'</span></div>'+
+            '<div style="display:flex;flex-wrap:wrap;gap:7px">'+
+              cc.topics.map(function(tp){return'<span style="border:1px solid '+c+';color:var(--text);background:rgba(255,255,255,.02);font-size:11.5px;padding:.3rem .6rem;line-height:1.25">'+tp+'</span>'}).join('')+
+            '</div>'+
+          '</div>';
+        }).join('')+
+      '</div>'+
+    '</div>';
+  }
+
+  // LOLLIPOP
+  if(m.lollipopRaw){
+    var lp=m.lollipopRaw;
+    h+='<div style="margin:14px 26px 0;border:1px solid var(--border);background:var(--surface);padding:18px;display:flex;flex-direction:column;gap:14px">'+
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap">'+
+        '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">'+esc(lp.title)+'</span>'+
+        '<div style="display:flex;align-items:center;gap:16px">'+
+          lp.legend.map(function(lg){return'<div style="display:flex;align-items:center;gap:7px;font-size:11.5px;color:var(--muted)"><span style="width:11px;height:11px;border-radius:50%;background:'+lg.color+';flex-shrink:0"></span>'+esc(lg.label)+'</div>'}).join('')+
+        '</div>'+
+      '</div>'+
+      '<div style="display:flex;flex-direction:column;gap:18px;margin-top:2px">'+
+        lp.groups.map(function(g){return'<div style="display:flex;align-items:center;gap:14px">'+
+          '<span style="width:78px;font-size:12.5px;color:var(--muted);flex-shrink:0">'+esc(g.engine)+'</span>'+
+          '<div style="position:relative;flex:1;height:14px">'+
+            '<div style="position:absolute;left:0;right:0;top:50%;height:2px;background:var(--bg);transform:translateY(-50%)"></div>'+
+            '<div style="position:absolute;left:0;top:50%;height:2px;width:0;background:var(--accent2);transform:translateY(-50%);transition:width .8s cubic-bezier(.4,0,.2,1)" data-w="'+g.a+'%"></div>'+
+            '<div style="position:absolute;left:0;top:50%;width:13px;height:13px;border-radius:50%;background:var(--accent2);transform:translate(-50%,-50%);box-shadow:0 0 0 3px rgba(129,216,208,.18);transition:left .8s cubic-bezier(.4,0,.2,1)" data-left="'+g.a+'%"></div>'+
+            '<div style="position:absolute;left:0;top:50%;width:11px;height:11px;border-radius:50%;background:#f0a830;border:2px solid var(--surface);transform:translate(-50%,-50%);transition:left .8s cubic-bezier(.4,0,.2,1)" data-left="'+g.b+'%"></div>'+
+          '</div>'+
+          '<span style="width:74px;text-align:right;font-family:\'Space Grotesk\',sans-serif;font-size:13px;flex-shrink:0"><span style="color:var(--accent2)">'+g.a+'</span> <span style="color:var(--muted)">·</span> <span style="color:#f0a830">'+g.b+'</span></span>'+
+        '</div>'}).join('')+
+      '</div>'+
+      '<div style="border-left:3px solid var(--accent2);background:rgba(129,216,208,.05);padding:11px 14px;font-size:12.5px;line-height:1.55;color:var(--text)">'+esc(lp.note)+'</div>'+
+    '</div>';
+  }
+
+  // RADAR
+  if(m.radarRaw){
+    var r=radarGeo(m.radarRaw);
+    h+='<div style="margin:14px 26px 0;border:1px solid var(--border);background:var(--surface);padding:18px;display:flex;align-items:center;gap:26px">'+
+      '<div style="flex-shrink:0;width:236px;height:236px">'+
+        '<svg viewBox="0 0 100 100" width="236" height="236" style="display:block;overflow:visible">'+
+          r.rings.map(function(rg){return'<polygon points="'+rg.points+'" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="0.4"></polygon>'}).join('')+
+          r.axes.map(function(ax){return'<line x1="50" y1="50" x2="'+ax.ex+'" y2="'+ax.ey+'" stroke="rgba(255,255,255,.12)" stroke-width="0.4"></line><text x="'+ax.lx+'" y="'+ax.ly+'" fill="var(--muted)" font-size="3.5" text-anchor="'+ax.anchor+'" font-family="DM Sans,sans-serif">'+esc(ax.label)+'</text>'}).join('')+
+          r.series.map(function(se){return'<polygon points="'+se.points+'" fill="'+se.color+'" fill-opacity="0.12" stroke="'+se.color+'" stroke-width="0.9" stroke-linejoin="round"></polygon>'}).join('')+
+        '</svg>'+
+      '</div>'+
+      '<div style="flex:1;display:flex;flex-direction:column;gap:11px">'+
+        '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">'+esc(r.title)+'</span>'+
+        '<div style="display:flex;flex-direction:column;gap:8px">'+
+          r.legend.map(function(lg){return'<div style="display:flex;align-items:center;gap:10px;font-size:13.5px"><span style="width:13px;height:3px;background:'+lg.color+';flex-shrink:0"></span><span style="color:var(--text)">'+esc(lg.engine)+'</span></div>'}).join('')+
+        '</div>'+
+        '<p style="margin:4px 0 0;font-size:12.5px;color:var(--muted);line-height:1.55">Each spoke is one scoring dimension; the further a shape reaches, the stronger that engine rates the brand there. Overlapping all three reveals the shared shape at a glance — a tight, low pentagon on Recognition and Share, fuller on Market and Sentiment.</p>'+
+      '</div>'+
+    '</div>';
+  }
+
+  // STRENGTH / GAP CHIPS
+  if(m.chips){
+    h+='<div style="margin:14px 26px 0;display:grid;grid-template-columns:1fr 1fr;gap:14px">'+
+      '<div style="border:1px solid var(--border);background:var(--surface);padding:18px;display:flex;flex-direction:column;gap:14px">'+
+        '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2)"><i class="bi bi-check-circle" style="margin-right:7px"></i>Key strengths · what AI praises</span>'+
+        m.chips.strengths.map(function(cg){return'<div style="display:flex;flex-direction:column;gap:7px"><span style="font-size:11px;color:var(--muted);font-family:\'Space Grotesk\',sans-serif">'+esc(cg.engine)+'</span><div style="display:flex;flex-wrap:wrap;gap:6px">'+cg.items.map(function(it){return'<span style="border:1px solid rgba(129,216,208,.4);background:rgba(129,216,208,.06);color:var(--text);font-size:11px;padding:.28rem .55rem;line-height:1.25;display:flex;align-items:center;gap:6px"><i class="bi bi-check2" style="font-size:11px;color:var(--accent2)"></i>'+esc(it)+'</span>'}).join('')+'</div></div>'}).join('')+
+      '</div>'+
+      '<div style="border:1px solid var(--border);background:var(--surface);padding:18px;display:flex;flex-direction:column;gap:14px">'+
+        '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#f0a830"><i class="bi bi-arrow-up-right-circle" style="margin-right:7px"></i>Growth areas · where to close gaps</span>'+
+        m.chips.gaps.map(function(cg){return'<div style="display:flex;flex-direction:column;gap:7px"><span style="font-size:11px;color:var(--muted);font-family:\'Space Grotesk\',sans-serif">'+esc(cg.engine)+'</span><div style="display:flex;flex-wrap:wrap;gap:6px">'+cg.items.map(function(it){return'<span style="border:1px solid rgba(240,168,48,.4);background:rgba(240,168,48,.06);color:var(--text);font-size:11px;padding:.28rem .55rem;line-height:1.25;display:flex;align-items:center;gap:6px"><i class="bi bi-arrow-up-right" style="font-size:10px;color:#f0a830"></i>'+it+'</span>'}).join('')+'</div></div>'}).join('')+
+      '</div>'+
+    '</div>';
+  }
+
+  // STEP JOURNEY
+  if(m.steps){
+    var ns=m.steps.items.length;
+    h+='<div style="margin:14px 26px 0;border:1px solid var(--border);background:var(--surface);padding:20px 18px;display:flex;flex-direction:column;gap:16px">'+
+      '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">'+esc(m.steps.title)+'</span>'+
+      '<div style="display:flex;align-items:flex-start;margin:0 4px">'+
+        m.steps.items.map(function(it,i){
+          var active=i===m.steps.current,past=i<m.steps.current;
+          var dot=active?'background:var(--accent);color:#041617':past?'border:1px solid var(--accent);background:rgba(10,186,181,.2);color:var(--accent2)':'border:1px solid var(--border);background:var(--bg);color:var(--muted)';
+          var lc=active?'var(--accent2)':'var(--text)';
+          var conn=past?'background:var(--accent)':'background:var(--border)';
+          return'<div style="display:flex;align-items:flex-start;flex:1;min-width:0">'+
+            '<div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0;width:130px">'+
+              '<div style="width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:\'Space Grotesk\',sans-serif;font-size:13px;font-weight:600;flex-shrink:0;'+dot+'">'+(i+1)+'</div>'+
+              '<div style="text-align:center"><div style="font-family:\'Space Grotesk\',sans-serif;font-size:13px;color:'+lc+'">'+it.label+'</div><div style="font-size:10.5px;color:var(--muted);margin-top:1px">'+it.sub+'</div></div>'+
+            '</div>'+
+            (i<ns-1?'<div style="flex:1;height:2px;align-self:flex-start;margin-top:14px;'+conn+'"></div>':'')+
+          '</div>';
+        }).join('')+
+      '</div>'+
+    '</div>';
+  }
+
+  // NARRATIVE THEMES
+  if(m.themes){
+    var tp2={ChatGPT:'var(--accent)',Perplexity:'#f0a830',Gemini:'#9a7bff'};
+    h+='<div style="margin:14px 26px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:start">'+
+      m.themes.map(function(tc){
+        var c=tp2[tc.engine]||'var(--accent)';
+        return'<div style="border:1px solid var(--border);background:var(--surface);padding:16px;display:flex;flex-direction:column;gap:12px">'+
+          '<div style="display:flex;align-items:center;gap:8px"><span style="width:9px;height:9px;border-radius:50%;background:'+c+';flex-shrink:0"></span><span style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:13px">'+esc(tc.engine)+'</span></div>'+
+          '<div style="display:flex;flex-direction:column;gap:8px">'+
+            tc.items.map(function(th){return'<div style="border-left:3px solid '+c+';background:rgba(255,255,255,.02);padding:9px 11px;font-size:12.5px;line-height:1.5;color:var(--text)">'+th+'</div>'}).join('')+
+          '</div>'+
+        '</div>';
+      }).join('')+
+    '</div>';
+  }
+
+  // HEATMAP
+  if(m.heatmap){
+    var hm=m.heatmap;
+    function cellColor(v){
+      if(v===null)return{disp:'—',bg:'var(--bg)',fg:'rgba(255,255,255,.22)'};
+      if(v==='owned')return{disp:'owned',bg:'rgba(10,186,181,.16)',fg:'var(--accent2)'};
+      var t=Math.max(0,Math.min(1,(v-35)/45));
+      return{disp:''+v,bg:'rgba(10,186,181,'+(0.10+t*0.55).toFixed(2)+')',fg:t>0.55?'#04201e':'var(--accent2)'};
+    }
+    h+='<div style="margin:14px 26px 0;border:1px solid var(--border);background:var(--surface);padding:18px;display:flex;flex-direction:column;gap:12px">'+
+      '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">'+esc(hm.title)+'</span>'+
+      '<div style="display:grid;grid-template-columns:1.7fr repeat(3,1fr);gap:8px;align-items:center;padding-bottom:8px;border-bottom:1px solid var(--border)">'+
+        '<span style="font-size:11px;color:var(--muted)">Reliable brand-specific data?</span>'+
+        hm.cols.map(function(c,i){return'<span style="text-align:center;font-family:\'Space Grotesk\',sans-serif;font-size:12px;font-weight:600;color:'+(hm.reliable[i]==='Yes'?'var(--accent2)':'#f0785a')+'">'+esc(hm.reliable[i])+'</span>'}).join('')+
+      '</div>'+
+      '<div style="display:grid;grid-template-columns:1.7fr repeat(3,1fr);gap:8px"><span></span>'+hm.cols.map(function(c){return'<span style="text-align:center;font-size:11px;color:var(--muted);font-family:\'Space Grotesk\',sans-serif">'+esc(c)+'</span>'}).join('')+'</div>'+
+      '<div style="display:flex;flex-direction:column;gap:6px">'+
+        hm.rows.map(function(row){
+          var cells=row.vals.map(cellColor);
+          return'<div style="display:grid;grid-template-columns:1.7fr repeat(3,1fr);gap:8px;align-items:center">'+
+            '<div style="display:flex;flex-direction:column;line-height:1.2;min-width:0"><span style="font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+esc(row.label)+'</span><span style="font-size:10px;color:var(--muted)">'+esc(row.sub)+'</span></div>'+
+            cells.map(function(cell){return'<div style="text-align:center;font-family:\'Space Grotesk\',sans-serif;font-size:12.5px;padding:7px 0;background:'+cell.bg+';color:'+cell.fg+'">'+cell.disp+'</div>'}).join('')+
+          '</div>';
+        }).join('')+
+      '</div>'+
+    '</div>';
+  }
+
+  // TIMELINE
+  if(m.timeline){
+    h+='<div style="margin:14px 26px 0;border:1px solid var(--border);background:var(--surface);padding:18px 20px 16px;display:flex;flex-direction:column;gap:16px">'+
+      '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">Why recognition is low · the timing gap</span>'+
+      '<div style="position:relative;height:138px;margin:2px 8px 0">'+
+        '<div style="position:absolute;left:0;right:0;top:74px;height:2px;background:var(--border)"></div>'+
+        '<div style="position:absolute;left:0;width:50%;top:64px;height:22px;background:rgba(129,216,208,.14);border:1px solid rgba(129,216,208,.4)"></div>'+
+        '<div style="position:absolute;left:0;width:50%;top:30px;text-align:center;font-size:11.5px;color:var(--accent2);line-height:1.35">AI training datasets<br><span style="color:var(--muted)">knowledge frozen here</span></div>'+
+        '<div style="position:absolute;left:50%;width:26%;top:64px;height:22px;background:repeating-linear-gradient(45deg,rgba(240,120,90,.22) 0 6px,transparent 6px 12px);border:1px dashed rgba(240,120,90,.55)"></div>'+
+        '<div style="position:absolute;left:50%;width:26%;top:30px;text-align:center;font-size:11.5px;color:#f0785a;line-height:1.35">AI\'s blind spot<br><span style="color:var(--muted)">no new data ingested</span></div>'+
+        '<div style="position:absolute;left:76%;top:48px;width:2px;height:34px;background:var(--accent)"></div>'+
+        '<div style="position:absolute;left:76%;top:70px;width:11px;height:11px;border-radius:50%;background:var(--accent);transform:translateX(-5px);box-shadow:0 0 0 3px rgba(10,186,181,.18)"></div>'+
+        '<div style="position:absolute;left:76%;top:94px;width:160px;font-size:11.5px;color:var(--text);line-height:1.35;transform:translateX(-10px)"><strong style="color:var(--accent2)">22 May 2026</strong><br><span style="color:var(--muted)">Business &amp; online presence live</span></div>'+
+        '<div style="position:absolute;left:91%;top:71px;width:9px;height:9px;border-radius:50%;background:var(--muted);transform:translateX(-4px)"></div>'+
+        '<div style="position:absolute;left:91%;top:38px;width:74px;font-size:11px;color:var(--muted);line-height:1.3">Graded<br>20 Jun 2026</div>'+
+      '</div>'+
+      '<div style="border-left:3px solid var(--accent);background:rgba(10,186,181,.06);padding:11px 14px;font-size:13px;line-height:1.55;color:var(--text)"><strong style="color:var(--accent2)">This is the headline:</strong> the AI models were trained <strong>before we existed</strong> &mdash; yet even with zero training-data history, all three engines still found and rated the brand. That is a strong starting position, not a weak one.</div>'+
+    '</div>';
+  }
+
+  // READ-OUT
+  h+='<div style="margin:14px 26px 0;border-left:3px solid var(--accent);background:rgba(10,186,181,.06);padding:15px 18px;display:flex;flex-direction:column;gap:5px">'+
+    '<span style="font-family:\'Space Grotesk\',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">What the data shows</span>'+
+    '<p style="margin:0;font-size:14px;line-height:1.6;color:var(--text)">'+esc(m.insight)+'</p>'+
+  '</div>';
+
+  // TRANSPARENCY
+  h+='<div style="margin:14px 26px 18px;display:flex;align-items:flex-start;gap:10px;font-size:12px;color:var(--muted);line-height:1.55">'+
+    '<i class="bi bi-patch-check" style="color:var(--accent);font-size:14px;margin-top:1px;flex-shrink:0"></i>'+
+    '<span>All data presented here is as on 20th June 2026. Nothing is estimated — where a tool could not measure something, it is marked, not guessed. We invite our readers to run their own independent verifications and contact us at hello@aisearch.global with any discrepancies found.</span>'+
+  '</div>';
+
+  return h;
+}
+
+// ================================================================
+// RENDER + ANIMATE
+// ================================================================
+var currentMetric='score';
+
+function animate(){
+  requestAnimationFrame(function(){
+    requestAnimationFrame(function(){
+      document.querySelectorAll('[data-dash]').forEach(function(el){el.style.strokeDasharray=el.dataset.dash});
+      document.querySelectorAll('[data-w]').forEach(function(el){el.style.width=el.dataset.w});
+      document.querySelectorAll('[data-h]').forEach(function(el){el.style.height=el.dataset.h});
+      document.querySelectorAll('[data-left]').forEach(function(el){el.style.left=el.dataset.left});
+    });
+  });
+}
+
+function render(id){
+  if(id)currentMetric=id;
+  var rail=document.getElementById('left-rail'),screen=document.getElementById('right-screen');
+  rail.innerHTML=buildLeftRail(currentMetric);
+  screen.innerHTML=buildRightPanel(METRICS[currentMetric]);
+  rail.querySelectorAll('[data-metric]').forEach(function(btn){
+    btn.addEventListener('click',function(){render(this.dataset.metric)},false);
+  });
+  setTimeout(animate,70);
+}
+
+document.addEventListener('DOMContentLoaded',function(){render('score')});
 </script>
 </body>
 </html>
