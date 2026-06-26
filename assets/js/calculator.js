@@ -115,8 +115,31 @@ function renderResult(d) {
   document.getElementById('recommendationScore').innerHTML = d.recommendationLikelihood + ' <span>/ 100</span>';
   document.getElementById('surfacePill').textContent = (d.surfaceLabel || 'Website') + ' · ' + (d.surfaceType || 'owned website');
   document.getElementById('surfaceNote').textContent = d.surfaceNote || '';
-  document.getElementById('fixText').textContent     = d.fix;
-  document.getElementById('gainPill').textContent    = 'Potential gain: ' + d.gain;
+  const fixSection = document.getElementById('fixSection');
+  if (d.score >= 100) {
+    fixSection.innerHTML = `
+      <div class="section-eyebrow" style="color:#52c98a">&#127881; Perfect Technical Score</div>
+      <div class="fix-block" style="color:#52c98a;font-weight:600;font-size:1.05rem;margin-bottom:10px">
+        Your technical AEO framework is outstanding — 100/100.
+      </div>
+      <div class="section-text" style="margin-bottom:12px">
+        Fewer than 1% of websites we analyse achieve a perfect technical score. You've built exactly the kind of structured, AI-readable foundation that most businesses are still working toward.
+      </div>
+      <div class="section-eyebrow" style="margin-top:18px">But Technical 100 Doesn't Guarantee AI Citations</div>
+      <div class="section-text">
+        A perfect technical score tells AI agents <em>how</em> to read your site — but AI citation decisions also weigh <strong>topical authority</strong>, <strong>content depth</strong>, <strong>third-party mentions</strong>, and <strong>how other sources reference you</strong>. Think of it this way: your site is fully indexed and perfectly legible to AI, but AI agents still choose <em>who</em> to cite based on perceived expertise and real-world credibility signals. Studies show that even technically perfect pages are cited less than 40% of the time when they lack external corroboration.
+      </div>
+      <div class="section-text" style="margin-top:12px">
+        <strong>The next step:</strong> Check whether AI agents actually cite you — ask ChatGPT, Perplexity, and Google Gemini questions your customers would ask, and see if your business appears in the answers.
+      </div>`;
+  } else {
+    fixSection.innerHTML = `
+      <div class="section-eyebrow">Highest Impact Fix</div>
+      <div class="fix-block" id="fixText">—</div>
+      <div class="gain-pill" id="gainPill">—</div>`;
+    document.getElementById('fixText').textContent  = d.fix;
+    document.getElementById('gainPill').textContent = 'Potential gain: ' + d.gain;
+  }
 
   show('resultCard');
   setDisplay('disclaimer','block');
