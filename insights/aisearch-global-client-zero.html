@@ -108,8 +108,9 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
 .report-meta a{color:var(--tiffany);text-decoration:none;}
 .report-wrap a:not(.btn):not(.primary):not(.secondary){color:var(--tiffany);text-decoration:none;}
 .report-wrap a:not(.btn):not(.primary):not(.secondary):hover{text-decoration:underline;}
-.report-section{margin:48px 0;}
-.report-section h2{font-family:var(--fh);font-size:1.5rem;color:var(--white);margin:0 0 12px;border-left:3px solid var(--tiffany);padding-left:14px;}
+.report-section{margin:0;padding:56px 0 0;border-top:1px solid var(--border);scroll-margin-top:80px;}
+.report-section:first-of-type{border-top:none;}
+.report-section h2{font-family:var(--fh);font-size:clamp(1.25rem,2.5vw,1.65rem);font-weight:700;color:var(--white);margin:0 0 20px;padding:16px 18px;background:var(--surface);border-left:3px solid var(--tiffany);border-bottom:1px solid var(--border);letter-spacing:-.01em;line-height:1.25;}
 .report-section p{color:var(--silver);line-height:1.7;}
 .exec-box{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--tiffany);border-radius:0;padding:22px 24px;color:var(--silver);line-height:1.7;}
 .client-zero-note{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--tiffany);border-radius:0;padding:18px 20px;margin-top:18px;}
@@ -187,6 +188,18 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
   .report-print-logo{display:block;text-align:center;margin:0 0 24px;}
   .report-print-logo img{height:42px;}
 }
+.toc-block{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--tiffany);padding:22px 24px;margin:28px 0;}
+.toc-block .toc-label{font-family:var(--fh);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tiffany);margin:0 0 16px;}
+.toc-cols{display:flex;gap:0;}
+.toc-col{flex:1;padding:0;}
+.toc-col+.toc-col{border-left:1px solid var(--border);padding-left:28px;}
+.toc-col ol{margin:0;padding:0;list-style:none;}
+.toc-col li{display:flex;align-items:baseline;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04);}
+.toc-col li:last-child{border-bottom:none;}
+.toc-col li .toc-n{font-family:var(--fh);font-size:.7rem;color:var(--muted);flex-shrink:0;min-width:22px;}
+.toc-col li a{font-family:var(--fh);font-size:.88rem;color:var(--silver);text-decoration:none;line-height:1.35;}
+.toc-col li a:hover{color:var(--tiffany);}
+@media(max-width:600px){.toc-cols{flex-direction:column;}.toc-col+.toc-col{border-left:none;border-top:1px solid var(--border);padding-left:0;padding-top:10px;margin-top:10px;}}
 </style>
 </head>
 <body style="background:#0D0E10;">
@@ -212,7 +225,35 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     </div>
   </div>
 
-  <section class="report-section">
+  <nav class="toc-block" aria-label="Contents">
+    <p class="toc-label"><i class="bi bi-list-ul"></i> &nbsp;Contents</p>
+    <div class="toc-cols">
+      <div class="toc-col">
+        <ol>
+          <li><span class="toc-n">01</span><a href="#starting-from-zero">Starting From Zero</a></li>
+          <li><span class="toc-n">02</span><a href="#what-we-measure">What We Actually Measure</a></li>
+          <li><span class="toc-n">03</span><a href="#the-climb">The Climb: 19 → 91</a></li>
+          <li><span class="toc-n">04</span><a href="#perception-gap">The Score That Didn't Move as Fast</a></li>
+          <li><span class="toc-n">05</span><a href="#what-ai-knows">What AI Already Knows</a></li>
+          <li><span class="toc-n">06</span><a href="#brand-archetype">Brand Archetype &amp; Sentiment</a></li>
+          <li><span class="toc-n">07</span><a href="#share-of-voice">Share of Voice</a></li>
+        </ol>
+      </div>
+      <div class="toc-col">
+        <ol>
+          <li><span class="toc-n">08</span><a href="#crawler-activity">AI Crawler Activity</a></li>
+          <li><span class="toc-n">09</span><a href="#how-ai-describes">How AI Engines Describe the Brand</a></li>
+          <li><span class="toc-n">10</span><a href="#updates">Update Timeline</a></li>
+          <li><span class="toc-n">11</span><a href="#why-it-matters">Why This Matters for You</a></li>
+          <li><span class="toc-n">12</span><a href="#faq">Frequently Asked Questions</a></li>
+          <li><span class="toc-n">13</span><a href="#sources">Sources</a></li>
+          <li><span class="toc-n">14</span><a href="#verify">Verify It Yourself</a></li>
+        </ol>
+      </div>
+    </div>
+  </nav>
+
+  <section class="report-section" id="starting-from-zero">
     <h2>Starting From Zero</h2>
     <p>AISearch Global launched on 20 May 2026. No content backlog. No prior schema. No entity history for AI engines to draw on. A clean baseline by design. If we can't move our own brand's AI visibility using the exact AEO Traction Stack we sell, we have no business selling it to anyone else — so we ran the audit on ourselves first.</p>
     <div class="client-zero-note">
@@ -220,7 +261,7 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     </div>
   </section>
 
-  <section class="report-section">
+  <section class="report-section" id="what-we-measure">
     <h2>What We Actually Measure</h2>
     <p>The AEO Score Calculator checks 20 signals — 17 structural AEO signals plus 3 signals drawn from the Princeton GEO (Generative Engine Optimisation) research. In plain language, they group into the four layers of the <a href="/insights/aeo-traction-stack">AEO Traction Stack</a>:</p>
     <div class="signal-grid">
@@ -244,7 +285,7 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     <p style="margin-top:16px;">Layers one and two — entity clarity and schema — account for roughly 80% of the improvement most brands see. That's exactly where our own six weeks of work went first.</p>
   </section>
 
-  <section class="report-section">
+  <section class="report-section" id="the-climb">
     <h2>The Climb: 19 → 91</h2>
     <div class="viz-shell">
       <div class="viz-head">
@@ -290,7 +331,7 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     <p style="margin-top:14px;">None of these were dramatic. They're the ordinary friction of building a structured-data site — and exactly the category of fault an AI Visibility Audit catches before it quietly costs a client citations.</p>
   </section>
 
-  <section class="report-section">
+  <section class="report-section" id="perception-gap">
     <h2>The Score That Didn't Move as Fast</h2>
     <p>A structural score of 91 tells us the page is machine-readable. It doesn't tell us what AI engines currently know. The second instrument in our methodology — the AI Brand Perception Audit — asks ChatGPT, Perplexity, and Gemini directly, rather than scoring what's on the page and assuming they've read it.</p>
 
@@ -446,7 +487,7 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     </div>
   </section>
 
-  <section class="report-section">
+  <section class="report-section" id="what-ai-knows">
     <h2>What AI Already Knows</h2>
     <p>We asked ChatGPT, Perplexity, and Gemini directly: who is AISearch Global, and what do they do? The answers are a useful diagnostic in their own right — not just three numbers.</p>
     <div class="signal-grid">
@@ -462,7 +503,7 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     <p style="margin-top:16px;">That's the practical meaning behind 36/30/41: the models know what we say about ourselves. They don't yet know what anyone else says about us. This article — and the dashboard behind it — is itself one of the first citable data points working to close that gap.</p>
   </section>
 
-  <section class="report-section">
+  <section class="report-section" id="brand-archetype">
     <h2>What AI Thinks About the Brand — Archetype &amp; Sentiment</h2>
     <p>Beyond raw scores, each platform was asked to characterise the brand's positioning. The result: all three independently arrived at the same answer.</p>
     <div class="signal-grid">
@@ -477,7 +518,7 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     </div>
   </section>
 
-  <section class="report-section">
+  <section class="report-section" id="share-of-voice">
     <h2>Share of Voice Against Established Competitors</h2>
     <p>A newly launched brand appearing in AI responses about the category at all is notable. Against established players, AISearch Global holds 8% SOV on ChatGPT (vs WebFX at 18%), 18.5% on Perplexity (vs ThatWare at 22%), and 8.5% on Gemini (vs Search Engine Land at 22%). Perplexity's real-time indexing gives the brand its highest share — 142 mentions vs 42 on ChatGPT and 1,240 on Gemini, where established players have had years of training data advantage.</p>
     <div class="client-zero-note">
@@ -485,7 +526,7 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     </div>
   </section>
 
-  <section class="report-section">
+  <section class="report-section" id="crawler-activity">
     <h2>The Machine Is Already Watching — AI Crawler Activity</h2>
     <p>Six AI crawler bots actively indexed the site in the 30-day audit window: PerplexityBot, ChatGPT-User, Claude-SearchBot, ClaudeBot, OAI-SearchBot, and GPTBot. AI crawlers accounted for 43 of 108 total crawler requests — 40% of all crawler traffic — which is significantly above average for a one-month-old domain. Crawler volume increased +2,600% over the period.</p>
     <div class="client-zero-note">
@@ -494,7 +535,7 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     <p style="margin-top:14px;">One technical flag: the Cloudflare cache rate sits at 33% against a target of 70–85%. AI crawlers hit origin servers more often than they should — slower and less reliable. A cache header fix is on the roadmap and resolves in days, not weeks.</p>
   </section>
 
-  <section class="report-section">
+  <section class="report-section" id="how-ai-describes">
     <h2>How AI Engines Describe the Brand</h2>
     <p>Beyond scores, each platform was asked to characterise AISearch Global in its own words. These themes are a diagnostic of what's landing — and what needs building before the brand moves from category-correct to specifically-cited.</p>
     <div class="signal-grid">
@@ -530,7 +571,7 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     </div>
   </section>
 
-  <section class="report-section">
+  <section class="report-section" id="updates">
     <h2>This Will Keep Changing</h2>
     <p>Every number on this page is a snapshot. AI platforms update how they crawl, weight, and cite sources on their own schedules — no public changelog, no warnings. A score can shift without the site changing at all. That's why we're running this audit on a fixed cadence, not publishing once and calling it done.</p>
     <p class="report-eyebrow" style="margin-top:30px;">Audit &amp; Update Timeline</p>
@@ -568,14 +609,14 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     </div>
   </section>
 
-  <section class="report-section">
+  <section class="report-section" id="why-it-matters">
     <h2>Why This Matters for You</h2>
     <p>Most businesses have neither number. No structural AEO score because no one has run one, and no AI Brand Perception score because the questions have never been put directly to ChatGPT, Perplexity, or Gemini. That means they are making decisions about a gap they cannot see — assuming either that AI is already finding them, or that it is not something worth measuring yet.</p>
     <p>The structural gap — the 19/100 range most unoptimised sites start at — is the faster fix. Six weeks of focused work moved ours 72 points. The perception gap is a different clock: AI models do not re-learn the web in real time, so even after a page is fully machine-readable, there is a lag before that model's answers reflect it. The earlier the structural work is done, the earlier that lag starts counting down. Waiting does not pause the gap — it extends it.</p>
     <p>The businesses running both instruments in mid-2026 will have a six- to twelve-month head start on the ones who wait until AI search feels urgent. That is the window this article is written into — and it is still open.</p>
   </section>
 
-  <section class="report-section">
+  <section class="report-section" id="faq">
     <h2>Frequently asked questions</h2>
     <div class="faq-list">
 
@@ -607,7 +648,7 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     </div>
   </section>
 
-  <section class="report-section">
+  <section class="report-section" id="sources">
     <h2>Sources</h2>
     <ul class="sources-list">
       <li>AISearch Global (2026). <em>Client Zero AI Visibility Dashboard.</em> <a href="/insights/client-zero-visibility-dashboard">aisearch.global/insights/client-zero-visibility-dashboard</a></li>
@@ -620,7 +661,7 @@ footer{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;color:var(--mu
     </ul>
   </section>
 
-  <section class="report-section">
+  <section class="report-section" id="verify">
     <h2>Verify It Yourself — Free Tools, Independent Results</h2>
     <p>Every number on this page is reproducible using free, independent tools. We encourage you to run them — not to check our work, but to understand what your own site looks like from the outside. These are the same tools used in every AI Visibility Audit.</p>
     <div class="signal-grid">
