@@ -47,7 +47,7 @@ async function runAssessment() {
 
   let parsed;
   try { parsed = new URL(url); } catch {
-    showError('Please enter a valid website URL (e.g. yourbusiness.com.au).');
+    showError('Please enter a valid website URL (e.g. yourbusiness.com.au).', urlRaw);
     return;
   }
 
@@ -68,22 +68,28 @@ async function runAssessment() {
     try { data = JSON.parse(raw); } catch { throw new Error('Unexpected response from analyser.'); }
     hide('loadingPanel');
     if (data.error === 'fetch_failed' || data.error === 'invalid_url') {
-      showError(data.message || 'We could not analyse this site. Please check the URL and try again.');
+      showError(data.message || 'We could not analyse this site. Please check the URL and try again.', parsed.hostname);
       return;
     }
-    if (data.error) { showError('Something went wrong. Please try again.'); return; }
+    if (data.error) { showError('Something went wrong. Please try again.', parsed.hostname); return; }
     renderResult(data);
   } catch(err) {
     hide('loadingPanel');
-    showError('We could not analyse this site. Please check the URL and try again.' + (err?.message ? ' (' + err.message + ')' : ''));
+    showError('We could not analyse this site. Please check the URL and try again.' + (err?.message ? ' (' + err.message + ')' : ''), parsed && parsed.hostname);
   }
 }
 
-function showError(msg) {
+function showError(msg, domain) {
   document.getElementById('errorMsg').textContent = msg;
   document.getElementById('submitBtn').disabled = false;
   setDisplay('formPanel','none');
   show('errorPanel');
+  if (typeof amplitude !== 'undefined') {
+    amplitude.track('Calculator Error Encountered', {
+      error_message: msg,
+      domain_attempted: domain || '',
+    });
+  }
 }
 
 document.getElementById('privacyConsent').addEventListener('change', function() {
@@ -98,6 +104,14 @@ document.querySelectorAll('.btn-retry, .btn-retake').forEach(function(btn) {
 
 function renderResult(d) {
   const color = gradeColor(d.grade);
+  if (typeof amplitude !== 'undefined') {
+    amplitude.track('AEO Score Received', {
+      score: d.score,
+      grade: d.grade,
+      industry: d.industry,
+      perfect_score: d.score >= 100,
+    });
+  }
   document.getElementById('resultDomain').textContent = d.domain;
 
   const gl = document.getElementById('gradeLetter');

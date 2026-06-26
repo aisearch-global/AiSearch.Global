@@ -1,3 +1,20 @@
+/* ── Amplitude Analytics (EU region, CDN init) ── */
+(function(e,t){var n=e.amplitude||{_q:[],_iq:{}};if(n.invoked){e.console&&console.error&&console.error("Amplitude snippet has been loaded.");return}n.invoked=true;var s=t.createElement("script");s.type="text/javascript";s.integrity="sha384-XNX6U2ua04l5JNPk8racSkagg14UYkjDin4RpBnpRNMeRKBgeNWJ7H8R28LpEDM";s.crossOrigin="anonymous";s.async=true;s.src="https://cdn.amplitude.com/libs/analytics-browser-2.11.5-min.js.gz";s.onload=function(){if(!e.amplitude.runQueuedFunctions){console.log("[Amplitude] Error: could not load SDK")}};var r=t.getElementsByTagName("script")[0];r.parentNode.insertBefore(s,r);function i(e,t){e.prototype[t]=function(){e._q&&e._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}var o=function(){this._q=[];return this};var a=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"];for(var c=0;c<a.length;c++){i(o,a[c])}n.Identify=o;var l=function(){this._q=[];return this};var u=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"];for(var p=0;p<u.length;p++){i(l,u[p])}n.Revenue=l;var d=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset"];for(var v=0;v<d.length;v++){(function(t){n[t]=function(){n._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return n}})(d[v])}n.init=function(e,t,o,r){n._q.push(["init",e,t,o,r]);return n};n.track=function(e,t,o){n._q.push(["track",e,t,o]);return n};n.logEvent=function(e,t,o){n._q.push(["logEvent",e,t,o]);return n};n.identify=function(e,t){n._q.push(["identify",e,t]);return n};n.groupIdentify=function(e,t,n,r){n._q&&n._q.push(["groupIdentify",e,t,n,r]);return n};n.setGroup=function(e,t,n){n._q.push(["setGroup",e,t,n]);return n};n.revenue=function(e,t){n._q.push(["revenue",e,t]);return n};n.add=function(e){n._q.push(["add",e]);return n};n.snippet={version:"2.11.5",iife:false};e.amplitude=n})(window,document);
+
+amplitude.init('3c57360b46002d54e4911e690e1198c3', {
+  serverUrl: 'https://api.eu.amplitude.com/2/httpapi', // EU data residency
+  autocapture: {
+    attribution: true,             // UTM / referrer attribution events
+    pageViews: true,               // SPA route changes + initial load
+    sessions: true,                // Session start / end events
+    formInteractions: true,        // Form starts + submits
+    fileDownloads: true,           // Downloads of common file types
+    elementInteractions: true,     // Click + change on instrumented els
+    frustrationInteractions: true, // Rage clicks, dead clicks
+    pageUrlEnrichment: true,       // Adds path / search to event props
+  },
+});
+
 (function () {
     /* ── Shared header/footer styling (self-contained so injected markup renders consistently on every page) ── */
    var S = document.createElement('style');
