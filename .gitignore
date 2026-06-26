@@ -11,3 +11,7 @@ mindful-machines-journal/
 
 # Private local content drafts
 content-drafts/
+
+# Local audit docs — keep for reference, never deploy
+*.docx
+amplitude-setup-report.md
