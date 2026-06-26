@@ -143,7 +143,9 @@ function renderResult(d) {
 
   show('resultCard');
   setDisplay('disclaimer','block');
-  if (d.geo) renderGeo(d.geo, d.score); else renderGeo({hasStats:false,hasQuotations:false,hasCitations:false,hasKeywordStuffing:false,statsCount:0,citationCount:0,quoteCount:0}, d.score);
+  if (d.score < 100) {
+    if (d.geo) renderGeo(d.geo, d.score); else renderGeo({hasStats:false,hasQuotations:false,hasCitations:false,hasKeywordStuffing:false,statsCount:0,citationCount:0,quoteCount:0}, d.score);
+  }
   setTimeout(() => document.getElementById('resultCard').scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
   document.getElementById('submitBtn').disabled = false;
 }
