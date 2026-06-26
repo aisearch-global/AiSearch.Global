@@ -7,8 +7,14 @@
   Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=604800
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://aeo-score.aisearchglobal.workers.dev https://formspree.io https://www.google-analytics.com https://www.googletagmanager.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://formspree.io; upgrade-insecure-requests;
 
-/assets/*
+/assets/images/*
   Cache-Control: public, max-age=31536000, immutable
+
+/assets/css/*
+  Cache-Control: public, max-age=0, s-maxage=86400, stale-while-revalidate=604800
+
+/assets/js/*
+  Cache-Control: public, max-age=0, s-maxage=86400, stale-while-revalidate=604800
 
 /favicon.svg
   Cache-Control: public, max-age=31536000, immutable
