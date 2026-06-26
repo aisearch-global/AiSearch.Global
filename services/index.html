@@ -105,6 +105,12 @@
     .avail-band{background:rgba(10,186,181,.06);border-top:1px solid rgba(10,186,181,.18);border-bottom:1px solid rgba(10,186,181,.18);padding:.9rem 0}
     .avail-band p{margin:0;font-size:.9rem;color:var(--text)}
     .avail-band strong{color:var(--accent)}
+    .proof-band{background:rgba(10,186,181,.04);border-top:1px solid rgba(10,186,181,.2);border-bottom:1px solid rgba(10,186,181,.2);padding:1.3rem 0}
+    .proof-band-inner{display:flex;gap:1.8rem;align-items:center;flex-wrap:wrap}
+    .proof-score{display:flex;align-items:baseline;gap:.4rem;flex-shrink:0}
+    .proof-from{font-size:2rem;font-weight:800;font-family:var(--display);color:var(--muted);line-height:1}
+    .proof-arrow{font-size:1.2rem;color:var(--muted)}
+    .proof-to{font-size:2rem;font-weight:800;font-family:var(--display);color:var(--accent2);line-height:1}
     /* Bottom CTA */
     .cta-section{padding:3.5rem 0;text-align:center;border-top:1px solid rgba(255,255,255,.06)}
     .cta-section h2{font-size:1.8rem;margin:0 0 .75rem}
@@ -213,6 +219,23 @@
         </div>
       </div>
     </section>
+
+    <!-- Client Zero proof band -->
+    <div class="proof-band">
+      <div class="container">
+        <div class="proof-band-inner">
+          <div class="proof-score">
+            <span class="proof-from">19</span>
+            <span class="proof-arrow">&rarr;</span>
+            <span class="proof-to">91</span>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <strong style="display:block;margin-bottom:.3rem;color:var(--text)">Client Zero &mdash; Live Case Study &amp; Proof of Deliverables</strong>
+            <p style="margin:0;font-size:.9rem;color:var(--muted)">Before selling AEO to anyone, we ran the audit on ourselves. Every deliverable — the AI Visibility Console dashboard and full PDF report — is documented live. <a href="/insights/aisearch-global-client-zero" style="color:var(--accent)">Read the case study</a> &middot; <a href="/insights/client-zero-visibility-dashboard" style="color:var(--accent)">See the live dashboard &rarr;</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Service 2: Content Restructuring -->
     <section class="service-section" id="content-restructuring">
