@@ -134,19 +134,19 @@ var METRICS={
     ],
     barsRaw:[{label:'Recognition',disp:'1.7/20',pct:8},{label:'Market',disp:'6/10',pct:60},{label:'Presence',disp:'4.3/20',pct:22},{label:'Sentiment',disp:'22.3/40',pct:56},{label:'Share of Voice',disp:'1.3/10',pct:13}],
     radarRaw:{title:'Five-dimension fingerprint · all three engines overlaid',axes:['Recognition','Market','Presence','Sentiment','Share'],series:[{engine:'ChatGPT',color:'var(--accent)',vals:[10,60,25,55,10]},{engine:'Perplexity',color:'#f0a830',vals:[5,60,15,45,20]},{engine:'Gemini',color:'#9a7bff',vals:[10,60,25,67,10]}]},
-    insight:'Across all three engines the brand reads as an Innovator in a niche, first-mover position. Gemini scores highest (41), Perplexity trails (30). The bar chart makes the pattern obvious: Sentiment and Market are healthy, while Recognition and Share of Voice are the two pillars dragging the total down — largely because AI training datasets were cut off before our business went live, so the models have not learned us yet.'
+    insight:'Across all three engines the brand reads as an Innovator in a niche, first-mover position. Gemini scores highest (41), Perplexity trails (30). The bar chart makes the pattern obvious: Sentiment and Market are healthy, while Recognition and Share of Voice are the two pillars dragging the total down — largely because the base training data for these models predates our launch — the foundational knowledge each model draws on was formed before we existed.'
   },
   recognition:{
     id:'recognition',label:'Brand Recognition',icon:'bi-eye',
     eyebrow:'Pillar · weight /20',headline:'10',headUnit:'/100 scaled avg',headPct:10,timeline:true,
     what:'How visible and recognisable your brand is across AI training data and live sources.',
-    plain:'Put simply: when someone asks AI about your field, does it already know your brand exists? Right now it mostly does not — and the main reason is timing: the AI training datasets were cut off before our business went live, so the models simply have not learned us yet. Recognition is the lowest score, and it is the first thing worth building.',
+    plain:'Put simply: when someone asks AI about your field, does it already know your brand exists? Right now it mostly does not — and the main reason is timing: the base training data for these models largely predates our launch — so the foundational knowledge each model draws on was formed before we existed. Recognition is the lowest score, and it is the first thing worth building.',
     providers:[
       P('ChatGPT','OpenAI · GPT-5.4 mini','12','/100',12,'',[S('Confidence Level',84,100,'84%'),S('Mention Depth',2,10),S('Source Quality',3,10),S('Data Richness',2,10)]),
       P('Perplexity','Real-time answers','5','/100',5,'',[S('Confidence Level',60,100,'60%'),S('Mention Depth',1,10),S('Source Quality',2,10),S('Data Richness',1,10)]),
       P('Gemini','Gemini 3 Flash Preview · Google','12','/100',12,'',[S('Confidence Level',35,100,'35%'),S('Mention Depth',2,10),S('Source Quality',3,10),S('Data Richness',2,10)])
     ],
-    insight:'Recognition is the weakest pillar (~10/100) — largely because AI training datasets were cut off before our business went live, so the models have not yet learned the brand. Every engine tags it as a Niche Innovator with thin data richness and shallow mention depth. The fastest lever is more indexed, structured, third-party mentions of the brand name.'
+    insight:'Recognition is the weakest pillar (~10/100) — largely because the base training data for these models predates our launch — the foundational knowledge each model draws on was formed before we existed. Every engine tags it as a Niche Innovator with thin data richness and shallow mention depth. The fastest lever is more indexed, structured, third-party mentions of the brand name.'
   },
   market:{
     id:'market',label:'Share of Voice',icon:'bi-megaphone',
@@ -168,7 +168,7 @@ var METRICS={
       {engine:'Perplexity',topics:['AI visibility in search results','Pricing consultation models','AEO vs traditional SEO','Predictive search analytics','Marketing-tech integration']},
       {engine:'Gemini',topics:['AI-driven SEO strategies','Pricing for AEO consultancy','AEO vs traditional SEO']}
     ],
-    insight:'Share of voice ranges 8–18.5%. The three donuts show who AI names instead of you, engine by engine — WebFX and ThatWare lead, helped by years of indexed coverage that predate us; AI training datasets were cut off before our business went live. The upside: Gemini already surfaces 1,240 brand mentions, the raw base to convert into cited answers.'
+    insight:'Share of voice ranges 8–18.5%. The three donuts show who AI names instead of you, engine by engine — WebFX and ThatWare lead, helped by years of indexed coverage that predate us; the base training data for these models largely predates our launch. The upside: Gemini already surfaces 1,240 brand mentions, the raw base to convert into cited answers.'
   },
   sentiment:{
     id:'sentiment',label:'Brand Sentiment',icon:'bi-emoji-smile',
@@ -198,7 +198,7 @@ var METRICS={
       P('Perplexity','Real-time answers','3','/20',15,'',[S('Source Quality',2,10),S('Data Richness',1,10),S('Mention Depth',1,10)]),
       P('Gemini','Gemini 3 Flash Preview · Google','5','/20',25,'',[S('Source Quality',3,10),S('Data Richness',2,10),S('Mention Depth',2,10)])
     ],
-    insight:'Presence quality is thin (3–5/20) — in part because AI training datasets were cut off before our business went live, leaving few indexed references. Engines lean on owned and website sources with few independent references. Structured data (schema) and authoritative third-party coverage are the levers here.'
+    insight:'Presence quality is thin (3–5/20) — in part because the base training data for these models largely predates our launch, leaving few indexed references. Engines lean on owned and website sources with few independent references. Structured data (schema) and authoritative third-party coverage are the levers here.'
   },
   geo:{
     id:'geo',label:'GEO Visibility',icon:'bi-geo-alt',
@@ -232,7 +232,7 @@ var METRICS={
       ]
     },
     steps:{title:'Market trajectory · where the journey leads',current:0,items:[{label:'Niche Innovator',sub:'Where we are now'},{label:'Challenger',sub:'Build authority &amp; proof'},{label:'Category Authority',sub:'Cited by default'}]},
-    insight:'All three engines independently call the trajectory positive — Gemini flags the steepest acceleration, expecting demand for AEO services to surge as AI assistants gain market share. The strengths agree (specialist AEO focus, tech alignment, Australian first-mover) and so do the gaps (differentiation, proof of results, broader educational content). Those gaps are the roadmap.'
+    insight:'All three engines consistently describe the trajectory as positive — Gemini flags the steepest acceleration, expecting demand for AEO services to surge as AI assistants gain market share. The strengths agree (specialist AEO focus, tech alignment, Australian first-mover) and so do the gaps (differentiation, proof of results, broader educational content). Those gaps are the roadmap.'
   },
   narrative:{
     id:'narrative',label:'Narrative Themes',icon:'bi-chat-square-text',
