@@ -109,6 +109,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://aisearch.global/resources/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://aisearch.global/privacy/</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>

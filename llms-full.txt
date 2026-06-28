@@ -1,5 +1,5 @@
 # AISearch Global — Full Reference
-# Last updated: 25 Jun 2026
+# Last updated: 28 Jun 2026
 https://aisearch.global
 
 > AISearch Global is a specialist Answer Engine Optimisation (AEO) agency based in Sydney, Australia. We help Australian businesses get found, cited, and recommended inside AI-generated answers on ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews, DeepSeek, and Grok.
@@ -48,6 +48,19 @@ Creates reusable publishing frameworks that produce machine-readable, high-utili
 URL: /services/ai-visibility-strategy
 
 Aligns an AEO optimisation roadmap with specific business revenue targets and priority market queries. Combines technical AEO, content strategy, and entity building into a cohesive plan with measurable milestones.
+
+---
+
+## AEO Tools & Resources
+
+URL: https://aisearch.global/resources/
+Type: CollectionPage
+
+AISearch Global provides three free resources to help Australian businesses understand and improve their AI visibility:
+
+1. AEO Score Calculator — free interactive tool at /aeo-score-calculator. Assesses AI visibility across entity clarity, schema, content structure, and citation authority.
+2. AEO Glossary — free reference at /insights/aeo-traction-stack#aeo-glossary. Plain-language definitions for AEO, GEO, schema, entity signals, and citation authority terms.
+3. The AI Search Dictionary: AEO, GEO & AI Visibility Terms Explained in Plain English — 368 key terms by Viveka Mohan Das, available on Amazon at https://a.co/d/0fvTsI4V (ASIN B0H69QZ9RZ). Covers AEO, GEO, AI visibility, entity optimisation, structured data, prompt testing, and citation share in plain language. Includes bonus 80/20 checklist and action templates for small business owners.
 
 ---
 

@@ -37,12 +37,12 @@ amplitude.init('3c57360b46002d54e4911e690e1198c3', {
       + '<a href="/" class="brand" aria-label="AISearch Global home"><img src="/assets/images/logos/header-logo.svg" alt="AISearch Global" width="200" height="34"></a>'
       + '<button class="nav-toggle" id="menuBtn" aria-controls="siteNav" aria-expanded="false">Menu</button>'
       + '<ul id="siteNav" class="nav-links links">'
-      + '<li><a href="/#what">What is AI Visibility</a></li>'
       + '<li><a href="/services/">Services</a></li>'
-      + '<li><a href="/about/">About</a></li>'
       + '<li><a href="/insights/">Insights</a></li>'
+      + '<li><a href="/resources/">Resources</a></li>'
+      + '<li><a href="/about/">About</a></li>'
       + '<li><a href="/faq">FAQ</a></li>'
-      + '<li><a href="/aeo-score-calculator" class="cta-link">AEO Score Calculator</a></li>'
+      + '<li><a href="/#contact" class="cta-link">Book an Audit</a></li>'
       + '</ul></div>';
 
    var header = document.querySelector('header');

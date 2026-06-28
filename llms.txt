@@ -30,6 +30,11 @@ AISearch Global focuses exclusively on AEO and GEO, not traditional SEO. Our wor
 
 - [Client Zero AI Visibility Console](/insights/client-zero-visibility-dashboard): Interactive dashboard presenting AISearch Global's full AI Visibility Audit across 11 scored metrics — AEO Score, Brand Recognition, Share of Voice, Brand Sentiment, Presence Quality, GEO Visibility, Narrative Themes, Source Analysis, Site Performance, Technical Foundation, and Analysis Summary. Scored independently by ChatGPT, Perplexity, and Gemini. Data as of 20 Jun 2026. Living case study and product demonstration.
 
+## Free Tools & Resources
+
+- [AEO Tools & Resources](/resources/): Hub page linking to all free AISearch Global resources — the AEO Score Calculator, AEO Glossary, and The AI Search Dictionary.
+- [The AI Search Dictionary: AEO, GEO & AI Visibility Terms Explained in Plain English](https://a.co/d/0fvTsI4V): Book by Viveka Mohan Das. 368 key terms across AEO, GEO, AI visibility, entity optimisation, structured data, prompt testing, and citation share — explained in plain language. Includes a bonus 80/20 AI visibility checklist and action templates for small business. Available on Amazon (ASIN B0H69QZ9RZ).
+
 ## Reference Pages
 
 - [FAQ — 51 AEO Questions Answered](/faq): 51 frequently asked questions about Answer Engine Optimisation, AI search visibility, schema markup, and working with AISearch Global.
