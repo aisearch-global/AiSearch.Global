@@ -51,6 +51,7 @@ amplitude.init('3c57360b46002d54e4911e690e1198c3', {
    /* ── Shared footer ── */
    var F = '<div class="container">'
       + '<div style="font-size:.8rem;opacity:1;color:rgba(255,255,255,.7)">&copy; 2026 AISearch Global &nbsp;|&nbsp; Sydney, NSW, Australia &nbsp;|&nbsp; ABN 13 490 201 041 &nbsp;|&nbsp; <a href="tel:+61240192419" style="color:inherit;text-decoration:none">+61 2 4019 2419</a> &nbsp;|&nbsp; <a href="mailto:hello@aisearch.global" style="color:inherit;text-decoration:none">hello@aisearch.global</a></div>'
+      + '<div style="font-size:.78rem;color:rgba(255,255,255,.5);margin-top:.45rem">Founded by <a href="/about/" style="color:#0abab5;text-decoration:none">Viveka Mohan Das</a> &nbsp;&middot;&nbsp; Published Author: <a href="https://www.amazon.com/dp/B0H69QZ9RZ" style="color:#0abab5;text-decoration:none" target="_blank" rel="noopener"><em>The AI Search Dictionary</em></a></div>'
       + '<div class="footer-links">'
       + '<a href="/insights/">Insights</a>'
       + '<a href="/about/">About</a>'
