@@ -1,1 +1,8 @@
 ﻿/* Shared site styles placeholder */
+
+/* Font rendering — applied globally so every page gets antialiasing */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
