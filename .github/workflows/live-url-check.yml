@@ -10,7 +10,7 @@ jobs:
   check-live-urls:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    steps:
+    steps:h
       - name: Check production URLs
         shell: bash
         run: |
@@ -44,6 +44,7 @@ jobs:
           for url in "${urls[@]}"; do
             code=$(curl -sS -L --max-redirs 10 \
               -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" \
+                              -H "X-CI-Healthcheck: ${{ secrets.CI_HEALTHCHECK_TOKEN }}" \
               -o /dev/null -w "%{http_code}" "$url")
             echo "$url -> $code"
             if [[ "$code" != "200" ]]; then
