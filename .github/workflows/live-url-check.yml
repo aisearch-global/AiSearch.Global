@@ -10,7 +10,7 @@ jobs:
   check-live-urls:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    steps:h
+    steps:
       - name: Check production URLs
         shell: bash
         run: |
