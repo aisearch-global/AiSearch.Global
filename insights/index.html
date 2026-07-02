@@ -11,8 +11,8 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="shortcut icon" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/assets/images/aisearch_social_graphic_plumber.png">
-  <link rel="stylesheet" href="../assets/css/styles.css">
-  <script defer src="../assets/js/main.js?v=footer-sydney"></script>
+  <link rel="stylesheet" href="../assets/css/styles.css?v=2">
+  <script defer src="../assets/js/main.js?v=footer-sydney2"></script>
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="AISearch Global">
@@ -70,7 +70,13 @@
     .cta-block{margin-top:2.3rem;background:var(--bg2);border:1px solid rgba(10,186,181,.28);border-radius:0;padding:1.2rem;text-align:center}
     .cta-block h3{margin:.1rem 0 .55rem;font-family:var(--display)}
     .cta-block p{margin:0 0 .9rem;color:var(--muted)}
+    .topic-jump{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin:0 0 2rem;padding:.9rem 1rem;background:var(--bg2);border:1px solid var(--border);border-radius:0}
+    .topic-jump-label{display:flex;align-items:center;gap:.4rem;font:600 .72rem var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+    .topic-jump select{flex:1;min-width:220px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:0;padding:.55rem .7rem;font:500 .88rem var(--body);cursor:pointer}
+    .topic-jump select:hover{border-color:var(--accent)}
+    .topic-jump select:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
     @media (max-width:880px){.featured-grid{grid-template-columns:1fr}}
+    @media (max-width:520px){.topic-jump{flex-direction:column;align-items:stretch}}
     @media (max-width:720px){.nav-toggle{display:block}.nav-links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid var(--border);padding:.8rem;border-radius:0}.nav-links.open{display:flex}.insights-main{padding-top:3.2rem}}
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -169,6 +175,19 @@
       <p class="insights-sub">Practical analysis, industry visibility audits, and strategy tracking how businesses appear across modern AI search and answer platforms.</p>
       <p style="font-size:.82rem;color:var(--muted);margin-bottom:1.5rem">By <a href="/about/" style="color:var(--accent);text-decoration:none">Viveka Mohan Das</a> — Founder & AEO Strategist, AISearch Global &nbsp;&middot;&nbsp; Published Author: <a href="https://www.amazon.com/dp/B0H69QZ9RZ" style="color:var(--accent);text-decoration:none" target="_blank" rel="noopener"><em>The AI Search Dictionary</em></a></p>
 
+      <div class="topic-jump">
+        <label for="topic-select" class="topic-jump-label"><i class="bi bi-signpost-split"></i> Jump to a topic</label>
+        <select id="topic-select" onchange="if(this.value) window.location.href=this.value" aria-label="Jump directly to an insights article">
+          <option value="" selected disabled>Choose an article…</option>
+          <option value="/insights/aeo-geo-results-timeline">Guide · AEO &amp; GEO Results Timeline</option>
+          <option value="/insights/aisearch-global-client-zero">Case Study · Client Zero — 19 to 91</option>
+          <option value="/insights/princeton-geo-paper-explained">GEO Research · Princeton Paper Explained</option>
+          <option value="/insights/aeo-traction-stack">Framework · The AEO Traction Stack</option>
+          <option value="/insights/how-ai-decides-which-businesses-to-recommend">Small Business · How AI Decides</option>
+          <option value="/insights/what-is-aeo-answer-engine-optimisation">Fundamentals · What Is AEO?</option>
+        </select>
+      </div>
+
       <article class="featured" style="border-top:2px solid var(--accent2);margin-bottom:1.25rem">
         <div class="featured-grid">
           <div>
@@ -199,7 +218,7 @@
         <div class="featured-grid">
           <div>
             <div class="featured-meta">
-              <span style="display:inline-flex;align-items:center;gap:4px;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--accent2);color:#0D0E10;padding:.25rem .6rem;border-radius:0"><i class="bi bi-star-fill" style="font-size:.72rem"></i> New</span>
+              <span style="display:inline-flex;align-items:center;gap:4px;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--accent2);color:#0D0E10;padding:.25rem .6rem;border-radius:0"><i class="bi bi-star-fill" style="font-size:.72rem"></i> Must Read</span>
               <span class="tag" style="background:rgba(10,186,181,.12);font-weight:600">Case Study · AEO Audit</span>
               <span>21 June 2026 | 20 min read</span>
             </div>
