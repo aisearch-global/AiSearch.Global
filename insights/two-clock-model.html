@@ -16,13 +16,13 @@
 <meta property="og:url" content="https://aisearch.global/insights/two-clock-model">
 <meta property="og:title" content="The Two-Clock Model: Why Your AEO Score and AI Perception Move at Different Speeds | AISearch Global">
 <meta property="og:description" content="AEO has two independent clocks running at once — the structural clock you control, and the perception clock AI platforms control. Here's why the gap between them is normal, not a failure.">
-<meta property="og:image" content="https://aisearch.global/assets/images/aisearch_social_graphic_plumber.png">
-<meta property="og:image:alt" content="AISearch Global social graphic showing a plumber search query and warning that your business is not here">
+<meta property="og:image" content="https://aisearch.global/assets/images/two-clock-model-hero.png">
+<meta property="og:image:alt" content="The Two-Clock Model — structural clock racing to 91 in six weeks vs. the slow-moving perception clock, with the perception gap between them">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Two-Clock Model: Why Your AEO Score and AI Perception Move at Different Speeds | AISearch Global">
 <meta name="twitter:description" content="AEO has two independent clocks running at once — the structural clock you control, and the perception clock AI platforms control. Here's why the gap between them is normal, not a failure.">
-<meta name="twitter:image" content="https://aisearch.global/assets/images/aisearch_social_graphic_plumber.png">
-<meta name="twitter:image:alt" content="AISearch Global social graphic showing a plumber search query and warning that your business is not here">
+<meta name="twitter:image" content="https://aisearch.global/assets/images/two-clock-model-hero.png">
+<meta name="twitter:image:alt" content="The Two-Clock Model — structural clock racing to 91 in six weeks vs. the slow-moving perception clock, with the perception gap between them">
 
 <script type="application/ld+json">
 {
@@ -208,6 +208,32 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 .clock-card p{color:var(--silver);font-size:.88rem;line-height:1.6;margin:0}
 @media (max-width:600px){.clock-grid{grid-template-columns:1fr}}
 
+/* HERO TWO-CLOCK VISUAL */
+.hero-clocks{margin:0 0 40px}
+.clock-panel{background:var(--surface);border:1px solid var(--border);border-top:2px solid;padding:20px 22px}
+.clock-panel--structural{border-top-color:var(--tiffany)}
+.clock-panel--perception{border-top-color:var(--amber)}
+.clock-panel-top{display:flex;gap:16px;align-items:center;margin-bottom:16px}
+.clock-panel-top svg{flex-shrink:0}
+.clock-panel canvas{width:100%!important}
+.hero-clock-title{font-family:var(--fh);font-weight:700;font-size:1rem;color:var(--white);margin-bottom:4px}
+.hero-clock-sub{font-family:var(--fm);font-size:.65rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.clock-panel--structural .hero-clock-sub{color:var(--tiffany)}
+.clock-panel--perception .hero-clock-sub{color:var(--amber)}
+.hero-clock-meta{font-family:var(--fb);font-size:.78rem;color:var(--muted);line-height:1.4}
+.clock-panel-stat{border-top:1px solid var(--border);margin-top:16px;padding-top:14px}
+.clock-panel-stat .stat-num{font-family:var(--fh);font-size:1.4rem;font-weight:700;line-height:1;margin-bottom:6px}
+.clock-panel--structural .stat-num{color:var(--tiffany)}
+.clock-panel--perception .stat-num{color:var(--amber)}
+.clock-panel-stat .stat-desc{font-family:var(--fb);font-size:.75rem;color:var(--muted);line-height:1.5}
+.clock-panel-stat .stat-src{font-family:var(--fm);font-size:.58rem;margin-top:4px;display:block}
+.clock-panel--structural .stat-src{color:var(--tiffany)}
+.clock-panel--perception .stat-src{color:var(--amber)}
+.hero-gap-badge{position:relative;z-index:2;width:max-content;margin:-14px auto -14px;background:#111317;border:1px solid var(--border);font-family:var(--fm);font-size:.6rem;text-transform:uppercase;letter-spacing:.08em;color:var(--silver);padding:6px 14px;white-space:nowrap}
+@media (max-width:640px){
+  .clock-panel-top{flex-direction:column;align-items:flex-start}
+}
+
 /* CHART CONTAINERS */
 .chart-wrap {
   background: var(--surface);
@@ -306,18 +332,67 @@ blockquote cite{display:block;margin-top:.75rem;font-style:normal;font-size:.85r
     Your AEO score went from 19 to 91. AI still can't name you. Here's why that's not a bug.
   </p>
 
-  <!-- ── STAT CARDS ── -->
-  <div class="stat-row">
-    <div class="stat-card">
-      <div class="stat-num">Days–Weeks</div>
-      <div class="stat-desc">How fast the structural clock moves — schema, entity signals, content format, fully in your control</div>
-      <span class="stat-src">AISearch Global implementation data, 2026</span>
+  <!-- ── HERO: LIVE TWO-CLOCK VISUAL ── -->
+  <div class="hero-clocks">
+
+    <div class="clock-panel clock-panel--structural">
+      <div class="chart-label">Illustrative — structural score over 12 months</div>
+      <div class="clock-panel-top">
+        <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="26" fill="none" stroke="var(--muted)" stroke-width="2.5"/>
+          <line x1="32" y1="6" x2="32" y2="11" stroke="var(--muted)" stroke-width="2"/>
+          <line x1="58" y1="32" x2="53" y2="32" stroke="var(--muted)" stroke-width="2"/>
+          <line x1="32" y1="58" x2="32" y2="53" stroke="var(--muted)" stroke-width="2"/>
+          <line x1="6" y1="32" x2="11" y2="32" stroke="var(--muted)" stroke-width="2"/>
+          <circle cx="32" cy="32" r="26" fill="none" stroke="var(--tiffany)" stroke-width="3" stroke-linecap="round" stroke-dasharray="138.9 24.5" transform="rotate(-90 32 32)"/>
+          <line x1="32" y1="32" x2="16.6" y2="20.8" stroke="var(--tiffany)" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="16.6" cy="20.8" r="2.4" fill="var(--tiffany)"/>
+          <circle cx="32" cy="32" r="2" fill="var(--tiffany)"/>
+        </svg>
+        <div>
+          <div class="hero-clock-title">Structural Clock</div>
+          <div class="hero-clock-sub">Fast — Days to weeks</div>
+          <div class="hero-clock-meta">Fully in your control · 19→91 in 6 weeks</div>
+        </div>
+      </div>
+      <canvas id="heroStructuralChart" height="140"></canvas>
+      <div class="clock-panel-stat">
+        <div class="stat-num">Days–Weeks</div>
+        <div class="stat-desc">How fast the structural clock moves — schema, entity signals, content format, fully in your control</div>
+        <span class="stat-src">AISearch Global implementation data, 2026</span>
+      </div>
     </div>
-    <div class="stat-card">
-      <div class="stat-num">Weeks–Months</div>
-      <div class="stat-desc">How slowly the perception clock moves — training cycles, retrieval refresh, citation accumulation, not in your control</div>
-      <span class="stat-src">AISearch Global implementation data, 2026</span>
+
+    <div class="hero-gap-badge">↕ THE PERCEPTION GAP</div>
+
+    <div class="clock-panel clock-panel--perception">
+      <div class="chart-label">Illustrative — perception score over 12 months</div>
+      <div class="clock-panel-top">
+        <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="26" fill="none" stroke="var(--muted)" stroke-width="2.5"/>
+          <line x1="32" y1="6" x2="32" y2="11" stroke="var(--muted)" stroke-width="2"/>
+          <line x1="58" y1="32" x2="53" y2="32" stroke="var(--muted)" stroke-width="2"/>
+          <line x1="32" y1="58" x2="32" y2="53" stroke="var(--muted)" stroke-width="2"/>
+          <line x1="6" y1="32" x2="11" y2="32" stroke="var(--muted)" stroke-width="2"/>
+          <circle cx="32" cy="32" r="26" fill="none" stroke="var(--amber)" stroke-width="3" stroke-linecap="round" stroke-dasharray="24.5 138.9" transform="rotate(-90 32 32)"/>
+          <line x1="32" y1="32" x2="47.4" y2="20.8" stroke="var(--amber)" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="47.4" cy="20.8" r="2.4" fill="var(--amber)"/>
+          <circle cx="32" cy="32" r="2" fill="var(--amber)"/>
+        </svg>
+        <div>
+          <div class="hero-clock-title">Perception Clock</div>
+          <div class="hero-clock-sub">Slow — Weeks to months</div>
+          <div class="hero-clock-meta">Not in your control · 36/30/41 AI perception</div>
+        </div>
+      </div>
+      <canvas id="heroPerceptionChart" height="140"></canvas>
+      <div class="clock-panel-stat">
+        <div class="stat-num">Weeks–Months</div>
+        <div class="stat-desc">How slowly the perception clock moves — training cycles, retrieval refresh, citation accumulation, not in your control</div>
+        <span class="stat-src">AISearch Global implementation data, 2026</span>
+      </div>
     </div>
+
   </div>
 
   <!-- ── THE PROBLEM ── -->
@@ -352,21 +427,6 @@ blockquote cite{display:block;margin-top:.75rem;font-style:normal;font-size:.85r
   <p>
     The structural clock is the one every AEO checklist measures, because it's the one you can move directly. Schema goes in, signals fire, score moves — you can watch it change daily if you want. The perception clock is different in kind, not just speed. You cannot publish your way to an instant update in what a model knows. AI platforms only refresh their understanding of your business on their own training and retrieval cycles, and those cycles don't accelerate because your schema improved this week.
   </p>
-
-  <!-- ── THE GRAPH ── -->
-  <div class="chart-wrap">
-    <div class="chart-label">Illustrative — structural score vs. AI perception score over 12 months</div>
-    <canvas id="clockChart" height="260"></canvas>
-    <div class="chart-legend">
-      <span><i style="background:var(--tiffany)"></i> Structural score</span>
-      <span><i style="background:var(--amber)"></i> Perception score</span>
-    </div>
-    <div class="chart-note">Shaded area = the perception gap. Widest around months 1.5–3, when structural work is essentially complete but AI recognition has barely moved. It narrows over the following months — but closing it takes sustained citation-building, not more schema.</div>
-  </div>
-
-  <div class="callout">
-    <p><strong>What the curve shows:</strong> the structural score climbs fast and early — 19 to 70 in month one, past 90 by month two — then plateaus. The perception score barely moves at the same point. It takes until roughly month nine to reach where the structural score was in week two. That gap is the entire subject of this article.</p>
-  </div>
 
   <!-- ── WHY THE GAP IS NORMAL ── -->
   <h2>Why the gap is normal, not failure</h2>
@@ -408,6 +468,21 @@ blockquote cite{display:block;margin-top:.75rem;font-style:normal;font-size:.85r
   <p>
     This is precisely what the Citation Consistency layer of the <a href="/insights/aeo-traction-stack">AEO Traction Stack</a> is built for — it's the layer that starts the perception clock in earnest, rather than only optimising the page itself.
   </p>
+
+  <!-- ── THE GRAPH ── -->
+  <div class="chart-wrap">
+    <div class="chart-label">Illustrative — structural score vs. AI perception score over 12 months</div>
+    <canvas id="clockChart" height="260"></canvas>
+    <div class="chart-legend">
+      <span><i style="background:var(--tiffany)"></i> Structural score</span>
+      <span><i style="background:var(--amber)"></i> Perception score</span>
+    </div>
+    <div class="chart-note">Shaded area = the perception gap. Widest around months 1.5–3, when structural work is essentially complete but AI recognition has barely moved. It narrows over the following months — but closing it takes sustained citation-building, not more schema.</div>
+  </div>
+
+  <div class="callout">
+    <p><strong>What the curve shows:</strong> the structural score climbs fast and early — 19 to 70 in month one, past 90 by month two — then plateaus. The perception score barely moves at the same point. It takes until roughly month nine to reach where the structural score was in week two. That gap is the entire subject of this article.</p>
+  </div>
 
   <!-- ── FAQ ── -->
   <h2>Frequently asked questions</h2>
@@ -534,6 +609,40 @@ new Chart(document.getElementById('clockChart'), {
     }
   }
 });
+
+// ── Hero mini charts: one line each, single clock ──────────
+function heroChart(canvasId, color, data, dashed) {
+  new Chart(document.getElementById(canvasId), {
+    type: 'line',
+    data: {
+      labels: ['Mo 0','Mo 1','Mo 2','Mo 3','Mo 4','Mo 5','Mo 6','Mo 7','Mo 8','Mo 9','Mo 10','Mo 11','Mo 12'],
+      datasets: [{
+        data: data,
+        borderColor: color,
+        backgroundColor: dashed ? 'transparent' : 'rgba(10,191,188,0.10)',
+        borderWidth: 2,
+        borderDash: dashed ? [4, 3] : [],
+        fill: dashed ? false : true,
+        tension: 0.4,
+        cubicInterpolationMode: 'monotone',
+        pointBackgroundColor: color,
+        pointBorderColor: '#0D0E10',
+        pointRadius: ctx => (ctx.dataIndex === 0 || ctx.dataIndex === data.length - 1) ? 3.5 : 0,
+        pointHoverRadius: 5
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false }, tooltip: { enabled: false } },
+      scales: {
+        x: darkScale({ border: { color: BORDER }, ticks: { color: MUTED, autoSkip: true, maxTicksLimit: 5, font: { family: "'DM Mono', monospace", size: 9 } } }),
+        y: darkScale({ border: { color: BORDER }, beginAtZero: true, max: 100, ticks: { display: false }, grid: { display: false } })
+      }
+    }
+  });
+}
+heroChart('heroStructuralChart', TIFFANY, [19, 70, 91, 92, 93, 93, 94, 94, 94, 95, 95, 95, 95], false);
+heroChart('heroPerceptionChart', AMBER, [10, 12, 13, 15, 18, 21, 25, 32, 38, 45, 52, 58, 65], true);
 </script>
 
 </body>
