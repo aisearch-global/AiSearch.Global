@@ -8,6 +8,8 @@
 /terms/ /terms/index.html 200
 /resources /resources/index.html 200
 /resources/ /resources/index.html 200
+/whitepapers /whitepapers/index.html 200
+/whitepapers/ /whitepapers/index.html 200
 /services/ai-brand-presence.html /services/ai-brand-presence 301
 /services/content-restructuring.html /services/content-restructuring 301
 /services/aeo-audit.html /services/aeo-audit 301
@@ -22,11 +24,16 @@
 /insights/aisearch-global-client-zero.html /insights/aisearch-global-client-zero 301
 /insights/two-clock-model.html /insights/two-clock-model 301
 /insights/client-zero-visibility-dashboard.html /insights/client-zero-visibility-dashboard 301
+/insights/top-100-australian-plumbers-ai-visibility.html /insights/top-100-australian-plumbers-ai-visibility 301
 /aeo-score-calculator.html /aeo-score-calculator 301
 /faq.html /faq 301
 /about.html /about/ 301
 /aeo-calculator.html /aeo-score-calculator 301
 /aeo-calculator /aeo-score-calculator 301
-/insights/aeo-glossary.html /insights/ 301
+/insights/aeo-glossary.html /resources/ 301
+/glossary /resources/ 301
+/insights/what-influences-ai-business-recommendations /insights/how-ai-decides-which-businesses-to-recommend 301
+/insights/why-traditional-businesses-are-missing /insights/ 301
 /privacy.html /privacy/ 301
 /terms.html /terms/ 301
+/whitepapers/two-clock-model.html /whitepapers/two-clock-model 301
