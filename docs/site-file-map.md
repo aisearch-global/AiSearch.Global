@@ -21,7 +21,6 @@ Every live URL and its source file. Edit the correct file.
 | `https://aisearch.global/insights/two-clock-model` | `insights/two-clock-model.html` |
 | `https://aisearch.global/insights/princeton-geo-paper-explained` | `insights/princeton-geo-paper-explained.html` |
 | `https://aisearch.global/insights/aeo-geo-results-timeline` | `insights/aeo-geo-results-timeline.html` |
-| `https://aisearch.global/insights/top-100-australian-plumbers-ai-visibility` | `insights/top-100-australian-plumbers-ai-visibility.html` |
 | `https://aisearch.global/about/` | `about/index.html` |
 | `https://aisearch.global/faq.html` | `faq.html` |
 | `https://aisearch.global/aeo-score-calculator.html` | `aeo-score-calculator.html` |
