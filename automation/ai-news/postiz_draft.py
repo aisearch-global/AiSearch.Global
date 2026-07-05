@@ -31,7 +31,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
@@ -66,7 +66,7 @@ def main() -> int:
     parser.add_argument("--date", help="YYYY-MM-DD, defaults to today")
     args = parser.parse_args()
 
-    date_str = args.date or datetime.utcnow().date().isoformat()
+    date_str = args.date or datetime.now(timezone.utc).date().isoformat()
     human_date = datetime.fromisoformat(date_str).strftime("%-d %B %Y")
 
     brief_path = PENDING_DIR / f"{date_str}.brief.json"

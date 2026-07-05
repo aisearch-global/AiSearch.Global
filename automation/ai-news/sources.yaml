@@ -4,9 +4,17 @@
 #   verified   = feed URL confirmed resolving with real RSS/Atom content
 #   likely     = standard platform path (e.g. WordPress /feed/), not hand-verified in this pass
 #   unconfirmed = no native feed found; needs a fallback (scrape or drop) before go-live
+#   broken     = confirmed dead in a real run (2026-07-05) — 404 or timeout, not a bot-block.
+#                Needs a real URL found by hand (open the site in a browser and look for
+#                a working RSS/feed link) before it'll ever contribute a story.
 #
 # ai_filter: true  -> entry must match AI_KEYWORDS (see fetch_pipeline.py) to be kept
 #            false -> source is already AI-only, keep everything
+#
+# Run history: first real run (2026-07-05) confirmed OAIC (404), ACCC (404) and
+# DISR (timeout) are all wrong URLs. Search Engine Land and InnovationAus returned
+# 403 (bot-protection) — 2026-07-05's header fix (browser-like UA + Referer retry)
+# should clear those without needing new URLs; re-run to confirm.
 
 sources:
   # --- AI news ---
@@ -35,25 +43,34 @@ sources:
     confidence: likely
 
   # --- AI laws & regulation ---
+  # All three below confirmed BROKEN in the 2026-07-05 run — 404/timeout, not
+  # bot-blocking. Keeping them in the list (rather than deleting) so they show
+  # up as visible failures in the run log instead of silently having no AU
+  # regulation coverage at all. Replace the url: with a real one once found.
   - name: OAIC News
     url: https://www.oaic.gov.au/updates/news-and-media/rss
     categories: [ai_law_regulation, australia_focus]
     ai_filter: true
-    confidence: unconfirmed
+    confidence: broken   # 404 confirmed 2026-07-05
 
   - name: Department of Industry, Science and Resources
     url: https://www.industry.gov.au/news/rss.xml
     categories: [ai_law_regulation, australia_focus]
     ai_filter: true
-    confidence: unconfirmed
+    confidence: broken   # timeout confirmed 2026-07-05
 
   - name: ACCC Media Releases
     url: https://www.accc.gov.au/news/rss.xml
     categories: [ai_law_regulation, australia_focus]
     ai_filter: true
-    confidence: unconfirmed
+    confidence: broken   # 404 confirmed 2026-07-05
 
   # --- Human-AI research ---
+  # NOTE: returned "0 candidates" in the 2026-07-05 run despite the feed URL
+  # working (no fetch error logged). Added per-stage entry-count logging
+  # (raw entries -> new -> AI-relevant) to fetch_pipeline.py to diagnose this
+  # on the next run — arXiv's feed format is unusual (RSS 1.0/RDF-ish) and may
+  # not expose title/link the way feedparser expects for every entry.
   - name: arXiv cs.AI
     url: http://rss.arxiv.org/rss/cs.AI
     categories: [human_ai_research]
@@ -77,7 +94,7 @@ sources:
     url: https://searchengineland.com/feed
     categories: [aeo_relevance]
     ai_filter: true
-    confidence: likely
+    confidence: likely   # 403 (bot-block) in 2026-07-05 run; header fix should clear it, re-run to confirm
 
   - name: Search Engine Journal
     url: https://www.searchenginejournal.com/feed/
@@ -96,7 +113,7 @@ sources:
     url: https://www.innovationaus.com/feed/
     categories: [australia_focus, ai_news]
     ai_filter: true
-    confidence: unconfirmed
+    confidence: unconfirmed   # 403 (bot-block) in 2026-07-05 run; header fix should clear it, re-run to confirm
 
 # Keyword list used when ai_filter: true. Case-insensitive substring match against title + summary.
 ai_keywords:

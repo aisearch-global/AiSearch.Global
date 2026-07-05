@@ -48,9 +48,17 @@ FETCH_BACKOFF_SECONDS = 4
 VERIFY_TIMEOUT = 8
 
 USER_AGENT = (
-    "Mozilla/5.0 (compatible; AISearchGlobalNewsBot/1.0; "
-    "+https://aisearch.global/news)"
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
 )
+# A handful of sites (Search Engine Land, InnovationAus and others) 403 requests
+# that look like a bare script — no Accept/Accept-Language, no Referer. A more
+# browser-like header set clears most of that without needing per-site hacks.
+DEFAULT_HEADERS = {
+    "User-Agent": USER_AGENT,
+    "Accept": "application/rss+xml, application/xml, text/xml, */*;q=0.8",
+    "Accept-Language": "en-AU,en;q=0.9",
+}
 
 # Tracking params etc. stripped before a link is used as a dedupe key or archived.
 STRIP_QUERY_PREFIXES = ("utm_", "ref", "fbclid", "gclid", "mc_cid", "mc_eid")
@@ -119,7 +127,12 @@ def fetch_source(source: dict, keywords: list[str], seen: dict) -> tuple[list[di
     feed = None
     for attempt in range(1, FETCH_RETRIES + 1):
         try:
-            resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=FETCH_TIMEOUT)
+            headers = dict(DEFAULT_HEADERS)
+            if attempt > 1:
+                # Some sites 403 a bare request but allow one that looks like it
+                # came from a browser that was just on their own homepage.
+                headers["Referer"] = f"{urlsplit(url).scheme}://{urlsplit(url).netloc}/"
+            resp = requests.get(url, headers=headers, timeout=FETCH_TIMEOUT)
             resp.raise_for_status()
             feed = feedparser.parse(resp.content)
             if feed.bozo and not feed.entries:
@@ -134,6 +147,9 @@ def fetch_source(source: dict, keywords: list[str], seen: dict) -> tuple[list[di
     if feed is None:
         return [], last_error or "unknown fetch failure"
 
+    raw_count = len(feed.entries)
+    after_seen = 0
+    after_keywords = 0
     candidates = []
     for entry in feed.entries[:MAX_ENTRIES_PER_FEED]:
         title = strip_html(entry.get("title", ""))
@@ -144,11 +160,13 @@ def fetch_source(source: dict, keywords: list[str], seen: dict) -> tuple[list[di
         key = story_key(title, link)
         if key in seen:
             continue
+        after_seen += 1
 
         summary = strip_html(entry.get("summary", "") or entry.get("description", ""))
 
         if source.get("ai_filter", True) and not matches_keywords(f"{title} {summary}", keywords):
             continue
+        after_keywords += 1
 
         published = entry.get("published", entry.get("updated", ""))
 
@@ -162,18 +180,28 @@ def fetch_source(source: dict, keywords: list[str], seen: dict) -> tuple[list[di
             "categories": source["categories"],
         })
 
+    log(f"  raw entries: {raw_count} -> new (not seen before): {after_seen} "
+        f"-> AI-relevant: {after_keywords if source.get('ai_filter', True) else after_seen}")
+
     return candidates, None
 
 
-def verify_url(url: str) -> bool:
+def verify_url(url: str) -> str:
+    """Returns 'ok', 'blocked' (probably fine, bot-protection false positive —
+    kept, not dropped) or 'broken' (genuinely dead — dropped)."""
     try:
-        resp = requests.head(url, headers={"User-Agent": USER_AGENT}, timeout=VERIFY_TIMEOUT, allow_redirects=True)
+        resp = requests.head(url, headers=DEFAULT_HEADERS, timeout=VERIFY_TIMEOUT, allow_redirects=True)
         if resp.status_code >= 400 or resp.status_code == 405:
-            # Some servers don't support HEAD properly — confirm with a light GET before giving up.
-            resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=VERIFY_TIMEOUT, stream=True)
-        return resp.status_code < 400
+            resp = requests.get(url, headers=DEFAULT_HEADERS, timeout=VERIFY_TIMEOUT, stream=True)
+        if resp.status_code < 400:
+            return "ok"
+        if resp.status_code in (401, 403, 429):
+            # Almost always bot-protection (Cloudflare, etc.), not a dead link.
+            # Dropping these was silently discarding real, live stories.
+            return "blocked"
+        return "broken"
     except requests.RequestException:
-        return False
+        return "broken"
 
 
 def dedupe_across_sources(candidates: list[dict]) -> list[dict]:
@@ -244,9 +272,16 @@ def main() -> int:
 
     verified = []
     dropped_broken = 0
+    kept_despite_block = 0
     for c in deduped:
-        if verify_url(c["link"]):
+        status = verify_url(c["link"])
+        if status == "ok":
             verified.append(c)
+        elif status == "blocked":
+            kept_despite_block += 1
+            verified.append(c)
+            log(f"  KEPT (link blocked our check, likely bot-protection, not dead): "
+                f"{c['title']} -> {c['link']}")
         else:
             dropped_broken += 1
             log(f"  DROPPED (broken link): {c['title']} -> {c['link']}")
@@ -270,6 +305,7 @@ def main() -> int:
             "sources": source_results,
             "candidates_before_verify": len(deduped),
             "dropped_broken_links": dropped_broken,
+            "kept_despite_verify_block": kept_despite_block,
             "stories_selected": len(ranked),
         })
     else:

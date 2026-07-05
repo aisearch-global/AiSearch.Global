@@ -15,3 +15,7 @@ content-drafts/
 # Local audit docs — keep for reference, never deploy
 *.docx
 amplitude-setup-report.md
+
+# Python bytecode cache (generated locally when testing automation/ai-news scripts)
+__pycache__/
+*.pyc
