@@ -1,0 +1,64 @@
+name: AI News Daily Brief
+
+# Default run time: 6:00am AEST = 20:00 UTC the previous day.
+# AEST has no daylight saving, but NSW observes AEDT (UTC+11) roughly Oct-Apr —
+# during that window this will actually fire at ~7am Sydney time. Adjust the
+# cron below if that hour drift matters; not fixed automatically to keep this
+# workflow simple.
+on:
+  schedule:
+    - cron: '0 20 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  ai-news-brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r automation/ai-news/requirements.txt
+
+      - name: Fetch, dedupe, verify, rank
+        run: python automation/ai-news/fetch_pipeline.py
+
+      - name: Generate brief + archived page + ticker feed
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python automation/ai-news/generate_brief.py
+
+      - name: Queue LinkedIn draft in Postiz
+        env:
+          POSTIZ_API_KEY: ${{ secrets.POSTIZ_API_KEY }}
+          POSTIZ_LINKEDIN_INTEGRATION_ID: ${{ secrets.POSTIZ_LINKEDIN_INTEGRATION_ID }}
+        run: python automation/ai-news/postiz_draft.py
+
+      - name: Commit and push if anything changed
+        run: |
+          set -euo pipefail
+          git config user.name "aisearch-news-bot"
+          git config user.email "hello@aisearch.global"
+          git add news/ automation/ai-news/data/
+          if git diff --cached --quiet; then
+            echo "Nothing new to publish today."
+          else
+            git commit -m "AI news brief: $(date -u +%Y-%m-%d)"
+            git push
+          fi
+          # Pushing to main triggers the existing Cloudflare Pages deploy
+          # workflow (.github/workflows/deploy.yml) automatically.
+
+      - name: Alert on failure
+        if: failure()
+        run: |
+          echo "::error::AI News Daily Brief workflow failed — check the run log above and automation/ai-news/data/run-log.jsonl."
+          # GitHub already emails repo watchers on workflow failure by default.
+          # If you want it routed somewhere specific (Slack, a different inbox),
+          # add that step here once you tell me where.

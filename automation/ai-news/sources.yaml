@@ -1,0 +1,122 @@
+# AI News Automation — source list
+#
+# confidence:
+#   verified   = feed URL confirmed resolving with real RSS/Atom content
+#   likely     = standard platform path (e.g. WordPress /feed/), not hand-verified in this pass
+#   unconfirmed = no native feed found; needs a fallback (scrape or drop) before go-live
+#
+# ai_filter: true  -> entry must match AI_KEYWORDS (see fetch_pipeline.py) to be kept
+#            false -> source is already AI-only, keep everything
+
+sources:
+  # --- AI news ---
+  - name: TechCrunch
+    url: https://techcrunch.com/feed/
+    categories: [ai_news]
+    ai_filter: true
+    confidence: likely
+
+  - name: VentureBeat AI
+    url: https://venturebeat.com/category/ai/feed/
+    categories: [ai_news]
+    ai_filter: false
+    confidence: likely
+
+  - name: The Verge AI
+    url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+    categories: [ai_news]
+    ai_filter: false
+    confidence: likely
+
+  - name: MIT Technology Review
+    url: https://www.technologyreview.com/feed/
+    categories: [ai_news, human_ai_research]
+    ai_filter: true
+    confidence: likely
+
+  # --- AI laws & regulation ---
+  - name: OAIC News
+    url: https://www.oaic.gov.au/updates/news-and-media/rss
+    categories: [ai_law_regulation, australia_focus]
+    ai_filter: true
+    confidence: unconfirmed
+
+  - name: Department of Industry, Science and Resources
+    url: https://www.industry.gov.au/news/rss.xml
+    categories: [ai_law_regulation, australia_focus]
+    ai_filter: true
+    confidence: unconfirmed
+
+  - name: ACCC Media Releases
+    url: https://www.accc.gov.au/news/rss.xml
+    categories: [ai_law_regulation, australia_focus]
+    ai_filter: true
+    confidence: unconfirmed
+
+  # --- Human-AI research ---
+  - name: arXiv cs.AI
+    url: http://rss.arxiv.org/rss/cs.AI
+    categories: [human_ai_research]
+    ai_filter: false
+    confidence: verified
+
+  - name: OpenAI News
+    url: https://openai.com/news/rss.xml
+    categories: [human_ai_research, ai_news]
+    ai_filter: false
+    confidence: likely
+
+  - name: Google DeepMind Blog
+    url: https://deepmind.google/blog/feed/basic/
+    categories: [human_ai_research, ai_news]
+    ai_filter: false
+    confidence: likely
+
+  # --- AEO relevance ---
+  - name: Search Engine Land
+    url: https://searchengineland.com/feed
+    categories: [aeo_relevance]
+    ai_filter: true
+    confidence: likely
+
+  - name: Search Engine Journal
+    url: https://www.searchenginejournal.com/feed/
+    categories: [aeo_relevance]
+    ai_filter: true
+    confidence: likely
+
+  # --- Australian focus ---
+  - name: iTnews
+    url: https://www.itnews.com.au/RSS/rss.ashx
+    categories: [australia_focus, ai_news]
+    ai_filter: true
+    confidence: likely
+
+  - name: InnovationAus
+    url: https://www.innovationaus.com/feed/
+    categories: [australia_focus, ai_news]
+    ai_filter: true
+    confidence: unconfirmed
+
+# Keyword list used when ai_filter: true. Case-insensitive substring match against title + summary.
+ai_keywords:
+  - " ai "
+  - "artificial intelligence"
+  - "machine learning"
+  - "generative ai"
+  - "genai"
+  - "large language model"
+  - "llm"
+  - "chatgpt"
+  - "openai"
+  - "anthropic"
+  - "claude"
+  - "gemini"
+  - "copilot"
+  - "chatbot"
+  - "answer engine"
+  - "search generative"
+  - "ai overview"
+  - "neural network"
+  - "foundation model"
+  - "agentic"
