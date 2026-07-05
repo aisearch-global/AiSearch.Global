@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI News | AISearch Global</title>
+  <meta name="description" content="Daily curated AI news: AI news, AI law and regulation, human-AI research, and AEO-relevant developments, with an Australian focus.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="author" content="AISearch Global">
+  <link rel="canonical" href="https://aisearch.global/news">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/images/aisearch_social_graphic_plumber.png">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script defer src="/assets/js/main.js"></script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AISearch Global">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:url" content="https://aisearch.global/news">
+  <meta property="og:title" content="AI News | AISearch Global">
+  <meta property="og:description" content="Daily curated AI news, AEO-relevant developments, and an Australian focus.">
+  <meta property="og:image" content="https://aisearch.global/assets/images/aisearch_social_graphic_plumber.png">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBZMSCBXBZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XBZMSCBXBZ');
+  </script>
+  <script defer src="/assets/js/consent.js"></script>
+</head>
+<body>
+  <main class="container news-index-page" style="padding-top: 6rem; padding-bottom: 4rem;">
+    <h1>AI News</h1>
+    <p>A running ticker of the latest headlines AISearch Global is tracking, plus the full daily brief archive below.</p>
+
+    <div id="ai-news-ticker" class="ai-news-ticker" aria-live="polite">
+      <span class="ai-news-ticker-label">Latest:</span>
+      <div class="ai-news-ticker-track"><!-- populated by /news/latest.json --></div>
+    </div>
+
+    <h2>Recent briefs</h2>
+    <ul class="news-index-list">
+      <li><a href="/news/2026-07-05">5 July 2026</a> — 12 stories</li>
+    </ul>
+  </main>
+
+  <script>
+    (function () {
+      var track = document.querySelector('.ai-news-ticker-track');
+      if (!track) return;
+      fetch('/news/latest.json', { cache: 'no-store' })
+        .then(function (r) { return r.ok ? r.json() : []; })
+        .then(function (items) {
+          track.innerHTML = items.map(function (item) {
+            return '<a href="' + item.link + '" target="_blank" rel="noopener">' + item.headline + '</a>';
+          }).join(' &nbsp;&middot;&nbsp; ');
+        })
+        .catch(function () { /* fail quietly — ticker just stays empty, page still works */ });
+    })();
+  </script>
+</body>
+</html>
