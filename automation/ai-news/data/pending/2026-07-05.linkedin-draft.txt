@@ -1,8 +1,8 @@
 AI news brief — 5 July 2026
 
-→ What is Mistral AI? Everything to know about the OpenAI competitor
-→ The only AI glossary you’ll need this year
-→ Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped
+→ Almost 90 new unicorns have been minted so far this year — here they are
+→ Google just redesigned the search box for the first time in 25 years — here’s why it matters more than you think.
+→ Railway secures $100 million to challenge AWS with AI-native cloud infrastructure
 
 Full roundup, with sources linked:
 https://aisearch.global/news/2026-07-05

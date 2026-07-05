@@ -1,43 +1,43 @@
 [
   {
-    "key": "6755a9bbdcc40544f0889f4f",
-    "title": "What is Mistral AI? Everything to know about the OpenAI competitor",
-    "link": "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor",
-    "summary_raw": "Mistral AI, which offers some open source AI models, has raised significant funding since its creation in 2023, with the ambition to \u201cput frontier AI in the hands of everyone.\u201d",
-    "published": "Sat, 04 Jul 2026 15:51:32 +0000",
+    "key": "0197631ed33afcc372f32a83",
+    "title": "Almost 90 new unicorns have been minted so far this year \u2014 here they are",
+    "link": "https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are",
+    "summary_raw": "With AI igniting an investor frenzy, more startups are achieving unicorn status every month.",
+    "published": "Sun, 05 Jul 2026 12:47:39 +0000",
     "source": "TechCrunch",
     "categories": [
       "ai_news"
     ]
   },
   {
-    "key": "5c4aca990df602d868fbb1c7",
-    "title": "The only AI glossary you\u2019ll need this year",
-    "link": "https://techcrunch.com/2026/07/03/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms",
-    "summary_raw": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
-    "published": "Fri, 03 Jul 2026 21:20:00 +0000",
-    "source": "TechCrunch",
+    "key": "2ff2d7137d2303c62e0bcc36",
+    "title": "Google just redesigned the search box for the first time in 25 years \u2014 here\u2019s why it matters more than you think.",
+    "link": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+    "summary_raw": "For a quarter century, the Google search box has been one of the most recognizable interfaces in computing: a thin white rectangle, a blinking cursor, a few typed words, and a list of blue links. On Tuesday, Google will formally retire that paradigm. At its annual I/O developer conference , Google announced a sweeping redesign of the search box itself \u2014 the literal text field where billions of queries begin every day \u2014 transforming it from a simple keyword input into a dynamic, AI-driven conversation starter that can accept text, images, PDFs, videos, and even open Chrome tabs as inputs. The company is also merging its AI Overviews and AI Mode features into a single, seamless search flow, eliminating the friction that previously forced users to choose between a traditional results page and an AI-forward experience. Liz Reid, Google&#x27;s vice president and head of Search, called it &quot;the biggest upgrade to our iconic search box since its debut over 25 years ago&quot; during a press briefing on Monday. The announcement arrived alongside a blizzard of other news \u2014 new Gemini models , a personal AI agent called Spark , an intelligent shopping cart , a reimagined developer platfor",
+    "published": "Tue, 19 May 2026 17:45:00 GMT",
+    "source": "VentureBeat AI",
     "categories": [
       "ai_news"
     ]
   },
   {
-    "key": "20ac48fd5b7858fb4973daa3",
-    "title": "Mark Zuckerberg tells staff that AI agents haven\u2019t progressed as quickly as he\u2019d hoped",
-    "link": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped",
-    "summary_raw": "At an internal meeting, the Meta CEO reportedly said that AI development efforts were not moving as quickly as anticipated.",
-    "published": "Thu, 02 Jul 2026 23:38:10 +0000",
-    "source": "TechCrunch",
+    "key": "e757ffaa669329b6f7839e66",
+    "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+    "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+    "summary_raw": "Railway , a San Francisco-based cloud platform that has quietly amassed two million developers without spending a dollar on marketing, announced Thursday that it raised $100 million in a Series B funding round, as surging demand for artificial intelligence applications exposes the limitations of legacy cloud infrastructure. TQ Ventures led the round, with participation from FPV Ventures , Redpoint , and Unusual Ventures . The investment values Railway as one of the most significant infrastructure startups to emerge during the AI boom, capitalizing on developer frustration with the complexity and cost of traditional platforms like Amazon Web Services and Google Cloud . &quot;As AI models get better at writing code, more and more people are asking the age-old question: where, and how, do I run my applications?&quot; said Jake Cooper, Railway&#x27;s 28-year-old founder and chief executive, in an exclusive interview with VentureBeat. &quot;The last generation of cloud primitives were slow and outdated, and now with AI moving everything faster, teams simply can&#x27;t keep up.&quot; The funding is a dramatic acceleration for a company that has charted an unconventional path through the ",
+    "published": "Thu, 22 Jan 2026 14:00:00 GMT",
+    "source": "VentureBeat AI",
     "categories": [
       "ai_news"
     ]
   },
   {
-    "key": "b9ffada3588c596e3f4b9a59",
-    "title": "The Download: a startup has a solution for AI\u2019s groupthink problem",
-    "link": "https://www.technologyreview.com/2026/07/02/1140027/the-download-ai-groupthink-llms",
-    "summary_raw": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. LLMs are stuck in a groupthink groove. This startup is trying to get them out. Open up your chatbot of choice\u2014Claude, ChatGPT, Gemini\u2014and type \u201cGive me a random number between 1&#8230;",
-    "published": "Thu, 02 Jul 2026 12:10:00 +0000",
+    "key": "a41502b68fd71c75c8b77e30",
+    "title": "Claude Science is Anthropic\u2019s newest flagship product",
+    "link": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product",
+    "summary_raw": "At an event for pharmaceutical executives, biotech founders, and researchers on Tuesday, Anthropic announced Claude Science, a major new product intended to support scientific research in the same way that Claude Code supports software engineering. Like Claude Code, Claude Science can autonomously carry out meaningful work when given concise, high-level instructions, and it has access&#8230;",
+    "published": "Tue, 30 Jun 2026 21:50:04 +0000",
     "source": "MIT Technology Review",
     "categories": [
       "ai_news",
@@ -45,68 +45,68 @@
     ]
   },
   {
-    "key": "d57c3241b5f52f70971a7432",
-    "title": "LLMs are stuck in a groupthink groove. This startup is trying to get them out.",
-    "link": "https://www.technologyreview.com/2026/07/01/1140003/llms-are-stuck-in-a-groupthink-rut-this-startup-is-trying-to-get-them-out",
-    "summary_raw": "Let\u2019s start with a game. Open up your chatbot of choice\u2014Claude, ChatGPT, Gemini\u2014and type \u201cGive me a random number between 1 and 10.\u201d You\u2019re going to get 7. Almost always. Now type \u201cAnother\u201d and you\u2019ll get 3 or 4. Type \u201cAnother\u201d again and you\u2019ll get 8 or 9. That won\u2019t work every time\u2014but if it&#8230;",
-    "published": "Wed, 01 Jul 2026 14:35:16 +0000",
-    "source": "MIT Technology Review",
+    "key": "e9618240e567e58f3cd1dcff",
+    "title": "How ChatGPT adoption has expanded",
+    "link": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+    "summary_raw": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages.",
+    "published": "Tue, 30 Jun 2026 09:00:00 GMT",
+    "source": "OpenAI News",
     "categories": [
-      "ai_news",
-      "human_ai_research"
+      "human_ai_research",
+      "ai_news"
     ]
   },
   {
-    "key": "6ce360a6595f298c23105756",
-    "title": "The Download: Anthropic launches Claude Science, and California\u2019s carbon manure math",
-    "link": "https://www.technologyreview.com/2026/07/01/1139996/the-download-anthropic-claude-science-california-carbon-manure",
-    "summary_raw": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Claude Science is Anthropic\u2019s newest flagship product At an event for pharmaceutical executives, biotech founders, and researchers yesterday, Anthropic announced Claude Science, a major new product intended to support scientific research&#8230;",
-    "published": "Wed, 01 Jul 2026 12:10:00 +0000",
-    "source": "MIT Technology Review",
+    "key": "679e2d0d28a4fb22e7555178",
+    "title": "Inside Genebench-Pro",
+    "link": "https://openai.com/index/genebench-pro/case-studies",
+    "summary_raw": "",
+    "published": "Tue, 30 Jun 2026 00:00:00 GMT",
+    "source": "OpenAI News",
     "categories": [
-      "ai_news",
-      "human_ai_research"
+      "human_ai_research",
+      "ai_news"
     ]
   },
   {
-    "key": "cad453d32330b28dcea474cf",
-    "title": "Cloudflare\u2019s AI Crawler Rules Can Block Googlebot via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/cloudflares-ai-crawler-rules-can-block-googlebot/581385",
-    "summary_raw": "Cloudflare now lets all sites manage AI crawlers as Search, Agent, or Training, with Sept. 15 defaults that can block Googlebot for sites blocking training. The post Cloudflare\u2019s AI Crawler Rules Can Block Googlebot appeared first on Search Engine Journal .",
-    "published": "Thu, 02 Jul 2026 16:29:50 +0000",
+    "key": "7675f067889ebbdb56f2c5f7",
+    "title": "Safari\u2019s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster",
+    "link": "https://www.searchenginejournal.com/safaris-mcp-server/581487",
+    "summary_raw": "Apple's WebKit announced a new MCP server for Safari that enables AI-based website debugging for SEO and Core Web Vitals. The post Safari&#8217;s New MCP Server Enables AI Debugging For SEO And CWV appeared first on Search Engine Journal .",
+    "published": "Sun, 05 Jul 2026 21:15:10 +0000",
     "source": "Search Engine Journal",
     "categories": [
       "aeo_relevance"
     ]
   },
   {
-    "key": "f4dc60722a9a0846ed308dfa",
-    "title": "Microsoft Just Proved A Point About Search Today via @sejournal, @DuaneForrester",
-    "link": "https://www.searchenginejournal.com/microsoft-just-proved-a-point-about-search-today/580664",
-    "summary_raw": "Bing\u2019s latest AI reporting confirms that rankings and citations measure different outcomes, requiring new visibility strategies across AI search. The post Microsoft Just Proved A Point About Search Today appeared first on Search Engine Journal .",
-    "published": "Thu, 02 Jul 2026 12:30:20 +0000",
+    "key": "5be45633f303321eb96247cb",
+    "title": "Google Put AI Visibility Inside The SEO Tool On Purpose via @sejournal, @slobodanmanic",
+    "link": "https://www.searchenginejournal.com/google-put-ai-visibility-inside-the-seo-tool-on-purpose/577889",
+    "summary_raw": "Google filed AI visibility under search. Stop treating it as a separate workstream with its own budget and its own quarterly report. The post Google Put AI Visibility Inside The SEO Tool On Purpose appeared first on Search Engine Journal .",
+    "published": "Sun, 05 Jul 2026 12:00:33 +0000",
     "source": "Search Engine Journal",
     "categories": [
       "aeo_relevance"
     ]
   },
   {
-    "key": "c15ce1c0b922df587651e413",
-    "title": "Google Data Shows AI Search Users Moved Past Keywords, Your Content Hasn\u2019t via @sejournal, @gregjarboe",
-    "link": "https://www.searchenginejournal.com/google-data-shows-ai-search-users-moved-past-keywords-your-content-hasnt/580596",
-    "summary_raw": "Google's AI Mode data puts hard numbers on a behavioral shift that has already made most 2025 keyword strategies obsolete. The post Google Data Shows AI Search Users Moved Past Keywords, Your Content Hasn&#8217;t appeared first on Search Engine Journal .",
-    "published": "Thu, 02 Jul 2026 11:00:11 +0000",
+    "key": "f1ba85a3b8ea95b112a72bd9",
+    "title": "Should I Block AI Crawlers Or Measure Their Value First? \u2013 Ask An SEO via @sejournal, @HelenPollitt1",
+    "link": "https://www.searchenginejournal.com/ask-an-seo-should-i-block-ai-crawlers-or-measure-their-value-first/580005",
+    "summary_raw": "AI bots drain server resources and scrape IP, but blocking them risks invisibility in LLM answers. Here is how to decide. The post Should I Block AI Crawlers Or Measure Their Value First? \u2013 Ask An SEO appeared first on Search Engine Journal .",
+    "published": "Thu, 02 Jul 2026 09:30:54 +0000",
     "source": "Search Engine Journal",
     "categories": [
       "aeo_relevance"
     ]
   },
   {
-    "key": "dca43023b26593092d6e1468",
-    "title": "Nexon Asia Pacific builds customer trust with certification to international AI standard",
-    "link": "https://www.itnews.com.au/feature/nexon-asia-pacific-builds-customer-trust-with-certification-to-international-ai-standard-627027",
-    "summary_raw": "Nexon turns AI governance into customer assurance.",
-    "published": "Thu, 2 Jul 2026 04:00:00 +1000",
+    "key": "88b5c644dbd38bbe499b83a2",
+    "title": "Attorney-General's Dept backs Copilot Chat, Google NotebookLM",
+    "link": "https://www.itnews.com.au/news/attorney-generals-dept-backs-copilot-chat-google-notebooklm-627007",
+    "summary_raw": "As sanctioned AI tools.",
+    "published": "Mon, 6 Jul 2026 07:18:00 +1000",
     "source": "iTnews",
     "categories": [
       "australia_focus",
@@ -114,11 +114,11 @@
     ]
   },
   {
-    "key": "f6b463d954457095d87943e0",
-    "title": "Microsoft improves AI bot defences in Teams",
-    "link": "https://www.itnews.com.au/news/microsoft-improves-ai-bot-defences-in-teams-627054",
-    "summary_raw": "New policy to keep unwanted machines out of meetings.",
-    "published": "Wed, 1 Jul 2026 13:22:00 +1000",
+    "key": "1cb953d8062f42568f189c75",
+    "title": "AWS to create division of 'embedded' AI engineers",
+    "link": "https://www.itnews.com.au/news/aws-to-create-division-of-embedded-ai-engineers-627057",
+    "summary_raw": "To sit in customer organisations and fast-track AI deployments.",
+    "published": "Wed, 1 Jul 2026 06:40:00 +1000",
     "source": "iTnews",
     "categories": [
       "australia_focus",
@@ -126,11 +126,11 @@
     ]
   },
   {
-    "key": "0c60fb39dc9543f3aa6df2f0",
-    "title": "Blackmores looks to knowledge graph to ground future agentic AI tools",
-    "link": "https://www.itnews.com.au/news/blackmores-looks-to-knowledge-graph-to-ground-future-agentic-ai-tools-627010",
-    "summary_raw": "Could assist in tailoring supplement recommendations.",
-    "published": "Wed, 1 Jul 2026 06:45:00 +1000",
+    "key": "4445143f6ac66071f2ee47d4",
+    "title": "Vocus to invest $500 million in new fibre builds",
+    "link": "https://www.itnews.com.au/news/vocus-to-invest-500-million-in-new-fibre-builds-627038",
+    "summary_raw": "Targets locations suitable for AI workloads.",
+    "published": "Tue, 30 Jun 2026 17:48:00 +1000",
     "source": "iTnews",
     "categories": [
       "australia_focus",
