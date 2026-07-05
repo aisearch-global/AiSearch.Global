@@ -1,43 +1,43 @@
 [
   {
-    "key": "b2f13139c324d1d3d2d26cfc",
-    "title": "New Google commercial imagines a Declaration of Independence written with help from AI",
-    "link": "https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai",
-    "summary_raw": "Two hundred and fifty years after the signing of the Declaration of Independence, a new commercial asks: What if the Founding Fathers had access to Google Workspace?",
-    "published": "Sat, 04 Jul 2026 20:55:25 +0000",
+    "key": "6755a9bbdcc40544f0889f4f",
+    "title": "What is Mistral AI? Everything to know about the OpenAI competitor",
+    "link": "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor",
+    "summary_raw": "Mistral AI, which offers some open source AI models, has raised significant funding since its creation in 2023, with the ambition to \u201cput frontier AI in the hands of everyone.\u201d",
+    "published": "Sat, 04 Jul 2026 15:51:32 +0000",
     "source": "TechCrunch",
     "categories": [
       "ai_news"
     ]
   },
   {
-    "key": "489764d5961ae6f4e347f3a3",
-    "title": "Midjourney wants Hollywood studios to reveal the details of their AI usage",
-    "link": "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage",
-    "summary_raw": "As part of an ongoing legal dispute with three Hollywood studios, Midjourney is seeking to compel those studios to reveal how they use AI themselves.",
-    "published": "Sat, 04 Jul 2026 18:00:05 +0000",
+    "key": "5c4aca990df602d868fbb1c7",
+    "title": "The only AI glossary you\u2019ll need this year",
+    "link": "https://techcrunch.com/2026/07/03/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms",
+    "summary_raw": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
+    "published": "Fri, 03 Jul 2026 21:20:00 +0000",
     "source": "TechCrunch",
     "categories": [
       "ai_news"
     ]
   },
   {
-    "key": "b1cb3b56c0793b3dd9120972",
-    "title": "Alibaba reportedly bans employees from using Claude Code",
-    "link": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code",
-    "summary_raw": "Alibaba has reportedly classified Claude Code as high-risk software.",
-    "published": "Sat, 04 Jul 2026 16:32:08 +0000",
+    "key": "20ac48fd5b7858fb4973daa3",
+    "title": "Mark Zuckerberg tells staff that AI agents haven\u2019t progressed as quickly as he\u2019d hoped",
+    "link": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped",
+    "summary_raw": "At an internal meeting, the Meta CEO reportedly said that AI development efforts were not moving as quickly as anticipated.",
+    "published": "Thu, 02 Jul 2026 23:38:10 +0000",
     "source": "TechCrunch",
     "categories": [
       "ai_news"
     ]
   },
   {
-    "key": "c3b9ba53290b18b424d1dc2b",
-    "title": "The UK\u2019s generational tobacco ban might not work. I\u2019m supporting it anyway.",
-    "link": "https://www.technologyreview.com/2026/07/03/1140036/uk-tobacco-ban-might-not-work-children-smoking",
-    "summary_raw": "As the parent of two little girls, I often think about how their childhood is different from mine. The seven-year-old is learning about AI at school. The five-year-old is given internet-based homework every week. And they are both absolutely repulsed by the idea of smoking. That was not the prevailing sentiment when I was young.&#8230;",
-    "published": "Fri, 03 Jul 2026 09:00:00 +0000",
+    "key": "b9ffada3588c596e3f4b9a59",
+    "title": "The Download: a startup has a solution for AI\u2019s groupthink problem",
+    "link": "https://www.technologyreview.com/2026/07/02/1140027/the-download-ai-groupthink-llms",
+    "summary_raw": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. LLMs are stuck in a groupthink groove. This startup is trying to get them out. Open up your chatbot of choice\u2014Claude, ChatGPT, Gemini\u2014and type \u201cGive me a random number between 1&#8230;",
+    "published": "Thu, 02 Jul 2026 12:10:00 +0000",
     "source": "MIT Technology Review",
     "categories": [
       "ai_news",
@@ -45,11 +45,11 @@
     ]
   },
   {
-    "key": "24b4420fbf015ef4867cf158",
-    "title": "Achieving operational excellence with AI",
-    "link": "https://www.technologyreview.com/2026/07/02/1140045/achieving-operational-excellence-with-ai",
-    "summary_raw": "Frameworks like Lean Six Sigma and business process management (BPM) first gained traction because they promised clarity in the chaos\u2014a structured way to bring order to messy, sprawling operations. Lean Six Sigma emphasized statistical rigor and quality control; BPM created end-to-end maps of how work should flow across departments. Both offered a repeatable way to&#8230;",
-    "published": "Thu, 02 Jul 2026 15:37:08 +0000",
+    "key": "d57c3241b5f52f70971a7432",
+    "title": "LLMs are stuck in a groupthink groove. This startup is trying to get them out.",
+    "link": "https://www.technologyreview.com/2026/07/01/1140003/llms-are-stuck-in-a-groupthink-rut-this-startup-is-trying-to-get-them-out",
+    "summary_raw": "Let\u2019s start with a game. Open up your chatbot of choice\u2014Claude, ChatGPT, Gemini\u2014and type \u201cGive me a random number between 1 and 10.\u201d You\u2019re going to get 7. Almost always. Now type \u201cAnother\u201d and you\u2019ll get 3 or 4. Type \u201cAnother\u201d again and you\u2019ll get 8 or 9. That won\u2019t work every time\u2014but if it&#8230;",
+    "published": "Wed, 01 Jul 2026 14:35:16 +0000",
     "source": "MIT Technology Review",
     "categories": [
       "ai_news",
@@ -57,11 +57,11 @@
     ]
   },
   {
-    "key": "cdfb1298f90d7020a5e2aa9f",
-    "title": "Teaching AI to run with the turbines",
-    "link": "https://www.technologyreview.com/2026/07/02/1138433/teaching-ai-to-run-with-the-turbines",
-    "summary_raw": "Artificial intelligence may have captured the public imagination through chatbots and image generators, but some of its most consequential use cases are unfolding far from consumer-facing tools. In industries where physical infrastructure, operational continuity, and safety are paramount, AI is becoming a core operating layer. With its sprawling industrial systems and constant stream of operational&#8230;",
-    "published": "Thu, 02 Jul 2026 12:51:44 +0000",
+    "key": "6ce360a6595f298c23105756",
+    "title": "The Download: Anthropic launches Claude Science, and California\u2019s carbon manure math",
+    "link": "https://www.technologyreview.com/2026/07/01/1139996/the-download-anthropic-claude-science-california-carbon-manure",
+    "summary_raw": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Claude Science is Anthropic\u2019s newest flagship product At an event for pharmaceutical executives, biotech founders, and researchers yesterday, Anthropic announced Claude Science, a major new product intended to support scientific research&#8230;",
+    "published": "Wed, 01 Jul 2026 12:10:00 +0000",
     "source": "MIT Technology Review",
     "categories": [
       "ai_news",
@@ -69,44 +69,44 @@
     ]
   },
   {
-    "key": "8b8c5c47b918667df28b9ce4",
-    "title": "Lighthouse Fails Your Llms.txt Without Markdown Links via @sejournal, @slobodanmanic",
-    "link": "https://www.searchenginejournal.com/lighthouse-fails-your-llms-txt-without-markdown-links/577590",
-    "summary_raw": "Six audits. One failure. The fix took five minutes. Here's what Lighthouse 13.3's Agentic Browsing category actually tells you, and what it doesn't. The post Lighthouse Fails Your Llms.txt Without Markdown Links appeared first on Search Engine Journal .",
-    "published": "Fri, 03 Jul 2026 14:00:03 +0000",
+    "key": "cad453d32330b28dcea474cf",
+    "title": "Cloudflare\u2019s AI Crawler Rules Can Block Googlebot via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/cloudflares-ai-crawler-rules-can-block-googlebot/581385",
+    "summary_raw": "Cloudflare now lets all sites manage AI crawlers as Search, Agent, or Training, with Sept. 15 defaults that can block Googlebot for sites blocking training. The post Cloudflare\u2019s AI Crawler Rules Can Block Googlebot appeared first on Search Engine Journal .",
+    "published": "Thu, 02 Jul 2026 16:29:50 +0000",
     "source": "Search Engine Journal",
     "categories": [
       "aeo_relevance"
     ]
   },
   {
-    "key": "36602bfa2279f91f55b4bf44",
-    "title": "Where Clicks Go, What Agents Skip, Who\u2019s Leaving Bing \u2013 SEO Pulse via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/seo-pulse-where-clicks-go-what-agents-skip-whos-leaving-bing/581426",
-    "summary_raw": "Where AI Overview clicks go, what agents skip on sites they can't read, and who's leaving Bing, plus the rest of the week's search news. The post Where Clicks Go, What Agents Skip, Who&#8217;s Leaving Bing \u2013 SEO Pulse appeared first on Search Engine Journal .",
-    "published": "Fri, 03 Jul 2026 12:30:55 +0000",
+    "key": "f4dc60722a9a0846ed308dfa",
+    "title": "Microsoft Just Proved A Point About Search Today via @sejournal, @DuaneForrester",
+    "link": "https://www.searchenginejournal.com/microsoft-just-proved-a-point-about-search-today/580664",
+    "summary_raw": "Bing\u2019s latest AI reporting confirms that rankings and citations measure different outcomes, requiring new visibility strategies across AI search. The post Microsoft Just Proved A Point About Search Today appeared first on Search Engine Journal .",
+    "published": "Thu, 02 Jul 2026 12:30:20 +0000",
     "source": "Search Engine Journal",
     "categories": [
       "aeo_relevance"
     ]
   },
   {
-    "key": "bf35135848347a7f1fb4d475",
-    "title": "AI Search Is Nothing Without SEO & It Knows It via @sejournal, @TaylorDanRW",
-    "link": "https://www.searchenginejournal.com/ai-search-is-nothing-without-seo-it-knows-it/580452",
-    "summary_raw": "Technical SEO now sits at the center of AI search readiness, giving LLMs the structure and signals they need to retrieve and cite content. The post AI Search Is Nothing Without SEO &#038; It Knows It appeared first on Search Engine Journal .",
-    "published": "Fri, 03 Jul 2026 09:30:26 +0000",
+    "key": "c15ce1c0b922df587651e413",
+    "title": "Google Data Shows AI Search Users Moved Past Keywords, Your Content Hasn\u2019t via @sejournal, @gregjarboe",
+    "link": "https://www.searchenginejournal.com/google-data-shows-ai-search-users-moved-past-keywords-your-content-hasnt/580596",
+    "summary_raw": "Google's AI Mode data puts hard numbers on a behavioral shift that has already made most 2025 keyword strategies obsolete. The post Google Data Shows AI Search Users Moved Past Keywords, Your Content Hasn&#8217;t appeared first on Search Engine Journal .",
+    "published": "Thu, 02 Jul 2026 11:00:11 +0000",
     "source": "Search Engine Journal",
     "categories": [
       "aeo_relevance"
     ]
   },
   {
-    "key": "8c838ea09a2fe8eb9f335213",
-    "title": "UNSW faces a 95 percent cut to its M365 storage by October",
-    "link": "https://www.itnews.com.au/news/unsw-faces-a-95-percent-cut-to-its-m365-storage-by-october-626797",
-    "summary_raw": "Analysis: Speculation Microsoft is looking to free up space in AI boom.",
-    "published": "Fri, 3 Jul 2026 06:31:00 +1000",
+    "key": "dca43023b26593092d6e1468",
+    "title": "Nexon Asia Pacific builds customer trust with certification to international AI standard",
+    "link": "https://www.itnews.com.au/feature/nexon-asia-pacific-builds-customer-trust-with-certification-to-international-ai-standard-627027",
+    "summary_raw": "Nexon turns AI governance into customer assurance.",
+    "published": "Thu, 2 Jul 2026 04:00:00 +1000",
     "source": "iTnews",
     "categories": [
       "australia_focus",
@@ -114,11 +114,11 @@
     ]
   },
   {
-    "key": "7fa64c106047969c72363489",
-    "title": "KFC Australia operator Collins Foods eyes AI for margin improvements",
-    "link": "https://www.itnews.com.au/news/kfc-australia-operator-collins-foods-eyes-ai-for-margin-improvements-627106",
-    "summary_raw": "Participating in South-Pacific trials.",
-    "published": "Thu, 2 Jul 2026 16:30:00 +1000",
+    "key": "f6b463d954457095d87943e0",
+    "title": "Microsoft improves AI bot defences in Teams",
+    "link": "https://www.itnews.com.au/news/microsoft-improves-ai-bot-defences-in-teams-627054",
+    "summary_raw": "New policy to keep unwanted machines out of meetings.",
+    "published": "Wed, 1 Jul 2026 13:22:00 +1000",
     "source": "iTnews",
     "categories": [
       "australia_focus",
@@ -126,11 +126,11 @@
     ]
   },
   {
-    "key": "10d2315b2f5614cd1f5cc6ff",
-    "title": "US removes curbs on Anthropic's latest Fable and Mythos AI models",
-    "link": "https://www.itnews.com.au/news/us-removes-curbs-on-anthropics-latest-fable-and-mythos-ai-models-627086",
-    "summary_raw": "After three-week freeze.",
-    "published": "Thu, 2 Jul 2026 06:50:00 +1000",
+    "key": "0c60fb39dc9543f3aa6df2f0",
+    "title": "Blackmores looks to knowledge graph to ground future agentic AI tools",
+    "link": "https://www.itnews.com.au/news/blackmores-looks-to-knowledge-graph-to-ground-future-agentic-ai-tools-627010",
+    "summary_raw": "Could assist in tailoring supplement recommendations.",
+    "published": "Wed, 1 Jul 2026 06:45:00 +1000",
     "source": "iTnews",
     "categories": [
       "australia_focus",
