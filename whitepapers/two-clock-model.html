@@ -359,7 +359,7 @@
             <line class="fs-grid" x1="330" y1="20" x2="330" y2="180"/>
             <line class="fs-grid" x1="450" y1="20" x2="450" y2="180"/>
             <line class="fs-grid" x1="570" y1="20" x2="570" y2="180"/>
-            <line class="fs-ref-l" x1="690" y1="20" x2="690" y2="180"/>
+            <line class="fs-ref-l" x1="690" y1="46" x2="690" y2="180"/>
             <line class="fs-ax" x1="210" y1="180" x2="710" y2="180"/>
             <text class="fs-t" x="210" y="200" text-anchor="middle">0%</text>
             <text class="fs-t" x="330" y="200" text-anchor="middle">25%</text>
@@ -383,7 +383,7 @@
         <div class="chart-wrap">
           <div class="chart-caption">Figure 3. The Two-Clock Model &mdash; two systems, two speeds, one gap</div>
           <svg class="figsvg" viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Conceptual diagram. Left panel: the Structural Clock, S of t — machine readability, moved by direct site edits, controlled by the business, moving in days to weeks. Right panel: the Perception Clock, P of t — what AI platforms know and cite, moved by training cycles, retrieval refresh, and citation accumulation, controlled by the platforms, moving in weeks to months. Both feed the Perception Gap, G of t equals S of t minus P of t.">
-            <rect class="fs-teal-l" stroke-width="1.5" x="20" y="30" width="310" height="220"/>
+            <rect class="fs-teal-l" stroke-width="1.5" x="20" y="30" width="310" height="232"/>
             <text class="fs-accent" x="175" y="58" text-anchor="middle" font-size="14">STRUCTURAL CLOCK &mdash; S(t)</text>
             <text class="fs-strong" x="40" y="92">What it reads:</text>
             <text class="fs-t" x="40" y="112">machine readability &mdash; schema, entities,</text>
@@ -392,7 +392,7 @@
             <text class="fs-t" x="40" y="180">direct edits to the site</text>
             <text class="fs-strong" x="40" y="210">Controlled by: <tspan class="fs-t">the business</tspan></text>
             <text class="fs-strong" x="40" y="236">Speed: <tspan class="fs-accent">days to weeks</tspan></text>
-            <rect class="fs-gold-l" stroke-width="1.5" x="390" y="30" width="310" height="220"/>
+            <rect class="fs-gold-l" stroke-width="1.5" x="390" y="30" width="310" height="232"/>
             <text class="fs-gold-f" x="545" y="58" text-anchor="middle" font-size="14">PERCEPTION CLOCK &mdash; P(t)</text>
             <text class="fs-strong" x="410" y="92">What it reads:</text>
             <text class="fs-t" x="410" y="112">what AI platforms actually know,</text>
@@ -402,8 +402,8 @@
             <text class="fs-t" x="410" y="198">citation accumulation</text>
             <text class="fs-strong" x="410" y="222">Controlled by: <tspan class="fs-t">the AI platforms</tspan></text>
             <text class="fs-strong" x="410" y="244">Speed: <tspan class="fs-gold-f">weeks to months</tspan></text>
-            <line class="fs-ax" x1="175" y1="250" x2="175" y2="285"/>
-            <line class="fs-ax" x1="545" y1="250" x2="545" y2="285"/>
+            <line class="fs-ax" x1="175" y1="262" x2="175" y2="285"/>
+            <line class="fs-ax" x1="545" y1="262" x2="545" y2="285"/>
             <line class="fs-ax" x1="175" y1="285" x2="545" y2="285"/>
             <line class="fs-ax" x1="360" y1="285" x2="360" y2="298"/>
             <rect class="fs-band" x="185" y="298" width="350" height="34"/>
@@ -464,13 +464,12 @@
         <p>The observed window is short &mdash; at the time of writing (5 July 2026) the engagement is in its seventh week &mdash; and the observed pattern within it is the one the model predicts. S(t) moved from 19 at launch to 70 at one month (20 June 2026) and stands at 91 as at 5 July 2026: a 72-point observed gain in under seven weeks, the Structural Clock behaving exactly as Section 2.6 predicts a well-executed structural program should. Perception scores, measured once on 20 June 2026 (one month post-launch), stood at 36 (ChatGPT-4o), 30 (Perplexity), and 41 (Gemini 1.5 Pro; mean &asymp; 36) &mdash; low, which is itself expected: the launch postdates the training cutoffs of every model measured, so there was no citation history to draw on. Figure 4 plots the two curves. <strong>Everything to the right of the 5 July 2026 line is a modelled projection, not measured data</strong> &mdash; the business has existed for less than two months, and Client Zero is currently sitting at the start of the widest-gap window the model predicts (months 1.5&ndash;3). The value of the case is the observed shape so far &mdash; fast, early structural gains and a wide Perception Gap that has not yet had time to close &mdash; and the projection is the model's falsifiable forecast of what the next ten months should look like (Section 4.4).</p>
 
         <div class="chart-wrap">
-          <div class="chart-caption">Figure 4. The two clocks at Client Zero &mdash; observed (20 May&ndash;5 July 2026) vs. modelled projection (to month 12)</div>
+          <div class="chart-caption">Figure 4. The two clocks at Client Zero &mdash; observed to 5 July 2026, modelled thereafter</div>
           <svg class="figsvg" viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Line chart over twelve months. Observed data ends at 5 July 2026, week seven of the engagement: the structural score rises steeply from 19 at launch to 70 at month 1 and 91 as at 5 July; the mean perception score, measured once at month 1, is 36. Everything to the right of the today line is a dashed modelled projection: the structural score holds in the low nineties and perception rises slowly toward about 65 by month 12. The shaded area between the curves is the Perception Gap. A band marks months 1.5 to 3 as the typically widest gap, and a dashed vertical line marks the month-6 diagnostic checkpoint.">
             <rect class="fs-band" x="139" y="20" width="79" height="330"/>
-            <text class="fs-t" x="178" y="36" text-anchor="middle">widest gap</text>
-            <text class="fs-t" x="178" y="50" text-anchor="middle">(mo 1.5&ndash;3)</text>
+            <text class="fs-t" x="145" y="36">widest gap (mo 1.5&ndash;3)</text>
             <line class="fs-ref-l" x1="138.75" y1="20" x2="138.75" y2="350"/>
-            <text class="fs-t" x="143" y="340">today (5 Jul 2026) &mdash; observed | projected</text>
+            <text class="fs-t" x="143" y="340">today (5 Jul 2026)</text>
             <line class="fs-ref-l" x1="375" y1="20" x2="375" y2="350"/>
             <text class="fs-t" x="382" y="36">month-6 diagnostic checkpoint</text>
             <line class="fs-grid" x1="60" y1="265" x2="690" y2="265"/>
@@ -501,7 +500,7 @@
             <path class="fs-gold-l" stroke-width="2" stroke-dasharray="6 5" d="M112.5,247.6 C200,246 300,236 375,227.2 C460,215 500,200 532.5,186.4 C590,172 640,160 690,149"/>
             <circle class="fs-gold-f" cx="112.5" cy="247.6" r="4.5"/>
             <text class="fs-t" x="150" y="80">S(t) 91 &middot; 5 Jul</text>
-            <text class="fs-t" x="125" y="268">P(t) mean 36 &middot; 20 Jun (mo 1)</text>
+            <text class="fs-t" x="150" y="272">P(t) mean 36 &middot; 20 Jun (mo 1)</text>
           </svg>
           <div class="chart-legend"><span><i style="background:#0abfbc"></i> Structural score S(t) &mdash; solid: observed to 5 Jul 2026; dashed: modelled</span><span><i style="background:#c8a84b"></i> Perception score P(t) &mdash; marker: observed mean at month 1 (20 Jun 2026); dashed: modelled projection</span></div>
           <p class="chart-note">Markers denote observed data points: structural 19 at launch (20 May 2026), 70 at month 1 (20 June), and 91 as at 5 July 2026; perception platform mean &asymp; 36 at month 1 (from scores of 36, 30, and 41, measured 20 June 2026). Everything right of the "today" line &mdash; all dashed segments &mdash; is a modelled projection, not measured data. The shaded region is the Perception Gap G(t); the grey band marks the typically widest-gap window (months 1.5&ndash;3), which the engagement is entering at the time of writing, and the second dashed vertical line the month-6 diagnostic checkpoint.</p>
