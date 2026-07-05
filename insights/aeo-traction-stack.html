@@ -559,27 +559,34 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-
 .glossary-table tbody td:first-child{font-family:var(--fh);font-weight:600;color:var(--white);white-space:nowrap;width:165px}
 .glossary-table code{font-family:var(--fm);font-size:.78rem;color:var(--tiffany)}
 
-/* PRINT STYLES — glossary-only clean white PDF */
+/* PRINT STYLES — glossary-only clean white PDF.
+   Allow-list approach: hide EVERYTHING except the glossary section, so no
+   dark-theme elements (h1, blockquotes, callouts, author bio, related reading)
+   can leak into the PDF with clashing colours. */
+@page{margin:16mm}
 @media print {
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  header,footer,.breadcrumb,.article-meta,.article-intro,.stat-row,.impact-viz,
-  h2:not(.glossary-heading),h3,.article p:not(.glossary-sub),.signals,.compare-table,
-  .callout,.flow-list,.impl-steps,.gantt,.milestone-timeline,.check-list,
-  .action-box,.faq,.article-cta,.references,.pdf-btn{display:none!important}
+  header,footer,.breadcrumb{display:none!important}
+  .article > *:not(.glossary-section){display:none!important}
+  .pdf-btn,.no-print{display:none!important}
   body{background:#fff!important;color:#1C1D20!important;font-family:Arial,sans-serif;font-size:11pt}
-  .article{max-width:100%;padding:0}
+  .article{max-width:100%;padding:0;background:#fff!important}
   .glossary-section{border-top:none;margin-top:0;padding-top:0}
-  .glossary-header h2{color:#0ABFBC!important;font-size:16pt;margin-bottom:4pt}
+  .glossary-header{display:block}
+  .glossary-header h2{color:#0D0E10!important;font-size:16pt;margin:0 0 4pt;font-family:Arial,sans-serif}
   .glossary-sub{color:#555!important;font-size:10pt;margin-bottom:14pt}
   .glossary-table{width:100%;border-collapse:collapse;font-size:9.5pt}
-  .glossary-table thead th{background:#0ABFBC!important;color:#fff!important;padding:6pt 10pt;font-size:8.5pt}
-  .glossary-table tbody td{background:#fff!important;border:1px solid #ddd!important;color:#333!important;padding:7pt 10pt}
+  .glossary-table thead{display:table-header-group}
+  .glossary-table tr{page-break-inside:avoid}
+  .glossary-table thead th{background:#0ABAB5!important;color:#fff!important;padding:6pt 10pt;font-size:8.5pt;border:1px solid #0ABAB5!important}
+  .glossary-table tbody td{background:#fff!important;border:1px solid #ddd!important;color:#333!important;padding:7pt 10pt;line-height:1.5}
   .glossary-table tbody tr:nth-child(even) td{background:#f7f7f7!important}
-  .glossary-table tbody td:first-child{color:#0ABFBC!important;font-weight:700}
-  .glossary-table code{color:#0ABFBC!important}
+  .glossary-table tbody td:first-child{color:#0A8F8C!important;font-weight:700;white-space:normal;width:120pt}
+  .glossary-table code{color:#0A8F8C!important}
   /* Print header */
   .print-logo{display:block!important;margin-bottom:14pt}
   .print-logo img{height:36pt;width:auto}
+  .print-source{display:block!important;margin-top:12pt;color:#777!important;font-size:8.5pt;font-family:Arial,sans-serif}
   .glossary-section::before{content:none}
 }
 
@@ -1036,7 +1043,7 @@ blockquote cite{display:block;margin-top:.75rem;font-style:normal;font-size:.85r
       <h2 class="glossary-heading">AEO Terms Reference</h2>
       <button class="pdf-btn" onclick="window.print()" aria-label="Download glossary as PDF"><i class="bi bi-download"></i> Download as PDF</button>
     </div>
-    <p class="glossary-sub">Every term used in this framework — plain English with enough depth for practitioners. Print or save as PDF using the button above.</p>
+    <p class="glossary-sub">Every term used in this framework — plain English with enough depth for practitioners.<span class="no-print"> Print or save as PDF using the button above.</span></p>
     <table class="glossary-table">
       <thead>
         <tr><th>Term</th><th>What it means</th></tr>
@@ -1060,6 +1067,7 @@ blockquote cite{display:block;margin-top:.75rem;font-style:normal;font-size:.85r
         <tr><td>Structured Data</td><td>The umbrella term for machine-readable data formats that describe web content to AI systems. Schema markup written in JSON-LD is the most common form. All schema markup is structured data; not all structured data is schema markup.</td></tr>
       </tbody>
     </table>
+    <p class="print-source" style="display:none">Source: aisearch.global/insights/aeo-traction-stack &middot; &copy; 2026 AISearch Global &middot; AEO Terms Reference</p>
   </section>
 
   <!-- ── CAVEAT CALLOUT ── -->
