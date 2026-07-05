@@ -47,6 +47,56 @@ CATEGORY_LABELS = {
     "australia_focus": "Australia",
 }
 
+# Every other page on the site carries its own copy of this block in <head>
+# (see e.g. insights/what-is-aeo-answer-engine-optimisation.html) rather than
+# relying solely on /assets/css/styles.css — that external sheet is only a thin
+# supplementary layer. Without this block, and without real <header></header>/
+# <footer></footer> tags for main.js to inject the nav/footer into, a page
+# renders as unstyled default HTML even though the CSS link is present. This
+# was missed in the first build — pages were live but looked broken.
+SHARED_STYLE = """
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--tiffany:#0ABFBC;--tiffany-dim:rgba(10,191,188,0.10);--silver:#C0C0C0;--silver-dim:#888888;--charcoal:#2B2B2B;--charcoal-mid:#1E1E1E;--black:#0D0D0D;--white:#FFFFFF;--font-head:'Space Grotesk',system-ui,sans-serif;--font-body:'DM Sans',system-ui,sans-serif}
+html{background:var(--black);color:var(--white);font-family:var(--font-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}a:hover{color:var(--tiffany)}
+.container{max-width:1120px;margin:0 auto;padding:0 1rem}
+header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.12)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+.brand img{height:34px;width:auto;max-width:260px;display:block}
+.nav-toggle{display:none;background:none;border:1px solid rgba(255,255,255,.12);color:var(--white);padding:.45rem .65rem;border-radius:0}
+.nav-links{display:flex;gap:1rem;list-style:none;padding:0;margin:0}
+.nav-links a{text-decoration:none;color:var(--silver);font-family:var(--font-body);font-weight:500;font-size:1rem;line-height:1}
+.nav-links a:hover,.nav-links a:focus{color:var(--tiffany)}
+.cta-link{padding:.55rem .9rem;border:1px solid var(--tiffany);border-radius:0;color:var(--tiffany)!important}
+main{max-width:720px;margin:0 auto;padding:4rem 2rem 6rem}
+h1{font-family:var(--font-head);font-size:clamp(1.9rem,4vw,2.75rem);font-weight:500;line-height:1.2;color:var(--white);margin-bottom:1.5rem;letter-spacing:-.015em}
+h2{font-family:var(--font-head);font-size:1.35rem;font-weight:500;color:var(--tiffany);margin:2.75rem 0 .9rem}
+p{color:var(--silver);margin-bottom:1.35rem;font-size:.975rem;line-height:1.75}
+footer{border-top:1px solid var(--charcoal);padding:1.2rem 0;color:var(--silver-dim);font-size:.9rem}
+.footer-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem}
+.footer-links a{font-size:12px;color:var(--silver-dim);text-decoration:none}
+.footer-links a:hover{color:var(--tiffany)}
+.social-links{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.75rem}
+.social-links a{font-size:1.1rem;color:var(--silver-dim);text-decoration:none}
+.social-links a:hover{color:var(--tiffany)}
+@media(max-width:720px){.nav-toggle{display:block}.nav-links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid rgba(255,255,255,.12);padding:.8rem;border-radius:0}.nav-links.open{display:flex}}
+@media(max-width:640px){main{padding:2.5rem 1.25rem 4rem}}
+.back-link{display:inline-flex;align-items:center;gap:.4rem;font-size:12px;color:var(--silver-dim);margin-bottom:2.25rem}
+.news-brief-intro{font-size:1.05rem;color:var(--silver);margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:1px solid var(--charcoal)}
+.news-story{margin:0 0 2.25rem;padding-bottom:2rem;border-bottom:1px solid var(--charcoal)}
+.news-story-meta{color:var(--tiffany);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.6rem;display:block}
+.news-story h2{margin-top:0}
+.ai-news-ticker{display:flex;align-items:center;gap:.75rem;overflow:hidden;white-space:nowrap;background:var(--charcoal-mid);border:1px solid var(--charcoal);border-radius:0;padding:.85rem 1.1rem;margin:1.75rem 0 2.5rem}
+.ai-news-ticker-label{color:var(--tiffany);font-weight:600;flex-shrink:0;font-size:.85rem;text-transform:uppercase;letter-spacing:.05em}
+.ai-news-ticker-track{overflow:hidden;text-overflow:ellipsis;font-size:.9rem}
+.ai-news-ticker-track a{color:var(--silver)}
+.ai-news-ticker-track a:hover{color:var(--tiffany)}
+.news-index-list{list-style:none;padding:0;margin-top:1.5rem}
+.news-index-list li{padding:.9rem 0;border-bottom:1px solid var(--charcoal);font-size:.95rem;color:var(--silver)}
+.news-index-list li a{color:var(--white);font-weight:500}
+.news-index-list li a:hover{color:var(--tiffany)}
+"""
+
 
 def log(msg: str) -> None:
     print(f"[generate_brief] {msg}", flush=True)
@@ -151,9 +201,7 @@ def render_page(date_str: str, human_date: str, story_blocks: list[str]) -> str:
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="shortcut icon" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/assets/images/aisearch_social_graphic_plumber.png">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script defer src="/assets/js/main.js"></script>
+  <style>{SHARED_STYLE}</style>
 
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="AISearch Global">
@@ -180,16 +228,21 @@ def render_page(date_str: str, human_date: str, story_blocks: list[str]) -> str:
     gtag('config', 'G-XBZMSCBXBZ');
   </script>
   <script defer src="/assets/js/consent.js"></script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script defer src="/assets/js/main.js"></script>
 
   <script type="application/ld+json">{json.dumps(news_article_schema)}</script>
 </head>
 <body>
-  <main class="container news-brief-page" style="padding-top: 6rem; padding-bottom: 4rem;">
-    <p><a href="/news">&larr; All AI news briefs</a></p>
-    <h1>AI News Brief — {human_date}</h1>
-    <p class="news-brief-intro">Curated daily by AISearch Global. Every story links back to its original source — we don't republish, we round up.</p>
-    {body}
-  </main>
+<header></header>
+<main class="news-brief-page">
+  <a href="/news" class="back-link">&larr; All AI news briefs</a>
+  <h1>AI News Brief — {human_date}</h1>
+  <p class="news-brief-intro">Curated daily by AISearch Global. Every story links back to its original source — we don't republish, we round up.</p>
+  {body}
+</main>
+<footer></footer>
 </body>
 </html>
 """
@@ -215,6 +268,7 @@ def render_index(entries: list[dict]) -> str:
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="shortcut icon" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/assets/images/aisearch_social_graphic_plumber.png">
+  <style>{SHARED_STYLE}</style>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script defer src="/assets/js/main.js"></script>
@@ -237,20 +291,22 @@ def render_index(entries: list[dict]) -> str:
   <script defer src="/assets/js/consent.js"></script>
 </head>
 <body>
-  <main class="container news-index-page" style="padding-top: 6rem; padding-bottom: 4rem;">
-    <h1>AI News</h1>
-    <p>A running ticker of the latest headlines AISearch Global is tracking, plus the full daily brief archive below.</p>
+<header></header>
+<main class="news-index-page">
+  <h1>AI News</h1>
+  <p>A running ticker of the latest headlines AISearch Global is tracking, plus the full daily brief archive below.</p>
 
-    <div id="ai-news-ticker" class="ai-news-ticker" aria-live="polite">
-      <span class="ai-news-ticker-label">Latest:</span>
-      <div class="ai-news-ticker-track"><!-- populated by /news/latest.json --></div>
-    </div>
+  <div id="ai-news-ticker" class="ai-news-ticker" aria-live="polite">
+    <span class="ai-news-ticker-label">Latest:</span>
+    <div class="ai-news-ticker-track"><!-- populated by /news/latest.json --></div>
+  </div>
 
-    <h2>Recent briefs</h2>
-    <ul class="news-index-list">
+  <h2>Recent briefs</h2>
+  <ul class="news-index-list">
 {items}
-    </ul>
-  </main>
+  </ul>
+</main>
+<footer></footer>
 
   <script>
     (function () {{
