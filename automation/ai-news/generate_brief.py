@@ -8,6 +8,8 @@ Reads data/pending/<date>.json (written by fetch_pipeline.py) and produces:
   - news/index.html             regenerated list of recent briefs + ticker markup
   - news/latest.json            small JSON file the ticker's client-side JS polls
   - data/pending/<date>.brief.json   the generated copy, kept for the LinkedIn step
+  - sitemap.xml (repo root)     updated in place: /news hub entry refreshed and a
+    <url> entry added for every dated brief page (clean URLs, no .html)
 
 Summarisation: if ANTHROPIC_API_KEY is set, each story gets a ~200-word brief
 written by Claude in AISearch Global's voice. If it isn't set, falls back to a
@@ -34,8 +36,16 @@ REPO_ROOT = ROOT.parent.parent  # automation/ai-news -> repo root
 DATA_DIR = ROOT / "data"
 PENDING_DIR = DATA_DIR / "pending"
 NEWS_DIR = REPO_ROOT / "news"
+SITEMAP_PATH = REPO_ROOT / "sitemap.xml"
 
 SITE_URL = "https://aisearch.global"
+
+# Cache-busting versions for shared assets. These MUST match the ?v= values the
+# committed site pages use (check index.html). Cloudflare caches the unversioned
+# URLs, so a page emitted without the current ?v= loads a stale main.js/styles.css
+# — this is how the news pages ended up with the pre-News nav (2026-07-07).
+STYLES_CSS_HREF = "/assets/css/styles.css?v=4"
+MAIN_JS_SRC = "/assets/js/main.js?v=news-nav1"
 MAX_INDEX_DAYS = 60      # how many days of briefs stay listed on /news
 MAX_TICKER_ITEMS = 15
 
@@ -228,9 +238,9 @@ def render_page(date_str: str, human_date: str, story_blocks: list[str]) -> str:
     gtag('config', 'G-XBZMSCBXBZ');
   </script>
   <script defer src="/assets/js/consent.js"></script>
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="{STYLES_CSS_HREF}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script defer src="/assets/js/main.js"></script>
+  <script defer src="{MAIN_JS_SRC}"></script>
 
   <script type="application/ld+json">{json.dumps(news_article_schema)}</script>
 </head>
@@ -269,9 +279,9 @@ def render_index(entries: list[dict]) -> str:
   <link rel="shortcut icon" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/assets/images/aisearch_social_graphic_plumber.png">
   <style>{SHARED_STYLE}</style>
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="{STYLES_CSS_HREF}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script defer src="/assets/js/main.js"></script>
+  <script defer src="{MAIN_JS_SRC}"></script>
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="AISearch Global">
@@ -325,6 +335,62 @@ def render_index(entries: list[dict]) -> str:
 </body>
 </html>
 """
+
+
+def sitemap_url_block(loc: str, lastmod: str, changefreq: str, priority: str) -> str:
+    return (
+        f"  <url>\n"
+        f"    <loc>{loc}</loc>\n"
+        f"    <lastmod>{lastmod}</lastmod>\n"
+        f"    <changefreq>{changefreq}</changefreq>\n"
+        f"    <priority>{priority}</priority>\n"
+        f"  </url>\n"
+    )
+
+
+def update_sitemap(date_str: str) -> None:
+    """Keep sitemap.xml in sync with the news section: refresh the /news hub
+    entry's lastmod and add a <url> entry for every dated brief page on disk.
+
+    Per Viv's direction (News-nav brief, 2026-07-06) every dated page is listed
+    individually and stays in the sitemap permanently. Entries use clean URLs
+    (no .html) — see CLAUDE.md. Edits the existing file in place with string
+    surgery rather than an XML parser so the hand-maintained entries and their
+    formatting are left untouched.
+    """
+    if not SITEMAP_PATH.exists():
+        log(f"sitemap.xml not found at {SITEMAP_PATH} — skipping sitemap update")
+        return
+
+    xml = SITEMAP_PATH.read_text(encoding="utf-8")
+    if "</urlset>" not in xml:
+        log("sitemap.xml has no closing </urlset> tag — skipping sitemap update")
+        return
+
+    hub_loc = f"{SITE_URL}/news"
+    if f"<loc>{hub_loc}</loc>" in xml:
+        xml = re.sub(
+            rf"(<loc>{re.escape(hub_loc)}</loc>\s*<lastmod>)[^<]*(</lastmod>)",
+            rf"\g<1>{date_str}\g<2>",
+            xml,
+        )
+        log(f"sitemap.xml: refreshed /news lastmod to {date_str}")
+    else:
+        xml = xml.replace("</urlset>", sitemap_url_block(hub_loc, date_str, "daily", "0.8") + "</urlset>")
+        log("sitemap.xml: added /news hub entry")
+
+    added = 0
+    for page in sorted(NEWS_DIR.glob("????-??-??.html")):
+        page_date = page.stem
+        loc = f"{SITE_URL}/news/{page_date}"
+        if f"<loc>{loc}</loc>" in xml:
+            continue
+        # Dated briefs are write-once archives: lastmod is the brief's own date.
+        xml = xml.replace("</urlset>", sitemap_url_block(loc, page_date, "monthly", "0.6") + "</urlset>")
+        added += 1
+
+    SITEMAP_PATH.write_text(xml, encoding="utf-8")
+    log(f"sitemap.xml: {added} dated news entr{'y' if added == 1 else 'ies'} added")
 
 
 def collect_index_entries() -> list[dict]:
@@ -389,6 +455,9 @@ def main() -> int:
     ticker_items = ticker_items[:MAX_TICKER_ITEMS]
     (NEWS_DIR / "latest.json").write_text(json.dumps(ticker_items, indent=2), encoding="utf-8")
     log(f"Wrote news/latest.json ({len(ticker_items)} items)")
+
+    # Keep sitemap.xml in step with the pages just written.
+    update_sitemap(date_str)
 
     return 0
 

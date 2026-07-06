@@ -45,7 +45,7 @@ jobs:
           set -euo pipefail
           git config user.name "aisearch-news-bot"
           git config user.email "hello@aisearch.global"
-          git add news/ automation/ai-news/data/
+          git add news/ automation/ai-news/data/ sitemap.xml
           if git diff --cached --quiet; then
             echo "Nothing new to publish today."
           else
