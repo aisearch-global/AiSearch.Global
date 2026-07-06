@@ -27,8 +27,6 @@ Every live URL and its source file. Edit the correct file.
 | `https://aisearch.global/privacy/` | `privacy/index.html` |
 | `https://aisearch.global/terms/` | `terms/index.html` |
 | `https://aisearch.global/resources/` | `resources/index.html` |
-| `https://aisearch.global/whitepapers/` | `whitepapers/index.html` |
-| `https://aisearch.global/whitepapers/two-clock-model` | `whitepapers/two-clock-model.html` |
 | any unknown URL (404 page) | `404.html` (noindex; presence of this file disables Cloudflare Pages' homepage fallback so bad URLs return a real 404) |
 
 **Not-live files** (do not edit or deploy): `privacy.html`, `terms.html` (root-level legacy copies), `local-private/` (all files), `content-archive/` (all files), `brand-assets/social-graphics/` (all files).

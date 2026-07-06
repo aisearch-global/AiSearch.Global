@@ -127,18 +127,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aisearch.global/whitepapers/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aisearch.global/whitepapers/two-clock-model</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://aisearch.global/privacy/</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>

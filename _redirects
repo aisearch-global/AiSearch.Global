@@ -8,8 +8,6 @@
 /terms/ /terms/index.html 200
 /resources /resources/index.html 200
 /resources/ /resources/index.html 200
-/whitepapers /whitepapers/index.html 200
-/whitepapers/ /whitepapers/index.html 200
 /services/ai-brand-presence.html /services/ai-brand-presence 301
 /services/content-restructuring.html /services/content-restructuring 301
 /services/aeo-audit.html /services/aeo-audit 301
@@ -35,4 +33,7 @@
 /insights/why-traditional-businesses-are-missing /insights/ 301
 /privacy.html /privacy/ 301
 /terms.html /terms/ 301
-/whitepapers/two-clock-model.html /whitepapers/two-clock-model 301
+/whitepapers/two-clock-model.html /insights/two-clock-model 302
+/whitepapers/two-clock-model /insights/two-clock-model 302
+/whitepapers/ /resources/ 302
+/whitepapers /resources/ 302
