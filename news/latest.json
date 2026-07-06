@@ -1,5 +1,60 @@
 [
   {
+    "headline": "You can now customize Siri\u2019s pace and expressivity in the latest iOS 27 beta",
+    "link": "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta",
+    "date": "2026-07-06"
+  },
+  {
+    "headline": "Every major tech layoff in 2026 that has name-checked AI",
+    "link": "https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai",
+    "date": "2026-07-06"
+  },
+  {
+    "headline": "If you use Google, you\u2019re training its AI. Here\u2019s how to opt out.",
+    "link": "https://techcrunch.com/2026/07/06/if-you-use-google-youre-training-its-ai-heres-how-to-opt-out",
+    "date": "2026-07-06"
+  },
+  {
+    "headline": "Your family\u2019s $300 stake in OpenAI",
+    "link": "https://www.technologyreview.com/2026/07/06/1140176/your-familys-300-stake-in-openai",
+    "date": "2026-07-06"
+  },
+  {
+    "headline": "Introducing GeneBench-Pro",
+    "link": "https://openai.com/index/introducing-genebench-pro",
+    "date": "2026-07-06"
+  },
+  {
+    "headline": "Core dump epidemiology: fixing an 18-year-old bug",
+    "link": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+    "date": "2026-07-06"
+  },
+  {
+    "headline": "AI Content Didn\u2019t Stop Working, Your Metrics Did via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/ai-content-didnt-stop-working-your-metrics-did/580976",
+    "date": "2026-07-06"
+  },
+  {
+    "headline": "Google Answers Question About LLMs-Author.txt For SEO via @sejournal, @martinibuster",
+    "link": "https://www.searchenginejournal.com/google-answers-question-about-llms-author-txt-for-seo/581547",
+    "date": "2026-07-06"
+  },
+  {
+    "headline": "Safari\u2019s New MCP Server Lets AI Debug Your Core Web Vitals To Improve SEO via @sejournal, @martinibuster",
+    "link": "https://www.searchenginejournal.com/safaris-mcp-server/581487",
+    "date": "2026-07-06"
+  },
+  {
+    "headline": "UN chief warns AI outpacing oversight",
+    "link": "https://www.itnews.com.au/news/un-chief-warns-ai-outpacing-oversight-627178",
+    "date": "2026-07-06"
+  },
+  {
+    "headline": "FMCG giants give consumer products an AI makeover",
+    "link": "https://www.itnews.com.au/news/fmcg-giants-give-consumer-products-an-ai-makeover-627179",
+    "date": "2026-07-06"
+  },
+  {
     "headline": "Almost 90 new unicorns have been minted so far this year \u2014 here they are",
     "link": "https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are",
     "date": "2026-07-05"
@@ -17,46 +72,6 @@
   {
     "headline": "Claude Science is Anthropic\u2019s newest flagship product",
     "link": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "How ChatGPT adoption has expanded",
-    "link": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "Inside Genebench-Pro",
-    "link": "https://openai.com/index/genebench-pro/case-studies",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "Safari\u2019s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster",
-    "link": "https://www.searchenginejournal.com/safaris-mcp-server/581487",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "Google Put AI Visibility Inside The SEO Tool On Purpose via @sejournal, @slobodanmanic",
-    "link": "https://www.searchenginejournal.com/google-put-ai-visibility-inside-the-seo-tool-on-purpose/577889",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "Should I Block AI Crawlers Or Measure Their Value First? \u2013 Ask An SEO via @sejournal, @HelenPollitt1",
-    "link": "https://www.searchenginejournal.com/ask-an-seo-should-i-block-ai-crawlers-or-measure-their-value-first/580005",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "Attorney-General's Dept backs Copilot Chat, Google NotebookLM",
-    "link": "https://www.itnews.com.au/news/attorney-generals-dept-backs-copilot-chat-google-notebooklm-627007",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "AWS to create division of 'embedded' AI engineers",
-    "link": "https://www.itnews.com.au/news/aws-to-create-division-of-embedded-ai-engineers-627057",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "Vocus to invest $500 million in new fibre builds",
-    "link": "https://www.itnews.com.au/news/vocus-to-invest-500-million-in-new-fibre-builds-627038",
     "date": "2026-07-05"
   }
 ]
