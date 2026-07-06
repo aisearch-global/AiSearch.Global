@@ -102,9 +102,11 @@ footer{border-top:1px solid var(--charcoal);padding:1.2rem 0;color:var(--silver-
 .ai-news-ticker-track a{color:var(--silver)}
 .ai-news-ticker-track a:hover{color:var(--tiffany)}
 .news-index-list{list-style:none;padding:0;margin-top:1.5rem}
-.news-index-list li{padding:.9rem 0;border-bottom:1px solid var(--charcoal);font-size:.95rem;color:var(--silver)}
-.news-index-list li a{color:var(--white);font-weight:500}
+.news-index-list li{border-bottom:1px solid var(--charcoal);font-size:.95rem}
+.news-index-list li a{display:block;padding:.9rem 0;color:var(--white);font-weight:500}
 .news-index-list li a:hover{color:var(--tiffany)}
+.news-index-list li a .story-count{color:var(--silver);font-weight:400}
+.news-index-list li a:hover .story-count{color:var(--tiffany)}
 """
 
 
@@ -261,7 +263,8 @@ def render_page(date_str: str, human_date: str, story_blocks: list[str]) -> str:
 def render_index(entries: list[dict]) -> str:
     """entries: list of {date, human_date, headline_count} newest first."""
     items = "\n".join(
-        f'      <li><a href="/news/{e["date"]}">{e["human_date"]}</a> — {e["headline_count"]} stories</li>'
+        f'      <li><a href="/news/{e["date"]}">{e["human_date"]} '
+        f'<span class="story-count">&mdash; {e["headline_count"]} stories</span></a></li>'
         for e in entries
     )
     canonical = f"{SITE_URL}/news"

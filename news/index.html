@@ -49,9 +49,11 @@ footer{border-top:1px solid var(--charcoal);padding:1.2rem 0;color:var(--silver-
 .ai-news-ticker-track a{color:var(--silver)}
 .ai-news-ticker-track a:hover{color:var(--tiffany)}
 .news-index-list{list-style:none;padding:0;margin-top:1.5rem}
-.news-index-list li{padding:.9rem 0;border-bottom:1px solid var(--charcoal);font-size:.95rem;color:var(--silver)}
-.news-index-list li a{color:var(--white);font-weight:500}
+.news-index-list li{border-bottom:1px solid var(--charcoal);font-size:.95rem}
+.news-index-list li a{display:block;padding:.9rem 0;color:var(--white);font-weight:500}
 .news-index-list li a:hover{color:var(--tiffany)}
+.news-index-list li a .story-count{color:var(--silver);font-weight:400}
+.news-index-list li a:hover .story-count{color:var(--tiffany)}
 </style>
   <link rel="stylesheet" href="/assets/css/styles.css?v=4">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -87,8 +89,8 @@ footer{border-top:1px solid var(--charcoal);padding:1.2rem 0;color:var(--silver-
 
   <h2>Recent briefs</h2>
   <ul class="news-index-list">
-      <li><a href="/news/2026-07-06">6 July 2026</a> — 11 stories</li>
-      <li><a href="/news/2026-07-05">5 July 2026</a> — 12 stories</li>
+      <li><a href="/news/2026-07-06">6 July 2026 <span class="story-count">&mdash; 11 stories</span></a></li>
+      <li><a href="/news/2026-07-05">5 July 2026 <span class="story-count">&mdash; 12 stories</span></a></li>
   </ul>
 </main>
 <footer></footer>
