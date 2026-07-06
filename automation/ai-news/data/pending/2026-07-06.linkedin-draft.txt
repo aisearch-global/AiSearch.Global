@@ -1,8 +1,8 @@
 AI news brief — 6 July 2026
 
-→ You can now customize Siri’s pace and expressivity in the latest iOS 27 beta
-→ Every major tech layoff in 2026 that has name-checked AI
-→ If you use Google, you’re training its AI. Here’s how to opt out.
+→ US investors will soon get access to SK Hynix, another memory maker riding the AI boom
+→ Microsoft lays off nearly 5,000 employees across Xbox, commercial sales
+→ Reddit is using LLMs to solve a problem LLMs largely created
 
 Full roundup, with sources linked:
 https://aisearch.global/news/2026-07-06

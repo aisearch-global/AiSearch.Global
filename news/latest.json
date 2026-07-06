@@ -1,57 +1,42 @@
 [
   {
-    "headline": "You can now customize Siri\u2019s pace and expressivity in the latest iOS 27 beta",
-    "link": "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta",
+    "headline": "US investors will soon get access to SK Hynix, another memory maker riding the AI boom",
+    "link": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom",
     "date": "2026-07-06"
   },
   {
-    "headline": "Every major tech layoff in 2026 that has name-checked AI",
-    "link": "https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai",
+    "headline": "Microsoft lays off nearly 5,000 employees across Xbox, commercial sales",
+    "link": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales",
     "date": "2026-07-06"
   },
   {
-    "headline": "If you use Google, you\u2019re training its AI. Here\u2019s how to opt out.",
-    "link": "https://techcrunch.com/2026/07/06/if-you-use-google-youre-training-its-ai-heres-how-to-opt-out",
+    "headline": "Reddit is using LLMs to solve a problem LLMs largely created",
+    "link": "https://techcrunch.com/2026/07/06/reddit-is-using-llms-to-solve-a-problem-llms-largely-created",
     "date": "2026-07-06"
   },
   {
-    "headline": "Your family\u2019s $300 stake in OpenAI",
-    "link": "https://www.technologyreview.com/2026/07/06/1140176/your-familys-300-stake-in-openai",
+    "headline": "Mapping Europe\u2019s AI Workforce Opportunity",
+    "link": "https://openai.com/index/mapping-ai-jobs-transition-eu",
     "date": "2026-07-06"
   },
   {
-    "headline": "Introducing GeneBench-Pro",
-    "link": "https://openai.com/index/introducing-genebench-pro",
+    "headline": "HP Inc. launches Frontier strategic partnership with OpenAI",
+    "link": "https://openai.com/index/hp-frontier-partnership",
     "date": "2026-07-06"
   },
   {
-    "headline": "Core dump epidemiology: fixing an 18-year-old bug",
-    "link": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+    "headline": "Previewing GPT-5.6 Sol: a next-generation model",
+    "link": "https://openai.com/index/previewing-gpt-5-6-sol",
     "date": "2026-07-06"
   },
   {
-    "headline": "AI Content Didn\u2019t Stop Working, Your Metrics Did via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/ai-content-didnt-stop-working-your-metrics-did/580976",
+    "headline": "Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/google-ai-overviews-study-finds-lost-clicks-werent-lower-quality/581298",
     "date": "2026-07-06"
   },
   {
-    "headline": "Google Answers Question About LLMs-Author.txt For SEO via @sejournal, @martinibuster",
-    "link": "https://www.searchenginejournal.com/google-answers-question-about-llms-author-txt-for-seo/581547",
-    "date": "2026-07-06"
-  },
-  {
-    "headline": "Safari\u2019s New MCP Server Lets AI Debug Your Core Web Vitals To Improve SEO via @sejournal, @martinibuster",
-    "link": "https://www.searchenginejournal.com/safaris-mcp-server/581487",
-    "date": "2026-07-06"
-  },
-  {
-    "headline": "UN chief warns AI outpacing oversight",
-    "link": "https://www.itnews.com.au/news/un-chief-warns-ai-outpacing-oversight-627178",
-    "date": "2026-07-06"
-  },
-  {
-    "headline": "FMCG giants give consumer products an AI makeover",
-    "link": "https://www.itnews.com.au/news/fmcg-giants-give-consumer-products-an-ai-makeover-627179",
+    "headline": "OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/openai-hiring-points-to-image-video-ads-coming-to-chatgpt/581289",
     "date": "2026-07-06"
   },
   {
@@ -72,6 +57,21 @@
   {
     "headline": "Claude Science is Anthropic\u2019s newest flagship product",
     "link": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product",
+    "date": "2026-07-05"
+  },
+  {
+    "headline": "How ChatGPT adoption has expanded",
+    "link": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+    "date": "2026-07-05"
+  },
+  {
+    "headline": "Inside Genebench-Pro",
+    "link": "https://openai.com/index/genebench-pro/case-studies",
+    "date": "2026-07-05"
+  },
+  {
+    "headline": "Safari\u2019s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster",
+    "link": "https://www.searchenginejournal.com/safaris-mcp-server/581487",
     "date": "2026-07-05"
   }
 ]

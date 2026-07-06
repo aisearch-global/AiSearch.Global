@@ -1,55 +1,43 @@
 [
   {
-    "key": "9a5708e705b5cf12f5c3737d",
-    "title": "You can now customize Siri\u2019s pace and expressivity in the latest iOS 27 beta",
-    "link": "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta",
-    "summary_raw": "The update is part of Apple's broader effort to make Siri feel more natural and personal, as it rebuilds the assistant around generative AI.",
-    "published": "Mon, 06 Jul 2026 19:01:59 +0000",
+    "key": "ffc209189671b54dbbb2a209",
+    "title": "US investors will soon get access to SK Hynix, another memory maker riding the AI boom",
+    "link": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom",
+    "summary_raw": "SK Hynix is experiencing a boom credited to AI. It will ride that to a multi-billion dollar US IPO, expected to take place on Friday.",
+    "published": "Mon, 06 Jul 2026 23:21:03 +0000",
     "source": "TechCrunch",
     "categories": [
       "ai_news"
     ]
   },
   {
-    "key": "31e458078bd060b93a5d691d",
-    "title": "Every major tech layoff in 2026 that has name-checked AI",
-    "link": "https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai",
-    "summary_raw": "A running look \u2014 in reverse chronological order \u2014 at the bigger tech companies that have announced significant layoffs this year with AI as a stated factor.",
-    "published": "Mon, 06 Jul 2026 18:35:00 +0000",
+    "key": "295375c12f67e6ee72f260fd",
+    "title": "Microsoft lays off nearly 5,000 employees across Xbox, commercial sales",
+    "link": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales",
+    "summary_raw": "Microsoft cut around 4,800 roles, or 2.1% of its global workforce, on Monday \u2014 the latest in a series of layoffs that\u2019s stoking fears of AI replacing jobs. The layoffs will hit Xbox and commercial sales the hardest.",
+    "published": "Mon, 06 Jul 2026 15:32:43 +0000",
     "source": "TechCrunch",
     "categories": [
       "ai_news"
     ]
   },
   {
-    "key": "bf9a192f75d80398ef4cab74",
-    "title": "If you use Google, you\u2019re training its AI. Here\u2019s how to opt out.",
-    "link": "https://techcrunch.com/2026/07/06/if-you-use-google-youre-training-its-ai-heres-how-to-opt-out",
-    "summary_raw": "Consider this a belated PSA: A recent change to Google\u2019s privacy settings is allowing the company to store more of your data, including media such as \u201cimages, files, and audio and video recordings,\u201d to improve its AI models.",
-    "published": "Mon, 06 Jul 2026 17:04:58 +0000",
+    "key": "e886f1557ac62210c3ce2eb6",
+    "title": "Reddit is using LLMs to solve a problem LLMs largely created",
+    "link": "https://techcrunch.com/2026/07/06/reddit-is-using-llms-to-solve-a-problem-llms-largely-created",
+    "summary_raw": "In the AI era, platforms have no choice but to fight fire with fire to cull spam.",
+    "published": "Mon, 06 Jul 2026 15:22:08 +0000",
     "source": "TechCrunch",
     "categories": [
       "ai_news"
     ]
   },
   {
-    "key": "ea3b22f73e0ff3c550466b6b",
-    "title": "Your family\u2019s $300 stake in OpenAI",
-    "link": "https://www.technologyreview.com/2026/07/06/1140176/your-familys-300-stake-in-openai",
-    "summary_raw": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. OpenAI CEO Sam Altman\u2019s oft-discussed promise that Americans will share in the wealth AI creates was in the news again last week. On Thursday, the Financial Times reported that Altman is in&#8230;",
-    "published": "Mon, 06 Jul 2026 18:00:00 +0000",
-    "source": "MIT Technology Review",
-    "categories": [
-      "ai_news",
-      "human_ai_research"
-    ]
-  },
-  {
-    "key": "06ba91a6a1f9c6657893392c",
-    "title": "Introducing GeneBench-Pro",
-    "link": "https://openai.com/index/introducing-genebench-pro",
-    "summary_raw": "Introducing GeneBench-Pro, a new benchmark testing AI performance in genomics, biology, and scientific research using complex, real-world datasets.",
-    "published": "Tue, 30 Jun 2026 00:00:00 GMT",
+    "key": "b9bbedb9f09ca17036933f28",
+    "title": "Mapping Europe\u2019s AI Workforce Opportunity",
+    "link": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+    "summary_raw": "A new OpenAI report maps how AI could reshape jobs across the EU, highlighting which occupations may face automation, growth, or workflow changes.",
+    "published": "Mon, 29 Jun 2026 07:00:00 GMT",
     "source": "OpenAI News",
     "categories": [
       "human_ai_research",
@@ -57,11 +45,11 @@
     ]
   },
   {
-    "key": "36997645fcdcb845f45b1e0a",
-    "title": "Core dump epidemiology: fixing an 18-year-old bug",
-    "link": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
-    "summary_raw": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug.",
-    "published": "Tue, 30 Jun 2026 00:00:00 GMT",
+    "key": "d46a5164e4e22ccf8dea595e",
+    "title": "HP Inc. launches Frontier strategic partnership with OpenAI",
+    "link": "https://openai.com/index/hp-frontier-partnership",
+    "summary_raw": "HP Inc. scales its OpenAI Frontier partnership to deploy AI across customer experiences, software development, and enterprise operations.",
+    "published": "Sun, 28 Jun 2026 17:00:00 GMT",
     "source": "OpenAI News",
     "categories": [
       "human_ai_research",
@@ -69,60 +57,37 @@
     ]
   },
   {
-    "key": "2a0ed2b3c4d0fa06ada44c85",
-    "title": "AI Content Didn\u2019t Stop Working, Your Metrics Did via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/ai-content-didnt-stop-working-your-metrics-did/580976",
-    "summary_raw": "Declining organic traffic doesn't always signal failing content. Here's how to measure influence when AI search disrupts traditional SEO metrics. The post AI Content Didn&#8217;t Stop Working, Your Metrics Did appeared first on Search Engine Journal .",
-    "published": "Mon, 06 Jul 2026 11:30:07 +0000",
-    "source": "Search Engine Journal",
+    "key": "243cdaca31f371840950c0f1",
+    "title": "Previewing GPT-5.6 Sol: a next-generation model",
+    "link": "https://openai.com/index/previewing-gpt-5-6-sol",
+    "summary_raw": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack.",
+    "published": "Fri, 26 Jun 2026 10:00:00 GMT",
+    "source": "OpenAI News",
     "categories": [
-      "aeo_relevance"
-    ]
-  },
-  {
-    "key": "cf3876c28e2e42f54bedbd23",
-    "title": "Google Answers Question About LLMs-Author.txt For SEO via @sejournal, @martinibuster",
-    "link": "https://www.searchenginejournal.com/google-answers-question-about-llms-author-txt-for-seo/581547",
-    "summary_raw": "Google's John Mueller responded to an SEO using LLMs-Author.txt to separate themself from others with the same name. The post Google Answers Question About LLMs-Author.txt For SEO appeared first on Search Engine Journal .",
-    "published": "Mon, 06 Jul 2026 10:05:35 +0000",
-    "source": "Search Engine Journal",
-    "categories": [
-      "aeo_relevance"
-    ]
-  },
-  {
-    "key": "f614e8afb4c579707495a30f",
-    "title": "Safari\u2019s New MCP Server Lets AI Debug Your Core Web Vitals To Improve SEO via @sejournal, @martinibuster",
-    "link": "https://www.searchenginejournal.com/safaris-mcp-server/581487",
-    "summary_raw": "Apple's WebKit announced a new MCP server for Safari that enables AI-based website debugging for SEO and Core Web Vitals. The post Safari&#8217;s New MCP Server Lets AI Debug Your Core Web Vitals To Improve SEO appeared first on Search Engine Journal .",
-    "published": "Sun, 05 Jul 2026 21:15:10 +0000",
-    "source": "Search Engine Journal",
-    "categories": [
-      "aeo_relevance"
-    ]
-  },
-  {
-    "key": "52b28321c4a6b12a49b56652",
-    "title": "UN chief warns AI outpacing oversight",
-    "link": "https://www.itnews.com.au/news/un-chief-warns-ai-outpacing-oversight-627178",
-    "summary_raw": "Urges globally harmonised rules.",
-    "published": "Mon, 6 Jul 2026 21:58:00 +1000",
-    "source": "iTnews",
-    "categories": [
-      "australia_focus",
+      "human_ai_research",
       "ai_news"
     ]
   },
   {
-    "key": "89940c6e1d615dea4b44a15d",
-    "title": "FMCG giants give consumer products an AI makeover",
-    "link": "https://www.itnews.com.au/news/fmcg-giants-give-consumer-products-an-ai-makeover-627179",
-    "summary_raw": "Nestle, Haleon, L'Oreal, Mondelez all embrace the technology.",
-    "published": "Mon, 6 Jul 2026 21:58:00 +1000",
-    "source": "iTnews",
+    "key": "c12159350e0a1bb9ad8972b6",
+    "title": "Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/google-ai-overviews-study-finds-lost-clicks-werent-lower-quality/581298",
+    "summary_raw": "An updated AI Overviews experiment finds no measurable difference in bounce rates, time on site, or returns to search between clicks with and without summaries. The post Google AI Overviews Study Finds Lost Clicks Weren&#8217;t Lower Quality appeared first on Search Engine Journal .",
+    "published": "Wed, 01 Jul 2026 23:56:14 +0000",
+    "source": "Search Engine Journal",
     "categories": [
-      "australia_focus",
-      "ai_news"
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "abd99bc5c7d62e351517b2ad",
+    "title": "OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/openai-hiring-points-to-image-video-ads-coming-to-chatgpt/581289",
+    "summary_raw": "OpenAI job listings and its advertising plans point to image, video, native and conversational ad formats for ChatGPT. The post OpenAI Hiring Points To Image &#038; Video Ads Coming To ChatGPT appeared first on Search Engine Journal .",
+    "published": "Wed, 01 Jul 2026 21:44:34 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
     ]
   }
 ]
