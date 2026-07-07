@@ -1,5 +1,55 @@
 [
   {
+    "headline": "Meta rolls out Muse, a new AI image generator",
+    "link": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator",
+    "date": "2026-07-07"
+  },
+  {
+    "headline": "Why the rise of open source AI isn\u2019t hurting Anthropic \u2026 yet",
+    "link": "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet",
+    "date": "2026-07-07"
+  },
+  {
+    "headline": "Microsoft joins AI cost-cutting trend by relying more on its own models",
+    "link": "https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models",
+    "date": "2026-07-07"
+  },
+  {
+    "headline": "The Download: your stake in OpenAI, and the Treasury\u2019s AI warning",
+    "link": "https://www.technologyreview.com/2026/07/07/1140197/the-download-your-openai-stake-treasury-ai-warning",
+    "date": "2026-07-07"
+  },
+  {
+    "headline": "The foundational elements of AI architecture that IT leaders need to scale",
+    "link": "https://www.technologyreview.com/2026/07/07/1139413/the-foundational-elements-of-ai-architecture-that-it-leaders-need-to-scale",
+    "date": "2026-07-07"
+  },
+  {
+    "headline": "iFLYTEK-Embodied-Omni Technical Report",
+    "link": "https://arxiv.org/abs/2607.02542",
+    "date": "2026-07-07"
+  },
+  {
+    "headline": "AI Search: Is Your Content Strategy Accidentally Recommending Your Competitors?",
+    "link": "https://www.searchenginejournal.com/ai-search-recommending-competitors-firstpromoter-spa/581579",
+    "date": "2026-07-07"
+  },
+  {
+    "headline": "SEO Study: 5 Lessons From Running AI Agents Across Every Search via @sejournal, @lorenbaker",
+    "link": "https://www.searchenginejournal.com/seo-study-5-lessons-from-running-ai-agents-across-every-search/581663",
+    "date": "2026-07-07"
+  },
+  {
+    "headline": "Local Marketing Is Too Complex: What the Data Says & What To Do",
+    "link": "https://www.searchenginejournal.com/local-search-marketing-trends-uberall-spa/581648",
+    "date": "2026-07-07"
+  },
+  {
+    "headline": "Bendigo Bank scoping more than 3000 ideas for AI use",
+    "link": "https://www.itnews.com.au/news/bendigo-bank-scoping-more-than-3000-ideas-for-ai-use-627109",
+    "date": "2026-07-07"
+  },
+  {
     "headline": "US investors will soon get access to SK Hynix, another memory maker riding the AI boom",
     "link": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom",
     "date": "2026-07-06"
@@ -23,55 +73,5 @@
     "headline": "HP Inc. launches Frontier strategic partnership with OpenAI",
     "link": "https://openai.com/index/hp-frontier-partnership",
     "date": "2026-07-06"
-  },
-  {
-    "headline": "Previewing GPT-5.6 Sol: a next-generation model",
-    "link": "https://openai.com/index/previewing-gpt-5-6-sol",
-    "date": "2026-07-06"
-  },
-  {
-    "headline": "Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/google-ai-overviews-study-finds-lost-clicks-werent-lower-quality/581298",
-    "date": "2026-07-06"
-  },
-  {
-    "headline": "OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/openai-hiring-points-to-image-video-ads-coming-to-chatgpt/581289",
-    "date": "2026-07-06"
-  },
-  {
-    "headline": "Almost 90 new unicorns have been minted so far this year \u2014 here they are",
-    "link": "https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "Google just redesigned the search box for the first time in 25 years \u2014 here\u2019s why it matters more than you think.",
-    "link": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
-    "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "Claude Science is Anthropic\u2019s newest flagship product",
-    "link": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "How ChatGPT adoption has expanded",
-    "link": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "Inside Genebench-Pro",
-    "link": "https://openai.com/index/genebench-pro/case-studies",
-    "date": "2026-07-05"
-  },
-  {
-    "headline": "Safari\u2019s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster",
-    "link": "https://www.searchenginejournal.com/safaris-mcp-server/581487",
-    "date": "2026-07-05"
   }
 ]

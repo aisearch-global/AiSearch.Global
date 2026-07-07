@@ -1,0 +1,115 @@
+[
+  {
+    "key": "71563a97c05090dd522fe1a5",
+    "title": "Meta rolls out Muse, a new AI image generator",
+    "link": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator",
+    "summary_raw": "The new image-generating model has numerous use cases, including advertising, decorating and creator-based opportunities.",
+    "published": "Tue, 07 Jul 2026 22:18:10 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "e04e0b496462f3442a1d59bc",
+    "title": "Why the rise of open source AI isn\u2019t hurting Anthropic \u2026 yet",
+    "link": "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet",
+    "summary_raw": "Open source models\u2019 success isn\u2019t coming at the expense of frontier labs. Instead, they each seem to capture two phases of the same life cycle.",
+    "published": "Tue, 07 Jul 2026 20:04:32 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "54c554d7bbde8d364b83f980",
+    "title": "Microsoft joins AI cost-cutting trend by relying more on its own models",
+    "link": "https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models",
+    "summary_raw": "Microsoft is the latest Silicon Valley giant to cut back on its AI spending.",
+    "published": "Tue, 07 Jul 2026 19:58:20 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "cfda9ca2dfbaf53e28ea2678",
+    "title": "The Download: your stake in OpenAI, and the Treasury\u2019s AI warning",
+    "link": "https://www.technologyreview.com/2026/07/07/1140197/the-download-your-openai-stake-treasury-ai-warning",
+    "summary_raw": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Your family\u2019s $300 stake in OpenAI Sam Altman\u2019s proposal that Americans should share in the wealth created by AI is back in the spotlight, with reports that he is discussing giving&#8230;",
+    "published": "Tue, 07 Jul 2026 12:10:00 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "534c38d33292cf6d4efe2067",
+    "title": "The foundational elements of AI architecture that IT leaders need to scale",
+    "link": "https://www.technologyreview.com/2026/07/07/1139413/the-foundational-elements-of-ai-architecture-that-it-leaders-need-to-scale",
+    "summary_raw": "With the rapid progress of AI capabilities and the move to agentic systems, organizations are expanding their use cases as the technology continues to grow. That constant evolution also introduces risk, leaving IT leaders to wonder which investments will prove valuable even six months into the future. Returning to the foundational elements of AI architecture\u2014the&#8230;",
+    "published": "Tue, 07 Jul 2026 11:10:52 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "abdcd294472f264e2ca0113f",
+    "title": "iFLYTEK-Embodied-Omni Technical Report",
+    "link": "https://arxiv.org/abs/2607.02542",
+    "summary_raw": "arXiv:2607.02542v1 Announce Type: new Abstract: General-purpose embodied agents must understand multimodal instructions, anticipate how their environment will evolve, and produce precise control actions over extended horizons. Existing approaches typically specialize in visual-language reasoning, video-based world modeling, or action generation, while cascaded pipelines that first synthesize future observations and then infer actions can introduce interface bottlenecks and compound prediction errors. We present iFLYTEK-Embodied-Omni, a unified multimodal foundation model that jointly models vision(videos and images), language, and action within a single Omni framework. Its modality-specific visual-language, video-generation, and action-generation components communicate through shared multimodal self-attention. This design establishes brain-cerebellum collaboration: the vision-language modeland video generation model form a high-level brain for instruction understanding, task planning, progress tracking, and future visual-state prediction, whereas the action generation modelserves as a low-level cerebellum that directly converts planned subgoals and shared multimodal context into ex",
+    "published": "Tue, 07 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "9f481732d29df31ef4bf86a9",
+    "title": "AI Search: Is Your Content Strategy Accidentally Recommending Your Competitors?",
+    "link": "https://www.searchenginejournal.com/ai-search-recommending-competitors-firstpromoter-spa/581579",
+    "summary_raw": "Explore why listicles may recommend your competitors instead of your product, revealing new tactics in AI search strategy. The post AI Search: Is Your Content Strategy Accidentally Recommending Your Competitors? appeared first on Search Engine Journal .",
+    "published": "Tue, 07 Jul 2026 22:14:42 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "8bf7982243703e2f220b2aac",
+    "title": "SEO Study: 5 Lessons From Running AI Agents Across Every Search via @sejournal, @lorenbaker",
+    "link": "https://www.searchenginejournal.com/seo-study-5-lessons-from-running-ai-agents-across-every-search/581663",
+    "summary_raw": "Last year, 2.5% of Writesonic\u2019s leads came from AI search. As of March, 35% do. Samanyou Garg, Founder and CEO of Writesonic, showed the system behind that number in his Search Engine Journal webinar: agents surface what moved across every search platform, practitioners prioritize and act. \u201cAI search didn\u2019t necessarily kill SEO, but it turned it into an engineering problem,\u201d he said. The session covers new citation research and 5 lessons from the field, including the 6-stage loop his team runs on every published page and the workflow that wins citations on pages you don\u2019t own. Watch the full webinar [\u2026] The post SEO Study: 5 Lessons From Running AI Agents Across Every Search appeared first on Search Engine Journal .",
+    "published": "Tue, 07 Jul 2026 21:00:35 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "7616e6c3147c12467a025f85",
+    "title": "Local Marketing Is Too Complex: What the Data Says & What To Do",
+    "link": "https://www.searchenginejournal.com/local-search-marketing-trends-uberall-spa/581648",
+    "summary_raw": "Learn how multi-location brands fix complex marketing & GBP challenges with an AI layer and a 4-step local optimization framework. The post Local Marketing Is Too Complex: What the Data Says &#038; What To Do appeared first on Search Engine Journal .",
+    "published": "Tue, 07 Jul 2026 18:31:30 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "976d77792b58da300bbf16d2",
+    "title": "Bendigo Bank scoping more than 3000 ideas for AI use",
+    "link": "https://www.itnews.com.au/news/bendigo-bank-scoping-more-than-3000-ideas-for-ai-use-627109",
+    "summary_raw": "Backlog emerges over the past nine months.",
+    "published": "Wed, 8 Jul 2026 06:56:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ]
+  }
+]
