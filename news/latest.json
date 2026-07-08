@@ -1,5 +1,50 @@
 [
   {
+    "headline": "Why this CEO thinks video games make better training data than the internet",
+    "link": "https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet",
+    "date": "2026-07-09"
+  },
+  {
+    "headline": "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise.",
+    "link": "https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise",
+    "date": "2026-07-09"
+  },
+  {
+    "headline": "OpenAI releases new voice models for more natural live conversations",
+    "link": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations",
+    "date": "2026-07-09"
+  },
+  {
+    "headline": "CSTutorBench: Benchmarking Small Language Models as Tutors for Block-Based Programming",
+    "link": "https://arxiv.org/abs/2607.05571",
+    "date": "2026-07-09"
+  },
+  {
+    "headline": "Foundation Models for Automatic CAD Generation",
+    "link": "https://arxiv.org/abs/2607.05573",
+    "date": "2026-07-09"
+  },
+  {
+    "headline": "Narrative World Model: Narratology-Grounded Writer Memory for Long-Form Fiction",
+    "link": "https://arxiv.org/abs/2607.05577",
+    "date": "2026-07-09"
+  },
+  {
+    "headline": "An Easy Digital PR Strategy For AI SEO via @sejournal, @martinibuster",
+    "link": "https://www.searchenginejournal.com/an-easy-digital-pr-strategy-for-ai-seo/581710",
+    "date": "2026-07-09"
+  },
+  {
+    "headline": "You Can\u2019t See How AI Ranks You, So Build What It Can Read via @sejournal, @slobodanmanic",
+    "link": "https://www.searchenginejournal.com/you-cant-see-how-ai-ranks-you-so-build-what-it-can-read/580048",
+    "date": "2026-07-09"
+  },
+  {
+    "headline": "How To Build A Performance Marketing Experimentation Framework With AI",
+    "link": "https://www.searchenginejournal.com/performance-marketing-meets-ai-how-to-build-an-experimentation-framework-that-scales/579854",
+    "date": "2026-07-09"
+  },
+  {
     "headline": "SpaceXAI releases Grok 4.5, which Elon describes as an \u2018Opus-class model\u2019",
     "link": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model",
     "date": "2026-07-08"
@@ -28,50 +73,5 @@
     "headline": "From Graphs to Gradients: Physics-Inspired Structural Attribution for Cyber-Physical IoT Systems and Beyond",
     "link": "https://arxiv.org/abs/2607.05563",
     "date": "2026-07-08"
-  },
-  {
-    "headline": "How SEO Teams Stopped Guessing Which AI Search Strategies Paid Off via @sejournal, @lorenbaker",
-    "link": "https://www.searchenginejournal.com/how-enterprise-seo-teams-stopped-guessing-which-ai-search-strategies-paid-off/581786",
-    "date": "2026-07-08"
-  },
-  {
-    "headline": "OpenAI GPT-Live Brings Search Into ChatGPT Voice via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/openai-gpt-live-brings-search-into-chatgpt-voice/581773",
-    "date": "2026-07-08"
-  },
-  {
-    "headline": "Reclaiming Brand Sovereignty In The AI Era via @sejournal, @billhunt",
-    "link": "https://www.searchenginejournal.com/reclaiming-brand-sovereignty-in-the-ai-era/581161",
-    "date": "2026-07-08"
-  },
-  {
-    "headline": "Meta rolls out Muse, a new AI image generator",
-    "link": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator",
-    "date": "2026-07-07"
-  },
-  {
-    "headline": "Why the rise of open source AI isn\u2019t hurting Anthropic \u2026 yet",
-    "link": "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet",
-    "date": "2026-07-07"
-  },
-  {
-    "headline": "Microsoft joins AI cost-cutting trend by relying more on its own models",
-    "link": "https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models",
-    "date": "2026-07-07"
-  },
-  {
-    "headline": "The Download: your stake in OpenAI, and the Treasury\u2019s AI warning",
-    "link": "https://www.technologyreview.com/2026/07/07/1140197/the-download-your-openai-stake-treasury-ai-warning",
-    "date": "2026-07-07"
-  },
-  {
-    "headline": "The foundational elements of AI architecture that IT leaders need to scale",
-    "link": "https://www.technologyreview.com/2026/07/07/1139413/the-foundational-elements-of-ai-architecture-that-it-leaders-need-to-scale",
-    "date": "2026-07-07"
-  },
-  {
-    "headline": "iFLYTEK-Embodied-Omni Technical Report",
-    "link": "https://arxiv.org/abs/2607.02542",
-    "date": "2026-07-07"
   }
 ]

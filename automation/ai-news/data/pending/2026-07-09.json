@@ -1,0 +1,101 @@
+[
+  {
+    "key": "05aead849e63d168067ad990",
+    "title": "Why this CEO thinks video games make better training data than the internet",
+    "link": "https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet",
+    "summary_raw": "When it comes to achieving artificial general intelligence (AGI), large language models just&#160;don\u2019t&#160;have what it takes. Models like ChatGPT and Claude&#160;are great at text, but&#160;they&#8217;re&#160;less skilled at understanding how things&#160;actually move&#160;through space and time&#160;\u2014&#160;an essential skill for producing intelligence that generalizes. That gap, it turns out, might be filled&#160;by&#160;gaming data.&#160;That&#8217;s&#160;the bet behind General Intuition, a [&#8230;]",
+    "published": "Wed, 08 Jul 2026 17:47:55 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "ec5f459db2c8defd560296d6",
+    "title": "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise.",
+    "link": "https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise",
+    "summary_raw": "Meta is adding a new safeguard to stop people from secretly recording others with its AI glasses. But the update comes as the company continues to expand how much personal data its AI products collect and use.",
+    "published": "Wed, 08 Jul 2026 17:11:18 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "4f1a0d8c9aff055bb05f191a",
+    "title": "OpenAI releases new voice models for more natural live conversations",
+    "link": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations",
+    "summary_raw": "OpenAI says its new voice mode can speak and listen at the same time, a key ability for live translation.",
+    "published": "Wed, 08 Jul 2026 17:00:00 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "a63e3725e9decf8a0c55551d",
+    "title": "CSTutorBench: Benchmarking Small Language Models as Tutors for Block-Based Programming",
+    "link": "https://arxiv.org/abs/2607.05571",
+    "summary_raw": "arXiv:2607.05571v1 Announce Type: new Abstract: Large language models are increasingly explored as AI tutors, yet deploying them in K-12 settings raises concerns around privacy, cost, and reliance on proprietary models. Small language models (SLMs) offer a promising alternative, but selecting the right model for a specific educational context remains difficult, particularly when the target domain, such as block-based programming, is largely absent from model training data. We introduce CSTutorBench, a benchmark for evaluating language models as CS tutors in VEX VR, a block-based robotics environment. The benchmark comprises 17 scenario-based questions scored against a pedagogical rubric grounded in established tutoring and feedback research, with a human-in-the-loop LLM-as-judge pipeline for evaluation. Preliminary findings across 11 models (4B-120B parameters) reveal that models perform well on surface-level criteria such as vocabulary and tone but struggle with deeper pedagogical behaviors, particularly avoiding answer leakage and engaging with student debugging histories. In our sample, model family and instruction-tuning approach appear to be better predictors of tutoring quali",
+    "published": "Wed, 08 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "0effa793a1b81bd27075f85c",
+    "title": "Foundation Models for Automatic CAD Generation",
+    "link": "https://arxiv.org/abs/2607.05573",
+    "summary_raw": "arXiv:2607.05573v1 Announce Type: new Abstract: Recent advances in Large Language Models (LLMs) and Vision-Language Models (VLMs) enable the automatic generation of parametric 3D designs from natural-language specifications. This chapter presents an empirical study of foundation models for automatic Computer-Aided Design (CAD) generation of mechanical parts, using a unified evaluation pipeline and a curated benchmark of 97 engineering design problems. We introduce LLMForge, a multi-model text-to-CAD framework integrating JSON-schema validation, analytic feature scoring, mesh synthesis, and multi-round iterative refinement, studied under two critique regimes. IterTracer uses a Phong-shaded ray-trace renderer with analytic visual metrics (silhouette IoU, hole visibility, edge clearance, aspect-ratio conformance) for lightweight geometry-aware feedback across rounds. IterVision replaces the analytic scorer with a VLM semantic critic (Qwen2.5-VL-72B) that evaluates rendered views via chain-of-thought visual reasoning, assessing spatial coherence and design intent. On a benchmark spanning four canonical geometry families (plates with holes and bolt circles, multi-feature boxes, flanged ",
+    "published": "Wed, 08 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "f28fe48fe407cf6087b8731f",
+    "title": "Narrative World Model: Narratology-Grounded Writer Memory for Long-Form Fiction",
+    "link": "https://arxiv.org/abs/2607.05577",
+    "summary_raw": "arXiv:2607.05577v1 Announce Type: new Abstract: Long-form fiction writers need memory that answers multi-hop questions about evolving story state: who knows a secret and when they learned it, whether an event preceded the narration that revealed it, whether a setup paid off, and how a relationship shifted. General-purpose retrieval and agent-memory systems represent entities and facts but not the narratological structure these questions turn on, so they surface the wrong evidence or none at all. We introduce the Narrative World Model (NWM), a writer-memory system that pairs a narratology-grounded typed temporal-state graph with query-conditioned hybrid retrieval. To measure memory rather than the answerer, we read every system through a single held-constant Opus 4.8 reader over only that system's chapter-safe evidence, on a reproducible public corpus and a validated multi-hop benchmark, and we compare against the strongest existing temporal-knowledge-graph agent-memory framework, Graphiti/Zep (Rasmussen et al., 2025). NWM substantially and significantly outperforms this baseline on multi-hop narratological QA across both corpora, and far exceeds GraphRAG and flat retrieval. The adv",
+    "published": "Wed, 08 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "eccd85d474b6e474f16e0b54",
+    "title": "An Easy Digital PR Strategy For AI SEO via @sejournal, @martinibuster",
+    "link": "https://www.searchenginejournal.com/an-easy-digital-pr-strategy-for-ai-seo/581710",
+    "summary_raw": "Marketing a brand online for AI Search can be easier than you think. Here's a strategy to get you started. The post An Easy Digital PR Strategy For AI SEO appeared first on Search Engine Journal .",
+    "published": "Wed, 08 Jul 2026 10:37:36 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "f87682891e7a1ad660a15f43",
+    "title": "You Can\u2019t See How AI Ranks You, So Build What It Can Read via @sejournal, @slobodanmanic",
+    "link": "https://www.searchenginejournal.com/you-cant-see-how-ai-ranks-you-so-build-what-it-can-read/580048",
+    "summary_raw": "Open AI Overview rankings won't change the work. What a machine can read, parse, and verify on your site is what matters now. The post You Can&#8217;t See How AI Ranks You, So Build What It Can Read appeared first on Search Engine Journal .",
+    "published": "Wed, 08 Jul 2026 09:30:41 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "d7ecadeb2c76b6e5b540b754",
+    "title": "How To Build A Performance Marketing Experimentation Framework With AI",
+    "link": "https://www.searchenginejournal.com/performance-marketing-meets-ai-how-to-build-an-experimentation-framework-that-scales/579854",
+    "summary_raw": "AI made experiments cheap to run but no easier to trust. A framework for fewer, sharper bets and the discipline to kill the losers fast. The post How To Build A Performance Marketing Experimentation Framework With AI appeared first on Search Engine Journal .",
+    "published": "Tue, 07 Jul 2026 13:30:30 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  }
+]

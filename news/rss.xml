@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Wed, 08 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 9 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-09</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-09</guid>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +1000</pubDate>
+      <description>9 stories: Why this CEO thinks video games make better training data than the internet · Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise. · OpenAI releases new voice models for more natural live conversations · CSTutorBench: Benchmarking Small Language Models as Tutors for Block-Based Programming · Foundation Models for Automatic CAD Generation · Narrative World Model: Narratology-Grounded Writer Memory for Long-Form Fiction · An Easy Digital PR Strategy For AI SEO via @sejournal, @martinibuster · You Can’t See How AI Ranks You, So Build What It Can Read via @sejournal, @slobodanmanic · How To Build A Performance Marketing Experimentation Framework With AI</description>
+    </item>
     <item>
       <title>The Answer Engine — 8 July 2026</title>
       <link>https://aisearch.global/news/2026-07-08</link>
