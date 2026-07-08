@@ -25,7 +25,7 @@ as-is so a re-render only restyles the page — archived editions never get
 their text rewritten. Pass --resummarise to force fresh copy.
 
 Usage:
-    python generate_brief.py               # today (UTC date)
+    python generate_brief.py               # today (Australia/Sydney date)
     python generate_brief.py --date 2026-07-05
 """
 from __future__ import annotations
@@ -36,8 +36,22 @@ import json
 import os
 import re
 import textwrap
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+
+def sydney_today() -> str:
+    """Publication date: the Sydney calendar day, NOT UTC. The paper lands each
+    Sydney morning (cron 20:00 UTC = 6am AEST next day); dating by UTC stamped
+    every edition with yesterday's date, and a cron that fired after 00:00 UTC
+    skipped a date entirely. Keep in sync with fetch_pipeline.sydney_today()."""
+    try:
+        from zoneinfo import ZoneInfo
+        tz = ZoneInfo("Australia/Sydney")
+    except Exception:  # no tz database (bare Windows) — AEST, ignoring DST
+        tz = timezone(timedelta(hours=10))
+    return datetime.now(tz).date().isoformat()
+
 
 ROOT = Path(__file__).resolve().parent
 REPO_ROOT = ROOT.parent.parent  # automation/ai-news -> repo root
@@ -768,12 +782,12 @@ def collect_index_entries() -> list[dict]:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--date", help="YYYY-MM-DD, defaults to today (UTC)")
+    parser.add_argument("--date", help="YYYY-MM-DD, defaults to today (Australia/Sydney)")
     parser.add_argument("--resummarise", action="store_true",
                         help="regenerate headline/summary copy even if <date>.brief.json already exists")
     args = parser.parse_args()
 
-    date_str = args.date or datetime.now(timezone.utc).date().isoformat()
+    date_str = args.date or sydney_today()
     human_date = date_short(date_str)
 
     pending_path = PENDING_DIR / f"{date_str}.json"

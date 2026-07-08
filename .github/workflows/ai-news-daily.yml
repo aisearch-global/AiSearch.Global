@@ -49,7 +49,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nothing new to publish today."
           else
-            git commit -m "AI news brief: $(date -u +%Y-%m-%d)"
+            git commit -m "AI news brief: $(TZ=Australia/Sydney date +%Y-%m-%d)"
             git push
           fi
           # Pushing to main triggers the existing Cloudflare Pages deploy

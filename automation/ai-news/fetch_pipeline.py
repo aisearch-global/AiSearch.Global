@@ -32,6 +32,19 @@ import feedparser
 import requests
 import yaml
 
+def sydney_today() -> str:
+    """Publication date: the Sydney calendar day, NOT UTC. The paper lands each
+    Sydney morning (cron 20:00 UTC = 6am AEST next day); dating by UTC stamped
+    every edition with yesterday's date, and a cron that fired after 00:00 UTC
+    skipped a date entirely. Keep in sync with generate_brief.sydney_today()."""
+    try:
+        from zoneinfo import ZoneInfo
+        tz = ZoneInfo("Australia/Sydney")
+    except Exception:  # no tz database (bare Windows) — AEST, ignoring DST
+        tz = timezone(timedelta(hours=10))
+    return datetime.now(tz).date().isoformat()
+
+
 ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
 PENDING_DIR = DATA_DIR / "pending"
@@ -244,7 +257,7 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true", help="fetch and print, don't persist state")
     args = parser.parse_args()
 
-    today = datetime.now(timezone.utc).date().isoformat()
+    today = sydney_today()
     run_started = datetime.now(timezone.utc).isoformat()
 
     sources, keywords = load_sources()
