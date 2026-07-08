@@ -1,0 +1,120 @@
+[
+  {
+    "key": "2d504d9659f47080f12a2a13",
+    "title": "SpaceXAI releases Grok 4.5, which Elon describes as an \u2018Opus-class model\u2019",
+    "link": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model",
+    "summary_raw": "Elon Musk's tech company released the newest version of Grok on Wednesday, promising a cheaper, more efficient alternative to other powerful AI models.",
+    "published": "Wed, 08 Jul 2026 19:30:16 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "SpaceXAI releases Grok 4.5, which Elon describes as an \u2018Opus-class model\u2019",
+    "summary": "Elon Musk's tech company released the newest version of Grok on Wednesday, promising a cheaper, more efficient alternative to other powerful AI models."
+  },
+  {
+    "key": "8cd1811c501aae423ca47f05",
+    "title": "This startup thinks robotics is about to have its ChatGPT moment",
+    "link": "https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment",
+    "summary_raw": "General Intuition is betting millions of hours of video game data can train the foundation models for physical AI, making it easier to build smarter robots with minimal real-world data.",
+    "published": "Wed, 08 Jul 2026 19:19:15 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "This startup thinks robotics is about to have its ChatGPT moment",
+    "summary": "General Intuition is betting millions of hours of video game data can train the foundation models for physical AI, making it easier to build smarter robots with minimal real-world data."
+  },
+  {
+    "key": "9d8ee53506fbffea8adde021",
+    "title": "Google Photos adds a new AI \u2018Video Remix\u2019 tool",
+    "link": "https://techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool",
+    "summary_raw": "The feature can do things like apply cinematic relighting to brighten up a dark clip, swap out a plain background for something fun, or add artistic styles to videos.",
+    "published": "Wed, 08 Jul 2026 18:30:08 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Google Photos adds a new AI \u2018Video Remix\u2019 tool",
+    "summary": "The feature can do things like apply cinematic relighting to brighten up a dark clip, swap out a plain background for something fun, or add artistic styles to videos."
+  },
+  {
+    "key": "dee2ab2154b4270e0adb0fc9",
+    "title": "EmTech AI 2026: The Rise of the AI Platform",
+    "link": "https://www.technologyreview.com/2026/07/08/1140223/emtech-ai-2026-the-rise-of-the-ai-platform",
+    "summary_raw": "",
+    "published": "Wed, 08 Jul 2026 16:26:10 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ],
+    "headline": "EmTech AI 2026: The Rise of the AI Platform",
+    "summary": ""
+  },
+  {
+    "key": "96af26b861f57084dc595fb1",
+    "title": "Prompt-to-Paper: Agentic AI System for Bioinformatics",
+    "link": "https://arxiv.org/abs/2607.05456",
+    "summary_raw": "arXiv:2607.05456v1 Announce Type: new Abstract: While recent advances in large language models have enabled end-to-end automated manuscript generation, existing systems suffer from three critical deficiencies: (i) generated claims are not deterministically grounded in verifiable literature, (ii) experimental results are frequently fabricated rather than executed, and (iii) there exists no standardized, multi-dimensional framework to assess whether AI-generated manuscripts meet the quality and rigor required for real-world publication. We present Prompt-to-Paper, a multi-agent framework that directly addresses this evaluation gap through three integrated innovations. First, a deterministic retrieval-augmented generation pipeline with section-aware relevance scoring and snowball citation expansion grounds every claim in a verifiable corpus of 60--100 papers. Second, an autonomous coding agent executes real computational biology experiments replacing synthetic outputs with genuine numerical results. Third, an eight-dimensional automated quality scorer, benchmarked with approximate reference statistics from published papers and augmented with explicit hallucination penalties, provides ",
+    "published": "Wed, 08 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ],
+    "headline": "Prompt-to-Paper: Agentic AI System for Bioinformatics",
+    "summary": "arXiv:2607.05456v1 Announce Type: new Abstract: While recent advances in large language models have enabled end-to-end automated manuscript generation, existing systems suffer from three critical deficiencies: (i) generated claims are not deterministically grounded in verifiable literature, (ii) experimental results are frequently fabricated rather than executed, and (iii) there exists no standardized, multi-dimensional framework to assess whether AI-generated manuscripts meet the quality and rigor required for real-world publication. We present Prompt-to-Paper, a multi-agent framework that directly addresses this evaluation gap through three integrated innovations. First, a deterministic retrieval-augmented generation pipeline with section-aware relevance scoring and snowball citation expansion grounds every claim in a verifiable corpus of 60--100 papers. Second, an autonomous coding agent executes real computational biology experiments replacing synthetic outputs with genuine numerical results. Third, an eight-dimensional automated quality scorer, benchmarked with approximate reference statistics from published papers and augmented with explicit hallucination penalties, provides"
+  },
+  {
+    "key": "6e678e46b23d1adcc69bf0d6",
+    "title": "From Graphs to Gradients: Physics-Inspired Structural Attribution for Cyber-Physical IoT Systems and Beyond",
+    "link": "https://arxiv.org/abs/2607.05563",
+    "summary_raw": "arXiv:2607.05563v1 Announce Type: new Abstract: Interpretable explanation methods in Artificial Intelligence aim to uncover the underlying causes and their effects, enabling a deeper understanding of why a system behaves in a certain way under different inputs. Unlike traditional explainability methods, which mainly highlight correlations between input and output variables, causal explanation focuses on interventional questions. By doing so, it provides more robust insights, helping users understand automated decisions, especially in high-risk domains. Recovering an explicit directed causal structure, however, is often impractical in large-scale, hybrid cyber-physical systems with feedback loops and partial observability. This paper introduces a novel framework inspired by statistical mechanics that instead models variable dependencies through an undirected, energy-based representation of cyber-physical IoT systems. Our approach enables rigorous dependency-aware attribution by analysing how variations in the energy landscape reflect the influence of individual components, without recovering a directed causal graph. It also supports reasoning about perturbation effects across hybrid",
+    "published": "Wed, 08 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ],
+    "headline": "From Graphs to Gradients: Physics-Inspired Structural Attribution for Cyber-Physical IoT Systems and Beyond",
+    "summary": "arXiv:2607.05563v1 Announce Type: new Abstract: Interpretable explanation methods in Artificial Intelligence aim to uncover the underlying causes and their effects, enabling a deeper understanding of why a system behaves in a certain way under different inputs. Unlike traditional explainability methods, which mainly highlight correlations between input and output variables, causal explanation focuses on interventional questions. By doing so, it provides more robust insights, helping users understand automated decisions, especially in high-risk domains. Recovering an explicit directed causal structure, however, is often impractical in large-scale, hybrid cyber-physical systems with feedback loops and partial observability. This paper introduces a novel framework inspired by statistical mechanics that instead models variable dependencies through an undirected, energy-based representation of cyber-physical IoT systems. Our approach enables rigorous dependency-aware attribution by analysing how variations in the energy landscape reflect the influence of individual components, without recovering a directed causal graph. It also supports reasoning about perturbation effects across hybrid"
+  },
+  {
+    "key": "fa113e52879b8817fdcf5243",
+    "title": "How SEO Teams Stopped Guessing Which AI Search Strategies Paid Off via @sejournal, @lorenbaker",
+    "link": "https://www.searchenginejournal.com/how-enterprise-seo-teams-stopped-guessing-which-ai-search-strategies-paid-off/581786",
+    "summary_raw": "Navigate the complexities of AI search and discover why traditional testing methods do not apply to language models. The post How SEO Teams Stopped Guessing Which AI Search Strategies Paid Off appeared first on Search Engine Journal .",
+    "published": "Wed, 08 Jul 2026 19:51:53 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "How SEO Teams Stopped Guessing Which AI Search Strategies Paid Off via @sejournal, @lorenbaker",
+    "summary": "Navigate the complexities of AI search and discover why traditional testing methods do not apply to language models. The post How SEO Teams Stopped Guessing Which AI Search Strategies Paid Off appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "6eb98f139cd04aa0dd567e0a",
+    "title": "OpenAI GPT-Live Brings Search Into ChatGPT Voice via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/openai-gpt-live-brings-search-into-chatgpt-voice/581773",
+    "summary_raw": "OpenAI has begun rolling out GPT-Live, new voice models for ChatGPT that can run a web search and show visual answers while you talk. The post OpenAI GPT-Live Brings Search Into ChatGPT Voice appeared first on Search Engine Journal .",
+    "published": "Wed, 08 Jul 2026 18:18:27 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "OpenAI GPT-Live Brings Search Into ChatGPT Voice via @sejournal, @MattGSouthern",
+    "summary": "OpenAI has begun rolling out GPT-Live, new voice models for ChatGPT that can run a web search and show visual answers while you talk. The post OpenAI GPT-Live Brings Search Into ChatGPT Voice appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "aa31dd09933510e19d914058",
+    "title": "Reclaiming Brand Sovereignty In The AI Era via @sejournal, @billhunt",
+    "link": "https://www.searchenginejournal.com/reclaiming-brand-sovereignty-in-the-ai-era/581161",
+    "summary_raw": "Stop publishing more content. Start organizing knowledge into a machine-readable layer every AI, protocol, and interface can consume. The post Reclaiming Brand Sovereignty In The AI Era appeared first on Search Engine Journal .",
+    "published": "Wed, 08 Jul 2026 11:30:29 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "Reclaiming Brand Sovereignty In The AI Era via @sejournal, @billhunt",
+    "summary": "Stop publishing more content. Start organizing knowledge into a machine-readable layer every AI, protocol, and interface can consume. The post Reclaiming Brand Sovereignty In The AI Era appeared first on Search Engine Journal ."
+  }
+]

@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Tue, 07 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 8 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-08</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-08</guid>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +1000</pubDate>
+      <description>9 stories: SpaceXAI releases Grok 4.5, which Elon describes as an ‘Opus-class model’ · This startup thinks robotics is about to have its ChatGPT moment · Google Photos adds a new AI ‘Video Remix’ tool · EmTech AI 2026: The Rise of the AI Platform · Prompt-to-Paper: Agentic AI System for Bioinformatics · From Graphs to Gradients: Physics-Inspired Structural Attribution for Cyber-Physical IoT Systems and Beyond · How SEO Teams Stopped Guessing Which AI Search Strategies Paid Off via @sejournal, @lorenbaker · OpenAI GPT-Live Brings Search Into ChatGPT Voice via @sejournal, @MattGSouthern · Reclaiming Brand Sovereignty In The AI Era via @sejournal, @billhunt</description>
+    </item>
     <item>
       <title>The Answer Engine — 7 July 2026</title>
       <link>https://aisearch.global/news/2026-07-07</link>

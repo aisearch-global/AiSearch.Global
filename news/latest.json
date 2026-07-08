@@ -1,5 +1,50 @@
 [
   {
+    "headline": "SpaceXAI releases Grok 4.5, which Elon describes as an \u2018Opus-class model\u2019",
+    "link": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model",
+    "date": "2026-07-08"
+  },
+  {
+    "headline": "This startup thinks robotics is about to have its ChatGPT moment",
+    "link": "https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment",
+    "date": "2026-07-08"
+  },
+  {
+    "headline": "Google Photos adds a new AI \u2018Video Remix\u2019 tool",
+    "link": "https://techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool",
+    "date": "2026-07-08"
+  },
+  {
+    "headline": "EmTech AI 2026: The Rise of the AI Platform",
+    "link": "https://www.technologyreview.com/2026/07/08/1140223/emtech-ai-2026-the-rise-of-the-ai-platform",
+    "date": "2026-07-08"
+  },
+  {
+    "headline": "Prompt-to-Paper: Agentic AI System for Bioinformatics",
+    "link": "https://arxiv.org/abs/2607.05456",
+    "date": "2026-07-08"
+  },
+  {
+    "headline": "From Graphs to Gradients: Physics-Inspired Structural Attribution for Cyber-Physical IoT Systems and Beyond",
+    "link": "https://arxiv.org/abs/2607.05563",
+    "date": "2026-07-08"
+  },
+  {
+    "headline": "How SEO Teams Stopped Guessing Which AI Search Strategies Paid Off via @sejournal, @lorenbaker",
+    "link": "https://www.searchenginejournal.com/how-enterprise-seo-teams-stopped-guessing-which-ai-search-strategies-paid-off/581786",
+    "date": "2026-07-08"
+  },
+  {
+    "headline": "OpenAI GPT-Live Brings Search Into ChatGPT Voice via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/openai-gpt-live-brings-search-into-chatgpt-voice/581773",
+    "date": "2026-07-08"
+  },
+  {
+    "headline": "Reclaiming Brand Sovereignty In The AI Era via @sejournal, @billhunt",
+    "link": "https://www.searchenginejournal.com/reclaiming-brand-sovereignty-in-the-ai-era/581161",
+    "date": "2026-07-08"
+  },
+  {
     "headline": "Meta rolls out Muse, a new AI image generator",
     "link": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator",
     "date": "2026-07-07"
@@ -28,50 +73,5 @@
     "headline": "iFLYTEK-Embodied-Omni Technical Report",
     "link": "https://arxiv.org/abs/2607.02542",
     "date": "2026-07-07"
-  },
-  {
-    "headline": "AI Search: Is Your Content Strategy Accidentally Recommending Your Competitors?",
-    "link": "https://www.searchenginejournal.com/ai-search-recommending-competitors-firstpromoter-spa/581579",
-    "date": "2026-07-07"
-  },
-  {
-    "headline": "SEO Study: 5 Lessons From Running AI Agents Across Every Search via @sejournal, @lorenbaker",
-    "link": "https://www.searchenginejournal.com/seo-study-5-lessons-from-running-ai-agents-across-every-search/581663",
-    "date": "2026-07-07"
-  },
-  {
-    "headline": "Local Marketing Is Too Complex: What the Data Says & What To Do",
-    "link": "https://www.searchenginejournal.com/local-search-marketing-trends-uberall-spa/581648",
-    "date": "2026-07-07"
-  },
-  {
-    "headline": "Bendigo Bank scoping more than 3000 ideas for AI use",
-    "link": "https://www.itnews.com.au/news/bendigo-bank-scoping-more-than-3000-ideas-for-ai-use-627109",
-    "date": "2026-07-07"
-  },
-  {
-    "headline": "US investors will soon get access to SK Hynix, another memory maker riding the AI boom",
-    "link": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom",
-    "date": "2026-07-06"
-  },
-  {
-    "headline": "Microsoft lays off nearly 5,000 employees across Xbox, commercial sales",
-    "link": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales",
-    "date": "2026-07-06"
-  },
-  {
-    "headline": "Reddit is using LLMs to solve a problem LLMs largely created",
-    "link": "https://techcrunch.com/2026/07/06/reddit-is-using-llms-to-solve-a-problem-llms-largely-created",
-    "date": "2026-07-06"
-  },
-  {
-    "headline": "Mapping Europe\u2019s AI Workforce Opportunity",
-    "link": "https://openai.com/index/mapping-ai-jobs-transition-eu",
-    "date": "2026-07-06"
-  },
-  {
-    "headline": "HP Inc. launches Frontier strategic partnership with OpenAI",
-    "link": "https://openai.com/index/hp-frontier-partnership",
-    "date": "2026-07-06"
   }
 ]
