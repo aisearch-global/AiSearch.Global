@@ -53,7 +53,7 @@ SITE_URL = "https://aisearch.global"
 # URLs, so a page emitted without the current ?v= loads a stale main.js/styles.css
 # — this is how the news pages ended up with the pre-News nav (2026-07-07).
 STYLES_CSS_HREF = "/assets/css/styles.css?v=4"
-MAIN_JS_SRC = "/assets/js/main.js?v=news-nav1"
+MAIN_JS_SRC = "/assets/js/main.js?v=answer-engine1"
 MAX_INDEX_DAYS = 60      # how many days of briefs stay listed on /news
 MAX_TICKER_ITEMS = 15
 
@@ -65,12 +65,6 @@ PUB_DOMAIN = "theanswerengine.news"
 PUB_LINKEDIN = "https://www.linkedin.com/showcase/theanswerengine"
 PUB_X_URL = "https://x.com/answerengine_au"
 PUB_X_HANDLE = "@answerengine_au"
-
-# LOCKED brand rule: only the dark-on-light logo may sit on the eggshell paper
-# (never the white header SVG — invisible on light). This is a tightly-cropped
-# copy of aisearch-logo-primary-dark.png; the original ships with so much
-# transparent padding it renders near-invisible at colophon size.
-PAPER_LOGO_SRC = "/assets/images/logos/aisearch-logo-primary-dark-cropped.png"
 
 GOOGLE_FONTS_HREF = ("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500"
                      "&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400"
@@ -84,11 +78,13 @@ CATEGORY_LABELS = {
     "australia_focus": "Australia",
 }
 
-# SHARED_STYLE — lifted verbatim from the approved handoff templates (the block
-# is identical on both pages apart from the colophon logo size, handled by the
-# .paper--front override at the end). The paper sits inside the site's dark
-# chrome, which main.js injects into the empty <header></header>/<footer></footer>
-# tags — do not put visible content in those tags.
+# SHARED_STYLE — from the approved handoff templates, plus the standard site
+# chrome rules (the injected header/footer carry no CSS of their own beyond
+# what main.js adds — every page must style .nav/.nav-links itself, so a page
+# without these rules renders the nav as an unstyled vertical list).
+# The paper sits inside the site's dark chrome, which main.js injects into the
+# empty <header></header>/<footer></footer> tags — do not put visible content
+# in those tags.
 # Palette: paper #F4F0E4 · ink #2B2B2B · tiffany #0ABFBC (rules/accents) ·
 # deep teal #078F8B (link + kicker text — tiffany is too light for text on
 # eggshell, deep teal keeps the same hue at readable contrast).
@@ -110,6 +106,26 @@ SHARED_STYLE = """
 }
 html{background:#0D0D0D;font-size:16px;-webkit-font-smoothing:antialiased}
 body{font-family:var(--serif-body);color:var(--ink);line-height:1.6}
+
+/* ---- standard site chrome (header/footer injected by main.js) ----
+   Same layout rules as every other page's <style> block; colour values are
+   hard-coded because the newspaper :root doesn't define the site tokens. */
+.container{max-width:1120px;margin:0 auto;padding:0 1rem}
+header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.10);font-family:var(--sans);color:#E3E8EE}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+.brand img{display:block;height:34px;width:auto;max-width:260px}
+.nav-toggle{display:none;background:none;border:1px solid rgba(255,255,255,.10);color:#E3E8EE;padding:.45rem .65rem;border-radius:0}
+.nav-links{display:flex;gap:1rem;list-style:none;padding:0;margin:0}
+.nav-links a{text-decoration:none;color:#95A0AD;font-weight:500}
+.nav-links a:hover,.nav-links a:focus{color:#0ABAB5}
+.cta-link{padding:.55rem .9rem;border:1px solid #0ABAB5;border-radius:0;color:#0ABAB5!important}
+footer{font-family:var(--sans);color:#E3E8EE}
+.footer-links a{text-decoration:none;color:#95A0AD}.footer-links a:hover{color:#0ABAB5}
+@media(max-width:720px){
+  .nav-toggle{display:block}
+  .nav-links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid rgba(255,255,255,.10);padding:.8rem;border-radius:0}
+  .nav-links.open{display:flex}
+}
 
 /* default link colours (in-paper) */
 .paper a{color:var(--teal);text-decoration:none}
@@ -196,10 +212,6 @@ body{font-family:var(--serif-body);color:var(--ink);line-height:1.6}
 .colophon .fleuron{color:var(--tiffany);font-size:1rem;letter-spacing:.6em;padding-left:.6em}
 .colophon p{font-family:var(--sans);font-size:.7rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-soft);margin-top:.7rem}
 .colophon .colophon-links{display:flex;justify-content:center;gap:1.6rem;margin-top:.8rem;font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase}
-.colophon img{height:34px;width:auto;margin-top:1.1rem;opacity:.92}
-/* front page runs the colophon logo slightly smaller (per approved templates) */
-.paper--front .colophon img{height:22px;opacity:.85}
-
 /* ---- responsive: collapse columns, keep masthead legible ---- */
 @media (max-width:980px){.stories{columns:2}}
 @media (max-width:660px){
@@ -359,7 +371,6 @@ def render_colophon() -> str:
       <a href="{PUB_X_URL}" target="_blank" rel="noopener">X {PUB_X_HANDLE}</a>
       <a href="/news/rss.xml">RSS</a>
     </div>
-    <img src="{PAPER_LOGO_SRC}" alt="AISearch Global">
   </div>"""
 
 

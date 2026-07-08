@@ -163,6 +163,15 @@ Interactive dashboard presenting AISearch Global's complete AI Visibility Audit 
 
 ---
 
+## The Answer Engine — Daily AI News
+
+### The Answer Engine
+URL: /news
+
+The Answer Engine is AISearch Global's daily AI news publication, presented in a broadsheet-newspaper format. Each edition covers four beats: AI news, AI law and regulation, human-AI research, and AEO-relevant developments, with an Australian focus. A new edition is published every day by an automated pipeline; each edition is archived permanently at a dated clean URL (/news/YYYY-MM-DD). Every story links back to its original source — AISearch Global rounds up, it does not republish. The hub page carries a live ticker of the latest headlines plus the full archive list. RSS feed at /news/rss.xml. First edition published 5 July 2026.
+
+---
+
 ## Reference Pages
 
 ### FAQ — 51 AEO Questions Answered
@@ -199,7 +208,9 @@ URL: /terms/
 - `Service` — all 6 service pages
 - `HowTo` — /insights/aeo-traction-stack (4-step implementation guide)
 - `WebPage` with `speakable` — all 5 insights articles
-- `CollectionPage` — /insights/
+- `CollectionPage` — /insights/ and /news (news archive with ItemList of dated editions)
+- `NewsArticle` — every dated daily edition page (/news/YYYY-MM-DD)
+- `Periodical` — "The Answer Engine" (isPartOf on every NewsArticle; hasPart on the /news CollectionPage)
 - `ItemList` — /insights/ (article list)
 - `BreadcrumbList` — /faq (site-wide via JSON-LD)
 
@@ -207,7 +218,7 @@ URL: /terms/
 
 ## Technical
 
-- Last refreshed: 25 Jun 2026 (added Client Zero article, Princeton GEO article, Visibility Console; updated signal count to 20; updated schema inventory to 5 articles)
+- Last refreshed: 8 Jul 2026 (daily AI news publication at /news named The Answer Engine — broadsheet redesign, Periodical schema, RSS feed at /news/rss.xml, and "The Answer Engine" in the main navigation)
 - sitemap.xml: https://aisearch.global/sitemap.xml
 - robots.txt: https://aisearch.global/robots.txt
 - llms.txt: https://aisearch.global/llms.txt

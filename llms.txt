@@ -26,6 +26,10 @@ AISearch Global focuses exclusively on AEO and GEO, not traditional SEO. Our wor
 - [Princeton GEO Paper Explained](/insights/princeton-geo-paper-explained): A plain-English breakdown of the peer-reviewed Princeton/Georgia Tech KDD 2024 study on Generative Engine Optimisation and what it means for Australian businesses. Published 14 Jun 2026.
 - [AISearch Global: Client Zero — From 19 to 91, and What AI Still Doesn't Know](/insights/aisearch-global-client-zero): How AISearch Global used its own brand as Client Zero — tracking a structural AEO score climb from 19 to 91 in six weeks while measuring what ChatGPT, Perplexity, and Gemini actually say about the brand today. Includes a link to the interactive AI Visibility Console. Published 21 Jun 2026.
 
+## The Answer Engine — Daily AI News
+
+- [The Answer Engine](/news): AISearch Global's daily AI news publication. Each edition covers AI news, AI law and regulation, human-AI research, and AEO-relevant developments, with an Australian focus. A new edition is published every day; each edition is archived at a dated URL (/news/YYYY-MM-DD) with every story linking back to its original source. RSS feed at /news/rss.xml.
+
 ## Interactive Tools
 
 - [Client Zero AI Visibility Console](/insights/client-zero-visibility-dashboard): Interactive dashboard presenting AISearch Global's full AI Visibility Audit across 11 scored metrics — AEO Score, Brand Recognition, Share of Voice, Brand Sentiment, Presence Quality, GEO Visibility, Narrative Themes, Source Analysis, Site Performance, Technical Foundation, and Analysis Summary. Scored independently by ChatGPT, Perplexity, and Gemini. Data as of 20 Jun 2026. Living case study and product demonstration.

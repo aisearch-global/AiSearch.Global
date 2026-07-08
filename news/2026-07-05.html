@@ -31,6 +31,26 @@
 html{background:#0D0D0D;font-size:16px;-webkit-font-smoothing:antialiased}
 body{font-family:var(--serif-body);color:var(--ink);line-height:1.6}
 
+/* ---- standard site chrome (header/footer injected by main.js) ----
+   Same layout rules as every other page's <style> block; colour values are
+   hard-coded because the newspaper :root doesn't define the site tokens. */
+.container{max-width:1120px;margin:0 auto;padding:0 1rem}
+header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.10);font-family:var(--sans);color:#E3E8EE}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+.brand img{display:block;height:34px;width:auto;max-width:260px}
+.nav-toggle{display:none;background:none;border:1px solid rgba(255,255,255,.10);color:#E3E8EE;padding:.45rem .65rem;border-radius:0}
+.nav-links{display:flex;gap:1rem;list-style:none;padding:0;margin:0}
+.nav-links a{text-decoration:none;color:#95A0AD;font-weight:500}
+.nav-links a:hover,.nav-links a:focus{color:#0ABAB5}
+.cta-link{padding:.55rem .9rem;border:1px solid #0ABAB5;border-radius:0;color:#0ABAB5!important}
+footer{font-family:var(--sans);color:#E3E8EE}
+.footer-links a{text-decoration:none;color:#95A0AD}.footer-links a:hover{color:#0ABAB5}
+@media(max-width:720px){
+  .nav-toggle{display:block}
+  .nav-links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid rgba(255,255,255,.10);padding:.8rem;border-radius:0}
+  .nav-links.open{display:flex}
+}
+
 /* default link colours (in-paper) */
 .paper a{color:var(--teal);text-decoration:none}
 .paper a:hover{color:var(--teal-ink);text-decoration:underline;text-decoration-color:var(--tiffany);text-underline-offset:3px}
@@ -116,10 +136,6 @@ body{font-family:var(--serif-body);color:var(--ink);line-height:1.6}
 .colophon .fleuron{color:var(--tiffany);font-size:1rem;letter-spacing:.6em;padding-left:.6em}
 .colophon p{font-family:var(--sans);font-size:.7rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-soft);margin-top:.7rem}
 .colophon .colophon-links{display:flex;justify-content:center;gap:1.6rem;margin-top:.8rem;font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase}
-.colophon img{height:34px;width:auto;margin-top:1.1rem;opacity:.92}
-/* front page runs the colophon logo slightly smaller (per approved templates) */
-.paper--front .colophon img{height:22px;opacity:.85}
-
 /* ---- responsive: collapse columns, keep masthead legible ---- */
 @media (max-width:980px){.stories{columns:2}}
 @media (max-width:660px){
@@ -167,7 +183,7 @@ body{font-family:var(--serif-body);color:var(--ink);line-height:1.6}
   <script defer src="/assets/js/consent.js"></script>
   <link rel="stylesheet" href="/assets/css/styles.css?v=4">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script defer src="/assets/js/main.js?v=news-nav1"></script>
+  <script defer src="/assets/js/main.js?v=answer-engine1"></script>
 
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "The Answer Engine \u2014 5 July 2026", "alternativeHeadline": "Daily AI news brief for 5 July 2026", "datePublished": "2026-07-05T00:00:00+10:00", "author": {"@type": "Organization", "name": "AISearch Global", "url": "https://aisearch.global"}, "publisher": {"@type": "Organization", "name": "AISearch Global", "url": "https://aisearch.global"}, "isPartOf": {"@type": "Periodical", "name": "The Answer Engine", "url": "https://aisearch.global/news"}, "mainEntityOfPage": "https://aisearch.global/news/2026-07-05", "url": "https://aisearch.global/news/2026-07-05", "citation": ["https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are", "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think", "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud", "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product", "https://openai.com/index/how-chatgpt-adoption-has-expanded", "https://openai.com/index/genebench-pro/case-studies", "https://www.searchenginejournal.com/safaris-mcp-server/581487", "https://www.searchenginejournal.com/google-put-ai-visibility-inside-the-seo-tool-on-purpose/577889", "https://www.searchenginejournal.com/ask-an-seo-should-i-block-ai-crawlers-or-measure-their-value-first/580005", "https://www.itnews.com.au/news/attorney-generals-dept-backs-copilot-chat-google-notebooklm-627007", "https://www.itnews.com.au/news/aws-to-create-division-of-embedded-ai-engineers-627057", "https://www.itnews.com.au/news/vocus-to-invest-500-million-in-new-fibre-builds-627038"]}</script>
 </head>
@@ -321,7 +337,6 @@ body{font-family:var(--serif-body);color:var(--ink);line-height:1.6}
       <a href="https://x.com/answerengine_au" target="_blank" rel="noopener">X @answerengine_au</a>
       <a href="/news/rss.xml">RSS</a>
     </div>
-    <img src="/assets/images/logos/aisearch-logo-primary-dark-cropped.png" alt="AISearch Global">
   </div>
 
 </main>
