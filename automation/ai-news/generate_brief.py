@@ -53,7 +53,7 @@ SITE_URL = "https://aisearch.global"
 # URLs, so a page emitted without the current ?v= loads a stale main.js/styles.css
 # — this is how the news pages ended up with the pre-News nav (2026-07-07).
 STYLES_CSS_HREF = "/assets/css/styles.css?v=4"
-MAIN_JS_SRC = "/assets/js/main.js?v=answer-engine1"
+MAIN_JS_SRC = "/assets/js/main.js?v=answer-engine2"
 MAX_INDEX_DAYS = 60      # how many days of briefs stay listed on /news
 MAX_TICKER_ITEMS = 15
 
