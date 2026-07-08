@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Answer Engine — AI News</title>
+    <link>https://aisearch.global/news</link>
+    <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
+    <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
+    <language>en-au</language>
+    <lastBuildDate>Tue, 07 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 7 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-07</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-07</guid>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 +1000</pubDate>
+      <description>10 stories: Meta rolls out Muse, a new AI image generator · Why the rise of open source AI isn’t hurting Anthropic … yet · Microsoft joins AI cost-cutting trend by relying more on its own models · The Download: your stake in OpenAI, and the Treasury’s AI warning · The foundational elements of AI architecture that IT leaders need to scale · iFLYTEK-Embodied-Omni Technical Report · AI Search: Is Your Content Strategy Accidentally Recommending Your Competitors? · SEO Study: 5 Lessons From Running AI Agents Across Every Search via @sejournal, @lorenbaker · Local Marketing Is Too Complex: What the Data Says &amp; What To Do · Bendigo Bank scoping more than 3000 ideas for AI use</description>
+    </item>
+    <item>
+      <title>The Answer Engine — 6 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-06</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-06</guid>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +1000</pubDate>
+      <description>8 stories: US investors will soon get access to SK Hynix, another memory maker riding the AI boom · Microsoft lays off nearly 5,000 employees across Xbox, commercial sales · Reddit is using LLMs to solve a problem LLMs largely created · Mapping Europe’s AI Workforce Opportunity · HP Inc. launches Frontier strategic partnership with OpenAI · Previewing GPT-5.6 Sol: a next-generation model · Google AI Overviews Study Finds Lost Clicks Weren’t Lower Quality via @sejournal, @MattGSouthern · OpenAI Hiring Points To Image &amp; Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern</description>
+    </item>
+    <item>
+      <title>The Answer Engine — 5 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-05</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-05</guid>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +1000</pubDate>
+      <description>12 stories: Almost 90 new unicorns have been minted so far this year — here they are · Google just redesigned the search box for the first time in 25 years — here’s why it matters more than you think. · Railway secures $100 million to challenge AWS with AI-native cloud infrastructure · Claude Science is Anthropic’s newest flagship product · How ChatGPT adoption has expanded · Inside Genebench-Pro · Safari’s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster · Google Put AI Visibility Inside The SEO Tool On Purpose via @sejournal, @slobodanmanic · Should I Block AI Crawlers Or Measure Their Value First? – Ask An SEO via @sejournal, @HelenPollitt1 · Attorney-General&#x27;s Dept backs Copilot Chat, Google NotebookLM · AWS to create division of &#x27;embedded&#x27; AI engineers · Vocus to invest $500 million in new fibre builds</description>
+    </item>
+  </channel>
+</rss>
