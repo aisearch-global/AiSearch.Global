@@ -1,5 +1,5 @@
 # AISearch Global — Full Reference
-# Last updated: 28 Jun 2026
+# Last updated: 9 Jul 2026
 https://aisearch.global
 
 > AISearch Global is a specialist Answer Engine Optimisation (AEO) agency based in Sydney, Australia. We help Australian businesses get found, cited, and recommended inside AI-generated answers on ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews, DeepSeek, and Grok.
@@ -23,6 +23,8 @@ AISearch Global is a pure-play AEO specialist. Every other Australian digital ag
 URL: /services/aeo-audit
 
 The primary offer. A comprehensive baseline audit of how AI engines currently find, describe, and recommend a business. Includes a full audit of 13 AEO signals across technical structure, content, schema markup, and entity signals. Delivers a prioritised 90-day action plan with specific fixes ranked by expected visibility impact.
+
+Also includes a third-party citation gap analysis — six checks covering: citation inventory (where the brand is currently mentioned across industry publications, news, directories, review platforms, podcasts, and expert roundups); competitor citation gap (the 3 competitors most cited by AI engines for the target queries, and which sources cite them but not you); source authority mapping (target prompts tested across ChatGPT, Gemini, Perplexity, Google AI Overviews, and Claude, with cited sources traced back to origin); review signal health (volume, recency, and rating consistency across the platforms AI engines pull from); entity corroboration (whether third-party sources confirm the same name, location, services, and credentials the website claims); and Wikipedia/Wikidata eligibility. Delivered as a ranked citation-gap list — the 10 sources most likely to move AI visibility, ordered by impact and achievability, each with the concrete action required.
 
 ### Content Restructuring — from $1,500 AUD
 URL: /services/content-restructuring
