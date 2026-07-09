@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 10 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-10</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-10</guid>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +1000</pubDate>
+      <description>12 stories: Meta enters the crowded AI coding battle with Muse Spark 1.1 · New York Times says OpenAI hid evidence in ChatGPT copyright trial · Google will now disclose which ads are made with AI · Anthropic found a hidden space where Claude puzzles over concepts · AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation · When Does In-Context Search Help? A Sampling-Complexity Theory of Reflection-Driven Reasoning · The Web Is Eating Itself And Your Metrics Look Fine via @sejournal, @DuaneForrester · AI Search Is Exposing SEO’s Risk Of Losing Ownership Of GEO Outcomes via @sejournal, @martinibuster · 62% Of AI Brand Recommendations Vanish After One Buyer Question – New Data via @sejournal, @gregjarboe · CBA to take AI orchestration agent beyond its retail bank · City of Moreton Bay to trial object detection and AI for traffic flow · ANZ to trial Swift&#x27;s blockchain ledger</description>
+    </item>
     <item>
       <title>The Answer Engine — 9 July 2026</title>
       <link>https://aisearch.global/news/2026-07-09</link>

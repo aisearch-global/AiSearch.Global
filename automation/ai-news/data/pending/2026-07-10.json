@@ -1,0 +1,138 @@
+[
+  {
+    "key": "87d45cad53a2074ec31f8950",
+    "title": "Meta enters the crowded AI coding battle with Muse Spark 1.1",
+    "link": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1",
+    "summary_raw": "Meta's pitch to users is Spark's ability to handle large agentic workloads, fix bugs, and help with large code migrations \u2014 the kind of automation that enterprises are increasingly turning to AI companies to provide.",
+    "published": "Thu, 09 Jul 2026 19:40:45 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "eec12b0df3fddd8e49adf4a9",
+    "title": "New York Times says OpenAI hid evidence in ChatGPT copyright trial",
+    "link": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial",
+    "summary_raw": "News publishers say OpenAI hid tools and datasets that could identify copyrighted journalism in ChatGPT outputs, escalating their lawsuit with a new motion for sanctions.",
+    "published": "Thu, 09 Jul 2026 19:05:58 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "7a0db985e24dd1e8a454be5b",
+    "title": "Google will now disclose which ads are made with AI",
+    "link": "https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai",
+    "summary_raw": "While Google prohibits misleading and deceptive ads, an ad can still leverage AI to create some type of synthetic or digitally altered content. Until now, that's something Google only required election ads to disclose.",
+    "published": "Thu, 09 Jul 2026 18:40:51 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "f4915999a77d9403feafbf48",
+    "title": "Anthropic found a hidden space where Claude puzzles over concepts",
+    "link": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts",
+    "summary_raw": "The AI firm Anthropic has developed a technique that has given it the clearest glimpse yet at what\u2019s really going on inside large language models as they answer questions or carry out tasks. What they found ranges from the mundane to the unnerving. Researchers at the company built a tool called the Jacobian lens (or\u2026",
+    "published": "Thu, 09 Jul 2026 20:22:28 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "2d2011994012d0780fda8fbf",
+    "title": "AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation",
+    "link": "https://arxiv.org/abs/2607.06624",
+    "summary_raw": "arXiv:2607.06624v1 Announce Type: new Abstract: We present AgentLens, a production-assessed benchmark for interactive code agents. Most code-agent benchmarks reduce a run to a single bit -- did the task pass? -- but the people who actually use these agents experience the entire trajectory: how the agent follows instructions, uses its tools, verifies its own work, recovers from mistakes, and talks to them along the way. AgentLens evaluates that whole trajectory. It pairs formal verification, where an objective check exists, with LLM-written trajectory reviews and side-by-side comparisons, so that each run yields a readable explanation of why the score is what it is. This makes AgentLens useful for more than ranking models: we use it to diagnose model behavior, compare successive versions of our own agent, and catch product regressions in a nightly evaluation pipeline. We release the benchmark as open source at https://github.com/agent-lens/agent-lens-bench.",
+    "published": "Thu, 09 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "2873b1141fdb189185895142",
+    "title": "When Does In-Context Search Help? A Sampling-Complexity Theory of Reflection-Driven Reasoning",
+    "link": "https://arxiv.org/abs/2607.06720",
+    "summary_raw": "arXiv:2607.06720v1 Announce Type: new Abstract: Training large language models (LLMs) with extended reasoning has enabled in-context search, in which models iteratively generate, critique, and revise solution attempts. We provide a theoretical analysis of in-context search by modeling it as approximate inference over reasoning traces, where the base model defines a prior and self-reflection provides feedback for posterior updates, and study the resulting inference-time sampling complexity - the number of sequential attempts needed to achieve high success probability. We show that when reflections reliably localize early mistakes, in-context search can yield exponential improvements over the base model, solving problems with exponentially small zero-shot pass rates using only a polynomial number of sequential attempts, whereas when this property fails, conditioning on past attempts offers no asymptotic benefit over parallel sampling. We further show that these gains are robust and learnable: approximate posterior updates suffice, and cross-entropy training on search rollouts recovers the required behavior with polynomial sample complexity. Finally, we show that under a stagewise abs",
+    "published": "Thu, 09 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "f081337327e45d318f724568",
+    "title": "The Web Is Eating Itself And Your Metrics Look Fine via @sejournal, @DuaneForrester",
+    "link": "https://www.searchenginejournal.com/the-web-is-eating-itself-and-your-metrics-look-fine/581497",
+    "summary_raw": "Source bias, retrieval collapse, model collapse: three documented mechanisms that explain AI search's strangest behavior, and where to place your bet. The post The Web Is Eating Itself And Your Metrics Look Fine appeared first on Search Engine Journal .",
+    "published": "Thu, 09 Jul 2026 13:30:34 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "e2ea879813cd402f02241665",
+    "title": "AI Search Is Exposing SEO\u2019s Risk Of Losing Ownership Of GEO Outcomes via @sejournal, @martinibuster",
+    "link": "https://www.searchenginejournal.com/ai-search-is-exposing-seos-risk-of-losing-geo-outcomes/581805",
+    "summary_raw": "Search marketer Tom Critchlow says AI Search is exposing the question of whether SEO still owns GEO outcomes. The post AI Search Is Exposing SEO\u2019s Risk Of Losing Ownership Of GEO Outcomes appeared first on Search Engine Journal .",
+    "published": "Wed, 08 Jul 2026 23:17:27 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "46778f4c1c2d8659cf2ec56d",
+    "title": "62% Of AI Brand Recommendations Vanish After One Buyer Question \u2013 New Data via @sejournal, @gregjarboe",
+    "link": "https://www.searchenginejournal.com/62-of-ai-brand-recommendations-vanish-after-one-buyer-question-new-clovion-data/581469",
+    "summary_raw": "A dropped zero in Clovion's AI visibility study hid numbers far more alarming than published. Here's what the corrected data means for brand strategy. The post 62% Of AI Brand Recommendations Vanish After One Buyer Question \u2013 New Data appeared first on Search Engine Journal .",
+    "published": "Tue, 07 Jul 2026 11:00:06 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "d748b29391eee43f5bea4e78",
+    "title": "CBA to take AI orchestration agent beyond its retail bank",
+    "link": "https://www.itnews.com.au/news/cba-to-take-ai-orchestration-agent-beyond-its-retail-bank-627249",
+    "summary_raw": "Connecting customers to appropriate support.",
+    "published": "Fri, 10 Jul 2026 06:48:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ]
+  },
+  {
+    "key": "a065823aa1ad8e69c364d3da",
+    "title": "City of Moreton Bay to trial object detection and AI for traffic flow",
+    "link": "https://www.itnews.com.au/news/city-of-moreton-bay-to-trial-object-detection-and-ai-for-traffic-flow-627251",
+    "summary_raw": "Hopes to put together a city-wide business case.",
+    "published": "Fri, 10 Jul 2026 06:44:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ]
+  },
+  {
+    "key": "97f4eef1c2c127088657437a",
+    "title": "ANZ to trial Swift's blockchain ledger",
+    "link": "https://www.itnews.com.au/news/anz-to-trial-swifts-blockchain-ledger-627262",
+    "summary_raw": "Touted as enabler for \"programmable money\" and agentic commerce.",
+    "published": "Fri, 10 Jul 2026 06:36:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ]
+  }
+]

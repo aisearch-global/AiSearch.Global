@@ -1,5 +1,65 @@
 [
   {
+    "headline": "Meta enters the crowded AI coding battle with Muse Spark 1.1",
+    "link": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1",
+    "date": "2026-07-10"
+  },
+  {
+    "headline": "New York Times says OpenAI hid evidence in ChatGPT copyright trial",
+    "link": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial",
+    "date": "2026-07-10"
+  },
+  {
+    "headline": "Google will now disclose which ads are made with AI",
+    "link": "https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai",
+    "date": "2026-07-10"
+  },
+  {
+    "headline": "Anthropic found a hidden space where Claude puzzles over concepts",
+    "link": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts",
+    "date": "2026-07-10"
+  },
+  {
+    "headline": "AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation",
+    "link": "https://arxiv.org/abs/2607.06624",
+    "date": "2026-07-10"
+  },
+  {
+    "headline": "When Does In-Context Search Help? A Sampling-Complexity Theory of Reflection-Driven Reasoning",
+    "link": "https://arxiv.org/abs/2607.06720",
+    "date": "2026-07-10"
+  },
+  {
+    "headline": "The Web Is Eating Itself And Your Metrics Look Fine via @sejournal, @DuaneForrester",
+    "link": "https://www.searchenginejournal.com/the-web-is-eating-itself-and-your-metrics-look-fine/581497",
+    "date": "2026-07-10"
+  },
+  {
+    "headline": "AI Search Is Exposing SEO\u2019s Risk Of Losing Ownership Of GEO Outcomes via @sejournal, @martinibuster",
+    "link": "https://www.searchenginejournal.com/ai-search-is-exposing-seos-risk-of-losing-geo-outcomes/581805",
+    "date": "2026-07-10"
+  },
+  {
+    "headline": "62% Of AI Brand Recommendations Vanish After One Buyer Question \u2013 New Data via @sejournal, @gregjarboe",
+    "link": "https://www.searchenginejournal.com/62-of-ai-brand-recommendations-vanish-after-one-buyer-question-new-clovion-data/581469",
+    "date": "2026-07-10"
+  },
+  {
+    "headline": "CBA to take AI orchestration agent beyond its retail bank",
+    "link": "https://www.itnews.com.au/news/cba-to-take-ai-orchestration-agent-beyond-its-retail-bank-627249",
+    "date": "2026-07-10"
+  },
+  {
+    "headline": "City of Moreton Bay to trial object detection and AI for traffic flow",
+    "link": "https://www.itnews.com.au/news/city-of-moreton-bay-to-trial-object-detection-and-ai-for-traffic-flow-627251",
+    "date": "2026-07-10"
+  },
+  {
+    "headline": "ANZ to trial Swift's blockchain ledger",
+    "link": "https://www.itnews.com.au/news/anz-to-trial-swifts-blockchain-ledger-627262",
+    "date": "2026-07-10"
+  },
+  {
     "headline": "Why this CEO thinks video games make better training data than the internet",
     "link": "https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet",
     "date": "2026-07-09"
@@ -13,65 +73,5 @@
     "headline": "OpenAI releases new voice models for more natural live conversations",
     "link": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations",
     "date": "2026-07-09"
-  },
-  {
-    "headline": "CSTutorBench: Benchmarking Small Language Models as Tutors for Block-Based Programming",
-    "link": "https://arxiv.org/abs/2607.05571",
-    "date": "2026-07-09"
-  },
-  {
-    "headline": "Foundation Models for Automatic CAD Generation",
-    "link": "https://arxiv.org/abs/2607.05573",
-    "date": "2026-07-09"
-  },
-  {
-    "headline": "Narrative World Model: Narratology-Grounded Writer Memory for Long-Form Fiction",
-    "link": "https://arxiv.org/abs/2607.05577",
-    "date": "2026-07-09"
-  },
-  {
-    "headline": "An Easy Digital PR Strategy For AI SEO via @sejournal, @martinibuster",
-    "link": "https://www.searchenginejournal.com/an-easy-digital-pr-strategy-for-ai-seo/581710",
-    "date": "2026-07-09"
-  },
-  {
-    "headline": "You Can\u2019t See How AI Ranks You, So Build What It Can Read via @sejournal, @slobodanmanic",
-    "link": "https://www.searchenginejournal.com/you-cant-see-how-ai-ranks-you-so-build-what-it-can-read/580048",
-    "date": "2026-07-09"
-  },
-  {
-    "headline": "How To Build A Performance Marketing Experimentation Framework With AI",
-    "link": "https://www.searchenginejournal.com/performance-marketing-meets-ai-how-to-build-an-experimentation-framework-that-scales/579854",
-    "date": "2026-07-09"
-  },
-  {
-    "headline": "SpaceXAI releases Grok 4.5, which Elon describes as an \u2018Opus-class model\u2019",
-    "link": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model",
-    "date": "2026-07-08"
-  },
-  {
-    "headline": "This startup thinks robotics is about to have its ChatGPT moment",
-    "link": "https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment",
-    "date": "2026-07-08"
-  },
-  {
-    "headline": "Google Photos adds a new AI \u2018Video Remix\u2019 tool",
-    "link": "https://techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool",
-    "date": "2026-07-08"
-  },
-  {
-    "headline": "EmTech AI 2026: The Rise of the AI Platform",
-    "link": "https://www.technologyreview.com/2026/07/08/1140223/emtech-ai-2026-the-rise-of-the-ai-platform",
-    "date": "2026-07-08"
-  },
-  {
-    "headline": "Prompt-to-Paper: Agentic AI System for Bioinformatics",
-    "link": "https://arxiv.org/abs/2607.05456",
-    "date": "2026-07-08"
-  },
-  {
-    "headline": "From Graphs to Gradients: Physics-Inspired Structural Attribution for Cyber-Physical IoT Systems and Beyond",
-    "link": "https://arxiv.org/abs/2607.05563",
-    "date": "2026-07-08"
   }
 ]
