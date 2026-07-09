@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import html
 import json
 import re
 import sys
@@ -125,7 +126,11 @@ def story_key(title: str, link: str) -> str:
 
 
 def strip_html(text: str) -> str:
+    # Decode entities AFTER removing tags so feed copy is stored as real text
+    # (e.g. "&#160;" -> nbsp, "&#8217;" -> ’). Without this, entities survive into
+    # summary_raw and get double-encoded downstream (the 2026-07-09 render bug).
     text = re.sub(r"<[^>]+>", " ", text or "")
+    text = html.unescape(text)
     return re.sub(r"\s+", " ", text).strip()
 
 

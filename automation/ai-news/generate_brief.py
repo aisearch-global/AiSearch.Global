@@ -255,6 +255,21 @@ def esc(text: str) -> str:
     return html.escape(str(text), quote=True)
 
 
+def clean_text(text: str) -> str:
+    """Decode source HTML entities to real characters BEFORE they are esc()'d.
+
+    Feeds serve entity-encoded copy (e.g. ``just&#160;don&#8217;t``). Passing that
+    straight to esc() double-encodes the ampersand (``&amp;#160;``), so the browser
+    prints the literal ``&#160;`` — the double-encoding bug that shipped on the
+    2026-07-09 edition. Unescaping first turns ``&#160;`` into a real non-breaking
+    space and ``&#8217;`` into a real apostrophe; esc() then re-encodes cleanly, so
+    the round-trip is idempotent for plain text (Claude-written copy is unaffected).
+
+    Apply this ONLY to free-text fields (headline, summary, source) — never to URLs.
+    html.unescape() would corrupt a link like ``?a=1&copy=2`` into ``?a=1©=2``."""
+    return html.unescape(str(text))
+
+
 def slugify(text: str) -> str:
     text = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
     return text[:80]
@@ -399,16 +414,16 @@ def summary_body(summary: str, indent: str) -> str:
     paras = [p.strip() for p in re.split(r"\n+", summary or "") if p.strip()]
     if not paras:
         return ""
-    inner = f"\n".join(f"{indent}  <p>{esc(p)}</p>" for p in paras)
+    inner = f"\n".join(f"{indent}  <p>{esc(clean_text(p))}</p>" for p in paras)
     return f"{indent}<div class=\"body\">\n{inner}\n{indent}</div>\n"
 
 
 def render_story_block(story: dict, *, lead: bool, date_str: str) -> str:
     """STORY BLOCK — repeats per story; the first ranked story renders as the
     lead (.story--lead, h2, dated byline), the rest as .story (h3)."""
-    link = esc(story["link"])
-    headline = esc(story["headline"])
-    source = esc(story["source"])
+    link = esc(story["link"])  # URL — never clean_text()'d (would corrupt &-params)
+    headline = esc(clean_text(story["headline"]))
+    source = esc(clean_text(story["source"]))
     if lead:
         body = summary_body(story.get("summary", ""), "    ")
         return f"""  <article class="story--lead">
@@ -538,7 +553,7 @@ def render_ticker(ticker_items: list[dict]) -> str:
     if not ticker_items:
         return ""
     one_set = "".join(
-        f'<a href="{esc(i["link"])}" target="_blank" rel="noopener">{esc(i["headline"])}</a>'
+        f'<a href="{esc(i["link"])}" target="_blank" rel="noopener">{esc(clean_text(i["headline"]))}</a>'
         f'<span class="ticker-sep">&middot;</span>'
         for i in ticker_items
     )
@@ -556,12 +571,14 @@ def render_splash(latest: dict, lead: dict | None) -> str:
     if not lead:
         return ""
     edition_url = f"/news/{latest['date']}"
-    teaser_words = (lead.get("summary") or "").split()
+    # clean_text() first so entity-glued tokens like "just&#160;don't" split into
+    # real words (nbsp is Unicode whitespace) — otherwise the 40-word cut is wrong.
+    teaser_words = clean_text(lead.get("summary") or "").split()
     ellipsis = "&hellip;" if len(teaser_words) > 40 else ""
     teaser_html = f'\n    <p class="teaser">{esc(" ".join(teaser_words[:40]))}{ellipsis}</p>' if teaser_words else ""
     return f"""  <section class="splash">
     <p class="kicker">In today's edition &middot; {kicker_text(lead)}</p>
-    <h2 class="headline"><a href="{edition_url}">{esc(lead["headline"])}</a></h2>{teaser_html}
+    <h2 class="headline"><a href="{edition_url}">{esc(clean_text(lead["headline"]))}</a></h2>{teaser_html}
     <p class="edition-link"><a href="{edition_url}">Read the {date_day_month(latest['date'])} edition &mdash; {story_count_label(latest['headline_count'])} &rarr;</a></p>
   </section>"""
 
@@ -683,7 +700,7 @@ def render_rss(entries: list[dict]) -> str:
         headlines = []
         brief_path = PENDING_DIR / f"{e['date']}.brief.json"
         if brief_path.exists():
-            headlines = [s["headline"] for s in json.loads(brief_path.read_text(encoding="utf-8"))]
+            headlines = [clean_text(s["headline"]) for s in json.loads(brief_path.read_text(encoding="utf-8"))]
         desc = f"{story_count_label(e['headline_count'])}"
         if headlines:
             desc += ": " + " · ".join(headlines)
