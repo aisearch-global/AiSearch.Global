@@ -1,0 +1,121 @@
+[
+  {
+    "key": "78a073220d9beda4b1dd4add",
+    "title": "Apple sues OpenAI over alleged trade secret theft",
+    "link": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft",
+    "summary_raw": "Apple alleges the misconduct was directed by OpenAi's senior leadership, including a long-time former employee.",
+    "published": "Fri, 10 Jul 2026 21:00:29 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Apple sues OpenAI over alleged trade secret theft",
+    "summary": "Apple alleges the misconduct was directed by OpenAi's senior leadership, including a long-time former employee."
+  },
+  {
+    "key": "3a1127c3b5e455054d1c70ed",
+    "title": "SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs",
+    "link": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs",
+    "summary_raw": "The AI chip boom just produced its biggest Wall Street moment yet. Now SK Hynix and Samsung are being asked to build U.S. factories.",
+    "published": "Fri, 10 Jul 2026 17:17:12 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs",
+    "summary": "The AI chip boom just produced its biggest Wall Street moment yet. Now SK Hynix and Samsung are being asked to build U.S. factories."
+  },
+  {
+    "key": "a02a45ff5d07f9f7a29c11c0",
+    "title": "Hugging Face\u2019s CEO on why companies are done renting their AI",
+    "link": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai",
+    "summary_raw": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start [\u2026]",
+    "published": "Fri, 10 Jul 2026 14:00:00 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Hugging Face\u2019s CEO on why companies are done renting their AI",
+    "summary": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start [\u2026]"
+  },
+  {
+    "key": "3ff7e3b2cc77b2b9c15c48ac",
+    "title": "The Download: Claude\u2019s inner workings and OpenAI\u2019s \u201csuper app\u201d",
+    "link": "https://www.technologyreview.com/2026/07/10/1140316/the-download-anthropic-claude-hidden-space-openai-super-app",
+    "summary_raw": "This is today\u2019s edition of The Download, our weekday newsletter that provides a daily dose of what\u2019s going on in the world of technology. Anthropic found a hidden space where Claude puzzles over concepts The AI firm Anthropic has got the clearest glimpse yet at what\u2019s really going on inside large language models as they\u2026",
+    "published": "Fri, 10 Jul 2026 12:10:00 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ],
+    "headline": "The Download: Claude\u2019s inner workings and OpenAI\u2019s \u201csuper app\u201d",
+    "summary": "This is today\u2019s edition of The Download, our weekday newsletter that provides a daily dose of what\u2019s going on in the world of technology. Anthropic found a hidden space where Claude puzzles over concepts The AI firm Anthropic has got the clearest glimpse yet at what\u2019s really going on inside large language models as they\u2026"
+  },
+  {
+    "key": "f17cbb26b99f63f86c9a7450",
+    "title": "LLM-powered reasoning in agent-based modeling",
+    "link": "https://arxiv.org/abs/2607.06757",
+    "summary_raw": "arXiv:2607.06757v1 Announce Type: new Abstract: Agent-based modeling (ABM) has the capability to model millions of individuals and their interactions, which is useful for policy making. However, ABMs have traditionally relied on static prior, which prevents the models from adapting to real-time changes. Our research provides a novel approach to addressing this information gap. Large language models (LLMs) offer new opportunities to predict human decision-making. Here, we introduce a scalable Hybrid Agent-based and Language-driven Epidemic (HALE) modeling framework that leverages LLMs to predict human decision-making in an ABM simulation. As a proof-of-concept, we use HALE to simulate COVID-19 and its effects in Salt Lake County, UT.",
+    "published": "Fri, 10 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ],
+    "headline": "LLM-powered reasoning in agent-based modeling",
+    "summary": "arXiv:2607.06757v1 Announce Type: new Abstract: Agent-based modeling (ABM) has the capability to model millions of individuals and their interactions, which is useful for policy making. However, ABMs have traditionally relied on static prior, which prevents the models from adapting to real-time changes. Our research provides a novel approach to addressing this information gap. Large language models (LLMs) offer new opportunities to predict human decision-making. Here, we introduce a scalable Hybrid Agent-based and Language-driven Epidemic (HALE) modeling framework that leverages LLMs to predict human decision-making in an ABM simulation. As a proof-of-concept, we use HALE to simulate COVID-19 and its effects in Salt Lake County, UT."
+  },
+  {
+    "key": "110b30799061aaa6c3a69c35",
+    "title": "QANTIS: Hardware-Calibrated Sequential POMDP Belief Updates on IBM Heron",
+    "link": "https://arxiv.org/abs/2607.06760",
+    "summary_raw": "arXiv:2607.06760v1 Announce Type: new Abstract: Autonomous systems under partial observability act on beliefs, not raw sensor events. QANTIS treats the quantum processor as a calibrated belief-update service in that loop: it receives a prior and an observation model, estimates the rare-event evidence term, and returns an ordinary posterior to a classical planner. This paper asks whether that service can be reused across a sequential Tiger POMDP horizon on present IBM Heron hardware without corrupting the planner-facing posterior. We answer with a controlled hardware case study rather than an end-to-end autonomy or wall-clock speedup claim. The study compares no amplification, guarded Grover amplification, and all-step fixed-point amplification on the same trajectory, then checks whether the returned posterior would change the downstream action. All-step FPAA preserves the Tiger posterior across the reported 8-step and 12-step primary runs, and the 20-step and 32-step controls remain inside the same operating band. In every reported decision check, the hardware posterior and the exact Bayes posterior select the same immediate action. Boundary-aware BIQAE stabilizes amplitude estimat",
+    "published": "Fri, 10 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ],
+    "headline": "QANTIS: Hardware-Calibrated Sequential POMDP Belief Updates on IBM Heron",
+    "summary": "arXiv:2607.06760v1 Announce Type: new Abstract: Autonomous systems under partial observability act on beliefs, not raw sensor events. QANTIS treats the quantum processor as a calibrated belief-update service in that loop: it receives a prior and an observation model, estimates the rare-event evidence term, and returns an ordinary posterior to a classical planner. This paper asks whether that service can be reused across a sequential Tiger POMDP horizon on present IBM Heron hardware without corrupting the planner-facing posterior. We answer with a controlled hardware case study rather than an end-to-end autonomy or wall-clock speedup claim. The study compares no amplification, guarded Grover amplification, and all-step fixed-point amplification on the same trajectory, then checks whether the returned posterior would change the downstream action. All-step FPAA preserves the Tiger posterior across the reported 8-step and 12-step primary runs, and the 20-step and 32-step controls remain inside the same operating band. In every reported decision check, the hardware posterior and the exact Bayes posterior select the same immediate action. Boundary-aware BIQAE stabilizes amplitude estimat"
+  },
+  {
+    "key": "2e49f986e080d736c85b6fc4",
+    "title": "Free AI Citations Won\u2019t Last. I\u2019ve Watched Google Fence Off A Wide Open Field Before via @sejournal, @gregjarboe",
+    "link": "https://www.searchenginejournal.com/free-ai-citations-wont-last-ive-watched-google-fence-off-a-wide-open-field-before/581471",
+    "summary_raw": "Most enterprise brands are invisible to AI models right now. That gap is closing fast, and the brands moving first will hold the ground. The post Free AI Citations Won\u2019t Last. I\u2019ve Watched Google Fence Off A Wide Open Field Before appeared first on Search Engine Journal .",
+    "published": "Fri, 10 Jul 2026 11:30:31 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "Free AI Citations Won\u2019t Last. I\u2019ve Watched Google Fence Off A Wide Open Field Before via @sejournal, @gregjarboe",
+    "summary": "Most enterprise brands are invisible to AI models right now. That gap is closing fast, and the brands moving first will hold the ground. The post Free AI Citations Won\u2019t Last. I\u2019ve Watched Google Fence Off A Wide Open Field Before appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "e9d900bbf22b5cef0bdba088",
+    "title": "The Agentic Web Is Splitting Into Two Bets: Identity And Capability via @sejournal, @slobodanmanic",
+    "link": "https://www.searchenginejournal.com/the-agentic-web-is-splitting-into-two-bets-identity-and-capability/578685",
+    "summary_raw": "For website owners chasing AI visibility: LLMs.txt answers who you are. WebMCP answers what your site can do. The post The Agentic Web Is Splitting Into Two Bets: Identity And Capability appeared first on Search Engine Journal .",
+    "published": "Fri, 10 Jul 2026 09:00:14 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "The Agentic Web Is Splitting Into Two Bets: Identity And Capability via @sejournal, @slobodanmanic",
+    "summary": "For website owners chasing AI visibility: LLMs.txt answers who you are. WebMCP answers what your site can do. The post The Agentic Web Is Splitting Into Two Bets: Identity And Capability appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "e1e1d18473a7166546f017e9",
+    "title": "How deeper discovery improves customer business outcomes",
+    "link": "https://www.itnews.com.au/itnews-tv/how-deeper-discovery-improves-customer-business-outcomes-626836",
+    "summary_raw": "Scaling AI with customer outcomes.",
+    "published": "Thu, 9 Jul 2026 11:00:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ],
+    "headline": "How deeper discovery improves customer business outcomes",
+    "summary": "Scaling AI with customer outcomes."
+  }
+]

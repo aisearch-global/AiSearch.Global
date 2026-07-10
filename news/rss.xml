@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Fri, 10 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 11 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-11</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-11</guid>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +1000</pubDate>
+      <description>9 stories: Apple sues OpenAI over alleged trade secret theft · SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs · Hugging Face’s CEO on why companies are done renting their AI · The Download: Claude’s inner workings and OpenAI’s “super app” · LLM-powered reasoning in agent-based modeling · QANTIS: Hardware-Calibrated Sequential POMDP Belief Updates on IBM Heron · Free AI Citations Won’t Last. I’ve Watched Google Fence Off A Wide Open Field Before via @sejournal, @gregjarboe · The Agentic Web Is Splitting Into Two Bets: Identity And Capability via @sejournal, @slobodanmanic · How deeper discovery improves customer business outcomes</description>
+    </item>
     <item>
       <title>The Answer Engine — 10 July 2026</title>
       <link>https://aisearch.global/news/2026-07-10</link>
