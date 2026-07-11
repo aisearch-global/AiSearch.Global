@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 12 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-12</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-12</guid>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +1000</pubDate>
+      <description>8 stories: OpenAI bets on families as ChatGPT goes deeper into households · Meta removes controversial AI feature on Instagram after backlash · OpenAI says GPT 5.6 is the ‘preferred model’ for Microsoft Copilot 365 amid breakup chatter · Context Graphs for Proactive Enterprise Agents · AI-integrated models for assessing agricultural resilience · Adversarial Social Epistemology for Assemblies of Humans and Large Language Models · AI Visibility Rankings Aren’t Stable – New Research Shows It’s Mostly Statistical Noise via @sejournal, @MattGSouthern · Google’s AI Citation Model Is Not Free Forever: What CMOs Need To Prepare For Now via @sejournal, @gregjarboe</description>
+    </item>
     <item>
       <title>The Answer Engine — 11 July 2026</title>
       <link>https://aisearch.global/news/2026-07-11</link>

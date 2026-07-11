@@ -1,5 +1,45 @@
 [
   {
+    "headline": "OpenAI bets on families as ChatGPT goes deeper into households",
+    "link": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households",
+    "date": "2026-07-12"
+  },
+  {
+    "headline": "Meta removes controversial AI feature on Instagram after backlash",
+    "link": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash",
+    "date": "2026-07-12"
+  },
+  {
+    "headline": "OpenAI says GPT 5.6 is the \u2018preferred model\u2019 for Microsoft Copilot 365 amid breakup chatter",
+    "link": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter",
+    "date": "2026-07-12"
+  },
+  {
+    "headline": "Context Graphs for Proactive Enterprise Agents",
+    "link": "https://arxiv.org/abs/2607.07721",
+    "date": "2026-07-12"
+  },
+  {
+    "headline": "AI-integrated models for assessing agricultural resilience",
+    "link": "https://arxiv.org/abs/2607.07759",
+    "date": "2026-07-12"
+  },
+  {
+    "headline": "Adversarial Social Epistemology for Assemblies of Humans and Large Language Models",
+    "link": "https://arxiv.org/abs/2607.07760",
+    "date": "2026-07-12"
+  },
+  {
+    "headline": "AI Visibility Rankings Aren\u2019t Stable \u2013 New Research Shows It\u2019s Mostly Statistical Noise via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/ai-visibility-rankings-arent-stable-new-research-shows-its-mostly-statistical-noise/581905",
+    "date": "2026-07-12"
+  },
+  {
+    "headline": "Google\u2019s AI Citation Model Is Not Free Forever: What CMOs Need To Prepare For Now via @sejournal, @gregjarboe",
+    "link": "https://www.searchenginejournal.com/free-ai-citations-wont-last-ive-watched-google-fence-off-a-wide-open-field-before/581471",
+    "date": "2026-07-12"
+  },
+  {
     "headline": "Apple sues OpenAI over alleged trade secret theft",
     "link": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft",
     "date": "2026-07-11"
@@ -33,45 +73,5 @@
     "headline": "Free AI Citations Won\u2019t Last. I\u2019ve Watched Google Fence Off A Wide Open Field Before via @sejournal, @gregjarboe",
     "link": "https://www.searchenginejournal.com/free-ai-citations-wont-last-ive-watched-google-fence-off-a-wide-open-field-before/581471",
     "date": "2026-07-11"
-  },
-  {
-    "headline": "The Agentic Web Is Splitting Into Two Bets: Identity And Capability via @sejournal, @slobodanmanic",
-    "link": "https://www.searchenginejournal.com/the-agentic-web-is-splitting-into-two-bets-identity-and-capability/578685",
-    "date": "2026-07-11"
-  },
-  {
-    "headline": "How deeper discovery improves customer business outcomes",
-    "link": "https://www.itnews.com.au/itnews-tv/how-deeper-discovery-improves-customer-business-outcomes-626836",
-    "date": "2026-07-11"
-  },
-  {
-    "headline": "Meta enters the crowded AI coding battle with Muse Spark 1.1",
-    "link": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1",
-    "date": "2026-07-10"
-  },
-  {
-    "headline": "New York Times says OpenAI hid evidence in ChatGPT copyright trial",
-    "link": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial",
-    "date": "2026-07-10"
-  },
-  {
-    "headline": "Google will now disclose which ads are made with AI",
-    "link": "https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai",
-    "date": "2026-07-10"
-  },
-  {
-    "headline": "Anthropic found a hidden space where Claude puzzles over concepts",
-    "link": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts",
-    "date": "2026-07-10"
-  },
-  {
-    "headline": "AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation",
-    "link": "https://arxiv.org/abs/2607.06624",
-    "date": "2026-07-10"
-  },
-  {
-    "headline": "When Does In-Context Search Help? A Sampling-Complexity Theory of Reflection-Driven Reasoning",
-    "link": "https://arxiv.org/abs/2607.06720",
-    "date": "2026-07-10"
   }
 ]

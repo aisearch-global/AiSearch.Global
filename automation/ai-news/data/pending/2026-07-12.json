@@ -1,0 +1,90 @@
+[
+  {
+    "key": "a0d34aa324912fe2b50c6320",
+    "title": "OpenAI bets on families as ChatGPT goes deeper into households",
+    "link": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households",
+    "summary_raw": "ChatGPT is hiring a dedicated product manager to build experiences for families, caregivers, and older adults, according to a job posting.",
+    "published": "Sat, 11 Jul 2026 14:13:00 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "40e0e725fad27da7de687afd",
+    "title": "Meta removes controversial AI feature on Instagram after backlash",
+    "link": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash",
+    "summary_raw": "\"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way,\" the company said in a blog post. \"We've heard the feedback that this feature missed the mark, so it's no longer available.\"",
+    "published": "Fri, 10 Jul 2026 23:55:07 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "b8779e941a64277b71554aef",
+    "title": "OpenAI says GPT 5.6 is the \u2018preferred model\u2019 for Microsoft Copilot 365 amid breakup chatter",
+    "link": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter",
+    "summary_raw": "OpenAI's new family of models will continue to power Microsoft's suite of workplace and productivity apps.",
+    "published": "Fri, 10 Jul 2026 00:16:54 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "0c2a2496ee8f7b32a5845304",
+    "title": "Context Graphs for Proactive Enterprise Agents",
+    "link": "https://arxiv.org/abs/2607.07721",
+    "summary_raw": "arXiv:2607.07721v1 Announce Type: new Abstract: Retrieval-Augmented Generation (RAG) and agentic frameworks have advanced enterprise AI considerably, yet agents remain fundamentally reactive: they wait for a human query before acting. This paper argues that genuine enterprise productivity gains require proactive agents: systems that surface relevant, actionable information to workers before they ask. We propose the Context Graph, a live relational data structure that models enterprise entities, their relationships, and state transitions over time. Built on this graph, we define a Delta Detection Engine that continuously monitors state changes, a Proactivity Scorer that ranks candidate insights by urgency, relevance, and persona-fit, and a Surfacing Layer powered by an LLM that delivers ranked notifications with grounded explanations. We formalize each component, derive a unified Proactivity Score function, and provide a complete end-to-end Python implementation using NetworkX and the Anthropic Claude API. Evaluation across three generic enterprise case studies (contract lifecycle management, engineering incident response, and sales pipeline hygiene) demonstrates that context-graph-",
+    "published": "Sat, 11 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "57021f60cac77f24fef699b3",
+    "title": "AI-integrated models for assessing agricultural resilience",
+    "link": "https://arxiv.org/abs/2607.07759",
+    "summary_raw": "arXiv:2607.07759v1 Announce Type: new Abstract: Agricultural supply chains are vulnerable to disruptions through linked biophysical and economic systems. We develop an AI-powered tool that integrates economic models (GTAP) with biophysical models (APSIM) to analyze supply chain shocks, enabling policymakers and market participants to assess cross-disciplinary impacts through queries and responses written in natural language.",
+    "published": "Sat, 11 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "cabd483ae9e7c9c6b906334d",
+    "title": "Adversarial Social Epistemology for Assemblies of Humans and Large Language Models",
+    "link": "https://arxiv.org/abs/2607.07760",
+    "summary_raw": "arXiv:2607.07760v1 Announce Type: new Abstract: We outline an adversarial social epistemology (ASE) for densely interactive communicative landscapes in which public assertions are scaffolded by chains of testimony, inference, institutional certification, and tacit trust. In such landscapes, agents have incentives and affordances to distort, color, omit, fabricate, or strategically under-specify information for private, reputational, rhetorical, or material gains. We argue that these phenomena are not adequately captured by familiar descriptions of epistemic bubbles, echo chambers, or misinformation diffusion. What requires explanation is how communicative agents exploit the commitments and entitlements that normally make scaffolded assertions trustworthy. We provide language that delivers the requisite analysis, outline mechanisms that subvert trust in scaffolded public communications, and outline machinery for auditing and redressing trust breaches arising from subverting the auditability of inferential chains, drawing on epistemic networks, enriched with an inferentialist semantics for interpreting assertions.",
+    "published": "Sat, 11 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "586f5f662c81305482e69cb4",
+    "title": "AI Visibility Rankings Aren\u2019t Stable \u2013 New Research Shows It\u2019s Mostly Statistical Noise via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/ai-visibility-rankings-arent-stable-new-research-shows-its-mostly-statistical-noise/581905",
+    "summary_raw": "AI visibility numbers move between runs, so a single reading can mislead. A new paper offers a stopping rule for when rankings are finally trustworthy. The post AI Visibility Rankings Aren\u2019t Stable \u2013 New Research Shows It\u2019s Mostly Statistical Noise appeared first on Search Engine Journal .",
+    "published": "Sat, 11 Jul 2026 12:30:19 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "03402e1da81197743a71a173",
+    "title": "Google\u2019s AI Citation Model Is Not Free Forever: What CMOs Need To Prepare For Now via @sejournal, @gregjarboe",
+    "link": "https://www.searchenginejournal.com/free-ai-citations-wont-last-ive-watched-google-fence-off-a-wide-open-field-before/581471",
+    "summary_raw": "Most enterprise brands are invisible to AI models right now. That gap is closing fast, and the brands moving first will hold the ground. The post Google\u2019s AI Citation Model Is Not Free Forever: What CMOs Need To Prepare For Now appeared first on Search Engine Journal .",
+    "published": "Fri, 10 Jul 2026 11:30:31 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  }
+]
