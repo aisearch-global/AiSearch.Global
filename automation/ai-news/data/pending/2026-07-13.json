@@ -1,0 +1,106 @@
+[
+  {
+    "key": "cb5c9bcb26e889a1243038de",
+    "title": "TechCrunch Mobility: A robotaxi ultimatum",
+    "link": "https://techcrunch.com/2026/07/12/techcrunch-mobility-a-robotaxi-ultimatum",
+    "summary_raw": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, how AI is playing a part.",
+    "published": "Sun, 12 Jul 2026 16:07:00 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "faac3f54c2100289609eed8c",
+    "title": "Reed Jobs would rather talk about curing cancer than his last name",
+    "link": "https://techcrunch.com/2026/07/11/reed-jobs-would-rather-talk-about-curing-cancer-than-his-last-name",
+    "summary_raw": "When we last sat down with Jobs at TechCrunch Disrupt nearly three years ago, his firm Yosemite was brand new and biotech was still reeling from its post-pandemic crash. Now, the venture outfit has a team of 17; a cluster of blockbuster drugs are all losing patent protection in roughly the same window, creating all kinds of new opportunities; and AI has gone from a curiosity to, in Jobs's words, a huge part of what Yosemite does. \"I didn't expect Yosemite to be moving this fast,\" he said.",
+    "published": "Sun, 12 Jul 2026 00:16:06 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "1d9e2acc2ac8cdcf07731277",
+    "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+    "link": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
+    "summary_raw": "The artificial intelligence coding revolution comes with a catch: it's expensive. Claude Code , Anthropic's terminal-based AI agent that can write, debug, and deploy code autonomously, has captured the imagination of software developers worldwide. But its pricing \u2014 ranging from $20 to $200 per month depending on usage \u2014 has sparked a growing rebellion among the very programmers it aims to serve. Now, a free alternative is gaining traction. Goose , an open-source AI agent developed by Block (the financial technology company formerly known as Square), offers nearly identical functionality to Claude Code but runs entirely on a user's local machine. No subscription fees. No cloud dependency. No rate limits that reset every five hours. \"Your data stays with you, period,\" said Parth Sareen, a software engineer who demonstrated the tool during a recent livestream . The comment captures the core appeal: Goose gives developers complete control over their AI-powered workflow, including the ability to work offline \u2014 even on an airplane. The project has exploded in popularity. Goose now boasts more than 26,100 stars on GitHub , the code-sharing platform, with 362 contributors and 102 releases ",
+    "published": "Mon, 19 Jan 2026 14:00:00 GMT",
+    "source": "VentureBeat AI",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "2a3c4aef65ea7dbe07929947",
+    "title": "How Deutsche Telekom is rewiring telecommunications with AI",
+    "link": "https://openai.com/index/deutsche-telekom",
+    "summary_raw": "How Deutsche Telekom is becoming an AI-native telco with OpenAI-transforming customer service, employee workflows, network operations, and the future of voice.",
+    "published": "Fri, 10 Jul 2026 07:00:00 GMT",
+    "source": "OpenAI News",
+    "categories": [
+      "human_ai_research",
+      "ai_news"
+    ]
+  },
+  {
+    "key": "1004469cf902b9cde7d90052",
+    "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
+    "link": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+    "summary_raw": "Learn how GPT-5.6 powers Microsoft 365 Copilot with stronger AI capabilities across Word, Excel, PowerPoint, Chat, and Cowork for faster, higher-quality work.",
+    "published": "Thu, 09 Jul 2026 13:00:00 GMT",
+    "source": "OpenAI News",
+    "categories": [
+      "human_ai_research",
+      "ai_news"
+    ]
+  },
+  {
+    "key": "402decdcdc00a339938e2b37",
+    "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+    "link": "https://openai.com/index/gpt-5-6",
+    "summary_raw": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work.",
+    "published": "Thu, 09 Jul 2026 10:00:00 GMT",
+    "source": "OpenAI News",
+    "categories": [
+      "human_ai_research",
+      "ai_news"
+    ]
+  },
+  {
+    "key": "f3aced32066c4495e4690c9b",
+    "title": "The WebMCP Tools You Expose To Agents Can Be Used To Hijack Them via @sejournal, @slobodanmanic",
+    "link": "https://www.searchenginejournal.com/the-webmcp-tools-you-expose-to-agents-can-be-used-to-hijack-them/579204",
+    "summary_raw": "WebMCP gives AI agents named tools to call, and a clean route for prompt injection. Here's what Chrome says to lock down first. The post The WebMCP Tools You Expose To Agents Can Be Used To Hijack Them appeared first on Search Engine Journal .",
+    "published": "Sun, 12 Jul 2026 12:00:52 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "4d69b8beead95ef12cf56270",
+    "title": "Apple sues OpenAI, two former employees",
+    "link": "https://www.itnews.com.au/news/apple-sues-openai-two-former-employees-627313",
+    "summary_raw": "Over alleged trade secrets theft.",
+    "published": "Mon, 13 Jul 2026 06:41:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ]
+  },
+  {
+    "key": "9925ab253f5193584f6dd620",
+    "title": "Meta scraps AI image feature days after launch",
+    "link": "https://www.itnews.com.au/news/meta-scraps-ai-image-feature-days-after-launch-627312",
+    "summary_raw": "Following privacy backlash.",
+    "published": "Mon, 13 Jul 2026 06:41:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ]
+  }
+]

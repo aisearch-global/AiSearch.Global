@@ -1,5 +1,50 @@
 [
   {
+    "headline": "TechCrunch Mobility: A robotaxi ultimatum",
+    "link": "https://techcrunch.com/2026/07/12/techcrunch-mobility-a-robotaxi-ultimatum",
+    "date": "2026-07-13"
+  },
+  {
+    "headline": "Reed Jobs would rather talk about curing cancer than his last name",
+    "link": "https://techcrunch.com/2026/07/11/reed-jobs-would-rather-talk-about-curing-cancer-than-his-last-name",
+    "date": "2026-07-13"
+  },
+  {
+    "headline": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+    "link": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
+    "date": "2026-07-13"
+  },
+  {
+    "headline": "How Deutsche Telekom is rewiring telecommunications with AI",
+    "link": "https://openai.com/index/deutsche-telekom",
+    "date": "2026-07-13"
+  },
+  {
+    "headline": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
+    "link": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+    "date": "2026-07-13"
+  },
+  {
+    "headline": "GPT-5.6: Frontier intelligence that scales with your ambition",
+    "link": "https://openai.com/index/gpt-5-6",
+    "date": "2026-07-13"
+  },
+  {
+    "headline": "The WebMCP Tools You Expose To Agents Can Be Used To Hijack Them via @sejournal, @slobodanmanic",
+    "link": "https://www.searchenginejournal.com/the-webmcp-tools-you-expose-to-agents-can-be-used-to-hijack-them/579204",
+    "date": "2026-07-13"
+  },
+  {
+    "headline": "Apple sues OpenAI, two former employees",
+    "link": "https://www.itnews.com.au/news/apple-sues-openai-two-former-employees-627313",
+    "date": "2026-07-13"
+  },
+  {
+    "headline": "Meta scraps AI image feature days after launch",
+    "link": "https://www.itnews.com.au/news/meta-scraps-ai-image-feature-days-after-launch-627312",
+    "date": "2026-07-13"
+  },
+  {
     "headline": "OpenAI bets on families as ChatGPT goes deeper into households",
     "link": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households",
     "date": "2026-07-12"
@@ -28,50 +73,5 @@
     "headline": "Adversarial Social Epistemology for Assemblies of Humans and Large Language Models",
     "link": "https://arxiv.org/abs/2607.07760",
     "date": "2026-07-12"
-  },
-  {
-    "headline": "AI Visibility Rankings Aren\u2019t Stable \u2013 New Research Shows It\u2019s Mostly Statistical Noise via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/ai-visibility-rankings-arent-stable-new-research-shows-its-mostly-statistical-noise/581905",
-    "date": "2026-07-12"
-  },
-  {
-    "headline": "Google\u2019s AI Citation Model Is Not Free Forever: What CMOs Need To Prepare For Now via @sejournal, @gregjarboe",
-    "link": "https://www.searchenginejournal.com/free-ai-citations-wont-last-ive-watched-google-fence-off-a-wide-open-field-before/581471",
-    "date": "2026-07-12"
-  },
-  {
-    "headline": "Apple sues OpenAI over alleged trade secret theft",
-    "link": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft",
-    "date": "2026-07-11"
-  },
-  {
-    "headline": "SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs",
-    "link": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs",
-    "date": "2026-07-11"
-  },
-  {
-    "headline": "Hugging Face\u2019s CEO on why companies are done renting their AI",
-    "link": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai",
-    "date": "2026-07-11"
-  },
-  {
-    "headline": "The Download: Claude\u2019s inner workings and OpenAI\u2019s \u201csuper app\u201d",
-    "link": "https://www.technologyreview.com/2026/07/10/1140316/the-download-anthropic-claude-hidden-space-openai-super-app",
-    "date": "2026-07-11"
-  },
-  {
-    "headline": "LLM-powered reasoning in agent-based modeling",
-    "link": "https://arxiv.org/abs/2607.06757",
-    "date": "2026-07-11"
-  },
-  {
-    "headline": "QANTIS: Hardware-Calibrated Sequential POMDP Belief Updates on IBM Heron",
-    "link": "https://arxiv.org/abs/2607.06760",
-    "date": "2026-07-11"
-  },
-  {
-    "headline": "Free AI Citations Won\u2019t Last. I\u2019ve Watched Google Fence Off A Wide Open Field Before via @sejournal, @gregjarboe",
-    "link": "https://www.searchenginejournal.com/free-ai-citations-wont-last-ive-watched-google-fence-off-a-wide-open-field-before/581471",
-    "date": "2026-07-11"
   }
 ]

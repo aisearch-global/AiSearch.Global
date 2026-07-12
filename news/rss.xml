@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Sun, 12 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 13 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-13</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-13</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +1000</pubDate>
+      <description>9 stories: TechCrunch Mobility: A robotaxi ultimatum · Reed Jobs would rather talk about curing cancer than his last name · Claude Code costs up to $200 a month. Goose does the same thing for free. · How Deutsche Telekom is rewiring telecommunications with AI · GPT-5.6 is now the preferred model in Microsoft 365 Copilot · GPT-5.6: Frontier intelligence that scales with your ambition · The WebMCP Tools You Expose To Agents Can Be Used To Hijack Them via @sejournal, @slobodanmanic · Apple sues OpenAI, two former employees · Meta scraps AI image feature days after launch</description>
+    </item>
     <item>
       <title>The Answer Engine — 12 July 2026</title>
       <link>https://aisearch.global/news/2026-07-12</link>
