@@ -1,0 +1,149 @@
+[
+  {
+    "key": "18faaf67ed078c9fb441122b",
+    "title": "Satya Nadella has issued a shocking warning to companies using AI",
+    "link": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai",
+    "summary_raw": "In a surprising blog post on Monday, Microsoft CEO is warning enterprises of the dangers of using proprietary models like Anthropic's and OpenAI's.",
+    "published": "Mon, 13 Jul 2026 20:59:00 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Satya Nadella has issued a shocking warning to companies using AI",
+    "summary": "In a surprising blog post on Monday, Microsoft CEO is warning enterprises of the dangers of using proprietary models like Anthropic's and OpenAI's."
+  },
+  {
+    "key": "f785e4af787b9972abb41ac4",
+    "title": "Apple says former employee exploited \u2018rare\u2019 bug to download confidential files after leaving for OpenAI",
+    "link": "https://techcrunch.com/2026/07/13/apple-says-former-employee-exploited-rare-bug-to-download-confidential-files-after-leaving-for-openai",
+    "summary_raw": "Apple would not comment on the \"security breach,\" which allegedly allowed a former employee to download sensitive files from Apple's network long after he departed the company for rival OpenAI.",
+    "published": "Mon, 13 Jul 2026 20:00:17 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Apple says former employee exploited \u2018rare\u2019 bug to download confidential files after leaving for OpenAI",
+    "summary": "Apple would not comment on the \"security breach,\" which allegedly allowed a former employee to download sensitive files from Apple's network long after he departed the company for rival OpenAI."
+  },
+  {
+    "key": "0ae7bf40400ab857e83e0ad6",
+    "title": "The wildest allegations in Apple\u2019s trade secrets lawsuit against OpenAI",
+    "link": "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai",
+    "summary_raw": "Apple\u2019s trade secrets lawsuit against OpenAI contains allegations that range from employees joking about unauthorized access to Apple\u2019s systems to claims that job candidates were asked to bring Apple hardware to interviews. Here are the complaint\u2019s most eye-catching claims.",
+    "published": "Mon, 13 Jul 2026 18:22:10 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "The wildest allegations in Apple\u2019s trade secrets lawsuit against OpenAI",
+    "summary": "Apple\u2019s trade secrets lawsuit against OpenAI contains allegations that range from employees joking about unauthorized access to Apple\u2019s systems to claims that job candidates were asked to bring Apple hardware to interviews. Here are the complaint\u2019s most eye-catching claims."
+  },
+  {
+    "key": "74854dc6d10879f28e20edcf",
+    "title": "What Anthropic\u2019s latest AI discovery does\u2014and doesn\u2019t\u2014show",
+    "link": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show",
+    "summary_raw": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Anthropic\u2014currently the world\u2019s most valuable AI company, with a nearly $1 trillion valuation\u2014has a reputation for publishing strange and heady research. It\u2019s looking into whether AI models can feel pain, for example,\u2026",
+    "published": "Mon, 13 Jul 2026 18:00:00 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ],
+    "headline": "What Anthropic\u2019s latest AI discovery does\u2014and doesn\u2019t\u2014show",
+    "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Anthropic\u2014currently the world\u2019s most valuable AI company, with a nearly $1 trillion valuation\u2014has a reputation for publishing strange and heady research. It\u2019s looking into whether AI models can feel pain, for example,\u2026"
+  },
+  {
+    "key": "b0dc7122415530f13d7799c6",
+    "title": "The Download: a donor conception cap and world models for AI",
+    "link": "https://www.technologyreview.com/2026/07/13/1140339/the-download-sperm-donor-limits-ai-world-models",
+    "summary_raw": "This is today\u2019s edition of The Download, our weekday newsletter that provides a daily dose of what\u2019s going on in the world of technology. Sperm donors need limits, says a European fertility group Ties van der Meer doesn\u2019t know how many siblings he has. The 47-year-old was conceived at a private fertility clinic using sperm\u2026",
+    "published": "Mon, 13 Jul 2026 12:10:00 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ],
+    "headline": "The Download: a donor conception cap and world models for AI",
+    "summary": "This is today\u2019s edition of The Download, our weekday newsletter that provides a daily dose of what\u2019s going on in the world of technology. Sperm donors need limits, says a European fertility group Ties van der Meer doesn\u2019t know how many siblings he has. The 47-year-old was conceived at a private fertility clinic using sperm\u2026"
+  },
+  {
+    "key": "4a7e53dbd85a85bebf44c065",
+    "title": "Interval Certifications for Multilayered Perceptrons via Lattice Traversal",
+    "link": "https://arxiv.org/abs/2607.08773",
+    "summary_raw": "arXiv:2607.08773v1 Announce Type: new Abstract: In this work we present a rigorous theoretical framework to a foundational problem of AI safety, namely adversarial robustness. In particular, we show that the adversarial robustness problem can be reduced to a lattice traversal problem. Each element of this lattice corresponds to an interval, i.e., an axis-aligned hyper-rectangle, containing an input point $\\mathbf{x}$. Consider a multilayered perceptron classifier (MLP). An interval $I$ constitutes a sound certification if $\\mathbf{x} \\in I$ and $\\mathbf{x}$ can be freely perturbed in $I$ without changing the MLP's prediction. Complementarily, an interval $I$ constitutes a complete certification if $\\mathbf{x} \\in I$ and when $\\mathbf{x}$ moves outside of $I$ the MLP's prediction is guaranteed to change. While the sound certification problem corresponds to the well-studied adversarial robustness, complete certifications have not been examined in the literature. We develop lattice traversal operators, which we apply in a refine & verify iterative scheme. Using formal MLP verifiers, sound maximality and complete minimality are guaranteed. Moreover, we examine objective optimization pr",
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ],
+    "headline": "Interval Certifications for Multilayered Perceptrons via Lattice Traversal",
+    "summary": "arXiv:2607.08773v1 Announce Type: new Abstract: In this work we present a rigorous theoretical framework to a foundational problem of AI safety, namely adversarial robustness. In particular, we show that the adversarial robustness problem can be reduced to a lattice traversal problem. Each element of this lattice corresponds to an interval, i.e., an axis-aligned hyper-rectangle, containing an input point $\\mathbf{x}$. Consider a multilayered perceptron classifier (MLP). An interval $I$ constitutes a sound certification if $\\mathbf{x} \\in I$ and $\\mathbf{x}$ can be freely perturbed in $I$ without changing the MLP's prediction. Complementarily, an interval $I$ constitutes a complete certification if $\\mathbf{x} \\in I$ and when $\\mathbf{x}$ moves outside of $I$ the MLP's prediction is guaranteed to change. While the sound certification problem corresponds to the well-studied adversarial robustness, complete certifications have not been examined in the literature. We develop lattice traversal operators, which we apply in a refine & verify iterative scheme. Using formal MLP verifiers, sound maximality and complete minimality are guaranteed. Moreover, we examine objective optimization pr"
+  },
+  {
+    "key": "244850225becaa45f7c2419e",
+    "title": "Google\u2019s Marvin Clarifies AI Search and Qualified Future Conversions via @sejournal, @brookeosmundson",
+    "link": "https://www.searchenginejournal.com/googles-marvin-clarifies-ai-search-and-qualified-future-conversions/582185",
+    "summary_raw": "Google's Ginny Marvin explains AI Search eligibility, Qualified Future Conversions, and Creator Partnerships, adding context to key Google Marketing Live announcements. The post Google\u2019s Marvin Clarifies AI Search and Qualified Future Conversions appeared first on Search Engine Journal .",
+    "published": "Mon, 13 Jul 2026 20:46:27 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "Google\u2019s Marvin Clarifies AI Search and Qualified Future Conversions via @sejournal, @brookeosmundson",
+    "summary": "Google's Ginny Marvin explains AI Search eligibility, Qualified Future Conversions, and Creator Partnerships, adding context to key Google Marketing Live announcements. The post Google\u2019s Marvin Clarifies AI Search and Qualified Future Conversions appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "c45d10792ba60232db7ff302",
+    "title": "ChatGPT Access Tied To 9% Drop In Traditional Search via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/chatgpt-access-tied-to-9-drop-in-traditional-search/582167",
+    "summary_raw": "A new research paper compares how often ChatGPT and Google send people to websites, and what wider ChatGPT access did to search. The post ChatGPT Access Tied To 9% Drop In Traditional Search appeared first on Search Engine Journal .",
+    "published": "Mon, 13 Jul 2026 17:54:10 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "ChatGPT Access Tied To 9% Drop In Traditional Search via @sejournal, @MattGSouthern",
+    "summary": "A new research paper compares how often ChatGPT and Google send people to websites, and what wider ChatGPT access did to search. The post ChatGPT Access Tied To 9% Drop In Traditional Search appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "577b5ad422785c4a090643ca",
+    "title": "Google Ads Requires Disclosure For AI-Generated Content via @sejournal, @brookeosmundson",
+    "link": "https://www.searchenginejournal.com/google-ads-requires-disclosure-for-ai-generated-content/581925",
+    "summary_raw": "Google Ads adds AI disclosure labels for third-party creative. Learn how the new transparency requirements affect advertisers and campaign workflows. The post Google Ads Requires Disclosure For AI-Generated Content appeared first on Search Engine Journal .",
+    "published": "Mon, 13 Jul 2026 16:00:35 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "Google Ads Requires Disclosure For AI-Generated Content via @sejournal, @brookeosmundson",
+    "summary": "Google Ads adds AI disclosure labels for third-party creative. Learn how the new transparency requirements affect advertisers and campaign workflows. The post Google Ads Requires Disclosure For AI-Generated Content appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "4bbde73dfe20d8a5998c3683",
+    "title": "State of Security 2026: Application Security",
+    "link": "https://www.itnews.com.au/state-of-security-2026/state-of-security-2026-application-security-625804",
+    "summary_raw": "AI is accelerating software development, creating new challenges for application security to keep up.",
+    "published": "Mon, 13 Jul 2026 09:00:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ],
+    "headline": "State of Security 2026: Application Security",
+    "summary": "AI is accelerating software development, creating new challenges for application security to keep up."
+  },
+  {
+    "key": "b5e8a7e25df0f199b9f3a954",
+    "title": "How Monash University is tackling the AI-driven app security gap",
+    "link": "https://www.itnews.com.au/news/how-monash-university-is-tackling-the-ai-driven-app-security-gap-625805",
+    "summary_raw": "Human connection is key to overcoming AI challenges.",
+    "published": "Mon, 13 Jul 2026 09:00:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ],
+    "headline": "How Monash University is tackling the AI-driven app security gap",
+    "summary": "Human connection is key to overcoming AI challenges."
+  }
+]

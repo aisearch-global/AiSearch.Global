@@ -1,5 +1,60 @@
 [
   {
+    "headline": "Satya Nadella has issued a shocking warning to companies using AI",
+    "link": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai",
+    "date": "2026-07-14"
+  },
+  {
+    "headline": "Apple says former employee exploited \u2018rare\u2019 bug to download confidential files after leaving for OpenAI",
+    "link": "https://techcrunch.com/2026/07/13/apple-says-former-employee-exploited-rare-bug-to-download-confidential-files-after-leaving-for-openai",
+    "date": "2026-07-14"
+  },
+  {
+    "headline": "The wildest allegations in Apple\u2019s trade secrets lawsuit against OpenAI",
+    "link": "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai",
+    "date": "2026-07-14"
+  },
+  {
+    "headline": "What Anthropic\u2019s latest AI discovery does\u2014and doesn\u2019t\u2014show",
+    "link": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show",
+    "date": "2026-07-14"
+  },
+  {
+    "headline": "The Download: a donor conception cap and world models for AI",
+    "link": "https://www.technologyreview.com/2026/07/13/1140339/the-download-sperm-donor-limits-ai-world-models",
+    "date": "2026-07-14"
+  },
+  {
+    "headline": "Interval Certifications for Multilayered Perceptrons via Lattice Traversal",
+    "link": "https://arxiv.org/abs/2607.08773",
+    "date": "2026-07-14"
+  },
+  {
+    "headline": "Google\u2019s Marvin Clarifies AI Search and Qualified Future Conversions via @sejournal, @brookeosmundson",
+    "link": "https://www.searchenginejournal.com/googles-marvin-clarifies-ai-search-and-qualified-future-conversions/582185",
+    "date": "2026-07-14"
+  },
+  {
+    "headline": "ChatGPT Access Tied To 9% Drop In Traditional Search via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/chatgpt-access-tied-to-9-drop-in-traditional-search/582167",
+    "date": "2026-07-14"
+  },
+  {
+    "headline": "Google Ads Requires Disclosure For AI-Generated Content via @sejournal, @brookeosmundson",
+    "link": "https://www.searchenginejournal.com/google-ads-requires-disclosure-for-ai-generated-content/581925",
+    "date": "2026-07-14"
+  },
+  {
+    "headline": "State of Security 2026: Application Security",
+    "link": "https://www.itnews.com.au/state-of-security-2026/state-of-security-2026-application-security-625804",
+    "date": "2026-07-14"
+  },
+  {
+    "headline": "How Monash University is tackling the AI-driven app security gap",
+    "link": "https://www.itnews.com.au/news/how-monash-university-is-tackling-the-ai-driven-app-security-gap-625805",
+    "date": "2026-07-14"
+  },
+  {
     "headline": "TechCrunch Mobility: A robotaxi ultimatum",
     "link": "https://techcrunch.com/2026/07/12/techcrunch-mobility-a-robotaxi-ultimatum",
     "date": "2026-07-13"
@@ -18,60 +73,5 @@
     "headline": "How Deutsche Telekom is rewiring telecommunications with AI",
     "link": "https://openai.com/index/deutsche-telekom",
     "date": "2026-07-13"
-  },
-  {
-    "headline": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
-    "link": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
-    "date": "2026-07-13"
-  },
-  {
-    "headline": "GPT-5.6: Frontier intelligence that scales with your ambition",
-    "link": "https://openai.com/index/gpt-5-6",
-    "date": "2026-07-13"
-  },
-  {
-    "headline": "The WebMCP Tools You Expose To Agents Can Be Used To Hijack Them via @sejournal, @slobodanmanic",
-    "link": "https://www.searchenginejournal.com/the-webmcp-tools-you-expose-to-agents-can-be-used-to-hijack-them/579204",
-    "date": "2026-07-13"
-  },
-  {
-    "headline": "Apple sues OpenAI, two former employees",
-    "link": "https://www.itnews.com.au/news/apple-sues-openai-two-former-employees-627313",
-    "date": "2026-07-13"
-  },
-  {
-    "headline": "Meta scraps AI image feature days after launch",
-    "link": "https://www.itnews.com.au/news/meta-scraps-ai-image-feature-days-after-launch-627312",
-    "date": "2026-07-13"
-  },
-  {
-    "headline": "OpenAI bets on families as ChatGPT goes deeper into households",
-    "link": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households",
-    "date": "2026-07-12"
-  },
-  {
-    "headline": "Meta removes controversial AI feature on Instagram after backlash",
-    "link": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash",
-    "date": "2026-07-12"
-  },
-  {
-    "headline": "OpenAI says GPT 5.6 is the \u2018preferred model\u2019 for Microsoft Copilot 365 amid breakup chatter",
-    "link": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter",
-    "date": "2026-07-12"
-  },
-  {
-    "headline": "Context Graphs for Proactive Enterprise Agents",
-    "link": "https://arxiv.org/abs/2607.07721",
-    "date": "2026-07-12"
-  },
-  {
-    "headline": "AI-integrated models for assessing agricultural resilience",
-    "link": "https://arxiv.org/abs/2607.07759",
-    "date": "2026-07-12"
-  },
-  {
-    "headline": "Adversarial Social Epistemology for Assemblies of Humans and Large Language Models",
-    "link": "https://arxiv.org/abs/2607.07760",
-    "date": "2026-07-12"
   }
 ]

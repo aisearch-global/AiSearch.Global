@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Mon, 13 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 14 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-14</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-14</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +1000</pubDate>
+      <description>11 stories: Satya Nadella has issued a shocking warning to companies using AI · Apple says former employee exploited ‘rare’ bug to download confidential files after leaving for OpenAI · The wildest allegations in Apple’s trade secrets lawsuit against OpenAI · What Anthropic’s latest AI discovery does—and doesn’t—show · The Download: a donor conception cap and world models for AI · Interval Certifications for Multilayered Perceptrons via Lattice Traversal · Google’s Marvin Clarifies AI Search and Qualified Future Conversions via @sejournal, @brookeosmundson · ChatGPT Access Tied To 9% Drop In Traditional Search via @sejournal, @MattGSouthern · Google Ads Requires Disclosure For AI-Generated Content via @sejournal, @brookeosmundson · State of Security 2026: Application Security · How Monash University is tackling the AI-driven app security gap</description>
+    </item>
     <item>
       <title>The Answer Engine — 13 July 2026</title>
       <link>https://aisearch.global/news/2026-07-13</link>
