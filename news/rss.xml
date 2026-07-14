@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 15 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-15</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-15</guid>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +1000</pubDate>
+      <description>12 stories: Apple opens its new Siri AI to everyone with the iOS 27 public beta · Anthropic’s newest ad is creeping people out · The founder of Hinge raised $18M to build a new AI dating service, Overtone · The Download: Claude’s inner workings, and the future of world models · From ML Predictions to Informed Diagnostic Assistance Using the Toulmin Model of Argumentation · Format Sensitivity Index: Token-Controlled Prompt Wrapper Robustness and Schema Compliance in LLM Benchmarking · Google Adds Image Generation To AI Overviews, Revamps Images via @sejournal, @MattGSouthern · Scaled AI Content Often Fails &amp; Google’s Crawl Economics Explain Why via @sejournal, @TaylorDanRW · Surviving The Impression Squeeze: How Agentic Commerce Is Changing Google Ads In 2026 via @sejournal, @siliconvallaeys · IBM warns AI boom squeezing software budgets · Australia to establish government AI office · AI agents are becoming the enterprise&#x27;s most privileged users. And most organisations don&#x27;t know it yet</description>
+    </item>
     <item>
       <title>The Answer Engine — 14 July 2026</title>
       <link>https://aisearch.global/news/2026-07-14</link>
