@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Wed, 15 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 16 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-16</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-16</guid>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +1000</pubDate>
+      <description>10 stories: Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex · Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling · Hack suggests AI music generator Suno scraped YouTube for training data · Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer · Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent · Boltzmann MapReduce: A Partition-Function Reduce for Forkable Sandboxes · ChatGPT Calls Turn Into Leads More Often: Invoca Report via @sejournal, @MattGSouthern · GA4’s AI Assistant Channel Undercounts Your AI Traffic: How To Build One That Doesn’t · Google Revamps Image Search, Adds Generation To AI Overviews via @sejournal, @MattGSouthern · Alinta Energy spins up AI system for executive insights</description>
+    </item>
     <item>
       <title>The Answer Engine — 15 July 2026</title>
       <link>https://aisearch.global/news/2026-07-15</link>

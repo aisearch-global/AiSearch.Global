@@ -1,0 +1,134 @@
+[
+  {
+    "key": "41806ca93ee63cad16106daa",
+    "title": "Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex",
+    "link": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex",
+    "summary_raw": "OpenAI, which is in the middle of a legal battle with Apple over hardware trade theft allegations, just released a light-up keyboard designed to be paired with its agentic coding app.",
+    "published": "Wed, 15 Jul 2026 19:41:38 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex",
+    "summary": "OpenAI, which is in the middle of a legal battle with Apple over hardware trade theft allegations, just released a light-up keyboard designed to be paired with its agentic coding app."
+  },
+  {
+    "key": "c47690043694880a6e7ab1d8",
+    "title": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
+    "link": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling",
+    "summary_raw": "It's the company's first public proof point after a year and a half spent building AI infrastructure largely out of public view.",
+    "published": "Wed, 15 Jul 2026 18:04:06 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
+    "summary": "It's the company's first public proof point after a year and a half spent building AI infrastructure largely out of public view."
+  },
+  {
+    "key": "66ff39f96d19cb97127734f0",
+    "title": "Hack suggests AI music generator Suno scraped YouTube for training data",
+    "link": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data",
+    "summary_raw": "The hacker used an employee's credentials to access source code, which revealed how Suno scraped decades of audio.",
+    "published": "Wed, 15 Jul 2026 17:00:34 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Hack suggests AI music generator Suno scraped YouTube for training data",
+    "summary": "The hacker used an employee's credentials to access source code, which revealed how Suno scraped decades of audio."
+  },
+  {
+    "key": "2e7b91ccc48fa7448e7a9d09",
+    "title": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
+    "link": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer",
+    "summary_raw": "OpenAI has built an LLM super-hacker called GPT-Red that it uses as a sparring partner to help its other models boost their defenses against cyberattacks. Last week the company released the latest version of its flagship LLM, GPT-5.6. OpenAI says that training it against GPT-Red made the model its most robust release yet. GPT-Red automates\u2026",
+    "published": "Wed, 15 Jul 2026 17:09:37 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ],
+    "headline": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
+    "summary": "OpenAI has built an LLM super-hacker called GPT-Red that it uses as a sparring partner to help its other models boost their defenses against cyberattacks. Last week the company released the latest version of its flagship LLM, GPT-5.6. OpenAI says that training it against GPT-Red made the model its most robust release yet. GPT-Red automates\u2026"
+  },
+  {
+    "key": "4dd1840e97e39a61931692f9",
+    "title": "Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent",
+    "link": "https://arxiv.org/abs/2607.09678",
+    "summary_raw": "arXiv:2607.09678v1 Announce Type: new Abstract: When LLM agents hand off information to one another, does the message format matter? Two literatures disagree: format-optimization work reports that structured messages cut cost without hurting accuracy, while format-restriction work finds that imposing structure degrades generation -- and neither measures what happens when a message traverses multiple hops, where copy fidelity, not one-shot generation, dominates. We introduce a controlled relay testbed: briefs of twelve programmatically generated atomic facts are re-encoded hop-by-hop in five formats (free NL, precision-instructed NL, JSON, triples, key-value) over six hops, scored by a fixed strong grader against programmatic ground truth, across two relay-capability tiers, a cognitive-load condition, and a paired-fork error injection. We find that message-format effects are tier-dependent. (i) Under faithful-relay instructions a strong relay is nearly lossless -- the documented \"telephone-game\" collapse does not occur -- and adding per-hop cognitive load leaves format-level fidelity unchanged (within +/-1.8 points) while raising generation cost by 24-53%. (ii) Under a weak (1.5B) r",
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ],
+    "headline": "Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent",
+    "summary": "arXiv:2607.09678v1 Announce Type: new Abstract: When LLM agents hand off information to one another, does the message format matter? Two literatures disagree: format-optimization work reports that structured messages cut cost without hurting accuracy, while format-restriction work finds that imposing structure degrades generation -- and neither measures what happens when a message traverses multiple hops, where copy fidelity, not one-shot generation, dominates. We introduce a controlled relay testbed: briefs of twelve programmatically generated atomic facts are re-encoded hop-by-hop in five formats (free NL, precision-instructed NL, JSON, triples, key-value) over six hops, scored by a fixed strong grader against programmatic ground truth, across two relay-capability tiers, a cognitive-load condition, and a paired-fork error injection. We find that message-format effects are tier-dependent. (i) Under faithful-relay instructions a strong relay is nearly lossless -- the documented \"telephone-game\" collapse does not occur -- and adding per-hop cognitive load leaves format-level fidelity unchanged (within +/-1.8 points) while raising generation cost by 24-53%. (ii) Under a weak (1.5B) r"
+  },
+  {
+    "key": "a8384b5abea5ff6b4587fe41",
+    "title": "Boltzmann MapReduce: A Partition-Function Reduce for Forkable Sandboxes",
+    "link": "https://arxiv.org/abs/2607.09689",
+    "summary_raw": "arXiv:2607.09689v1 Announce Type: new Abstract: To leading order under local asymptotic normality (LAN), the confidence density a worker emits over a chunk of size $n$ is a Gibbs--Boltzmann measure $\\exp\\{-\\beta E(\\theta)\\}$ whose inverse temperature is the sample size, $\\beta=n$. Three consequences are exact in the Gaussian/linear case and first-order otherwise: disjoint chunks carry independent Boltzmann factors, so the MapReduce \\emph{reduce}, read literally, is a partition function $Z=\\int\\prod_k h_k\\,d\\theta$ whose mode is precision-weighted (inverse-variance) pooling; frequentist consistency is the zero-temperature limit $T=1/n\\to0$",
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ],
+    "headline": "Boltzmann MapReduce: A Partition-Function Reduce for Forkable Sandboxes",
+    "summary": "arXiv:2607.09689v1 Announce Type: new Abstract: To leading order under local asymptotic normality (LAN), the confidence density a worker emits over a chunk of size $n$ is a Gibbs--Boltzmann measure $\\exp\\{-\\beta E(\\theta)\\}$ whose inverse temperature is the sample size, $\\beta=n$. Three consequences are exact in the Gaussian/linear case and first-order otherwise: disjoint chunks carry independent Boltzmann factors, so the MapReduce \\emph{reduce}, read literally, is a partition function $Z=\\int\\prod_k h_k\\,d\\theta$ whose mode is precision-weighted (inverse-variance) pooling; frequentist consistency is the zero-temperature limit $T=1/n\\to0$"
+  },
+  {
+    "key": "222fe20abe58cec99f4af049",
+    "title": "ChatGPT Calls Turn Into Leads More Often: Invoca Report via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/chatgpt-calls-turn-into-leads-more-often-invoca-report/582400",
+    "summary_raw": "Phone call data breaks out AI referrals for the first time. Calls from ChatGPT become leads more often than any other channel, but convert average. The post ChatGPT Calls Turn Into Leads More Often: Invoca Report appeared first on Search Engine Journal .",
+    "published": "Wed, 15 Jul 2026 17:50:16 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "ChatGPT Calls Turn Into Leads More Often: Invoca Report via @sejournal, @MattGSouthern",
+    "summary": "Phone call data breaks out AI referrals for the first time. Calls from ChatGPT become leads more often than any other channel, but convert average. The post ChatGPT Calls Turn Into Leads More Often: Invoca Report appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "708c731eb2bcca3635671bfe",
+    "title": "GA4\u2019s AI Assistant Channel Undercounts Your AI Traffic: How To Build One That Doesn\u2019t",
+    "link": "https://www.searchenginejournal.com/ga4s-ai-assistant-channel-undercounts-your-ai-traffic-how-to-build-one-that-doesnt/580133",
+    "summary_raw": "GA4's AI Assistant channel fragments traffic from a single source into three separate channels, making your AI referral numbers quietly wrong. The post GA4\u2019s AI Assistant Channel Undercounts Your AI Traffic: How To Build One That Doesn\u2019t appeared first on Search Engine Journal .",
+    "published": "Wed, 15 Jul 2026 11:30:27 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "GA4\u2019s AI Assistant Channel Undercounts Your AI Traffic: How To Build One That Doesn\u2019t",
+    "summary": "GA4's AI Assistant channel fragments traffic from a single source into three separate channels, making your AI referral numbers quietly wrong. The post GA4\u2019s AI Assistant Channel Undercounts Your AI Traffic: How To Build One That Doesn\u2019t appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "dcfa80b7d638233bc49bd4da",
+    "title": "Google Revamps Image Search, Adds Generation To AI Overviews via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/google-adds-image-generation-to-ai-overviews-revamps-images/582242",
+    "summary_raw": "Google is adding AI image generation to AI Overviews and rolling out a redesigned Google Images homepage. Both start rolling out over the coming weeks. The post Google Revamps Image Search, Adds Generation To AI Overviews appeared first on Search Engine Journal .",
+    "published": "Tue, 14 Jul 2026 16:00:40 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "Google Revamps Image Search, Adds Generation To AI Overviews via @sejournal, @MattGSouthern",
+    "summary": "Google is adding AI image generation to AI Overviews and rolling out a redesigned Google Images homepage. Both start rolling out over the coming weeks. The post Google Revamps Image Search, Adds Generation To AI Overviews appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "316048a310891bb8c713c226",
+    "title": "Alinta Energy spins up AI system for executive insights",
+    "link": "https://www.itnews.com.au/news/alinta-energy-spins-up-ai-system-for-executive-insights-627066",
+    "summary_raw": "Confidence score determines how to utilise outputs.",
+    "published": "Thu, 16 Jul 2026 06:26:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ],
+    "headline": "Alinta Energy spins up AI system for executive insights",
+    "summary": "Confidence score determines how to utilise outputs."
+  }
+]

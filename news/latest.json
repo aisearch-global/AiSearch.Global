@@ -1,5 +1,55 @@
 [
   {
+    "headline": "Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex",
+    "link": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex",
+    "date": "2026-07-16"
+  },
+  {
+    "headline": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
+    "link": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling",
+    "date": "2026-07-16"
+  },
+  {
+    "headline": "Hack suggests AI music generator Suno scraped YouTube for training data",
+    "link": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data",
+    "date": "2026-07-16"
+  },
+  {
+    "headline": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
+    "link": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer",
+    "date": "2026-07-16"
+  },
+  {
+    "headline": "Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent",
+    "link": "https://arxiv.org/abs/2607.09678",
+    "date": "2026-07-16"
+  },
+  {
+    "headline": "Boltzmann MapReduce: A Partition-Function Reduce for Forkable Sandboxes",
+    "link": "https://arxiv.org/abs/2607.09689",
+    "date": "2026-07-16"
+  },
+  {
+    "headline": "ChatGPT Calls Turn Into Leads More Often: Invoca Report via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/chatgpt-calls-turn-into-leads-more-often-invoca-report/582400",
+    "date": "2026-07-16"
+  },
+  {
+    "headline": "GA4\u2019s AI Assistant Channel Undercounts Your AI Traffic: How To Build One That Doesn\u2019t",
+    "link": "https://www.searchenginejournal.com/ga4s-ai-assistant-channel-undercounts-your-ai-traffic-how-to-build-one-that-doesnt/580133",
+    "date": "2026-07-16"
+  },
+  {
+    "headline": "Google Revamps Image Search, Adds Generation To AI Overviews via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/google-adds-image-generation-to-ai-overviews-revamps-images/582242",
+    "date": "2026-07-16"
+  },
+  {
+    "headline": "Alinta Energy spins up AI system for executive insights",
+    "link": "https://www.itnews.com.au/news/alinta-energy-spins-up-ai-system-for-executive-insights-627066",
+    "date": "2026-07-16"
+  },
+  {
     "headline": "Apple opens its new Siri AI to everyone with the iOS 27 public beta",
     "link": "https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta",
     "date": "2026-07-15"
@@ -23,55 +73,5 @@
     "headline": "From ML Predictions to Informed Diagnostic Assistance Using the Toulmin Model of Argumentation",
     "link": "https://arxiv.org/abs/2607.09664",
     "date": "2026-07-15"
-  },
-  {
-    "headline": "Format Sensitivity Index: Token-Controlled Prompt Wrapper Robustness and Schema Compliance in LLM Benchmarking",
-    "link": "https://arxiv.org/abs/2607.09665",
-    "date": "2026-07-15"
-  },
-  {
-    "headline": "Google Adds Image Generation To AI Overviews, Revamps Images via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/google-adds-image-generation-to-ai-overviews-revamps-images/582242",
-    "date": "2026-07-15"
-  },
-  {
-    "headline": "Scaled AI Content Often Fails & Google\u2019s Crawl Economics Explain Why via @sejournal, @TaylorDanRW",
-    "link": "https://www.searchenginejournal.com/scaled-ai-content-often-fails-googles-crawl-economics-explain-why/581325",
-    "date": "2026-07-15"
-  },
-  {
-    "headline": "Surviving The Impression Squeeze: How Agentic Commerce Is Changing Google Ads In 2026 via @sejournal, @siliconvallaeys",
-    "link": "https://www.searchenginejournal.com/surviving-the-impression-squeeze-how-agentic-commerce-is-changing-google-ads-in-2026/579939",
-    "date": "2026-07-15"
-  },
-  {
-    "headline": "IBM warns AI boom squeezing software budgets",
-    "link": "https://www.itnews.com.au/news/ibm-warns-ai-boom-squeezing-software-budgets-627370",
-    "date": "2026-07-15"
-  },
-  {
-    "headline": "Australia to establish government AI office",
-    "link": "https://www.itnews.com.au/news/australia-to-establish-government-ai-office-627371",
-    "date": "2026-07-15"
-  },
-  {
-    "headline": "AI agents are becoming the enterprise's most privileged users. And most organisations don't know it yet",
-    "link": "https://www.itnews.com.au/feature/ai-agents-are-becoming-the-enterprises-most-privileged-users-and-most-organisations-dont-know-it-yet-627324",
-    "date": "2026-07-15"
-  },
-  {
-    "headline": "Satya Nadella has issued a shocking warning to companies using AI",
-    "link": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai",
-    "date": "2026-07-14"
-  },
-  {
-    "headline": "Apple says former employee exploited \u2018rare\u2019 bug to download confidential files after leaving for OpenAI",
-    "link": "https://techcrunch.com/2026/07/13/apple-says-former-employee-exploited-rare-bug-to-download-confidential-files-after-leaving-for-openai",
-    "date": "2026-07-14"
-  },
-  {
-    "headline": "The wildest allegations in Apple\u2019s trade secrets lawsuit against OpenAI",
-    "link": "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai",
-    "date": "2026-07-14"
   }
 ]
