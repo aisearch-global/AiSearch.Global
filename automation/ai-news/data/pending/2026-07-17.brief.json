@@ -1,0 +1,134 @@
+[
+  {
+    "key": "660e3fcc7a94a28030d1e098",
+    "title": "Founders Fund hires former OpenAI exec Ryan Beiermeister (and not because of her \u2018Mafia\u2019 skills)",
+    "link": "https://techcrunch.com/2026/07/16/founders-fund-hires-former-openai-exec-ryan-beiermeister-and-not-because-of-her-mafia-skills",
+    "summary_raw": "Ryan Beiermeister, who demonstrated cool analysis in the Founders Fund YouTube series \"Mafia,\" has joined the firm as a partner.",
+    "published": "Thu, 16 Jul 2026 20:07:14 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Founders Fund hires former OpenAI exec Ryan Beiermeister (and not because of her \u2018Mafia\u2019 skills)",
+    "summary": "Ryan Beiermeister, who demonstrated cool analysis in the Founders Fund YouTube series \"Mafia,\" has joined the firm as a partner."
+  },
+  {
+    "key": "b8308a992d46d4a483270f0d",
+    "title": "Google Vids now lets you star in your own AI videos",
+    "link": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos",
+    "summary_raw": "Google is adding personalized AI avatars to Vids that let users create videos starring a digital version of themselves, alongside Gemini Omni-powered tools for generating and editing videos from prompts and reference images.",
+    "published": "Thu, 16 Jul 2026 18:32:54 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Google Vids now lets you star in your own AI videos",
+    "summary": "Google is adding personalized AI avatars to Vids that let users create videos starring a digital version of themselves, alongside Gemini Omni-powered tools for generating and editing videos from prompts and reference images."
+  },
+  {
+    "key": "3f684fce73fdac011f880e71",
+    "title": "Newsletter platform Beehiiv now lets subscribers chat with each other, adds AI",
+    "link": "https://techcrunch.com/2026/07/16/newsletter-platform-beehiiv-now-lets-subscribers-chat-with-each-other-adds-ai",
+    "summary_raw": "Beehiiv is launching an AI Copilot to help publishers with user growth and analytics.",
+    "published": "Thu, 16 Jul 2026 17:00:00 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Newsletter platform Beehiiv now lets subscribers chat with each other, adds AI",
+    "summary": "Beehiiv is launching an AI Copilot to help publishers with user growth and analytics."
+  },
+  {
+    "key": "32f1eb0092ccf3fbae186985",
+    "title": "The Download: OpenAI unveils GPT-Red and heat pumps rise in the US",
+    "link": "https://www.technologyreview.com/2026/07/16/1140600/the-download-openai-unveils-gpt-red-heat-pumps-rise-us",
+    "summary_raw": "This is today\u2019s edition of The Download, our weekday newsletter that provides a daily dose of what\u2019s going on in the world of technology. Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer OpenAI has built an LLM super-hacker called GPT-Red that it uses as a sparring partner to help its other\u2026",
+    "published": "Thu, 16 Jul 2026 12:10:00 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ],
+    "headline": "The Download: OpenAI unveils GPT-Red and heat pumps rise in the US",
+    "summary": "This is today\u2019s edition of The Download, our weekday newsletter that provides a daily dose of what\u2019s going on in the world of technology. Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer OpenAI has built an LLM super-hacker called GPT-Red that it uses as a sparring partner to help its other\u2026"
+  },
+  {
+    "key": "983d3a3ac663d8b3065e3778",
+    "title": "OriginBlame: Record- and Token-Level Data Provenance for AI Training Datasets",
+    "link": "https://arxiv.org/abs/2607.13037",
+    "summary_raw": "arXiv:2607.13037v1 Announce Type: new Abstract: When a data contributor requests removal, model trainers face a practical gap: unlearning algorithms require a forget set, yet no tool can locate which training records belong to a given author. Existing provenance systems operate at file or dataset level, forcing catastrophic over-deletion. We present ob, a record- and token-level data provenance system that propagates author identity through data processing pipelines and resolves revocation requests into precise forget sets via deterministic queries. Evaluation on 219,555 Wikipedia pages demonstrates that record-level provenance eliminates dataset-level over-deletion (from 101x to 1.3x), while integration adds 1.3-4.0% throughput overhead (HuggingFace) and 2.1-19.0% (Datatrove) on wiki data. On a 1.7B model, provenance-based forget sets improve unlearning by 42% over random baselines.",
+    "published": "Thu, 16 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ],
+    "headline": "OriginBlame: Record- and Token-Level Data Provenance for AI Training Datasets",
+    "summary": "arXiv:2607.13037v1 Announce Type: new Abstract: When a data contributor requests removal, model trainers face a practical gap: unlearning algorithms require a forget set, yet no tool can locate which training records belong to a given author. Existing provenance systems operate at file or dataset level, forcing catastrophic over-deletion. We present ob, a record- and token-level data provenance system that propagates author identity through data processing pipelines and resolves revocation requests into precise forget sets via deterministic queries. Evaluation on 219,555 Wikipedia pages demonstrates that record-level provenance eliminates dataset-level over-deletion (from 101x to 1.3x), while integration adds 1.3-4.0% throughput overhead (HuggingFace) and 2.1-19.0% (Datatrove) on wiki data. On a 1.7B model, provenance-based forget sets improve unlearning by 42% over random baselines."
+  },
+  {
+    "key": "849e10af2db814245738db51",
+    "title": "SPINE: Bridging the Cyber-Physical Gap with Agentic AI",
+    "link": "https://arxiv.org/abs/2607.13049",
+    "summary_raw": "arXiv:2607.13049v1 Announce Type: new Abstract: Foundation models have given robots a sophisticated brain for complex decision-making, yet deploying that intelligence into a physical platform still demands tedious, expert-driven calibration. This deployment gap, the robot's spinal cord, remains a primary bottleneck to scalable Embodied AI. Hence, we propose SPINE (Scalable Physical Integration with ageNtic Expertise): an agentic framework for systematically debugging and deploying bimanual robots with minimal robotics expertise. SPINE's harness comprises two orchestrated multi-agent workflows: a profile builder that creates robot-specific context, and a debugger that cycles through diagnosis, repair, and validation until teleoperation works. Across seven DOBOT X-Trainer debugging scenarios, a robotics novice using SPINE outperformed human operators using Claude Code with the same reference materials, but without SPINE's structured workflow, improving operationalization success from 75% to 100% and reducing mean time-to-teleoperation from 16 min 45 s to 13 min 47 s. On AgileX PiPER, a distinct ROS/CAN bimanual arm, SPINE resolved all 10 implanted bugs, versus 9 out of 10 for the exp",
+    "published": "Thu, 16 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ],
+    "headline": "SPINE: Bridging the Cyber-Physical Gap with Agentic AI",
+    "summary": "arXiv:2607.13049v1 Announce Type: new Abstract: Foundation models have given robots a sophisticated brain for complex decision-making, yet deploying that intelligence into a physical platform still demands tedious, expert-driven calibration. This deployment gap, the robot's spinal cord, remains a primary bottleneck to scalable Embodied AI. Hence, we propose SPINE (Scalable Physical Integration with ageNtic Expertise): an agentic framework for systematically debugging and deploying bimanual robots with minimal robotics expertise. SPINE's harness comprises two orchestrated multi-agent workflows: a profile builder that creates robot-specific context, and a debugger that cycles through diagnosis, repair, and validation until teleoperation works. Across seven DOBOT X-Trainer debugging scenarios, a robotics novice using SPINE outperformed human operators using Claude Code with the same reference materials, but without SPINE's structured workflow, improving operationalization success from 75% to 100% and reducing mean time-to-teleoperation from 16 min 45 s to 13 min 47 s. On AgileX PiPER, a distinct ROS/CAN bimanual arm, SPINE resolved all 10 implanted bugs, versus 9 out of 10 for the exp"
+  },
+  {
+    "key": "be0265fe39ae3ea68affde88",
+    "title": "Google Starts Rolling Out Connected Apps In AI Mode Search via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/google-starts-rolling-out-connected-apps-in-ai-mode-search/582545",
+    "summary_raw": "Google is starting to roll out connected apps in AI Mode, so you can send tasks to services like Canva from a search. The post Google Starts Rolling Out Connected Apps In AI Mode Search appeared first on Search Engine Journal .",
+    "published": "Thu, 16 Jul 2026 16:00:53 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "Google Starts Rolling Out Connected Apps In AI Mode Search via @sejournal, @MattGSouthern",
+    "summary": "Google is starting to roll out connected apps in AI Mode, so you can send tasks to services like Canva from a search. The post Google Starts Rolling Out Connected Apps In AI Mode Search appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "5aacf63468b68562ab875623",
+    "title": "Do The Answer Engines Keep Your Fingerprint, Or Do They Start Fresh Every Time? via @sejournal, @DuaneForrester",
+    "link": "https://www.searchenginejournal.com/do-the-answer-engines-keep-your-fingerprint-or-do-they-start-fresh-every-time/582124",
+    "summary_raw": "The fingerprint you pressed into Google's ranking systems now feeds the AI answers on top of them. Here's where it persists and goes dark. The post Do The Answer Engines Keep Your Fingerprint, Or Do They Start Fresh Every Time? appeared first on Search Engine Journal .",
+    "published": "Thu, 16 Jul 2026 13:30:01 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "Do The Answer Engines Keep Your Fingerprint, Or Do They Start Fresh Every Time? via @sejournal, @DuaneForrester",
+    "summary": "The fingerprint you pressed into Google's ranking systems now feeds the AI answers on top of them. Here's where it persists and goes dark. The post Do The Answer Engines Keep Your Fingerprint, Or Do They Start Fresh Every Time? appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "3d35ac87be958b50669593fc",
+    "title": "AI SEO: Writing That\u2019s Specific May Get Cited More via @sejournal, @martinibuster",
+    "link": "https://www.searchenginejournal.com/ai-seo-writing-thats-specific-may-get-cited-more/582531",
+    "summary_raw": "AI SEO that prioritizes content that is specific may be a key to getting cited by AI search engines. The post AI SEO: Writing That\u2019s Specific May Get Cited More appeared first on Search Engine Journal .",
+    "published": "Thu, 16 Jul 2026 11:03:01 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "AI SEO: Writing That\u2019s Specific May Get Cited More via @sejournal, @martinibuster",
+    "summary": "AI SEO that prioritizes content that is specific may be a key to getting cited by AI search engines. The post AI SEO: Writing That\u2019s Specific May Get Cited More appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "f3feb186653c61f01d894c7e",
+    "title": "Colonial First State names data and AI group executive",
+    "link": "https://www.itnews.com.au/news/colonial-first-state-names-data-and-ai-group-executive-627419",
+    "summary_raw": "Brings in ex-Smartgroup, Suncorp AI leader.",
+    "published": "Fri, 17 Jul 2026 06:30:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ],
+    "headline": "Colonial First State names data and AI group executive",
+    "summary": "Brings in ex-Smartgroup, Suncorp AI leader."
+  }
+]

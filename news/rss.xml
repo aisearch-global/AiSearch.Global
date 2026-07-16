@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Thu, 16 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 17 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-17</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-17</guid>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +1000</pubDate>
+      <description>10 stories: Founders Fund hires former OpenAI exec Ryan Beiermeister (and not because of her ‘Mafia’ skills) · Google Vids now lets you star in your own AI videos · Newsletter platform Beehiiv now lets subscribers chat with each other, adds AI · The Download: OpenAI unveils GPT-Red and heat pumps rise in the US · OriginBlame: Record- and Token-Level Data Provenance for AI Training Datasets · SPINE: Bridging the Cyber-Physical Gap with Agentic AI · Google Starts Rolling Out Connected Apps In AI Mode Search via @sejournal, @MattGSouthern · Do The Answer Engines Keep Your Fingerprint, Or Do They Start Fresh Every Time? via @sejournal, @DuaneForrester · AI SEO: Writing That’s Specific May Get Cited More via @sejournal, @martinibuster · Colonial First State names data and AI group executive</description>
+    </item>
     <item>
       <title>The Answer Engine — 16 July 2026</title>
       <link>https://aisearch.global/news/2026-07-16</link>
