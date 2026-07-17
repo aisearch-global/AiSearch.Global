@@ -1,0 +1,120 @@
+[
+  {
+    "key": "4afb56075b1f1b2a4a5e070e",
+    "title": "AI-driven memory crunch jolts India\u2019s smartphone market",
+    "link": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market",
+    "summary_raw": "India's smartphone slowdown highlights how the AI boom is reshaping consumer electronics, from pricing and demand to corporate strategy.",
+    "published": "Fri, 17 Jul 2026 20:09:27 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "AI-driven memory crunch jolts India\u2019s smartphone market",
+    "summary": "India's smartphone slowdown highlights how the AI boom is reshaping consumer electronics, from pricing and demand to corporate strategy."
+  },
+  {
+    "key": "b180f2364f70385c4297a7dd",
+    "title": "How Apple\u2019s big lawsuit could disrupt OpenAI\u2019s IPO plans",
+    "link": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans",
+    "summary_raw": "Apple filed a trade secrets lawsuit against OpenAI last Friday, and it\u2019s not messing around. The complaint alleges a pattern of misconduct reaching all the way up to OpenAI\u2019s chief hardware officer and claims more than 400 former Apple employees now work at the company. OpenAI\u2019s response so far has been carefully hedged, and the timing couldn\u2019t be worse with the company reportedly eyeing an IPO [\u2026]",
+    "published": "Fri, 17 Jul 2026 17:45:46 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "How Apple\u2019s big lawsuit could disrupt OpenAI\u2019s IPO plans",
+    "summary": "Apple filed a trade secrets lawsuit against OpenAI last Friday, and it\u2019s not messing around. The complaint alleges a pattern of misconduct reaching all the way up to OpenAI\u2019s chief hardware officer and claims more than 400 former Apple employees now work at the company. OpenAI\u2019s response so far has been carefully hedged, and the timing couldn\u2019t be worse with the company reportedly eyeing an IPO [\u2026]"
+  },
+  {
+    "key": "391b1b6cf5e49287171a0774",
+    "title": "Patreon stops asking AI bots not to scrape \u2014 and starts blocking them",
+    "link": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them",
+    "summary_raw": "Patreon is strengthening its defenses against AI scraping by working with Cloudflare to block bots that train AI models on creators\u2019 content without permission. The move marks a shift away from relying on websites using robots.txt alone to actively block unauthorized AI training.",
+    "published": "Fri, 17 Jul 2026 15:21:17 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Patreon stops asking AI bots not to scrape \u2014 and starts blocking them",
+    "summary": "Patreon is strengthening its defenses against AI scraping by working with Cloudflare to block bots that train AI models on creators\u2019 content without permission. The move marks a shift away from relying on websites using robots.txt alone to actively block unauthorized AI training."
+  },
+  {
+    "key": "e0df1905ee78f313ac656599",
+    "title": "The Download: perimenopause misinformation and China\u2019s latest AI leap",
+    "link": "https://www.technologyreview.com/2026/07/17/1140640/the-download-perimenopause-misinformation-china-moonshot-ai",
+    "summary_raw": "This is today\u2019s edition of The Download, our weekday newsletter that provides a daily dose of what\u2019s going on in the world of technology. There\u2019s a lot of hype around perimenopause. Don\u2019t buy it. Perimenopause used to be considered taboo, but not anymore. Thanks at least in part to TV doctors and social media influencers,\u2026",
+    "published": "Fri, 17 Jul 2026 12:10:00 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ],
+    "headline": "The Download: perimenopause misinformation and China\u2019s latest AI leap",
+    "summary": "This is today\u2019s edition of The Download, our weekday newsletter that provides a daily dose of what\u2019s going on in the world of technology. There\u2019s a lot of hype around perimenopause. Don\u2019t buy it. Perimenopause used to be considered taboo, but not anymore. Thanks at least in part to TV doctors and social media influencers,\u2026"
+  },
+  {
+    "key": "c3e0b4c73785fbee6455b0ee",
+    "title": "Interventional Grounding Audits: Black-Box Premise-Dependency Tests for LLM Chain-of-Thought via Predicate Substitution",
+    "link": "https://arxiv.org/abs/2607.13069",
+    "summary_raw": "arXiv:2607.13069v1 Announce Type: new Abstract: Large language models produce chain-of-thought (CoT) reasoning that appears logically sound yet may not genuinely depend on its stated premises. We introduce interventional grounding audits, a black-box, step-level test of premise dependency: we intervene on a single premise by substituting its target predicate with a fresh symbol, re-run the model, and check whether each reasoning step's normalized conclusion (canonical predicate form) changes. We evaluate on ProntoQA, a synthetic multi-hop deductive reasoning benchmark with gold proof trees, where step-level premise dependencies are known. Applied to 50 ProntoQA problems with GPT-4o, our method achieves F1 = 0.806 on detecting proof-tree dependencies (F1 = 0.885 on predicate-determining dependencies; Recall = 100%), significantly outperforming a self-consistency baseline (F1 = 0.343; 95% bootstrap CIs non-overlapping). We further identify that 66% of correctly-solved problems contain at least one aligned step insensitive to a direct proof-tree dependency under consistent substitution -- all involving entity-introduction premises, a documented blind spot of the consistent-substitutio",
+    "published": "Fri, 17 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ],
+    "headline": "Interventional Grounding Audits: Black-Box Premise-Dependency Tests for LLM Chain-of-Thought via Predicate Substitution",
+    "summary": "arXiv:2607.13069v1 Announce Type: new Abstract: Large language models produce chain-of-thought (CoT) reasoning that appears logically sound yet may not genuinely depend on its stated premises. We introduce interventional grounding audits, a black-box, step-level test of premise dependency: we intervene on a single premise by substituting its target predicate with a fresh symbol, re-run the model, and check whether each reasoning step's normalized conclusion (canonical predicate form) changes. We evaluate on ProntoQA, a synthetic multi-hop deductive reasoning benchmark with gold proof trees, where step-level premise dependencies are known. Applied to 50 ProntoQA problems with GPT-4o, our method achieves F1 = 0.806 on detecting proof-tree dependencies (F1 = 0.885 on predicate-determining dependencies; Recall = 100%), significantly outperforming a self-consistency baseline (F1 = 0.343; 95% bootstrap CIs non-overlapping). We further identify that 66% of correctly-solved problems contain at least one aligned step insensitive to a direct proof-tree dependency under consistent substitution -- all involving entity-introduction premises, a documented blind spot of the consistent-substitutio"
+  },
+  {
+    "key": "a11d49bdc23db8d3b73649a9",
+    "title": "Probabilistic Extension of Neuro-Symbolic AGI Robots based on Belnap's Typed Intensional FOL",
+    "link": "https://arxiv.org/abs/2607.13073",
+    "summary_raw": "arXiv:2607.13073v1 Announce Type: new Abstract: Neuro-symbolic AI based on $IFOL_B$ is a way to combine neural learning and symbolic reasoning to overcome limitations of purely neural systems (like lack of interpretability and logical structure) with formal logical machinery for self-reference. In this paper we expand the cognitive power of $IFOL_B$ by using the probability computation for the currently unknown sentences, based on Nilsson's probability structure for the $IFOL_B$. We introduce the global symmetry transformation that preserves the current knowledge database and logical deduction, and the local one used for real-time decisions about concrete (sub)problems that involve only a very strict subset of $IFOL_B$ predicates. The computation of probability density function $KI$ in both cases, based on the Shannon's maximum information entropy, is provided by neural networks of this probabilistic neuro-symbolic AGI.",
+    "published": "Fri, 17 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ],
+    "headline": "Probabilistic Extension of Neuro-Symbolic AGI Robots based on Belnap's Typed Intensional FOL",
+    "summary": "arXiv:2607.13073v1 Announce Type: new Abstract: Neuro-symbolic AI based on $IFOL_B$ is a way to combine neural learning and symbolic reasoning to overcome limitations of purely neural systems (like lack of interpretability and logical structure) with formal logical machinery for self-reference. In this paper we expand the cognitive power of $IFOL_B$ by using the probability computation for the currently unknown sentences, based on Nilsson's probability structure for the $IFOL_B$. We introduce the global symmetry transformation that preserves the current knowledge database and logical deduction, and the local one used for real-time decisions about concrete (sub)problems that involve only a very strict subset of $IFOL_B$ predicates. The computation of probability density function $KI$ in both cases, based on the Shannon's maximum information entropy, is provided by neural networks of this probabilistic neuro-symbolic AGI."
+  },
+  {
+    "key": "2ee88b607fd3b9077cd7099b",
+    "title": "Google Faces Class Action Over Books Used To Train Gemini via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/google-faces-class-action-over-books-used-to-train-gemini/582708",
+    "summary_raw": "Publishers allege works supplied to Google Books, Play Books and Scholar were used to train Gemini without permission. No court has ruled on the claims. The post Google Faces Class Action Over Books Used To Train Gemini appeared first on Search Engine Journal .",
+    "published": "Fri, 17 Jul 2026 19:51:57 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "Google Faces Class Action Over Books Used To Train Gemini via @sejournal, @MattGSouthern",
+    "summary": "Publishers allege works supplied to Google Books, Play Books and Scholar were used to train Gemini without permission. No court has ruled on the claims. The post Google Faces Class Action Over Books Used To Train Gemini appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "0155075e71f6b6575d620de8",
+    "title": "Gemini 3.5 Pro Delayed Over Coding, Bloomberg Reports via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/gemini-3-5-pro-delayed-over-coding-bloomberg-reports/582660",
+    "summary_raw": "Google said it expected Gemini 3.5 Pro to roll out by now. It hasn't shipped, and Bloomberg reports coding is part the delay. The post Gemini 3.5 Pro Delayed Over Coding, Bloomberg Reports appeared first on Search Engine Journal .",
+    "published": "Thu, 16 Jul 2026 22:44:17 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "Gemini 3.5 Pro Delayed Over Coding, Bloomberg Reports via @sejournal, @MattGSouthern",
+    "summary": "Google said it expected Gemini 3.5 Pro to roll out by now. It hasn't shipped, and Bloomberg reports coding is part the delay. The post Gemini 3.5 Pro Delayed Over Coding, Bloomberg Reports appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "7f0662f059c924c5d44a9c91",
+    "title": "AI Search Cites Reddit: 5 Proven Plays To Boost Multi-Location Visibility via @sejournal, @lorenbaker",
+    "link": "https://www.searchenginejournal.com/ai-search-cites-reddit-5-proven-plays-to-boost-multi-location-visibility-recap/582568",
+    "summary_raw": "Learn why Reddit is essential for AI citation strategies. Discover how it impacts search visibility and business recommendations. The post AI Search Cites Reddit: 5 Proven Plays To Boost Multi-Location Visibility appeared first on Search Engine Journal .",
+    "published": "Thu, 16 Jul 2026 21:23:43 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "AI Search Cites Reddit: 5 Proven Plays To Boost Multi-Location Visibility via @sejournal, @lorenbaker",
+    "summary": "Learn why Reddit is essential for AI citation strategies. Discover how it impacts search visibility and business recommendations. The post AI Search Cites Reddit: 5 Proven Plays To Boost Multi-Location Visibility appeared first on Search Engine Journal ."
+  }
+]

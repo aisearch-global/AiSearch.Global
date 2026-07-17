@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Fri, 17 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 18 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-18</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-18</guid>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 +1000</pubDate>
+      <description>9 stories: AI-driven memory crunch jolts India’s smartphone market · How Apple’s big lawsuit could disrupt OpenAI’s IPO plans · Patreon stops asking AI bots not to scrape — and starts blocking them · The Download: perimenopause misinformation and China’s latest AI leap · Interventional Grounding Audits: Black-Box Premise-Dependency Tests for LLM Chain-of-Thought via Predicate Substitution · Probabilistic Extension of Neuro-Symbolic AGI Robots based on Belnap&#x27;s Typed Intensional FOL · Google Faces Class Action Over Books Used To Train Gemini via @sejournal, @MattGSouthern · Gemini 3.5 Pro Delayed Over Coding, Bloomberg Reports via @sejournal, @MattGSouthern · AI Search Cites Reddit: 5 Proven Plays To Boost Multi-Location Visibility via @sejournal, @lorenbaker</description>
+    </item>
     <item>
       <title>The Answer Engine — 17 July 2026</title>
       <link>https://aisearch.global/news/2026-07-17</link>

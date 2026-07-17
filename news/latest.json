@@ -1,5 +1,50 @@
 [
   {
+    "headline": "AI-driven memory crunch jolts India\u2019s smartphone market",
+    "link": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market",
+    "date": "2026-07-18"
+  },
+  {
+    "headline": "How Apple\u2019s big lawsuit could disrupt OpenAI\u2019s IPO plans",
+    "link": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans",
+    "date": "2026-07-18"
+  },
+  {
+    "headline": "Patreon stops asking AI bots not to scrape \u2014 and starts blocking them",
+    "link": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them",
+    "date": "2026-07-18"
+  },
+  {
+    "headline": "The Download: perimenopause misinformation and China\u2019s latest AI leap",
+    "link": "https://www.technologyreview.com/2026/07/17/1140640/the-download-perimenopause-misinformation-china-moonshot-ai",
+    "date": "2026-07-18"
+  },
+  {
+    "headline": "Interventional Grounding Audits: Black-Box Premise-Dependency Tests for LLM Chain-of-Thought via Predicate Substitution",
+    "link": "https://arxiv.org/abs/2607.13069",
+    "date": "2026-07-18"
+  },
+  {
+    "headline": "Probabilistic Extension of Neuro-Symbolic AGI Robots based on Belnap's Typed Intensional FOL",
+    "link": "https://arxiv.org/abs/2607.13073",
+    "date": "2026-07-18"
+  },
+  {
+    "headline": "Google Faces Class Action Over Books Used To Train Gemini via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/google-faces-class-action-over-books-used-to-train-gemini/582708",
+    "date": "2026-07-18"
+  },
+  {
+    "headline": "Gemini 3.5 Pro Delayed Over Coding, Bloomberg Reports via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/gemini-3-5-pro-delayed-over-coding-bloomberg-reports/582660",
+    "date": "2026-07-18"
+  },
+  {
+    "headline": "AI Search Cites Reddit: 5 Proven Plays To Boost Multi-Location Visibility via @sejournal, @lorenbaker",
+    "link": "https://www.searchenginejournal.com/ai-search-cites-reddit-5-proven-plays-to-boost-multi-location-visibility-recap/582568",
+    "date": "2026-07-18"
+  },
+  {
     "headline": "Founders Fund hires former OpenAI exec Ryan Beiermeister (and not because of her \u2018Mafia\u2019 skills)",
     "link": "https://techcrunch.com/2026/07/16/founders-fund-hires-former-openai-exec-ryan-beiermeister-and-not-because-of-her-mafia-skills",
     "date": "2026-07-17"
@@ -28,50 +73,5 @@
     "headline": "SPINE: Bridging the Cyber-Physical Gap with Agentic AI",
     "link": "https://arxiv.org/abs/2607.13049",
     "date": "2026-07-17"
-  },
-  {
-    "headline": "Google Starts Rolling Out Connected Apps In AI Mode Search via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/google-starts-rolling-out-connected-apps-in-ai-mode-search/582545",
-    "date": "2026-07-17"
-  },
-  {
-    "headline": "Do The Answer Engines Keep Your Fingerprint, Or Do They Start Fresh Every Time? via @sejournal, @DuaneForrester",
-    "link": "https://www.searchenginejournal.com/do-the-answer-engines-keep-your-fingerprint-or-do-they-start-fresh-every-time/582124",
-    "date": "2026-07-17"
-  },
-  {
-    "headline": "AI SEO: Writing That\u2019s Specific May Get Cited More via @sejournal, @martinibuster",
-    "link": "https://www.searchenginejournal.com/ai-seo-writing-thats-specific-may-get-cited-more/582531",
-    "date": "2026-07-17"
-  },
-  {
-    "headline": "Colonial First State names data and AI group executive",
-    "link": "https://www.itnews.com.au/news/colonial-first-state-names-data-and-ai-group-executive-627419",
-    "date": "2026-07-17"
-  },
-  {
-    "headline": "Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex",
-    "link": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex",
-    "date": "2026-07-16"
-  },
-  {
-    "headline": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
-    "link": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling",
-    "date": "2026-07-16"
-  },
-  {
-    "headline": "Hack suggests AI music generator Suno scraped YouTube for training data",
-    "link": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data",
-    "date": "2026-07-16"
-  },
-  {
-    "headline": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
-    "link": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer",
-    "date": "2026-07-16"
-  },
-  {
-    "headline": "Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent",
-    "link": "https://arxiv.org/abs/2607.09678",
-    "date": "2026-07-16"
   }
 ]
