@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hard-Water Scale Impact Visualizer | AISearch Global</title>
+<meta name="description" content="Enter an Australian postcode and watch a pipe's bore shrink as hard-water scale builds over the years. A free tool for plumbers to show customers the maths behind the quote.">
+<meta name="robots" content="noindex,follow,max-image-preview:large">
+<meta name="author" content="AISearch Global">
+<link rel="canonical" href="https://aisearch.global/hard-water-calculator">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AISearch Global">
+<meta property="og:locale" content="en_AU">
+<meta property="og:url" content="https://aisearch.global/hard-water-calculator">
+<meta property="og:title" content="Hard-Water Scale Impact Visualizer | AISearch Global">
+<meta property="og:description" content="Enter an Australian postcode and watch a pipe's bore shrink as hard-water scale builds over the years — the maths behind the quote, in plain sight.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hard-Water Scale Impact Visualizer | AISearch Global">
+<meta name="twitter:description" content="Enter an Australian postcode and watch a pipe's bore shrink as hard-water scale builds over the years — the maths behind the quote.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap"></noscript>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XBZMSCBXBZ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XBZMSCBXBZ');</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Hard-Water Scale Impact Visualizer",
+  "url": "https://aisearch.global/hard-water-calculator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web browser",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AUD" },
+  "description": "Enter an Australian postcode to look up local water hardness and see a pipe's effective bore shrink as scale builds up over time, with flow-capacity and service-life estimates.",
+  "provider": { "@type": "Organization", "name": "AISearch Global", "url": "https://aisearch.global/" },
+  "author": { "@type": "Person", "name": "Viveka Mohan Das" }
+}
+</script>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+<style>
+:root{
+  --tiffany:#0ABFBC; --tiffany-dim:rgba(10,191,188,.35);
+  --black:#0D0E10; --charcoal:#1a1b1e; --surface:#222428; --inset:#17181b; --bore:#0d1517;
+  --border:#2e2f33; --border2:#3a3b40;
+  --white:#E3E8EE; --silver:#C0C0C0; --body:#c3c2b7; --muted:#888888; --faint:#6E7A81;
+  --scale:#eb6834; --amber:#DCA33A; --red:#B93B2B; --soft:#1D9E75; --modsoft:#7FB86A;
+  --fh:'Space Grotesk',sans-serif; --fb:'DM Sans',sans-serif; --fm:'DM Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background-color:var(--black); color:var(--white);
+  font-family:var(--fb); font-weight:300; -webkit-font-smoothing:antialiased;
+  background-image:
+    linear-gradient(rgba(10,191,188,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10,191,188,.06) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size:130px 130px,130px 130px,26px 26px,26px 26px;
+  background-position:-1px -1px,-1px -1px,-1px -1px,-1px -1px;
+}
+a{color:var(--tiffany);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.hw-wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+.eyebrow{font-family:var(--fm);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--tiffany);}
+.lbl{font-family:var(--fm);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
+.mono{font-family:var(--fm);}
+.hw-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;}
+/* range sliders */
+.hw-rng{width:100%;-webkit-appearance:none;appearance:none;background:transparent;cursor:pointer;height:22px;margin:0;}
+.hw-rng::-webkit-slider-runnable-track{height:3px;border-radius:3px;background:var(--border2);}
+.hw-rng::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:20px;height:20px;margin-top:-8.5px;border-radius:50%;background:var(--tiffany);border:3px solid var(--black);box-shadow:0 0 0 4px rgba(10,191,188,.18);}
+.hw-rng::-moz-range-track{height:3px;border-radius:3px;background:var(--border2);}
+.hw-rng::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--tiffany);border:3px solid var(--black);box-shadow:0 0 0 4px rgba(10,191,188,.18);}
+.hw-rng:focus{outline:none;}
+/* pipe + water animation */
+.hw-circ{transition:r .28s ease-out;}
+@keyframes hwFade{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+@keyframes hwSpinA{from{transform:rotate(0);}to{transform:rotate(360deg);}}
+@keyframes hwSpinB{from{transform:rotate(0);}to{transform:rotate(-360deg);}}
+@keyframes hwDrift{from{transform:translateX(0);}to{transform:translateX(-60px);}}
+@keyframes hwGlow{0%,100%{opacity:.55;}50%{opacity:.95;}}
+.hw-cA{transform-origin:130px 132px;animation:hwSpinA 24s linear infinite;}
+.hw-cB{transform-origin:130px 132px;animation:hwSpinB 32s linear infinite;}
+.hw-cC{transform-origin:130px 132px;animation:hwSpinA 18s linear infinite,hwGlow 6s ease-in-out infinite;}
+.hw-drift{animation:hwDrift 5.5s linear infinite;}
+.hw-drift2{animation:hwDrift 8s linear infinite;}
+.hw-drift3{animation:hwDrift 6.8s linear infinite;}
+@media(prefers-reduced-motion:reduce){.hw-cA,.hw-cB,.hw-cC,.hw-drift,.hw-drift2,.hw-drift3{animation:none;}.hw-circ{transition:none;}}
+/* material buttons */
+.mat-btn{padding:10px 8px;border-radius:8px;border:1px solid var(--border2);background:transparent;color:var(--body);font-family:var(--fb);font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;}
+.mat-btn.on{background:var(--tiffany);color:var(--black);border-color:var(--tiffany);font-weight:600;}
+.btn-primary-solid{padding:14px 22px;border-radius:10px;border:none;background:var(--tiffany);color:var(--black);font-family:var(--fb);font-size:14px;font-weight:600;cursor:pointer;box-shadow:0 8px 24px -10px rgba(10,191,188,.6);width:100%;display:inline-flex;align-items:center;justify-content:center;text-align:center;}
+.btn-ghost{padding:14px 22px;border-radius:10px;border:1px solid var(--border2);background:rgba(255,255,255,.03);color:var(--white);font-family:var(--fb);font-size:14px;font-weight:500;cursor:pointer;width:100%;display:inline-flex;align-items:center;justify-content:center;text-align:center;}
+.btn-ghost:hover,.btn-primary-solid:hover{text-decoration:none;}
+.hw-drop{position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;z-index:20;max-height:320px;overflow-y:auto;box-shadow:0 18px 40px rgba(0,0,0,.5);}
+.hw-drop .row{padding:12px 15px;cursor:pointer;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.hw-drop .row:hover{background:rgba(255,255,255,.03);}
+/* layout */
+.hero{padding:48px 0 40px;display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:end;}
+.map-card{display:grid;grid-template-columns:340px 1fr;gap:28px;align-items:center;margin-top:22px;background:var(--charcoal);border:1px solid var(--border);border-radius:14px;padding:22px 24px;}
+.calc-grid{display:grid;grid-template-columns:300px 1fr 232px;gap:22px;margin-top:26px;align-items:start;}
+.refer{margin-top:22px;border-radius:16px;border:1px solid #2f5b57;background:linear-gradient(135deg,rgba(10,191,188,.12),rgba(10,191,188,.03));padding:30px 32px;}
+.refer-top{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;}
+.explain-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(10,191,188,.14);border:1px solid rgba(10,191,188,.14);border-radius:12px;overflow:hidden;}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;gap:28px;padding:32px 0;}
+  .map-card{grid-template-columns:1fr;}
+  .calc-grid{grid-template-columns:1fr;}
+  .refer-top{grid-template-columns:1fr;}
+  .explain-3{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<header></header>
+
+<main>
+<div class="hw-wrap">
+
+  <!-- HERO + POSTCODE GATE -->
+  <section class="hero">
+    <div>
+      <div class="eyebrow" style="margin-bottom:16px;">92 postcodes · verified from utility source</div>
+      <h1 style="font-family:var(--fh);font-weight:600;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spacing:-.025em;margin:0;color:var(--white);text-wrap:balance;">Scale doesn't break pipes.<br><span style="color:var(--muted);">It shrinks them.</span></h1>
+      <p style="margin:18px 0 0;color:var(--body);max-width:48ch;font-size:15px;line-height:1.7;">Every year of hard water lines the bore a little tighter. Drag the years and watch what your customer's pipe actually becomes.</p>
+    </div>
+    <div style="position:relative;">
+      <label for="hwPostcode" class="lbl" style="display:block;margin-bottom:10px;">Enter your postcode</label>
+      <div style="position:relative;">
+        <input id="hwPostcode" inputmode="numeric" maxlength="24" placeholder="Enter postcode (e.g., 5290)" aria-label="Postcode" autocomplete="off"
+          style="width:100%;font-family:var(--fm);font-size:16px;letter-spacing:.04em;padding:14px 16px;border:1.5px solid var(--border2);border-radius:8px;background:var(--surface);color:var(--white);outline:none;">
+        <div id="hwDropdown" class="hw-drop" style="display:none;"></div>
+        <div id="hwNoMatch" style="display:none;position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 15px;z-index:20;font-size:12.5px;color:var(--body);line-height:1.6;">That doesn't look like an Australian postcode we cover. We publish 92 zones, each traced to a utility's own reporting — enter a 4-digit AU postcode and we'll map you to the nearest verified zone.</div>
+      </div>
+      <div id="hwSelLine" style="display:none;margin-top:10px;font-family:var(--fm);font-size:11px;color:var(--muted);">
+        <span id="hwSelLabel" style="color:var(--body);"></span> · <a href="#" id="hwChange" style="border-bottom:1px dotted var(--faint);">Change postcode?</a>
+      </div>
+      <p id="hwTryLine" style="margin-top:10px;font-family:var(--fm);font-size:11px;color:var(--faint);">Try
+        <a href="#" data-try="5290" style="border-bottom:1px dotted var(--faint);">5290</a> ·
+        <a href="#" data-try="5271" style="border-bottom:1px dotted var(--faint);">5271</a> ·
+        <a href="#" data-try="4000" style="border-bottom:1px dotted var(--faint);">4000</a> ·
+        <a href="#" data-try="0800" style="border-bottom:1px dotted var(--faint);">0800</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- CALCULATOR (gated) -->
+  <div id="hwCalc" style="display:none;">
+    <div style="animation:hwFade .4s ease-out both;">
+
+      <!-- provenance strip -->
+      <div style="display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;padding:12px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);font-family:var(--fm);font-size:10.5px;color:var(--muted);letter-spacing:.03em;">
+        <span id="pvZone" style="color:var(--white);font-weight:600;"></span>
+        <span><b id="pvPpm" style="color:var(--white);font-weight:600;"></b> · <span id="pvCategory"></span></span>
+        <span>supply-zone figure</span>
+        <span>retrieved 2026-07-15</span>
+        <span id="pvChip" style="border:1px solid var(--border2);color:var(--muted);padding:1px 7px;border-radius:3px;"></span>
+      </div>
+      <p id="hwEstNote" style="display:none;margin:12px 0 0;font-size:12.5px;color:var(--amber);line-height:1.7;max-width:82ch;"></p>
+
+      <div class="map-card">
+        <div id="hwMap" style="max-width:340px;width:100%;"></div>
+        <div>
+          <div class="lbl" style="margin-bottom:8px;">Your supply zone</div>
+          <div id="hwZoneHeadline" style="font-family:var(--fh);font-size:18px;font-weight:600;color:var(--white);"></div>
+          <p style="margin:10px 0 14px;font-size:12.5px;color:var(--body);line-height:1.7;max-width:52ch;">States are shaded by typical published hardness — a deeper tone means harder water. Your reading comes from the specific verified zone, not the state average.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--fm);font-size:10.5px;color:var(--muted);">
+            <span style="display:inline-flex;align-items:center;gap:6px;"><span style="width:11px;height:11px;border-radius:3px;background:var(--soft);"></span>Soft</span>
+            <span style="display:inline-flex;align-items:center;gap:6px;"><span style="width:11px;height:11px;border-radius:3px;background:var(--amber);"></span>Moderate</span>
+            <span style="display:inline-flex;align-items:center;gap:6px;"><span style="width:11px;height:11px;border-radius:3px;background:var(--scale);"></span>Hard</span>
+            <span style="display:inline-flex;align-items:center;gap:6px;"><span style="width:11px;height:11px;border-radius:3px;background:var(--red);"></span>Very hard</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:26px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;background:var(--charcoal);border:1px solid var(--border);border-radius:12px;padding:15px 20px;">
+        <span class="lbl" style="color:var(--tiffany);line-height:1.7;white-space:nowrap;">How to use</span>
+        <div style="font-size:12.5px;color:var(--body);line-height:1.8;">
+          <b style="color:var(--white);">1.</b> Drag the <b style="color:var(--white);">Time horizon</b> slider to age the pipe year by year. &nbsp;
+          <b style="color:var(--white);">2.</b> Fine-tune <b style="color:var(--white);">Water hardness</b> (pre-filled from your postcode) and switch the <b style="color:var(--white);">Pipe material</b>. &nbsp;
+          <b style="color:var(--white);">3.</b> Watch the cross-section's bore tighten as orange <b style="color:var(--scale);">scale</b> builds inward, and the chart track scale thickness climbing across 25 years. The three cards read out effective bore, flow capacity, and where you sit in the pipe's service life.
+        </div>
+      </div>
+
+      <div class="calc-grid">
+
+        <!-- INPUT PANEL -->
+        <div class="hw-card" style="padding:22px;">
+          <div style="margin-bottom:24px;">
+            <label class="lbl" style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;">Water hardness<span id="hwHardVal" style="color:var(--tiffany);font-size:12px;letter-spacing:0;"></span></label>
+            <input id="hwHardness" class="hw-rng" type="range" min="0" max="620" value="150" aria-label="Water hardness in ppm">
+          </div>
+          <div style="margin-bottom:24px;">
+            <label class="lbl" style="display:block;margin-bottom:12px;">Pipe material</label>
+            <div id="hwMaterials" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;"></div>
+          </div>
+          <div>
+            <label class="lbl" style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;">Time horizon<span id="hwYearsVal" style="color:var(--tiffany);font-size:12px;letter-spacing:0;"></span></label>
+            <input id="hwYears" class="hw-rng" type="range" min="0" max="25" value="5" aria-label="Time horizon in years">
+            <div style="display:flex;justify-content:space-between;font-family:var(--fm);font-size:9.5px;color:var(--faint);margin-top:6px;"><span>0</span><span>10</span><span>15</span><span>20</span><span>25</span></div>
+          </div>
+        </div>
+
+        <!-- DIAGRAM + CHART -->
+        <div style="display:flex;flex-direction:column;gap:22px;">
+          <div class="hw-card" style="overflow:hidden;">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid var(--border);">
+              <span style="font-family:var(--fm);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--body);">Section A–A · 20 mm nominal bore</span>
+              <span id="hwMatUpper" style="font-family:var(--fm);font-size:10px;letter-spacing:.1em;color:var(--muted);"></span>
+            </div>
+            <div style="display:flex;justify-content:center;padding:24px 20px 10px;">
+              <svg width="300" height="270" viewBox="0 0 260 270" role="img" aria-label="Pipe cross-section with flowing water, showing scale build-up over time">
+                <defs>
+                  <pattern id="hwHatch" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+                    <line x1="0" y1="0" x2="0" y2="6" stroke="#eb6834" stroke-width="2.6" opacity="0.8"></line>
+                  </pattern>
+                  <radialGradient id="hwWater" cx="42%" cy="36%" r="72%">
+                    <stop offset="0%" stop-color="rgba(150,240,236,0.30)"></stop>
+                    <stop offset="55%" stop-color="rgba(56,186,181,0.20)"></stop>
+                    <stop offset="100%" stop-color="rgba(14,90,100,0.34)"></stop>
+                  </radialGradient>
+                  <filter id="hwBlur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"></feGaussianBlur></filter>
+                  <clipPath id="hwBoreClip"><circle id="hwClipCirc" cx="130" cy="132" r="70"></circle></clipPath>
+                </defs>
+                <circle cx="130" cy="132" r="103" fill="none" stroke="#6E7A81" stroke-width="1"></circle>
+                <circle cx="130" cy="132" r="92" fill="none" stroke="#9AA4AA" stroke-width="1"></circle>
+                <circle id="hwScaleRing" cx="130" cy="132" r="92" fill="url(#hwHatch)" opacity="0"></circle>
+                <circle id="hwBoreFill" class="hw-circ" cx="130" cy="132" r="70" fill="#0d1517"></circle>
+                <g clip-path="url(#hwBoreClip)">
+                  <rect x="24" y="26" width="212" height="212" fill="url(#hwWater)"></rect>
+                  <ellipse class="hw-cA" cx="104" cy="108" rx="38" ry="25" fill="rgba(150,240,236,0.22)" filter="url(#hwBlur)"></ellipse>
+                  <ellipse class="hw-cB" cx="162" cy="154" rx="44" ry="29" fill="rgba(88,206,201,0.16)" filter="url(#hwBlur)"></ellipse>
+                  <ellipse class="hw-cC" cx="150" cy="104" rx="22" ry="15" fill="rgba(190,250,246,0.24)" filter="url(#hwBlur)"></ellipse>
+                  <g class="hw-drift"><path d="M -20 116 q 15 -6 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0" fill="none" stroke="rgba(160,242,238,0.20)" stroke-width="1.4"></path></g>
+                  <g class="hw-drift2"><path d="M -20 150 q 15 5 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0" fill="none" stroke="rgba(120,222,217,0.14)" stroke-width="1.2"></path></g>
+                  <g class="hw-drift3"><path d="M -20 100 q 15 -5 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0" fill="none" stroke="rgba(180,248,244,0.16)" stroke-width="1"></path></g>
+                  <g class="hw-drift2"><path d="M -20 133 q 15 6 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0" fill="none" stroke="rgba(150,238,233,0.13)" stroke-width="1.1"></path></g>
+                  <g class="hw-drift"><path d="M -20 167 q 15 -6 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0" fill="none" stroke="rgba(120,222,217,0.12)" stroke-width="1"></path></g>
+                  <g class="hw-drift3"><path d="M -20 184 q 15 5 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0" fill="none" stroke="rgba(110,210,205,0.10)" stroke-width="0.9"></path></g>
+                </g>
+                <circle id="hwRim" class="hw-circ" cx="130" cy="132" r="70" fill="none" stroke="#0ABFBC" stroke-width="1.9"></circle>
+                <circle id="hwRimInset" class="hw-circ" cx="130" cy="132" r="66" fill="none" stroke="#0ABFBC" stroke-width="0.5" opacity="0.4"></circle>
+                <line x1="38" y1="26" x2="222" y2="26" stroke="#6E7A81" stroke-width="0.75"></line>
+                <line x1="38" y1="22" x2="38" y2="30" stroke="#6E7A81" stroke-width="0.75"></line>
+                <line x1="222" y1="22" x2="222" y2="30" stroke="#6E7A81" stroke-width="0.75"></line>
+                <text x="130" y="17" fill="#9AA4AA" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">Ø 20.0 NOMINAL</text>
+                <text id="hwScaleText" x="130" y="132" fill="#eb6834" font-family="DM Mono,monospace" font-size="10" font-weight="600" text-anchor="middle" opacity="0">SCALE</text>
+                <text id="hwBoreLabel" x="130" y="252" fill="#0ABFBC" font-family="DM Mono,monospace" font-size="12" font-weight="600" text-anchor="middle">Ø 20.0</text>
+                <text x="130" y="266" fill="#6E7A81" font-family="DM Mono,monospace" font-size="8.5" text-anchor="middle" letter-spacing="1.4">SCHEMATIC · NOT TO SCALE</text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="hw-card" style="padding:18px 20px;">
+            <div style="font-family:var(--fm);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--body);margin-bottom:12px;">Scale thickness progression (mm)</div>
+            <div style="height:190px;position:relative;">
+              <canvas id="hwChart" role="img" aria-label="Line chart of scale thickness over 0 to 25 years"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- METRICS -->
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div class="hw-card" style="padding:20px;">
+            <div class="lbl">Effective bore</div>
+            <div style="margin:10px 0 0;"><span id="mBore" style="font-family:var(--fm);font-weight:600;font-size:38px;color:var(--tiffany);line-height:1;">20.0</span><span style="font-size:14px;color:var(--muted);margin-left:4px;">mm</span></div>
+            <div id="mBoreDetail" style="font-family:var(--fm);font-size:11px;color:var(--body);margin-top:8px;"></div>
+          </div>
+          <div class="hw-card" style="padding:20px;">
+            <div class="lbl">Flow capacity</div>
+            <div style="margin:10px 0 0;"><span id="mFlow" style="font-family:var(--fm);font-weight:600;font-size:38px;color:var(--tiffany);line-height:1;">100</span><span style="font-size:14px;color:var(--muted);margin-left:4px;">%</span></div>
+            <div id="mFlowDetail" style="font-family:var(--fm);font-size:11px;color:var(--body);margin-top:8px;"></div>
+          </div>
+          <div class="hw-card" style="padding:20px;">
+            <div class="lbl">Service timeline</div>
+            <div style="margin:14px 0 8px;height:4px;border-radius:4px;background:var(--border2);position:relative;">
+              <div id="mTimeline" style="position:absolute;left:0;top:0;bottom:0;border-radius:4px;background:var(--tiffany);width:20%;transition:width .28s ease-out;"></div>
+            </div>
+            <div id="mTimelineLabel" style="font-family:var(--fm);font-size:12px;color:var(--body);"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- REFERENCE -->
+      <div style="margin-top:36px;border-radius:16px;border:1px solid var(--border);background:var(--charcoal);overflow:hidden;">
+        <div style="padding:26px 28px 24px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px;">
+            <div class="lbl" style="letter-spacing:.18em;">Water hardness scale</div>
+            <div style="font-family:var(--fm);font-size:10px;letter-spacing:.12em;color:var(--faint);">ppm CaCO₃</div>
+          </div>
+          <div style="display:flex;gap:4px;">
+            <div style="flex:1;min-width:0;"><div style="height:9px;border-radius:3px 0 0 3px;background:var(--soft);"></div><div style="margin-top:11px;font-size:12.5px;font-weight:600;color:var(--white);">Soft</div><div style="font-family:var(--fm);font-size:11px;color:var(--muted);margin-top:3px;">0–60</div></div>
+            <div style="flex:1;min-width:0;"><div style="height:9px;background:var(--modsoft);"></div><div style="margin-top:11px;font-size:12.5px;font-weight:600;color:var(--white);">Mod. soft</div><div style="font-family:var(--fm);font-size:11px;color:var(--muted);margin-top:3px;">61–120</div></div>
+            <div style="flex:1;min-width:0;"><div style="height:9px;background:var(--amber);"></div><div style="margin-top:11px;font-size:12.5px;font-weight:600;color:var(--white);">Mod. hard</div><div style="font-family:var(--fm);font-size:11px;color:var(--muted);margin-top:3px;">121–180</div></div>
+            <div style="flex:1;min-width:0;"><div style="height:9px;background:var(--scale);"></div><div style="margin-top:11px;font-size:12.5px;font-weight:600;color:var(--white);">Hard</div><div style="font-family:var(--fm);font-size:11px;color:var(--muted);margin-top:3px;">181–250</div></div>
+            <div style="flex:1;min-width:0;"><div style="height:9px;border-radius:0 3px 3px 0;background:var(--red);"></div><div style="margin-top:11px;font-size:12.5px;font-weight:600;color:var(--white);">Very hard</div><div style="font-family:var(--fm);font-size:11px;color:var(--muted);margin-top:3px;">250+</div></div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border-top:1px solid var(--border);">
+          <div style="background:var(--inset);padding:22px 28px;">
+            <div style="font-family:var(--fm);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--tiffany);margin-bottom:10px;">Why only 92 postcodes?</div>
+            <p style="margin:0;font-size:12.5px;color:var(--body);line-height:1.75;">Every figure here traces to a water utility's own published reporting, with a retrieval date. We'd rather cover fewer areas honestly than pad the list with guesses — postcodes we haven't verified are matched to the nearest confirmed supply zone and flagged as an estimate.</p>
+          </div>
+          <div style="background:var(--inset);padding:22px 28px;">
+            <div class="lbl" style="letter-spacing:.16em;margin-bottom:10px;">Schematic · not a measurement</div>
+            <p style="margin:0;font-size:12.5px;color:var(--muted);line-height:1.75;">The section illustrates proportional service life from our hardness model; it does not claim a measured scale thickness at your address. Plumbing work must comply with AS/NZS 3500 and be done by a licensed plumber.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- REFER-TO-CUSTOMERS CTA -->
+      <div class="refer">
+        <div class="refer-top">
+          <div style="max-width:56ch;">
+            <div style="font-family:var(--fm);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--tiffany);margin-bottom:12px;">A free tool to hand your customers</div>
+            <h3 style="margin:0;font-family:var(--fh);font-weight:600;font-size:22px;line-height:1.25;letter-spacing:-.01em;color:var(--white);">Let clients see for themselves why the pipe is failing.</h3>
+            <p style="margin:12px 0 0;font-size:14px;color:var(--body);line-height:1.7;">This calculator is free to use — no login, no catch. Bookmark it, screenshot the results, or send the page straight to your customers so they can drag the years and watch their own bore tighten. It's the maths behind your quote, in plain sight.</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;min-width:250px;">
+            <a href="/#contact" class="btn-primary-solid" data-track="hardwater-join-research">Join our AEO research study</a>
+            <div style="font-family:var(--fm);font-size:10px;letter-spacing:.06em;color:var(--tiffany);text-align:center;margin:-2px 0 4px;">First 10 sign-ups only</div>
+            <a href="/insights/top-100-australian-plumbers-ai-visibility" class="btn-ghost" data-track="hardwater-see-visibility">See how to improve your AI search visibility</a>
+            <button type="button" id="hwOpenModal" class="btn-ghost" data-track="hardwater-download-pdf">Download your results as PDF</button>
+          </div>
+        </div>
+        <div style="margin-top:26px;padding-top:24px;border-top:1px solid rgba(10,191,188,.18);">
+          <div class="lbl" style="letter-spacing:.18em;margin-bottom:14px;">What the research study involves</div>
+          <div class="explain-3">
+            <div style="background:#181b1a;padding:18px 20px;">
+              <div style="font-family:var(--fm);font-size:20px;color:var(--tiffany);font-weight:600;margin-bottom:8px;">01</div>
+              <div style="font-size:13px;font-weight:600;color:var(--white);margin-bottom:6px;">First 10 get the calculator</div>
+              <p style="margin:0;font-size:12.5px;color:var(--body);line-height:1.7;">The first ten businesses to join can download this calculator to use as their own — yours to keep, free.</p>
+            </div>
+            <div style="background:#181b1a;padding:18px 20px;">
+              <div style="font-family:var(--fm);font-size:20px;color:var(--tiffany);font-weight:600;margin-bottom:8px;">02</div>
+              <div style="font-size:13px;font-weight:600;color:var(--white);margin-bottom:6px;">We track your AI citations for a year</div>
+              <p style="margin:0;font-size:12.5px;color:var(--body);line-height:1.7;">We monitor how AI agents talk about your business — what they cite, and how that shifts over 12 months. A year of this data is genuinely new ground in an emerging field.</p>
+            </div>
+            <div style="background:#181b1a;padding:18px 20px;">
+              <div style="font-family:var(--fm);font-size:20px;color:var(--tiffany);font-weight:600;margin-bottom:8px;">03</div>
+              <div style="font-size:13px;font-weight:600;color:var(--white);margin-bottom:6px;">It powers our AEO / GEO whitepapers</div>
+              <p style="margin:0;font-size:12.5px;color:var(--body);line-height:1.7;">Findings feed our published research into Answer- and Generative-Engine Optimisation — helping define best practice as AI search takes shape.</p>
+            </div>
+          </div>
+          <p style="margin:14px 0 0;font-size:12px;color:var(--muted);line-height:1.7;max-width:104ch;"><strong style="color:var(--body);font-weight:600;">Your data stays yours.</strong> We never access or use your business data. We only track how AI agents cite you publicly, and every figure is anonymised and used solely for research. Nothing is sold, and you can opt out at any time.</p>
+        </div>
+      </div>
+
+      <!-- LEGAL -->
+      <div style="margin-top:20px;padding-top:18px;border-top:1px solid var(--border);display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;">
+        <span style="font-family:var(--fm);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);line-height:20px;">Legal</span>
+        <p style="margin:0;font-size:11.5px;color:var(--faint);line-height:1.75;max-width:96ch;">This calculator is a schematic guide, not a physical prediction or engineering assessment. Figures illustrate proportional service life from a general hardness model and do not represent a measured scale thickness at any specific address. Results must not be relied upon in place of a site inspection. All plumbing work must comply with AS/NZS 3500 and be carried out by a licensed plumber. © AISearch Global. Provided for reference only, without warranty.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+<!-- PDF MODAL -->
+<div id="hwModal" style="display:none;position:fixed;inset:0;z-index:1000;align-items:center;justify-content:center;">
+  <div id="hwModalOverlay" style="position:absolute;inset:0;background:rgba(0,0,0,.66);"></div>
+  <div style="position:relative;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:30px;max-width:410px;width:90%;animation:hwFade .25s ease-out both;">
+    <button type="button" id="hwModalClose" aria-label="Close" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:24px;color:var(--muted);cursor:pointer;line-height:1;">×</button>
+    <div id="hwModalForm">
+      <h2 style="margin:0;font-family:var(--fh);font-weight:600;font-size:22px;color:var(--white);">Get your analysis</h2>
+      <p style="margin:8px 0 20px;font-size:14px;color:var(--body);">Enter your email to receive your analysis.</p>
+      <form id="hwEmailForm" data-track-form="hardwater-pdf-email" style="display:flex;flex-direction:column;gap:12px;">
+        <input type="email" name="email" required placeholder="your@email.com.au" aria-label="Email" style="padding:13px 15px;border:1.5px solid var(--border2);border-radius:9px;background:var(--black);color:var(--white);font-size:14px;outline:none;font-family:var(--fb);">
+        <input type="hidden" name="_subject" value="Hard-Water Calculator — PDF request">
+        <input type="hidden" name="source" value="hard-water-calculator">
+        <input type="hidden" name="zone" id="hwFormZone" value="">
+        <button type="submit" style="padding:13px;border-radius:9px;border:none;background:var(--tiffany);color:var(--black);font-family:var(--fb);font-size:14px;font-weight:600;cursor:pointer;">Send to email</button>
+      </form>
+    </div>
+    <div id="hwModalSent" style="display:none;padding:12px 0;text-align:center;">
+      <div style="font-size:15px;color:var(--tiffany);font-family:var(--fm);">✓ Check your inbox in ~2 minutes</div>
+    </div>
+  </div>
+</div>
+
+<footer></footer>
+
+<script>
+(function(){
+  "use strict";
+  var NOM=20, MAXSCALE=0.6;
+  var PC={"0800":["Darwin CBD","NT",42],"0810":["Casuarina","NT",42],"2000":["Sydney CBD","NSW",49],"2065":["Chatswood / North Sydney area","NSW",43],"2148":["Blacktown","NSW",49],"2150":["Parramatta","NSW",49],"2170":["Liverpool","NSW",49],"2570":["Camden / Oran Park","NSW",31],"2600":["Canberra (Civic)","ACT",43],"2601":["Canberra City","ACT",43],"2750":["Penrith","NSW",58],"2760":["St Marys","NSW",58],"3000":["Melbourne CBD","VIC",18],"3006":["Southbank","VIC",18],"3030":["Werribee","VIC",90],"3095":["Eltham","VIC",29],"3121":["Richmond","VIC",20],"3199":["Frankston","VIC",17],"3337":["Melton","VIC",100],"3444":["Gisborne","VIC",108],"3777":["Healesville","VIC",8],"4000":["Brisbane CBD","QLD",115],"4020":["Redcliffe","QLD",53],"4030":["Chermside","QLD",115],"4101":["South Brisbane","QLD",115],"4114":["Sunnybank","QLD",70],"4165":["Cleveland","QLD",85],"4217":["Gold Coast","QLD",34],"4509":["North Lakes","QLD",53],"4551":["Buderim / Maroochydore","QLD",52],"5000":["Adelaide CBD","SA",106],"5006":["North Adelaide","SA",116],"5011":["Woodville","SA",116],"5015":["Port Adelaide","SA",116],"5041":["Cumberland Park / Pasadena","SA",106],"5045":["Glenelg","SA",106],"5051":["Blackwood","SA",106],"5074":["Campbelltown / Paradise","SA",116],"5082":["Prospect","SA",116],"5092":["Modbury","SA",111],"5107":["Green Fields","SA",112],"5108":["Salisbury","SA",112],"5112":["Elizabeth","SA",112],"5113":["Davoren Park","SA",112],"5118":["Gawler","SA",137],"5125":["Golden Grove","SA",99],"5152":["Stirling","SA",93],"5157":["Clarendon","SA",113],"5162":["Morphett Vale / Noarlunga","SA",106],"5169":["Seaford","SA",103],"5251":["Mount Barker","SA",93],"5271":["Padthaway","SA",603],"5290":["Mount Gambier","SA",186],"5301":["Geranium","SA",560],"5351":["Lyndoch","SA",82],"6000":["Perth CBD","WA",110],"6003":["East Perth","WA",110],"6008":["Subiaco","WA",62],"6016":["Mt Hawthorn","WA",110],"6025":["Hillarys","WA",120],"6035":["Yanchep","WA",204],"6036":["Butler","WA",190],"6037":["Two Rocks","WA",228],"6041":["Mindarie / Quinns Rocks","WA",120],"6050":["Mount Lawley","WA",114],"6055":["Ellenbrook","WA",145],"6056":["Midland","WA",95],"6060":["Yokine","WA",114],"6061":["Mirrabooka","WA",128],"6065":["Wanneroo","WA",124],"6070":["Darlington","WA",73],"6073":["Mundaring","WA",98],"6076":["Kalamunda","WA",95],"6105":["Kewdale","WA",97],"6111":["Kelmscott","WA",77],"6112":["Armadale","WA",77],"6151":["South Perth","WA",97],"6153":["Como","WA",69],"6155":["Willetton","WA",63],"6163":["Hamilton Hill","WA",79],"6164":["Hammond Park","WA",86],"6207":["North Dandalup","WA",33],"6208":["Pinjarra","WA",60],"6210":["Mandurah","WA",54],"6213":["Dwellingup","WA",29],"7000":["Hobart CBD","TAS",29],"7004":["Battery Point","TAS",24],"7005":["Sandy Bay","TAS",24],"7250":["Launceston","TAS",29],"7304":["Deloraine","TAS",24],"7310":["Devonport","TAS",31],"7320":["Burnie","TAS",41]};
+  var LIFE={"0-60":{copper:55,pvc:32,steel:42,galv:22},"60-120":{copper:45,pvc:22,steel:32,galv:16},"120-200":{copper:30,pvc:13,steel:22,galv:10},"200+":{copper:16,pvc:7,steel:13,galv:6}};
+  var MATS=[{k:"copper",l:"Copper"},{k:"pvc",l:"PVC"},{k:"steel",l:"Stainless steel"},{k:"galv",l:"Galvanized"}];
+
+  function band(ppm){return ppm<60?"0-60":ppm<120?"60-120":ppm<200?"120-200":"200+";}
+  function category(ppm){return ppm<=60?"Soft":ppm<=120?"Moderately soft":ppm<=180?"Moderately hard":ppm<=250?"Hard":"Very hard";}
+  function lifeYears(mat,ppm){return LIFE[band(ppm)][mat];}
+  function boreAt(mat,yr,ppm){var L=lifeYears(mat,ppm);return NOM*(1-MAXSCALE*Math.min(yr/L,1));}
+  function bandColor(ppm){return ppm<60?"#1D9E75":ppm<120?"#DCA33A":ppm<200?"#eb6834":"#B93B2B";}
+  function RGBA(hex,a){var n=parseInt(hex.slice(1),16);return "rgba("+((n>>16)&255)+","+((n>>8)&255)+","+(n&255)+","+a+")";}
+  function allocate(pc){
+    if(!/^\d{4}$/.test(pc))return null;
+    var n=+pc, sd=pc[0];
+    var pool=Object.keys(PC).filter(function(k){return k[0]===sd;});
+    if(!pool.length)return null;
+    var best=null,bd=1e9;
+    pool.forEach(function(k){var d=Math.abs(+k-n);if(d<bd){bd=d;best=k;}});
+    return best?{via:best,dist:bd}:null;
+  }
+
+  var state={query:"",focused:false,selected:null,hardness:150,material:"copper",years:5};
+  var geoPaths=null, chart=null;
+  var $=function(id){return document.getElementById(id);};
+
+  function computeMatches(){
+    var q=state.query.trim().toUpperCase();
+    if(q.length<2)return [];
+    var list=Object.keys(PC).filter(function(pc){return pc.indexOf(q)===0||PC[pc][0].toUpperCase().indexOf(q)!==-1;}).slice(0,8)
+      .map(function(pc){return {type:"exact",pc:pc,suburb:PC[pc][0],state:PC[pc][1],ppm:PC[pc][2]};});
+    if(/^\d{4}$/.test(q)&&!PC[q]){
+      var a=allocate(q);
+      if(a){var r=PC[a.via];list.push({type:"estimate",pc:q,via:a.via,suburb:r[0],state:r[1],ppm:r[2],dist:a.dist});}
+    }
+    return list.slice(0,8);
+  }
+
+  // ---- selection ----
+  function pick(pc){
+    var r=PC[pc];
+    state.selected={postcode:pc,suburb:r[0],state:r[1],ppm:r[2],matched:"exact"};
+    state.hardness=r[2]; state.query=pc+" "+r[0]; state.focused=false;
+    $("hwPostcode").value=state.query;
+    afterSelect();
+  }
+  function pickZone(pc){
+    var a=allocate(pc); if(!a)return;
+    var r=PC[a.via];
+    state.selected={postcode:pc,suburb:r[0],state:r[1],ppm:r[2],matched:"estimate",via:a.via,viaSuburb:r[0],dist:a.dist};
+    state.hardness=r[2]; state.query=pc; state.focused=false;
+    $("hwPostcode").value=pc;
+    afterSelect();
+  }
+  function afterSelect(){
+    $("hwCalc").style.display="block";
+    renderMap();
+    render();
+    initChart();
+    if(!chart)syncChart();
+  }
+
+  // ---- dropdown ----
+  function renderDropdown(){
+    var matches=computeMatches();
+    var show=state.focused && !state.selected && matches.length>0;
+    var noMatch=state.focused && !state.selected && state.query.trim().length>=2 && matches.length===0;
+    var dd=$("hwDropdown");
+    $("hwNoMatch").style.display=noMatch?"block":"none";
+    if(!show){dd.style.display="none";dd.innerHTML="";return;}
+    dd.innerHTML=matches.map(function(m){
+      var line2=m.type==="estimate"?("nearest verified zone: "+m.via+" "+m.suburb):m.suburb;
+      var right=m.type==="estimate"?"estimate":category(m.ppm);
+      var chip=m.type==="estimate"?"#DCA33A":"#888888";
+      return '<div class="row" data-pc="'+m.pc+'" data-type="'+m.type+'">'+
+        '<span style="font-family:var(--fm);font-size:13px;color:var(--white);"><b style="font-weight:600;">'+m.pc+'</b> <span style="color:var(--body);">'+line2+'</span></span>'+
+        '<span style="font-family:var(--fm);font-size:11px;color:'+chip+';white-space:nowrap;">'+right+'</span></div>';
+    }).join("");
+    dd.style.display="block";
+  }
+
+  // ---- map ----
+  var N2C={'New South Wales':'NSW','Victoria':'VIC','Queensland':'QLD','South Australia':'SA','Western Australia':'WA','Tasmania':'TAS','Northern Territory':'NT','Australian Capital Territory':'ACT'};
+  var MED={WA:100,NT:42,SA:110,QLD:100,NSW:49,VIC:29,TAS:29,ACT:43};
+  function mercY(lat){return (180/Math.PI)*Math.log(Math.tan(Math.PI/4+(lat*Math.PI/180)/2));}
+  function eachPoly(geom,cb){if(!geom)return;if(geom.type==="Polygon")cb(geom.coordinates);else if(geom.type==="MultiPolygon")geom.coordinates.forEach(cb);}
+  function buildGeo(gj){
+    var W=344,H=250,pad=8,top=22;
+    var minX=Infinity,maxX=-Infinity,minY=Infinity,maxY=-Infinity;
+    gj.features.forEach(function(f){eachPoly(f.geometry,function(poly){poly.forEach(function(ring){ring.forEach(function(pt){var x=pt[0],y=mercY(pt[1]);if(x<minX)minX=x;if(x>maxX)maxX=x;if(y<minY)minY=y;if(y>maxY)maxY=y;});});});});
+    var s=Math.min((W-2*pad)/(maxX-minX),(H-top-pad)/(maxY-minY));
+    var w=(maxX-minX)*s,h=(maxY-minY)*s;
+    var ox=(W-w)/2,oy=top+((H-top-pad)-h)/2;
+    var px=function(lon){return ox+(lon-minX)*s;};
+    var py=function(lat){return oy+(maxY-mercY(lat))*s;};
+    var feats=[];
+    gj.features.forEach(function(f){
+      var code=N2C[(f.properties||{}).STATE_NAME];if(!code)return;
+      var d="",aMinX=1e9,aMaxX=-1e9,aMinY=1e9,aMaxY=-1e9;
+      eachPoly(f.geometry,function(poly){poly.forEach(function(ring){
+        ring.forEach(function(pt,i){var X=px(pt[0]),Y=py(pt[1]);d+=(i===0?"M":"L")+X.toFixed(1)+" "+Y.toFixed(1)+" ";if(X<aMinX)aMinX=X;if(X>aMaxX)aMaxX=X;if(Y<aMinY)aMinY=Y;if(Y>aMaxY)aMaxY=Y;});
+        d+="Z ";
+      });});
+      feats.push({code:code,d:d,cx:(aMinX+aMaxX)/2,cy:(aMinY+aMaxY)/2,area:(aMaxX-aMinX)*(aMaxY-aMinY)});
+    });
+    if(feats.length){geoPaths=feats;if(state.selected)renderMap();}
+  }
+  function loadGeo(){
+    fetch("https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson").then(function(res){
+      if(!res.ok)return null;return res.json();
+    }).then(function(gj){if(gj)buildGeo(gj);}).catch(function(){});
+  }
+  function esc(s){return String(s);}
+  function renderMap(){
+    var sel=state.selected;
+    var svg;
+    if(geoPaths&&geoPaths.length){
+      var paths=geoPaths.map(function(g,i){
+        var c=bandColor(MED[g.code]!=null?MED[g.code]:55);
+        var on=!!sel&&sel.state===g.code;
+        var t=g.area>700?'<text x="'+g.cx+'" y="'+(g.cy+3)+'" fill="'+(on?"#ffffff":"#e6e5df")+'" font-family="DM Mono,monospace" font-size="10.5" font-weight="700" text-anchor="middle">'+g.code+'</text>':'';
+        return '<path d="'+g.d+'" fill="'+(on?RGBA(c,.62):RGBA(c,.26))+'" stroke="'+(on?"#0ABFBC":RGBA(c,.85))+'" stroke-width="'+(on?2:0.8)+'"></path>'+t;
+      }).join("");
+      svg='<svg viewBox="0 0 344 250" width="100%" style="max-width:344px" role="img" aria-label="Map of Australia shaded by typical water hardness, with your supply zone highlighted"><text x="8" y="15" fill="#6E7A81" font-family="DM Mono,monospace" font-size="9" letter-spacing="1.4">TYPICAL HARDNESS BY STATE</text>'+paths+'</svg>';
+    } else {
+      var GEO=[{k:'WA',x:8,y:58,w:126,h:150},{k:'NT',x:138,y:30,w:70,h:96},{k:'SA',x:138,y:130,w:70,h:78},{k:'QLD',x:212,y:30,w:80,h:96},{k:'NSW',x:212,y:130,w:76,h:48},{k:'VIC',x:212,y:182,w:62,h:30},{k:'TAS',x:236,y:222,w:44,h:16}];
+      var zStyle=function(k){var c=bandColor(MED[k]);var on=!!sel&&sel.state===k;return {fill:on?RGBA(c,.55):RGBA(c,.22),stroke:on?"#0ABFBC":RGBA(c,.7),sw:on?2.5:1.25,lc:on?"#ffffff":"#c3c2b7"};};
+      var rects=GEO.map(function(z){var st=zStyle(z.k);return '<g><rect x="'+z.x+'" y="'+z.y+'" width="'+z.w+'" height="'+z.h+'" rx="6" fill="'+st.fill+'" stroke="'+st.stroke+'" stroke-width="'+st.sw+'"></rect><text x="'+(z.x+z.w/2)+'" y="'+(z.y+z.h/2+3)+'" fill="'+st.lc+'" font-family="DM Mono,monospace" font-size="13" font-weight="600" text-anchor="middle">'+z.k+'</text></g>';}).join("");
+      var actS=zStyle('ACT');
+      svg='<svg viewBox="0 0 344 250" width="100%" style="max-width:344px" role="img" aria-label="Schematic map of Australian states shaded by typical water hardness, with your supply zone highlighted"><text x="8" y="16" fill="#6E7A81" font-family="DM Mono,monospace" font-size="9" letter-spacing="1.4">TYPICAL HARDNESS BY STATE · SCHEMATIC</text>'+rects+
+        '<circle cx="286" cy="176" r="7" fill="'+actS.fill+'" stroke="'+actS.stroke+'" stroke-width="'+actS.sw+'"></circle><line x1="286" y1="176" x2="308" y2="176" stroke="#6E7A81" stroke-width="0.75"></line><text x="312" y="179" fill="'+actS.lc+'" font-family="DM Mono,monospace" font-size="11" font-weight="600" text-anchor="start">ACT</text></svg>';
+    }
+    $("hwMap").innerHTML=svg;
+  }
+
+  // ---- chart ----
+  function initChart(){
+    if(chart||typeof Chart==="undefined")return;
+    var el=$("hwChart"); if(!el)return;
+    var labels=[],data=[],radius=[];
+    for(var y=0;y<=25;y++){labels.push(y);data.push(+((NOM-boreAt(state.material,y,state.hardness))/2).toFixed(2));radius.push(y===state.years?5:0);}
+    chart=new Chart(el.getContext("2d"),{
+      type:"line",
+      data:{labels:labels,datasets:[{data:data,borderColor:"#1D9E75",backgroundColor:"rgba(29,158,117,.10)",borderWidth:2,tension:.32,fill:true,pointRadius:radius,pointBackgroundColor:"#0ABFBC",pointBorderColor:"#0D0E10",pointBorderWidth:2}]},
+      options:{responsive:true,maintainAspectRatio:false,animation:{duration:250},
+        plugins:{legend:{display:false},tooltip:{enabled:false}},
+        scales:{
+          y:{beginAtZero:true,grid:{color:"rgba(255,255,255,.06)"},ticks:{color:"#888888",font:{size:10}},title:{display:true,text:"Scale (mm)",color:"#c3c2b7",font:{size:10}}},
+          x:{grid:{color:"rgba(255,255,255,.04)"},ticks:{color:"#888888",font:{size:10},maxTicksLimit:6},title:{display:true,text:"Years",color:"#c3c2b7",font:{size:10}}}
+        }
+      }
+    });
+  }
+  function syncChart(){
+    if(!chart)return;
+    var labels=[],data=[],radius=[];
+    for(var y=0;y<=25;y++){labels.push(y);data.push(+((NOM-boreAt(state.material,y,state.hardness))/2).toFixed(2));radius.push(y===state.years?5:0);}
+    var d=chart.data.datasets[0];
+    chart.data.labels=labels; d.data=data; d.pointRadius=radius;
+    chart.update();
+  }
+
+  // ---- materials ----
+  function renderMaterials(){
+    $("hwMaterials").innerHTML=MATS.map(function(m){
+      return '<button type="button" class="mat-btn'+(state.material===m.k?" on":"")+'" data-mat="'+m.k+'">'+m.l+'</button>';
+    }).join("");
+  }
+
+  // ---- main render ----
+  function render(){
+    renderDropdown();
+    $("hwSelLine").style.display=state.selected?"block":"none";
+    $("hwTryLine").style.display=state.selected?"none":"block";
+    if(state.selected)$("hwSelLabel").textContent=state.selected.postcode+" "+state.selected.suburb;
+    if(!state.selected)return;
+
+    var s=state, sel=s.selected;
+    var bore=boreAt(s.material,s.years,s.hardness);
+    var innerR=92*(bore/NOM);
+    var lossPct=(1-bore/NOM)*100;
+    var flow=Math.pow(bore/NOM,2)*100;
+    var est=sel.matched==="estimate";
+
+    // provenance
+    $("pvZone").textContent=sel.suburb+", "+sel.state+" "+sel.postcode;
+    $("pvPpm").textContent=sel.ppm+" mg/L";
+    $("pvCategory").textContent=category(sel.ppm);
+    var chip=$("pvChip");
+    chip.textContent=est?"estimate":"verified";
+    chip.style.color=est?"#DCA33A":"#888888";
+    chip.style.borderColor=est?"#5a4a20":"#3a3b40";
+    var note=$("hwEstNote");
+    if(est){note.style.display="block";note.textContent="Postcode "+sel.postcode+" isn't individually published — it's matched to the nearest verified supply zone, "+sel.viaSuburb+" ("+sel.via+"). We'd rather map you to a traced figure than invent one for your exact address.";}
+    else note.style.display="none";
+    $("hwZoneHeadline").textContent=sel.state+" · "+sel.suburb+" supply network";
+
+    // inputs
+    $("hwHardVal").textContent=s.hardness+" ppm";
+    $("hwYearsVal").textContent=s.years+" "+(s.years===1?"year":"years");
+    $("hwMatUpper").textContent=(MATS.filter(function(m){return m.k===s.material;})[0]||{}).l.toUpperCase();
+
+    // pipe svg
+    var inset=Math.max(0,innerR-4);
+    ["hwBoreFill","hwRim","hwClipCirc"].forEach(function(id){$(id).setAttribute("r",innerR);});
+    $("hwRimInset").setAttribute("r",inset);
+    $("hwScaleRing").setAttribute("opacity",s.years>0?1:0);
+    $("hwScaleText").setAttribute("opacity",s.years>0?1:0);
+    $("hwBoreLabel").textContent="Ø "+bore.toFixed(1);
+
+    // metrics
+    $("mBore").textContent=bore.toFixed(1);
+    $("mBoreDetail").textContent=s.years>0?("−"+lossPct.toFixed(0)+"% bore at year "+s.years):"full bore, as installed";
+    var flowEl=$("mFlow");
+    flowEl.textContent=Math.round(flow);
+    flowEl.style.color=flow<70?"#eb6834":"#0ABFBC";
+    $("mFlowDetail").textContent=s.years>0?((100-flow).toFixed(0)+"% capacity lost"):"as installed";
+    $("mTimeline").style.width=((s.years/25)*100)+"%";
+    $("mTimelineLabel").textContent="Year "+s.years+" of 25";
+
+    $("hwFormZone").value=sel.suburb+", "+sel.state+" "+sel.postcode+" — "+sel.ppm+" mg/L ("+category(sel.ppm)+")";
+  }
+
+  // ---- events ----
+  function wire(){
+    var pcInput=$("hwPostcode");
+    pcInput.addEventListener("input",function(e){state.query=e.target.value;state.focused=true;state.selected=null;$("hwCalc").style.display="none";renderDropdown();$("hwSelLine").style.display="none";$("hwTryLine").style.display="block";});
+    pcInput.addEventListener("focus",function(){state.focused=true;renderDropdown();});
+
+    $("hwDropdown").addEventListener("click",function(e){
+      var row=e.target.closest(".row"); if(!row)return;
+      var pc=row.getAttribute("data-pc"), type=row.getAttribute("data-type");
+      if(type==="estimate")pickZone(pc); else pick(pc);
+    });
+    document.addEventListener("click",function(e){
+      if(!e.target.closest("#hwPostcode")&&!e.target.closest("#hwDropdown")){state.focused=false;renderDropdown();}
+    });
+
+    $("hwChange").addEventListener("click",function(e){e.preventDefault();state.selected=null;state.query="";state.focused=true;pcInput.value="";$("hwCalc").style.display="none";render();pcInput.focus();});
+    document.querySelectorAll("[data-try]").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();pick(a.getAttribute("data-try"));});});
+
+    $("hwHardness").addEventListener("input",function(e){state.hardness=+e.target.value;render();syncChart();});
+    $("hwYears").addEventListener("input",function(e){state.years=+e.target.value;render();syncChart();});
+    $("hwMaterials").addEventListener("click",function(e){var b=e.target.closest("[data-mat]");if(!b)return;state.material=b.getAttribute("data-mat");renderMaterials();render();syncChart();});
+
+    // modal
+    $("hwOpenModal").addEventListener("click",function(){$("hwModal").style.display="flex";$("hwModalForm").style.display="block";$("hwModalSent").style.display="none";});
+    $("hwModalClose").addEventListener("click",closeModal);
+    $("hwModalOverlay").addEventListener("click",closeModal);
+    $("hwEmailForm").addEventListener("submit",function(e){
+      e.preventDefault();
+      var fd=new FormData(e.target);
+      fetch("https://formspree.io/f/xqejbpqj",{method:"POST",body:fd,headers:{Accept:"application/json"}}).catch(function(){});
+      $("hwModalForm").style.display="none";$("hwModalSent").style.display="block";
+      setTimeout(closeModal,3000);
+    });
+  }
+  function closeModal(){$("hwModal").style.display="none";}
+
+  document.addEventListener("DOMContentLoaded",function(){
+    renderMaterials();
+    renderMap();
+    wire();
+    loadGeo();
+  });
+})();
+</script>
+</body>
+</html>
