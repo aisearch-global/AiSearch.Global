@@ -1,5 +1,50 @@
 [
   {
+    "headline": "Kimi: Threat or menace?",
+    "link": "https://techcrunch.com/2026/07/18/kimi-threat-or-menace",
+    "date": "2026-07-19"
+  },
+  {
+    "headline": "Neil Rimer thinks the AI money is coming back out",
+    "link": "https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out",
+    "date": "2026-07-19"
+  },
+  {
+    "headline": "Vertu wants executives to pay $6,880 for an AI agent \u2014 here\u2019s how it actually performs",
+    "link": "https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs",
+    "date": "2026-07-19"
+  },
+  {
+    "headline": "A scorecard for the AI age",
+    "link": "https://openai.com/index/a-scorecard-for-the-ai-age",
+    "date": "2026-07-19"
+  },
+  {
+    "headline": "Why teens deserve access to safe AI",
+    "link": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+    "date": "2026-07-19"
+  },
+  {
+    "headline": "How Cars24 scales conversations and builds faster with OpenAI",
+    "link": "https://openai.com/index/cars24",
+    "date": "2026-07-19"
+  },
+  {
+    "headline": "Google NotebookLM Rebrand May Expose Your Site To More AI Scraping via @sejournal, @martinibuster",
+    "link": "https://www.searchenginejournal.com/google-notebooklm-rebrand-may-expose-your-site-to-more-ai-scraping/582775",
+    "date": "2026-07-19"
+  },
+  {
+    "headline": "Google Puts A Number On AI Search Clicks, Without The Data via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/google-puts-a-number-on-ai-search-clicks-without-the-data/582755",
+    "date": "2026-07-19"
+  },
+  {
+    "headline": "Google Delays Gemini 3.5 Pro Over Coding Issues: Report via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/gemini-3-5-pro-delayed-over-coding-bloomberg-reports/582660",
+    "date": "2026-07-19"
+  },
+  {
     "headline": "AI-driven memory crunch jolts India\u2019s smartphone market",
     "link": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market",
     "date": "2026-07-18"
@@ -28,50 +73,5 @@
     "headline": "Probabilistic Extension of Neuro-Symbolic AGI Robots based on Belnap's Typed Intensional FOL",
     "link": "https://arxiv.org/abs/2607.13073",
     "date": "2026-07-18"
-  },
-  {
-    "headline": "Google Faces Class Action Over Books Used To Train Gemini via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/google-faces-class-action-over-books-used-to-train-gemini/582708",
-    "date": "2026-07-18"
-  },
-  {
-    "headline": "Gemini 3.5 Pro Delayed Over Coding, Bloomberg Reports via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/gemini-3-5-pro-delayed-over-coding-bloomberg-reports/582660",
-    "date": "2026-07-18"
-  },
-  {
-    "headline": "AI Search Cites Reddit: 5 Proven Plays To Boost Multi-Location Visibility via @sejournal, @lorenbaker",
-    "link": "https://www.searchenginejournal.com/ai-search-cites-reddit-5-proven-plays-to-boost-multi-location-visibility-recap/582568",
-    "date": "2026-07-18"
-  },
-  {
-    "headline": "Founders Fund hires former OpenAI exec Ryan Beiermeister (and not because of her \u2018Mafia\u2019 skills)",
-    "link": "https://techcrunch.com/2026/07/16/founders-fund-hires-former-openai-exec-ryan-beiermeister-and-not-because-of-her-mafia-skills",
-    "date": "2026-07-17"
-  },
-  {
-    "headline": "Google Vids now lets you star in your own AI videos",
-    "link": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos",
-    "date": "2026-07-17"
-  },
-  {
-    "headline": "Newsletter platform Beehiiv now lets subscribers chat with each other, adds AI",
-    "link": "https://techcrunch.com/2026/07/16/newsletter-platform-beehiiv-now-lets-subscribers-chat-with-each-other-adds-ai",
-    "date": "2026-07-17"
-  },
-  {
-    "headline": "The Download: OpenAI unveils GPT-Red and heat pumps rise in the US",
-    "link": "https://www.technologyreview.com/2026/07/16/1140600/the-download-openai-unveils-gpt-red-heat-pumps-rise-us",
-    "date": "2026-07-17"
-  },
-  {
-    "headline": "OriginBlame: Record- and Token-Level Data Provenance for AI Training Datasets",
-    "link": "https://arxiv.org/abs/2607.13037",
-    "date": "2026-07-17"
-  },
-  {
-    "headline": "SPINE: Bridging the Cyber-Physical Gap with Agentic AI",
-    "link": "https://arxiv.org/abs/2607.13049",
-    "date": "2026-07-17"
   }
 ]

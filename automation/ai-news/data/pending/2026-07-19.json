@@ -1,0 +1,104 @@
+[
+  {
+    "key": "9a907cf573fb9ac50713119e",
+    "title": "Kimi: Threat or menace?",
+    "link": "https://techcrunch.com/2026/07/18/kimi-threat-or-menace",
+    "summary_raw": "Chinese company Moonshot AI released a new version of its Kimi model this week, prompting concern about \"full AI communism.\"",
+    "published": "Sat, 18 Jul 2026 18:51:07 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "80e1d65286dd28ee85085eba",
+    "title": "Neil Rimer thinks the AI money is coming back out",
+    "link": "https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out",
+    "summary_raw": "Neil Rimer, the venture capitalist who co-founded Index Ventures, predicts the historic wealth AI is generating in Silicon Valley will have to be redistributed, voluntarily or involuntarily.",
+    "published": "Sat, 18 Jul 2026 04:47:25 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "1d1444fb6ef637876d39429d",
+    "title": "Vertu wants executives to pay $6,880 for an AI agent \u2014 here\u2019s how it actually performs",
+    "link": "https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs",
+    "summary_raw": "From AI workflows to battery life and security, here's what it's really like to live with Vertu's luxury foldable every day.",
+    "published": "Fri, 17 Jul 2026 22:55:09 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "6cb7e751770a90b2608e69aa",
+    "title": "A scorecard for the AI age",
+    "link": "https://openai.com/index/a-scorecard-for-the-ai-age",
+    "summary_raw": "Sarah Friar, CFO of OpenAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute.",
+    "published": "Fri, 17 Jul 2026 10:00:00 GMT",
+    "source": "OpenAI News",
+    "categories": [
+      "human_ai_research",
+      "ai_news"
+    ]
+  },
+  {
+    "key": "c8a5520bc48eb0a08099b20e",
+    "title": "Why teens deserve access to safe AI",
+    "link": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+    "summary_raw": "Learn how OpenAI is making ChatGPT safer for teens with age-appropriate protections, learning tools, parental controls, and expert partnerships.",
+    "published": "Thu, 16 Jul 2026 16:00:00 GMT",
+    "source": "OpenAI News",
+    "categories": [
+      "human_ai_research",
+      "ai_news"
+    ]
+  },
+  {
+    "key": "95d6e82fa49ecd8c430eceec",
+    "title": "How Cars24 scales conversations and builds faster with OpenAI",
+    "link": "https://openai.com/index/cars24",
+    "summary_raw": "Cars24 uses OpenAI-powered voice and chat agents to handle 1M+ monthly conversation minutes, recover 12% of lost leads, and bring agentic workflows to teams across the company.",
+    "published": "Thu, 16 Jul 2026 00:00:00 GMT",
+    "source": "OpenAI News",
+    "categories": [
+      "human_ai_research",
+      "ai_news"
+    ]
+  },
+  {
+    "key": "07dd3fc45a1d91f576631f14",
+    "title": "Google NotebookLM Rebrand May Expose Your Site To More AI Scraping via @sejournal, @martinibuster",
+    "link": "https://www.searchenginejournal.com/google-notebooklm-rebrand-may-expose-your-site-to-more-ai-scraping/582775",
+    "summary_raw": "Google's NotebookLM rebrand may expose websites to more AI scraping with zero attribution unless site owners take action right now. The post Google NotebookLM Rebrand May Expose Your Site To More AI Scraping appeared first on Search Engine Journal .",
+    "published": "Sat, 18 Jul 2026 10:09:29 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "b000004d8fb580e9cadf7c53",
+    "title": "Google Puts A Number On AI Search Clicks, Without The Data via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/google-puts-a-number-on-ai-search-clicks-without-the-data/582755",
+    "summary_raw": "Google's Nick Fox said AI features in Search send billions of clicks to websites weekly, alongside Google's daily count. Neither figure can be checked. The post Google Puts A Number On AI Search Clicks, Without The Data appeared first on Search Engine Journal .",
+    "published": "Sat, 18 Jul 2026 05:00:48 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "2548f715b9f13070f9ccd360",
+    "title": "Google Delays Gemini 3.5 Pro Over Coding Issues: Report via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/gemini-3-5-pro-delayed-over-coding-bloomberg-reports/582660",
+    "summary_raw": "Google said it expected Gemini 3.5 Pro to roll out by now. It hasn't shipped, and Bloomberg reports coding is part the delay. The post Google Delays Gemini 3.5 Pro Over Coding Issues: Report appeared first on Search Engine Journal .",
+    "published": "Thu, 16 Jul 2026 22:44:17 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  }
+]
