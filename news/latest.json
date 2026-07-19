@@ -1,5 +1,55 @@
 [
   {
+    "headline": "Can an Apple lawsuit derail OpenAI\u2019s hardware plans?",
+    "link": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans",
+    "date": "2026-07-20"
+  },
+  {
+    "headline": "TechCrunch Mobility: The battle over robotaxi rules",
+    "link": "https://techcrunch.com/2026/07/19/techcrunch-mobility-the-battle-over-robotaxi-rules",
+    "date": "2026-07-20"
+  },
+  {
+    "headline": "\u2018Odyssey\u2019 director Christopher Nolan calls AI an obvious \u2018Trojan horse\u2019",
+    "link": "https://techcrunch.com/2026/07/19/odyssey-director-christopher-nolan-calls-ai-an-obvious-trojan-horse",
+    "date": "2026-07-20"
+  },
+  {
+    "headline": "The US is advancing AI safety through state and federal action",
+    "link": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+    "date": "2026-07-20"
+  },
+  {
+    "headline": "GPT-Red: Unlocking Self-Improvement for Robustness",
+    "link": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+    "date": "2026-07-20"
+  },
+  {
+    "headline": "How to manage AI investments in the agentic era",
+    "link": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+    "date": "2026-07-20"
+  },
+  {
+    "headline": "How To Measure AI Search Visibility via @sejournal, @slobodanmanic",
+    "link": "https://www.searchenginejournal.com/how-to-measure-ai-search-visibility/579893",
+    "date": "2026-07-20"
+  },
+  {
+    "headline": "Google\u2019s AI Mode Now Connects To Your Apps via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/google-starts-rolling-out-connected-apps-in-ai-mode-search/582545",
+    "date": "2026-07-20"
+  },
+  {
+    "headline": "Google Is Using Social Media Signals To Mask AI Search Click Loss via @sejournal, @TaylorDanRW",
+    "link": "https://www.searchenginejournal.com/google-is-using-social-media-signals-to-mask-ai-search-click-loss/582227",
+    "date": "2026-07-20"
+  },
+  {
+    "headline": "Flight Centre to embrace AI agents, ecommerce consolidation",
+    "link": "https://www.itnews.com.au/news/flight-centre-to-embrace-ai-agents-ecommerce-consolidation-627489",
+    "date": "2026-07-20"
+  },
+  {
     "headline": "Kimi: Threat or menace?",
     "link": "https://techcrunch.com/2026/07/18/kimi-threat-or-menace",
     "date": "2026-07-19"
@@ -23,55 +73,5 @@
     "headline": "Why teens deserve access to safe AI",
     "link": "https://openai.com/index/why-teens-deserve-access-safe-ai",
     "date": "2026-07-19"
-  },
-  {
-    "headline": "How Cars24 scales conversations and builds faster with OpenAI",
-    "link": "https://openai.com/index/cars24",
-    "date": "2026-07-19"
-  },
-  {
-    "headline": "Google NotebookLM Rebrand May Expose Your Site To More AI Scraping via @sejournal, @martinibuster",
-    "link": "https://www.searchenginejournal.com/google-notebooklm-rebrand-may-expose-your-site-to-more-ai-scraping/582775",
-    "date": "2026-07-19"
-  },
-  {
-    "headline": "Google Puts A Number On AI Search Clicks, Without The Data via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/google-puts-a-number-on-ai-search-clicks-without-the-data/582755",
-    "date": "2026-07-19"
-  },
-  {
-    "headline": "Google Delays Gemini 3.5 Pro Over Coding Issues: Report via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/gemini-3-5-pro-delayed-over-coding-bloomberg-reports/582660",
-    "date": "2026-07-19"
-  },
-  {
-    "headline": "AI-driven memory crunch jolts India\u2019s smartphone market",
-    "link": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market",
-    "date": "2026-07-18"
-  },
-  {
-    "headline": "How Apple\u2019s big lawsuit could disrupt OpenAI\u2019s IPO plans",
-    "link": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans",
-    "date": "2026-07-18"
-  },
-  {
-    "headline": "Patreon stops asking AI bots not to scrape \u2014 and starts blocking them",
-    "link": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them",
-    "date": "2026-07-18"
-  },
-  {
-    "headline": "The Download: perimenopause misinformation and China\u2019s latest AI leap",
-    "link": "https://www.technologyreview.com/2026/07/17/1140640/the-download-perimenopause-misinformation-china-moonshot-ai",
-    "date": "2026-07-18"
-  },
-  {
-    "headline": "Interventional Grounding Audits: Black-Box Premise-Dependency Tests for LLM Chain-of-Thought via Predicate Substitution",
-    "link": "https://arxiv.org/abs/2607.13069",
-    "date": "2026-07-18"
-  },
-  {
-    "headline": "Probabilistic Extension of Neuro-Symbolic AGI Robots based on Belnap's Typed Intensional FOL",
-    "link": "https://arxiv.org/abs/2607.13073",
-    "date": "2026-07-18"
   }
 ]

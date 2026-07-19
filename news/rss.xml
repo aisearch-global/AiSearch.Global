@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Sun, 19 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 20 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-20</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-20</guid>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 +1000</pubDate>
+      <description>10 stories: Can an Apple lawsuit derail OpenAI’s hardware plans? · TechCrunch Mobility: The battle over robotaxi rules · ‘Odyssey’ director Christopher Nolan calls AI an obvious ‘Trojan horse’ · The US is advancing AI safety through state and federal action · GPT-Red: Unlocking Self-Improvement for Robustness · How to manage AI investments in the agentic era · How To Measure AI Search Visibility via @sejournal, @slobodanmanic · Google’s AI Mode Now Connects To Your Apps via @sejournal, @MattGSouthern · Google Is Using Social Media Signals To Mask AI Search Click Loss via @sejournal, @TaylorDanRW · Flight Centre to embrace AI agents, ecommerce consolidation</description>
+    </item>
     <item>
       <title>The Answer Engine — 19 July 2026</title>
       <link>https://aisearch.global/news/2026-07-19</link>
