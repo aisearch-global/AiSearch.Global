@@ -153,6 +153,12 @@ Published: 21 Jun 2026 | Last modified: 24 Jun 2026
 
 AISearch Global used its own brand as Client Zero — running a full AI Visibility Audit on itself from launch on 20 May 2026. Documents a structural AEO score climb from 19 to 91 in six weeks. Records what ChatGPT, Perplexity, and Gemini actually say about the brand: Brand Recognition 10/100, Share of Voice 11.7%, Brand Sentiment 56/100, GEO Visibility 45/100, overall AEO score 36/100 average. Explains the AI training cutoff gap (models scored the brand before its data reached training sets) and what to do about it. Accompanied by the interactive Client Zero AI Visibility Console.
 
+### What Happens When Customers Ask AI a Question
+URL: /insights/what-happens-when-customers-ask-ai
+Published: 19 Jul 2026
+
+A practical guide for Australian small business owners on how customer search is shifting from keyword search (SEO) to AI answers (AEO). Uses cat toothpaste (search interest up roughly 230% over two years, ~12,100 monthly searches) to show how people now ask AI full natural questions instead of typing keywords into Google. Walks through what actually happens in the seconds after a customer asks: the question is broken into tokens, the AI checks whether it needs a live web search (triggered by words like "best", "near me", "top-rated", "compare"), the answer is built one token at a time, and a business is named only if it was findable, readable, and trustworthy-looking. Contrasts the two models: SEO returns a ranked list of 50 to 100 links the customer must compare, while an AI tool writes one direct, summarised answer with room to name only one or two businesses. Explains decision fatigue as the reason customers gravitate toward a single clear answer, and why a business can rank on Google yet never be named by AI (ranking and being citable are two different skills). Stresses that AEO is not just SEO with a new label. Gives six plain-English steps that make AI more likely to recommend a business: update your Google Business Profile, pass the one-sentence test (plain English), encourage specific reviews, keep name/address/phone/details consistent everywhere, describe everyday value in simple terms, and do the 30-second check (ask ChatGPT or Gemini a real customer question and see if you are named). Core message: the clarity that helps AI understand you is the same clarity that helps human customers trust you, and AEO adds a layer on top of SEO rather than replacing it.
+
 ---
 
 ## Interactive Tools
