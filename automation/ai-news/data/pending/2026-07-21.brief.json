@@ -1,0 +1,136 @@
+[
+  {
+    "key": "274094428917d045684dce0a",
+    "title": "AI\u2019s most important protocol is getting a little bit easier to use",
+    "link": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use",
+    "summary_raw": "The Model Context Protocol (MCP) is one of the basic building blocks of AI interoperability, giving AI models a secure way to access external data sources and services. It\u2019s the plumbing that lets a chatbot reach into your calendar, your database, or your internal tools, instead of engineers building custom pipes for every connection. Next [\u2026]",
+    "published": "Mon, 20 Jul 2026 20:50:40 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "AI\u2019s most important protocol is getting a little bit easier to use",
+    "summary": "The Model Context Protocol (MCP) is one of the basic building blocks of AI interoperability, giving AI models a secure way to access external data sources and services. It\u2019s the plumbing that lets a chatbot reach into your calendar, your database, or your internal tools, instead of engineers building custom pipes for every connection. Next [\u2026]"
+  },
+  {
+    "key": "1b792142bc048cae299bc221",
+    "title": "OpenAI is scared of open-weight models. Should the US be?",
+    "link": "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be",
+    "summary_raw": "Talk of banning Chinese-made open-weight LLMs reveals the challenge of turning AI into a business.",
+    "published": "Mon, 20 Jul 2026 19:33:25 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "OpenAI is scared of open-weight models. Should the US be?",
+    "summary": "Talk of banning Chinese-made open-weight LLMs reveals the challenge of turning AI into a business."
+  },
+  {
+    "key": "7e15eb14f86c9d95adbf167b",
+    "title": "Natural raises $30M to reinvent payments for AI agents \u2014 and take on Stripe",
+    "link": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe",
+    "summary_raw": "The one-year-old startup aims to reinvent financial architecture for autonomous AI transactions.",
+    "published": "Mon, 20 Jul 2026 19:11:25 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Natural raises $30M to reinvent payments for AI agents \u2014 and take on Stripe",
+    "summary": "The one-year-old startup aims to reinvent financial architecture for autonomous AI transactions."
+  },
+  {
+    "key": "70122b68ada5ae3d2bf899ca",
+    "title": "China\u2019s AI models have Trump\u2019s AI world at war with itself",
+    "link": "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself",
+    "summary_raw": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Over the weekend, several current and former advisors to President Donald Trump on AI publicly lobbed insults at the country\u2019s leading AI companies. David Sacks, the president\u2019s AI and crypto \u201cczar\u201d until\u2026",
+    "published": "Mon, 20 Jul 2026 18:00:00 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ],
+    "headline": "China\u2019s AI models have Trump\u2019s AI world at war with itself",
+    "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Over the weekend, several current and former advisors to President Donald Trump on AI publicly lobbed insults at the country\u2019s leading AI companies. David Sacks, the president\u2019s AI and crypto \u201cczar\u201d until\u2026"
+  },
+  {
+    "key": "9c8efe7eb85bcbf56d1b8b35",
+    "title": "The Download: AI hiring biases, and weather data sabotage",
+    "link": "https://www.technologyreview.com/2026/07/20/1140664/the-download-ai-hiring-biases-weather-data-sabotage",
+    "summary_raw": "This is today\u2019s edition of The Download, our weekday newsletter that provides a daily dose of what\u2019s going on in the world of technology. AI is more likely than humans to form biases when hiring The next time you apply for a job, AI may screen your r\u00e9sum\u00e9 before any human sees it. But there\u2019s\u2026",
+    "published": "Mon, 20 Jul 2026 12:10:00 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ],
+    "headline": "The Download: AI hiring biases, and weather data sabotage",
+    "summary": "This is today\u2019s edition of The Download, our weekday newsletter that provides a daily dose of what\u2019s going on in the world of technology. AI is more likely than humans to form biases when hiring The next time you apply for a job, AI may screen your r\u00e9sum\u00e9 before any human sees it. But there\u2019s\u2026"
+  },
+  {
+    "key": "e205834f0bf36a7f5371a0db",
+    "title": "AI is more likely than humans to form biases when hiring",
+    "link": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans",
+    "summary_raw": "The next time you apply for a job, AI may screen your r\u00e9sum\u00e9 before any human sees it. But there\u2019s good reason to question whether AI will judge you fairly. Researchers already know that LLMs pick up human biases from their training data. New research suggests that LLMs can also develop their own biases from\u2026",
+    "published": "Mon, 20 Jul 2026 08:39:01 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ],
+    "headline": "AI is more likely than humans to form biases when hiring",
+    "summary": "The next time you apply for a job, AI may screen your r\u00e9sum\u00e9 before any human sees it. But there\u2019s good reason to question whether AI will judge you fairly. Researchers already know that LLMs pick up human biases from their training data. New research suggests that LLMs can also develop their own biases from\u2026"
+  },
+  {
+    "key": "a3510ec2c969b7d81be613bc",
+    "title": "Google Must Share Anonymized Search Data With Rivals via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/google-must-share-anonymized-search-data-with-rivals/582922",
+    "summary_raw": "EU binding rules require Google to share anonymized Search data with eligible rival engines and search-enabled AI chatbots. The post Google Must Share Anonymized Search Data With Rivals appeared first on Search Engine Journal .",
+    "published": "Mon, 20 Jul 2026 18:12:10 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "Google Must Share Anonymized Search Data With Rivals via @sejournal, @MattGSouthern",
+    "summary": "EU binding rules require Google to share anonymized Search data with eligible rival engines and search-enabled AI chatbots. The post Google Must Share Anonymized Search Data With Rivals appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "b35341d2b51c09ff41beb792",
+    "title": "AI Answers About Your Locations Are Often Wrong \u2013 Check Before Customers Do via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/ai-answers-about-your-locations-are-often-wrong-check-before-customers-do/582205",
+    "summary_raw": "Wrong postcodes, closed-business claims, invented services: what vendor tests reveal about AI answers, and how to audit yours across five platforms. The post AI Answers About Your Locations Are Often Wrong \u2013 Check Before Customers Do appeared first on Search Engine Journal .",
+    "published": "Mon, 20 Jul 2026 13:30:47 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "AI Answers About Your Locations Are Often Wrong \u2013 Check Before Customers Do via @sejournal, @MattGSouthern",
+    "summary": "Wrong postcodes, closed-business claims, invented services: what vendor tests reveal about AI answers, and how to audit yours across five platforms. The post AI Answers About Your Locations Are Often Wrong \u2013 Check Before Customers Do appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "b34993f098c45f1f15e62c50",
+    "title": "MCP For Marketers: What To Connect First & Why Your Data Wins",
+    "link": "https://www.searchenginejournal.com/how-marketers-should-use-mcp-what-to-connect-how-to-make-it-work/581171",
+    "summary_raw": "Learn the essentials of MCP for marketers and its role in connecting AI assistants to enhance marketing effectiveness. The post MCP For Marketers: What To Connect First & Why Your Data Wins appeared first on Search Engine Journal .",
+    "published": "Mon, 20 Jul 2026 11:30:09 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "MCP For Marketers: What To Connect First & Why Your Data Wins",
+    "summary": "Learn the essentials of MCP for marketers and its role in connecting AI assistants to enhance marketing effectiveness. The post MCP For Marketers: What To Connect First & Why Your Data Wins appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "3d102a22e048f2a421e33dda",
+    "title": "Vic Labor moots workplace AI and biometrics surveillance curbs",
+    "link": "https://www.itnews.com.au/news/vic-labor-moots-workplace-ai-and-biometrics-surveillance-curbs-627502",
+    "summary_raw": "Could also impact HR's use of AI.",
+    "published": "Mon, 20 Jul 2026 13:55:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ],
+    "headline": "Vic Labor moots workplace AI and biometrics surveillance curbs",
+    "summary": "Could also impact HR's use of AI."
+  }
+]

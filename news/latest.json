@@ -1,5 +1,55 @@
 [
   {
+    "headline": "AI\u2019s most important protocol is getting a little bit easier to use",
+    "link": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use",
+    "date": "2026-07-21"
+  },
+  {
+    "headline": "OpenAI is scared of open-weight models. Should the US be?",
+    "link": "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be",
+    "date": "2026-07-21"
+  },
+  {
+    "headline": "Natural raises $30M to reinvent payments for AI agents \u2014 and take on Stripe",
+    "link": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe",
+    "date": "2026-07-21"
+  },
+  {
+    "headline": "China\u2019s AI models have Trump\u2019s AI world at war with itself",
+    "link": "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself",
+    "date": "2026-07-21"
+  },
+  {
+    "headline": "The Download: AI hiring biases, and weather data sabotage",
+    "link": "https://www.technologyreview.com/2026/07/20/1140664/the-download-ai-hiring-biases-weather-data-sabotage",
+    "date": "2026-07-21"
+  },
+  {
+    "headline": "AI is more likely than humans to form biases when hiring",
+    "link": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans",
+    "date": "2026-07-21"
+  },
+  {
+    "headline": "Google Must Share Anonymized Search Data With Rivals via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/google-must-share-anonymized-search-data-with-rivals/582922",
+    "date": "2026-07-21"
+  },
+  {
+    "headline": "AI Answers About Your Locations Are Often Wrong \u2013 Check Before Customers Do via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/ai-answers-about-your-locations-are-often-wrong-check-before-customers-do/582205",
+    "date": "2026-07-21"
+  },
+  {
+    "headline": "MCP For Marketers: What To Connect First & Why Your Data Wins",
+    "link": "https://www.searchenginejournal.com/how-marketers-should-use-mcp-what-to-connect-how-to-make-it-work/581171",
+    "date": "2026-07-21"
+  },
+  {
+    "headline": "Vic Labor moots workplace AI and biometrics surveillance curbs",
+    "link": "https://www.itnews.com.au/news/vic-labor-moots-workplace-ai-and-biometrics-surveillance-curbs-627502",
+    "date": "2026-07-21"
+  },
+  {
     "headline": "Can an Apple lawsuit derail OpenAI\u2019s hardware plans?",
     "link": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans",
     "date": "2026-07-20"
@@ -23,55 +73,5 @@
     "headline": "GPT-Red: Unlocking Self-Improvement for Robustness",
     "link": "https://openai.com/index/unlocking-self-improvement-gpt-red",
     "date": "2026-07-20"
-  },
-  {
-    "headline": "How to manage AI investments in the agentic era",
-    "link": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-    "date": "2026-07-20"
-  },
-  {
-    "headline": "How To Measure AI Search Visibility via @sejournal, @slobodanmanic",
-    "link": "https://www.searchenginejournal.com/how-to-measure-ai-search-visibility/579893",
-    "date": "2026-07-20"
-  },
-  {
-    "headline": "Google\u2019s AI Mode Now Connects To Your Apps via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/google-starts-rolling-out-connected-apps-in-ai-mode-search/582545",
-    "date": "2026-07-20"
-  },
-  {
-    "headline": "Google Is Using Social Media Signals To Mask AI Search Click Loss via @sejournal, @TaylorDanRW",
-    "link": "https://www.searchenginejournal.com/google-is-using-social-media-signals-to-mask-ai-search-click-loss/582227",
-    "date": "2026-07-20"
-  },
-  {
-    "headline": "Flight Centre to embrace AI agents, ecommerce consolidation",
-    "link": "https://www.itnews.com.au/news/flight-centre-to-embrace-ai-agents-ecommerce-consolidation-627489",
-    "date": "2026-07-20"
-  },
-  {
-    "headline": "Kimi: Threat or menace?",
-    "link": "https://techcrunch.com/2026/07/18/kimi-threat-or-menace",
-    "date": "2026-07-19"
-  },
-  {
-    "headline": "Neil Rimer thinks the AI money is coming back out",
-    "link": "https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out",
-    "date": "2026-07-19"
-  },
-  {
-    "headline": "Vertu wants executives to pay $6,880 for an AI agent \u2014 here\u2019s how it actually performs",
-    "link": "https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs",
-    "date": "2026-07-19"
-  },
-  {
-    "headline": "A scorecard for the AI age",
-    "link": "https://openai.com/index/a-scorecard-for-the-ai-age",
-    "date": "2026-07-19"
-  },
-  {
-    "headline": "Why teens deserve access to safe AI",
-    "link": "https://openai.com/index/why-teens-deserve-access-safe-ai",
-    "date": "2026-07-19"
   }
 ]

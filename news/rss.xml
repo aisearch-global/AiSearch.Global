@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Mon, 20 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 21 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-21</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-21</guid>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +1000</pubDate>
+      <description>10 stories: AI’s most important protocol is getting a little bit easier to use · OpenAI is scared of open-weight models. Should the US be? · Natural raises $30M to reinvent payments for AI agents — and take on Stripe · China’s AI models have Trump’s AI world at war with itself · The Download: AI hiring biases, and weather data sabotage · AI is more likely than humans to form biases when hiring · Google Must Share Anonymized Search Data With Rivals via @sejournal, @MattGSouthern · AI Answers About Your Locations Are Often Wrong – Check Before Customers Do via @sejournal, @MattGSouthern · MCP For Marketers: What To Connect First &amp; Why Your Data Wins · Vic Labor moots workplace AI and biometrics surveillance curbs</description>
+    </item>
     <item>
       <title>The Answer Engine — 20 July 2026</title>
       <link>https://aisearch.global/news/2026-07-20</link>
