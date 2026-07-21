@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Tue, 21 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 22 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-22</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-22</guid>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +1000</pubDate>
+      <description>12 stories: OpenAI says Hugging Face was breached by its own pre-release models · Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents · AI and the rise of the universal entertainment app · The Download: Chinese AI divides the White House, and a record copyright payout · Advancing next-gen AI with materials science innovation · Rater State Bias in RLHF Preference Data: An Audit Framework · Google’s AI Search Data Is Growing, But The Gaps Remain via @sejournal, @MattGSouthern · The New Google Business Profile Playbook for AI Local Search via @sejournal, @CallRail · 2027 Marketing Budgets: Why New Categories Beat Bigger AI Line Items via @sejournal, @gregjarboe · CommBank iQ is putting AI to work on its core dataset · State of Data &amp; AI 2026 · State of Data &amp; AI 2026: Data Sovereignty &amp; Compliance</description>
+    </item>
     <item>
       <title>The Answer Engine — 21 July 2026</title>
       <link>https://aisearch.global/news/2026-07-21</link>

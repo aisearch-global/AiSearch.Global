@@ -1,5 +1,65 @@
 [
   {
+    "headline": "OpenAI says Hugging Face was breached by its own pre-release models",
+    "link": "https://techcrunch.com/2026/07/21/openai-says-hugging-face-was-breached-by-its-own-pre-release-models",
+    "date": "2026-07-22"
+  },
+  {
+    "headline": "Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents",
+    "link": "https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents",
+    "date": "2026-07-22"
+  },
+  {
+    "headline": "AI and the rise of the universal entertainment app",
+    "link": "https://techcrunch.com/2026/07/21/ai-and-the-rise-of-the-universal-entertainment-app",
+    "date": "2026-07-22"
+  },
+  {
+    "headline": "The Download: Chinese AI divides the White House, and a record copyright payout",
+    "link": "https://www.technologyreview.com/2026/07/21/1140685/the-download-chinese-ai-divides-white-house-anthropic-copyright-settlement",
+    "date": "2026-07-22"
+  },
+  {
+    "headline": "Advancing next-gen AI with materials science innovation",
+    "link": "https://www.technologyreview.com/2026/07/21/1140602/advancing-next-gen-ai-with-materials-science-innovation",
+    "date": "2026-07-22"
+  },
+  {
+    "headline": "Rater State Bias in RLHF Preference Data: An Audit Framework",
+    "link": "https://arxiv.org/abs/2607.16195",
+    "date": "2026-07-22"
+  },
+  {
+    "headline": "Google\u2019s AI Search Data Is Growing, But The Gaps Remain via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/googles-ai-search-data-is-growing-but-the-gaps-remain/582558",
+    "date": "2026-07-22"
+  },
+  {
+    "headline": "The New Google Business Profile Playbook for AI Local Search via @sejournal, @CallRail",
+    "link": "https://www.searchenginejournal.com/rundowns/the-new-google-business-profile-playbook-for-ai-local-search",
+    "date": "2026-07-22"
+  },
+  {
+    "headline": "2027 Marketing Budgets: Why New Categories Beat Bigger AI Line Items via @sejournal, @gregjarboe",
+    "link": "https://www.searchenginejournal.com/2027-marketing-budgets-why-new-categories-beat-bigger-ai-line-items/582688",
+    "date": "2026-07-22"
+  },
+  {
+    "headline": "CommBank iQ is putting AI to work on its core dataset",
+    "link": "https://www.itnews.com.au/news/commbank-iq-is-putting-ai-to-work-on-its-core-dataset-627505",
+    "date": "2026-07-22"
+  },
+  {
+    "headline": "State of Data & AI 2026",
+    "link": "https://www.itnews.com.au/state-of-data-ai-2026",
+    "date": "2026-07-22"
+  },
+  {
+    "headline": "State of Data & AI 2026: Data Sovereignty & Compliance",
+    "link": "https://www.itnews.com.au/state-of-data-ai-2026/state-of-data-ai-2026-data-sovereignty-compliance-627438",
+    "date": "2026-07-22"
+  },
+  {
     "headline": "AI\u2019s most important protocol is getting a little bit easier to use",
     "link": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use",
     "date": "2026-07-21"
@@ -13,65 +73,5 @@
     "headline": "Natural raises $30M to reinvent payments for AI agents \u2014 and take on Stripe",
     "link": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe",
     "date": "2026-07-21"
-  },
-  {
-    "headline": "China\u2019s AI models have Trump\u2019s AI world at war with itself",
-    "link": "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself",
-    "date": "2026-07-21"
-  },
-  {
-    "headline": "The Download: AI hiring biases, and weather data sabotage",
-    "link": "https://www.technologyreview.com/2026/07/20/1140664/the-download-ai-hiring-biases-weather-data-sabotage",
-    "date": "2026-07-21"
-  },
-  {
-    "headline": "AI is more likely than humans to form biases when hiring",
-    "link": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans",
-    "date": "2026-07-21"
-  },
-  {
-    "headline": "Google Must Share Anonymized Search Data With Rivals via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/google-must-share-anonymized-search-data-with-rivals/582922",
-    "date": "2026-07-21"
-  },
-  {
-    "headline": "AI Answers About Your Locations Are Often Wrong \u2013 Check Before Customers Do via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/ai-answers-about-your-locations-are-often-wrong-check-before-customers-do/582205",
-    "date": "2026-07-21"
-  },
-  {
-    "headline": "MCP For Marketers: What To Connect First & Why Your Data Wins",
-    "link": "https://www.searchenginejournal.com/how-marketers-should-use-mcp-what-to-connect-how-to-make-it-work/581171",
-    "date": "2026-07-21"
-  },
-  {
-    "headline": "Vic Labor moots workplace AI and biometrics surveillance curbs",
-    "link": "https://www.itnews.com.au/news/vic-labor-moots-workplace-ai-and-biometrics-surveillance-curbs-627502",
-    "date": "2026-07-21"
-  },
-  {
-    "headline": "Can an Apple lawsuit derail OpenAI\u2019s hardware plans?",
-    "link": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans",
-    "date": "2026-07-20"
-  },
-  {
-    "headline": "TechCrunch Mobility: The battle over robotaxi rules",
-    "link": "https://techcrunch.com/2026/07/19/techcrunch-mobility-the-battle-over-robotaxi-rules",
-    "date": "2026-07-20"
-  },
-  {
-    "headline": "\u2018Odyssey\u2019 director Christopher Nolan calls AI an obvious \u2018Trojan horse\u2019",
-    "link": "https://techcrunch.com/2026/07/19/odyssey-director-christopher-nolan-calls-ai-an-obvious-trojan-horse",
-    "date": "2026-07-20"
-  },
-  {
-    "headline": "The US is advancing AI safety through state and federal action",
-    "link": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
-    "date": "2026-07-20"
-  },
-  {
-    "headline": "GPT-Red: Unlocking Self-Improvement for Robustness",
-    "link": "https://openai.com/index/unlocking-self-improvement-gpt-red",
-    "date": "2026-07-20"
   }
 ]
