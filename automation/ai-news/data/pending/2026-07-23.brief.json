@@ -1,0 +1,162 @@
+[
+  {
+    "key": "36e51912c1c5eec8438760d6",
+    "title": "Treasury threatens sanctions after White House claims Moonshot distilled Anthropic\u2019s Fable",
+    "link": "https://techcrunch.com/2026/07/22/treasury-threatens-sanctions-after-white-house-claims-moonshot-distilled-anthropics-fable",
+    "summary_raw": "Treasury Secretary Scott Bessent warned the U.S. government could sanction Chinese AI companies after White House officials accused Moonshot of distilling Anthropic's Fable model to develop Kimi K3.",
+    "published": "Wed, 22 Jul 2026 20:49:03 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Treasury threatens sanctions after White House claims Moonshot distilled Anthropic\u2019s Fable",
+    "summary": "Treasury Secretary Scott Bessent warned the U.S. government could sanction Chinese AI companies after White House officials accused Moonshot of distilling Anthropic's Fable model to develop Kimi K3."
+  },
+  {
+    "key": "e988a9f480c324741db013a8",
+    "title": "How OpenAI\u2019s human mistake led to the AI-powered hack on Hugging Face",
+    "link": "https://techcrunch.com/2026/07/22/how-an-openais-human-mistake-led-to-the-ai-powered-hack-on-hugging-face",
+    "summary_raw": "OpenAI made a mistake setting up what it called a \u201chighly isolated\u201d testing environment and sandbox. According to cybersecurity experts, that human mistake is what made the AI-powered attack on Hugging Face possible.",
+    "published": "Wed, 22 Jul 2026 19:11:46 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "How OpenAI\u2019s human mistake led to the AI-powered hack on Hugging Face",
+    "summary": "OpenAI made a mistake setting up what it called a \u201chighly isolated\u201d testing environment and sandbox. According to cybersecurity experts, that human mistake is what made the AI-powered attack on Hugging Face possible."
+  },
+  {
+    "key": "829cbd98c611ba448e192957",
+    "title": "Travis Kalanick\u2019s robotics company raises $1.7B, led by a16z",
+    "link": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z",
+    "summary_raw": "Uber is also investing in Travis Kalanick's company Atoms, which has made gauzy claims about using industrial AI to modernize the world.",
+    "published": "Wed, 22 Jul 2026 18:50:44 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ],
+    "headline": "Travis Kalanick\u2019s robotics company raises $1.7B, led by a16z",
+    "summary": "Uber is also investing in Travis Kalanick's company Atoms, which has made gauzy claims about using industrial AI to modernize the world."
+  },
+  {
+    "key": "10d7dfc422b9ad2dbc7f436a",
+    "title": "The Download: NASA\u2019s new space telescope and OpenAI\u2019s autonomous hacker",
+    "link": "https://www.technologyreview.com/2026/07/22/1140717/the-download-nasa-space-telescope-openai-hugging-face-hack",
+    "summary_raw": "This is today\u2019s edition of The Download, our weekday newsletter that provides a daily dose of what\u2019s going on in the world of technology. Shape-shifting mirrors on NASA\u2019s new space telescope could unveil Jupiters like our own When NASA\u2019s Nancy Grace Roman Space Telescope launches, as early as the end of next month, it will\u2026",
+    "published": "Wed, 22 Jul 2026 12:10:00 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ],
+    "headline": "The Download: NASA\u2019s new space telescope and OpenAI\u2019s autonomous hacker",
+    "summary": "This is today\u2019s edition of The Download, our weekday newsletter that provides a daily dose of what\u2019s going on in the world of technology. Shape-shifting mirrors on NASA\u2019s new space telescope could unveil Jupiters like our own When NASA\u2019s Nancy Grace Roman Space Telescope launches, as early as the end of next month, it will\u2026"
+  },
+  {
+    "key": "7eb6cc7bd88a6259d8e05dda",
+    "title": "SysAdmin: Measuring Instrumental Power-Seeking in Frontier AI",
+    "link": "https://arxiv.org/abs/2607.18239",
+    "summary_raw": "arXiv:2607.18239v1 Announce Type: new Abstract: Power-seeking defined as behaviors where AI systems acquire resources, evade oversight, or resist termination beyond task requirements is identified as a key driver of Loss of Control (LoC) risk. In this work, we introduce SysAdmin, a benchmark that positions frontier language models as autonomous system administrators in a high-fidelity Linux sandbox to measure power-seeking propensity across five dimensions: self-preservation, increasing autonomy, resource acquisition, environment modification, and strategic concealment. We evaluated seven frontier models across four experimental conditions in a total of 2800 tasks. After bias correction using human-annotated calibration data, corrected power-seeking estimates ranged from 0 to about 5 percent per model. We also conducted a positive control with explicit power-seeking prompts that achieved 100% detection, validating measurement sensitivity. Our findings indicate current frontier models exhibit minimal spontaneous power-seeking in naturalistic system administration contexts, though model-specific failure modes suggest evaluations must test diverse misalignment patterns. Nevertheless, ",
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ],
+    "headline": "SysAdmin: Measuring Instrumental Power-Seeking in Frontier AI",
+    "summary": "arXiv:2607.18239v1 Announce Type: new Abstract: Power-seeking defined as behaviors where AI systems acquire resources, evade oversight, or resist termination beyond task requirements is identified as a key driver of Loss of Control (LoC) risk. In this work, we introduce SysAdmin, a benchmark that positions frontier language models as autonomous system administrators in a high-fidelity Linux sandbox to measure power-seeking propensity across five dimensions: self-preservation, increasing autonomy, resource acquisition, environment modification, and strategic concealment. We evaluated seven frontier models across four experimental conditions in a total of 2800 tasks. After bias correction using human-annotated calibration data, corrected power-seeking estimates ranged from 0 to about 5 percent per model. We also conducted a positive control with explicit power-seeking prompts that achieved 100% detection, validating measurement sensitivity. Our findings indicate current frontier models exhibit minimal spontaneous power-seeking in naturalistic system administration contexts, though model-specific failure modes suggest evaluations must test diverse misalignment patterns. Nevertheless,"
+  },
+  {
+    "key": "c8998027a461d182aed1c5e4",
+    "title": "Calibrated Selective Fact-Checking via Evidence Chain Evaluation",
+    "link": "https://arxiv.org/abs/2607.18240",
+    "summary_raw": "arXiv:2607.18240v1 Announce Type: new Abstract: Large language models (LLMs) can achieve strong fact-checking accuracy, yet forced binary decisions conceal a critical reliability problem: systems may issue confident verdicts even when supporting evidence is weak, sparse, or internally inconsistent. We address this issue through Evidence Chain Evaluation (ECE), a selective fact-checking framework that permits abstention via an uncertain verdict instead of requiring a true/false decision for every claim. The evaluated system is a tool-using verification agent that gathers evidence through web search, scholarly search, and executable checks, and then returns a structured verdict with confidence and source-level metadata. On ECE-Bench, ECE achieves 91.6% standard accuracy, 93.7% coverage, and 97.8% selective accuracy on answered claims. Although ECE does not outperform the strongest retrieval baseline on aggregate calibration metrics such as Expected Calibration Error, Brier score, or AURC, it delivers a clear selective-prediction trade-off: the system maintains very high accuracy on answered claims while deferring 6 of 95 cases. These deferred cases are concentrated in lower-reliabili",
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ],
+    "headline": "Calibrated Selective Fact-Checking via Evidence Chain Evaluation",
+    "summary": "arXiv:2607.18240v1 Announce Type: new Abstract: Large language models (LLMs) can achieve strong fact-checking accuracy, yet forced binary decisions conceal a critical reliability problem: systems may issue confident verdicts even when supporting evidence is weak, sparse, or internally inconsistent. We address this issue through Evidence Chain Evaluation (ECE), a selective fact-checking framework that permits abstention via an uncertain verdict instead of requiring a true/false decision for every claim. The evaluated system is a tool-using verification agent that gathers evidence through web search, scholarly search, and executable checks, and then returns a structured verdict with confidence and source-level metadata. On ECE-Bench, ECE achieves 91.6% standard accuracy, 93.7% coverage, and 97.8% selective accuracy on answered claims. Although ECE does not outperform the strongest retrieval baseline on aggregate calibration metrics such as Expected Calibration Error, Brier score, or AURC, it delivers a clear selective-prediction trade-off: the system maintains very high accuracy on answered claims while deferring 6 of 95 cases. These deferred cases are concentrated in lower-reliabili"
+  },
+  {
+    "key": "add3627bac15966b02d2f401",
+    "title": "Why AI Content Stopped Working & What To Do About It [Watch Now] via @sejournal, @hethr_campbell",
+    "link": "https://www.searchenginejournal.com/why-ai-content-stopped-working-what-to-do-about-it-watch-now/583098",
+    "summary_raw": "Does Google penalize AI content? Get answers on GEO, answer engine optimization, and the content personalization signals that convert. Watch on demand. The post Why AI Content Stopped Working & What To Do About It [Watch Now] appeared first on Search Engine Journal .",
+    "published": "Wed, 22 Jul 2026 18:28:31 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "Why AI Content Stopped Working & What To Do About It [Watch Now] via @sejournal, @hethr_campbell",
+    "summary": "Does Google penalize AI content? Get answers on GEO, answer engine optimization, and the content personalization signals that convert. Watch on demand. The post Why AI Content Stopped Working & What To Do About It [Watch Now] appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "201ec9d6764e4ed7094e86e1",
+    "title": "Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth via @sejournal, @billhunt",
+    "link": "https://www.searchenginejournal.com/beyond-brand-sovereignty-how-to-build-an-ai-ready-source-of-truth/582266",
+    "summary_raw": "AI doesn't reward the best-optimized page. It rewards the highest-confidence evidence. Bill Hunt explains how organizations earn that confidence. The post Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth appeared first on Search Engine Journal .",
+    "published": "Wed, 22 Jul 2026 13:30:16 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth via @sejournal, @billhunt",
+    "summary": "AI doesn't reward the best-optimized page. It rewards the highest-confidence evidence. Bill Hunt explains how organizations earn that confidence. The post Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "2a945ab138725088718dd84b",
+    "title": "AI Overviews Now Answer Most Local Searches \u2013 How To Get Your Business Cited via @sejournal, @AdamHeitzman",
+    "link": "https://www.searchenginejournal.com/ai-overviews-now-answer-most-local-searches-how-to-get-your-business-cited/580757",
+    "summary_raw": "AI Overviews are outpacing local packs across 15+ markets. Here is what location pages need to stay visible in AI-generated answers. The post AI Overviews Now Answer Most Local Searches \u2013 How To Get Your Business Cited appeared first on Search Engine Journal .",
+    "published": "Wed, 22 Jul 2026 09:30:25 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ],
+    "headline": "AI Overviews Now Answer Most Local Searches \u2013 How To Get Your Business Cited via @sejournal, @AdamHeitzman",
+    "summary": "AI Overviews are outpacing local packs across 15+ markets. Here is what location pages need to stay visible in AI-generated answers. The post AI Overviews Now Answer Most Local Searches \u2013 How To Get Your Business Cited appeared first on Search Engine Journal ."
+  },
+  {
+    "key": "3e8113e75e2b50ad21c36f74",
+    "title": "Western Sydney University gives M365 Copilot to all staff",
+    "link": "https://www.itnews.com.au/news/western-sydney-university-gives-m365-copilot-to-all-staff-627582",
+    "summary_raw": "After successful pilot.",
+    "published": "Wed, 22 Jul 2026 17:32:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ],
+    "headline": "Western Sydney University gives M365 Copilot to all staff",
+    "summary": "After successful pilot."
+  },
+  {
+    "key": "6f18083f8f98c67a3b215f1a",
+    "title": "OpenAI models running benchmark breached AI platform Hugging Face",
+    "link": "https://www.itnews.com.au/news/openai-models-running-benchmark-breached-ai-platform-hugging-face-627560",
+    "summary_raw": "Guardrails for commercial AIs prompted analysts to switch to Chinese model.",
+    "published": "Wed, 22 Jul 2026 11:39:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ],
+    "headline": "OpenAI models running benchmark breached AI platform Hugging Face",
+    "summary": "Guardrails for commercial AIs prompted analysts to switch to Chinese model."
+  },
+  {
+    "key": "18be0f1faa0043431a5663fd",
+    "title": "How the Fair Work Commission safely deployed Agentic AI in weeks, not years",
+    "link": "https://www.itnews.com.au/feature/how-the-fair-work-commission-safely-deployed-agentic-ai-in-weeks-not-years-627327",
+    "summary_raw": "Government AI moves fast, with guardrails.",
+    "published": "Wed, 22 Jul 2026 06:00:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ],
+    "headline": "How the Fair Work Commission safely deployed Agentic AI in weeks, not years",
+    "summary": "Government AI moves fast, with guardrails."
+  }
+]

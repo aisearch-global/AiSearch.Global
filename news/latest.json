@@ -1,5 +1,65 @@
 [
   {
+    "headline": "Treasury threatens sanctions after White House claims Moonshot distilled Anthropic\u2019s Fable",
+    "link": "https://techcrunch.com/2026/07/22/treasury-threatens-sanctions-after-white-house-claims-moonshot-distilled-anthropics-fable",
+    "date": "2026-07-23"
+  },
+  {
+    "headline": "How OpenAI\u2019s human mistake led to the AI-powered hack on Hugging Face",
+    "link": "https://techcrunch.com/2026/07/22/how-an-openais-human-mistake-led-to-the-ai-powered-hack-on-hugging-face",
+    "date": "2026-07-23"
+  },
+  {
+    "headline": "Travis Kalanick\u2019s robotics company raises $1.7B, led by a16z",
+    "link": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z",
+    "date": "2026-07-23"
+  },
+  {
+    "headline": "The Download: NASA\u2019s new space telescope and OpenAI\u2019s autonomous hacker",
+    "link": "https://www.technologyreview.com/2026/07/22/1140717/the-download-nasa-space-telescope-openai-hugging-face-hack",
+    "date": "2026-07-23"
+  },
+  {
+    "headline": "SysAdmin: Measuring Instrumental Power-Seeking in Frontier AI",
+    "link": "https://arxiv.org/abs/2607.18239",
+    "date": "2026-07-23"
+  },
+  {
+    "headline": "Calibrated Selective Fact-Checking via Evidence Chain Evaluation",
+    "link": "https://arxiv.org/abs/2607.18240",
+    "date": "2026-07-23"
+  },
+  {
+    "headline": "Why AI Content Stopped Working & What To Do About It [Watch Now] via @sejournal, @hethr_campbell",
+    "link": "https://www.searchenginejournal.com/why-ai-content-stopped-working-what-to-do-about-it-watch-now/583098",
+    "date": "2026-07-23"
+  },
+  {
+    "headline": "Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth via @sejournal, @billhunt",
+    "link": "https://www.searchenginejournal.com/beyond-brand-sovereignty-how-to-build-an-ai-ready-source-of-truth/582266",
+    "date": "2026-07-23"
+  },
+  {
+    "headline": "AI Overviews Now Answer Most Local Searches \u2013 How To Get Your Business Cited via @sejournal, @AdamHeitzman",
+    "link": "https://www.searchenginejournal.com/ai-overviews-now-answer-most-local-searches-how-to-get-your-business-cited/580757",
+    "date": "2026-07-23"
+  },
+  {
+    "headline": "Western Sydney University gives M365 Copilot to all staff",
+    "link": "https://www.itnews.com.au/news/western-sydney-university-gives-m365-copilot-to-all-staff-627582",
+    "date": "2026-07-23"
+  },
+  {
+    "headline": "OpenAI models running benchmark breached AI platform Hugging Face",
+    "link": "https://www.itnews.com.au/news/openai-models-running-benchmark-breached-ai-platform-hugging-face-627560",
+    "date": "2026-07-23"
+  },
+  {
+    "headline": "How the Fair Work Commission safely deployed Agentic AI in weeks, not years",
+    "link": "https://www.itnews.com.au/feature/how-the-fair-work-commission-safely-deployed-agentic-ai-in-weeks-not-years-627327",
+    "date": "2026-07-23"
+  },
+  {
     "headline": "OpenAI says Hugging Face was breached by its own pre-release models",
     "link": "https://techcrunch.com/2026/07/21/openai-says-hugging-face-was-breached-by-its-own-pre-release-models",
     "date": "2026-07-22"
@@ -13,65 +73,5 @@
     "headline": "AI and the rise of the universal entertainment app",
     "link": "https://techcrunch.com/2026/07/21/ai-and-the-rise-of-the-universal-entertainment-app",
     "date": "2026-07-22"
-  },
-  {
-    "headline": "The Download: Chinese AI divides the White House, and a record copyright payout",
-    "link": "https://www.technologyreview.com/2026/07/21/1140685/the-download-chinese-ai-divides-white-house-anthropic-copyright-settlement",
-    "date": "2026-07-22"
-  },
-  {
-    "headline": "Advancing next-gen AI with materials science innovation",
-    "link": "https://www.technologyreview.com/2026/07/21/1140602/advancing-next-gen-ai-with-materials-science-innovation",
-    "date": "2026-07-22"
-  },
-  {
-    "headline": "Rater State Bias in RLHF Preference Data: An Audit Framework",
-    "link": "https://arxiv.org/abs/2607.16195",
-    "date": "2026-07-22"
-  },
-  {
-    "headline": "Google\u2019s AI Search Data Is Growing, But The Gaps Remain via @sejournal, @MattGSouthern",
-    "link": "https://www.searchenginejournal.com/googles-ai-search-data-is-growing-but-the-gaps-remain/582558",
-    "date": "2026-07-22"
-  },
-  {
-    "headline": "The New Google Business Profile Playbook for AI Local Search via @sejournal, @CallRail",
-    "link": "https://www.searchenginejournal.com/rundowns/the-new-google-business-profile-playbook-for-ai-local-search",
-    "date": "2026-07-22"
-  },
-  {
-    "headline": "2027 Marketing Budgets: Why New Categories Beat Bigger AI Line Items via @sejournal, @gregjarboe",
-    "link": "https://www.searchenginejournal.com/2027-marketing-budgets-why-new-categories-beat-bigger-ai-line-items/582688",
-    "date": "2026-07-22"
-  },
-  {
-    "headline": "CommBank iQ is putting AI to work on its core dataset",
-    "link": "https://www.itnews.com.au/news/commbank-iq-is-putting-ai-to-work-on-its-core-dataset-627505",
-    "date": "2026-07-22"
-  },
-  {
-    "headline": "State of Data & AI 2026",
-    "link": "https://www.itnews.com.au/state-of-data-ai-2026",
-    "date": "2026-07-22"
-  },
-  {
-    "headline": "State of Data & AI 2026: Data Sovereignty & Compliance",
-    "link": "https://www.itnews.com.au/state-of-data-ai-2026/state-of-data-ai-2026-data-sovereignty-compliance-627438",
-    "date": "2026-07-22"
-  },
-  {
-    "headline": "AI\u2019s most important protocol is getting a little bit easier to use",
-    "link": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use",
-    "date": "2026-07-21"
-  },
-  {
-    "headline": "OpenAI is scared of open-weight models. Should the US be?",
-    "link": "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be",
-    "date": "2026-07-21"
-  },
-  {
-    "headline": "Natural raises $30M to reinvent payments for AI agents \u2014 and take on Stripe",
-    "link": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe",
-    "date": "2026-07-21"
   }
 ]

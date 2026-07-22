@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 23 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-23</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-23</guid>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +1000</pubDate>
+      <description>12 stories: Treasury threatens sanctions after White House claims Moonshot distilled Anthropic’s Fable · How OpenAI’s human mistake led to the AI-powered hack on Hugging Face · Travis Kalanick’s robotics company raises $1.7B, led by a16z · The Download: NASA’s new space telescope and OpenAI’s autonomous hacker · SysAdmin: Measuring Instrumental Power-Seeking in Frontier AI · Calibrated Selective Fact-Checking via Evidence Chain Evaluation · Why AI Content Stopped Working &amp; What To Do About It [Watch Now] via @sejournal, @hethr_campbell · Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth via @sejournal, @billhunt · AI Overviews Now Answer Most Local Searches – How To Get Your Business Cited via @sejournal, @AdamHeitzman · Western Sydney University gives M365 Copilot to all staff · OpenAI models running benchmark breached AI platform Hugging Face · How the Fair Work Commission safely deployed Agentic AI in weeks, not years</description>
+    </item>
     <item>
       <title>The Answer Engine — 22 July 2026</title>
       <link>https://aisearch.global/news/2026-07-22</link>
