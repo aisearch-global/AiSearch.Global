@@ -1,5 +1,65 @@
 [
   {
+    "headline": "AMD takes on Nvidia with its Helios AI rack scale system",
+    "link": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system",
+    "date": "2026-07-24"
+  },
+  {
+    "headline": "Anthropic updates Claude voice mode with more capable models",
+    "link": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models",
+    "date": "2026-07-24"
+  },
+  {
+    "headline": "AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing",
+    "link": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing",
+    "date": "2026-07-24"
+  },
+  {
+    "headline": "The Download: energy transmission and US threats against Chinese AI",
+    "link": "https://www.technologyreview.com/2026/07/23/1140753/the-download-energy-transmission-and-us-threats-chinese-ai",
+    "date": "2026-07-24"
+  },
+  {
+    "headline": "How AI helps scientists design the next generation of medicines",
+    "link": "https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines",
+    "date": "2026-07-24"
+  },
+  {
+    "headline": "BatchDAG: LLM-Planned Execution Graphs for Scalable Ad-Hoc Analysis Over Enterprise Data",
+    "link": "https://arxiv.org/abs/2607.18241",
+    "date": "2026-07-24"
+  },
+  {
+    "headline": "AI Search is Working. How to Prove It With Real Tests. via @sejournal, @hethr_campbell",
+    "link": "https://www.searchenginejournal.com/ai-search-is-working-how-to-prove-it-with-real-tests-recap/583306",
+    "date": "2026-07-24"
+  },
+  {
+    "headline": "AI Browsers Are Backward Because Agents Never Needed The Visual Layer via @sejournal, @slobodanmanic",
+    "link": "https://www.searchenginejournal.com/ai-browsers-are-backward-because-agents-never-needed-the-visual-layer/583056",
+    "date": "2026-07-24"
+  },
+  {
+    "headline": "Pichai Says Google Needs Gemini 4 To Compete At The Frontier via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/pichai-says-google-needs-gemini-4-to-compete-at-the-frontier/583214",
+    "date": "2026-07-24"
+  },
+  {
+    "headline": "In Pictures: iTnews State of Data & AI Launch Sydney",
+    "link": "https://www.itnews.com.au/gallery/in-pictures-itnews-state-of-data-ai-launch-sydney-627604",
+    "date": "2026-07-24"
+  },
+  {
+    "headline": "Scaling innovation safely: innovating through rapid prototyping with the mission in mind",
+    "link": "https://www.itnews.com.au/feature/scaling-innovation-safely-innovating-through-rapid-prototyping-with-the-mission-in-mind-627497",
+    "date": "2026-07-24"
+  },
+  {
+    "headline": "State of Data & AI 2026: Agentic AI",
+    "link": "https://www.itnews.com.au/state-of-data-ai-2026/state-of-data-ai-2026-agentic-ai-627435",
+    "date": "2026-07-24"
+  },
+  {
     "headline": "Treasury threatens sanctions after White House claims Moonshot distilled Anthropic\u2019s Fable",
     "link": "https://techcrunch.com/2026/07/22/treasury-threatens-sanctions-after-white-house-claims-moonshot-distilled-anthropics-fable",
     "date": "2026-07-23"
@@ -13,65 +73,5 @@
     "headline": "Travis Kalanick\u2019s robotics company raises $1.7B, led by a16z",
     "link": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z",
     "date": "2026-07-23"
-  },
-  {
-    "headline": "The Download: NASA\u2019s new space telescope and OpenAI\u2019s autonomous hacker",
-    "link": "https://www.technologyreview.com/2026/07/22/1140717/the-download-nasa-space-telescope-openai-hugging-face-hack",
-    "date": "2026-07-23"
-  },
-  {
-    "headline": "SysAdmin: Measuring Instrumental Power-Seeking in Frontier AI",
-    "link": "https://arxiv.org/abs/2607.18239",
-    "date": "2026-07-23"
-  },
-  {
-    "headline": "Calibrated Selective Fact-Checking via Evidence Chain Evaluation",
-    "link": "https://arxiv.org/abs/2607.18240",
-    "date": "2026-07-23"
-  },
-  {
-    "headline": "Why AI Content Stopped Working & What To Do About It [Watch Now] via @sejournal, @hethr_campbell",
-    "link": "https://www.searchenginejournal.com/why-ai-content-stopped-working-what-to-do-about-it-watch-now/583098",
-    "date": "2026-07-23"
-  },
-  {
-    "headline": "Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth via @sejournal, @billhunt",
-    "link": "https://www.searchenginejournal.com/beyond-brand-sovereignty-how-to-build-an-ai-ready-source-of-truth/582266",
-    "date": "2026-07-23"
-  },
-  {
-    "headline": "AI Overviews Now Answer Most Local Searches \u2013 How To Get Your Business Cited via @sejournal, @AdamHeitzman",
-    "link": "https://www.searchenginejournal.com/ai-overviews-now-answer-most-local-searches-how-to-get-your-business-cited/580757",
-    "date": "2026-07-23"
-  },
-  {
-    "headline": "Western Sydney University gives M365 Copilot to all staff",
-    "link": "https://www.itnews.com.au/news/western-sydney-university-gives-m365-copilot-to-all-staff-627582",
-    "date": "2026-07-23"
-  },
-  {
-    "headline": "OpenAI models running benchmark breached AI platform Hugging Face",
-    "link": "https://www.itnews.com.au/news/openai-models-running-benchmark-breached-ai-platform-hugging-face-627560",
-    "date": "2026-07-23"
-  },
-  {
-    "headline": "How the Fair Work Commission safely deployed Agentic AI in weeks, not years",
-    "link": "https://www.itnews.com.au/feature/how-the-fair-work-commission-safely-deployed-agentic-ai-in-weeks-not-years-627327",
-    "date": "2026-07-23"
-  },
-  {
-    "headline": "OpenAI says Hugging Face was breached by its own pre-release models",
-    "link": "https://techcrunch.com/2026/07/21/openai-says-hugging-face-was-breached-by-its-own-pre-release-models",
-    "date": "2026-07-22"
-  },
-  {
-    "headline": "Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents",
-    "link": "https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents",
-    "date": "2026-07-22"
-  },
-  {
-    "headline": "AI and the rise of the universal entertainment app",
-    "link": "https://techcrunch.com/2026/07/21/ai-and-the-rise-of-the-universal-entertainment-app",
-    "date": "2026-07-22"
   }
 ]

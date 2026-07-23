@@ -1,0 +1,139 @@
+[
+  {
+    "key": "defd5cfc2e46566b8073ea25",
+    "title": "AMD takes on Nvidia with its Helios AI rack scale system",
+    "link": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system",
+    "summary_raw": "AMD is challenging its chipmaker rival with a new rack-scale system that will start shipping to customers later this year.",
+    "published": "Thu, 23 Jul 2026 20:33:02 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "8d6b4b30983ef1dc76178fa2",
+    "title": "Anthropic updates Claude voice mode with more capable models",
+    "link": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models",
+    "summary_raw": "Claude's new voice model will let you reschedule your meeting or draft an email.",
+    "published": "Thu, 23 Jul 2026 19:00:00 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "12fd80c032827b76f55aba79",
+    "title": "AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing",
+    "link": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing",
+    "summary_raw": "AegisAI co-founders developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn\u2019t catch.",
+    "published": "Thu, 23 Jul 2026 18:38:34 +0000",
+    "source": "TechCrunch",
+    "categories": [
+      "ai_news"
+    ]
+  },
+  {
+    "key": "bb01e724ba008fdb288b9368",
+    "title": "The Download: energy transmission and US threats against Chinese AI",
+    "link": "https://www.technologyreview.com/2026/07/23/1140753/the-download-energy-transmission-and-us-threats-chinese-ai",
+    "summary_raw": "This is today\u2019s edition of The Download, our weekday newsletter that provides a daily dose of what\u2019s going on in the world of technology. The power line that could reshape New York\u2019s grid is hitting snags During a heat wave on July 3, New York State\u2019s grid imported enough electricity from Canada to meet about\u2026",
+    "published": "Thu, 23 Jul 2026 12:10:00 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "693f5ccc967947d055610ab0",
+    "title": "How AI helps scientists design the next generation of medicines",
+    "link": "https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines",
+    "summary_raw": "Designing and developing a new medicine is an expensive, failure-prone scientific challenge. A new drug can take many years to develop, at the cost of a significant investment. And even then, most possible candidates never reach the patient. For biologic medicines, therapies made from engineered proteins rather than synthetic chemistry (which are often used to\u2026",
+    "published": "Thu, 23 Jul 2026 12:00:00 +0000",
+    "source": "MIT Technology Review",
+    "categories": [
+      "ai_news",
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "114206250cfc7fa11f5c0aee",
+    "title": "BatchDAG: LLM-Planned Execution Graphs for Scalable Ad-Hoc Analysis Over Enterprise Data",
+    "link": "https://arxiv.org/abs/2607.18241",
+    "summary_raw": "arXiv:2607.18241v1 Announce Type: new Abstract: Large language models (LLMs) excel at analyzing individual documents but break down on exhaustive, cross-entity analytical questions over enterprise-scale datasets due to context overflow, loss of per-entity attribution, and linear latency from sequential tool calls. We present BatchDAG, a system in which an LLM generates a typed directed acyclic graph (DAG) of operations -- SQL queries, semantic searches, in-memory transforms, parallel fan-outs, and single-shot analyses -- which a deterministic engine evaluates with topological-wave parallelism and structured JSON data flow. A key optimization, entity-aware batching, groups rows by logical entity before fan-out, reducing LLM calls by up to 47x. BatchDAG is not primarily an accuracy improvement over hand-optimized pipelines; rather, it is a general-purpose orchestration layer that replaces multiple hand-engineered workflows with a single system that generates the appropriate execution strategy from natural language. In controlled experiments on 12 transcript-heavy queries, BatchDAG (3.74/5) achieves quality comparable to an expert-designed pipeline (3.25/5) and significantly outperfor",
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "source": "arXiv cs.AI",
+    "categories": [
+      "human_ai_research"
+    ]
+  },
+  {
+    "key": "f5a41408804c8317f40cb43e",
+    "title": "AI Search is Working. How to Prove It With Real Tests. via @sejournal, @hethr_campbell",
+    "link": "https://www.searchenginejournal.com/ai-search-is-working-how-to-prove-it-with-real-tests-recap/583306",
+    "summary_raw": "Dive into the evidence behind AI search and its effects on page performance. Learn from experts in the latest SEJ discussion. The post AI Search is Working. How to Prove It With Real Tests. appeared first on Search Engine Journal .",
+    "published": "Thu, 23 Jul 2026 19:38:11 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "eb190ef6e6a8c6130b7b0f0d",
+    "title": "AI Browsers Are Backward Because Agents Never Needed The Visual Layer via @sejournal, @slobodanmanic",
+    "link": "https://www.searchenginejournal.com/ai-browsers-are-backward-because-agents-never-needed-the-visual-layer/583056",
+    "summary_raw": "OpenAI killed Atlas because AI browsers were always a workaround. The real fix is a website machines can actually read. The post AI Browsers Are Backward Because Agents Never Needed The Visual Layer appeared first on Search Engine Journal .",
+    "published": "Thu, 23 Jul 2026 19:00:39 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "388c390bbf6864fbeef5a9d7",
+    "title": "Pichai Says Google Needs Gemini 4 To Compete At The Frontier via @sejournal, @MattGSouthern",
+    "link": "https://www.searchenginejournal.com/pichai-says-google-needs-gemini-4-to-compete-at-the-frontier/583214",
+    "summary_raw": "On Alphabet's Q2 call, Pichai named coding an area to improve, saying Google needs Gemini 4 for the next frontier, as 3.5 Pro stays delayed. The post Pichai Says Google Needs Gemini 4 To Compete At The Frontier appeared first on Search Engine Journal .",
+    "published": "Thu, 23 Jul 2026 10:30:58 +0000",
+    "source": "Search Engine Journal",
+    "categories": [
+      "aeo_relevance"
+    ]
+  },
+  {
+    "key": "8a3379a2efce10f1f237834a",
+    "title": "In Pictures: iTnews State of Data & AI Launch Sydney",
+    "link": "https://www.itnews.com.au/gallery/in-pictures-itnews-state-of-data-ai-launch-sydney-627604",
+    "summary_raw": "Sponsored by NEXTDC, Workato and Penguin Solutions.",
+    "published": "Thu, 23 Jul 2026 15:28:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ]
+  },
+  {
+    "key": "f7c7c4d18143189926c89eba",
+    "title": "Scaling innovation safely: innovating through rapid prototyping with the mission in mind",
+    "link": "https://www.itnews.com.au/feature/scaling-innovation-safely-innovating-through-rapid-prototyping-with-the-mission-in-mind-627497",
+    "summary_raw": "Turning AI prototypes into trusted mission-ready capabilities.",
+    "published": "Wed, 22 Jul 2026 06:00:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ]
+  },
+  {
+    "key": "472ab63cdae5c2e1ea7a6070",
+    "title": "State of Data & AI 2026: Agentic AI",
+    "link": "https://www.itnews.com.au/state-of-data-ai-2026/state-of-data-ai-2026-agentic-ai-627435",
+    "summary_raw": "Journey Beyond finds safer path to customer AI with agentic agents.",
+    "published": "Tue, 21 Jul 2026 06:00:00 +1000",
+    "source": "iTnews",
+    "categories": [
+      "australia_focus",
+      "ai_news"
+    ]
+  }
+]

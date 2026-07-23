@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Answer Engine — 24 July 2026 | AISearch Global</title>
+  <meta name="description" content="The Answer Engine, 24 July 2026: today&#x27;s AI news, AI law &amp; regulation, human-AI research and AEO-relevant developments, curated daily by AISearch Global, Sydney.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="author" content="AISearch Global">
+  <link rel="canonical" href="https://aisearch.global/news/2026-07-24">
+  <link rel="alternate" type="application/rss+xml" title="The Answer Engine — AI News" href="/news/rss.xml">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/images/aisearch_social_graphic_plumber.png">
+  <style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --paper:#F4F0E4;
+  --paper-deep:#ECE6D4;
+  --ink:#2B2B2B;
+  --ink-soft:#5C574B;
+  --rule:#2B2B2B;
+  --hairline:rgba(43,43,43,.22);
+  --tiffany:#0ABFBC;
+  --teal:#078F8B;        /* link + kicker text — WCAG-safe on eggshell */
+  --teal-ink:#065F5C;    /* hover */
+  --serif-display:'Playfair Display',Georgia,serif;
+  --serif-body:'Source Serif 4',Georgia,serif;
+  --sans:'Space Grotesk',system-ui,sans-serif;
+}
+html{background:#0D0D0D;font-size:16px;-webkit-font-smoothing:antialiased}
+body{font-family:var(--serif-body);color:var(--ink);line-height:1.6}
+
+/* ---- standard site chrome (header/footer injected by main.js) ----
+   Same layout rules as every other page's <style> block; colour values are
+   hard-coded because the newspaper :root doesn't define the site tokens. */
+.container{max-width:1120px;margin:0 auto;padding:0 1rem}
+header{position:sticky;top:0;z-index:100;background:rgba(13,14,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.10);font-family:var(--sans);color:#E3E8EE}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+.brand img{display:block;height:34px;width:auto;max-width:260px}
+.nav-toggle{display:none;background:none;border:1px solid rgba(255,255,255,.10);color:#E3E8EE;padding:.45rem .65rem;border-radius:0}
+.nav-links{display:flex;gap:1rem;list-style:none;padding:0;margin:0}
+.nav-links a{text-decoration:none;color:#95A0AD;font-weight:500}
+.nav-links a:hover,.nav-links a:focus{color:#0ABAB5}
+.cta-link{padding:.55rem .9rem;border:1px solid #0ABAB5;border-radius:0;color:#0ABAB5!important}
+footer{font-family:var(--sans);color:#E3E8EE}
+.footer-links a{text-decoration:none;color:#95A0AD}.footer-links a:hover{color:#0ABAB5}
+@media(max-width:720px){
+  .nav-toggle{display:block}
+  .nav-links{display:none;position:absolute;left:1rem;right:1rem;top:4.2rem;flex-direction:column;background:#111317;border:1px solid rgba(255,255,255,.10);padding:.8rem;border-radius:0}
+  .nav-links.open{display:flex}
+}
+
+/* default link colours (in-paper) */
+.paper a{color:var(--teal);text-decoration:none}
+.paper a:hover{color:var(--teal-ink);text-decoration:underline;text-decoration-color:var(--tiffany);text-underline-offset:3px}
+
+/* ---- the paper sheet (sits beneath the site's dark chrome) ---- */
+.paper{max-width:1180px;margin:2.5rem auto 4rem;background:var(--paper);padding:clamp(1.4rem,4vw,3.5rem) clamp(1.2rem,4.5vw,4rem) clamp(2rem,4vw,3rem);box-shadow:0 30px 70px rgba(0,0,0,.55)}
+
+/* ---- masthead ---- */
+.masthead{text-align:center}
+.masthead-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;font-family:var(--sans);font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);border-bottom:1px solid var(--hairline);padding-bottom:.55rem}
+.masthead-top a{color:var(--ink-soft)}
+.masthead-top a:hover{color:var(--teal-ink)}
+/* nameplate mirrors the brand lockup: THE / teal rule / ANSWER ENGINE / teal rule / subline */
+.nameplate{margin:1.5rem 0 .6rem;text-transform:uppercase;color:var(--ink);line-height:1}
+.nameplate a{color:var(--ink);display:inline-block}
+.nameplate a:hover{color:var(--ink);text-decoration:none}
+.np-the{display:block;font-family:var(--serif-display);font-weight:900;font-size:clamp(1.1rem,2.6vw,1.9rem);letter-spacing:.28em;padding-left:.28em;padding-bottom:.42em;margin-bottom:.5em;border-bottom:3px solid var(--tiffany)}
+.np-main{display:block;font-family:var(--serif-display);font-weight:900;font-size:clamp(2.3rem,7.6vw,5.6rem);letter-spacing:.02em;line-height:1.04;padding-bottom:.14em;border-bottom:3px solid var(--tiffany)}
+.np-sub{display:block;font-family:var(--sans);font-weight:600;font-size:clamp(.66rem,1.4vw,.92rem);letter-spacing:.42em;padding-left:.42em;color:var(--teal);margin-top:1em}
+.tagline{font-family:var(--serif-body);font-style:italic;font-size:clamp(.9rem,1.6vw,1.05rem);color:var(--ink-soft);margin:.8rem 0 1.35rem}
+.dateline{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--rule);border-bottom:4px double var(--rule);padding:.5rem 0;font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink)}
+.dateline .dateline-date{font-weight:700}
+.dateline a{color:var(--teal)}
+
+/* ---- standfirst ---- */
+.standfirst{text-align:center;font-style:italic;font-size:.95rem;color:var(--ink-soft);padding:1rem 1rem 1.1rem;border-bottom:1px solid var(--hairline)}
+
+/* ==== STORY BLOCK — repeats per story; first (ranked) story uses .story--lead ==== */
+
+/* lead story */
+.story--lead{padding:2rem 0 1.8rem;border-bottom:3px double var(--rule)}
+.story--lead .kicker{text-align:center}
+.story--lead .headline{font-family:var(--serif-display);font-weight:900;font-size:clamp(1.7rem,4.6vw,3.3rem);line-height:1.08;letter-spacing:-.005em;text-align:center;margin:.55rem auto .7rem;max-width:22ch}
+.story--lead .byline{text-align:center}
+.story--lead .body{columns:2;column-gap:2.6rem;column-rule:1px solid var(--hairline);margin-top:1.3rem;text-align:justify;hyphens:auto}
+.story--lead .body p{font-size:1.02rem;line-height:1.68;margin-bottom:1rem}
+.story--lead .body p:first-of-type::first-letter{font-family:var(--serif-display);font-weight:700;font-size:3.6em;line-height:.82;float:left;padding:.06em .12em 0 0;color:var(--teal)}
+.story--lead .read-link{display:block;text-align:center;margin-top:.9rem}
+
+/* standard stories flow into newspaper columns */
+.stories{columns:3;column-gap:2.6rem;column-rule:1px solid var(--hairline);padding-top:.4rem}
+.story{break-inside:avoid;padding:1.35rem 0 1.5rem;border-bottom:1px solid var(--hairline)}
+.story .headline{font-family:var(--serif-display);font-weight:700;font-size:1.32rem;line-height:1.18;margin:.4rem 0 .55rem}
+.story .body p{font-size:.92rem;line-height:1.62;margin-bottom:.75rem;text-align:justify;hyphens:auto}
+
+/* shared story parts */
+.kicker{font-family:var(--sans);font-size:.66rem;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:var(--teal)}
+.headline a{color:var(--ink)}
+.headline a:hover{color:var(--teal-ink);text-decoration:none}
+.byline{font-family:var(--sans);font-size:.66rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.55rem}
+.read-link{font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.04em}
+.read-link a{color:var(--teal)}
+
+/* ---- ticker (front page) ---- */
+.ticker{display:flex;align-items:center;gap:1rem;border-bottom:1px solid var(--rule);background:var(--paper-deep);margin-top:0;padding:.55rem .9rem;overflow:hidden}
+.ticker-label{font-family:var(--sans);font-size:.66rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);flex-shrink:0;border-right:1px solid var(--hairline);padding-right:1rem}
+.ticker-viewport{overflow:hidden;flex:1;min-width:0}
+.ticker-track{display:inline-block;white-space:nowrap;font-family:var(--serif-body);font-size:.88rem;animation:ticker-scroll 80s linear infinite;padding-left:0}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker-track a{color:var(--ink)}
+.ticker-track a:hover{color:var(--teal-ink)}
+.ticker-sep{color:var(--tiffany);padding:0 .8rem;font-weight:700}
+@keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker-track{animation:none}.ticker-viewport{overflow-x:auto}}
+
+/* ---- front-page splash + archive ---- */
+.splash{padding:2rem 0 1.9rem;border-bottom:3px double var(--rule);text-align:center}
+.splash .headline{font-family:var(--serif-display);font-weight:900;font-size:clamp(1.7rem,4.6vw,3.3rem);line-height:1.08;margin:.55rem auto .7rem;max-width:22ch}
+.splash .teaser{font-size:1.05rem;line-height:1.65;max-width:56ch;margin:0 auto .9rem;color:var(--ink)}
+.edition-link{font-family:var(--sans);font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.archive{padding-top:1.8rem}
+.section-flag{display:flex;align-items:center;gap:.9rem;font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+.section-flag::before,.section-flag::after{content:"";flex:1;border-top:1px solid var(--rule)}
+.archive-list{list-style:none;margin-top:.4rem}
+.archive-list li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.archive-list .edition-date{font-family:var(--serif-display);font-weight:700;font-size:1.25rem}
+.archive-list .edition-date a{color:var(--ink)}
+.archive-list .edition-date a:hover{color:var(--teal-ink)}
+.archive-list .edition-count{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-soft);white-space:nowrap}
+
+/* ---- paper footer (colophon) ---- */
+.colophon{margin-top:2.4rem;border-top:4px double var(--rule);padding-top:1.3rem;text-align:center}
+.colophon .fleuron{color:var(--tiffany);font-size:1rem;letter-spacing:.6em;padding-left:.6em}
+.colophon p{font-family:var(--sans);font-size:.7rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-soft);margin-top:.7rem}
+.colophon .colophon-links{display:flex;justify-content:center;gap:1.6rem;margin-top:.8rem;font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase}
+/* ---- responsive: collapse columns, keep masthead legible ---- */
+@media (max-width:980px){.stories{columns:2}}
+@media (max-width:660px){
+  .stories{columns:1;column-rule:none}
+  .story--lead .body{columns:1;column-rule:none}
+  .paper{margin:1rem .6rem 2rem}
+  .dateline{justify-content:center;text-align:center}
+  .masthead-top{flex-wrap:wrap;justify-content:center;text-align:center}
+}
+
+/* ---- print: it actually prints like a newspaper ---- */
+@media print{
+  html{background:#fff}
+  .paper{box-shadow:none;margin:0;max-width:none;background:#fff}
+  header,footer,.ticker{display:none}
+  .stories{columns:3}
+  a{color:var(--ink)!important;text-decoration:none!important}
+}
+</style>
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AISearch Global">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:url" content="https://aisearch.global/news/2026-07-24">
+  <meta property="og:title" content="The Answer Engine — 24 July 2026 | AISearch Global">
+  <meta property="og:description" content="Daily AI news brief for 24 July 2026, curated by AISearch Global.">
+  <meta property="og:image" content="https://aisearch.global/assets/images/aisearch_social_graphic_plumber.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Answer Engine — 24 July 2026 | AISearch Global">
+  <meta name="twitter:description" content="Daily AI news brief for 24 July 2026, curated by AISearch Global.">
+  <meta name="twitter:image" content="https://aisearch.global/assets/images/aisearch_social_graphic_plumber.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBZMSCBXBZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XBZMSCBXBZ');
+  </script>
+  <script defer src="/assets/js/consent.js"></script>
+  <link rel="stylesheet" href="/assets/css/styles.css?v=4">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script defer src="/assets/js/main.js?v=answer-engine2"></script>
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "The Answer Engine \u2014 24 July 2026", "alternativeHeadline": "Daily AI news brief for 24 July 2026", "datePublished": "2026-07-24T00:00:00+10:00", "author": {"@type": "Organization", "name": "AISearch Global", "url": "https://aisearch.global"}, "publisher": {"@type": "Organization", "name": "AISearch Global", "url": "https://aisearch.global"}, "isPartOf": {"@type": "Periodical", "name": "The Answer Engine", "url": "https://aisearch.global/news"}, "mainEntityOfPage": "https://aisearch.global/news/2026-07-24", "url": "https://aisearch.global/news/2026-07-24", "citation": ["https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system", "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models", "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing", "https://www.technologyreview.com/2026/07/23/1140753/the-download-energy-transmission-and-us-threats-chinese-ai", "https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines", "https://arxiv.org/abs/2607.18241", "https://www.searchenginejournal.com/ai-search-is-working-how-to-prove-it-with-real-tests-recap/583306", "https://www.searchenginejournal.com/ai-browsers-are-backward-because-agents-never-needed-the-visual-layer/583056", "https://www.searchenginejournal.com/pichai-says-google-needs-gemini-4-to-compete-at-the-frontier/583214", "https://www.itnews.com.au/gallery/in-pictures-itnews-state-of-data-ai-launch-sydney-627604", "https://www.itnews.com.au/feature/scaling-innovation-safely-innovating-through-rapid-prototyping-with-the-mission-in-mind-627497", "https://www.itnews.com.au/state-of-data-ai-2026/state-of-data-ai-2026-agentic-ai-627435"]}</script>
+</head>
+<body>
+<header></header>
+<main class="paper">
+
+  <div class="masthead">
+    <div class="masthead-top">
+      <a href="/news">&larr; All editions</a>
+      <span>Curated by AISearch Global &middot; Sydney</span>
+      <a href="/news/rss.xml">Subscribe (RSS)</a>
+    </div>
+    <h1 class="nameplate"><a href="/news"><span class="np-the">The</span><span class="np-main">Answer Engine</span><span class="np-sub">AI News &middot; Sydney</span></a></h1>
+    <p class="tagline">AI news, read the way machines read it. Sydney.</p>
+    <div class="dateline">
+      <span>Vol.&nbsp;1 &middot; No.&nbsp;20</span>
+      <span class="dateline-date">Friday, 24 July 2026 &middot; 12 stories</span>
+      <span>Free &middot; Always</span>
+    </div>
+  </div>
+
+  <p class="standfirst">Curated daily by AISearch Global. Every story links to its original source &mdash; we don't republish, we round up.</p>
+
+  <article class="story--lead">
+    <p class="kicker">AI News</p>
+    <h2 class="headline"><a href="https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system" target="_blank" rel="noopener">AMD takes on Nvidia with its Helios AI rack scale system</a></h2>
+    <p class="byline">Source: TechCrunch &middot; 24 July 2026</p>
+    <div class="body">
+      <p>AMD is challenging its chipmaker rival with a new rack-scale system that will start shipping to customers later this year.</p>
+    </div>
+    <p class="read-link"><a href="https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system" target="_blank" rel="noopener">Read the original at TechCrunch&nbsp;&rarr;</a></p>
+  </article>
+
+  <section class="stories">
+
+    <article class="story">
+      <p class="kicker">AI News</p>
+      <h3 class="headline"><a href="https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models" target="_blank" rel="noopener">Anthropic updates Claude voice mode with more capable models</a></h3>
+      <p class="byline">Source: TechCrunch</p>
+      <div class="body">
+        <p>Claude&#x27;s new voice model will let you reschedule your meeting or draft an email.</p>
+      </div>
+      <p class="read-link"><a href="https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models" target="_blank" rel="noopener">Read the original at TechCrunch&nbsp;&rarr;</a></p>
+    </article>
+
+    <article class="story">
+      <p class="kicker">AI News</p>
+      <h3 class="headline"><a href="https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing" target="_blank" rel="noopener">AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing</a></h3>
+      <p class="byline">Source: TechCrunch</p>
+      <div class="body">
+        <p>AegisAI co-founders developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch.</p>
+      </div>
+      <p class="read-link"><a href="https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing" target="_blank" rel="noopener">Read the original at TechCrunch&nbsp;&rarr;</a></p>
+    </article>
+
+    <article class="story">
+      <p class="kicker">AI News &middot; Human-AI Research</p>
+      <h3 class="headline"><a href="https://www.technologyreview.com/2026/07/23/1140753/the-download-energy-transmission-and-us-threats-chinese-ai" target="_blank" rel="noopener">The Download: energy transmission and US threats against Chinese AI</a></h3>
+      <p class="byline">Source: MIT Technology Review</p>
+      <div class="body">
+        <p>This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The power line that could reshape New York’s grid is hitting snags During a heat wave on July 3, New York State’s grid imported enough electricity from Canada to meet about…</p>
+      </div>
+      <p class="read-link"><a href="https://www.technologyreview.com/2026/07/23/1140753/the-download-energy-transmission-and-us-threats-chinese-ai" target="_blank" rel="noopener">Read the original at MIT Technology Review&nbsp;&rarr;</a></p>
+    </article>
+
+    <article class="story">
+      <p class="kicker">AI News &middot; Human-AI Research</p>
+      <h3 class="headline"><a href="https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines" target="_blank" rel="noopener">How AI helps scientists design the next generation of medicines</a></h3>
+      <p class="byline">Source: MIT Technology Review</p>
+      <div class="body">
+        <p>Designing and developing a new medicine is an expensive, failure-prone scientific challenge. A new drug can take many years to develop, at the cost of a significant investment. And even then, most possible candidates never reach the patient. For biologic medicines, therapies made from engineered proteins rather than synthetic chemistry (which are often used to…</p>
+      </div>
+      <p class="read-link"><a href="https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines" target="_blank" rel="noopener">Read the original at MIT Technology Review&nbsp;&rarr;</a></p>
+    </article>
+
+    <article class="story">
+      <p class="kicker">Human-AI Research</p>
+      <h3 class="headline"><a href="https://arxiv.org/abs/2607.18241" target="_blank" rel="noopener">BatchDAG: LLM-Planned Execution Graphs for Scalable Ad-Hoc Analysis Over Enterprise Data</a></h3>
+      <p class="byline">Source: arXiv cs.AI</p>
+      <div class="body">
+        <p>arXiv:2607.18241v1 Announce Type: new Abstract: Large language models (LLMs) excel at analyzing individual documents but break down on exhaustive, cross-entity analytical questions over enterprise-scale datasets due to context overflow, loss of per-entity attribution, and linear latency from sequential tool calls. We present BatchDAG, a system in which an LLM generates a typed directed acyclic graph (DAG) of operations -- SQL queries, semantic searches, in-memory transforms, parallel fan-outs, and single-shot analyses -- which a deterministic engine evaluates with topological-wave parallelism and structured JSON data flow. A key optimization, entity-aware batching, groups rows by logical entity before fan-out, reducing LLM calls by up to 47x. BatchDAG is not primarily an accuracy improvement over hand-optimized pipelines; rather, it is a general-purpose orchestration layer that replaces multiple hand-engineered workflows with a single system that generates the appropriate execution strategy from natural language. In controlled experiments on 12 transcript-heavy queries, BatchDAG (3.74/5) achieves quality comparable to an expert-designed pipeline (3.25/5) and significantly outperfor</p>
+      </div>
+      <p class="read-link"><a href="https://arxiv.org/abs/2607.18241" target="_blank" rel="noopener">Read the original at arXiv cs.AI&nbsp;&rarr;</a></p>
+    </article>
+
+    <article class="story">
+      <p class="kicker">AEO Relevance</p>
+      <h3 class="headline"><a href="https://www.searchenginejournal.com/ai-search-is-working-how-to-prove-it-with-real-tests-recap/583306" target="_blank" rel="noopener">AI Search is Working. How to Prove It With Real Tests. via @sejournal, @hethr_campbell</a></h3>
+      <p class="byline">Source: Search Engine Journal</p>
+      <div class="body">
+        <p>Dive into the evidence behind AI search and its effects on page performance. Learn from experts in the latest SEJ discussion. The post AI Search is Working. How to Prove It With Real Tests. appeared first on Search Engine Journal .</p>
+      </div>
+      <p class="read-link"><a href="https://www.searchenginejournal.com/ai-search-is-working-how-to-prove-it-with-real-tests-recap/583306" target="_blank" rel="noopener">Read the original at Search Engine Journal&nbsp;&rarr;</a></p>
+    </article>
+
+    <article class="story">
+      <p class="kicker">AEO Relevance</p>
+      <h3 class="headline"><a href="https://www.searchenginejournal.com/ai-browsers-are-backward-because-agents-never-needed-the-visual-layer/583056" target="_blank" rel="noopener">AI Browsers Are Backward Because Agents Never Needed The Visual Layer via @sejournal, @slobodanmanic</a></h3>
+      <p class="byline">Source: Search Engine Journal</p>
+      <div class="body">
+        <p>OpenAI killed Atlas because AI browsers were always a workaround. The real fix is a website machines can actually read. The post AI Browsers Are Backward Because Agents Never Needed The Visual Layer appeared first on Search Engine Journal .</p>
+      </div>
+      <p class="read-link"><a href="https://www.searchenginejournal.com/ai-browsers-are-backward-because-agents-never-needed-the-visual-layer/583056" target="_blank" rel="noopener">Read the original at Search Engine Journal&nbsp;&rarr;</a></p>
+    </article>
+
+    <article class="story">
+      <p class="kicker">AEO Relevance</p>
+      <h3 class="headline"><a href="https://www.searchenginejournal.com/pichai-says-google-needs-gemini-4-to-compete-at-the-frontier/583214" target="_blank" rel="noopener">Pichai Says Google Needs Gemini 4 To Compete At The Frontier via @sejournal, @MattGSouthern</a></h3>
+      <p class="byline">Source: Search Engine Journal</p>
+      <div class="body">
+        <p>On Alphabet&#x27;s Q2 call, Pichai named coding an area to improve, saying Google needs Gemini 4 for the next frontier, as 3.5 Pro stays delayed. The post Pichai Says Google Needs Gemini 4 To Compete At The Frontier appeared first on Search Engine Journal .</p>
+      </div>
+      <p class="read-link"><a href="https://www.searchenginejournal.com/pichai-says-google-needs-gemini-4-to-compete-at-the-frontier/583214" target="_blank" rel="noopener">Read the original at Search Engine Journal&nbsp;&rarr;</a></p>
+    </article>
+
+    <article class="story">
+      <p class="kicker">Australia &middot; AI News</p>
+      <h3 class="headline"><a href="https://www.itnews.com.au/gallery/in-pictures-itnews-state-of-data-ai-launch-sydney-627604" target="_blank" rel="noopener">In Pictures: iTnews State of Data &amp; AI Launch Sydney</a></h3>
+      <p class="byline">Source: iTnews</p>
+      <div class="body">
+        <p>Sponsored by NEXTDC, Workato and Penguin Solutions.</p>
+      </div>
+      <p class="read-link"><a href="https://www.itnews.com.au/gallery/in-pictures-itnews-state-of-data-ai-launch-sydney-627604" target="_blank" rel="noopener">Read the original at iTnews&nbsp;&rarr;</a></p>
+    </article>
+
+    <article class="story">
+      <p class="kicker">Australia &middot; AI News</p>
+      <h3 class="headline"><a href="https://www.itnews.com.au/feature/scaling-innovation-safely-innovating-through-rapid-prototyping-with-the-mission-in-mind-627497" target="_blank" rel="noopener">Scaling innovation safely: innovating through rapid prototyping with the mission in mind</a></h3>
+      <p class="byline">Source: iTnews</p>
+      <div class="body">
+        <p>Turning AI prototypes into trusted mission-ready capabilities.</p>
+      </div>
+      <p class="read-link"><a href="https://www.itnews.com.au/feature/scaling-innovation-safely-innovating-through-rapid-prototyping-with-the-mission-in-mind-627497" target="_blank" rel="noopener">Read the original at iTnews&nbsp;&rarr;</a></p>
+    </article>
+
+    <article class="story">
+      <p class="kicker">Australia &middot; AI News</p>
+      <h3 class="headline"><a href="https://www.itnews.com.au/state-of-data-ai-2026/state-of-data-ai-2026-agentic-ai-627435" target="_blank" rel="noopener">State of Data &amp; AI 2026: Agentic AI</a></h3>
+      <p class="byline">Source: iTnews</p>
+      <div class="body">
+        <p>Journey Beyond finds safer path to customer AI with agentic agents.</p>
+      </div>
+      <p class="read-link"><a href="https://www.itnews.com.au/state-of-data-ai-2026/state-of-data-ai-2026-agentic-ai-627435" target="_blank" rel="noopener">Read the original at iTnews&nbsp;&rarr;</a></p>
+    </article>
+
+  </section>
+
+  <div class="colophon">
+    <div class="fleuron">&#10070;&#10070;&#10070;</div>
+    <p>The Answer Engine is published daily by AISearch Global &middot; Sydney, Australia &middot; theanswerengine.news</p>
+    <div class="colophon-links">
+      <a href="https://www.linkedin.com/showcase/theanswerengine" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://x.com/answerengine_au" target="_blank" rel="noopener">X @answerengine_au</a>
+      <a href="/news/rss.xml">RSS</a>
+    </div>
+  </div>
+
+</main>
+<footer></footer>
+</body>
+</html>

@@ -6,7 +6,14 @@
     <atom:link href="https://aisearch.global/news/rss.xml" rel="self" type="application/rss+xml"/>
     <description>AI news, read the way machines read it. Sydney. Curated daily by AISearch Global.</description>
     <language>en-au</language>
-    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 00:00:00 +1000</lastBuildDate>
+    <item>
+      <title>The Answer Engine — 24 July 2026</title>
+      <link>https://aisearch.global/news/2026-07-24</link>
+      <guid isPermaLink="true">https://aisearch.global/news/2026-07-24</guid>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 +1000</pubDate>
+      <description>12 stories: AMD takes on Nvidia with its Helios AI rack scale system · Anthropic updates Claude voice mode with more capable models · AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing · The Download: energy transmission and US threats against Chinese AI · How AI helps scientists design the next generation of medicines · BatchDAG: LLM-Planned Execution Graphs for Scalable Ad-Hoc Analysis Over Enterprise Data · AI Search is Working. How to Prove It With Real Tests. via @sejournal, @hethr_campbell · AI Browsers Are Backward Because Agents Never Needed The Visual Layer via @sejournal, @slobodanmanic · Pichai Says Google Needs Gemini 4 To Compete At The Frontier via @sejournal, @MattGSouthern · In Pictures: iTnews State of Data &amp; AI Launch Sydney · Scaling innovation safely: innovating through rapid prototyping with the mission in mind · State of Data &amp; AI 2026: Agentic AI</description>
+    </item>
     <item>
       <title>The Answer Engine — 23 July 2026</title>
       <link>https://aisearch.global/news/2026-07-23</link>
